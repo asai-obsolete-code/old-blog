@@ -12,15 +12,17 @@ footer: true
 # octopress-export-org-to-md: page
 # End:
 
-* [[mailto:guicho2.71828-at-gmail.com][Masataro Asai]]
+* Masataro Asai
 
-Master Student at
+mailto:guicho2.71828-at-gmail.com
+
+Masters Student at
 
 - Department of General Systems Studies
 - Graduate School of Arts and Sciences
 - The University of Tokyo
 
-The leading professor is [[http://metahack.org/][Alex Fukunaga]].
+My advisor is [[http://metahack.org/][Alex Fukunaga]].
 
 Formerly,
 

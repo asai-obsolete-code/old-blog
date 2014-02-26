@@ -7,9 +7,11 @@ sharing: true
 footer: true
 ---
 
-# [Masataro Asai](guicho2.71828-at-gmail.com)
+# Masataro Asai
 
-Master Student at
+<guicho2.71828-at-gmail.com>
+
+Masters Student at
 
 -   Department of General Systems Studies
 
@@ -17,7 +19,7 @@ Master Student at
 
 -   The University of Tokyo
 
-The leading professor is [Alex Fukunaga](http://metahack.org/).
+My advisor is [Alex Fukunaga](http://metahack.org/).
 
 Formerly,
 
