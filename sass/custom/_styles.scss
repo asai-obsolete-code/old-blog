@@ -1,2 +1,71 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+
+html {
+  font-size: 10pt;
+}
+
+h1 {
+    font-size: 1.6em !important;
+    .entry-title {
+	a {
+	    text-shadow: 1px 1px 0 #FFFFFF !important;
+	    &:hover {
+		text-decoration: none !important;
+	    }
+	}
+    }
+}
+
+.entry-content h1 {
+    font-size: 1.3em !important;
+    margin: 1.5em 1.5em;
+}
+ul, ol {
+    margin-left: 3em;
+    p {
+	margin: 0px;
+    }
+}
+h2 {
+    font-size: 1.1em !important;
+    margin-left: 0em;
+}
+h3 {
+    font-size: 1.0em !important;
+    margin-left: 0.5em;
+}
+h4 {
+    font-size: 0.9em !important;
+    margin-left: 1.0em;
+}
+h5 {
+    font-size: 0.8em !important;
+    margin-left: 1.2em;
+}
+h6 {
+    font-size: 0.7em !important;
+    margin-left: 1.3em;
+}
+
+p {
+    text-indent: 0.6em;
+    margin-bottom: 0.3em;
+}
+blockquote, ul, ol {
+    margin-bottom: 1em;
+}
+
+pre {
+    margin: 1em;
+}
+figure.code {
+    margin: 1em;
+}
+code {
+    text-indent: 0em;
+}
+
+/* #main div { */
+/*     background: #dfdfdf !important; */
+/* } */

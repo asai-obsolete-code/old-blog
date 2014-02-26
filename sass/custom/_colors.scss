@@ -2,10 +2,19 @@
 // To give it a try, uncomment some of the lines below rebuild your blog, and see how it works.
 // If you need a handy color picker try http://hslpicker.com
 
-//$header-bg: #263347;
-//$subtitle-color: lighten($header-bg, 58);
+$main-bg: #efefef;
+$sidebar-bg: #eaeaea;
+$link-color: #7D1414;
+$link-color-hover: adjust-color($link-color, $lightness: 10, $saturation: 25) !default;
+$link-color-visited: adjust-color($link-color, $hue: 80, $lightness: -4) !default;
+$link-color-active: adjust-color($link-color-hover, $lightness: -15) !default;
+
+/* $header-bg: #263347;
+/* $subtitle-color: lighten($header-bg, 58);
 //$nav-bg: desaturate(lighten(#8fc17a, 18), 5);
-//$nav-bg-front: image-url('noise.png');
+
+// $nav-bg-front: image-url('noise2.png');
+
 //$nav-bg-back: linear-gradient(lighten($nav-bg, 8), $nav-bg, darken($nav-bg, 11));
 //$sidebar-bg: desaturate(#eceff5, 8);
 //$sidebar-link-color: saturate(#526f9a, 10);
@@ -16,25 +25,25 @@
 
 
 /* To use the light Solarized highlighting theme uncomment the following line */
-//$solarized: light;
+$solarized: light;
 
-/* If you want to tweak the Solarized colors you can do that here */
-//$base03:          #002b36; //darkest blue
-//$base02:          #073642; //dark blue
-//$base01:          #586e75; //darkest gray
-//$base00:          #657b83; //dark gray
-//$base0:           #839496; //medium gray
-//$base1:           #93a1a1; //medium light gray
+//If you want to tweak the Solarized colors you can do that here
+$base03:          #202020; //darkest blue
+$base02:          #073642; //dark blue
+$base01:          #586e75; //darkest gray
+$base00:          #657b83; //dark gray
+$base0:           #839496; //medium gray
+$base1:           #333333; //medium light gray
 //$base2:           #eee8d5; //cream
 //$base3:           #fdf6e3; //white
 //$solar-yellow:    #b58900;
-//$solar-orange:    #cb4b16;
-//$solar-red:       #dc322f;
+$solar-orange:    #32A63B;//cb4b16;
+//$solar-red:       #ff0000;//#dc322f;
 //$solar-magenta:   #d33682;
 //$solar-violet:    #6c71c4;
-//$solar-blue:      #268bd2;
+$solar-blue:      #222222;//268bd2;
 //$solar-cyan:      #2aa198;
-//$solar-green:     #859900;
+$solar-green:     #B51ADB;//#859900;
 
 
 /* Non highlighted code colors */
