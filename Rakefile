@@ -15,9 +15,6 @@ deploy_default = "push"
 # This will be configured for you when you run config_deploy
 deploy_branch  = "master"
 
-deploy_local_branch  = "source"
-deploy_remote_branch  = "master"
-
 ## -- Misc Configs -- ##
 
 public_dir      = "public"    # compiled site directory
@@ -273,8 +270,8 @@ multitask :push do
     message = "Site updated at #{Time.now.utc}"
     system "git commit -m \"#{message}\""
     puts "\n## Pushing generated #{deploy_dir} website"
-    puts "git push origin #{deploy_local_branch}:#{deploy_remote_branch} --force"
-    system "git push origin #{deploy_local_branch}:#{deploy_remote_branch} --force"
+    puts "git push origin #{deploy_branch} --force"
+    system "git push origin #{deploy_branch} --force"
     puts "\n## Github Pages deploy complete"
   end
 end
