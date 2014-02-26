@@ -1,0 +1,6 @@
+
+whats needed before the setup
+
+sudo apt-get install ruby-dev libxml2-dev libxslt-dev g++
+sudo gem install bundler
+bundle install

@@ -1,0 +1,25 @@
+#+begin_HTML
+---
+layout: post
+title: "ロードスター用のROMエディタ"
+date: 2013-04-06 01:25
+comments: true
+categories: 
+---
+#+end_HTML
+# Local Variables:
+# octopress-export-org-to-md : post 
+# End:
+
+そういえば、ブログを作ったのに
+ROMエディタをアップロードしてなかったので、
+公開しておきます。
+
+アルゴリズムは [[http://www.asahi-net.or.jp/~VS6N-MRYM/][Fire丸山]] さんのものから変わっていません。
+エクセルがweb化したってのと、
+フォーマットがHEXになったってところしか違いはありません。
+結局機械語読めないので180km/hのリミッター解除アドレスも知らないし。
+レブリミットも替えられません。
+アドレス教えてください。
+
+[[./editor/editor.html][ROMエディタへ]]

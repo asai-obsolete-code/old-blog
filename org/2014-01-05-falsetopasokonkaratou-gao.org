@@ -1,0 +1,23 @@
+#+begin_HTML
+---
+layout: post
+title: "ノートパソコンから投稿"
+date: 2014-01-05 12:14
+comments: true
+categories: 
+---
+#+end_HTML
+# Local Variables:
+# octopress-export-org-to-md : post 
+# End:
+
+ノートパソコンから投稿テスト。
+環境は(ほぼ)クリーンインストールな13.10。
+
+ビルドに必要だったのは
+
+#+BEGIN_SRC sh
+sudo apt-get install ruby-dev libxml2-dev libxslt-dev g++
+sudo gem install bundler
+bundle install
+#+END_SRC

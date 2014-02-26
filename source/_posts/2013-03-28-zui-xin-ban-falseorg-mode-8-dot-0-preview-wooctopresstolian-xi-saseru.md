@@ -1,0 +1,152 @@
+---
+layout: post
+title: "最新版のOrg-mode (8.0 preview)をOctopressと連携させる"
+date: 2013-03-28 13:15
+comments: true
+categories: 
+---
+
+
+たぶんこれでいけた。.emacsを編集して、かつRakefileをちょこっと変更する
+だけ。基本方針は、File local variables を使って、ファイルを保存すると同
+時にorg-modeからmarkdownに変換する。orgのファイルは
+`$octopress-root$/org/` に入れる。そしたら
+`$octopress-root$/source/_posts` にmdファイルが移る。
+
+<!-- more -->
+
+Octopressでのブログ生成をEmacsからコマンド一発( `M-x octopost` など)でやれ
+るようになっている。いちいちシェルを開くのもめんどくさい。正直、この程
+度だとrakeの必要性がないというか、Emacs Lispとやれることが被ってるんだ
+よね。依存関係とか無いし。しかも `rake new_post[title]` は作ったファイ
+ル名を返してくれない。結局、作ったファイルを自動で開くようにするのは面
+倒くさくてやらなかった。ただ、一応、フォルダを開くことにはしておいた。
+また、 `rake preview` コマンドをバックグラウンドで自動で起動してくれる。
+ただし、起動したバッファを自分で消さないとだめ。
+
+最後に(ここまでする必要あるか？)、 `M-x gen-dep` で `rake gen_deploy` 相
+当のものができる。
+
+    (defvar octopress-repo "~/repos/octopress/") ;; このアドレスは自由に変更可能
+    (defvar posts "source/_posts/")
+    (defvar org-source "org/")
+    (defvar octopress-export-org-to-md-enabled nil)
+    (defun org-md-try-to-export-to-markdown ()
+      (interactive)
+      (when octopress-export-org-to-md-enabled
+        (let ((md (org-md-export-to-markdown)))
+          (shell-command 
+           (format "mv -f %s %s" 
+                   md (concatenate 'string octopress-repo posts))))))
+    
+    (defun octopost (title)
+      (interactive "sInput the new post title: ")
+      (shell-command
+       (format "cd %s;rake new_post[\"%s\"]" octopress-repo title))
+      (octo-preview)
+      (find-file (concatenate 'string octopress-repo org-source)))
+    
+    (defun octopage (title)
+      (interactive "sInput the new page title: ")
+      (shell-command
+       (format "cd %s;rake new_page[\"%s\"]" octopress-repo title))
+      (octo-preview)
+      (find-file (concatenate 'string octopress-repo org-source)))
+    
+    (defun octo-preview ()
+      (interactive)
+      (shell-command
+         (format "cd %s;rake preview &" octopress-repo)))
+    (defun gen-dep ()
+      (interactive)
+      (shell-command
+       (format "cd %s;rake gen_deploy &" octopress-repo)
+       (get-buffer-create "*Async Shell Command*"))
+      (sleep-for 5)
+      (kill-buffer "*Async Shell Command*"))
+    
+    (add-hook 'after-save-hook #'org-md-try-to-export-to-markdown)
+
+それで、それぞれのファイルの先頭に以下のように書く。
+
+    # -*- octopress-export-org-to-md-enabled : t -*-
+
+もちろんそれは面倒臭い。なので、Rakefileで指定する。
+変更点はざっとこんな感じ。
+一部は [Introducing Octopress Blogging for Org-Mode](http://blog.paphus.com/blog/2012/08/01/introducing-octopress-blogging-for-org-mode/) を参考にした。
+
+    diff --git a/Rakefile b/Rakefile
+    index d3a1cb0..827ebfe 100644
+    --- a/Rakefile
+    +++ b/Rakefile
+    @@ -23,8 +23,9 @@ deploy_dir      = "_deploy"   # deploy directory (for Github pages deployment)
+     stash_dir       = "_stash"    # directory to stash posts for speedy generation
+     posts_dir       = "_posts"    # directory for blog files
+     themes_dir      = ".themes"   # directory for blog files
+    -new_post_ext    = "markdown"  # default new post file extension when using the new_post task
+    -new_page_ext    = "markdown"  # default new page file extension when using the new_page task
+    +org_posts_dir   = "org"
+    +new_post_ext    = "org"  # default new post file extension when using the new_post task
+    +new_page_ext    = "org"  # default new page file extension when using the new_page task
+     server_port     = "4000"      # port for preview server eg. localhost:4000
+     
+     
+    @@ -98,13 +99,17 @@ task :new_post, :title do |t, args|
+         title = get_stdin("Enter a title for your post: ")
+       end
+       raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
+    -  mkdir_p "#{source_dir}/#{posts_dir}"
+    -  filename = "#{source_dir}/#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.#{new_post_ext}"
+    +  mkdir_p "#{org_posts_dir}"
+    +  filename = "#{org_posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.#{new_post_ext}"
+       if File.exist?(filename)
+         abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
+       end
+       puts "Creating new post: #{filename}"
+       open(filename, 'w') do |post|
+    +    post.puts "# -*- octopress-export-org-to-md-enabled : t -*-"
+    +    post.puts "#+title: #{title.gsub(/&/,'&amp;')}"
+    +    post.puts "#+date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
+    +    post.puts "#+begin_MD"
+         post.puts "---"
+         post.puts "layout: post"
+         post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
+    @@ -112,6 +117,7 @@ task :new_post, :title do |t, args|
+         post.puts "comments: true"
+         post.puts "categories: "
+         post.puts "---"
+    +    post.puts "#+end_MD"
+       end
+     end
+     
+    @@ -140,6 +146,9 @@ task :new_page, :filename do |t, args|
+         end
+         puts "Creating new page: #{file}"
+         open(file, 'w') do |page|
+    +      page.puts "#+title: #{title}"
+    +      page.puts "#+date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
+    +      page.puts "#+begin_MD"
+           page.puts "---"
+           page.puts "layout: page"
+           page.puts "title: \"#{title}\""
+    @@ -148,6 +157,7 @@ task :new_page, :filename do |t, args|
+           page.puts "sharing: true"
+           page.puts "footer: true"
+           page.puts "---"
+    +      page.puts "#+end_MD"
+         end
+
+とにかく動けばいいやって感じのhackだけど、まあこれでいいでしょ。快適だ
+し、わざわざファイル名を変えたりコピーしなくていいし。
+
+注意点。org-modeはgitで取得した最新版(8.0-pre)。旧来のexporterが使えな
+くなっているので注意。exportのメニュー画面がだいぶ変更されている。雑然
+としていたいままでのexport画面が改良されているのはいい感じだな。
+そもそも、今回のこれをやり始めたきっかけは、 `org-mode` を新しくしたら
+ [orgmode-markdown](https://github.com/alexhenning/ORGMODE-Markdown) が使えなくなっていたこと。その主な理由は、
+`orgmode-markdown` の依存している `org-export-generic` が、最新版では
+消去されているから。どうやら、一度oldextフォルダに移されて、しばらくし
+たらその全体が消されたようだ。
+
+さて、次の記事は卒論からポートしてきた `CL-RRT` か、それとも Yet
+Another オレオレLisp入門かな…。

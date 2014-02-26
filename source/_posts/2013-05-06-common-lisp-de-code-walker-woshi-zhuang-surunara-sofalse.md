@@ -1,0 +1,32 @@
+---
+layout: post
+title: "Common Lisp で Code Walker を実装するなら その②"
+date: 2013-05-06 15:26
+comments: true
+categories: 
+---
+
+
+前回の続き。状態を持つmacroletを書くにはどうすればいいのか！？
+これが答えだ！
+
+<!-- more -->
+
+# 回答: Compile-time で restart-bind
+
+{% include_code サンプルコード lang:cl walk-tree.lisp %}
+
+ね、面白いでしょ？ANSI Hyperspecにある `*macroexpand-hook*` をうまく使っ
+てみました。 `my-macro-start` が変な感じになっているのは、ここで書いた
+構造が入れ子になってる可能性があるので、スタックフレームをエミュレート
+しているんです。 **ん、え、スタック？**
+
+Schemerな人は言いたいことがすぐにわかることでしょう。ANSIの設計の何が悪
+いって、 `defmacro` が **継続を引数に取ってくれない** ことなんですよ。だ
+から、外側のマクロを展開した時に、内側のマクロ展開を行うときのレキシカ
+ル環境を操作できない。それだから中途半端な code-walker しか *簡単には*
+実装できないわけです。
+
+うーん、えーと、もう2,3個思いついたはずなんですけど、思いつかなかった
+ので、一つです。なにか他に案がある人はtwitterかgithub経由で教えてくだ
+さい(^^)
