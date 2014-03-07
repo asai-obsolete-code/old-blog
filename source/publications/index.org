@@ -31,8 +31,8 @@ See [[https://github.com/guicho271828][my github repo]] for the latest activity!
 
 + aaai-template -- For [[http://orgmode.org/][org-mode]] lovers and reserchers of artificial intelligence. A
   set of scripts and templates for faster publishing of papers with [[http://www.aaai.org/][AAAI]]
-  style. Images are assumed to be in a SVG format (I recommend Inkscape for editing
-  them). Included =Makefile= automates
+  style. Images are assumed to be in a SVG format (I recommend Inkscape as an
+  editor). Included =Makefile= automates
   + converting images to grayscale pngs
   + exporting =.org= files to =.tex= files
   + typeset the TeX files with pdflatex

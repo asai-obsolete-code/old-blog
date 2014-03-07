@@ -1,0 +1,71 @@
+#+begin_HTML
+---
+layout: post
+title: "^がlambdaの省略として使いにくいという話"
+date: 2014-03-01 10:34
+comments: true
+categories: 
+---
+#+end_HTML
+# Local Variables:
+# octopress-export-org-to-md: post 
+# End:
+
+お久しぶりです、浅井です。
+
+論文やばかったり人の論文読んだりgithubで議論したりする毎日ですが、
+表題の通りの議題について。
+
+じつは、自分 *括弧* を書くのがshiftキーのせいで結構苦痛に感じています。
+ええ、lisperなのにです。
+
+いや、括弧は好きなんです。好きなんですよ?大好きです。
+でも、僕は手がかなり小さい。
+<Right-shift + 8> は人差し指と小指を最大限伸ばして押すことになります。
+そう、さながらメロイック・サインみたいなカンジで入力しています。
+
+それでですね、二年くらい前、 /数字キーのそのシフトキーのXmodmapを入れ替えてみた/
+ことがあったんですよ。結局慣れずにもとに戻してしまいましたが。
+
+(通常)
+
+#+BEGIN_SRC 
+keycode  10 = 1 exclam 1 exclam
+keycode  11 = 2 quotedbl 2 quotedbl
+keycode  12 = 3 numbersign 3 numbersign
+keycode  13 = 4 dollar 4 dollar
+keycode  14 = 5 percent 5 percent
+keycode  15 = 6 ampersand 6 ampersand
+keycode  16 = 7 apostrophe 7 apostrophe
+keycode  17 = 8 parenleft 8 parenleft
+keycode  18 = 9 parenright 9 parenright
+keycode  19 = 0 asciitilde 0 asciitilde
+#+END_SRC
+
+(入れ替え)
+
+#+BEGIN_SRC 
+keycode  10 = exclam 1 exclam 1
+keycode  11 = quotedbl 2 quotedbl 2
+keycode  12 = numbersign 3 numbersign 3
+keycode  13 = dollar 4 dollar 4
+keycode  14 = percent 5 percent 5
+keycode  15 = ampersand 6 ampersand 6
+keycode  16 = apostrophe 7 apostrophe 7
+keycode  17 = parenleft 8 parenleft 8
+keycode  18 = parenright 9 parenright 9
+keycode  19 = asciitilde 0 asciitilde 0
+#+END_SRC
+
+だって、lisp書く最中で数字ってそんなに使いませんよ。なにに使うんですか。
+精々使っても 0 か 1 しか無いと思うんですよ。7とか8とか何時使うんですか。
+だったら数字のキーだけ常にCapsLock状態のほうがいいじゃないですか。
+括弧に殉ずるべきです。 /すべてはparenthesesのもとに！/
+
+これと同じ考え方をやれば、(まあ自分のキーボードでは =^= に shift は要りませんが)
+=^= をshift無しで入力することも簡単だと思います。
+あるいは、 =cl21-mode= みたいなマイナーモード作るとか。
+
+というわけです。括弧のためにキーアサインを変更する・・・。
+だれか真似してみたい人はいませんか。
+
