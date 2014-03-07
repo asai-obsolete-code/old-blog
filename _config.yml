@@ -109,14 +109,14 @@ gravatar_email: guicho2.71828@gmail.com
 
 mini_magick:
   thumbnail:
-    source: images/gallery
-    destination: images/gallery/thumbs
+    source: images/galleries/gallery
+    destination: images/galleries/gallery/thumbs
     commands:
       - thumbnail: "140x140^"
       - crop: "140x140-0x0"
   medium:
-    source: images/gallery
-    destination: images/gallery/medium
+    source: images/galleries/gallery
+    destination: images/galleries/gallery/medium
     commands:
       - resize: "600x400"
 

@@ -11,4 +11,9 @@ categories:
 # octopress-export-org-to-md: post 
 # End:
 
+ギャラリー機能のテスト。
+https://github.com/yortz/octopress_gallery
+
 #+HTML: {{ 'gallery' | image_list }}
+
+見た目はあんましよくないね。
