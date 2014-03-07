@@ -1,0 +1,1 @@
+../octopress_gallery/plugins/gallery_tag.rb

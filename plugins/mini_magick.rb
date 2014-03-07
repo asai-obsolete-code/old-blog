@@ -1,0 +1,1 @@
+../octopress_gallery/plugins/mini_magick.rb

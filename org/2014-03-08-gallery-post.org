@@ -1,0 +1,14 @@
+#+begin_HTML
+---
+layout: post
+title: "gallery post"
+date: 2014-03-08 00:29
+comments: true
+categories: 
+---
+#+end_HTML
+# Local Variables:
+# octopress-export-org-to-md: post 
+# End:
+
+#+HTML: {{ 'gallery' | image_list }}

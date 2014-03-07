@@ -1,3 +1,4 @@
+# -*- mode: yaml -*-
 # ----------------------- #
 #      Main Configs       #
 # ----------------------- #
@@ -105,4 +106,17 @@ facebook_like: true
 
 # Gravatar
 gravatar_email: guicho2.71828@gmail.com
+
+mini_magick:
+  thumbnail:
+    source: images/gallery
+    destination: images/gallery/thumbs
+    commands:
+      - thumbnail: "140x140^"
+      - crop: "140x140-0x0"
+  medium:
+    source: images/gallery
+    destination: images/gallery/medium
+    commands:
+      - resize: "600x400"
 
