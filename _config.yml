@@ -3,7 +3,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://guicho271828.github.com
+url: http://guicho271828.github.io
 title: CL-USER> (start-up (the engine *bp-ze*))
 subtitle: car-mods and common-lisp
 author: guicho2.71828

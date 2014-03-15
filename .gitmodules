@@ -1,3 +1,6 @@
 [submodule "octopress_gallery"]
 	path = octopress_gallery
 	url = https://github.com/yortz/octopress_gallery.git
+[submodule "gravatar-octopress"]
+	path = gravatar-octopress
+	url = https://github.com/joet3ch/gravatar-octopress.git
