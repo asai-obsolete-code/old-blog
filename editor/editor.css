@@ -1,0 +1,45 @@
+body {
+    background-color: lightgray;
+}
+table {
+    display : inline;
+    margin: 5px 10px;
+}
+td {
+    padding: 2px;
+    /* border: 1px solid lightgray; */
+}
+.selected {
+    /* border: 1px dotted black; */
+    background-color: gray;
+}
+td input {
+    width: 26px;
+    border-radius:2px;
+    border: 2px;
+    font-size: 11;
+}
+.diff {
+    font-size: 8;
+    font-weight:bold;
+}
+.old {
+    /* position: absolute; */
+    /* left: 50%; */
+}
+
+#tables {
+    /* position: relative; */
+    /* top : 50px; */
+}
+#control {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.bordered {
+    border: 1px dashed gray;
+    border-radius: 10px;
+    padding: 1em;
+}    

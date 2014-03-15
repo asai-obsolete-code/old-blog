@@ -1,0 +1,494 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Common Lisp で Code Walker を実装するなら - CL-USER> (start-up (the engine *bp-ze*))</title>
+  <meta name="author" content="guicho2.71828">
+
+  
+  <meta name="description" content="Common Lispを使っていると、みんな一度はマクロでDSLを実装したくなります
+よね。みなさんどうしてるでしょう。例えば、自分の作ったマクロ
+my-macro の中では、特定のS式、たとえば=my-clause= に特殊な意味を持つ
+節としての役割を与えたい時。 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://guicho271828.github.io/blog/2013/05/05/common-lisp-de-code-walker-woshi-zhuang-surunara">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="CL-USER> (start-up (the engine *bp-ze*))" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">CL-USER> (start-up (the engine *bp-ze*))</a></h1>
+  
+    <h2>car-mods and common-lisp</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:guicho271828.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/profile">Profile</a></li>
+  <li><a href="/publications">Publications</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/gallery">Gallery</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Common Lisp で Code Walker を実装するなら</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-05-05T22:01:00+09:00" pubdate data-updated="true">May 5<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Common Lispを使っていると、みんな一度はマクロでDSLを実装したくなります
+よね。みなさんどうしてるでしょう。例えば、自分の作ったマクロ
+<code>my-macro</code> の中では、特定のS式、たとえば=my-clause= に特殊な意味を持つ
+節としての役割を与えたい時。マクロは引数のS式を好きに扱えるので、なんで
+もありです。だから、例えば。</p>
+
+<!-- more -->
+
+
+
+
+<figure class='code'><figcaption><span>Walking the tree</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='cl'><span class='line'><span class="p">(</span><span class="nb">defun</span> <span class="nv">walk-tree</span> <span class="p">(</span><span class="nv">fn</span> <span class="nv">tree</span><span class="p">)</span>
+</span><span class='line'>  <span class="p">(</span><span class="nb">funcall</span> <span class="nv">fn</span> <span class="nv">tree</span>
+</span><span class='line'>           <span class="p">(</span><span class="k">lambda</span> <span class="p">(</span><span class="nv">branch</span><span class="p">)</span>
+</span><span class='line'>             <span class="p">(</span><span class="nb">mapcar</span> <span class="p">(</span><span class="k">lambda</span> <span class="p">(</span><span class="nv">branch</span><span class="p">)</span>
+</span><span class='line'>                       <span class="p">(</span><span class="nv">walk-tree</span> <span class="nv">fn</span> <span class="nv">branch</span><span class="p">))</span>
+</span><span class='line'>                     <span class="nv">branch</span><span class="p">))))</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">(</span><span class="nb">defun</span> <span class="nv">precompile-1-layer</span> <span class="p">(</span><span class="nv">sym</span> <span class="nv">fn</span> <span class="nv">form</span><span class="p">)</span>
+</span><span class='line'>  <span class="p">(</span><span class="nv">walk-tree</span>
+</span><span class='line'>   <span class="p">(</span><span class="k">lambda</span> <span class="p">(</span><span class="nv">subform</span> <span class="nv">cont</span><span class="p">)</span>
+</span><span class='line'>     <span class="p">(</span><span class="k">if</span> <span class="p">(</span><span class="nb">and</span> <span class="p">(</span><span class="nb">consp</span> <span class="nv">subform</span><span class="p">)</span>
+</span><span class='line'>              <span class="p">(</span><span class="nb">equalp</span> <span class="nv">sym</span> <span class="p">(</span><span class="nb">car</span> <span class="nv">subform</span><span class="p">)))</span>
+</span><span class='line'>         <span class="p">(</span><span class="nb">apply</span> <span class="nv">fn</span> <span class="p">(</span><span class="nb">cdr</span> <span class="nv">subform</span><span class="p">))</span>
+</span><span class='line'>         <span class="p">(</span><span class="k">if</span> <span class="p">(</span><span class="nb">consp</span> <span class="nv">subform</span><span class="p">)</span>
+</span><span class='line'>             <span class="p">(</span><span class="nb">funcall</span> <span class="nv">cont</span> <span class="nv">subform</span><span class="p">)</span>
+</span><span class='line'>             <span class="nv">subform</span><span class="p">)))</span>
+</span><span class='line'>   <span class="nv">form</span><span class="p">))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>みたいなのを定義して、該当シンボルを手動で検知して <code>macroexpand</code> の真似
+をする、といった手を使うことができちゃいます。</p>
+
+<figure class='code'><figcaption><span>And expand the code!</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class='cl'><span class='line'><span class="p">(</span><span class="nb">defmacro</span> <span class="nv">my-macro</span> <span class="p">(</span><span class="k">&amp;body</span> <span class="nv">body</span><span class="p">)</span>
+</span><span class='line'>  <span class="o">`</span><span class="p">(</span><span class="k">progn</span>
+</span><span class='line'>     <span class="o">,@</span><span class="p">(</span><span class="nv">precompile-1-layer</span>
+</span><span class='line'>        <span class="ss">&#39;my-clause</span>
+</span><span class='line'>        <span class="p">(</span><span class="k">lambda</span> <span class="p">(</span><span class="k">&amp;body</span> <span class="nv">body</span><span class="p">)</span>
+</span><span class='line'>          <span class="p">(</span><span class="k">progn</span> <span class="p">(</span><span class="nb">print</span> <span class="ss">:hi!</span><span class="p">)</span>
+</span><span class='line'>                 <span class="o">,@</span><span class="nv">body</span><span class="p">))</span>
+</span><span class='line'>        <span class="nv">body</span><span class="p">)))</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">(</span><span class="nv">my-macro</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">iter</span> <span class="p">(</span><span class="nv">for</span> <span class="nv">i</span> <span class="nv">below</span> <span class="mi">5</span><span class="p">)</span>
+</span><span class='line'>       <span class="p">(</span><span class="nb">print</span> <span class="nv">i</span><span class="p">)</span>
+</span><span class='line'>       <span class="p">(</span><span class="nv">my-clause</span>
+</span><span class='line'>        <span class="p">(</span><span class="nb">print</span> <span class="ss">:stupid!</span><span class="p">))))</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">;; macroexpansion result</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">(</span><span class="k">progn</span>
+</span><span class='line'>  <span class="p">(</span><span class="nv">iter</span> <span class="p">(</span><span class="nv">for</span> <span class="nv">i</span> <span class="nv">below</span> <span class="mi">5</span><span class="p">)</span>
+</span><span class='line'>        <span class="p">(</span><span class="nb">print</span> <span class="nv">i</span><span class="p">)</span>
+</span><span class='line'>        <span class="p">(</span><span class="k">progn</span>
+</span><span class='line'>          <span class="p">(</span><span class="nb">print</span> <span class="ss">:hi!</span><span class="p">)</span>
+</span><span class='line'>          <span class="p">(</span><span class="nb">print</span> <span class="ss">:stupid!</span><span class="p">))))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>いやまあ、ここで問題になるのが、 <code>macrolet</code> で指定した内容が全然反映され
+ないという事ですね。一言で言えば、頭悪い。</p>
+
+<figure class='code'><figcaption><span>Fail example</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='cl'><span class='line'><span class="p">(</span><span class="nv">my-macro</span>
+</span><span class='line'> <span class="p">(</span><span class="k">macrolet</span> <span class="p">((</span><span class="nv">my-clause</span> <span class="p">(</span><span class="k">&amp;body</span> <span class="nv">body</span><span class="p">)</span>
+</span><span class='line'>              <span class="p">(</span><span class="nb">subst</span> <span class="ss">:im-not-stupid!</span> <span class="ss">:stupid!</span> <span class="nv">body</span><span class="p">)))</span>
+</span><span class='line'>   <span class="p">(</span><span class="nv">iter</span> <span class="p">(</span><span class="nv">for</span> <span class="nv">i</span> <span class="nv">below</span> <span class="mi">5</span><span class="p">)</span>
+</span><span class='line'>         <span class="p">(</span><span class="nb">print</span> <span class="nv">i</span><span class="p">)</span>
+</span><span class='line'>         <span class="p">(</span><span class="nv">my-clause</span>
+</span><span class='line'>          <span class="p">(</span><span class="nb">print</span> <span class="ss">:stupid!</span><span class="p">)))))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>After the macroexpantion of `my-macro`</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='cl'><span class='line'><span class="p">(</span><span class="k">progn</span>
+</span><span class='line'> <span class="p">(</span><span class="k">macrolet</span> <span class="p">((</span><span class="nv">my-clause</span> <span class="p">(</span><span class="k">&amp;body</span> <span class="nv">body</span><span class="p">)</span>
+</span><span class='line'>              <span class="p">(</span><span class="nb">subst</span> <span class="ss">:im-not-stupid!</span> <span class="ss">:stupid!</span> <span class="nv">body</span><span class="p">)))</span>
+</span><span class='line'>  <span class="p">(</span><span class="nv">iter</span> <span class="p">(</span><span class="nv">for</span> <span class="nv">i</span> <span class="nv">below</span> <span class="mi">5</span><span class="p">)</span>
+</span><span class='line'>        <span class="p">(</span><span class="nb">print</span> <span class="nv">i</span><span class="p">)</span>
+</span><span class='line'>        <span class="p">(</span><span class="k">progn</span>
+</span><span class='line'>          <span class="p">(</span><span class="nb">print</span> <span class="ss">:hi!</span><span class="p">)</span>
+</span><span class='line'>          <span class="p">(</span><span class="nb">print</span> <span class="ss">:stupid!</span><span class="p">)))))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>my-clauseをバイパスして展開してしまっているので、内側のmy-clauseが反映
+されず、 <code>:stupid!</code> が <code>:im-not-stupid!</code> に変換されずに残っている。この問
+題が、<a href="http://m2ym.github.io/blog/2012/04/28/eval-in-macros/">m2ymさんも言っている</a> <strong>マクロ内でevalするな</strong> 問題です。</p>
+
+<p>でも、evalしないって辛いです。code walkをするなと言っているのと同様。
+じゃあどうすればいいのか。</p>
+
+<h1>全部Macroletに展開する</h1>
+
+<p>これは僕が <a href="https://github.com/guicho271828/inner-conditional">inner-conditional</a> ではじめに取った手法です。
+<code>macrolet</code> をどんどんネストさせるわけです。</p>
+
+<figure class='code'><figcaption><span>Macrolet</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='cl'><span class='line'><span class="p">(</span><span class="nb">defmacro</span> <span class="nv">my-macro</span> <span class="p">(</span><span class="k">&amp;body</span> <span class="nv">body</span><span class="p">)</span>
+</span><span class='line'>  <span class="o">`</span><span class="p">(</span><span class="k">macrolet</span> <span class="p">((</span><span class="nv">my-clause</span> <span class="p">(</span><span class="k">&amp;body</span> <span class="nv">body</span><span class="p">)</span>
+</span><span class='line'>                <span class="o">`</span><span class="p">(</span><span class="k">progn</span> <span class="p">(</span><span class="nb">print</span> <span class="ss">:hi!</span><span class="p">)</span>
+</span><span class='line'>                        <span class="o">,@</span><span class="nv">body</span><span class="p">)))</span>
+</span><span class='line'>     <span class="o">,@</span><span class="nv">body</span><span class="p">))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>これで今回のコードでは当面の目標は達成されます。でも、問題が・・・。な
+にが問題かというと、コンパイル時に変数を触ることができないということ。
+例えば上のコードで、</p>
+
+<pre><code>一回目は〇〇に展開し、二回目は☓☓に展開したい。
+</code></pre>
+
+<p>とか、</p>
+
+<pre><code>i回目にはiを用いて … に展開したい。その指定は実行時ではダメで、
+コンパイル時に定数として挿入したい。
+</code></pre>
+
+<p>とかいう需要があるときにどうするか。</p>
+
+<p><code>macrolet</code> はスペシャルフォームなので、そのマクロ定義だけをletで囲む
+なんてことはできません。出来れば嬉しいんだけれどねえ…</p>
+
+<figure class='code'><figcaption><span>Illegal example</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='cl'><span class='line'><span class="p">(</span><span class="k">macrolet</span> <span class="p">((</span><span class="k">let</span> <span class="p">((</span><span class="nv">i</span> <span class="mi">0</span><span class="p">))</span>
+</span><span class='line'>             <span class="p">(</span><span class="nv">my-clause</span> <span class="p">(</span><span class="k">&amp;body</span> <span class="nv">body</span><span class="p">)</span>
+</span><span class='line'>                <span class="p">(</span><span class="nb">incf</span> <span class="nv">i</span><span class="p">)</span>
+</span><span class='line'>                <span class="o">`</span><span class="p">(</span><span class="k">progn</span> <span class="p">(</span><span class="nb">print</span> <span class="o">,</span><span class="nv">i</span><span class="p">)</span>
+</span><span class='line'>                        <span class="o">,@</span><span class="nv">body</span><span class="p">))))</span>
+</span><span class='line'>  <span class="p">(</span><span class="nv">do-something</span><span class="p">))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>ではどうするか。例を示そうと思ったんですが、例を書くだけでも骨が折れる
+ようなコードだったので、続きは次の記事で。</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">guicho2.71828</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-05-05T22:01:00+09:00" pubdate data-updated="true">May 5<span>th</span>, 2013</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://guicho271828.github.io/blog/2013/05/05/common-lisp-de-code-walker-woshi-zhuang-surunara/" data-via="guicho271828" data-counturl="http://guicho271828.github.io/blog/2013/05/05/common-lisp-de-code-walker-woshi-zhuang-surunara/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/04/06/rodosutayong-falseromedeita/" title="Previous Post: ロードスター用のROMエディタ">&laquo; ロードスター用のROMエディタ</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/05/06/common-lisp-de-code-walker-woshi-zhuang-surunara-sofalse/" title="Next Post: Common Lisp で Code Walker を実装するなら その②">Common Lisp で Code Walker を実装するなら その② &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    
+<section>
+  <span>
+    <img src="http://www.gravatar.com/avatar/76ac0e4c0fedb9f2f2aa036d4e77018a?s=180"
+	 alt="Gravatar of guicho2.71828 "
+	 title="Gravatar of guicho2.71828" />
+  </span>
+</section>
+
+<section>
+  <h1>About Me</h1>
+  <p>
+   <ul>
+     <li> member of <a href="http://www.team-utac.com">Univ. Tokyo Automobile Club</a>.
+     <li> master in Grad. School of Tokyo University, Japan
+     <li> Common Lisp
+     <li> Emacs
+     <li> DIY engine mod (cylinder head, custom ECU, etc.)
+   </ul>
+  </p>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/03/15/sutairuwomotonili-sita/">スタイルをもとに戻した</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/03/08/gallery-post/">Gallery Post</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/03/01/galambdafalsesheng-lue-tositeshi-inikuitoiuhua/">^がlambdaの省略として使いにくいという話</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/17/cv-page-zuo-cheng-zhong/">CV Page 作成中</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/05/tesuto2/">テスト2</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/guicho271828">@guicho271828</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'guicho271828',
+            count: 2,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("guicho271828", 3, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/guicho271828" class="twitter-follow-button" data-show-count="false">Follow @guicho271828</a>
+  
+</section>
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - guicho2.71828 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

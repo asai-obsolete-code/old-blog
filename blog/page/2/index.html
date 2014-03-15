@@ -1,0 +1,747 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>CL-USER> (start-up (the engine *bp-ze*))</title>
+  <meta name="author" content="guicho2.71828">
+
+  
+  <meta name="description" content="そういえば、ブログを作ったのに
+ROMエディタをアップロードしてなかったので、
+公開しておきます。 アルゴリズムは Fire丸山 さんのものから変わっていません。
+エクセルがweb化したってのと、
+フォーマットがHEXになったってところしか違いはありません。
+結局機械語読めないので180km/ &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://guicho271828.github.io/blog/page/2">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="CL-USER> (start-up (the engine *bp-ze*))" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">CL-USER> (start-up (the engine *bp-ze*))</a></h1>
+  
+    <h2>car-mods and common-lisp</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:guicho271828.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/profile">Profile</a></li>
+  <li><a href="/publications">Publications</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/gallery">Gallery</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/04/06/rodosutayong-falseromedeita/">ロードスター用のROMエディタ</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-06T01:25:00+09:00" pubdate data-updated="true">Apr 6<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>そういえば、ブログを作ったのに
+ROMエディタをアップロードしてなかったので、
+公開しておきます。</p>
+
+<p>アルゴリズムは <a href="http://www.asahi-net.or.jp/~VS6N-MRYM/">Fire丸山</a> さんのものから変わっていません。
+エクセルがweb化したってのと、
+フォーマットがHEXになったってところしか違いはありません。
+結局機械語読めないので180km/hのリミッター解除アドレスも知らないし。
+レブリミットも替えられません。
+アドレス教えてください。</p>
+
+<p><a href="./editor/editor.html">ROMエディタへ</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/04/05/arduinodehuan-jing-dukuri/">Arduinoで環境づくり</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-05T17:59:00+09:00" pubdate data-updated="true">Apr 5<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Arduinoボードを買いました。
+お金ないのに・・・でも部のためなら仕方ない。</p>
+
+<p><img src="images/arduino.jpg" alt="Arduino Leonardo" /></p>
+
+<p>さて、最初に早速詰まったんだけど、
+Ubuntuのリポジトリに入ってるArduinoのSDKは最新版じゃない。
+そのせいで、Leonardoは対応してない。プログラムをアップロードできない。
+<strong>公式から最新版を得てくること。</strong></p>
+
+<p>で、いくつかやったら一瞬でサーボモータを動かせて驚愕する。
+これはスゴイ。
+Arduinoのマイコンプログラミングの敷居下げ能力はすばらしいぞ。</p>
+
+<p>そういうことで、環境づくり。
+Emacsユーザなので、もちろん純正のjavaアプレットみたいなエディタは気に
+入らない。結局半日かかった。</p>
+
+<p><a href="https://github.com/bookest/arduino-mode">arduino-mode</a> と <a href="https://github.com/mjoldfield/Arduino-Makefile">Arduino-Make</a> を導入。しかし・・・アップロードできない。</p>
+
+<p>Arduino Leonardoは、<a href="http://arduino.cc/en/Main/arduinoBoardLeonardo">公式</a>にあるように、ブートローダーの仕様がUnoらとは
+異なっている。安くするためのワンチップ構成が仇となっている。
+Arduino-Make はそこのところを無視しているためアップロードできないのだ。
+速攻で<a href="https://github.com/mjoldfield/Arduino-Makefile">Forkして</a> <a href="https://github.com/mjoldfield/Arduino-Makefile/pull/37">直してPull Request投げてやった</a>。人のコード使ってだけど。</p>
+
+<p>さて何つくろうか。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/28/oreorelispru-men/">オレオレlisp入門</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-28T18:03:00+09:00" pubdate data-updated="true">Mar 28<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Lispでプログラミングをはじめるには何をすればいいのか、まさに直接的な
+チュートリアルをつくろうと思い立ち、この記事を書き始めました。</p>
+
+<p>Common Lisp入門というともう今まで何度も何度も書かれてきたはずなので、今
+更何を書くことがあるかと考えるのが当然なんですが、残念ながら、それらの
+入門書が多数あるのにも関わらず使用者が少ない。</p>
+
+<p>自分の実体験からしても、やはりLispには何らかの情報不足の壁があって、参
+加者を拒んでいるような感じです。実際、自分がアクティブにCommon Lispの活
+動をできるようになったのはつい最近です。CLについて勉強し始めたのは2年前
+の夏でしたから、どうにもちょっと時間がかかりすぎている。</p>
+
+<p>これはまったくまとまった記事ではありません。ただ、ダラダラと書くうちに、
+やはり自分が詰まったところが思い出されました。これがcl初心者への道標
+になればと思います。</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/03/28/oreorelispru-men/">(continue-to (rest article)) &#8211;></a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/28/zui-xin-ban-falseorg-mode-8-dot-0-preview-wooctopresstolian-xi-saseru/">最新版のOrg-mode (8.0 preview)をOctopressと連携させる</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-28T13:15:00+09:00" pubdate data-updated="true">Mar 28<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>たぶんこれでいけた。.emacsを編集して、かつRakefileをちょこっと変更する
+だけ。基本方針は、File local variables を使って、ファイルを保存すると同
+時にorg-modeからmarkdownに変換する。orgのファイルは
+<code>$octopress-root$/org/</code> に入れる。そしたら
+<code>$octopress-root$/source/_posts</code> にmdファイルが移る。</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/03/28/zui-xin-ban-falseorg-mode-8-dot-0-preview-wooctopresstolian-xi-saseru/">(continue-to (rest article)) &#8211;></a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/14/utac-leaflet-back/">UTAC Leaflet</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-14T10:57:00+09:00" pubdate data-updated="true">Mar 14<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>自動車部のポスターの続き。
+製作時間はやはりまる一日(半日*2ぐらい)。
+ソフトウェアは、途中までGIMPでやっていたけど、
+文字が多くてレイアウト調整が必要だったのと、
+画像的に編集した文字列を直接編集できないのがめんどうだったので、
+途中でInkscapeに乗り換えた。</p>
+
+<p><a href="/images/2013sinkan_back.jpg"><img class="center" src="/images/2013sinkan_back.jpg" width="450" title="'UTAC leaflet'" ></a></p>
+
+<p>使ったもの :</p>
+
+<ul>
+<li><strong>部員の車の写真</strong>
+
+<ul>
+<li>ガレージでのFDの写真</li>
+<li>群サイで練習した時のエボ4+インプレッサ</li>
+<li>自分のエンジンのヘッドをオーバーホールした時の写真</li>
+<li>後輩のホイール</li>
+</ul>
+</li>
+<li><strong>フォント</strong>
+
+<ul>
+<li>特にオモテとは変えていません</li>
+<li>日本語の部分はTakaoPゴシックで調度良かったのでそれで統一</li>
+<li>強調のところはニタラゴルイカ教漢の太いやつだっけ？</li>
+<li>スケジュールの太い所も同じ。</li>
+</ul>
+</li>
+</ul>
+
+
+<p>背景と、それぞれの写真のレタッチはGIMPでやった。Inkscapeはそれらの貼り合
+わせと文章の挿入、およびレイアウトのために使った。</p>
+
+<hr />
+
+<p>ところで、デジタルオシロ手に入れた</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/14/utac-leaflet/">UTAC Leaflet</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-14T10:57:00+09:00" pubdate data-updated="true">Mar 14<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>自動車部のポスターを作りました。
+製作時間はまる一日。ソフトウェアはもちろんGIMP。</p>
+
+<p><a href="/images/2013sinkan_head.jpg"><img class="center" src="/images/2013sinkan_head.jpg" width="450" title="'UTAC leaflet'" ></a></p>
+
+<p>使ったもの :</p>
+
+<ul>
+<li><strong>マツダの企業ロゴ</strong>
+
+<ul>
+<li>左上から楔のようなものがドカンと刺さってくるデザ
+インは、マツダの最近のロゴをぱくったもの。</li>
+</ul>
+</li>
+<li><strong>MAZDA font</strong>
+
+<ul>
+<li>同じく最近のマツダのロゴに使われてるフォント。スカイア
+クティブの字体がこれ。フランス語の怪しげなサイトから見つけてきた。た
+ぶん誰かが作ってくれたものだと思う。</li>
+</ul>
+</li>
+<li><strong>Splash系のブラシ</strong>
+
+<ul>
+<li>参考にしたのは
+<a href="http://gimp2-how-to-use.blogspot.jp/2012/06/blog-post_08.html">http://gimp2-how-to-use.blogspot.jp/2012/06/blog-post_08.html</a></li>
+</ul>
+</li>
+</ul>
+
+
+<p>これで新入生が入ってくれると嬉しいわ。</p>
+
+<hr />
+
+<p>さて、学科の卒業パーティなんだけど、6000円が高すぎていく気がなくなって
+きてる…。このままだと <a href="http://atnd.org/events/37420">Lisp Meetup</a>に行
+ってしまう気がする。ルヴェソンベールは高いんだよ。なんでそんなとこ使う
+の(&mdash;;)</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/06/third-commit/">Third Commit</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-06T23:15:00+09:00" pubdate data-updated="true">Mar 6<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>テスト投稿３つ目。</p>
+
+<h1>gravatarを追加した。</h1>
+
+<p>満面の笑み。</p>
+
+<h1>ちょっとliquidについて調べた。</h1>
+
+<p>なんでこう、テンプレートライブラリって蜂の子のように湧いて出てくるかな。</p>
+
+<p>「定数文字列を出力するコード」にコンパイルするCL-WHO最強。これだけはど
+の言語にも勝てない。ファイルを監視して・・・とか、そういう機能はマクロ
+を持たない言語だけがやっていれば良い。変更したらC-c C-cでその関数だけコ
+ンパイルすればいいのだ。</p>
+
+<h1>残り</h1>
+
+<ul>
+<li>scss も理解した &lt;&lt; 往年の宿題</li>
+<li>デフォルトの文字がでかい。デカすぎ >> 小さくできた</li>
+<li>hoverで下線がダサい >> 消した</li>
+<li>青系よりも赤系が好きなのでそちらにした。</li>
+</ul>
+
+
+<p>はあ、今日はバイトの事をするはずだったのに、自分のブログの設定に費やし
+てしまった。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/06/second-commit/">Second Commit</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-06T23:03:00+09:00" pubdate data-updated="true">Mar 6<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>早くmarkdownからorgに移行しないとな。</p>
+
+<p>まだいろいろと機能の確認中。ある程度自由に書ける&amp;設定をいじれるようになっ
+て、環境が整ったら、いよいよ書かなくてはいけないことを書こう。</p>
+
+<h1>見出し</h1>
+
+<p>見出しが # だと全部H1になってしまって問題だな。
+どうにかできないのかこれ。ファイル名からメインのタイトルを取るんだから、
+本文中の # はH2にするべきだろ。スタイルシートでやっても全部ごちゃごちゃ
+になっちゃうだろうし….</p>
+
+<p>とりあえず、firebugでjekyllがどんなソースを吐いてるのか監視しながらやっ
+てみる。すると、ファイル名から来たタイトルの方はentity-titleというクラ
+スになってることはわかった。どうやらスタイルシートでごちゃごちゃになる
+わけではなさそうだ。</p>
+
+<h2>テーマ編集</h2>
+
+<p>テーマの編集のために色々調べてるけど… sassは初めて使うから慣れてない。
+前使ったのはなんだっけ？たしかsassではなくて別のスタイルシート言語だっ
+た覚えがある。</p>
+
+<h2>rakeのバージョン</h2>
+
+<p>rakeのバージョンが <em>新しすぎる</em> せいでなんか毎回 bundle exec rake &hellip; とし
+なくてはいけなくなってる。これ、このフォルダで指定できるようにできない
+のか。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/06/first-commit/">First Commit</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-06T22:35:00+09:00" pubdate data-updated="true">Mar 6<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>とりあえずOctopressでブログ始めてみた・・・
+仕事でrubyを使うのならrubyと関わっておくことも重要かなと。</p>
+
+<p>…本当は全部lispで作りたいんだけどね。仕方ない。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    
+<section>
+  <span>
+    <img src="http://www.gravatar.com/avatar/76ac0e4c0fedb9f2f2aa036d4e77018a?s=180"
+	 alt="Gravatar of guicho2.71828 "
+	 title="Gravatar of guicho2.71828" />
+  </span>
+</section>
+
+<section>
+  <h1>About Me</h1>
+  <p>
+   <ul>
+     <li> member of <a href="http://www.team-utac.com">Univ. Tokyo Automobile Club</a>.
+     <li> master in Grad. School of Tokyo University, Japan
+     <li> Common Lisp
+     <li> Emacs
+     <li> DIY engine mod (cylinder head, custom ECU, etc.)
+   </ul>
+  </p>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/03/15/sutairuwomotonili-sita/">スタイルをもとに戻した</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/03/08/gallery-post/">Gallery Post</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/03/01/galambdafalsesheng-lue-tositeshi-inikuitoiuhua/">^がlambdaの省略として使いにくいという話</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/17/cv-page-zuo-cheng-zhong/">CV Page 作成中</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/05/tesuto2/">テスト2</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/guicho271828">@guicho271828</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'guicho271828',
+            count: 2,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("guicho271828", 3, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/guicho271828" class="twitter-follow-button" data-show-count="false">Follow @guicho271828</a>
+  
+</section>
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - guicho2.71828 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

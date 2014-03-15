@@ -1,0 +1,597 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Common Lisp で Code Walker を実装するなら その② - CL-USER> (start-up (the engine *bp-ze*))</title>
+  <meta name="author" content="guicho2.71828">
+
+  
+  <meta name="description" content="前回の続き。状態を持つmacroletを書くにはどうすればいいのか！？
+これが答えだ！ 回答: Compile-time で restart-bind サンプルコード (walk-tree.lisp) download
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://guicho271828.github.io/blog/2013/05/06/common-lisp-de-code-walker-woshi-zhuang-surunara-sofalse">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="CL-USER> (start-up (the engine *bp-ze*))" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">CL-USER> (start-up (the engine *bp-ze*))</a></h1>
+  
+    <h2>car-mods and common-lisp</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:guicho271828.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/profile">Profile</a></li>
+  <li><a href="/publications">Publications</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/gallery">Gallery</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Common Lisp で Code Walker を実装するなら その②</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-05-06T15:26:00+09:00" pubdate data-updated="true">May 6<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>前回の続き。状態を持つmacroletを書くにはどうすればいいのか！？
+これが答えだ！</p>
+
+<!-- more -->
+
+
+<h1>回答: Compile-time で restart-bind</h1>
+
+<figure class='code'><figcaption><span>サンプルコード  (walk-tree.lisp)</span> <a href='/codes/walk-tree.lisp'>download</a></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+<span class='line-number'>104</span>
+<span class='line-number'>105</span>
+<span class='line-number'>106</span>
+<span class='line-number'>107</span>
+<span class='line-number'>108</span>
+<span class='line-number'>109</span>
+<span class='line-number'>110</span>
+<span class='line-number'>111</span>
+<span class='line-number'>112</span>
+<span class='line-number'>113</span>
+<span class='line-number'>114</span>
+<span class='line-number'>115</span>
+<span class='line-number'>116</span>
+<span class='line-number'>117</span>
+<span class='line-number'>118</span>
+<span class='line-number'>119</span>
+<span class='line-number'>120</span>
+<span class='line-number'>121</span>
+<span class='line-number'>122</span>
+<span class='line-number'>123</span>
+<span class='line-number'>124</span>
+<span class='line-number'>125</span>
+<span class='line-number'>126</span>
+<span class='line-number'>127</span>
+<span class='line-number'>128</span>
+<span class='line-number'>129</span>
+<span class='line-number'>130</span>
+<span class='line-number'>131</span>
+<span class='line-number'>132</span>
+</pre></td><td class='code'><pre><code class='cl'><span class='line'><span class="p">(</span><span class="nb">use-package</span> <span class="ss">:alexandria</span><span class="p">)</span>
+</span><span class='line'><span class="p">(</span><span class="nv">cl-syntax:use-syntax</span> <span class="ss">:annot</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">(</span><span class="nb">define-condition</span> <span class="nv">undefined-clause</span> <span class="p">(</span><span class="kt">simple-condition</span><span class="p">)</span>
+</span><span class='line'>  <span class="p">((</span><span class="nv">form</span> <span class="ss">:initarg</span> <span class="ss">:form</span> <span class="ss">:accessor</span> <span class="nv">form</span><span class="p">)</span>
+</span><span class='line'>   <span class="p">(</span><span class="nv">environment</span> <span class="ss">:initarg</span> <span class="ss">:environment</span> <span class="ss">:accessor</span> <span class="nv">environment</span><span class="p">))</span>
+</span><span class='line'>  <span class="p">(</span><span class="ss">:report</span> <span class="p">(</span><span class="k">lambda</span> <span class="p">(</span><span class="nv">c</span> <span class="nv">s</span><span class="p">)</span>
+</span><span class='line'>       <span class="p">(</span><span class="nb">format</span> <span class="nv">s</span> <span class="s">&quot;~a~% is not a bound macro in ~a&quot;</span>
+</span><span class='line'>           <span class="p">(</span><span class="nv">form</span> <span class="nv">c</span><span class="p">)</span>
+</span><span class='line'>           <span class="p">(</span><span class="nv">environment</span> <span class="nv">c</span><span class="p">)))))</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">(</span><span class="nb">defmacro</span> <span class="nv">my-clause</span> <span class="p">(</span><span class="k">&amp;whole</span> <span class="nv">form</span> <span class="k">&amp;body</span> <span class="nv">body</span> <span class="k">&amp;environment</span> <span class="nv">env</span><span class="p">)</span>
+</span><span class='line'>  <span class="nv">@ignore</span> <span class="nv">body</span>
+</span><span class='line'>  <span class="p">(</span><span class="nb">restart-case</span> <span class="p">(</span><span class="nb">error</span> <span class="ss">&#39;undefined-clause</span> <span class="ss">:form</span> <span class="nv">form</span> <span class="ss">:environment</span> <span class="nv">env</span><span class="p">)</span>
+</span><span class='line'>    <span class="p">(</span><span class="nb">use-value</span> <span class="p">(</span><span class="nv">c</span><span class="p">)</span>
+</span><span class='line'>      <span class="ss">:interactive</span> <span class="p">(</span><span class="k">lambda</span> <span class="p">()</span> <span class="p">(</span><span class="nb">read</span><span class="p">))</span>
+</span><span class='line'>      <span class="nv">c</span><span class="p">)))</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="p">(</span><span class="k">let</span> <span class="p">(</span><span class="nv">previous-hooks</span><span class="p">)</span>
+</span><span class='line'>  <span class="p">(</span><span class="nb">defmacro</span> <span class="nv">my-macro-start</span> <span class="p">()</span>
+</span><span class='line'>    <span class="p">(</span><span class="nb">push</span> <span class="vg">*macroexpand-hook*</span> <span class="nv">previous-hooks</span><span class="p">)</span>
+</span><span class='line'>    <span class="p">(</span><span class="k">let</span> <span class="p">((</span><span class="nv">i</span> <span class="mi">0</span><span class="p">)</span> <span class="p">(</span><span class="nv">prev</span> <span class="p">(</span><span class="nb">car</span> <span class="nv">previous-hooks</span><span class="p">)))</span>
+</span><span class='line'>      <span class="p">(</span><span class="k">flet</span> <span class="p">((</span><span class="nv">hook</span> <span class="p">(</span><span class="nv">expander</span> <span class="nv">form</span> <span class="nv">env</span><span class="p">)</span>
+</span><span class='line'>         <span class="p">(</span><span class="nb">handler-bind</span>
+</span><span class='line'>         <span class="p">((</span><span class="nv">undefined-clause</span>
+</span><span class='line'>           <span class="p">(</span><span class="k">lambda</span> <span class="p">(</span><span class="nv">c</span><span class="p">)</span>
+</span><span class='line'>             <span class="p">(</span><span class="nb">incf</span> <span class="nv">i</span><span class="p">)</span>
+</span><span class='line'>             <span class="p">(</span><span class="nb">use-value</span>
+</span><span class='line'>          <span class="o">`</span><span class="p">(</span><span class="nb">format</span>
+</span><span class='line'>            <span class="no">t</span> <span class="s">&quot;~%~ath expansion of my-clause~%~</span>
+</span><span class='line'><span class="s">                             ~a&quot;</span> <span class="o">,</span><span class="nv">i</span> <span class="ss">&#39;,</span><span class="p">(</span><span class="nv">form</span> <span class="nv">c</span><span class="p">))))))</span>
+</span><span class='line'>       <span class="p">(</span><span class="nb">funcall</span> <span class="nv">prev</span> <span class="nv">expander</span> <span class="nv">form</span> <span class="nv">env</span><span class="p">))))</span>
+</span><span class='line'>  <span class="p">(</span><span class="nb">setf</span> <span class="vg">*macroexpand-hook*</span> <span class="nf">#&#39;</span><span class="nv">hook</span><span class="p">)</span>
+</span><span class='line'>  <span class="o">`</span><span class="p">(</span><span class="k">progn</span><span class="p">))))</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="p">(</span><span class="nb">defmacro</span> <span class="nv">my-macro-end</span> <span class="p">()</span>
+</span><span class='line'>    <span class="p">(</span><span class="nb">setf</span> <span class="vg">*macroexpand-hook*</span> <span class="p">(</span><span class="nb">pop</span> <span class="nv">previous-hooks</span><span class="p">))</span>
+</span><span class='line'>    <span class="o">`</span><span class="p">(</span><span class="k">progn</span><span class="p">)))</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">(</span><span class="nb">defmacro</span> <span class="nv">my-macro</span> <span class="p">(</span><span class="k">&amp;body</span> <span class="nv">body</span><span class="p">)</span>
+</span><span class='line'>  <span class="o">`</span><span class="p">(</span><span class="k">progn</span>
+</span><span class='line'>     <span class="p">(</span><span class="nv">my-macro-start</span><span class="p">)</span>
+</span><span class='line'>     <span class="o">,@</span><span class="nv">body</span>
+</span><span class='line'>     <span class="p">(</span><span class="nv">my-macro-end</span><span class="p">)))</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">(</span><span class="nv">my-macro</span>
+</span><span class='line'>  <span class="p">(</span><span class="nb">print</span> <span class="ss">:hi</span><span class="p">)</span>
+</span><span class='line'>  <span class="p">(</span><span class="nv">my-clause</span>
+</span><span class='line'>    <span class="p">(</span><span class="nb">print</span> <span class="ss">:ok</span><span class="p">)</span>
+</span><span class='line'>    <span class="p">(</span><span class="nb">print</span> <span class="ss">:fine</span><span class="p">))</span>
+</span><span class='line'>  <span class="p">(</span><span class="k">macrolet</span> <span class="p">((</span><span class="nv">my-clause</span> <span class="p">(</span><span class="k">&amp;body</span> <span class="nv">body</span><span class="p">)</span>
+</span><span class='line'>      <span class="o">`</span><span class="p">(</span><span class="k">progn</span>
+</span><span class='line'>         <span class="o">,@</span><span class="p">(</span><span class="nb">loop</span> <span class="nv">for</span> <span class="nv">form</span> <span class="nv">in</span> <span class="nv">body</span>
+</span><span class='line'>          <span class="nv">collect</span> <span class="o">&#39;</span><span class="p">(</span><span class="nb">print</span> <span class="ss">:expanded-by-macrolet</span><span class="p">)))))</span>
+</span><span class='line'>    <span class="p">(</span><span class="nv">my-clause</span>
+</span><span class='line'>      <span class="p">(</span><span class="nb">print</span> <span class="ss">:this-is-ignored</span><span class="p">)</span>
+</span><span class='line'>      <span class="p">(</span><span class="nb">print</span> <span class="p">(</span><span class="nb">+</span> <span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">))</span>
+</span><span class='line'>      <span class="p">(</span><span class="nb">print</span> <span class="ss">:this-is-ignored</span><span class="p">)))</span>
+</span><span class='line'>  <span class="p">(</span><span class="nb">print</span> <span class="ss">:im-hungry-where-is-supper!</span><span class="p">)</span>
+</span><span class='line'>  <span class="p">(</span><span class="nv">my-clause</span>
+</span><span class='line'>    <span class="p">(</span><span class="nb">print</span> <span class="ss">:not-ok</span><span class="p">)</span>
+</span><span class='line'>    <span class="p">(</span><span class="nb">print</span> <span class="ss">:bad</span><span class="p">))</span>
+</span><span class='line'>  <span class="p">(</span><span class="nb">print</span> <span class="ss">:bye</span><span class="p">))</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">;; --&gt; macroexpand-1 result</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">(</span><span class="nv">PROGN</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">MY-MACRO-START</span><span class="p">)</span> <span class="c1">;; macroexpanding this clause causes a side-effect</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:HI</span><span class="p">)</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">MY-CLAUSE</span>
+</span><span class='line'>   <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:OK</span><span class="p">)</span>
+</span><span class='line'>   <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:FINE</span><span class="p">))</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">MACROLET</span> <span class="p">((</span><span class="nv">MY-CLAUSE</span> <span class="p">(</span><span class="nv">&amp;BODY</span> <span class="nv">BODY</span><span class="p">)</span>
+</span><span class='line'>              <span class="o">`</span><span class="p">(</span><span class="nv">PROGN</span>
+</span><span class='line'>                <span class="o">,@</span><span class="p">(</span><span class="nv">LOOP</span> <span class="nv">FOR</span> <span class="nv">FORM</span> <span class="nv">IN</span> <span class="nv">BODY</span>
+</span><span class='line'>                        <span class="nv">COLLECT</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:EXPANDED-BY-MACROLET</span><span class="p">)))))</span>
+</span><span class='line'>   <span class="p">(</span><span class="nv">MY-CLAUSE</span>
+</span><span class='line'>     <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:THIS-IS-IGNORED</span><span class="p">)</span>
+</span><span class='line'>     <span class="p">(</span><span class="nv">PRINT</span> <span class="p">(</span><span class="nb">+</span> <span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">))</span>
+</span><span class='line'>     <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:THIS-IS-IGNORED</span><span class="p">)))</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:IM-HUNGRY-WHERE-IS-SUPPER!</span><span class="p">)</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">MY-CLAUSE</span>
+</span><span class='line'>   <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:NOT-OK</span><span class="p">)</span>
+</span><span class='line'>   <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:BAD</span><span class="p">))</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:BYE</span><span class="p">)</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">MY-MACRO-END</span><span class="p">))</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">;; --&gt; full expansion result </span>
+</span><span class='line'><span class="c1">;; (expected, since C-c C-m doesn&#39;t handle local macro)</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">(</span><span class="nv">PROGN</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">PROGN</span><span class="p">)</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:HI</span><span class="p">)</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">FORMAT</span> <span class="no">T</span> <span class="s">&quot;~%~ath expansion of my-clause~%~</span>
+</span><span class='line'><span class="s">                              ~a&quot;</span>
+</span><span class='line'>         <span class="mi">1</span>
+</span><span class='line'>         <span class="o">&#39;</span><span class="p">(</span><span class="nv">MY-CLAUSE</span>
+</span><span class='line'>            <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:OK</span><span class="p">)</span>
+</span><span class='line'>            <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:FINE</span><span class="p">)))</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">PROGN</span>
+</span><span class='line'>   <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:EXPANDED-BY-MACROLET</span><span class="p">)</span>
+</span><span class='line'>   <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:EXPANDED-BY-MACROLET</span><span class="p">)</span>
+</span><span class='line'>   <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:EXPANDED-BY-MACROLET</span><span class="p">))</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:IM-HUNGRY-WHERE-IS-SUPPER!</span><span class="p">)</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">FORMAT</span> <span class="no">T</span> <span class="s">&quot;~%~ath expansion of my-clause~%~</span>
+</span><span class='line'><span class="s">                              ~a&quot;</span>
+</span><span class='line'>         <span class="mi">2</span>
+</span><span class='line'>         <span class="o">&#39;</span><span class="p">(</span><span class="nv">MY-CLAUSE</span>
+</span><span class='line'>            <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:NOT-OK</span><span class="p">)</span>
+</span><span class='line'>            <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:BAD</span><span class="p">)))</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:BYE</span><span class="p">)</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">PROGN</span><span class="p">))</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">;; --&gt; print result</span>
+</span><span class='line'><span class="c1">;; </span>
+</span><span class='line'><span class="c1">;; :HI </span>
+</span><span class='line'><span class="c1">;; 1th expansion of my-clause</span>
+</span><span class='line'><span class="c1">;; (MY-CLAUSE</span>
+</span><span class='line'><span class="c1">;;   (PRINT OK)</span>
+</span><span class='line'><span class="c1">;;   (PRINT FINE))</span>
+</span><span class='line'><span class="c1">;; :EXPANDED-BY-MACROLET </span>
+</span><span class='line'><span class="c1">;; :EXPANDED-BY-MACROLET </span>
+</span><span class='line'><span class="c1">;; :EXPANDED-BY-MACROLET </span>
+</span><span class='line'><span class="c1">;; :IM-HUNGRY-WHERE-IS-SUPPER! </span>
+</span><span class='line'><span class="c1">;; 2th expansion of my-clause</span>
+</span><span class='line'><span class="c1">;; (MY-CLAUSE</span>
+</span><span class='line'><span class="c1">;;   (PRINT NOT-OK)</span>
+</span><span class='line'><span class="c1">;;   (PRINT BAD))</span>
+</span><span class='line'><span class="c1">;; :BYE </span>
+</span><span class='line'><span class="c1">;; NIL</span>
+</span><span class='line'><span class="c1">;; CL-USER&gt; </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>ね、面白いでしょ？ANSI Hyperspecにある <code>*macroexpand-hook*</code> をうまく使っ
+てみました。 <code>my-macro-start</code> が変な感じになっているのは、ここで書いた
+構造が入れ子になってる可能性があるので、スタックフレームをエミュレート
+しているんです。 <strong>ん、え、スタック？</strong></p>
+
+<p>Schemerな人は言いたいことがすぐにわかることでしょう。ANSIの設計の何が悪
+いって、 <code>defmacro</code> が <strong>継続を引数に取ってくれない</strong> ことなんですよ。だ
+から、外側のマクロを展開した時に、内側のマクロ展開を行うときのレキシカ
+ル環境を操作できない。それだから中途半端な code-walker しか <em>簡単には</em>
+実装できないわけです。</p>
+
+<p>うーん、えーと、もう2,3個思いついたはずなんですけど、思いつかなかった
+ので、一つです。なにか他に案がある人はtwitterかgithub経由で教えてくだ
+さい(^^)</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">guicho2.71828</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-05-06T15:26:00+09:00" pubdate data-updated="true">May 6<span>th</span>, 2013</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://guicho271828.github.io/blog/2013/05/06/common-lisp-de-code-walker-woshi-zhuang-surunara-sofalse/" data-via="guicho271828" data-counturl="http://guicho271828.github.io/blog/2013/05/06/common-lisp-de-code-walker-woshi-zhuang-surunara-sofalse/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/05/05/common-lisp-de-code-walker-woshi-zhuang-surunara/" title="Previous Post: Common Lisp で Code Walker を実装するなら">&laquo; Common Lisp で Code Walker を実装するなら</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/05/06/shao-jie-raiburari-inner-conditional/" title="Next Post: 紹介: ライブラリ Inner-conditional">紹介: ライブラリ Inner-conditional &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    
+<section>
+  <span>
+    <img src="http://www.gravatar.com/avatar/76ac0e4c0fedb9f2f2aa036d4e77018a?s=180"
+	 alt="Gravatar of guicho2.71828 "
+	 title="Gravatar of guicho2.71828" />
+  </span>
+</section>
+
+<section>
+  <h1>About Me</h1>
+  <p>
+   <ul>
+     <li> member of <a href="http://www.team-utac.com">Univ. Tokyo Automobile Club</a>.
+     <li> master in Grad. School of Tokyo University, Japan
+     <li> Common Lisp
+     <li> Emacs
+     <li> DIY engine mod (cylinder head, custom ECU, etc.)
+   </ul>
+  </p>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/03/15/sutairuwomotonili-sita/">スタイルをもとに戻した</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/03/08/gallery-post/">Gallery Post</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/03/01/galambdafalsesheng-lue-tositeshi-inikuitoiuhua/">^がlambdaの省略として使いにくいという話</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/17/cv-page-zuo-cheng-zhong/">CV Page 作成中</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/05/tesuto2/">テスト2</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/guicho271828">@guicho271828</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'guicho271828',
+            count: 2,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("guicho271828", 3, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/guicho271828" class="twitter-follow-button" data-show-count="false">Follow @guicho271828</a>
+  
+</section>
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - guicho2.71828 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

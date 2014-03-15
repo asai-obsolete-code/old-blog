@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: car | CL-USER> (start-up (the engine *bp-ze*))]]></title>
+  <link href="http://guicho271828.github.io/blog/categories/car/atom.xml" rel="self"/>
+  <link href="http://guicho271828.github.io/"/>
+  <updated>2014-03-15T21:54:22+09:00</updated>
+  <id>http://guicho271828.github.io/</id>
+  <author>
+    <name><![CDATA[guicho2.71828]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[UTAC leaflet]]></title>
+    <link href="http://guicho271828.github.io/blog/2013/03/14/utac-leaflet-back/"/>
+    <updated>2013-03-14T10:57:00+09:00</updated>
+    <id>http://guicho271828.github.io/blog/2013/03/14/utac-leaflet-back</id>
+    <content type="html"><![CDATA[<p>自動車部のポスターの続き。
+製作時間はやはりまる一日(半日*2ぐらい)。
+ソフトウェアは、途中までGIMPでやっていたけど、
+文字が多くてレイアウト調整が必要だったのと、
+画像的に編集した文字列を直接編集できないのがめんどうだったので、
+途中でInkscapeに乗り換えた。</p>
+
+<p><a href="/images/2013sinkan_back.jpg"><img class="center" src="/images/2013sinkan_back.jpg" width="450" title="&lsquo;UTAC leaflet&rsquo;" ></a></p>
+
+<p>使ったもの :</p>
+
+<ul>
+<li><strong>部員の車の写真</strong>
+
+<ul>
+<li>ガレージでのFDの写真</li>
+<li>群サイで練習した時のエボ4+インプレッサ</li>
+<li>自分のエンジンのヘッドをオーバーホールした時の写真</li>
+<li>後輩のホイール</li>
+</ul>
+</li>
+<li><strong>フォント</strong>
+
+<ul>
+<li>特にオモテとは変えていません</li>
+<li>日本語の部分はTakaoPゴシックで調度良かったのでそれで統一</li>
+<li>強調のところはニタラゴルイカ教漢の太いやつだっけ？</li>
+<li>スケジュールの太い所も同じ。</li>
+</ul>
+</li>
+</ul>
+
+
+<p>背景と、それぞれの写真のレタッチはGIMPでやった。Inkscapeはそれらの貼り合
+わせと文章の挿入、およびレイアウトのために使った。</p>
+
+<hr />
+
+<p>ところで、デジタルオシロ手に入れた</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[UTAC leaflet]]></title>
+    <link href="http://guicho271828.github.io/blog/2013/03/14/utac-leaflet/"/>
+    <updated>2013-03-14T10:57:00+09:00</updated>
+    <id>http://guicho271828.github.io/blog/2013/03/14/utac-leaflet</id>
+    <content type="html"><![CDATA[<p>自動車部のポスターを作りました。
+製作時間はまる一日。ソフトウェアはもちろんGIMP。</p>
+
+<p><a href="/images/2013sinkan_head.jpg"><img class="center" src="/images/2013sinkan_head.jpg" width="450" title="&lsquo;UTAC leaflet&rsquo;" ></a></p>
+
+<p>使ったもの :</p>
+
+<ul>
+<li><strong>マツダの企業ロゴ</strong>
+
+<ul>
+<li>左上から楔のようなものがドカンと刺さってくるデザ
+インは、マツダの最近のロゴをぱくったもの。</li>
+</ul>
+</li>
+<li><strong>MAZDA font</strong>
+
+<ul>
+<li>同じく最近のマツダのロゴに使われてるフォント。スカイア
+クティブの字体がこれ。フランス語の怪しげなサイトから見つけてきた。た
+ぶん誰かが作ってくれたものだと思う。</li>
+</ul>
+</li>
+<li><strong>Splash系のブラシ</strong>
+
+<ul>
+<li>参考にしたのは
+<a href="http://gimp2-how-to-use.blogspot.jp/2012/06/blog-post_08.html">http://gimp2-how-to-use.blogspot.jp/2012/06/blog-post_08.html</a></li>
+</ul>
+</li>
+</ul>
+
+
+<p>これで新入生が入ってくれると嬉しいわ。</p>
+
+<hr />
+
+<p>さて、学科の卒業パーティなんだけど、6000円が高すぎていく気がなくなって
+きてる…。このままだと <a href="http://atnd.org/events/37420">Lisp Meetup</a>に行
+ってしまう気がする。ルヴェソンベールは高いんだよ。なんでそんなとこ使う
+の(&mdash;;)</p>
+]]></content>
+  </entry>
+  
+</feed>

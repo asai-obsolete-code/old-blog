@@ -1,0 +1,571 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>オレオレlisp入門 - CL-USER> (start-up (the engine *bp-ze*))</title>
+  <meta name="author" content="guicho2.71828">
+
+  
+  <meta name="description" content="Lispでプログラミングをはじめるには何をすればいいのか、まさに直接的な
+チュートリアルをつくろうと思い立ち、この記事を書き始めました。 Common Lisp入門というともう今まで何度も何度も書かれてきたはずなので、今
+更何を書くことがあるかと考えるのが当然なんですが、残念ながら、それらの &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://guicho271828.github.io/blog/2013/03/28/oreorelispru-men">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="CL-USER> (start-up (the engine *bp-ze*))" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">CL-USER> (start-up (the engine *bp-ze*))</a></h1>
+  
+    <h2>car-mods and common-lisp</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:guicho271828.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/profile">Profile</a></li>
+  <li><a href="/publications">Publications</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/gallery">Gallery</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">オレオレlisp入門</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-28T18:03:00+09:00" pubdate data-updated="true">Mar 28<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Lispでプログラミングをはじめるには何をすればいいのか、まさに直接的な
+チュートリアルをつくろうと思い立ち、この記事を書き始めました。</p>
+
+<p>Common Lisp入門というともう今まで何度も何度も書かれてきたはずなので、今
+更何を書くことがあるかと考えるのが当然なんですが、残念ながら、それらの
+入門書が多数あるのにも関わらず使用者が少ない。</p>
+
+<p>自分の実体験からしても、やはりLispには何らかの情報不足の壁があって、参
+加者を拒んでいるような感じです。実際、自分がアクティブにCommon Lispの活
+動をできるようになったのはつい最近です。CLについて勉強し始めたのは2年前
+の夏でしたから、どうにもちょっと時間がかかりすぎている。</p>
+
+<p>これはまったくまとまった記事ではありません。ただ、ダラダラと書くうちに、
+やはり自分が詰まったところが思い出されました。これがcl初心者への道標
+になればと思います。</p>
+
+<!-- more -->
+
+
+<h1>はじめの1/3</h1>
+
+<p>注意！On Lispは初心者向けではありません!
+「はじめの1/3」を終えてから読みましょう。</p>
+
+<h2>環境を揃える</h2>
+
+<p>lispの開発環境を揃えるのは、本当にプログラミングに慣れていない人は
+<a href="http://common-lisp.net/project/lispbox/">Lispbox</a> を使えばいいと思います。でも、正直・・・</p>
+
+<ol>
+<li><p>Emacsを入れろ！(どーん)</p></li>
+<li><p>処理系は迷う必要はない。とりあえず <a href="http://www.sbcl.org/">sbcl</a> を入れろ！バイナリを落とし
+てきて &ldquo;sudo sh install.sh&rdquo; と打ち込むだけです。今の所aptから落とし
+てきてもまあ問題はありません。</p></li>
+<li><p>最後に、SLIMEを入れろ！これも今の所apt-getでも問題ありません。</p></li>
+</ol>
+
+
+<p>エディタについては、Emacs-SLIMEが最強なのでこれ一択です。
+Vimな方面については、<a href="http://www.vim.org/scripts/script.php?script_id=2219">Limp</a> をどうぞ、ですが、あまりおすすめしません。
+処理系は、はじめのうちは迷う必要はありません。
+速度が問題になってきたりして初めて必要になります。</p>
+
+<p>注意ですが、aptなどのパッケージ管理システムに入っているlispのソフトウェ
+アで、落としても良いのは上に挙げた2つぐらいしかありません。
+他のものは、 <strong>aptの古いバージョンが、quicklispなどからの最新版より優先さ
+れるという事態を発生させるときがあります。</strong></p>
+
+<h2>Practical Common Lisp を読み、真似をする</h2>
+
+<p>Practical Common Lisp (<a href="http://www.amazon.co.jp/%E5%AE%9F%E8%B7%B5Common-Lisp-Peter-Seibel/dp/4274067211">実践CommonLisp</a>) を読んで、ソースコードを打ち込ん
+で動かしてください。動かさないと実感がわきません。今のうちに、SLIMEの使
+い方をわかっておいてください。</p>
+
+<p>これをとりあえず2/3程度読んでください。ここまででも十分lispの便利さを
+知れるはずですが、実は先はまだまだ長いのです。</p>
+
+<h2>ANSIで定義された型と、そのインターフェースを理解する</h2>
+
+<p>次に必要なのが<a href="http://www.lispworks.com/documentation/HyperSpec/Front/Contents.htm">Hyperspec</a> です。ここが自分にとって第一の関門でした。これ
+の存在を知らないと、どんな型があって、それにどんな関数を使うことができ
+るのか、全くわからなくなります。</p>
+
+<p>ubuntuなどのLinuxディストリビューションなら、オフラインにHyperspecのコ
+ピーを保存して素早く見ることができるパッケージ(hyperspec)があります。
+SLIMEの <code>C-c C-d h</code> を沢山活用してください。どんな関数が用意されてい
+るのか、名前だけで良いので調べてください。</p>
+
+<p>おそらく、型も関数も、量が多すぎて一度には覚えられないでしょう。stream
+やbit-vector、pathnameなどなどすべてを覚えられるはずがありません。まし
+てやCLOSを全部理解するのなんて、あまりにも骨になる作業です。必然的に、
+後で必要になった時に何度も何度もhyperspecに立ち戻る必要があります。</p>
+
+<h2>パッケージについてちゃんと理解する</h2>
+
+<p>上のことに付随したことですが、特にパッケージシステムについてはきちんと
+理解してください。おそらく、読んだだけではわからないのですが、それでも、
+Practical Common Lispのパッケージの章と、Hyperspecの <code>defpackage</code> の章
+を読んでください。 <code>:export</code> <code>:import-from</code> <code>:shadowing-import-from</code>
+<code>:shadow</code> の4つがわかれば結構です。</p>
+
+<h1>次の1/3</h1>
+
+<p>さて、これで第一段階が漸く終わりです。
+ここまできて、lisp初心者は漸く「純」ANSI Common Lispの全体像に近づいた
+という程度なのです。</p>
+
+<p>さて、Practical Common Lispの最後の章には `What&rsquo;s next?&lsquo; という章が設け
+てあります。Peter Siebelはこの章でコミュニティやライブラリの探し方を伝
+えようとしているのですが、残念ながらそこに貼られているURLは古く、あまり
+役に立ちません。そのためこの文書では、代わりになるより新しいポインタを
+示し、実践CommonLispを読み終わったその後どうするかを具体的に説明します。</p>
+
+<h2>環境設定</h2>
+
+<p>まず、 <strong>quicklispをインストールしてください。</strong></p>
+
+<ul>
+<li><strong>quicklisp:</strong> <a href="http://www.quicklisp.org/beta/">http://www.quicklisp.org/beta/</a></li>
+</ul>
+
+
+<p>たぶん、quicklispのウェブサイトを見ると、Practical Common LispやOn
+Lispを読んだだけでは出てこない、はじめて出てくる表記があるはずです。例
+えば、</p>
+
+<ul>
+<li><p><strong>ql:quickload:</strong> パッケージ指定シンボル。「:」ってなによ？</p></li>
+<li><p><strong>require と asdf:</strong> 聞いてない!</p></li>
+<li><p><strong>.sbclrc:</strong> 初期化ファイルって？</p></li>
+</ul>
+
+
+<p>また、gitとsvn, cvsをインストールしてください。近年のライブラリは大抵
+gitで管理されています。多少古いものではsvnやcvsになります。</p>
+
+<h2>細かなことを知る</h2>
+
+<h3>リードマクロ</h3>
+
+<p>おそらく、それまでの経験だけではリードマクロの存在を知らないはずです。
+はいhyperspecの復習。第二章の<a href="http://www.lispworks.com/documentation/HyperSpec/Body/02_.htm">Syntax</a> を読んでください。
+このように、hyperspecには、初心者には想像のつかないような内容がま
+だまだ隠れています。これこそは、緻密な標準化事業の結果ANSI標準を獲得
+したCommon Lispの、その長い歴史のなせる技です。</p>
+
+<h3>asdfを知る</h3>
+
+<p>asdfは、沢山のファイルを読み込むときにその順番を指定し、コンパイルされ
+ていないものだけコンパイルするということを行うプログラムです。
+他の言語での開発経験があるなら、makeに相当するものです。</p>
+
+<p>概要については、asdf Manualの<a href="http://common-lisp.net/project/asdf/asdf/Using-ASDF.html#Using-ASDF">第四章</a> からよむと良いでしょう。まあ今のと
+ころは、 <strong>ライブラリはrequireすれば使えるようになる</strong> とだけ覚えておけば
+大丈夫でしょう。しかし、ライブラリを自分で作る段階になった時には、asdf
+の知識は必ず必要になります。</p>
+
+<h3>sbclrcなどの「処理系依存」の要素の存在を知る</h3>
+
+<p>いずれ、bordeaux-threadsなどを扱うことで実感することにはなるでしょうが、
+処理系のウェブサイト(この場合 <a href="http://www.sbcl.org/manual/index.html">http://www.sbcl.org/manual/index.html</a> )か
+らマニュアルを見ておくべきです。理解する必要はありません。ただ、処理系
+によってこんなにも独自の拡張がされており、こんなに沢山の未だ知らぬ機能
+があるのだという事を実感していただければ。</p>
+
+<h2>ライブラリを探す</h2>
+
+<p>ライブラリは以下のようにして探します。今は方法を紹介するだけですので、
+調べ始める前に次の章を見てください。</p>
+
+<ul>
+<li><p><strong><a href="http://www.cliki.net">Cliki.net</a>:</strong> Common Lispに関連するWikiです。…が、雑然としていて、あ
+まりメンテナンスされていません。自分は頑張って更新したり
+しているつもりです。まずはじめはCurrent Recommended
+Libraries を見るべきでしょう。</p></li>
+<li><p><strong><a href="http://blog.quicklisp.org/">quicklisp news</a>:</strong> quicklisp の更新情報を載せているブログです。
+ここに乗っている更新情報を見れば、どのライブラリが
+生きているか(アクティブにメンテナンスされているか)
+がわかります。</p></li>
+<li><p><strong>github:</strong> githubで、有名な開発者(xachやfareら)の見ているものをチェッ
+クしてみましょう。</p></li>
+<li><p><strong>twitter,shibuya.lisp:</strong> 日本人Lisperのブログや発言経由で情報を得られ
+ます。</p></li>
+<li><p><strong>quicklisp:</strong> <code>(ql:system-apropos string)</code> で、quicklispに登録されて
+いる情報を探せます。</p></li>
+<li><p><strong><a href="https://github.com/quicklisp/quicklisp-projects">quicklisp-project リポジトリ</a>:</strong> quicklispへの申請を待っているプロジェ
+クトが issues にて管理人のxachにお願いを立てています。登録をする
+には、プロジェクトの重要性・新規性、マルチプラットフォーム性など
+をアピールしないといけないので、それぞれのプロジェクトの主張を見
+れてためになります。</p></li>
+<li><p><strong><a href="http://quickdocs.org/">quickdocs</a>:</strong> 深町さんによるドキュメンテーション・API検索エンジン。ド
+キュメンテーションを見られるという事は、ライブラリのコ
+ンセプトを得られるというのとほぼ同じです。</p></li>
+</ul>
+
+
+<p>探したら、次にquicklispのlocal-projectという概念を復習してください。通
+常、 <code>(ql:quickload system)</code> でダウンロードしてきたプロジェクトは
+<code>~/quicklisp/dists/quicklisp/software/</code> 配下に保存されますが、それとは
+別に、例えばquicklisp未申請のプロジェクトや、開発中のプロジェクト、人の
+ものだけれど自分用に改造しているものなどを取っておきたいですよね。そう
+いう時には、 <code>~/quicklisp/local-projects/</code> を使います。</p>
+
+<p>例えば、自分で新たにライブラリを作るときには、そこでプロジェクトのディ
+レクトリを作ります。人のものを改造する場合にも、 <code>git clone</code> などでそこ
+にプロジェクトをダウンロードします。</p>
+
+<p>Clikiは、古くてもはやメンテされていないページがありますが、そのことにさ
+え気をつければ、wikiスタイルによるカテゴリ分けがなされているので、ある
+程度目的に応じたライブラリを探しやすくなります。CLのライブラリは命名規
+則がないから困りますよね〜。</p>
+
+<h2>重要ライブラリを知る</h2>
+
+<p>Clikiの<a href="http://www.cliki.net/Current%20recommended%20libraries">Currently Recommended Library</a>は <strong>最重要チェック項目</strong> です。特に、
+ファイル操作に関するもの( <code>cl-fad</code> や <code>osicat</code> )と、ユーティリティライ
+ブラリ(<code>alexandria</code> <code>iterate</code>)はチェックして下さい。</p>
+
+<h1>最後の1/3</h1>
+
+<p>最後の1/3になりました。ここで残されていることはあと3つ程です。
+この中には未だに自分も達成できていない点もあります。</p>
+
+<h2>自分でライブラリを作りgithubに公開する</h2>
+
+<p>これは最初の関門であり、最後のゴールでもあります。
+これを行うためには、 <strong>良いインターフェースとは何か</strong> というセンスないし
+知識が無いといけません。また、asdfをきちんと理解する必要があります。</p>
+
+<p>深町英太郎さん作のcl-projectというライブラリがありまして、初めてライブ
+ラリを作る人でも簡単！また、他の人のライブラリのasdファイルも見てみて
+ください。</p>
+
+<ul>
+<li><strong><a href="https://github.com/fukamachi/cl-project">cl-project</a>:</strong> プロジェクトのテンプレートを作るライブラリ</li>
+</ul>
+
+
+<p>深町さんはプログラムの書き方のスタイルについて興味深い記事を多数書いて
+いらっしゃっています。</p>
+
+<p>また、asdfの延長として、 <code>xcvb</code> や <code>uiop</code> (旧asdf-driver)というライブラ
+リがあります。</p>
+
+<p>また、ライブラリを書くならドキュメントは必須です。いくつかあるドキュメ
+ンテーション生成ライブラリを調べて試しておくべきです。</p>
+
+<h2>CLOSとMOPを理解する</h2>
+
+<p>CLOSは非常に奥が深いオブジェクトシステムで、他の言語にはない特徴をいく
+つも持っています。<a href="http://ja.wikipedia.org/wiki/CLOS">日本語版WikipediaのCLOSのページ</a> は僕がかなり書きました
+ので、そこの例をみると理解の助けになるでしょう。もちろん、hyperspecも
+読んでください。</p>
+
+<p><a href="http://alu.org/mop/index.html">MOP</a> はCltl2で提唱された考えではあるみたいですが、処理系依存の部分が残っ
+ており、ANSI規格には入っていません。しかし、 <em>ぼちぼち</em> それぞれの処理
+系が対応してきています。そのため、 <code>closer-mop</code> というライブラリが、ポー
+タビリティのために作られています。</p>
+
+<h2>CFFIを理解する</h2>
+
+<p><a href="http://common-lisp.net/project/cffi/">CFFI</a> は、Cやその他の言語で書かれたライブラリを扱うためのフレームワーク
+です。 <strong>UFFIは古いので推奨されません。</strong> サイトにはチュートリアルとマニュ
+アルが載っています。</p>
+
+<h2>コンディション・リスタートシステムを理解する</h2>
+
+<p>これはPractical Common Lispも参考になるでしょう。</p>
+
+<h2>スレッドなどのプリミティブな処理</h2>
+
+<p>スレッドやデータベース、永続化、GC、最適化などをlispでどう表現す
+るのかを知る必要があります。まあ、そこらへんのコストは他の言語と変わり
+ない複雑さがあるのですが…。</p>
+
+<h2>抽象的なプログラミング上の概念を身につける</h2>
+
+<p>パターンマッチやユニフィケーション、非決定的アルゴリズム、
+継続渡しスタイル、Lispには型変数が無いこと、処理系内部のVOP(Virtual
+OP)処理など。</p>
+
+<h1>最後の仕上げ</h1>
+
+<ul>
+<li><p>Interface Passing Style ほか, API設計について学ぶ</p></li>
+<li><p>複数の他の人のライブラリを読み、改善する</p></li>
+<li><p>国際的な Lisp world で名を上げる</p></li>
+<li><p>つねに拡散が正でありがちなlispコミュニティを統合し、既存の問題を解
+決し、lisperを増やす</p></li>
+</ul>
+
+
+<p>うーん、なんか壮大すぎで適当(&#x2013;;) でも、これで、cltl3の編纂などに精を出してくれる若い
+lisperの仲間が増えてくれると嬉しいです。リーダーシップを取って、言語と
+言うよりコミュニティに存在する問題を解決しないといけませんね。</p>
+
+<p>まあ、こんなかんじで、いまからlispを始めようという人は、どうやったらス
+ゴイlisperになれるのかの指針ができたのではないでしょうか。自分もまだま
+だですが、少ないながらも力添えができればと思います。</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">guicho2.71828</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-28T18:03:00+09:00" pubdate data-updated="true">Mar 28<span>th</span>, 2013</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://guicho271828.github.io/blog/2013/03/28/oreorelispru-men/" data-via="guicho271828" data-counturl="http://guicho271828.github.io/blog/2013/03/28/oreorelispru-men/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/03/28/zui-xin-ban-falseorg-mode-8-dot-0-preview-wooctopresstolian-xi-saseru/" title="Previous Post: 最新版のOrg-mode (8.0 preview)をOctopressと連携させる">&laquo; 最新版のOrg-mode (8.0 preview)をOctopressと連携させる</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/04/05/arduinodehuan-jing-dukuri/" title="Next Post: Arduinoで環境づくり">Arduinoで環境づくり &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    
+<section>
+  <span>
+    <img src="http://www.gravatar.com/avatar/76ac0e4c0fedb9f2f2aa036d4e77018a?s=180"
+	 alt="Gravatar of guicho2.71828 "
+	 title="Gravatar of guicho2.71828" />
+  </span>
+</section>
+
+<section>
+  <h1>About Me</h1>
+  <p>
+   <ul>
+     <li> member of <a href="http://www.team-utac.com">Univ. Tokyo Automobile Club</a>.
+     <li> master in Grad. School of Tokyo University, Japan
+     <li> Common Lisp
+     <li> Emacs
+     <li> DIY engine mod (cylinder head, custom ECU, etc.)
+   </ul>
+  </p>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/03/15/sutairuwomotonili-sita/">スタイルをもとに戻した</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/03/08/gallery-post/">Gallery Post</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/03/01/galambdafalsesheng-lue-tositeshi-inikuitoiuhua/">^がlambdaの省略として使いにくいという話</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/17/cv-page-zuo-cheng-zhong/">CV Page 作成中</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/05/tesuto2/">テスト2</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/guicho271828">@guicho271828</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'guicho271828',
+            count: 2,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("guicho271828", 3, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/guicho271828" class="twitter-follow-button" data-show-count="false">Follow @guicho271828</a>
+  
+</section>
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - guicho2.71828 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

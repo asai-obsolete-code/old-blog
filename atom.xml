@@ -1,0 +1,1549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[CL-USER> (start-up (the engine *bp-ze*))]]></title>
+  <link href="http://guicho271828.github.io/atom.xml" rel="self"/>
+  <link href="http://guicho271828.github.io/"/>
+  <updated>2014-03-15T21:54:22+09:00</updated>
+  <id>http://guicho271828.github.io/</id>
+  <author>
+    <name><![CDATA[guicho2.71828]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[スタイルをもとに戻した]]></title>
+    <link href="http://guicho271828.github.io/blog/2014/03/15/sutairuwomotonili-sita/"/>
+    <updated>2014-03-15T21:40:19+09:00</updated>
+    <id>http://guicho271828.github.io/blog/2014/03/15/sutairuwomotonili-sita</id>
+    <content type="html"><![CDATA[<p>octopressアップデート後に昔に戻ってしまったスタイルを
+一部戻しました。
+なんでoctopressデフォルトの文字はこんなに文字がでかいのかね。</p>
+
+<p>TODO: タイトルバーの背景をカーボン調にする。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='cl'><span class='line'><span class="p">(</span><span class="nb">defun</span> <span class="nv">myfunc</span> <span class="p">(</span><span class="nv">arg</span> <span class="k">&amp;optional</span> <span class="p">(</span><span class="nv">option</span> <span class="ss">:keyword</span><span class="p">))</span>
+</span><span class='line'>  <span class="p">(</span><span class="k">declare</span> <span class="p">(</span><span class="k">ignore</span> <span class="nv">option</span><span class="p">))</span>
+</span><span class='line'>  <span class="p">(</span><span class="nb">print</span> <span class="nv">arg</span><span class="p">))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Gallery Post]]></title>
+    <link href="http://guicho271828.github.io/blog/2014/03/08/gallery-post/"/>
+    <updated>2014-03-08T00:29:00+09:00</updated>
+    <id>http://guicho271828.github.io/blog/2014/03/08/gallery-post</id>
+    <content type="html"><![CDATA[<p>ギャラリー機能のテスト。
+<a href="https://github.com/yortz/octopress_gallery">https://github.com/yortz/octopress_gallery</a></p>
+
+<p><a href="http://guicho271828.github.io/images/galleries/gallery/strrt3.png" rel="shadowbox" title="strrt3"><img src="http://guicho271828.github.io/images/galleries/gallery/thumbs/strrt3.png" /></a></p>
+
+<p>見た目はあんましよくないね。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[^がlambdaの省略として使いにくいという話]]></title>
+    <link href="http://guicho271828.github.io/blog/2014/03/01/galambdafalsesheng-lue-tositeshi-inikuitoiuhua/"/>
+    <updated>2014-03-01T10:34:00+09:00</updated>
+    <id>http://guicho271828.github.io/blog/2014/03/01/galambdafalsesheng-lue-tositeshi-inikuitoiuhua</id>
+    <content type="html"><![CDATA[<p>お久しぶりです、浅井です。</p>
+
+<p>論文やばかったり人の論文読んだりgithubで議論したりする毎日ですが、
+表題の通りの議題について。</p>
+
+<p>じつは、自分 <strong>括弧</strong> を書くのがshiftキーのせいで結構苦痛に感じています。
+ええ、lisperなのにです。</p>
+
+<p>いや、括弧は好きなんです。好きなんですよ?大好きです。
+でも、僕は手がかなり小さい。
+&lt;Right-shift + 8> は人差し指と小指を最大限伸ばして押すことになります。
+そう、さながらメロイック・サインみたいなカンジで入力しています。</p>
+
+<p>それでですね、二年くらい前、 <em>数字キーのそのシフトキーのXmodmapを入れ替えてみた</em>
+ことがあったんですよ。結局慣れずにもとに戻してしまいましたが。</p>
+
+<p>(通常)</p>
+
+<pre><code>keycode  10 = 1 exclam 1 exclam
+keycode  11 = 2 quotedbl 2 quotedbl
+keycode  12 = 3 numbersign 3 numbersign
+keycode  13 = 4 dollar 4 dollar
+keycode  14 = 5 percent 5 percent
+keycode  15 = 6 ampersand 6 ampersand
+keycode  16 = 7 apostrophe 7 apostrophe
+keycode  17 = 8 parenleft 8 parenleft
+keycode  18 = 9 parenright 9 parenright
+keycode  19 = 0 asciitilde 0 asciitilde
+</code></pre>
+
+<p>(入れ替え)</p>
+
+<pre><code>keycode  10 = exclam 1 exclam 1
+keycode  11 = quotedbl 2 quotedbl 2
+keycode  12 = numbersign 3 numbersign 3
+keycode  13 = dollar 4 dollar 4
+keycode  14 = percent 5 percent 5
+keycode  15 = ampersand 6 ampersand 6
+keycode  16 = apostrophe 7 apostrophe 7
+keycode  17 = parenleft 8 parenleft 8
+keycode  18 = parenright 9 parenright 9
+keycode  19 = asciitilde 0 asciitilde 0
+</code></pre>
+
+<p>だって、lisp書く最中で数字ってそんなに使いませんよ。なにに使うんですか。
+精々使っても 0 か 1 しか無いと思うんですよ。7とか8とか何時使うんですか。
+だったら数字のキーだけ常にCapsLock状態のほうがいいじゃないですか。
+括弧に殉ずるべきです。 <em>すべてはparenthesesのもとに！</em></p>
+
+<p>これと同じ考え方をやれば、(まあ自分のキーボードでは <code>^</code> に shift は要りませんが)
+<code>^</code> をshift無しで入力することも簡単だと思います。
+あるいは、 <code>cl21-mode</code> みたいなマイナーモード作るとか。</p>
+
+<p>というわけです。括弧のためにキーアサインを変更する・・・。
+だれか真似してみたい人はいませんか。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CV Page 作成中]]></title>
+    <link href="http://guicho271828.github.io/blog/2014/01/17/cv-page-zuo-cheng-zhong/"/>
+    <updated>2014-01-17T00:44:00+09:00</updated>
+    <id>http://guicho271828.github.io/blog/2014/01/17/cv-page-zuo-cheng-zhong</id>
+    <content type="html"><![CDATA[<p>せっかく業績ができたんだから、
+人の真似をして、自分のCVページを作ってみようと思う。</p>
+
+<p>何がいるかな。
+<a href="http://yoshiori.github.io/">ここ</a>を見てみよう。
+経歴、経験、interest、publicationsでしょ・・・
+職歴(アルバイトしか無いな)・・・</p>
+
+<p>一方<a href="http://metahack.org/">指導教員の自己紹介ページ</a> 。うーん、どうやっても勝てん。</p>
+
+<p>まだ時期尚早かなという気もしてきた。
+うーん・・・どうしようかな。
+せめてICAPS workshop 2014 終わってからにするか？</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[テスト2]]></title>
+    <link href="http://guicho271828.github.io/blog/2014/01/05/tesuto2/"/>
+    <updated>2014-01-05T13:50:00+09:00</updated>
+    <id>http://guicho271828.github.io/blog/2014/01/05/tesuto2</id>
+    <content type="html"><![CDATA[<p>テスト2です。
+octopress, なんかおかしい？</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[ノートパソコンから投稿]]></title>
+    <link href="http://guicho271828.github.io/blog/2014/01/05/falsetopasokonkaratou-gao/"/>
+    <updated>2014-01-05T12:14:00+09:00</updated>
+    <id>http://guicho271828.github.io/blog/2014/01/05/falsetopasokonkaratou-gao</id>
+    <content type="html"><![CDATA[<p>ノートパソコンから投稿テスト。
+環境は(ほぼ)クリーンインストールな13.10。</p>
+
+<p>ビルドに必要だったのは</p>
+
+<pre><code>sudo apt-get install ruby-dev libxml2-dev libxslt-dev g++
+sudo gem install bundler
+bundle install
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[ひさしぶりの更新]]></title>
+    <link href="http://guicho271828.github.io/blog/2014/01/05/hisasiburifalsegeng-xin/"/>
+    <updated>2014-01-05T11:36:00+09:00</updated>
+    <id>http://guicho271828.github.io/blog/2014/01/05/hisasiburifalsegeng-xin</id>
+    <content type="html"><![CDATA[<p>テスト,テスト,テスト。</p>
+
+<p>あまりにも長いこと更新していなかったので、
+更新の仕方を忘れてしまった・・・
+最近細かいことはQiitaにばっかり書いているからなあ。
+特に書くべき日記もないし。</p>
+
+<p>一番問題なのは、セットアップのやり方を忘れたので (octopress + ruby)
+ノートパソコンから更新できないこと。
+ノートパソコンもデスクトップもどちらもまんべんなく使うから、
+書きたい時に書こうとしても、面倒くさくなっちゃうんだよね。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[紹介: ライブラリ Inner-conditional]]></title>
+    <link href="http://guicho271828.github.io/blog/2013/05/06/shao-jie-raiburari-inner-conditional/"/>
+    <updated>2013-05-06T20:41:00+09:00</updated>
+    <id>http://guicho271828.github.io/blog/2013/05/06/shao-jie-raiburari-inner-conditional</id>
+    <content type="html"><![CDATA[<p><a href="https://github.com/guicho271828/inner-conditional">inner-conditional</a> の紹介をします。</p>
+
+<h1>Q.なにができるの?</h1>
+
+<ol type="a">
+<li>ループ(など)の中の条件判定を、内側に書いたままで外側に出せます。</li>
+</ol>
+
+
+<!-- more -->
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='cl'><span class='line'><span class="p">(</span><span class="nv">with-inner</span> <span class="p">(</span><span class="nv">body</span><span class="p">)</span>
+</span><span class='line'>    <span class="p">(</span><span class="nv">iter</span> <span class="p">(</span><span class="nv">for</span> <span class="nv">i</span> <span class="nv">from</span> <span class="mi">0</span> <span class="nv">to</span> <span class="mi">5</span><span class="p">)</span>
+</span><span class='line'>          <span class="p">(</span><span class="nb">print</span> <span class="nv">i</span><span class="p">)</span>
+</span><span class='line'>          <span class="p">(</span><span class="nv">inner</span> <span class="p">(</span><span class="nv">body</span><span class="p">)</span>
+</span><span class='line'>            <span class="p">(</span><span class="k">if</span> <span class="nv">flag</span>
+</span><span class='line'>                <span class="p">(</span><span class="nv">body</span> <span class="p">(</span><span class="nb">princ</span> <span class="s">&quot;loop on&quot;</span><span class="p">))</span>
+</span><span class='line'>                <span class="p">(</span><span class="nv">body</span> <span class="p">(</span><span class="nb">princ</span> <span class="s">&quot;loop off&quot;</span><span class="p">))))))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>と書くと、</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='cl'><span class='line'><span class="p">(</span><span class="nv">IF</span> <span class="nv">FLAG</span>
+</span><span class='line'>    <span class="p">(</span><span class="nv">WITH-INNER</span> <span class="p">(</span><span class="nv">BODY</span><span class="p">)</span>
+</span><span class='line'>      <span class="p">(</span><span class="nv">ITER</span>
+</span><span class='line'>        <span class="p">(</span><span class="nv">FOR</span> <span class="nv">I</span> <span class="nv">FROM</span> <span class="mi">0</span> <span class="nv">TO</span> <span class="mi">5</span><span class="p">)</span>
+</span><span class='line'>        <span class="p">(</span><span class="nv">PRINT</span> <span class="nv">I</span><span class="p">)</span>
+</span><span class='line'>        <span class="p">(</span><span class="nv">PROGN</span> <span class="p">(</span><span class="nv">PRINC</span> <span class="s">&quot;loop on&quot;</span><span class="p">))))</span>
+</span><span class='line'>    <span class="p">(</span><span class="nv">WITH-INNER</span> <span class="p">(</span><span class="nv">BODY</span><span class="p">)</span>
+</span><span class='line'>      <span class="p">(</span><span class="nv">ITER</span>
+</span><span class='line'>        <span class="p">(</span><span class="nv">FOR</span> <span class="nv">I</span> <span class="nv">FROM</span> <span class="mi">0</span> <span class="nv">TO</span> <span class="mi">5</span><span class="p">)</span>
+</span><span class='line'>        <span class="p">(</span><span class="nv">PRINT</span> <span class="nv">I</span><span class="p">)</span>
+</span><span class='line'>        <span class="p">(</span><span class="nv">PROGN</span> <span class="p">(</span><span class="nv">PRINC</span> <span class="s">&quot;loop off&quot;</span><span class="p">)))))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>になって、</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='cl'><span class='line'><span class="p">(</span><span class="nv">IF</span> <span class="nv">FLAG</span>
+</span><span class='line'>    <span class="p">(</span><span class="nv">PROGN</span>
+</span><span class='line'>     <span class="p">(</span><span class="nv">ITER</span>
+</span><span class='line'>       <span class="p">(</span><span class="nv">FOR</span> <span class="nv">I</span> <span class="nv">FROM</span> <span class="mi">0</span> <span class="nv">TO</span> <span class="mi">5</span><span class="p">)</span>
+</span><span class='line'>       <span class="p">(</span><span class="nv">PRINT</span> <span class="nv">I</span><span class="p">)</span>
+</span><span class='line'>       <span class="p">(</span><span class="nv">PROGN</span> <span class="p">(</span><span class="nv">PRINC</span> <span class="s">&quot;loop on&quot;</span><span class="p">))))</span>
+</span><span class='line'>    <span class="p">(</span><span class="nv">PROGN</span>
+</span><span class='line'>     <span class="p">(</span><span class="nv">ITER</span>
+</span><span class='line'>       <span class="p">(</span><span class="nv">FOR</span> <span class="nv">I</span> <span class="nv">FROM</span> <span class="mi">0</span> <span class="nv">TO</span> <span class="mi">5</span><span class="p">)</span>
+</span><span class='line'>       <span class="p">(</span><span class="nv">PRINT</span> <span class="nv">I</span><span class="p">)</span>
+</span><span class='line'>       <span class="p">(</span><span class="nv">PROGN</span> <span class="p">(</span><span class="nv">PRINC</span> <span class="s">&quot;loop off&quot;</span><span class="p">)))))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>になります。うふふ、いいでしょ。キモイ？</p>
+
+<p>この種のループ最適化というと、もとから全て行なってくれるような、とって
+も優れた処理系もあるかもしれませんが、なにせ実際に動いているのかどうか
+わかりません。(C言語とかって、賢いコンパイラはこういうのが全部デフォルト
+で付いているんですかね？) sbclでテストをした結果、 <strong>たしかに</strong> <a href="https://github.com/guicho271828/inner-conditional/blob/master/opt-results.org">条件判定
+の分だけ早くなっていることが確認出来ました。</a></p>
+
+<p>条件判定のタイミングは <code>with-inner</code> の部分ですので、 <code>with-inner</code> をど
+こに置くかで判定のタイミングを適切に設定できます。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='cl'><span class='line'><span class="p">(</span><span class="nv">with-inner</span> <span class="p">(</span><span class="nv">body</span><span class="p">)</span>
+</span><span class='line'>  <span class="p">(</span><span class="nv">iter</span> <span class="p">(</span><span class="nv">for</span> <span class="nv">i</span> <span class="nv">from</span> <span class="mi">0</span> <span class="nv">to</span> <span class="mi">5</span><span class="p">)</span>
+</span><span class='line'>        <span class="p">(</span><span class="nv">with-inner</span> <span class="p">(</span><span class="nv">body2</span><span class="p">)</span>
+</span><span class='line'>          <span class="p">(</span><span class="nv">iter</span> <span class="p">(</span><span class="nv">for</span> <span class="nv">j</span> <span class="nv">from</span> <span class="mi">0</span> <span class="nv">to</span> <span class="mi">5</span><span class="p">)</span>
+</span><span class='line'>                <span class="p">(</span><span class="nb">format</span> <span class="no">t</span> <span class="s">&quot;~%i: ~a j: ~a&quot;</span> <span class="nv">i</span> <span class="nv">j</span><span class="p">)</span>
+</span><span class='line'>                <span class="p">(</span><span class="nv">inner</span> <span class="p">(</span><span class="nv">body2</span><span class="p">)</span>
+</span><span class='line'>                  <span class="p">(</span><span class="k">if</span> <span class="p">(</span><span class="nb">evenp</span> <span class="nv">i</span><span class="p">)</span>
+</span><span class='line'>                      <span class="p">(</span><span class="nv">body2</span> <span class="p">(</span><span class="nb">format</span> <span class="no">t</span> <span class="s">&quot;  i is even&quot;</span><span class="p">))</span>
+</span><span class='line'>                      <span class="p">(</span><span class="nv">body2</span> <span class="p">(</span><span class="nb">format</span> <span class="no">t</span> <span class="s">&quot;  i is odd&quot;</span><span class="p">))))</span>
+</span><span class='line'>                <span class="p">(</span><span class="nv">inner-if</span> <span class="nv">body</span> <span class="nv">flag</span>
+</span><span class='line'>                          <span class="p">(</span><span class="nb">format</span> <span class="no">t</span> <span class="s">&quot;  loop on&quot;</span><span class="p">)</span>
+</span><span class='line'>                          <span class="p">(</span><span class="nb">format</span> <span class="no">t</span> <span class="s">&quot;  loop off&quot;</span><span class="p">))))))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>この例では、 <code>body</code> レベルでの条件判定は一番上で、一方 <code>body2</code> レベルの
+条件判定はループの二段目で行えます。 <code>inner</code> の方、すなわり条件判定の内
+容を実際に書いている方で、そのレベルを指定できます。 <code>(inner-if body
+...)</code> というのは構文糖で、 <code>(inner (body) (if ... (body ...)))</code> に展開
+されるマクロです。ほかにも数種類あります。</p>
+
+<p><code>inner</code> 内で使えるのは <code>if</code> だけじゃありません。 <code>cond</code> でも、 <code>case</code>
+でも、オレオレマクロでもなんでも大丈夫です。特殊なマクロで制御構造を登
+録する必要はありません。必要なのはこれだけ、すなわち、</p>
+
+<pre><code>継続であるかのように body を呼ぶこと
+</code></pre>
+
+<p>です。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='cl'><span class='line'><span class="p">(</span><span class="nv">with-inner</span> <span class="p">(</span><span class="nv">body</span><span class="p">)</span>
+</span><span class='line'>  <span class="p">(</span><span class="nv">iter</span>
+</span><span class='line'>    <span class="p">(</span><span class="nv">for</span> <span class="nv">i</span> <span class="nv">from</span> <span class="mi">0</span> <span class="nv">to</span> <span class="mi">5</span><span class="p">)</span>
+</span><span class='line'>    <span class="p">(</span><span class="nv">inner</span> <span class="p">(</span><span class="nv">body</span><span class="p">)</span>
+</span><span class='line'>      <span class="p">(</span><span class="nb">case</span> <span class="p">(</span><span class="k">progn</span> <span class="p">(</span><span class="nb">incf</span> <span class="nb">count</span><span class="p">)</span>
+</span><span class='line'>                   <span class="p">(</span><span class="nb">mod</span> <span class="nv">arg</span> <span class="mi">3</span><span class="p">))</span>
+</span><span class='line'>        <span class="p">(</span><span class="mi">0</span> <span class="p">(</span><span class="nv">body</span> <span class="p">(</span><span class="nb">format</span> <span class="no">t</span> <span class="s">&quot;divided. i*3 =~a~%&quot;</span>
+</span><span class='line'>                         <span class="p">(</span><span class="nb">*</span> <span class="nv">i</span> <span class="mi">3</span><span class="p">))</span>
+</span><span class='line'>                 <span class="p">(</span><span class="nb">format</span> <span class="no">t</span> <span class="s">&quot;divided. i*3 =~a~%&quot;</span>
+</span><span class='line'>                         <span class="p">(</span><span class="nb">*</span> <span class="nv">i</span> <span class="mi">3</span><span class="p">))))</span>
+</span><span class='line'>        <span class="p">(</span><span class="mi">1</span> <span class="p">(</span><span class="nv">body</span> <span class="p">(</span><span class="nb">format</span> <span class="no">t</span> <span class="s">&quot;modulo 1. i*3 + 1 =~a~%&quot;</span>
+</span><span class='line'>                         <span class="p">(</span><span class="nb">+</span> <span class="mi">1</span> <span class="p">(</span><span class="nb">*</span> <span class="nv">i</span> <span class="mi">3</span><span class="p">)))))</span>
+</span><span class='line'>        <span class="p">(</span><span class="mi">2</span> <span class="p">(</span><span class="nv">body</span> <span class="p">(</span><span class="nb">format</span> <span class="no">t</span> <span class="s">&quot;modulo 2. i*3 + 2 =~a~%&quot;</span>
+</span><span class='line'>                         <span class="p">(</span><span class="nb">+</span> <span class="mi">2</span> <span class="p">(</span><span class="nb">*</span> <span class="nv">i</span> <span class="mi">3</span><span class="p">)))))))))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>だってほら、全然違いますけど、内側と外側がひっくり返るじゃないですか。
+プログラムは実際には <strong>一番最初に</strong> 条件分岐をして、そして <code>inner</code> の中身
+が <code>body</code> の引数を代入した状態で実行されるんです。似てませんか？ <strong>継続
+に！</strong></p>
+
+<p>続きはまた今度。このライブラリのもうひとつのいいところ、 あなたのライブ
+ラリに、 <strong>条件分岐を隠したまま最適化できる能力</strong> を与えられる点について
+お話しします。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Common Lisp で Code Walker を実装するなら その②]]></title>
+    <link href="http://guicho271828.github.io/blog/2013/05/06/common-lisp-de-code-walker-woshi-zhuang-surunara-sofalse/"/>
+    <updated>2013-05-06T15:26:00+09:00</updated>
+    <id>http://guicho271828.github.io/blog/2013/05/06/common-lisp-de-code-walker-woshi-zhuang-surunara-sofalse</id>
+    <content type="html"><![CDATA[<p>前回の続き。状態を持つmacroletを書くにはどうすればいいのか！？
+これが答えだ！</p>
+
+<!-- more -->
+
+
+<h1>回答: Compile-time で restart-bind</h1>
+
+<figure class='code'><figcaption><span>サンプルコード  (walk-tree.lisp)</span> <a href='http://guicho271828.github.io/codes/walk-tree.lisp'>download</a></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+<span class='line-number'>104</span>
+<span class='line-number'>105</span>
+<span class='line-number'>106</span>
+<span class='line-number'>107</span>
+<span class='line-number'>108</span>
+<span class='line-number'>109</span>
+<span class='line-number'>110</span>
+<span class='line-number'>111</span>
+<span class='line-number'>112</span>
+<span class='line-number'>113</span>
+<span class='line-number'>114</span>
+<span class='line-number'>115</span>
+<span class='line-number'>116</span>
+<span class='line-number'>117</span>
+<span class='line-number'>118</span>
+<span class='line-number'>119</span>
+<span class='line-number'>120</span>
+<span class='line-number'>121</span>
+<span class='line-number'>122</span>
+<span class='line-number'>123</span>
+<span class='line-number'>124</span>
+<span class='line-number'>125</span>
+<span class='line-number'>126</span>
+<span class='line-number'>127</span>
+<span class='line-number'>128</span>
+<span class='line-number'>129</span>
+<span class='line-number'>130</span>
+<span class='line-number'>131</span>
+<span class='line-number'>132</span>
+</pre></td><td class='code'><pre><code class='cl'><span class='line'><span class="p">(</span><span class="nb">use-package</span> <span class="ss">:alexandria</span><span class="p">)</span>
+</span><span class='line'><span class="p">(</span><span class="nv">cl-syntax:use-syntax</span> <span class="ss">:annot</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">(</span><span class="nb">define-condition</span> <span class="nv">undefined-clause</span> <span class="p">(</span><span class="kt">simple-condition</span><span class="p">)</span>
+</span><span class='line'>  <span class="p">((</span><span class="nv">form</span> <span class="ss">:initarg</span> <span class="ss">:form</span> <span class="ss">:accessor</span> <span class="nv">form</span><span class="p">)</span>
+</span><span class='line'>   <span class="p">(</span><span class="nv">environment</span> <span class="ss">:initarg</span> <span class="ss">:environment</span> <span class="ss">:accessor</span> <span class="nv">environment</span><span class="p">))</span>
+</span><span class='line'>  <span class="p">(</span><span class="ss">:report</span> <span class="p">(</span><span class="k">lambda</span> <span class="p">(</span><span class="nv">c</span> <span class="nv">s</span><span class="p">)</span>
+</span><span class='line'>       <span class="p">(</span><span class="nb">format</span> <span class="nv">s</span> <span class="s">&quot;~a~% is not a bound macro in ~a&quot;</span>
+</span><span class='line'>           <span class="p">(</span><span class="nv">form</span> <span class="nv">c</span><span class="p">)</span>
+</span><span class='line'>           <span class="p">(</span><span class="nv">environment</span> <span class="nv">c</span><span class="p">)))))</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">(</span><span class="nb">defmacro</span> <span class="nv">my-clause</span> <span class="p">(</span><span class="k">&amp;whole</span> <span class="nv">form</span> <span class="k">&amp;body</span> <span class="nv">body</span> <span class="k">&amp;environment</span> <span class="nv">env</span><span class="p">)</span>
+</span><span class='line'>  <span class="nv">@ignore</span> <span class="nv">body</span>
+</span><span class='line'>  <span class="p">(</span><span class="nb">restart-case</span> <span class="p">(</span><span class="nb">error</span> <span class="ss">&#39;undefined-clause</span> <span class="ss">:form</span> <span class="nv">form</span> <span class="ss">:environment</span> <span class="nv">env</span><span class="p">)</span>
+</span><span class='line'>    <span class="p">(</span><span class="nb">use-value</span> <span class="p">(</span><span class="nv">c</span><span class="p">)</span>
+</span><span class='line'>      <span class="ss">:interactive</span> <span class="p">(</span><span class="k">lambda</span> <span class="p">()</span> <span class="p">(</span><span class="nb">read</span><span class="p">))</span>
+</span><span class='line'>      <span class="nv">c</span><span class="p">)))</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="p">(</span><span class="k">let</span> <span class="p">(</span><span class="nv">previous-hooks</span><span class="p">)</span>
+</span><span class='line'>  <span class="p">(</span><span class="nb">defmacro</span> <span class="nv">my-macro-start</span> <span class="p">()</span>
+</span><span class='line'>    <span class="p">(</span><span class="nb">push</span> <span class="vg">*macroexpand-hook*</span> <span class="nv">previous-hooks</span><span class="p">)</span>
+</span><span class='line'>    <span class="p">(</span><span class="k">let</span> <span class="p">((</span><span class="nv">i</span> <span class="mi">0</span><span class="p">)</span> <span class="p">(</span><span class="nv">prev</span> <span class="p">(</span><span class="nb">car</span> <span class="nv">previous-hooks</span><span class="p">)))</span>
+</span><span class='line'>      <span class="p">(</span><span class="k">flet</span> <span class="p">((</span><span class="nv">hook</span> <span class="p">(</span><span class="nv">expander</span> <span class="nv">form</span> <span class="nv">env</span><span class="p">)</span>
+</span><span class='line'>         <span class="p">(</span><span class="nb">handler-bind</span>
+</span><span class='line'>         <span class="p">((</span><span class="nv">undefined-clause</span>
+</span><span class='line'>           <span class="p">(</span><span class="k">lambda</span> <span class="p">(</span><span class="nv">c</span><span class="p">)</span>
+</span><span class='line'>             <span class="p">(</span><span class="nb">incf</span> <span class="nv">i</span><span class="p">)</span>
+</span><span class='line'>             <span class="p">(</span><span class="nb">use-value</span>
+</span><span class='line'>          <span class="o">`</span><span class="p">(</span><span class="nb">format</span>
+</span><span class='line'>            <span class="no">t</span> <span class="s">&quot;~%~ath expansion of my-clause~%~</span>
+</span><span class='line'><span class="s">                             ~a&quot;</span> <span class="o">,</span><span class="nv">i</span> <span class="ss">&#39;,</span><span class="p">(</span><span class="nv">form</span> <span class="nv">c</span><span class="p">))))))</span>
+</span><span class='line'>       <span class="p">(</span><span class="nb">funcall</span> <span class="nv">prev</span> <span class="nv">expander</span> <span class="nv">form</span> <span class="nv">env</span><span class="p">))))</span>
+</span><span class='line'>  <span class="p">(</span><span class="nb">setf</span> <span class="vg">*macroexpand-hook*</span> <span class="nf">#&#39;</span><span class="nv">hook</span><span class="p">)</span>
+</span><span class='line'>  <span class="o">`</span><span class="p">(</span><span class="k">progn</span><span class="p">))))</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="p">(</span><span class="nb">defmacro</span> <span class="nv">my-macro-end</span> <span class="p">()</span>
+</span><span class='line'>    <span class="p">(</span><span class="nb">setf</span> <span class="vg">*macroexpand-hook*</span> <span class="p">(</span><span class="nb">pop</span> <span class="nv">previous-hooks</span><span class="p">))</span>
+</span><span class='line'>    <span class="o">`</span><span class="p">(</span><span class="k">progn</span><span class="p">)))</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">(</span><span class="nb">defmacro</span> <span class="nv">my-macro</span> <span class="p">(</span><span class="k">&amp;body</span> <span class="nv">body</span><span class="p">)</span>
+</span><span class='line'>  <span class="o">`</span><span class="p">(</span><span class="k">progn</span>
+</span><span class='line'>     <span class="p">(</span><span class="nv">my-macro-start</span><span class="p">)</span>
+</span><span class='line'>     <span class="o">,@</span><span class="nv">body</span>
+</span><span class='line'>     <span class="p">(</span><span class="nv">my-macro-end</span><span class="p">)))</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">(</span><span class="nv">my-macro</span>
+</span><span class='line'>  <span class="p">(</span><span class="nb">print</span> <span class="ss">:hi</span><span class="p">)</span>
+</span><span class='line'>  <span class="p">(</span><span class="nv">my-clause</span>
+</span><span class='line'>    <span class="p">(</span><span class="nb">print</span> <span class="ss">:ok</span><span class="p">)</span>
+</span><span class='line'>    <span class="p">(</span><span class="nb">print</span> <span class="ss">:fine</span><span class="p">))</span>
+</span><span class='line'>  <span class="p">(</span><span class="k">macrolet</span> <span class="p">((</span><span class="nv">my-clause</span> <span class="p">(</span><span class="k">&amp;body</span> <span class="nv">body</span><span class="p">)</span>
+</span><span class='line'>      <span class="o">`</span><span class="p">(</span><span class="k">progn</span>
+</span><span class='line'>         <span class="o">,@</span><span class="p">(</span><span class="nb">loop</span> <span class="nv">for</span> <span class="nv">form</span> <span class="nv">in</span> <span class="nv">body</span>
+</span><span class='line'>          <span class="nv">collect</span> <span class="o">&#39;</span><span class="p">(</span><span class="nb">print</span> <span class="ss">:expanded-by-macrolet</span><span class="p">)))))</span>
+</span><span class='line'>    <span class="p">(</span><span class="nv">my-clause</span>
+</span><span class='line'>      <span class="p">(</span><span class="nb">print</span> <span class="ss">:this-is-ignored</span><span class="p">)</span>
+</span><span class='line'>      <span class="p">(</span><span class="nb">print</span> <span class="p">(</span><span class="nb">+</span> <span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">))</span>
+</span><span class='line'>      <span class="p">(</span><span class="nb">print</span> <span class="ss">:this-is-ignored</span><span class="p">)))</span>
+</span><span class='line'>  <span class="p">(</span><span class="nb">print</span> <span class="ss">:im-hungry-where-is-supper!</span><span class="p">)</span>
+</span><span class='line'>  <span class="p">(</span><span class="nv">my-clause</span>
+</span><span class='line'>    <span class="p">(</span><span class="nb">print</span> <span class="ss">:not-ok</span><span class="p">)</span>
+</span><span class='line'>    <span class="p">(</span><span class="nb">print</span> <span class="ss">:bad</span><span class="p">))</span>
+</span><span class='line'>  <span class="p">(</span><span class="nb">print</span> <span class="ss">:bye</span><span class="p">))</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">;; --&gt; macroexpand-1 result</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">(</span><span class="nv">PROGN</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">MY-MACRO-START</span><span class="p">)</span> <span class="c1">;; macroexpanding this clause causes a side-effect</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:HI</span><span class="p">)</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">MY-CLAUSE</span>
+</span><span class='line'>   <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:OK</span><span class="p">)</span>
+</span><span class='line'>   <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:FINE</span><span class="p">))</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">MACROLET</span> <span class="p">((</span><span class="nv">MY-CLAUSE</span> <span class="p">(</span><span class="nv">&amp;BODY</span> <span class="nv">BODY</span><span class="p">)</span>
+</span><span class='line'>              <span class="o">`</span><span class="p">(</span><span class="nv">PROGN</span>
+</span><span class='line'>                <span class="o">,@</span><span class="p">(</span><span class="nv">LOOP</span> <span class="nv">FOR</span> <span class="nv">FORM</span> <span class="nv">IN</span> <span class="nv">BODY</span>
+</span><span class='line'>                        <span class="nv">COLLECT</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:EXPANDED-BY-MACROLET</span><span class="p">)))))</span>
+</span><span class='line'>   <span class="p">(</span><span class="nv">MY-CLAUSE</span>
+</span><span class='line'>     <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:THIS-IS-IGNORED</span><span class="p">)</span>
+</span><span class='line'>     <span class="p">(</span><span class="nv">PRINT</span> <span class="p">(</span><span class="nb">+</span> <span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">))</span>
+</span><span class='line'>     <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:THIS-IS-IGNORED</span><span class="p">)))</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:IM-HUNGRY-WHERE-IS-SUPPER!</span><span class="p">)</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">MY-CLAUSE</span>
+</span><span class='line'>   <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:NOT-OK</span><span class="p">)</span>
+</span><span class='line'>   <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:BAD</span><span class="p">))</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:BYE</span><span class="p">)</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">MY-MACRO-END</span><span class="p">))</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">;; --&gt; full expansion result </span>
+</span><span class='line'><span class="c1">;; (expected, since C-c C-m doesn&#39;t handle local macro)</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">(</span><span class="nv">PROGN</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">PROGN</span><span class="p">)</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:HI</span><span class="p">)</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">FORMAT</span> <span class="no">T</span> <span class="s">&quot;~%~ath expansion of my-clause~%~</span>
+</span><span class='line'><span class="s">                              ~a&quot;</span>
+</span><span class='line'>         <span class="mi">1</span>
+</span><span class='line'>         <span class="o">&#39;</span><span class="p">(</span><span class="nv">MY-CLAUSE</span>
+</span><span class='line'>            <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:OK</span><span class="p">)</span>
+</span><span class='line'>            <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:FINE</span><span class="p">)))</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">PROGN</span>
+</span><span class='line'>   <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:EXPANDED-BY-MACROLET</span><span class="p">)</span>
+</span><span class='line'>   <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:EXPANDED-BY-MACROLET</span><span class="p">)</span>
+</span><span class='line'>   <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:EXPANDED-BY-MACROLET</span><span class="p">))</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:IM-HUNGRY-WHERE-IS-SUPPER!</span><span class="p">)</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">FORMAT</span> <span class="no">T</span> <span class="s">&quot;~%~ath expansion of my-clause~%~</span>
+</span><span class='line'><span class="s">                              ~a&quot;</span>
+</span><span class='line'>         <span class="mi">2</span>
+</span><span class='line'>         <span class="o">&#39;</span><span class="p">(</span><span class="nv">MY-CLAUSE</span>
+</span><span class='line'>            <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:NOT-OK</span><span class="p">)</span>
+</span><span class='line'>            <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:BAD</span><span class="p">)))</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">PRINT</span> <span class="ss">:BYE</span><span class="p">)</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">PROGN</span><span class="p">))</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">;; --&gt; print result</span>
+</span><span class='line'><span class="c1">;; </span>
+</span><span class='line'><span class="c1">;; :HI </span>
+</span><span class='line'><span class="c1">;; 1th expansion of my-clause</span>
+</span><span class='line'><span class="c1">;; (MY-CLAUSE</span>
+</span><span class='line'><span class="c1">;;   (PRINT OK)</span>
+</span><span class='line'><span class="c1">;;   (PRINT FINE))</span>
+</span><span class='line'><span class="c1">;; :EXPANDED-BY-MACROLET </span>
+</span><span class='line'><span class="c1">;; :EXPANDED-BY-MACROLET </span>
+</span><span class='line'><span class="c1">;; :EXPANDED-BY-MACROLET </span>
+</span><span class='line'><span class="c1">;; :IM-HUNGRY-WHERE-IS-SUPPER! </span>
+</span><span class='line'><span class="c1">;; 2th expansion of my-clause</span>
+</span><span class='line'><span class="c1">;; (MY-CLAUSE</span>
+</span><span class='line'><span class="c1">;;   (PRINT NOT-OK)</span>
+</span><span class='line'><span class="c1">;;   (PRINT BAD))</span>
+</span><span class='line'><span class="c1">;; :BYE </span>
+</span><span class='line'><span class="c1">;; NIL</span>
+</span><span class='line'><span class="c1">;; CL-USER&gt; </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>ね、面白いでしょ？ANSI Hyperspecにある <code>*macroexpand-hook*</code> をうまく使っ
+てみました。 <code>my-macro-start</code> が変な感じになっているのは、ここで書いた
+構造が入れ子になってる可能性があるので、スタックフレームをエミュレート
+しているんです。 <strong>ん、え、スタック？</strong></p>
+
+<p>Schemerな人は言いたいことがすぐにわかることでしょう。ANSIの設計の何が悪
+いって、 <code>defmacro</code> が <strong>継続を引数に取ってくれない</strong> ことなんですよ。だ
+から、外側のマクロを展開した時に、内側のマクロ展開を行うときのレキシカ
+ル環境を操作できない。それだから中途半端な code-walker しか <em>簡単には</em>
+実装できないわけです。</p>
+
+<p>うーん、えーと、もう2,3個思いついたはずなんですけど、思いつかなかった
+ので、一つです。なにか他に案がある人はtwitterかgithub経由で教えてくだ
+さい(^^)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Common Lisp で Code Walker を実装するなら]]></title>
+    <link href="http://guicho271828.github.io/blog/2013/05/05/common-lisp-de-code-walker-woshi-zhuang-surunara/"/>
+    <updated>2013-05-05T22:01:00+09:00</updated>
+    <id>http://guicho271828.github.io/blog/2013/05/05/common-lisp-de-code-walker-woshi-zhuang-surunara</id>
+    <content type="html"><![CDATA[<p>Common Lispを使っていると、みんな一度はマクロでDSLを実装したくなります
+よね。みなさんどうしてるでしょう。例えば、自分の作ったマクロ
+<code>my-macro</code> の中では、特定のS式、たとえば=my-clause= に特殊な意味を持つ
+節としての役割を与えたい時。マクロは引数のS式を好きに扱えるので、なんで
+もありです。だから、例えば。</p>
+
+<!-- more -->
+
+
+
+
+<figure class='code'><figcaption><span>Walking the tree</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='cl'><span class='line'><span class="p">(</span><span class="nb">defun</span> <span class="nv">walk-tree</span> <span class="p">(</span><span class="nv">fn</span> <span class="nv">tree</span><span class="p">)</span>
+</span><span class='line'>  <span class="p">(</span><span class="nb">funcall</span> <span class="nv">fn</span> <span class="nv">tree</span>
+</span><span class='line'>           <span class="p">(</span><span class="k">lambda</span> <span class="p">(</span><span class="nv">branch</span><span class="p">)</span>
+</span><span class='line'>             <span class="p">(</span><span class="nb">mapcar</span> <span class="p">(</span><span class="k">lambda</span> <span class="p">(</span><span class="nv">branch</span><span class="p">)</span>
+</span><span class='line'>                       <span class="p">(</span><span class="nv">walk-tree</span> <span class="nv">fn</span> <span class="nv">branch</span><span class="p">))</span>
+</span><span class='line'>                     <span class="nv">branch</span><span class="p">))))</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">(</span><span class="nb">defun</span> <span class="nv">precompile-1-layer</span> <span class="p">(</span><span class="nv">sym</span> <span class="nv">fn</span> <span class="nv">form</span><span class="p">)</span>
+</span><span class='line'>  <span class="p">(</span><span class="nv">walk-tree</span>
+</span><span class='line'>   <span class="p">(</span><span class="k">lambda</span> <span class="p">(</span><span class="nv">subform</span> <span class="nv">cont</span><span class="p">)</span>
+</span><span class='line'>     <span class="p">(</span><span class="k">if</span> <span class="p">(</span><span class="nb">and</span> <span class="p">(</span><span class="nb">consp</span> <span class="nv">subform</span><span class="p">)</span>
+</span><span class='line'>              <span class="p">(</span><span class="nb">equalp</span> <span class="nv">sym</span> <span class="p">(</span><span class="nb">car</span> <span class="nv">subform</span><span class="p">)))</span>
+</span><span class='line'>         <span class="p">(</span><span class="nb">apply</span> <span class="nv">fn</span> <span class="p">(</span><span class="nb">cdr</span> <span class="nv">subform</span><span class="p">))</span>
+</span><span class='line'>         <span class="p">(</span><span class="k">if</span> <span class="p">(</span><span class="nb">consp</span> <span class="nv">subform</span><span class="p">)</span>
+</span><span class='line'>             <span class="p">(</span><span class="nb">funcall</span> <span class="nv">cont</span> <span class="nv">subform</span><span class="p">)</span>
+</span><span class='line'>             <span class="nv">subform</span><span class="p">)))</span>
+</span><span class='line'>   <span class="nv">form</span><span class="p">))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>みたいなのを定義して、該当シンボルを手動で検知して <code>macroexpand</code> の真似
+をする、といった手を使うことができちゃいます。</p>
+
+<figure class='code'><figcaption><span>And expand the code!</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class='cl'><span class='line'><span class="p">(</span><span class="nb">defmacro</span> <span class="nv">my-macro</span> <span class="p">(</span><span class="k">&amp;body</span> <span class="nv">body</span><span class="p">)</span>
+</span><span class='line'>  <span class="o">`</span><span class="p">(</span><span class="k">progn</span>
+</span><span class='line'>     <span class="o">,@</span><span class="p">(</span><span class="nv">precompile-1-layer</span>
+</span><span class='line'>        <span class="ss">&#39;my-clause</span>
+</span><span class='line'>        <span class="p">(</span><span class="k">lambda</span> <span class="p">(</span><span class="k">&amp;body</span> <span class="nv">body</span><span class="p">)</span>
+</span><span class='line'>          <span class="p">(</span><span class="k">progn</span> <span class="p">(</span><span class="nb">print</span> <span class="ss">:hi!</span><span class="p">)</span>
+</span><span class='line'>                 <span class="o">,@</span><span class="nv">body</span><span class="p">))</span>
+</span><span class='line'>        <span class="nv">body</span><span class="p">)))</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">(</span><span class="nv">my-macro</span>
+</span><span class='line'> <span class="p">(</span><span class="nv">iter</span> <span class="p">(</span><span class="nv">for</span> <span class="nv">i</span> <span class="nv">below</span> <span class="mi">5</span><span class="p">)</span>
+</span><span class='line'>       <span class="p">(</span><span class="nb">print</span> <span class="nv">i</span><span class="p">)</span>
+</span><span class='line'>       <span class="p">(</span><span class="nv">my-clause</span>
+</span><span class='line'>        <span class="p">(</span><span class="nb">print</span> <span class="ss">:stupid!</span><span class="p">))))</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">;; macroexpansion result</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">(</span><span class="k">progn</span>
+</span><span class='line'>  <span class="p">(</span><span class="nv">iter</span> <span class="p">(</span><span class="nv">for</span> <span class="nv">i</span> <span class="nv">below</span> <span class="mi">5</span><span class="p">)</span>
+</span><span class='line'>        <span class="p">(</span><span class="nb">print</span> <span class="nv">i</span><span class="p">)</span>
+</span><span class='line'>        <span class="p">(</span><span class="k">progn</span>
+</span><span class='line'>          <span class="p">(</span><span class="nb">print</span> <span class="ss">:hi!</span><span class="p">)</span>
+</span><span class='line'>          <span class="p">(</span><span class="nb">print</span> <span class="ss">:stupid!</span><span class="p">))))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>いやまあ、ここで問題になるのが、 <code>macrolet</code> で指定した内容が全然反映され
+ないという事ですね。一言で言えば、頭悪い。</p>
+
+<figure class='code'><figcaption><span>Fail example</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='cl'><span class='line'><span class="p">(</span><span class="nv">my-macro</span>
+</span><span class='line'> <span class="p">(</span><span class="k">macrolet</span> <span class="p">((</span><span class="nv">my-clause</span> <span class="p">(</span><span class="k">&amp;body</span> <span class="nv">body</span><span class="p">)</span>
+</span><span class='line'>              <span class="p">(</span><span class="nb">subst</span> <span class="ss">:im-not-stupid!</span> <span class="ss">:stupid!</span> <span class="nv">body</span><span class="p">)))</span>
+</span><span class='line'>   <span class="p">(</span><span class="nv">iter</span> <span class="p">(</span><span class="nv">for</span> <span class="nv">i</span> <span class="nv">below</span> <span class="mi">5</span><span class="p">)</span>
+</span><span class='line'>         <span class="p">(</span><span class="nb">print</span> <span class="nv">i</span><span class="p">)</span>
+</span><span class='line'>         <span class="p">(</span><span class="nv">my-clause</span>
+</span><span class='line'>          <span class="p">(</span><span class="nb">print</span> <span class="ss">:stupid!</span><span class="p">)))))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>After the macroexpantion of `my-macro`</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='cl'><span class='line'><span class="p">(</span><span class="k">progn</span>
+</span><span class='line'> <span class="p">(</span><span class="k">macrolet</span> <span class="p">((</span><span class="nv">my-clause</span> <span class="p">(</span><span class="k">&amp;body</span> <span class="nv">body</span><span class="p">)</span>
+</span><span class='line'>              <span class="p">(</span><span class="nb">subst</span> <span class="ss">:im-not-stupid!</span> <span class="ss">:stupid!</span> <span class="nv">body</span><span class="p">)))</span>
+</span><span class='line'>  <span class="p">(</span><span class="nv">iter</span> <span class="p">(</span><span class="nv">for</span> <span class="nv">i</span> <span class="nv">below</span> <span class="mi">5</span><span class="p">)</span>
+</span><span class='line'>        <span class="p">(</span><span class="nb">print</span> <span class="nv">i</span><span class="p">)</span>
+</span><span class='line'>        <span class="p">(</span><span class="k">progn</span>
+</span><span class='line'>          <span class="p">(</span><span class="nb">print</span> <span class="ss">:hi!</span><span class="p">)</span>
+</span><span class='line'>          <span class="p">(</span><span class="nb">print</span> <span class="ss">:stupid!</span><span class="p">)))))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>my-clauseをバイパスして展開してしまっているので、内側のmy-clauseが反映
+されず、 <code>:stupid!</code> が <code>:im-not-stupid!</code> に変換されずに残っている。この問
+題が、<a href="http://m2ym.github.io/blog/2012/04/28/eval-in-macros/">m2ymさんも言っている</a> <strong>マクロ内でevalするな</strong> 問題です。</p>
+
+<p>でも、evalしないって辛いです。code walkをするなと言っているのと同様。
+じゃあどうすればいいのか。</p>
+
+<h1>全部Macroletに展開する</h1>
+
+<p>これは僕が <a href="https://github.com/guicho271828/inner-conditional">inner-conditional</a> ではじめに取った手法です。
+<code>macrolet</code> をどんどんネストさせるわけです。</p>
+
+<figure class='code'><figcaption><span>Macrolet</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='cl'><span class='line'><span class="p">(</span><span class="nb">defmacro</span> <span class="nv">my-macro</span> <span class="p">(</span><span class="k">&amp;body</span> <span class="nv">body</span><span class="p">)</span>
+</span><span class='line'>  <span class="o">`</span><span class="p">(</span><span class="k">macrolet</span> <span class="p">((</span><span class="nv">my-clause</span> <span class="p">(</span><span class="k">&amp;body</span> <span class="nv">body</span><span class="p">)</span>
+</span><span class='line'>                <span class="o">`</span><span class="p">(</span><span class="k">progn</span> <span class="p">(</span><span class="nb">print</span> <span class="ss">:hi!</span><span class="p">)</span>
+</span><span class='line'>                        <span class="o">,@</span><span class="nv">body</span><span class="p">)))</span>
+</span><span class='line'>     <span class="o">,@</span><span class="nv">body</span><span class="p">))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>これで今回のコードでは当面の目標は達成されます。でも、問題が・・・。な
+にが問題かというと、コンパイル時に変数を触ることができないということ。
+例えば上のコードで、</p>
+
+<pre><code>一回目は〇〇に展開し、二回目は☓☓に展開したい。
+</code></pre>
+
+<p>とか、</p>
+
+<pre><code>i回目にはiを用いて … に展開したい。その指定は実行時ではダメで、
+コンパイル時に定数として挿入したい。
+</code></pre>
+
+<p>とかいう需要があるときにどうするか。</p>
+
+<p><code>macrolet</code> はスペシャルフォームなので、そのマクロ定義だけをletで囲む
+なんてことはできません。出来れば嬉しいんだけれどねえ…</p>
+
+<figure class='code'><figcaption><span>Illegal example</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='cl'><span class='line'><span class="p">(</span><span class="k">macrolet</span> <span class="p">((</span><span class="k">let</span> <span class="p">((</span><span class="nv">i</span> <span class="mi">0</span><span class="p">))</span>
+</span><span class='line'>             <span class="p">(</span><span class="nv">my-clause</span> <span class="p">(</span><span class="k">&amp;body</span> <span class="nv">body</span><span class="p">)</span>
+</span><span class='line'>                <span class="p">(</span><span class="nb">incf</span> <span class="nv">i</span><span class="p">)</span>
+</span><span class='line'>                <span class="o">`</span><span class="p">(</span><span class="k">progn</span> <span class="p">(</span><span class="nb">print</span> <span class="o">,</span><span class="nv">i</span><span class="p">)</span>
+</span><span class='line'>                        <span class="o">,@</span><span class="nv">body</span><span class="p">))))</span>
+</span><span class='line'>  <span class="p">(</span><span class="nv">do-something</span><span class="p">))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>ではどうするか。例を示そうと思ったんですが、例を書くだけでも骨が折れる
+ようなコードだったので、続きは次の記事で。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[ロードスター用のROMエディタ]]></title>
+    <link href="http://guicho271828.github.io/blog/2013/04/06/rodosutayong-falseromedeita/"/>
+    <updated>2013-04-06T01:25:00+09:00</updated>
+    <id>http://guicho271828.github.io/blog/2013/04/06/rodosutayong-falseromedeita</id>
+    <content type="html"><![CDATA[<p>そういえば、ブログを作ったのに
+ROMエディタをアップロードしてなかったので、
+公開しておきます。</p>
+
+<p>アルゴリズムは <a href="http://www.asahi-net.or.jp/~VS6N-MRYM/">Fire丸山</a> さんのものから変わっていません。
+エクセルがweb化したってのと、
+フォーマットがHEXになったってところしか違いはありません。
+結局機械語読めないので180km/hのリミッター解除アドレスも知らないし。
+レブリミットも替えられません。
+アドレス教えてください。</p>
+
+<p><a href="./editor/editor.html">ROMエディタへ</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Arduinoで環境づくり]]></title>
+    <link href="http://guicho271828.github.io/blog/2013/04/05/arduinodehuan-jing-dukuri/"/>
+    <updated>2013-04-05T17:59:00+09:00</updated>
+    <id>http://guicho271828.github.io/blog/2013/04/05/arduinodehuan-jing-dukuri</id>
+    <content type="html"><![CDATA[<p>Arduinoボードを買いました。
+お金ないのに・・・でも部のためなら仕方ない。</p>
+
+<p><img src="images/arduino.jpg" alt="Arduino Leonardo" /></p>
+
+<p>さて、最初に早速詰まったんだけど、
+Ubuntuのリポジトリに入ってるArduinoのSDKは最新版じゃない。
+そのせいで、Leonardoは対応してない。プログラムをアップロードできない。
+<strong>公式から最新版を得てくること。</strong></p>
+
+<p>で、いくつかやったら一瞬でサーボモータを動かせて驚愕する。
+これはスゴイ。
+Arduinoのマイコンプログラミングの敷居下げ能力はすばらしいぞ。</p>
+
+<p>そういうことで、環境づくり。
+Emacsユーザなので、もちろん純正のjavaアプレットみたいなエディタは気に
+入らない。結局半日かかった。</p>
+
+<p><a href="https://github.com/bookest/arduino-mode">arduino-mode</a> と <a href="https://github.com/mjoldfield/Arduino-Makefile">Arduino-Make</a> を導入。しかし・・・アップロードできない。</p>
+
+<p>Arduino Leonardoは、<a href="http://arduino.cc/en/Main/arduinoBoardLeonardo">公式</a>にあるように、ブートローダーの仕様がUnoらとは
+異なっている。安くするためのワンチップ構成が仇となっている。
+Arduino-Make はそこのところを無視しているためアップロードできないのだ。
+速攻で<a href="https://github.com/mjoldfield/Arduino-Makefile">Forkして</a> <a href="https://github.com/mjoldfield/Arduino-Makefile/pull/37">直してPull Request投げてやった</a>。人のコード使ってだけど。</p>
+
+<p>さて何つくろうか。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[オレオレlisp入門]]></title>
+    <link href="http://guicho271828.github.io/blog/2013/03/28/oreorelispru-men/"/>
+    <updated>2013-03-28T18:03:00+09:00</updated>
+    <id>http://guicho271828.github.io/blog/2013/03/28/oreorelispru-men</id>
+    <content type="html"><![CDATA[<p>Lispでプログラミングをはじめるには何をすればいいのか、まさに直接的な
+チュートリアルをつくろうと思い立ち、この記事を書き始めました。</p>
+
+<p>Common Lisp入門というともう今まで何度も何度も書かれてきたはずなので、今
+更何を書くことがあるかと考えるのが当然なんですが、残念ながら、それらの
+入門書が多数あるのにも関わらず使用者が少ない。</p>
+
+<p>自分の実体験からしても、やはりLispには何らかの情報不足の壁があって、参
+加者を拒んでいるような感じです。実際、自分がアクティブにCommon Lispの活
+動をできるようになったのはつい最近です。CLについて勉強し始めたのは2年前
+の夏でしたから、どうにもちょっと時間がかかりすぎている。</p>
+
+<p>これはまったくまとまった記事ではありません。ただ、ダラダラと書くうちに、
+やはり自分が詰まったところが思い出されました。これがcl初心者への道標
+になればと思います。</p>
+
+<!-- more -->
+
+
+<h1>はじめの1/3</h1>
+
+<p>注意！On Lispは初心者向けではありません!
+「はじめの1/3」を終えてから読みましょう。</p>
+
+<h2>環境を揃える</h2>
+
+<p>lispの開発環境を揃えるのは、本当にプログラミングに慣れていない人は
+<a href="http://common-lisp.net/project/lispbox/">Lispbox</a> を使えばいいと思います。でも、正直・・・</p>
+
+<ol>
+<li><p>Emacsを入れろ！(どーん)</p></li>
+<li><p>処理系は迷う必要はない。とりあえず <a href="http://www.sbcl.org/">sbcl</a> を入れろ！バイナリを落とし
+てきて &ldquo;sudo sh install.sh&rdquo; と打ち込むだけです。今の所aptから落とし
+てきてもまあ問題はありません。</p></li>
+<li><p>最後に、SLIMEを入れろ！これも今の所apt-getでも問題ありません。</p></li>
+</ol>
+
+
+<p>エディタについては、Emacs-SLIMEが最強なのでこれ一択です。
+Vimな方面については、<a href="http://www.vim.org/scripts/script.php?script_id=2219">Limp</a> をどうぞ、ですが、あまりおすすめしません。
+処理系は、はじめのうちは迷う必要はありません。
+速度が問題になってきたりして初めて必要になります。</p>
+
+<p>注意ですが、aptなどのパッケージ管理システムに入っているlispのソフトウェ
+アで、落としても良いのは上に挙げた2つぐらいしかありません。
+他のものは、 <strong>aptの古いバージョンが、quicklispなどからの最新版より優先さ
+れるという事態を発生させるときがあります。</strong></p>
+
+<h2>Practical Common Lisp を読み、真似をする</h2>
+
+<p>Practical Common Lisp (<a href="http://www.amazon.co.jp/%E5%AE%9F%E8%B7%B5Common-Lisp-Peter-Seibel/dp/4274067211">実践CommonLisp</a>) を読んで、ソースコードを打ち込ん
+で動かしてください。動かさないと実感がわきません。今のうちに、SLIMEの使
+い方をわかっておいてください。</p>
+
+<p>これをとりあえず2/3程度読んでください。ここまででも十分lispの便利さを
+知れるはずですが、実は先はまだまだ長いのです。</p>
+
+<h2>ANSIで定義された型と、そのインターフェースを理解する</h2>
+
+<p>次に必要なのが<a href="http://www.lispworks.com/documentation/HyperSpec/Front/Contents.htm">Hyperspec</a> です。ここが自分にとって第一の関門でした。これ
+の存在を知らないと、どんな型があって、それにどんな関数を使うことができ
+るのか、全くわからなくなります。</p>
+
+<p>ubuntuなどのLinuxディストリビューションなら、オフラインにHyperspecのコ
+ピーを保存して素早く見ることができるパッケージ(hyperspec)があります。
+SLIMEの <code>C-c C-d h</code> を沢山活用してください。どんな関数が用意されてい
+るのか、名前だけで良いので調べてください。</p>
+
+<p>おそらく、型も関数も、量が多すぎて一度には覚えられないでしょう。stream
+やbit-vector、pathnameなどなどすべてを覚えられるはずがありません。まし
+てやCLOSを全部理解するのなんて、あまりにも骨になる作業です。必然的に、
+後で必要になった時に何度も何度もhyperspecに立ち戻る必要があります。</p>
+
+<h2>パッケージについてちゃんと理解する</h2>
+
+<p>上のことに付随したことですが、特にパッケージシステムについてはきちんと
+理解してください。おそらく、読んだだけではわからないのですが、それでも、
+Practical Common Lispのパッケージの章と、Hyperspecの <code>defpackage</code> の章
+を読んでください。 <code>:export</code> <code>:import-from</code> <code>:shadowing-import-from</code>
+<code>:shadow</code> の4つがわかれば結構です。</p>
+
+<h1>次の1/3</h1>
+
+<p>さて、これで第一段階が漸く終わりです。
+ここまできて、lisp初心者は漸く「純」ANSI Common Lispの全体像に近づいた
+という程度なのです。</p>
+
+<p>さて、Practical Common Lispの最後の章には `What&rsquo;s next?&lsquo; という章が設け
+てあります。Peter Siebelはこの章でコミュニティやライブラリの探し方を伝
+えようとしているのですが、残念ながらそこに貼られているURLは古く、あまり
+役に立ちません。そのためこの文書では、代わりになるより新しいポインタを
+示し、実践CommonLispを読み終わったその後どうするかを具体的に説明します。</p>
+
+<h2>環境設定</h2>
+
+<p>まず、 <strong>quicklispをインストールしてください。</strong></p>
+
+<ul>
+<li><strong>quicklisp:</strong> <a href="http://www.quicklisp.org/beta/">http://www.quicklisp.org/beta/</a></li>
+</ul>
+
+
+<p>たぶん、quicklispのウェブサイトを見ると、Practical Common LispやOn
+Lispを読んだだけでは出てこない、はじめて出てくる表記があるはずです。例
+えば、</p>
+
+<ul>
+<li><p><strong>ql:quickload:</strong> パッケージ指定シンボル。「:」ってなによ？</p></li>
+<li><p><strong>require と asdf:</strong> 聞いてない!</p></li>
+<li><p><strong>.sbclrc:</strong> 初期化ファイルって？</p></li>
+</ul>
+
+
+<p>また、gitとsvn, cvsをインストールしてください。近年のライブラリは大抵
+gitで管理されています。多少古いものではsvnやcvsになります。</p>
+
+<h2>細かなことを知る</h2>
+
+<h3>リードマクロ</h3>
+
+<p>おそらく、それまでの経験だけではリードマクロの存在を知らないはずです。
+はいhyperspecの復習。第二章の<a href="http://www.lispworks.com/documentation/HyperSpec/Body/02_.htm">Syntax</a> を読んでください。
+このように、hyperspecには、初心者には想像のつかないような内容がま
+だまだ隠れています。これこそは、緻密な標準化事業の結果ANSI標準を獲得
+したCommon Lispの、その長い歴史のなせる技です。</p>
+
+<h3>asdfを知る</h3>
+
+<p>asdfは、沢山のファイルを読み込むときにその順番を指定し、コンパイルされ
+ていないものだけコンパイルするということを行うプログラムです。
+他の言語での開発経験があるなら、makeに相当するものです。</p>
+
+<p>概要については、asdf Manualの<a href="http://common-lisp.net/project/asdf/asdf/Using-ASDF.html#Using-ASDF">第四章</a> からよむと良いでしょう。まあ今のと
+ころは、 <strong>ライブラリはrequireすれば使えるようになる</strong> とだけ覚えておけば
+大丈夫でしょう。しかし、ライブラリを自分で作る段階になった時には、asdf
+の知識は必ず必要になります。</p>
+
+<h3>sbclrcなどの「処理系依存」の要素の存在を知る</h3>
+
+<p>いずれ、bordeaux-threadsなどを扱うことで実感することにはなるでしょうが、
+処理系のウェブサイト(この場合 <a href="http://www.sbcl.org/manual/index.html">http://www.sbcl.org/manual/index.html</a> )か
+らマニュアルを見ておくべきです。理解する必要はありません。ただ、処理系
+によってこんなにも独自の拡張がされており、こんなに沢山の未だ知らぬ機能
+があるのだという事を実感していただければ。</p>
+
+<h2>ライブラリを探す</h2>
+
+<p>ライブラリは以下のようにして探します。今は方法を紹介するだけですので、
+調べ始める前に次の章を見てください。</p>
+
+<ul>
+<li><p><strong><a href="http://www.cliki.net">Cliki.net</a>:</strong> Common Lispに関連するWikiです。…が、雑然としていて、あ
+まりメンテナンスされていません。自分は頑張って更新したり
+しているつもりです。まずはじめはCurrent Recommended
+Libraries を見るべきでしょう。</p></li>
+<li><p><strong><a href="http://blog.quicklisp.org/">quicklisp news</a>:</strong> quicklisp の更新情報を載せているブログです。
+ここに乗っている更新情報を見れば、どのライブラリが
+生きているか(アクティブにメンテナンスされているか)
+がわかります。</p></li>
+<li><p><strong>github:</strong> githubで、有名な開発者(xachやfareら)の見ているものをチェッ
+クしてみましょう。</p></li>
+<li><p><strong>twitter,shibuya.lisp:</strong> 日本人Lisperのブログや発言経由で情報を得られ
+ます。</p></li>
+<li><p><strong>quicklisp:</strong> <code>(ql:system-apropos string)</code> で、quicklispに登録されて
+いる情報を探せます。</p></li>
+<li><p><strong><a href="https://github.com/quicklisp/quicklisp-projects">quicklisp-project リポジトリ</a>:</strong> quicklispへの申請を待っているプロジェ
+クトが issues にて管理人のxachにお願いを立てています。登録をする
+には、プロジェクトの重要性・新規性、マルチプラットフォーム性など
+をアピールしないといけないので、それぞれのプロジェクトの主張を見
+れてためになります。</p></li>
+<li><p><strong><a href="http://quickdocs.org/">quickdocs</a>:</strong> 深町さんによるドキュメンテーション・API検索エンジン。ド
+キュメンテーションを見られるという事は、ライブラリのコ
+ンセプトを得られるというのとほぼ同じです。</p></li>
+</ul>
+
+
+<p>探したら、次にquicklispのlocal-projectという概念を復習してください。通
+常、 <code>(ql:quickload system)</code> でダウンロードしてきたプロジェクトは
+<code>~/quicklisp/dists/quicklisp/software/</code> 配下に保存されますが、それとは
+別に、例えばquicklisp未申請のプロジェクトや、開発中のプロジェクト、人の
+ものだけれど自分用に改造しているものなどを取っておきたいですよね。そう
+いう時には、 <code>~/quicklisp/local-projects/</code> を使います。</p>
+
+<p>例えば、自分で新たにライブラリを作るときには、そこでプロジェクトのディ
+レクトリを作ります。人のものを改造する場合にも、 <code>git clone</code> などでそこ
+にプロジェクトをダウンロードします。</p>
+
+<p>Clikiは、古くてもはやメンテされていないページがありますが、そのことにさ
+え気をつければ、wikiスタイルによるカテゴリ分けがなされているので、ある
+程度目的に応じたライブラリを探しやすくなります。CLのライブラリは命名規
+則がないから困りますよね〜。</p>
+
+<h2>重要ライブラリを知る</h2>
+
+<p>Clikiの<a href="http://www.cliki.net/Current%20recommended%20libraries">Currently Recommended Library</a>は <strong>最重要チェック項目</strong> です。特に、
+ファイル操作に関するもの( <code>cl-fad</code> や <code>osicat</code> )と、ユーティリティライ
+ブラリ(<code>alexandria</code> <code>iterate</code>)はチェックして下さい。</p>
+
+<h1>最後の1/3</h1>
+
+<p>最後の1/3になりました。ここで残されていることはあと3つ程です。
+この中には未だに自分も達成できていない点もあります。</p>
+
+<h2>自分でライブラリを作りgithubに公開する</h2>
+
+<p>これは最初の関門であり、最後のゴールでもあります。
+これを行うためには、 <strong>良いインターフェースとは何か</strong> というセンスないし
+知識が無いといけません。また、asdfをきちんと理解する必要があります。</p>
+
+<p>深町英太郎さん作のcl-projectというライブラリがありまして、初めてライブ
+ラリを作る人でも簡単！また、他の人のライブラリのasdファイルも見てみて
+ください。</p>
+
+<ul>
+<li><strong><a href="https://github.com/fukamachi/cl-project">cl-project</a>:</strong> プロジェクトのテンプレートを作るライブラリ</li>
+</ul>
+
+
+<p>深町さんはプログラムの書き方のスタイルについて興味深い記事を多数書いて
+いらっしゃっています。</p>
+
+<p>また、asdfの延長として、 <code>xcvb</code> や <code>uiop</code> (旧asdf-driver)というライブラ
+リがあります。</p>
+
+<p>また、ライブラリを書くならドキュメントは必須です。いくつかあるドキュメ
+ンテーション生成ライブラリを調べて試しておくべきです。</p>
+
+<h2>CLOSとMOPを理解する</h2>
+
+<p>CLOSは非常に奥が深いオブジェクトシステムで、他の言語にはない特徴をいく
+つも持っています。<a href="http://ja.wikipedia.org/wiki/CLOS">日本語版WikipediaのCLOSのページ</a> は僕がかなり書きました
+ので、そこの例をみると理解の助けになるでしょう。もちろん、hyperspecも
+読んでください。</p>
+
+<p><a href="http://alu.org/mop/index.html">MOP</a> はCltl2で提唱された考えではあるみたいですが、処理系依存の部分が残っ
+ており、ANSI規格には入っていません。しかし、 <em>ぼちぼち</em> それぞれの処理
+系が対応してきています。そのため、 <code>closer-mop</code> というライブラリが、ポー
+タビリティのために作られています。</p>
+
+<h2>CFFIを理解する</h2>
+
+<p><a href="http://common-lisp.net/project/cffi/">CFFI</a> は、Cやその他の言語で書かれたライブラリを扱うためのフレームワーク
+です。 <strong>UFFIは古いので推奨されません。</strong> サイトにはチュートリアルとマニュ
+アルが載っています。</p>
+
+<h2>コンディション・リスタートシステムを理解する</h2>
+
+<p>これはPractical Common Lispも参考になるでしょう。</p>
+
+<h2>スレッドなどのプリミティブな処理</h2>
+
+<p>スレッドやデータベース、永続化、GC、最適化などをlispでどう表現す
+るのかを知る必要があります。まあ、そこらへんのコストは他の言語と変わり
+ない複雑さがあるのですが…。</p>
+
+<h2>抽象的なプログラミング上の概念を身につける</h2>
+
+<p>パターンマッチやユニフィケーション、非決定的アルゴリズム、
+継続渡しスタイル、Lispには型変数が無いこと、処理系内部のVOP(Virtual
+OP)処理など。</p>
+
+<h1>最後の仕上げ</h1>
+
+<ul>
+<li><p>Interface Passing Style ほか, API設計について学ぶ</p></li>
+<li><p>複数の他の人のライブラリを読み、改善する</p></li>
+<li><p>国際的な Lisp world で名を上げる</p></li>
+<li><p>つねに拡散が正でありがちなlispコミュニティを統合し、既存の問題を解
+決し、lisperを増やす</p></li>
+</ul>
+
+
+<p>うーん、なんか壮大すぎで適当(&#x2013;;) でも、これで、cltl3の編纂などに精を出してくれる若い
+lisperの仲間が増えてくれると嬉しいです。リーダーシップを取って、言語と
+言うよりコミュニティに存在する問題を解決しないといけませんね。</p>
+
+<p>まあ、こんなかんじで、いまからlispを始めようという人は、どうやったらス
+ゴイlisperになれるのかの指針ができたのではないでしょうか。自分もまだま
+だですが、少ないながらも力添えができればと思います。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[最新版のOrg-mode (8.0 preview)をOctopressと連携させる]]></title>
+    <link href="http://guicho271828.github.io/blog/2013/03/28/zui-xin-ban-falseorg-mode-8-dot-0-preview-wooctopresstolian-xi-saseru/"/>
+    <updated>2013-03-28T13:15:00+09:00</updated>
+    <id>http://guicho271828.github.io/blog/2013/03/28/zui-xin-ban-falseorg-mode-8-dot-0-preview-wooctopresstolian-xi-saseru</id>
+    <content type="html"><![CDATA[<p>たぶんこれでいけた。.emacsを編集して、かつRakefileをちょこっと変更する
+だけ。基本方針は、File local variables を使って、ファイルを保存すると同
+時にorg-modeからmarkdownに変換する。orgのファイルは
+<code>$octopress-root$/org/</code> に入れる。そしたら
+<code>$octopress-root$/source/_posts</code> にmdファイルが移る。</p>
+
+<!-- more -->
+
+
+<p>Octopressでのブログ生成をEmacsからコマンド一発( <code>M-x octopost</code> など)でやれ
+るようになっている。いちいちシェルを開くのもめんどくさい。正直、この程
+度だとrakeの必要性がないというか、Emacs Lispとやれることが被ってるんだ
+よね。依存関係とか無いし。しかも <code>rake new_post[title]</code> は作ったファイ
+ル名を返してくれない。結局、作ったファイルを自動で開くようにするのは面
+倒くさくてやらなかった。ただ、一応、フォルダを開くことにはしておいた。
+また、 <code>rake preview</code> コマンドをバックグラウンドで自動で起動してくれる。
+ただし、起動したバッファを自分で消さないとだめ。</p>
+
+<p>最後に(ここまでする必要あるか？)、 <code>M-x gen-dep</code> で <code>rake gen_deploy</code> 相
+当のものができる。</p>
+
+<pre><code>(defvar octopress-repo "~/repos/octopress/") ;; このアドレスは自由に変更可能
+(defvar posts "source/_posts/")
+(defvar org-source "org/")
+(defvar octopress-export-org-to-md-enabled nil)
+(defun org-md-try-to-export-to-markdown ()
+  (interactive)
+  (when octopress-export-org-to-md-enabled
+    (let ((md (org-md-export-to-markdown)))
+      (shell-command 
+       (format "mv -f %s %s" 
+               md (concatenate 'string octopress-repo posts))))))
+
+(defun octopost (title)
+  (interactive "sInput the new post title: ")
+  (shell-command
+   (format "cd %s;rake new_post[\"%s\"]" octopress-repo title))
+  (octo-preview)
+  (find-file (concatenate 'string octopress-repo org-source)))
+
+(defun octopage (title)
+  (interactive "sInput the new page title: ")
+  (shell-command
+   (format "cd %s;rake new_page[\"%s\"]" octopress-repo title))
+  (octo-preview)
+  (find-file (concatenate 'string octopress-repo org-source)))
+
+(defun octo-preview ()
+  (interactive)
+  (shell-command
+     (format "cd %s;rake preview &amp;" octopress-repo)))
+(defun gen-dep ()
+  (interactive)
+  (shell-command
+   (format "cd %s;rake gen_deploy &amp;" octopress-repo)
+   (get-buffer-create "*Async Shell Command*"))
+  (sleep-for 5)
+  (kill-buffer "*Async Shell Command*"))
+
+(add-hook 'after-save-hook #'org-md-try-to-export-to-markdown)
+</code></pre>
+
+<p>それで、それぞれのファイルの先頭に以下のように書く。</p>
+
+<pre><code># -*- octopress-export-org-to-md-enabled : t -*-
+</code></pre>
+
+<p>もちろんそれは面倒臭い。なので、Rakefileで指定する。
+変更点はざっとこんな感じ。
+一部は <a href="http://blog.paphus.com/blog/2012/08/01/introducing-octopress-blogging-for-org-mode/">Introducing Octopress Blogging for Org-Mode</a> を参考にした。</p>
+
+<pre><code>diff --git a/Rakefile b/Rakefile
+index d3a1cb0..827ebfe 100644
+--- a/Rakefile
++++ b/Rakefile
+@@ -23,8 +23,9 @@ deploy_dir      = "_deploy"   # deploy directory (for Github pages deployment)
+ stash_dir       = "_stash"    # directory to stash posts for speedy generation
+ posts_dir       = "_posts"    # directory for blog files
+ themes_dir      = ".themes"   # directory for blog files
+-new_post_ext    = "markdown"  # default new post file extension when using the new_post task
+-new_page_ext    = "markdown"  # default new page file extension when using the new_page task
++org_posts_dir   = "org"
++new_post_ext    = "org"  # default new post file extension when using the new_post task
++new_page_ext    = "org"  # default new page file extension when using the new_page task
+ server_port     = "4000"      # port for preview server eg. localhost:4000
+
+
+@@ -98,13 +99,17 @@ task :new_post, :title do |t, args|
+     title = get_stdin("Enter a title for your post: ")
+   end
+   raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
+-  mkdir_p "#{source_dir}/#{posts_dir}"
+-  filename = "#{source_dir}/#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.#{new_post_ext}"
++  mkdir_p "#{org_posts_dir}"
++  filename = "#{org_posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.#{new_post_ext}"
+   if File.exist?(filename)
+     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
+   end
+   puts "Creating new post: #{filename}"
+   open(filename, 'w') do |post|
++    post.puts "# -*- octopress-export-org-to-md-enabled : t -*-"
++    post.puts "#+title: #{title.gsub(/&amp;/,'&amp;amp;')}"
++    post.puts "#+date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
++    post.puts "#+begin_MD"
+     post.puts "---"
+     post.puts "layout: post"
+     post.puts "title: \"#{title.gsub(/&amp;/,'&amp;amp;')}\""
+@@ -112,6 +117,7 @@ task :new_post, :title do |t, args|
+     post.puts "comments: true"
+     post.puts "categories: "
+     post.puts "---"
++    post.puts "#+end_MD"
+   end
+ end
+
+@@ -140,6 +146,9 @@ task :new_page, :filename do |t, args|
+     end
+     puts "Creating new page: #{file}"
+     open(file, 'w') do |page|
++      page.puts "#+title: #{title}"
++      page.puts "#+date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
++      page.puts "#+begin_MD"
+       page.puts "---"
+       page.puts "layout: page"
+       page.puts "title: \"#{title}\""
+@@ -148,6 +157,7 @@ task :new_page, :filename do |t, args|
+       page.puts "sharing: true"
+       page.puts "footer: true"
+       page.puts "---"
++      page.puts "#+end_MD"
+     end
+</code></pre>
+
+<p>とにかく動けばいいやって感じのhackだけど、まあこれでいいでしょ。快適だ
+し、わざわざファイル名を変えたりコピーしなくていいし。</p>
+
+<p>注意点。org-modeはgitで取得した最新版(8.0-pre)。旧来のexporterが使えな
+くなっているので注意。exportのメニュー画面がだいぶ変更されている。雑然
+としていたいままでのexport画面が改良されているのはいい感じだな。
+そもそも、今回のこれをやり始めたきっかけは、 <code>org-mode</code> を新しくしたら
+ <a href="https://github.com/alexhenning/ORGMODE-Markdown">orgmode-markdown</a> が使えなくなっていたこと。その主な理由は、
+<code>orgmode-markdown</code> の依存している <code>org-export-generic</code> が、最新版では
+消去されているから。どうやら、一度oldextフォルダに移されて、しばらくし
+たらその全体が消されたようだ。</p>
+
+<p>さて、次の記事は卒論からポートしてきた <code>CL-RRT</code> か、それとも Yet
+Another オレオレLisp入門かな…。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[UTAC Leaflet]]></title>
+    <link href="http://guicho271828.github.io/blog/2013/03/14/utac-leaflet-back/"/>
+    <updated>2013-03-14T10:57:00+09:00</updated>
+    <id>http://guicho271828.github.io/blog/2013/03/14/utac-leaflet-back</id>
+    <content type="html"><![CDATA[<p>自動車部のポスターの続き。
+製作時間はやはりまる一日(半日*2ぐらい)。
+ソフトウェアは、途中までGIMPでやっていたけど、
+文字が多くてレイアウト調整が必要だったのと、
+画像的に編集した文字列を直接編集できないのがめんどうだったので、
+途中でInkscapeに乗り換えた。</p>
+
+<p><a href="http://guicho271828.github.io/images/2013sinkan_back.jpg"><img class="center" src="http://guicho271828.github.io/images/2013sinkan_back.jpg" width="450" title="'UTAC leaflet'" ></a></p>
+
+<p>使ったもの :</p>
+
+<ul>
+<li><strong>部員の車の写真</strong>
+
+<ul>
+<li>ガレージでのFDの写真</li>
+<li>群サイで練習した時のエボ4+インプレッサ</li>
+<li>自分のエンジンのヘッドをオーバーホールした時の写真</li>
+<li>後輩のホイール</li>
+</ul>
+</li>
+<li><strong>フォント</strong>
+
+<ul>
+<li>特にオモテとは変えていません</li>
+<li>日本語の部分はTakaoPゴシックで調度良かったのでそれで統一</li>
+<li>強調のところはニタラゴルイカ教漢の太いやつだっけ？</li>
+<li>スケジュールの太い所も同じ。</li>
+</ul>
+</li>
+</ul>
+
+
+<p>背景と、それぞれの写真のレタッチはGIMPでやった。Inkscapeはそれらの貼り合
+わせと文章の挿入、およびレイアウトのために使った。</p>
+
+<hr />
+
+<p>ところで、デジタルオシロ手に入れた</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[UTAC Leaflet]]></title>
+    <link href="http://guicho271828.github.io/blog/2013/03/14/utac-leaflet/"/>
+    <updated>2013-03-14T10:57:00+09:00</updated>
+    <id>http://guicho271828.github.io/blog/2013/03/14/utac-leaflet</id>
+    <content type="html"><![CDATA[<p>自動車部のポスターを作りました。
+製作時間はまる一日。ソフトウェアはもちろんGIMP。</p>
+
+<p><a href="http://guicho271828.github.io/images/2013sinkan_head.jpg"><img class="center" src="http://guicho271828.github.io/images/2013sinkan_head.jpg" width="450" title="'UTAC leaflet'" ></a></p>
+
+<p>使ったもの :</p>
+
+<ul>
+<li><strong>マツダの企業ロゴ</strong>
+
+<ul>
+<li>左上から楔のようなものがドカンと刺さってくるデザ
+インは、マツダの最近のロゴをぱくったもの。</li>
+</ul>
+</li>
+<li><strong>MAZDA font</strong>
+
+<ul>
+<li>同じく最近のマツダのロゴに使われてるフォント。スカイア
+クティブの字体がこれ。フランス語の怪しげなサイトから見つけてきた。た
+ぶん誰かが作ってくれたものだと思う。</li>
+</ul>
+</li>
+<li><strong>Splash系のブラシ</strong>
+
+<ul>
+<li>参考にしたのは
+<a href="http://gimp2-how-to-use.blogspot.jp/2012/06/blog-post_08.html">http://gimp2-how-to-use.blogspot.jp/2012/06/blog-post_08.html</a></li>
+</ul>
+</li>
+</ul>
+
+
+<p>これで新入生が入ってくれると嬉しいわ。</p>
+
+<hr />
+
+<p>さて、学科の卒業パーティなんだけど、6000円が高すぎていく気がなくなって
+きてる…。このままだと <a href="http://atnd.org/events/37420">Lisp Meetup</a>に行
+ってしまう気がする。ルヴェソンベールは高いんだよ。なんでそんなとこ使う
+の(&mdash;;)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Third Commit]]></title>
+    <link href="http://guicho271828.github.io/blog/2013/03/06/third-commit/"/>
+    <updated>2013-03-06T23:15:00+09:00</updated>
+    <id>http://guicho271828.github.io/blog/2013/03/06/third-commit</id>
+    <content type="html"><![CDATA[<p>テスト投稿３つ目。</p>
+
+<h1>gravatarを追加した。</h1>
+
+<p>満面の笑み。</p>
+
+<h1>ちょっとliquidについて調べた。</h1>
+
+<p>なんでこう、テンプレートライブラリって蜂の子のように湧いて出てくるかな。</p>
+
+<p>「定数文字列を出力するコード」にコンパイルするCL-WHO最強。これだけはど
+の言語にも勝てない。ファイルを監視して・・・とか、そういう機能はマクロ
+を持たない言語だけがやっていれば良い。変更したらC-c C-cでその関数だけコ
+ンパイルすればいいのだ。</p>
+
+<h1>残り</h1>
+
+<ul>
+<li>scss も理解した &lt;&lt; 往年の宿題</li>
+<li>デフォルトの文字がでかい。デカすぎ >> 小さくできた</li>
+<li>hoverで下線がダサい >> 消した</li>
+<li>青系よりも赤系が好きなのでそちらにした。</li>
+</ul>
+
+
+<p>はあ、今日はバイトの事をするはずだったのに、自分のブログの設定に費やし
+てしまった。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Second Commit]]></title>
+    <link href="http://guicho271828.github.io/blog/2013/03/06/second-commit/"/>
+    <updated>2013-03-06T23:03:00+09:00</updated>
+    <id>http://guicho271828.github.io/blog/2013/03/06/second-commit</id>
+    <content type="html"><![CDATA[<p>早くmarkdownからorgに移行しないとな。</p>
+
+<p>まだいろいろと機能の確認中。ある程度自由に書ける&amp;設定をいじれるようになっ
+て、環境が整ったら、いよいよ書かなくてはいけないことを書こう。</p>
+
+<h1>見出し</h1>
+
+<p>見出しが # だと全部H1になってしまって問題だな。
+どうにかできないのかこれ。ファイル名からメインのタイトルを取るんだから、
+本文中の # はH2にするべきだろ。スタイルシートでやっても全部ごちゃごちゃ
+になっちゃうだろうし….</p>
+
+<p>とりあえず、firebugでjekyllがどんなソースを吐いてるのか監視しながらやっ
+てみる。すると、ファイル名から来たタイトルの方はentity-titleというクラ
+スになってることはわかった。どうやらスタイルシートでごちゃごちゃになる
+わけではなさそうだ。</p>
+
+<h2>テーマ編集</h2>
+
+<p>テーマの編集のために色々調べてるけど… sassは初めて使うから慣れてない。
+前使ったのはなんだっけ？たしかsassではなくて別のスタイルシート言語だっ
+た覚えがある。</p>
+
+<h2>rakeのバージョン</h2>
+
+<p>rakeのバージョンが <em>新しすぎる</em> せいでなんか毎回 bundle exec rake &hellip; とし
+なくてはいけなくなってる。これ、このフォルダで指定できるようにできない
+のか。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[First Commit]]></title>
+    <link href="http://guicho271828.github.io/blog/2013/03/06/first-commit/"/>
+    <updated>2013-03-06T22:35:00+09:00</updated>
+    <id>http://guicho271828.github.io/blog/2013/03/06/first-commit</id>
+    <content type="html"><![CDATA[<p>とりあえずOctopressでブログ始めてみた・・・
+仕事でrubyを使うのならrubyと関わっておくことも重要かなと。</p>
+
+<p>…本当は全部lispで作りたいんだけどね。仕方ない。</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,41 @@
+#+BEGIN_HTML
+---
+layout: page
+title: "Publications"
+date: 2014-01-17 00:24
+comments: true
+sharing: true
+footer: true
+---
+#+END_HTML
+# Local Variables:
+# octopress-export-org-to-md: page
+# End:
+
+* Papers
+
++ Asai, M.; Fukunaga, A: 2014. Fully Automated Cyclic Planning for Large-Scale
+  Manufacturing Domains. In /ICAPS/.
+
+* Softwares
+
+See [[https://github.com/guicho271828][my github repo]] for the latest activity!
+
++ PDDL -- A Common Lisp library to read/write/analyse PDDL files. It has
+  + a reader
+  + a pretty formatter
+  + a simulator (STRIPS and action-costs are supported)
+
++ [[https://github.com/guicho271828/cell-assembly-pddl-models][CELL-ASSEMBLY]] -- The PDDL files and the explanation of a CELL-ASSEMBLY
+  manufacturing domain, which appears at [Asai, Fukunaga 2014]
+
++ aaai-template -- For [[http://orgmode.org/][org-mode]] lovers and reserchers of artificial intelligence. A
+  set of scripts and templates for faster publishing of papers with [[http://www.aaai.org/][AAAI]]
+  style. Images are assumed to be in a SVG format (I recommend Inkscape as an
+  editor). Included =Makefile= automates
+  + converting images to grayscale pngs
+  + exporting =.org= files to =.tex= files
+  + typeset the TeX files with pdflatex
+  + checks for any *Overfull hbox*
+  + checks for *paper limit*
+

@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="editor.css">
+    <script type="text/javascript" src="jquery-1.7.min.js"></script>
+    <script type="text/javascript" src="ecu.js"></script>
+  </head>
+  <body>
+    <div id="tables">
+      <h1>Miata MCU Parameter Editor</h1>
+      <p>usage: Arrow keys to move,10key +/- or [/] key to inc/decrease
+      <div id="switches">
+	<input type="button" id="igbutton" value="Ignition"/>
+	<input type="button" id="afbutton" value="A/F"/>
+	<input type="button" id="diff" value="Show Diff"/>
+      </div>
+      <div id="ignition">
+	<h2>Ignition (in deg. BTDC)</h2>
+	<h3>
+	  <label>Max:<input id="tmax" type="number"></label>
+	  <label>Min:<input id="tmin" type="number"></label>
+	</h3>
+	<table class="timing editing" id="timing">
+	  <thead></thead><tbody></tbody>
+	</table>
+	<table class="timing old" id="timingold">
+	  <thead></thead><tbody></tbody>
+	</table>
+      </div>
+      <div id="airfuel">
+	<h2>Air/Fuel Ratio</h2>
+	<h3>
+	  <label>Max:<input id="fmax" type="number"></label>
+	  <label>Min:<input id="fmin" type="number"></label>
+	</h3>
+	<table class="fuel editing" id="fuel">
+	  <thead></thead><tbody></tbody>
+	</table>
+	<table class="fuel old" id="fuelold">
+	  <thead></thead><tbody></tbody>
+	</table>
+      </div>
+    </div>
+    <div id="control" class="bordered">
+      <form name="hexinit">
+	<label>Input hex file:
+	  <input type="file" id="file" onchange="rereadFile()">
+	</label>
+	<input type="button" value="Reload" onclick="rereadFile()">
+      </form>
+      <form name="originalinit">
+	<label>Compare with:
+	  <input type="file" id="original" onchange="rereadOriginalFile()">
+	</label>
+	<input type="button" id="originalButton" value="Reload" onclick="rereadOriginalFile()">
+      </form>
+      <input type="button" id="write" value="Write" onclick="writefile()">
+      <textarea id="text" cols="36"></textarea>
+    </div>
+
+</body></html>
