@@ -2,6 +2,13 @@
 // To give it a try, uncomment some of the lines below rebuild your blog, and see how it works.
 // If you need a handy color picker try http://hslpicker.com
 
+$link-color: darkred; /* lighten(darkred, 3); */
+/* $link-color-hover: adjust-color($link-color, $lightness: 10, $saturation: 25) !default; */
+$link-color-visited: adjust-color($link-color, $hue: 30, $lightness: -4) !default;
+/* $link-color-active: adjust-color($link-color-hover, $lightness: -15) !default; */
+
+
+
 //$header-bg: #263347;
 //$subtitle-color: lighten($header-bg, 58);
 //$nav-bg: desaturate(lighten(#8fc17a, 18), 5);
