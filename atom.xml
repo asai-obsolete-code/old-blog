@@ -4,7 +4,7 @@
   <title><![CDATA[CL-USER> (start-up (the engine *bp-ze*))]]></title>
   <link href="http://guicho271828.github.io/atom.xml" rel="self"/>
   <link href="http://guicho271828.github.io/"/>
-  <updated>2014-03-15T21:54:22+09:00</updated>
+  <updated>2014-03-22T11:46:14+09:00</updated>
   <id>http://guicho271828.github.io/</id>
   <author>
     <name><![CDATA[guicho2.71828]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Project Started: Lisp on Opencl]]></title>
+    <link href="http://guicho271828.github.io/blog/2014/03/22/project-started-lisp-on-opencl/"/>
+    <updated>2014-03-22T11:35:03+09:00</updated>
+    <id>http://guicho271828.github.io/blog/2014/03/22/project-started-lisp-on-opencl</id>
+    <content type="html"><![CDATA[<p>Radeon HD5770と nVidia TESLA c1060 およびニュー電源を手に入れたので、
+この一週間は、
+C言語のサブセットであるOpenCLにコンパイルされるlisp拡張を制作する予定。
+まあ、肝心のビデオカードがまだ動いていないんだけど・・・</p>
+
+<p>なぜかというと、GPU用の補助電源ケーブルの手持ちがないから。
+やろうと思えば自作もできるんだけど、さすがにこれぐらい買おうかなと思う・・・</p>
+
+<p>なお、試しに電源を入れてみた(補助電源無し)ときには、おそらくきちんと動いていない
+からかものすごいファンがうるさかった。</p>
+
+<p><a href="http://guicho271828.github.io/images/galleries/gallery/2014-03-21 19.12.33.jpg" rel="shadowbox" title="2014-03-21 19.12.33"><img src="http://guicho271828.github.io/images/galleries/gallery/thumbs/2014-03-21 19.12.33.jpg" /></a>
+<a href="http://guicho271828.github.io/images/galleries/gallery/2014-03-21 19.12.51.jpg" rel="shadowbox" title="2014-03-21 19.12.51"><img src="http://guicho271828.github.io/images/galleries/gallery/thumbs/2014-03-21 19.12.51.jpg" /></a>
+<a href="http://guicho271828.github.io/images/galleries/gallery/2014-03-21 21.09.33.jpg" rel="shadowbox" title="2014-03-21 21.09.33"><img src="http://guicho271828.github.io/images/galleries/gallery/thumbs/2014-03-21 21.09.33.jpg" /></a>
+<a href="http://guicho271828.github.io/images/galleries/gallery/2014-03-21 21.17.04.jpg" rel="shadowbox" title="2014-03-21 21.17.04"><img src="http://guicho271828.github.io/images/galleries/gallery/thumbs/2014-03-21 21.17.04.jpg" /></a>
+<a href="http://guicho271828.github.io/images/galleries/gallery/2014-03-21 21.28.43.jpg" rel="shadowbox" title="2014-03-21 21.28.43"><img src="http://guicho271828.github.io/images/galleries/gallery/thumbs/2014-03-21 21.28.43.jpg" /></a>
+<a href="http://guicho271828.github.io/images/galleries/gallery/strrt3.png" rel="shadowbox" title="strrt3"><img src="http://guicho271828.github.io/images/galleries/gallery/thumbs/strrt3.png" /></a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[スタイルをもとに戻した]]></title>
@@ -43,7 +68,12 @@
     <content type="html"><![CDATA[<p>ギャラリー機能のテスト。
 <a href="https://github.com/yortz/octopress_gallery">https://github.com/yortz/octopress_gallery</a></p>
 
-<p><a href="http://guicho271828.github.io/images/galleries/gallery/strrt3.png" rel="shadowbox" title="strrt3"><img src="http://guicho271828.github.io/images/galleries/gallery/thumbs/strrt3.png" /></a></p>
+<p><a href="http://guicho271828.github.io/images/galleries/gallery/2014-03-21 19.12.33.jpg" rel="shadowbox" title="2014-03-21 19.12.33"><img src="http://guicho271828.github.io/images/galleries/gallery/thumbs/2014-03-21 19.12.33.jpg" /></a>
+<a href="http://guicho271828.github.io/images/galleries/gallery/2014-03-21 19.12.51.jpg" rel="shadowbox" title="2014-03-21 19.12.51"><img src="http://guicho271828.github.io/images/galleries/gallery/thumbs/2014-03-21 19.12.51.jpg" /></a>
+<a href="http://guicho271828.github.io/images/galleries/gallery/2014-03-21 21.09.33.jpg" rel="shadowbox" title="2014-03-21 21.09.33"><img src="http://guicho271828.github.io/images/galleries/gallery/thumbs/2014-03-21 21.09.33.jpg" /></a>
+<a href="http://guicho271828.github.io/images/galleries/gallery/2014-03-21 21.17.04.jpg" rel="shadowbox" title="2014-03-21 21.17.04"><img src="http://guicho271828.github.io/images/galleries/gallery/thumbs/2014-03-21 21.17.04.jpg" /></a>
+<a href="http://guicho271828.github.io/images/galleries/gallery/2014-03-21 21.28.43.jpg" rel="shadowbox" title="2014-03-21 21.28.43"><img src="http://guicho271828.github.io/images/galleries/gallery/thumbs/2014-03-21 21.28.43.jpg" /></a>
+<a href="http://guicho271828.github.io/images/galleries/gallery/strrt3.png" rel="shadowbox" title="strrt3"><img src="http://guicho271828.github.io/images/galleries/gallery/thumbs/strrt3.png" /></a></p>
 
 <p>見た目はあんましよくないね。</p>
 ]]></content>
