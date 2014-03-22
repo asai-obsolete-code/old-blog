@@ -7,3 +7,13 @@ body {
         text-decoration: none;
     }
 }
+
+li p {
+    margin-top: 1.25em;
+    margin-bottom: 0em;
+}
+
+li p:first-of-type {
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
