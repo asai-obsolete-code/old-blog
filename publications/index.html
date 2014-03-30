@@ -9,8 +9,8 @@
   <meta name="author" content="guicho2.71828">
 
   
-  <meta name="description" content="Publications Jan 17th, 2014 Papers Asai, M.; Fukunaga, A: 2014. Fully Automated Cyclic Planning for Large-Scale
-Manufacturing Domains. In ICAPS. &hellip;">
+  <meta name="description" content="Publications Jan 17th, 2014 Peer-Reviewed Papers Asai, M.; Fukunaga, A: 2014. Fully Automated Cyclic Planning for Large-Scale
+Manufacturing Domains &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -87,40 +87,55 @@ Manufacturing Domains. In ICAPS. &hellip;">
 <time datetime="2014-01-17T00:24:00+09:00" pubdate data-updated="true">Jan 17<span>th</span>, 2014</time></p>
   </header>
   
-  <h1>Papers</h1>
+  <h1>Peer-Reviewed Papers</h1>
 
 <ul>
 <li>Asai, M.; Fukunaga, A: 2014. Fully Automated Cyclic Planning for Large-Scale
-Manufacturing Domains. In <em>ICAPS</em>.</li>
+Manufacturing Domains. In <em>ICAPS2014</em>. <a href="publications/icaps14.pdf">pdf</a></li>
+</ul>
+
+
+<h1>Workshop / Lightly reviewed papers</h1>
+
+<ul>
+<li>Asai, M.; Fukunaga, A: 2014. Applying Problem Decomposition to Extremely Large
+Domains. Knowledge Engineering for Planning and Scheduling (KEPS) Workshop
+(ICAPS2014). <a href="publications/keps14.pdf">pdf</a></li>
 </ul>
 
 
 <h1>Softwares</h1>
 
-<p>See <a href="https://github.com/guicho271828">my github repo</a> for the latest activity!</p>
+<p>See <a href="https://github.com/guicho271828">my github repo</a> for the latest activity!
+&ndash;   PDDL &#x2013; A Common Lisp library to read/write/analyse PDDL files. It has</p>
+
+<pre><code>-   a reader
+-   a pretty formatter
+-   a simulator (STRIPS and action-costs are supported)
+</code></pre>
 
 <ul>
-<li><p>PDDL &#x2013; A Common Lisp library to read/write/analyse PDDL files. It has</p>
-
-<ul>
-<li><p>a reader</p></li>
-<li><p>a pretty formatter</p></li>
-<li><p>a simulator (STRIPS and action-costs are supported)</p></li>
-</ul>
-</li>
 <li><p><a href="https://github.com/guicho271828/cell-assembly-pddl-models">CELL-ASSEMBLY</a> &#x2013; The PDDL files and the explanation of a CELL-ASSEMBLY
 manufacturing domain, which appears at [Asai, Fukunaga 2014]</p></li>
 <li><p>aaai-template &#x2013; For <a href="http://orgmode.org/">org-mode</a> lovers and reserchers of artificial intelligence. A
 set of scripts and templates for faster publishing of papers with <a href="http://www.aaai.org/">AAAI</a>
 style. Images are assumed to be in a SVG format (I recommend Inkscape as an
-editor). Included <code>Makefile</code> automates</p>
+editor).</p>
 
 <ul>
-<li><p>converting images to grayscale pngs</p></li>
-<li><p>exporting <code>.org</code> files to <code>.tex</code> files</p></li>
-<li><p>typeset the TeX files with pdflatex</p></li>
-<li><p>checks for any <strong>Overfull hbox</strong></p></li>
-<li><p>checks for <strong>paper limit</strong></p></li>
+<li>Included <code>Makefile</code> automates
+
+<ul>
+<li>converting images to grayscale pngs</li>
+<li>exporting <code>.org</code> files to <code>.tex</code> files</li>
+<li>typeset the TeX files with pdflatex</li>
+<li>checks for any <strong>Overfull hbox</strong></li>
+<li>checks for <strong>paper limit</strong></li>
+</ul>
+</li>
+<li>Combination of simple scripts <code>make-periodically</code>
+would be useful. It waits for the changes, and if a change is detected, it runs
+<code>make</code>, then notify the result via <code>inotify</code> (pop up inteface available in gtk).</li>
 </ul>
 </li>
 </ul>
