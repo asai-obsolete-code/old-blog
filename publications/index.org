@@ -26,15 +26,15 @@ footer: true
 * Softwares
 
 See [[https://github.com/guicho271828][my github repo]] for the latest activity!
+#+HTML: 
+
 
 + PDDL -- A Common Lisp library to read/write/analyse PDDL files. It has
-  + a reader
+  + a PDDL reader
   + a pretty formatter
   + a simulator (STRIPS and action-costs are supported)
-
 + [[https://github.com/guicho271828/cell-assembly-pddl-models][CELL-ASSEMBLY]] -- The PDDL files and the explanation of a CELL-ASSEMBLY
-  manufacturing domain, which appears at [Asai, Fukunaga 2014]
-
+  manufacturing domain, which appears at [Asai, Fukunaga ICAPS2014]
 + aaai-template -- For [[http://orgmode.org/][org-mode]] lovers and reserchers of artificial intelligence. A
   set of scripts and templates for faster publishing of papers with [[http://www.aaai.org/][AAAI]]
   style. Images are assumed to be in a SVG format (I recommend Inkscape as an
