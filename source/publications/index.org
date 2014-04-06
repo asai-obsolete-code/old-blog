@@ -15,26 +15,26 @@ footer: true
 * Peer-Reviewed Papers
 
 + Asai, M.; Fukunaga, A: 2014. Fully Automated Cyclic Planning for Large-Scale
-  Manufacturing Domains. In /ICAPS2014/. [[file:publications/icaps14.pdf][pdf]]
+  Manufacturing Domains. In /ICAPS2014/. [[file:icaps14.pdf][pdf]]
 
 * Workshop / Lightly reviewed papers
 
 + Asai, M.; Fukunaga, A: 2014. Applying Problem Decomposition to Extremely Large
   Domains. Knowledge Engineering for Planning and Scheduling (KEPS) Workshop
-  (ICAPS2014). [[file:publications/keps14.pdf][pdf]]
+  (ICAPS2014). [[file:keps14.pdf][pdf]]
 
 * Softwares
 
 See [[https://github.com/guicho271828][my github repo]] for the latest activity!
+#+HTML: 
+
 
 + PDDL -- A Common Lisp library to read/write/analyse PDDL files. It has
-  + a reader
+  + a PDDL reader
   + a pretty formatter
   + a simulator (STRIPS and action-costs are supported)
-
 + [[https://github.com/guicho271828/cell-assembly-pddl-models][CELL-ASSEMBLY]] -- The PDDL files and the explanation of a CELL-ASSEMBLY
-  manufacturing domain, which appears at [Asai, Fukunaga 2014]
-
+  manufacturing domain, which appears at [Asai, Fukunaga ICAPS2014]
 + aaai-template -- For [[http://orgmode.org/][org-mode]] lovers and reserchers of artificial intelligence. A
   set of scripts and templates for faster publishing of papers with [[http://www.aaai.org/][AAAI]]
   style. Images are assumed to be in a SVG format (I recommend Inkscape as an
