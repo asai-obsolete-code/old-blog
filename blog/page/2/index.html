@@ -9,10 +9,8 @@
   <meta name="author" content="guicho2.71828">
 
   
-  <meta name="description" content="Common Lispを使っていると、みんな一度はマクロでDSLを実装したくなります
-よね。みなさんどうしてるでしょう。例えば、自分の作ったマクロ
-my-macro の中では、特定のS式、たとえば=my-clause= に特殊な意味を持つ
-節としての役割を与えたい時。 &hellip;">
+  <meta name="description" content="前回の続き。状態を持つmacroletを書くにはどうすればいいのか！？
+これが答えだ！ ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -71,6 +69,48 @@ my-macro の中では、特定のS式、たとえば=my-clause= に特殊な意�
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/05/06/common-lisp-de-code-walker-woshi-zhuang-surunara-sofalse/">Common Lisp で Code Walker を実装するなら その②</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-05-06T15:26:00+09:00" pubdate data-updated="true">May 6<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>前回の続き。状態を持つmacroletを書くにはどうすればいいのか！？
+これが答えだ！</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/05/06/common-lisp-de-code-walker-woshi-zhuang-surunara-sofalse/">(continue-to (rest article)) &#8211;></a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -600,46 +640,9 @@ Arduino-Make はそこのところを無視しているためアップロード�
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/03/06/first-commit/">First Commit</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-03-06T22:35:00+09:00" pubdate data-updated="true">Mar 6<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>とりあえずOctopressでブログ始めてみた・・・
-仕事でrubyを使うのならrubyと関わっておくことも重要かなと。</p>
-
-<p>…本当は全部lispで作りたいんだけどね。仕方ない。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
+    
+      <a class="prev" href="/blog/page/3/">&larr; Older</a>
     
     <a href="/blog/archives">Blog Archives</a>
     
@@ -675,6 +678,10 @@ Arduino-Make はそこのところを無視しているためアップロード�
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/05/04/recursive-macroexpansion/">Recursive Macroexpansion</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/03/22/project-started-lisp-on-opencl/">Project Started: Lisp on Opencl</a>
       </li>
     
@@ -688,10 +695,6 @@ Arduino-Make はそこのところを無視しているためアップロード�
     
       <li class="post">
         <a href="/blog/2014/03/01/galambdafalsesheng-lue-tositeshi-inikuitoiuhua/">^がlambdaの省略として使いにくいという話</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/01/17/cv-page-zuo-cheng-zhong/">CV Page 作成中</a>
       </li>
     
   </ul>

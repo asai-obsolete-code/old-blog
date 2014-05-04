@@ -4,7 +4,7 @@
   <title><![CDATA[CL-USER> (start-up (the engine *bp-ze*))]]></title>
   <link href="http://guicho271828.github.io/atom.xml" rel="self"/>
   <link href="http://guicho271828.github.io/"/>
-  <updated>2014-04-08T09:56:57+09:00</updated>
+  <updated>2014-05-04T17:19:30+09:00</updated>
   <id>http://guicho271828.github.io/</id>
   <author>
     <name><![CDATA[guicho2.71828]]></name>
@@ -12,6 +12,96 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Recursive Macroexpansion]]></title>
+    <link href="http://guicho271828.github.io/blog/2014/05/04/recursive-macroexpansion/"/>
+    <updated>2014-05-04T15:56:33+09:00</updated>
+    <id>http://guicho271828.github.io/blog/2014/05/04/recursive-macroexpansion</id>
+    <content type="html"><![CDATA[<blockquote><p>Yesterday, as a holiday coding, I made yet another macro-expansion system which
+allows for easier compile-time error handling, which I previously described in
+<a href="http://qiita.com/guicho271828/items/07ba4ff11bff494dc03f">this post</a>.</p></blockquote>
+
+<p>昨日、ゴールデンウィークの遊びコーディングとして、
+<a href="http://qiita.com/guicho271828/items/07ba4ff11bff494dc03f">前々から言っていた</a> ものに相当する、
+リスタートやコンディションと密に連携できるマクロ展開システムを作りました。</p>
+
+<blockquote><p>Some people may already know that this idea is not so new at all.
+In
+<a href="http://ja.reddit.com/r/lisp/comments/1xyux9/macro_system_common_lisp_is_still_hard_to_satisfy/cffz33l">this post</a>
+, nsiivola said that we can alternatively use an implementation-specific
+<code>macroexpand-all</code>. Also, <code>macroexpand-dammit</code> tries to give the similar feature
+within ANSI CL.</p></blockquote>
+
+<p>色々とすでに言われているように実は、
+このライブラリ自体にそんなに新規性はありません。
+まず、同じことを達成するためには、
+<a href="http://ja.reddit.com/r/lisp/comments/1xyux9/macro_system_common_lisp_is_still_hard_to_satisfy/cffz33l">nsiivola さんの言った</a>ように、
+マクロの中で実装依存の <code>macroexpand-all</code> を使うという手がありました。
+他にも、ANSI CL の中だけで似た機能を作ろうと頑張っている、
+ <code>macroexpand-dammit</code> を使うという手もありました。</p>
+
+<blockquote><p>So why I made it? The first reason is that I didn&rsquo;t want to use the implementation
+specific feature. The second is that, I didn&rsquo;t want to use <code>macroexpand-dammit</code>
+which I have a bitter experience with it.
+When I once saw it, it was not maintained, the implementation was tricky,
+it has a bug, lacks test codes, and was also depended by some other famous library SXML, which I have no idea
+about and also lacks test codes.</p></blockquote>
+
+<p>ではなぜ作ったのか?
+第一に、実装依存の要素を使うというのはあまり好きではありませんでした。
+第二に、これは完全に個人的な理由なんですが、
+<code>macroexpand-dammit</code> には苦い経験があるのであまり使いたくなかったというわけです。
+このライブラリ、まず実装がトリッキー、バグが在る、テストコードがない、という問題だ
+らけのライブラリでした。</p>
+
+<blockquote><p>I once tried to maintain it on github and have my repo followed in quicklisp thanks to
+zach, but my change made some errors in those dependent libraries, and
+honestly I failed. I neglected. Currently quicklisp follows the older version.
+And I lack my interest now. (However, now I see some issues
+message from someone, so maybe I&rsquo;ll try again)</p></blockquote>
+
+<p>一度、これを直してgithub上でメンテナっぽく振る舞おうと思い、quicklispにも申請したの
+ですが、
+これを治そうとすると、実は有名なライブラリSXMLがこれに依存しているらしく、そこのコー
+ドを壊してしまうそうです。
+で、さらに悪いことに、「メンテナになるよー」と一旦言ったにも関わらず
+個人的に時間が取れなくて放置してしまったため、
+zachさんには「メンテ出来ないならメンテナになろうとするな」と。正論ですね。すみませ
+ん。そんなこんなで、苦い経験だったので触りたくなかったのです。(なんか今見たら
+issueが飛んできていますね・・・そろそろ頑張り直すかも。)</p>
+
+<blockquote><p>Recursive-Macroexpansion has the completely different expansion algorithm than
+those of Common Lisp’s macro expansion. CL is based on macroexpand-1 and
+macroexpand while Recursive-Macroexpansion is based on rmacroexpand only. However,
+normal macros are transparent to macroexpand, so mixing normal macro and recursive
+macro is completely ok.</p></blockquote>
+
+<p>Recursive-Macroexpansion は普通の Common Lisp の展開とは別のアルゴリズムで
+式を展開します。 CL での展開は macroexpand-1 と
+macroexpand でできていますが、 Recursive-Macroexpansion は <code>rmacroexpand</code> だけで出
+来ています。 <code>rmacroexpand</code> は、対応する recursive-macro がなかった場合
+普通の <code>defmacro</code> で定義されたマクロを探し、普通の <code>macroexpand-1</code> で展開するので、
+<code>recursive-macro</code> と普通のマクロを混ぜることは全く問題ありません。</p>
+
+<blockquote><p><strong>BIG NOTE</strong> : This is my FIRST library written in controversial CL21. Thanks to
+Fukamachi !  The reason I chose CL21 is simply because I was interested in it and
+want to try it. However, adoption of <em>CLtL2 Sec.8 environment</em> was also a key
+factor, because it uses <code>augment-environment</code> many times.</p></blockquote>
+
+<p>これはまあCL21で作った最初のライブラリです。使いながらCL21のバグフィック
+スもいくつかしました。 深町さんGJ!
+CL21を使った理由は、まあ使ってみて感触を試してみたかったというのもありますが、
+CLtL2の <code>&amp;environment</code> 構造体関連の関数がCL21ではデフォルトで入っているというのが
+鍵でした。実装は <code>augment-environment</code> に多分に依存しています。(これをしてしまうと、
+実装依存の <code>macroexpand-all</code> とどう違うんだと言われてしまうかもしれませんが・・・)</p>
+
+<p><a href="https://github.com/guicho271828/recursive-macroexpansion">https://github.com/guicho271828/recursive-macroexpansion</a></p>
+
+<p>Lisp on OpenCL は少しずつやってますがあんまり進展はないので、次回はマクロの話をまた
+英語併記でやります。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Project Started: Lisp on Opencl]]></title>
@@ -1561,18 +1651,6 @@ Another オレオレLisp入門かな…。</p>
 <p>rakeのバージョンが <em>新しすぎる</em> せいでなんか毎回 bundle exec rake &hellip; とし
 なくてはいけなくなってる。これ、このフォルダで指定できるようにできない
 のか。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[First Commit]]></title>
-    <link href="http://guicho271828.github.io/blog/2013/03/06/first-commit/"/>
-    <updated>2013-03-06T22:35:00+09:00</updated>
-    <id>http://guicho271828.github.io/blog/2013/03/06/first-commit</id>
-    <content type="html"><![CDATA[<p>とりあえずOctopressでブログ始めてみた・・・
-仕事でrubyを使うのならrubyと関わっておくことも重要かなと。</p>
-
-<p>…本当は全部lispで作りたいんだけどね。仕方ない。</p>
 ]]></content>
   </entry>
   
