@@ -21,10 +21,10 @@ footer: true
         -   0.7mm DIY face-milling on cylinder head
         -   ~155ps?
 
-Miata MX-5 & Gymkhana & the Team
+[Miata MX-5 & Gymkhana & the Team](./gymkhana.html)
 
-Miata MX-5 misc. mod
+[Miata MX-5 misc. mod](./miscmod.html)
 
-Miata MX-5 Engine Mod ( NA8 -> NB8 + DIY high-compression )
+[Miata MX-5 Engine Mod ( NA8 -> NB8 + DIY high-compression )](./enginemod.html)
 
-DIY FRP Test
+[DIY FRP Test](./frp.html)
