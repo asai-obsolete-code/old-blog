@@ -14,7 +14,7 @@ footer: true
     -   Department of General Systems Studies, Graduate School of Arts and Sciences.
 -   My advisor is [Alex Fukunaga](http://metahack.org/).
 -   Research Interest : Artificial Intelligence, Automated Planning and Scheduling, Heuristic Search.
-    -   See [Publications](./publications) for more details.
+    -   See [Publications](../publications/) for more details.
 
 # Past Interests
 
@@ -30,6 +30,6 @@ Japanese, so I do not provide it here.)
 -   Programming Language and Common Lisp
 -   Electric circuits and Microcontroller
     -   I have worked on a bipedal robot in the past
--   [DIY modification of internal combustion engine](./gallery)
--   [Car, Driving, Gymkhana](./gallery)
+-   [DIY modification of internal combustion engine](../gallery/)
+-   [Car, Driving, Gymkhana](../gallery/)
 -   [Road racers (bicycles)](http://runkeeper.com/user/941210962/profile)

@@ -11,7 +11,7 @@ footer: true
     -   Compression Ratio 9.0, ~130ps
 -   2010 Dec: Stock ECU -> Custom ECU Flash-ROM
     -   Bought a general-purpose flash-ROM writer from <http://www.sivava.com/>
-    -   [Created my own fuel-mapping/ignition timing software](./editor/editor.html)
+    -   [Created my own fuel-mapping/ignition timing software](../editor/editor.html)
 -   2012 June: Engine Swap:
     -   Miata MX-5 1.8L NB8('00) Stock
         -   Variable Resonance Intake
@@ -21,10 +21,10 @@ footer: true
         -   0.7mm DIY face-milling on cylinder head
         -   ~155ps?
 
-[Miata MX-5 & Gymkhana & the Team](./gallery/gymkhana.html)
+Miata MX-5 & Gymkhana & the Team
 
-[Miata MX-5 misc. mod](./gallery/miscmod.html)
+Miata MX-5 misc. mod
 
-[Miata MX-5 Engine Mod ( NA8 -> NB8 + DIY high-compression )](./gallery/enginemod.html)
+Miata MX-5 Engine Mod ( NA8 -> NB8 + DIY high-compression )
 
-[DIY FRP Test](./gallery/frp.html)
+DIY FRP Test
