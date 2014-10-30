@@ -20,24 +20,28 @@ footer: true
   Planning Domains. Knowledge Engineering for Planning and Scheduling (KEPS) Workshop
   (ICAPS2014). [[file:keps14.pdf][pdf]] (+submitted version+ -> final version)
 
-* Softwares
+* Software
 
 See [[https://github.com/guicho271828][my github repo]] for the latest activity!
 #+HTML: 
 
 
-+ PDDL -- A Common Lisp library to read/write/analyse PDDL files. It has
-  + a PDDL reader
++ [[https://github.com/guicho271828/pddl][PDDL]] -- A Common Lisp library to read/write/analyse PDDL files. It has
+  + a PDDL reader / parser
+  + CLOS-based object oriented interface to analyse each objects
+    + various useful accessors for objects e.g. predicate/propositions/action/types
+    + methods like =(ground-action action objects)=
   + a pretty formatter
   + a simulator (STRIPS and action-costs are supported)
 + [[https://github.com/guicho271828/cell-assembly-pddl-models][CELL-ASSEMBLY]] -- The PDDL files and the explanation of a CELL-ASSEMBLY
   manufacturing domain, which appears at [Asai, Fukunaga ICAPS2014]
-+ aaai-template -- For [[http://orgmode.org/][org-mode]] lovers and reserchers of artificial intelligence. A
+  + Is currently enlisted as one of [[http://users.cecs.anu.edu.au/~patrik/sigaps/index.php?n%3DMain.RealDomains][``Real and Realistic Planning Domains'']]
+    by Patrik Haslum
++ [[https://github.com/guicho271828/aaai-template][aaai-template]] -- For [[http://orgmode.org/][org-mode]] lovers and reserchers of artificial intelligence. A
   set of scripts and templates for faster publishing of papers with [[http://www.aaai.org/][AAAI]]
-  style. Images are assumed to be in a SVG format (I recommend Inkscape as an
-  editor).
+  style.
   + Included =Makefile= automates
-    + converting images to grayscale pngs
+    + converting SVG images to grayscale pngs (I recommend Inkscape as an editor)
     + exporting =.org= files to =.tex= files
     + typeset the TeX files with pdflatex
     + checks for any *Overfull hbox*

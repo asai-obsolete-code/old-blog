@@ -1,0 +1,18 @@
+#+BEGIN_HTML
+---
+layout: page
+title: "Miata MX-5 misc. mod"
+date: 2014-10-30 00:00
+comments: true
+sharing: true
+footer: true
+---
+#+END_HTML
+# Local Variables:
+# octopress-export-org-to-md: page
+# End:
+
+
+#+HTML: {{ 'miscmod' | image_list }}
+
+

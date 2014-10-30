@@ -1,0 +1,21 @@
+#+BEGIN_HTML
+---
+layout: page
+title: "DIY FRP Test"
+date: 2014-10-30 00:00
+comments: true
+sharing: true
+footer: true
+---
+#+END_HTML
+# Local Variables:
+# octopress-export-org-to-md: page
+# End:
+
+
+#+HTML: {{ 'frp' | image_list }}
+
+
+
+
+
