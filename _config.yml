@@ -108,15 +108,59 @@ facebook_like: true
 gravatar_email: guicho2.71828@gmail.com
 
 mini_magick:
-  thumbnail:
+  gallery_th:
     source: images/galleries/gallery
     destination: images/galleries/gallery/thumbs
     commands:
       - thumbnail: "140x140^"
       - crop: "140x140-0x0"
-  medium:
+  gallery_me:
     source: images/galleries/gallery
     destination: images/galleries/gallery/medium
+    commands:
+      - resize: "600x400"
+  miscmod_th:
+    source: images/galleries/miscmod
+    destination: images/galleries/miscmod/thumbs
+    commands:
+      - thumbnail: "140x140^"
+      - crop: "140x140-0x0"
+  miscmod_me:
+    source: images/galleries/miscmod
+    destination: images/galleries/miscmod/medium
+    commands:
+      - resize: "600x400"
+  enginemod_th:
+    source: images/galleries/enginemod
+    destination: images/galleries/enginemod/thumbs
+    commands:
+      - thumbnail: "140x140^"
+      - crop: "140x140-0x0"
+  enginemod_me:
+    source: images/galleries/enginemod
+    destination: images/galleries/enginemod/medium
+    commands:
+      - resize: "600x400"
+  frp_th:
+    source: images/galleries/frp
+    destination: images/galleries/frp/thumbs
+    commands:
+      - thumbnail: "140x140^"
+      - crop: "140x140-0x0"
+  frp_me:
+    source: images/galleries/frp
+    destination: images/galleries/frp/medium
+    commands:
+      - resize: "600x400"
+  gymkhana_th:
+    source: images/galleries/gymkhana
+    destination: images/galleries/gymkhana/thumbs
+    commands:
+      - thumbnail: "140x140^"
+      - crop: "140x140-0x0"
+  gymkhana_me:
+    source: images/galleries/gymkhana
+    destination: images/galleries/gymkhana/medium
     commands:
       - resize: "600x400"
 

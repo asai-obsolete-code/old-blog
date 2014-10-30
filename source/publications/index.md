@@ -15,22 +15,26 @@ footer: true
     Planning Domains. Knowledge Engineering for Planning and Scheduling (KEPS) Workshop
     (ICAPS2014). [pdf](keps14.pdf) (~~submitted version~~ -> final version)
 
-# Softwares
+# Software
 
 See [my github repo](https://github.com/guicho271828) for the latest activity!
 
--   PDDL &#x2013; A Common Lisp library to read/write/analyse PDDL files. It has
-    -   a PDDL reader
+-   [PDDL](https://github.com/guicho271828/pddl) &#x2013; A Common Lisp library to read/write/analyse PDDL files. It has
+    -   a PDDL reader / parser
+    -   CLOS-based object oriented interface to analyse each objects
+        -   various useful accessors for objects e.g. predicate/propositions/action/types
+        -   methods like `(ground-action action objects)`
     -   a pretty formatter
     -   a simulator (STRIPS and action-costs are supported)
 -   [CELL-ASSEMBLY](https://github.com/guicho271828/cell-assembly-pddl-models) &#x2013; The PDDL files and the explanation of a CELL-ASSEMBLY
     manufacturing domain, which appears at [Asai, Fukunaga ICAPS2014]
--   aaai-template &#x2013; For [org-mode](http://orgmode.org/) lovers and reserchers of artificial intelligence. A
+    -   Is currently enlisted as one of [\`\`Real and Realistic Planning Domains''](http://users.cecs.anu.edu.au/~patrik/sigaps/index.php?n%3DMain.RealDomains)
+            by Patrik Haslum
+-   [aaai-template](https://github.com/guicho271828/aaai-template) &#x2013; For [org-mode](http://orgmode.org/) lovers and reserchers of artificial intelligence. A
     set of scripts and templates for faster publishing of papers with [AAAI](http://www.aaai.org/)
-    style. Images are assumed to be in a SVG format (I recommend Inkscape as an
-    editor).
+    style.
     -   Included `Makefile` automates
-        -   converting images to grayscale pngs
+        -   converting SVG images to grayscale pngs (I recommend Inkscape as an editor)
         -   exporting `.org` files to `.tex` files
         -   typeset the TeX files with pdflatex
         -   checks for any **Overfull hbox**
