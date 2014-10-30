@@ -18,7 +18,7 @@ mailto:guicho2.71828-at-gmail.com
   + Department of General Systems Studies, Graduate School of Arts and Sciences.
 + My advisor is [[http://metahack.org/][Alex Fukunaga]].
 + Research Interest : Artificial Intelligence, Automated Planning and Scheduling, Heuristic Search.
-  + See [[./publications][Publications]] for more details.
+  + See [[../publications/][Publications]] for more details.
 
 ** Past Interests
 
@@ -34,7 +34,7 @@ Japanese, so I do not provide it here.)
 + Programming Language and Common Lisp
 + Electric circuits and Microcontroller
   + I have worked on a bipedal robot in the past
-+ [[./gallery][DIY modification of internal combustion engine]]
-+ [[./gallery][Car, Driving, Gymkhana]]
++ [[../gallery/][DIY modification of internal combustion engine]]
++ [[../gallery/][Car, Driving, Gymkhana]]
 + [[http://runkeeper.com/user/941210962/profile][Road racers (bicycles)]]
 
