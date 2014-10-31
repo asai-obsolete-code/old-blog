@@ -19,6 +19,7 @@ mailto:guicho2.71828-at-gmail.com
 + My advisor is [[http://metahack.org/][Alex Fukunaga]].
 + Research Interest : Artificial Intelligence, Automated Planning and Scheduling, Heuristic Search.
   + See [[../publications/][Publications]] for more details.
++ [[./asai-cv.pdf][CV]]
 
 ** Past Interests
 

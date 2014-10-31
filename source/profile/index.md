@@ -15,6 +15,7 @@ footer: true
 -   My advisor is [Alex Fukunaga](http://metahack.org/).
 -   Research Interest : Artificial Intelligence, Automated Planning and Scheduling, Heuristic Search.
     -   See [Publications](../publications/) for more details.
+-   [CV](./asai-cv.pdf)
 
 # Past Interests
 
