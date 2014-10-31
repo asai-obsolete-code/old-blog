@@ -1,0 +1,1128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Applying Problem Decomposition to Extremely Large Planning Domains</title>
+<!-- 2014-10-31 金 15:54 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Masataro Asai" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="css/layout.css" />
+<link rel="stylesheet" type="text/css" href="css/default.css" />
+<script type="text/javascript" src="./jquery.js"></script>
+<script type="text/javascript" src="./code.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Applying Problem Decomposition to Extremely Large Planning Domains</h1>
+<div class="outline-text-1">
+<div class="center">
+<div class="smaller">
+<p>
+Masataro Asai and Alex Fukunaga
+</p>
+
+<p>
+Univ. Tokyo
+</p>
+
+</div>
+</div>
+
+<p>
+Factory assembly problem <code>cell-assembly</code>
+</p>
+
+<div class="resume">
+<p>
+Hi everyone, I'm Masataro Asai from Tokyo, Japan,
+and I'd like to present here about my recent paper on
+cyclic planning and problem decomposition.
+</p>
+
+<p>
+I first briefly describe 
+the target domain, CELL-ASSEMBLY,
+and then the summary of our contribution
+</p>
+
+</div>
+
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> CELL-ASSEMBLY</h2>
+<div class="outline-text-2" id="text-1">
+
+<div class="figure">
+<p><img src="img/model2a.png" alt="model2a.png" />
+</p>
+</div>
+
+<ul class="org-ul">
+<li>gripper + woodworking + logistics.
+<ul class="org-ul">
+<li><img src="img/products.png" alt="products.png" /> many products, large scale, repetitive
+</li>
+<li><img src="img/tables.png" alt="tables.png" /> multiple operations to complete each product
+</li>
+<li><img src="img/arms.png" alt="arms.png" /> moves without collision.
+</li>
+</ul>
+</li>
+</ul>
+
+<div class="resume">
+<ul class="org-ul">
+<li>The problem is similar to gripper, plus woodworking, plus logistics.
+<ul class="org-ul">
+<li>There are many products in the conveyor that should be assembled with parts.
+Each products are identical.
+</li>
+<li>To complete each product, multiple assembling operations are required.
+Assembling should be done on the tables.
+</li>
+<li>Finally, the planner should move the robot arms and transport the products
+while avoiding the collision between arms.
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+<div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Planner's Task</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<div class="figure">
+<p><img src="img/model2a.png" alt="model2a.png" />
+</p>
+</div>
+
+<p>
+<b>Static assembling recipes</b> are provided in the problem
+</p>
+
+<div class="center">
+<p>
+Primary Task : <b>optimizing the arm motion</b>
+</p>
+</div>
+
+<div class="resume">
+<p>
+In this domain, assembling recipes for the products are provided in the problem.
+Where to do what in what order, is already specified.
+</p>
+
+<p>
+Therefore the primary task of a planner is to <b>optimize the arm motion</b>.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Summary of contribution</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+<b>object categorization</b> and <b>problem decomposition</b>
+</p>
+
+<blockquote>
+<p>
+for <b>very large</b> instances of repetitive problems
+like CELL-ASSEMBLY
+</p>
+</blockquote>
+
+<p>
++Experimental categorization results on <b>EXTREMELY</b> large CELL-ASSEMBLY
+instances &amp; IPC domains.
+</p>
+
+<div class="resume">
+<p>
+Our contribution is summarized as follows.
+We provided an automated <b>object categorization</b> and <b>problem decomposition</b>
+method
+for <b>very large</b> instances of repetitive problems
+like CELL-ASSEMBLY
+</p>
+
+<p>
+With experiments, We showed that our method successfully decompose CELL-ASSEMBLY
+into subproblems.  But more importantly, it decomposed <b>extremely large
+instances of IPC domains.</b>
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Previous Work</h2>
+<div class="outline-text-2" id="text-3">
+<div class="center">
+<div class="xlarge">
+<p>
+ACP: Planning with loops,
+</p>
+
+<p>
+using the cyclic structure of the domain
+</p>
+
+</div>
+
+<ul class="org-ul">
+<li>6/24 (poster), 6/26 (Session AM 1a: Assembly and Manufacturing) :)
+</li>
+</ul>
+</div>
+
+<div class="resume">
+<p>
+Before describing our method, we briefly summarize our previous work ACP,
+automated cyclic planner. It solves repetitive problems like CELL-ASSEMBLY
+under some conditions.
+</p>
+<ul class="org-ul">
+<li>It is a previous work but is going to be, however, presented in the poster
+session tomorrow, and also in the final day of ICAPS main track.
+</li>
+</ul>
+
+</div>
+</div>
+
+<div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Previous Work: ACP</h3>
+<div class="outline-text-3" id="text-3-1">
+
+<div class="figure">
+<p><img src="img/indices.png" alt="indices.png" />
+</p>
+</div>
+
+<ul class="org-ul">
+<li>Provides a cyclic planning framework applicable if
+</li>
+<li>All products are indistinguishable
+<ul class="org-ul">
+<li>i.e. each product can be assembled with the same plan
+</li>
+<li>except the object index <i>i</i>.
+</li>
+</ul>
+</li>
+<li>Result: construct a <b>loop plan</b> once and <b>unroll</b> it on <i>i</i>
+<ul class="org-ul">
+<li>p<sub>i</sub> -&gt; p<sub>1</sub>, p<sub>2</sub>, p<sub>3</sub> &#x2026;
+</li>
+</ul>
+</li>
+</ul>
+
+<div class="resume">
+<p>
+ACP proposed
+</p>
+<ul class="org-ul">
+<li>a cyclic planning framework for
+solving these kind of large problems. The restriction is,
+</li>
+<li>that all products should be indistinguishable.
+<ul class="org-ul">
+<li>in other words, each product can be assembled with the same plan
+</li>
+<li>except difference of the index. In the figure, the index is <i>i</i> and the total
+number of product is one thousand.
+</li>
+</ul>
+</li>
+<li>Under such condition, it constructs a loop plan automatically
+and unroll the same plan on many instances of <i>i</i>.
+<ul class="org-ul">
+<li>for example, we obtain an efficient loop plan for each loop
+and instantiate it for i=1,2,3 and so on.
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> The Loops in the previous work</h3>
+<div class="outline-text-3" id="text-3-2">
+
+<div class="figure">
+<p><img src="img/steady-state.png" alt="steady-state.png" />
+</p>
+</div>
+
+<div class="resume">
+<p>
+This is an illustration describing the loop structure.
+The upper half of the figure describes the state of the assembly system
+at <i>i</i>-th iteration in the manufacturing process.
+We call it an <i>i</i>-th steady state.
+If we update the index <i>i</i> to <i>i+1</i>, only the indices of objects in a Steady State
+changes, but the state of the other objects, such as arms, tables
+remains as they were, or restored to the same state again.
+In each cycle, one product exits the system
+while a new product enters the system 
+and is partly assembled.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> Issues in the previous work</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li><b>Mixed Orders</b>
+<ul class="org-ul">
+<li>A x 100, B x 200
+</li>
+</ul>
+</li>
+<li>Static connections e.g. between products <i>p<sub>i</sub></i> and parts <i>q<sub>j</sub></i> etc.
+<ul class="org-ul">
+<li>(to-be-attached p<sub>i</sub> q<sub>j</sub>) for all <i>i=j</i>
+</li>
+<li>Unroll <i>i</i> and <i>p<sub>i</sub></i> while fixing <i>j</i> in <i>q<sub>j</sub></i>
+</li>
+<li><b>Invalid</b> : (to-be-attached <i>p<sub>1</sub></i> <i>q<sub>4</sub></i>)
+</li>
+<li><b>Objects forming a Structure</b>
+</li>
+</ul>
+</li>
+</ul>
+
+<div class="resume">
+<p>
+There are two issues in this strategy.
+</p>
+
+<ul class="org-ul">
+<li>The first one is about the mixed orders.
+<ul class="org-ul">
+<li>For example, the problem may be a task to assemble
+100 products of A and 200 products of B,
+and the plan to assemble each A and B is different.
+</li>
+</ul>
+</li>
+<li>The second issue is that there may be the static connections
+such as between products p-s and parts q-s.
+<ul class="org-ul">
+<li>For example, if a predicate like
+(to-be-attached p<sub>i</sub> q<sub>j</sub>) is specified for all <i>i=j</i>,
+</li>
+<li>we cannot simply unroll the loop plan with i and p<sub>i</sub>
+while fixing j in q<sub>j</sub> to some value.
+This is because it destroys the static connection between a part and a product.
+</li>
+<li>for example, if <i>i</i> is 1 and <i>j</i> is 4, it yields an invalid plan containing
+(to-be-attached <i>p<sub>1</sub></i> <i>q<sub>4</sub></i>).
+</li>
+<li>In other words, they forms a static structure similar to the concept
+of classes in object-oriented programming. ACP do not assume these cases.
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> heterogeneous vs homogeneous problems</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+In summary, we have two problems:
+</p>
+
+<dl class="org-dl">
+<dt>mixed orders</dt><dd>different subproblems/subplan per product
+</dd>
+<dt>object structure</dt><dd>static connections
+</dd>
+</dl>
+
+<p>
+Therefore, we want to 
+</p>
+
+<ol class="org-ol">
+<li>Detect the static structures of objects
+</li>
+<li>Categorize them into plan equivalence groups (same order in each group)
+</li>
+<li>Form several loop plans / equiv. groups
+</li>
+<li>Unroll them <b>and combine</b> them
+</li>
+</ol>
+
+<p>
+This paper's main topic: Report on preliminary work on <b>1 and 2</b>
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Structures: Component Abstraction [Botea et.al 2004]</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Extract components from <i>Static Graph</i>
+</p>
+
+<p>
+Component 1 : p<sub>1</sub>, q<sub>1</sub>, (to-be-attached p<sub>1</sub> q<sub>1</sub>)
+</p>
+
+<p>
+Component 2 : p<sub>2</sub>, q<sub>2</sub>, (to-be-attached p<sub>1</sub> q<sub>1</sub>)
+</p>
+
+<p>
+Component 3 &#x2026;
+</p>
+
+<p>
+for all <i>j</i> , q<sub>j</sub> is made of iron (made-of q<sub>j</sub> iron)
+</p>
+
+<div class="resume">
+<p>
+The second problem was solved using Component Abstraction,
+a work by Botea et al in 2004.
+</p>
+
+<p>
+It extracts components from a graph called Static Graph, by seeing the
+static predicates in the problem description. In the previous example,
+It can extract p<sub>1</sub> and q<sub>1</sub> as a component.
+and also p<sub>2</sub> and q<sub>2</sub>,
+p<sub>3</sub> and q<sub>3</sub> and so on.
+</p>
+
+<p>
+Also, assume that q<sub>j</sub> is made of iron in this problem.
+</p>
+
+</div>
+</div>
+
+<div id="outline-container-sec-5-1" class="outline-3">
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> Static Graph</h3>
+<div class="outline-text-3" id="text-5-1">
+
+<div class="figure">
+<p><img src="img/nodes-and-edges.png" alt="nodes-and-edges.png" />
+</p>
+</div>
+
+<p>
+Static fact: <img src="img/static/f-in-init.png" alt="f-in-init.png" /> s.t. never added/deleted
+</p>
+
+<div class="resume">
+<p>
+In static graph, the nodes are the objects and the edges are
+the so-called static facts in the initial state.
+</p>
+
+<p>
+Static facts are the propositions that are
+never added nor removed by any action.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5-2" class="outline-3">
+<h3 id="sec-5-2"><span class="section-number-3">5.2</span> Component Abstraction (cont.)</h3>
+<div class="outline-text-3" id="text-5-2">
+
+<div class="figure">
+<p><img src="img/component-abstraction1.png" alt="component-abstraction1.png" />
+</p>
+</div>
+
+<p>
+<img src="img/static/seed-type.png" alt="seed-type.png" /> randomly
+</p>
+
+<div class="resume">
+<p>
+The Static Graph of the previous example is shown in the figure.
+</p>
+
+<p>
+The algorithm then randomly chooses a <i>seed type</i>, one of PDDL types in the
+domain. In this example, it has chosen <i>yellow</i> in the figure.  After that, for
+each object of that type, it constructs a component of one-node. A component is
+shown in green. Now we have two components in the left and in the
+right.
+It next tries to extend each component.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5-3" class="outline-3">
+<h3 id="sec-5-3"><span class="section-number-3">5.3</span> Component Abstraction (cont.)</h3>
+<div class="outline-text-3" id="text-5-3">
+
+<div class="figure">
+<p><img src="img/component-abstraction2.png" alt="component-abstraction2.png" />
+</p>
+</div>
+
+<ul class="org-ul">
+<li><img src="img/static/extend.png" alt="extend.png" />
+</li>
+<li><img src="img/static/attributes.png" alt="attributes.png" />
+</li>
+</ul>
+
+<div class="resume">
+<ul class="org-ul">
+<li>Each extension consumes one edge and one new node.
+If one component adds a node in one type,
+then it simultaneously try to extend the other components
+toward the same type.
+In the figure, the left component adds q1 in orange,
+so the right component also adds q2, in the same color.
+</li>
+<li>Extension continues until any two components share a node.
+In the next step of the example, both q<sub>1</sub> and q<sub>2</sub> tried to
+include iron and the extension stops.
+</li>
+</ul>
+
+<p>
+In our paper, the small
+contributions of ours are that we used the deterministic version of
+component-abstraction algorithm to ensure the best abstraction is achieved.
+Also we devised Attributes, which can later be
+used to accelerate the categorization. 
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5-4" class="outline-3">
+<h3 id="sec-5-4"><span class="section-number-3">5.4</span> Components and Attributes</h3>
+<div class="outline-text-3" id="text-5-4">
+<dl class="org-dl">
+<dt>Component 1</dt><dd>(person 1 = Asai)
+<ul class="org-ul">
+<li>head1 leftarm1 &#x2026; hair1
+</li>
+<li>hair1 is <b>black</b>
+</li>
+</ul>
+</dd>
+<dt>Component 2</dt><dd>(person 2)
+<ul class="org-ul">
+<li>head2 leftarm2 &#x2026; hair2
+</li>
+<li>hair2 is <b>black</b>
+</li>
+</ul>
+</dd>
+</dl>
+
+<div class="resume">
+<p>
+The two concepts can be described as follows.
+</p>
+
+<p>
+Imagine there are two people. Person 1 consists of
+a head, arms, and so on. People have their own hair color.
+Same things apply to the person 2.
+Now, the relationship between a person and, say, its head is normally static.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5-5" class="outline-3">
+<h3 id="sec-5-5"><span class="section-number-3">5.5</span> no additional heads!</h3>
+<div class="outline-text-3" id="text-5-5">
+
+<div class="figure">
+<p><img src="img/static/troig.jpg" alt="troig.jpg" />
+</p>
+</div>
+
+<div class="inline">
+<ul class="org-ul">
+<li>head-less
+</li>
+<li>no shared-head
+</li>
+<li><b>black</b> hair
+</li>
+</ul>
+
+</div>
+
+<div class="resume">
+<p>
+If you <i>add</i> a head to me, I have two heads which just results in an alien.
+</p>
+
+<ul class="org-ul">
+<li>If you <i>remove</i> a head from me, it means I'm dead.
+</li>
+<li>Moreover, a head cannot be shared by more than two person.
+</li>
+<li>On the other hand, the hair color <b>black</b> can be shared among people,
+so it is just an attribute of a person.
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5-6" class="outline-3">
+<h3 id="sec-5-6"><span class="section-number-3">5.6</span> Quick summary (first half)</h3>
+<div class="outline-text-3" id="text-5-6">
+<dl class="org-dl">
+<dt>object structure</dt><dd>     <b>DONE</b> by <i>Detecting the static structures of objects</i>
+</dd>
+<dt>mixed orders</dt><dd>different subproblems/subplan per product
+<ul class="org-ul">
+<li>Categorize components of mixed orders into <b>groups of single orders</b>
+</li>
+</ul>
+</dd>
+</dl>
+
+<div class="resume">
+<p>
+Now, using Component Abstraction by Botea et al,
+</p>
+<ul class="org-ul">
+<li>We successfully divided the very large sets of
+objects into components. The first problem is solved now.
+</li>
+<li>However we still have mixed-orders.
+There are incompatibilities between subproblems.
+<ul class="org-ul">
+<li>We categorize them into groups of single orders.
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Categorize Mixed Orders (recipes)</h2>
+<div class="outline-text-2" id="text-6">
+<dl class="org-dl">
+<dt>Build a Component problem</dt><dd>focused on <b>one component</b>
+</dd>
+<dt>Solve it</dt><dd>get a plan
+</dd>
+<dt>Plan-wise Compatibility checking</dt><dd>replace p<sub>1</sub>, q<sub>1</sub> with p<sub>2</sub>, q<sub>2</sub>
+</dd>
+</dl>
+
+<div class="resume">
+<p>
+Categorization of mixed orders consists of 3 steps. We first 
+</p>
+<ul class="org-ul">
+<li>Build small problems called component problem which is focused on <b>one
+component</b>.
+</li>
+<li>Then we solve it and get a plan with underlying strips planner.
+</li>
+</ul>
+
+<p>
+Finally, we check the compatibility of the plans between the components,
+by replacing the objects in the plan with the objects in the <b>other</b> components.
+</p>
+
+<ul class="org-ul">
+<li>In the previous example, we replace p<sub>1</sub>, q<sub>1</sub> with p<sub>2</sub>, q<sub>2</sub>.
+</li>
+</ul>
+
+</div>
+</div>
+
+<div id="outline-container-sec-6-1" class="outline-3">
+<h3 id="sec-6-1"><span class="section-number-3">6.1</span> Component Problem</h3>
+<div class="outline-text-3" id="text-6-1">
+
+<div class="figure">
+<p><img src="img/component-problem1.png" alt="component-problem1.png" />
+</p>
+</div>
+
+<div class="resume">
+<p>
+Consider the original problem.
+There should be objects which does not belong to any components.
+These are called the environment objects.
+For example, in CELL-ASSEMBLY domain, environments are marked in
+light brown. Tables, arms and attributes like iron,
+are all the environment objects.
+</p>
+
+<p>
+The rest of objects are hundreds of thousands of components.
+We take one component X out of them,
+and solve a problem focused on X, ignoring many other Y's.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6-2" class="outline-3">
+<h3 id="sec-6-2"><span class="section-number-3">6.2</span> Component Problem (cont.)</h3>
+<div class="outline-text-3" id="text-6-2">
+
+<div class="figure">
+<p><img src="img/component-problem2.png" alt="component-problem2.png" />
+</p>
+</div>
+
+<div class="resume">
+<p>
+Now let's pick out some X and Y out of components.
+</p>
+
+<p>
+A component problem is a problem which has
+objects, initial states and goal states  of X and environment.
+In the figure, we also show a component problem of Y.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6-3" class="outline-3">
+<h3 id="sec-6-3"><span class="section-number-3">6.3</span> Component Problem (cont.)</h3>
+<div class="outline-text-3" id="text-6-3">
+
+<div class="figure">
+<p><img src="img/component-problem3.png" alt="component-problem3.png" />
+</p>
+</div>
+
+<div class="resume">
+<p>
+We expect both problems yield plans, which are obtained by the baseline planners.
+</p>
+
+<p>
+In the obtained plan, we substitutes the objects in X with the objects in Y. For
+example, we replace p<sub>1</sub> with p<sub>2</sub> and q<sub>1</sub> with q<sub>2</sub> in plan P<sub>X</sub>.
+Let the result plan be P'<sub>X</sub>.
+</p>
+
+<p>
+Next we check the validity of the substituted plan P'<sub>X</sub>.
+If the plan is valid, then X and Y are the compatible components.
+</p>
+
+<p>
+I think these parts are the main contribution in my paper.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6-4" class="outline-3">
+<h3 id="sec-6-4"><span class="section-number-3">6.4</span> Sometimes UNSAT</h3>
+<div class="outline-text-3" id="text-6-4">
+<p>
+Because we deleted some objects and Init.
+</p>
+
+
+<div class="figure">
+<p><img src="img/restoration1.png" alt="restoration1.png" />
+</p>
+</div>
+
+<div class="resume">
+<p>
+I said "we expect both problems yield plans"
+because sometimes they do not. They might be UNSAT
+because of the deleted objects and Init.
+</p>
+
+<p>
+In this case, we re-run the search on component problems
+with some relaxation or inflamation.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6-5" class="outline-3">
+<h3 id="sec-6-5"><span class="section-number-3">6.5</span> UNSAT -&gt; restart with restoration</h3>
+<div class="outline-text-3" id="text-6-5">
+
+<div class="figure">
+<p><img src="img/restoration2.png" alt="restoration2.png" />
+</p>
+</div>
+
+<div class="resume">
+<p>
+We call this version of problem a "restored problem".  It is a problem with lot
+more number of objects and init, but the number of goals are still quite limited.
+The branching factor affects the planner but the search depth
+should be far less than that of the original problem.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> Experiments</h2>
+<div class="outline-text-2" id="text-7">
+
+<div class="figure">
+<p><img src="img/static/eval.png" alt="eval.png" />
+</p>
+</div>
+
+<div class="inline">
+<ul class="org-ul">
+<li>FD/LAMA2011
+</li>
+<li>1st step (GBFS)
+</li>
+<li>15GB
+</li>
+<li>Xeon 2.3GHz
+</li>
+<li>6hrs
+</li>
+</ul>
+
+</div>
+
+<div class="resume">
+<p>
+Combining these methods,
+we experimentally checked if our method collectly decompose a given problems
+and how much decomposition was possible in the standard IPC problems.
+</p>
+
+<p>
+As I stated in the beginning,
+our aim is at the large problems that are clearly beyond 
+the reach of current planners.
+To obtain such problems, we first built large problems of CELL-ASSEMBLY.
+Also, we built IPC problems that cannot be solved by Fast Downward.
+We showed the example in this figure.
+The experimental environment of FD was
+</p>
+
+<ul class="org-ul">
+<li>FD with LAMA2011
+</li>
+<li>greedy best first search
+</li>
+<li>with 15GB
+</li>
+<li>with Xeon processor
+</li>
+<li>within 6hrs.
+</li>
+</ul>
+
+<p>
+The problems are built with official generator as much as possible.
+If the generators are not available, I wrote my own script.
+</p>
+
+<p>
+The result problems are quite large.
+For instance, the smallest instance of woodworking problem
+we conducted our experiment on, is problem p86, which is at least
+twice larger than the largest problem number that is in IPC benchmarks.
+We tested upto p200.
+</p>
+
+</div>
+</div>
+
+<div id="outline-container-sec-7-1" class="outline-3">
+<h3 id="sec-7-1"><span class="section-number-3">7.1</span> Categorization results</h3>
+<div class="outline-text-3" id="text-7-1">
+
+<div class="figure">
+<p><img src="img/total-vs-group.png" alt="total-vs-group.png" />
+</p>
+</div>
+
+<div class="resume">
+<p>
+and this is the categorization results. For each point, the x-coordinate shows the
+number of components found in each problem and the y-coordinate shows the number of
+groups obtained by categorizing those components.
+</p>
+
+<p>
+In the bottom left, we see the brown bars and light-blue bars, represent the
+categorization results of single-order and two-mixed-order problems of
+CELL-ASSEMBLY. So CELL-ASSEMBLY problems are correctly decomposed as expected.
+</p>
+
+<p>
+More importantly, the result also shows that the compatible components do exists in
+some IPC problems.  Remember, these compatible components are the strong candidates
+of the elements that form loops, and this is the primary motivation for obtaining
+compatible components. If we form loops, we can super reduce the amount of
+computation, so this is very good news.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> Conclusion</h2>
+<div class="outline-text-2" id="text-8">
+<ul class="org-ul">
+<li>An automated <b>object categorization</b> and <b>problem decomposition</b> method
+<ul class="org-ul">
+<li>for <b>very large</b> instances of <b>heterogeneous</b> repetitive problems
+</li>
+<li>like CELL-ASSEMBLY
+</li>
+</ul>
+</li>
+<li>Decomposed CELL-ASSEMBLY into compatible components
+</li>
+<li><b>Structural compatibilities, found in large instances of IPC domains.</b>
+</li>
+<li>TODO : Full integration with Automated Cyclic Planner (ACP)
+</li>
+<li>TODO : combining/interleaving several kinds of loops
+</li>
+</ul>
+
+<div class="resume">
+<p>
+In conclusion,
+</p>
+<ul class="org-ul">
+<li>We provided an automated <b>object categorization</b> and <b>problem decomposition</b>
+  method
+<ul class="org-ul">
+<li>for <b>very large</b> instances of <b>heterogeneous</b> repetitive problems
+</li>
+<li>like CELL-ASSEMBLY
+</li>
+</ul>
+</li>
+<li>With experiments,
+We showed that our method successfully
+decompose CELL-ASSEMBLY into subproblems.
+</li>
+<li>Finally, the most important finding is that <b>the structural compatibilities were
+found in the large instances of IPC domains.</b>
+</li>
+<li>However, since this is a workshop paper, there are lotsof TODOs.
+The first priority is the full integration with Automated Cyclic Planner (ACP).
+Since we found equivalent objects, I believe this can be done.
+</li>
+<li>The next step is combining the loop plans returned by ACP.
+This is again I'm not sure. The problem remains at how we interleave the actions.
+</li>
+</ul>
+
+</div>
+</div>
+
+<div id="outline-container-sec-8-1" class="outline-3">
+<h3 id="sec-8-1"><span class="section-number-3">8.1</span> Thanks for Listening!</h3>
+<div class="outline-text-3" id="text-8-1">
+
+<div class="figure">
+<p><img src="img/alien.png" alt="alien.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Masataro Asai</p>
+<p class="date">Created: 2014-10-31 金 15:54</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode N/A-fixup)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

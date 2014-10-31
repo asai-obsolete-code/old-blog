@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="93.766464"
+   height="36.424561"
+   id="svg3220"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="nodes-and-edges.svg">
+  <defs
+     id="defs3222" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6"
+     inkscape:cx="55.59257"
+     inkscape:cy="18.01081"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="806"
+     inkscape:window-height="466"
+     inkscape:window-x="0"
+     inkscape:window-y="52"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata3225">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="レイヤー 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-316.28243,-493.94843)">
+    <rect
+       style="fill:#ffe4b5;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect5694-5-1-9-8"
+       width="55.060856"
+       height="20.703735"
+       x="354.48804"
+       y="502.56335"
+       rx="5.5339718"
+       ry="4.7318993" />
+    <text
+       sodipodi:linespacing="125%"
+       id="use4704"
+       y="513.27893"
+       x="368.51562"
+       style="font-size:7.56835461px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+       xml:space="preserve"><tspan
+         y="513.27893"
+         x="368.51562"
+         sodipodi:role="line"
+         id="tspan4067">Edge =</tspan></text>
+    <path
+       transform="matrix(-0.6844787,0.51490831,0.51478792,0.68431873,330.51432,362.49827)"
+       sodipodi:type="arc"
+       style="color:#000000;fill:#ffff00;stroke:#0e232e;stroke-width:1.16763949;stroke-miterlimit:4;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path2993-5-9"
+       sodipodi:cx="101.32624"
+       sodipodi:cy="142.46098"
+       sodipodi:rx="20.681034"
+       sodipodi:ry="20.681034"
+       d="M 122.00727,142.46098 C 122.00727,153.8828 112.74806,163.14202 101.32624,163.14202 89.904421,163.14202 80.645206,153.8828 80.645206,142.46098 80.645206,131.03916 89.904421,121.77995 101.32624,121.77995 112.74806,121.77995 122.00727,131.03916 122.00727,142.46098 z"
+       inkscape:transform-center-x="-86.970026"
+       inkscape:transform-center-y="-1.96994" />
+    <text
+       sodipodi:linespacing="125%"
+       id="use4704-0"
+       y="509.63226"
+       x="333.60269"
+       style="font-size:7.56835461px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+       xml:space="preserve"><tspan
+         y="509.63226"
+         x="333.60269"
+         id="tspan3089-5"
+         sodipodi:role="line">Node</tspan><tspan
+         y="519.09271"
+         x="333.60269"
+         sodipodi:role="line"
+         id="tspan4065">=object</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       x="392.37054"
+       y="510.39288"
+       id="text4071"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         x="392.37054"
+         y="510.39288"
+         id="tspan4075">static</tspan><tspan
+         sodipodi:role="line"
+         x="392.37054"
+         y="518.39288"
+         id="tspan4079">facts</tspan></text>
+  </g>
+</svg>

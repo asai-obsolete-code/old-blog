@@ -1,0 +1,37 @@
+/* ***************** List ******************* */
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin: 0.45em;
+}
+
+/* ***************** List expansion ******************* */
+
+
+
+dd, li {
+    &:not(.expanded) {
+        visibility : hidden;
+        &:before {
+            visibility : visible;
+            content : '...';
+        }
+    }
+    &.expanded > {
+        dl, ul {
+            visibility : hidden;
+        }
+    }
+}
+
+.expanded, .expanded > dl > dt {
+    visibility : visible !important;
+    &:before, &:after {
+        visibility : hidden !important;
+        display: none;
+    }
+}
+

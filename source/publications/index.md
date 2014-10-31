@@ -10,10 +10,13 @@ footer: true
 # Peer-Reviewed Papers
 
 -   Asai, M.; Fukunaga, A: 2014. Fully Automated Cyclic Planning for Large-Scale
-    Manufacturing Domains. In *ICAPS2014*. [pdf](icaps14.pdf)
+    Manufacturing Domains. In *ICAPS2014*. [pdf](icaps14.pdf) [presentation](./icaps14/)
 -   Asai, M.; Fukunaga, A: 2014. Applying Problem Decomposition to Extremely Large
     Planning Domains. Knowledge Engineering for Planning and Scheduling (KEPS) Workshop
-    (ICAPS2014). [pdf](keps14.pdf) (~~submitted version~~ -> final version)
+    (ICAPS2014). [pdf](keps14.pdf) (~~submitted version~~ -> final version) [presentation](./keps14/)
+
+Presentation can be moved forward/backward with N/P key.
+[For the further help and usage, click here](http://guicho271828.github.io/another-org-info/).
 
 # Software
 

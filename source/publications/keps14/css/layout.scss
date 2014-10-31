@@ -1,0 +1,54 @@
+
+/* ************ Contents and Control ********** */
+
+$basefontsize : 26px;
+
+body {
+    overflow: hidden;           /* hide the scrollbar */
+    font-size: $basefontsize;
+    line-height: 1.25em;
+    text-indent: 0.5em;
+}
+
+#content {
+    padding: 0em;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right:auto;
+}
+#postamble {
+    display: none !important;
+}
+
+/* minibuffer */
+
+#minibuffer {
+    position: absolute;
+    left: 0.3em;
+    right: 0.3em;
+    top:0.3em;
+    opacity:0.5;
+    font-size: small;
+    text-align:left;
+}
+
+#prompt {
+    margin-left: 0.5em;
+}
+#prompt:after {
+    content: ' : '
+}
+
+.timer {
+    float: right;
+    margin-right: 0.5em;
+}
+
+@import "_printing";
+@import "_animation";
+@import "_section";
+@import "_list";
+@import "_markup";
+@import "_positioning";
+@import "_debug";
+@import "_container";
