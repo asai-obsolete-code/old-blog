@@ -1,0 +1,687 @@
+\begin{outline-text-1}
+\begin{xlarge}
+\begin{center}
+Fully automated cyclic planning for
+large-scale manufacturing domains.
+\end{center}
+\end{xlarge}
+
+\begin{center}
+\begin{smaller}
+Masataro Asai Univ. tokyo
+
+Alex Fukunaga (Assoc. prof, advisor)
+\end{smaller}
+\end{center}
+
+\begin{resume}
+Hi everyone. On Monday I presented at KEPS about
+problem decomposiiton, but that work was made
+for integrating with this work actually.
+
+Now I bliefly describe the mass-manufacturing problem first.
+This problem, called CELL-ASSEMBLY, was our primary problem of interest, and
+solving this problem was our first short term goal last year.
+However, the method developped for the problem was found to be general, and indeed
+applicable to other domains.
+\end{resume}
+\end{outline-text-1}
+
+\section{Motion Planning in Cell Assembling System}
+\label{sec-1}
+
+\begin{itemize}
+\item It's \textbf{NOT} about spatial search, all about \textbf{actions} !
+\item Require professional human resource w/o automated planner
+\end{itemize}
+
+\begin{resume}
+The task is to
+optimize the flow and the timing of motion of Robot arms.
+Note that it's \textbf{NOT} about spatial search, all about \textbf{actions}.
+We use temporal planners to solve the problem, or
+combine classical planners with postprocessing sheduler.
+
+Before applying the automated planning,
+it requires very expensive professional human resource.
+\end{resume}
+
+\section{CELL-ASSEMBLY}
+\label{sec-2}
+
+\includegraphics[width=.6\textwidth]{img/model2a.png}
+
+gripper + woodworking + logistics.
+
+\begin{itemize}
+\item \includegraphics[width=.6\textwidth]{img/products.png} : many products, with \includegraphics[width=.6\textwidth]{img/parts.png} : parts
+\item to complete each product, multiple operations -- \includegraphics[width=.6\textwidth]{img/tables.png}
+\item \includegraphics[width=.6\textwidth]{img/arms.png} moves to carry  \includegraphics[width=.6\textwidth]{img/products.png} without collision.
+\end{itemize}
+
+\begin{resume}
+Eventually, the problem was formulated into a PDDL problem
+which is similar to gripper, plus woodworking, plus logistics.
+
+\begin{itemize}
+\item There are many products in the conveyor that should be assembled with parts.
+\item To complete each product, multiple assembling operations are required.
+Assembling should be done on the tables.
+\item Finally, the robot arms move in order to transport the products
+while avoiding the collision.
+\end{itemize}
+\end{resume}
+
+\subsection{Planner's Task}
+\label{sec-2-1}
+
+\includegraphics[width=.6\textwidth]{img/model2a.png}
+
+\textbf{Assembling recipes} are provided in the problem
+
+\textbf{All products use the same recipe} (Identical)
+
+\begin{alignright}
+\ldots{} (we tried to relax it in the KEPS paper!)
+\end{alignright}
+
+.
+
+\begin{center}
+Primary Task : \textbf{optimizing the arm motion}
+\end{center}
+
+\begin{resume}
+In this domain, assembling recipes for the products are provided in the problem.
+Where to do what in what order, is already specified.
+
+Therefore the primary task of a planner is to \textbf{optimize the arm motion}.
+\end{resume}
+
+\subsection{High degree of symmetry}
+\label{sec-2-2}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=.6\textwidth]{img/model2a-products.png}
+\caption{Simplest problem with many product}
+\end{figure}
+
+\begin{resume}
+The difficulty in this problem is its high degree of symmetry,
+There might be hundreds of thousands of products that should be assembled,
+not only in PDDL problem but also in the realistic assembly systems.
+Symmetry is the main cause of difficulty in some domains such as gripper.
+The problem gets exponentially difficult because of
+the high branching factor
+\textbf{regardless} of the difficulty of each subproblem.
+\end{resume}
+
+\subsection{No Existing Planner Can Solve This Practical Problem!}
+\label{sec-2-3}
+
+\begin{center}
+\begin{inline}
+\begin{itemize}
+\item symmetry breaking
+\item ＜-＞ \textbf{ANOTHER METHOD}
+\end{itemize}
+\end{inline}
+
+.
+\end{center}
+
+\includegraphics[width=.6\textwidth]{img/no-other-existing-planner.png}
+
+\begin{resume}
+Indeed, any state-of-the-art planners failed
+to solve cell-assembly problem instances
+with the number of products around 16.
+This is expected results but unacceptable!!
+
+\begin{itemize}
+\item There already exists a technique called symmetry breaking.
+\item However our method, described from now on, is a generic method
+to tackle this problem from another point of view.
+\end{itemize}
+\end{resume}
+
+\section{Summary of Contribution}
+\label{sec-3}
+
+\begin{description}
+\item[{Automated Framework to Form a Loop Structure}] . \\
+First attempt: form and find the \emph{best} cyclic plan
+\item[{General domain/problem analysis method (owner/lock)}] . \\
+the basic method is applicable to other domains
+\item[{Solved EXTREMELY large PDDL instances (inc. IPC domains!)}] . \\
+This is \emph{clearly beyond} state-of-the-art planners
+\end{description}
+
+\begin{resume}
+Now, here is the Summary of Contribution.
+\begin{description}
+\item[{Firstly, we developped a new Framework for cyclic planning}] This is a first attempt, maybe, not sure,
+to form and find the \emph{best} cyclic plan automatically.
+\item[{Secondly, we developped a general domain/problem analysis method for it}] and the basic method is applicable to the other domains.
+\item[{Thirdly, it actually solved EXTREMELY large PDDL instances}] that are beyond the ability of state-of-the-art planners.
+It's ability is not limited to CELL-ASSEMBLY problem, and
+it actually solves Large IPC problem (and variants).
+\end{description}
+\end{resume}
+
+\section{Strategy: Cyclic Planning}
+\label{sec-4}
+
+One loop -- completes one product / all products to the next steps
+
+\includegraphics[width=\textwidth]{img/cyclic-planning.png}
+
+\begin{resume}
+The strategy we adopted for solving those problems
+is a cyclic planning framework.
+Running one loop completes one product and
+moves the partially-assembled products to their next steps.
+\end{resume}
+
+\subsection{Loop unrolling ＜-＞ Loop \emph{rolling}}
+\label{sec-4-1}
+\includegraphics[width=\textwidth]{img/static/python-loop.png}
+
+\begin{resume}
+The idea is essentially the following.
+Assume there are at least 3 actions needed to complete one cycle,
+and also there are 1000 products.
+Normally we have to compute a plan with length 3000.
+However, the length of the plan actually required to be solved is just 3.
+And the planning is far more easier than the original problem.
+\end{resume}
+
+\subsection{Interactions between subproblems}
+\label{sec-4-2}
+\includegraphics[width=\textwidth]{img/cyclic-planning.png}
+
+\begin{resume}
+But do not misunderstand that
+each cycle is just solving a subproblem independently.
+Each cycle actually assembles multiple products,
+so it's combining and interleaving each subproblems
+in a very complex manner.
+\end{resume}
+
+\section{Loop : representation}
+\label{sec-5}
+
+Loop ⇔ Beginning of a Cycle
+
+\includegraphics[width=\textwidth]{img/cyclic-planning.png}
+
+\begin{resume}
+Now let's go further into how we represent a loop.
+A loop plan is a plan to execute one cycle.
+Since it is a plan, each cycle has it's own starting state.
+This is important because it means, conversely, each starting state has
+several loop plans.
+\end{resume}
+
+\subsection{Steady State S\(_{\text{i}}\)}
+\label{sec-5-1}
+
+\begin{alignright}
+Beginneing of the cycle
+\end{alignright}
+
+\includegraphics[width=\textwidth]{img/steady-state.png}
+
+\begin{resume}
+We define this beginning of the cycle as a steady state, indexed with \emph{i}.
+
+In cell-assembly example,
+there are some partially processed product i,i+1,i+2,
+and in the next cycle, they go to the next manufacturing step.
+In a cycle, there are multiple intermediate states.
+The objects in the rest of the world, such as arms and tables,
+are restored to the original state.
+\end{resume}
+
+\subsection{Unrolling}
+\label{sec-5-2}
+\includegraphics[width=\textwidth]{img/unroll.png}
+
+\begin{resume}
+Finally, we can unroll the loop plan by substituting
+the indexed variables with actual objects,
+just copying the same plan.
+
+Now the goal is, automatically building these kinds of steady states and
+getting efficient loop plans.
+\end{resume}
+
+\section{Difficulty}
+\label{sec-6}
+
+\begin{center}
+\emph{It is not trivial} to detect the information
+
+necessary for constructing an efficient loop.
+\end{center}
+
+\begin{resume}
+\emph{It is not trivial} to detect the information
+necessary for constructing an efficient loop.
+There were two challenges here.
+\end{resume}
+
+\subsection{Difficulty}
+\label{sec-6-1}
+
+\begin{description}
+\item[{WHICH STATES are the steady state?}] . \\
+= which state can form a loop?
+
+Checking ALL states from Init -- impractical
+\item[{Which SS yields a cost-efficient loop plan?}] . \\
+Difficulty : (\# of SSs) x (evaluation time for each SS)
+
+\textbf{(\# of SSs)} -- still exponentially large (e.g. 5x10\(^{\text{6}}\))
+
+\textbf{(expensive evaluation)} -- loop plan : calls \emph{FastDownward} each time
+\end{description}
+
+\begin{center}
+Even if we have a finite set of steady states,
+
+\uline{checking ALL steady states is again impractical!}
+\end{center}
+
+\begin{resume}
+The first one is about
+which state is a steady state.
+This is the same question as
+which states can form a loop.
+Checking ALL states reachable from the initial state is impractical
+because the number of states
+is exponentially large in most planning problems.
+
+The second issue is that
+we have to get the cost-efficient loop plan.
+This can further be decomposed into two problems:
+The first one is the number of steady states.
+This might be again exponentially large, and actually it was.
+The second one is that the evaluation of each steady state is expensive,
+because each evaluation calls standard planner like Fast Downward
+to obtain the loop plan and get it's length.
+Therefore, checking ALL steady states is impractical.
+\end{resume}
+
+\section{Process -- to Enumerate SSs}
+\label{sec-7}
+
+\textbf{Observation:}
+
+\begin{quote}
+\includegraphics[width=.6\textwidth]{img/single-product-plan.png}
+
+3 processes (\emph{Attatch ＞ \uline{Carry} ＞ Attatch})
+
+There is at most \textbf{1} product in a process.
+\end{quote}
+
+\begin{resume}
+We developped a notion of \emph{process} to efficiently
+construct a steady state.
+
+We first build a plan for assembling a single product
+by choosing one object in the original problem.
+Then, in human level understanding,
+the result plan consists of several segments, so-called processes.
+There is at most \textbf{1} product in a process.
+In this example, there are 3 processes.
+
+
+So how can \emph{process} be detected?
+\end{resume}
+
+\subsection{Process = Unit Capacity Resource}
+\label{sec-7-1}
+
+assemble @ table1 \(\approx\) use table1 (resource)
+
+\begin{itemize}
+\item \emph{Process} = \{table, machine, painter\} : \emph{places}
+\item \emph{Which predicate specifies a resource?} is not trivial
+\end{itemize}
+
+It's \emph{difficult even for human!} w/o analysing PDDL
+
+\textbf{semantically indistinguishable} -- (X A Y)
+
+\begin{larger}
+\begin{center}
+\begin{tabular}{ll}
+ & seems like..\\
+\hline
+(color X red) & not a place\\
+(at X table) & a place\\
+(P X Y) & ??????\\
+\end{tabular}
+\end{center}
+\end{larger}
+
+\begin{resume}
+A process is a set of unit capacity resources.
+For example, assembling the product at table1 consumes the table1.
+It should be released if each process completes.
+
+\begin{itemize}
+\item Then each process corresponds to a set of unit capacity resources.
+Informally speaking, in cell-assembly, they are \emph{places}
+like tables, machines and so on.
+
+\item However, \emph{which predicate specifies a resource?} is not trivial.
+For example, for human,
+the object red doesn't seem like a place,
+and table seems like a place,
+however no one actually knows if they represent a place or not,
+until we analyse the actual PDDL problem,
+especially when it looks like the third one, (P X Y).
+It's the same for a planning agent because,
+semantically they all look the same! just (P A Y)!
+\end{itemize}
+
+Now we want to let the planner do it automatically.
+\end{resume}
+
+\subsection{Detection mechanism}
+\label{sec-7-2}
+
+\textbf{Question} Is a predicate \emph{o= (P X Y Z\ldots{})} a place?
+
+\textbf{Answer} find a \emph{lock} predicate \emph{l} that satisfies \textbf{some condition} with \emph{o}.
+
+If it exists, it is a place.
+
+\textbf{Condition} : for all action \emph{a},
+
+1 . \uline{If \emph{a} occupies a place, \emph{a} should check if the place is not in use, and \emph{a}
+should acquire the lock.}
+
+2 . If \emph{a} leaves the place, release the lock.
+
+\begin{resume}
+The detection proceeds as follows.
+We need to know if a predicate \emph{o= (P X Y Z\ldots{})} is a place.
+To answer that, 
+we search for the corresponding lock predicate l
+that satisfies both condition below over all actions.
+
+The first one is, informally speaking, \uline{If \emph{a} occupies a place, \emph{a} should check
+ if the place is not in use, and \emph{a} should acquire the lock.} The second one is,
+ if \emph{a} leaves the place, release the lock.
+
+Next, let's see how the predicate "at" differs from the predicate "color"
+and why the former is a place.
+\end{resume}
+
+\subsection{What's the difference?}
+\label{sec-7-3}
+\includegraphics[width=\textwidth]{img/place-non-place1.png}
+
+Puts a product in an arm onto a table
+
+\begin{alignright}
+Paint a product
+\end{alignright}
+
+\begin{resume}
+Now here are 2 actions "put-on" and "paint".
+Basically, put-on puts a product in an arm onto a table.
+Here, the predicate "(on product table)" satisfies the previous rule\ldots{}
+\end{resume}
+
+\subsection{What's the difference?}
+\label{sec-7-4}
+\includegraphics[width=\textwidth]{img/place-non-place2.png}
+
+\begin{resume}
+because there is a predicate "(not-in-use ?table)" which matches the condition.
+Once we found it, we should test it for all actions.
+Contrarly, in the action "paint", the predicate "color" do not have such
+constructs, so it is not a place.
+\end{resume}
+
+\subsection{Detects ANY places possible}
+\label{sec-7-5}
+
+
+hiralious example, but\ldots{}
+
+\includegraphics[width=\textwidth]{img/static/hiralious.png}
+
+\begin{resume}
+
+The last example here is something no one even know how to read.
+However the machine can still recognize it
+because the detection method is general and automated.
+\end{resume}
+
+\subsection{ACP : Automated Cyclic Planner}
+\label{sec-7-6}
+\includegraphics[height=0.8\paperheight]{img/processes.png}
+
+\begin{resume}
+Now we finally get to summarize our framework, Automated Cyclic Planner ACP.
+Firstly, it solves a single product plan.
+Next it detects the change of resource usage in the plan, and make it a process.
+Once we get processes, assignment of products to each processes
+is represented by a bit vector, which is very easy to enumerate.
+\end{resume}
+
+\subsection{Infeasibility/Deadlock Detection}
+\label{sec-7-7}
+
+Using compact representation of steady state,
+
+\includegraphics[width=.6\textwidth]{img/static/deadlock-detection.png}
+
+Reduced \# : 5x10\(^{\text{6}}\) → 677
+
+\begin{resume}
+We further apply a infeasibility and deadlock detection in this abstract
+representation of the cycle. It efficiently reduces the number of steady states,
+for example, from 5x10\(^{\text{6}}\) to 677.
+After these pruning, we obtain many loop plans for each steady state
+by solving the loop problem with underlying planner, fast downward.
+\end{resume}
+
+\section{Unrolling}
+\label{sec-8}
+\includegraphics[width=\textwidth]{img/unroll.png}
+
+\begin{resume}
+Now Finally get back to this slide again.
+We can unroll the best loop plan.
+\end{resume}
+
+\section{Experiments}
+\label{sec-9}
+
+\begin{itemize}
+\item 5 CELL-ASSEMBLY problems (each with 4,16,64,256,1024 products)
+\item Woodworking (each with \textbf{same} 4,16,64,256,1024 parts)
+\item Barman (each with \textbf{same} 4,16,64,256,1024 cocktail)
+\end{itemize}
+
+\begin{resume}
+The experiments were done on 3 domains, CELL-ASSEMBLY, 
+minimally modified Woodworking, and Barman.
+There are 5 kinds of problems for CELL-ASSEMBLY,
+each corresponds to the different assembly systems.
+For these 7 kinds of problems,
+there are 5 variants, with varying number of products, parts, or cocktails.
+\end{resume}
+
+\subsection{ACP vs \ldots{}}
+\label{sec-9-1}
+
+\begin{itemize}
+\item 5 temporal planners
+\begin{itemize}
+\item FD/LAMA2011, FD/LMcut (+ min-slack scheduler)
+\item yahsp2, DAEyahsp, CPT4
+\end{itemize}
+\item best results of Simple Cyclic Planner (SCP)
+\begin{itemize}
+\item 5 base planner x 9 configuration
+\end{itemize}
+\end{itemize}
+
+\begin{resume}
+In these problems, ACP was compared with 3 temporal planners and 2
+classical planners combined with minimum slack postproessing scheduler.
+
+We also find that comparing ACP with standard planners is not sufficient, because
+we can easily come up with trivial cyclic planner, called Simple Cyclic Planner
+SCP, which just solves the K-product problem and just concatenate the result plan.
+We get the best out of 5 times 9 = 45 configuration of SCP and compare it with ACP.
+\end{resume}
+
+\subsection{Simple Cyclic Planner}
+\label{sec-9-2}
+
+Solve K = \{1 \ldots{} 9\}-products plan
+
+with 5 planners (2FDs,yahsp,DAE,CPT)
+
+get the average makespan per product (K-makespan/K)
+
+\begin{resume}
+SCP solves 1 to 9 products plan. Since the total number of products such as
+16 and 64 might not be evenly devided into K-product subproblems,
+so we get the average makespan per product.
+\end{resume}
+
+\subsection{All standard planners fails}
+\label{sec-9-3}
+\includegraphics[width=0.8\textwidth]{img/no-other-existing-planner.png}
+
+similar results on other domains
+
+\begin{resume}
+Now the results.
+As we showed in the beginning,
+the standard strips planner has failed to
+solve problems because of the high branching factor and the memory limit.
+\end{resume}
+
+\subsection{Average makespan compared to SCP / lower bound}
+\label{sec-9-4}
+\includegraphics[width=0.8\textwidth]{img/static/results-poster.png}
+
+\begin{resume}
+And here are the comparison between
+ACP, SCP and the lower bound obtained by CPT4.
+You would notice that the makespan per product is converging to some value
+in ACP. This is because the bad plan before the first cycle
+and after the last cycle is getting amortized.
+
+In the lower bound analysis, we used
+CPT4, an optimal temporal planner by vincent vidal.
+However, it actually failed to even compute the first lower bound.
+So we analysed the bottolneck of each cycle by hand
+and multiplied it by the number of product and made it a manual lower bound.
+Eventually, the gap was around 3 in cell assembly and woodworking.
+
+It was not good in Barman domain,
+but this is because ACP cannot handle multiple resources currently.
+\end{resume}
+
+\subsection{Domain Independence}
+\label{sec-9-5}
+\includegraphics[width=0.8\textwidth]{img/static/results-poster.png}
+
+Too much assumptions \& strong requirements?
+
+\begin{resume}
+The restriction might seem quite strong,
+but the same program solves the other IPC domains! acutually!
+
+I like to do these kind of bizarre stuff!
+\end{resume}
+
+\section{Summary of Contribution}
+\label{sec-10}
+
+\begin{description}
+\item[{Automated Framework to Form a Loop Structure}] . \\
+First attempt: form and find the \emph{best} cyclic plan
+\item[{General domain/problem analysis method}] . \\
+the basic method is applicable to other domains
+\item[{Solved EXTREMELY large PDDL instances}] . \\
+beyond state-of-the-art planners
+
+Solve Large IPC problem (and variants) correctly
+\end{description}
+
+\begin{resume}
+Now I repeat the Summary of Contribution.
+\begin{description}
+\item[{Firstly, we developped a new Framework for cyclic planning}] This is a first attempt to form and find the \emph{best} cyclic plan automatically.
+\item[{Secondly, we developped a general domain/problem analysis method for it}] and the basic method is applicable to the other domains.
+\item[{Thirdly, it actually solved EXTREMELY large PDDL instances}] that are beyond the ability of state-of-the-art planners.
+It's ability is not limited to CELL-ASSEMBLY problem, and
+it actually solves Large IPC problem (and variants).
+\end{description}
+\end{resume}
+
+\subsection{Is it useful?}
+\label{sec-10-1}
+
+No one doesn't even try to solve that large problems!
+
+Dirty attempt -- lessons might be learned
+
+Global lock/owner in STRIPS -- it may find a way to use
+
+\begin{resume}
+One thing I want to emphasize is that the fact no one doesn't even try to solve
+\emph{that large} problems!
+
+We know it's impossible, but even solving problems dirty
+might help you understand the behavior of such kind of domains.
+
+But at least, the automated detection of global lock and its owner in STRIPS domain
+might be useful, though I'm not sure about its real value.
+\end{resume}
+
+\subsection{So, what's next?}
+\label{sec-10-2}
+
+\begin{itemize}
+\item Categorizing the objects into identical groups (KEPS paper)
+\begin{itemize}
+\item several mixed-orders becomes available (100 x A / 200 x B)
+\item (100 loops A) + (200 loops B)
+\item (100 loops AB) + (100 loops B)
+\end{itemize}
+\item Categorization -＞ Checks serial decomposability / not.
+\begin{itemize}
+\item check if a resource is released or not
+\item consider the "release" action of the resources as an abstract action
+\end{itemize}
+\item \textbf{Unit} capacity -＞ \textbf{arbitrary} capacity
+\begin{itemize}
+\item Detect \textbf{numbers} in a problem, automatically?
+\item up-converting STRIPS to ADL (opposite to the common strategy)
+\end{itemize}
+\end{itemize}
+
+Thanks for listening!
+
+\begin{resume}
+There is bunch of tasks I have to apply this framework to even larger range of
+domains, but not sure I can do it successfully. Maybe just beaten by symmetry
+breaking technique I am also interested in. 
+
+Thanks for listening!
+\end{resume}

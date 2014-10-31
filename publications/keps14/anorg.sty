@@ -1,0 +1,54 @@
+\usepackage[dvipdfmx]{graphicx,xcolor,hyperref}
+% \usepackage{svg} % do not recommend because it is buggy
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{relsize}
+
+\usepackage{pxjahyper}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% user field
+
+\usepackage{user}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% default style 
+
+\newenvironment{xlarge}{\huge}{}
+\renewenvironment{larger}{\relsize{1}}{}
+\renewenvironment{smaller}{\relsize{-1}}{}
+
+\newenvironment{outline-text-1}{}{}
+
+\usepackage{environ}
+
+\NewEnviron{alignright}{\raggedleft\BODY}
+\NewEnviron{alignleft}{\raggedright\BODY}
+
+\NewEnviron{note}{\footnote{\BODY}}
+\NewEnviron{resume}{\footnote{\BODY}}
+\NewEnviron{inline}{\BODY}
+\NewEnviron{container-fluid}{\BODY}
+\NewEnviron{row-fluid}{\BODY}
+% \newenvironment{container-fluid}{\bgroup}{\egroup}
+% \newenvironment{row-fluid}{\vbox\bgroup}{\egroup}
+
+% \strip@pt removes pt from the expression
+\newcommand{\ddwidth}[1]{\dimexpr (\linewidth * #1 / 12) - 1.5em \relax}% duodecimal width
+
+\NewEnviron{span1}{\parbox{\ddwidth{1}}{\BODY}\hbox to 1em{}}
+\NewEnviron{span2}{\parbox{\ddwidth{2}}{\BODY}\hbox to 1em{}}
+\NewEnviron{span3}{\parbox{\ddwidth{3}}{\BODY}\hbox to 1em{}}
+\NewEnviron{span4}{\parbox{\ddwidth{4}}{\BODY}\hbox to 1em{}}
+\NewEnviron{span5}{\parbox{\ddwidth{5}}{\BODY}\hbox to 1em{}}
+\NewEnviron{span6}{\parbox{\ddwidth{6}}{\BODY}\hbox to 1em{}}
+\NewEnviron{span7}{\parbox{\ddwidth{7}}{\BODY}\hbox to 1em{}}
+\NewEnviron{span8}{\parbox{\ddwidth{8}}{\BODY}\hbox to 1em{}}
+\NewEnviron{span9}{\parbox{\ddwidth{9}}{\BODY}\hbox to 1em{}}
+\NewEnviron{span10}{\parbox{\ddwidth{10}}{\BODY}\hbox to 1em{}}
+\NewEnviron{span11}{\parbox{\ddwidth{11}}{\BODY}\hbox to 1em{}}
+\NewEnviron{span12}{\parbox{\ddwidth{12}}{\BODY}\hbox to 1em{}}
+
+
+

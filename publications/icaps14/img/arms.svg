@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="63.373177"
+   height="15.612376"
+   id="svg3080"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="arms.svg">
+  <defs
+     id="defs3082" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="31.666349"
+     inkscape:cy="7.7858714"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="806"
+     inkscape:window-height="466"
+     inkscape:window-x="0"
+     inkscape:window-y="52"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata3085">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="レイヤー 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-343.33365,-504.53568)">
+    <text
+       xml:space="preserve"
+       style="font-size:7px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;color:#000000;fill:#0e232e;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Times;-inkscape-font-specification:Times"
+       x="384.45831"
+       y="511.44678"
+       id="text3351-7"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3353-0"
+         x="384.45831"
+         y="511.44678">Robot arms &amp;</tspan><tspan
+         sodipodi:role="line"
+         x="384.45831"
+         y="518.44678"
+         id="tspan3190">range of motion</tspan></text>
+    <g
+       id="g3080"
+       transform="matrix(0.70431147,0,0,0.70431147,371.46759,354.86061)">
+      <path
+         transform="matrix(0.06366286,0,0,0.06366286,-78.839337,191.82442)"
+         d="M 957.14285,499.80878 C 957.14285,595.27514 879.75207,672.66592 784.28571,672.66592 688.81934,672.66592 611.42856,595.27514 611.42856,499.80878 611.42856,404.34241 688.81934,326.95163 784.28571,326.95163 879.75207,326.95163 957.14285,404.34241 957.14285,499.80878 z"
+         sodipodi:ry="172.85715"
+         sodipodi:rx="172.85715"
+         sodipodi:cy="499.80878"
+         sodipodi:cx="784.28571"
+         id="path3293-1-6-4-8-6"
+         style="color:#000000;fill:#cc0000;fill-opacity:0.0813397;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <path
+         d="M 548.57142,333.38019 C 548.57142,360.59994 526.50545,382.6659 499.28571,382.6659 472.06596,382.6659 449.99999,360.59994 449.99999,333.38019 449.99999,306.16044 472.06596,284.09447 499.28571,284.09447 526.50545,284.09447 548.57142,306.16044 548.57142,333.38019 z"
+         sodipodi:ry="49.285713"
+         sodipodi:rx="49.285713"
+         sodipodi:cy="333.38019"
+         sodipodi:cx="499.28571"
+         id="path3219-3-3-6-1-8-3"
+         style="color:#000000;fill:#cc0000;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc"
+         transform="matrix(0.11901135,0,0,0.11901135,-88.203868,183.96765)" />
+    </g>
+    <rect
+       width="7.8044376"
+       height="1.4978266"
+       x="-487.01974"
+       y="384.8974"
+       id="arm1-7-6"
+       style="opacity:0.98999999;fill:#cccccf;stroke:#000000;stroke-width:0.04414635;stroke-miterlimit:4;stroke-dasharray:none"
+       inkscape:transform-center-x="-0.27072492"
+       transform="matrix(0.06890675,-0.99762311,0.99762311,0.06890675,0,0)"
+       inkscape:transform-center-y="-3.9194784" />
+  </g>
+</svg>

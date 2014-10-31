@@ -1,0 +1,521 @@
+#+title: Applying Problem Decomposition to Extremely Large Planning Domains
+#+author: Masataro Asai
+#+include: "head.org"
+#+LINK: img file:img/%s
+#+LINK: png file:img/%s.png
+#+LINK: jpg file:img/%s.jpg
+
+#+BEGIN_outline-text-1
+#+BEGIN_CENTER
+#+BEGIN_SMALLER
+Masataro Asai and Alex Fukunaga
+
+Univ. Tokyo
+#+END_SMALLER
+#+END_CENTER
+
+Factory assembly problem =cell-assembly=
+
+#+BEGIN_RESUME
+Hi everyone, I'm Masataro Asai from Tokyo, Japan,
+and I'd like to present here about my recent paper on
+cyclic planning and problem decomposition.
+
+I first briefly describe 
+the target domain, CELL-ASSEMBLY,
+and then the summary of our contribution
+#+END_RESUME
+#+END_outline-text-1
+
+* CELL-ASSEMBLY
+
+[[png:model2a]]
+
++ gripper + woodworking + logistics.
+  + [[png:products]] many products, large scale, repetitive
+  + [[png:tables]] multiple operations to complete each product
+  + [[png:arms]] moves without collision.
+
+# in keps presentation,
+# do not describe the painting machine etc.
+
+#+BEGIN_RESUME
++ The problem is similar to gripper, plus woodworking, plus logistics.
+  + There are many products in the conveyor that should be assembled with parts.
+    Each products are identical.
+  + To complete each product, multiple assembling operations are required.
+    Assembling should be done on the tables.
+  + Finally, the planner should move the robot arms and transport the products
+    while avoiding the collision between arms.
+#+END_RESUME
+
+** Planner's Task
+
+[[png:model2a]]
+
+*Static assembling recipes* are provided in the problem
+
+#+BEGIN_CENTER
+Primary Task : *optimizing the arm motion*
+#+END_CENTER
+
+#+BEGIN_RESUME
+In this domain, assembling recipes for the products are provided in the problem.
+Where to do what in what order, is already specified.
+
+Therefore the primary task of a planner is to *optimize the arm motion*.
+#+END_RESUME
+
+* Summary of contribution
+
+*object categorization* and *problem decomposition*
+
+#+BEGIN_QUOTE
+for *very large* instances of repetitive problems
+like CELL-ASSEMBLY
+#+END_QUOTE
+
++Experimental categorization results on *EXTREMELY* large CELL-ASSEMBLY
+instances & IPC domains.
+
+#+BEGIN_RESUME
+Our contribution is summarized as follows.
+We provided an automated *object categorization* and *problem decomposition*
+method
+for *very large* instances of repetitive problems
+like CELL-ASSEMBLY
+
+With experiments, We showed that our method successfully decompose CELL-ASSEMBLY
+into subproblems.  But more importantly, it decomposed *extremely large
+instances of IPC domains.*
+#+END_RESUME
+
+* Previous Work
+
+#+BEGIN_CENTER
+#+BEGIN_XLARGE
+ACP: Planning with loops,
+
+using the cyclic structure of the domain
+#+END_XLARGE
+
++ 6/24 (poster), 6/26 (Session AM 1a: Assembly and Manufacturing) :)
+#+END_CENTER
+
+#+BEGIN_RESUME
+Before describing our method, we briefly summarize our previous work ACP,
+automated cyclic planner. It solves repetitive problems like CELL-ASSEMBLY
+under some conditions.
++ It is a previous work but is going to be, however, presented in the poster
+  session tomorrow, and also in the final day of ICAPS main track.
+#+END_RESUME
+
+** Previous Work: ACP
+
+[[png:indices]]
+
++ Provides a cyclic planning framework applicable if
++ All products are indistinguishable
+  + i.e. each product can be assembled with the same plan
+  + except the object index /i/.
++ Result: construct a *loop plan* once and *unroll* it on /i/
+  + p_i -> p_1, p_2, p_3 ...
+
+#+BEGIN_RESUME
+ACP proposed
++ a cyclic planning framework for
+  solving these kind of large problems. The restriction is,
++ that all products should be indistinguishable.
+  + in other words, each product can be assembled with the same plan
+  + except difference of the index. In the figure, the index is /i/ and the total
+    number of product is one thousand.
++ Under such condition, it constructs a loop plan automatically
+  and unroll the same plan on many instances of /i/.
+  + for example, we obtain an efficient loop plan for each loop
+    and instantiate it for i=1,2,3 and so on.
+#+END_RESUME
+
+** The Loops in the previous work
+
+[[png:steady-state]]
+
+#+BEGIN_RESUME
+This is an illustration describing the loop structure.
+The upper half of the figure describes the state of the assembly system
+at /i/-th iteration in the manufacturing process.
+We call it an /i/-th steady state.
+If we update the index /i/ to /i+1/, only the indices of objects in a Steady State
+changes, but the state of the other objects, such as arms, tables
+remains as they were, or restored to the same state again.
+In each cycle, one product exits the system
+while a new product enters the system 
+and is partly assembled.
+#+END_RESUME
+
+** Issues in the previous work
+
++ *Mixed Orders*
+  + A x 100, B x 200
++ Static connections e.g. between products /p_i/ and parts /q_j/ etc.
+  + (to-be-attached p_i q_j) for all /i=j/
+  + Unroll /i/ and /p_i/ while fixing /j/ in /q_j/
+  + *Invalid* : (to-be-attached /p_1/ /q_4/)
+  + *Objects forming a Structure*
+
+#+BEGIN_RESUME
+There are two issues in this strategy.
+
++ The first one is about the mixed orders.
+  + For example, the problem may be a task to assemble
+    100 products of A and 200 products of B,
+    and the plan to assemble each A and B is different.
++ The second issue is that there may be the static connections
+  such as between products p-s and parts q-s.
+  + For example, if a predicate like
+    (to-be-attached p_i q_j) is specified for all /i=j/,
+  + we cannot simply unroll the loop plan with i and p_i
+    while fixing j in q_j to some value.
+    This is because it destroys the static connection between a part and a product.
+  + for example, if /i/ is 1 and /j/ is 4, it yields an invalid plan containing
+    (to-be-attached /p_1/ /q_4/).
+  + In other words, they forms a static structure similar to the concept
+    of classes in object-oriented programming. ACP do not assume these cases.
+#+END_RESUME
+
+* heterogeneous vs homogeneous problems
+
+In summary, we have two problems:
+
++ mixed orders :: different subproblems/subplan per product
++ object structure :: static connections
+
+Therefore, we want to 
+
+1. Detect the static structures of objects
+2. Categorize them into plan equivalence groups (same order in each group)
+3. Form several loop plans / equiv. groups
+4. Unroll them *and combine* them
+
+This paper's main topic: Report on preliminary work on *1 and 2*
+
+* Structures: Component Abstraction [Botea et.al 2004]
+
+Extract components from /Static Graph/
+
+Component 1 : p_1, q_1, (to-be-attached p_1 q_1)
+
+Component 2 : p_2, q_2, (to-be-attached p_1 q_1)
+
+Component 3 ...
+
+for all /j/ , q_j is made of iron (made-of q_j iron)
+
+#+BEGIN_RESUME
+The second problem was solved using Component Abstraction,
+a work by Botea et al in 2004.
+
+It extracts components from a graph called Static Graph, by seeing the
+static predicates in the problem description. In the previous example,
+It can extract p_1 and q_1 as a component.
+and also p_2 and q_2,
+p_3 and q_3 and so on.
+
+Also, assume that q_j is made of iron in this problem.
+#+END_RESUME
+
+** Static Graph
+
+[[png:nodes-and-edges]]
+
+Static fact: [[png:static/f-in-init]] s.t. never added/deleted
+
+#+BEGIN_RESUME
+# Though this is not my work,
+# I review the component abstraction here for better understanding of my work.
+# It is an algorithm which analyses a graph
+# called static graph. So I first describe the static graph.
+In static graph, the nodes are the objects and the edges are
+the so-called static facts in the initial state.
+
+Static facts are the propositions that are
+never added nor removed by any action.
+#+END_RESUME
+
+** Component Abstraction (cont.)
+
+[[png:component-abstraction1]]
+
+[[png:static/seed-type]] randomly
+
+#+BEGIN_RESUME
+The Static Graph of the previous example is shown in the figure.
+
+The algorithm then randomly chooses a /seed type/, one of PDDL types in the
+domain. In this example, it has chosen /yellow/ in the figure.  After that, for
+each object of that type, it constructs a component of one-node. A component is
+shown in green. Now we have two components in the left and in the
+right.
+It next tries to extend each component.
+#+END_RESUME
+
+** Component Abstraction (cont.)
+
+[[png:component-abstraction2]]
+
++ [[png:static/extend]]
++ [[png:static/attributes]]
+
+#+BEGIN_RESUME
++ Each extension consumes one edge and one new node.
+  If one component adds a node in one type,
+  then it simultaneously try to extend the other components
+  toward the same type.
+  In the figure, the left component adds q1 in orange,
+  so the right component also adds q2, in the same color.
++ Extension continues until any two components share a node.
+  In the next step of the example, both q_1 and q_2 tried to
+  include iron and the extension stops.
+
+In our paper, the small
+contributions of ours are that we used the deterministic version of
+component-abstraction algorithm to ensure the best abstraction is achieved.
+Also we devised Attributes, which can later be
+used to accelerate the categorization. 
+#+END_RESUME
+
+** Components and Attributes
+
++ Component 1 :: (person 1 = Asai)
+  + head1 leftarm1 ... hair1
+  + hair1 is *black*
++ Component 2 :: (person 2)
+  + head2 leftarm2 ... hair2
+  + hair2 is *black*
+
+#+BEGIN_RESUME
+The two concepts can be described as follows.
+
+Imagine there are two people. Person 1 consists of
+a head, arms, and so on. People have their own hair color.
+Same things apply to the person 2.
+Now, the relationship between a person and, say, its head is normally static.
+#+END_RESUME
+
+** no additional heads!
+
+[[jpg:static/troig]]
+
+#+BEGIN_INLINE
++ head-less
++ no shared-head
++ *black* hair
+#+END_INLINE
+
+#+BEGIN_RESUME
+If you /add/ a head to me, I have two heads which just results in an alien.
+
++ If you /remove/ a head from me, it means I'm dead.
++ Moreover, a head cannot be shared by more than two person.
++ On the other hand, the hair color *black* can be shared among people,
+  so it is just an attribute of a person.
+#+END_RESUME
+
+** Quick summary (first half)
+
++ object structure :: 
+     *DONE* by /Detecting the static structures of objects/
++ mixed orders :: different subproblems/subplan per product
+  + Categorize components of mixed orders into *groups of single orders*
+
+#+BEGIN_RESUME
+Now, using Component Abstraction by Botea et al,
++ We successfully divided the very large sets of
+  objects into components. The first problem is solved now.
++ However we still have mixed-orders.
+  There are incompatibilities between subproblems.
+  + We categorize them into groups of single orders.
+#+END_RESUME
+
+* Categorize Mixed Orders (recipes)
+
++ Build a Component problem :: focused on *one component*
++ Solve it :: get a plan
++ Plan-wise Compatibility checking :: replace p_1, q_1 with p_2, q_2
+
+#+BEGIN_RESUME
+Categorization of mixed orders consists of 3 steps. We first 
++ Build small problems called component problem which is focused on *one
+  component*.
++ Then we solve it and get a plan with underlying strips planner.
+
+Finally, we check the compatibility of the plans between the components,
+by replacing the objects in the plan with the objects in the *other* components.
+
++  In the previous example, we replace p_1, q_1 with p_2, q_2.
+#+END_RESUME
+
+** Component Problem
+
+[[png:component-problem1]]
+
+#+BEGIN_RESUME
+Consider the original problem.
+There should be objects which does not belong to any components.
+These are called the environment objects.
+For example, in CELL-ASSEMBLY domain, environments are marked in
+light brown. Tables, arms and attributes like iron,
+are all the environment objects.
+
+The rest of objects are hundreds of thousands of components.
+We take one component X out of them,
+and solve a problem focused on X, ignoring many other Y's.
+#+END_RESUME
+
+** Component Problem (cont.)
+
+[[png:component-problem2]]
+
+#+BEGIN_RESUME
+Now let's pick out some X and Y out of components.
+
+A component problem is a problem which has
+objects, initial states and goal states  of X and environment.
+In the figure, we also show a component problem of Y.
+#+END_RESUME
+
+** Component Problem (cont.)
+
+[[png:component-problem3]]
+
+#+BEGIN_RESUME
+We expect both problems yield plans, which are obtained by the baseline planners.
+
+In the obtained plan, we substitutes the objects in X with the objects in Y. For
+example, we replace p_1 with p_2 and q_1 with q_2 in plan P_X.
+Let the result plan be P'_X.
+
+Next we check the validity of the substituted plan P'_X.
+If the plan is valid, then X and Y are the compatible components.
+
+I think these parts are the main contribution in my paper.
+#+END_RESUME
+
+** Sometimes UNSAT
+
+Because we deleted some objects and Init.
+
+[[png:restoration1]]
+
+#+BEGIN_RESUME
+I said "we expect both problems yield plans"
+because sometimes they do not. They might be UNSAT
+because of the deleted objects and Init.
+
+In this case, we re-run the search on component problems
+with some relaxation or inflamation.
+#+END_RESUME
+
+** UNSAT -> restart with restoration
+
+[[png:restoration2]]
+
+#+BEGIN_RESUME
+We call this version of problem a "restored problem".  It is a problem with lot
+more number of objects and init, but the number of goals are still quite limited.
+The branching factor affects the planner but the search depth
+should be far less than that of the original problem.
+#+END_RESUME
+
+* Experiments
+
+[[png:static/eval]]
+
+#+BEGIN_INLINE
++ FD/LAMA2011
++ 1st step (GBFS)
++ 15GB
++ Xeon 2.3GHz
++ 6hrs
+#+END_INLINE
+
+#+BEGIN_RESUME
+Combining these methods,
+we experimentally checked if our method collectly decompose a given problems
+and how much decomposition was possible in the standard IPC problems.
+
+As I stated in the beginning,
+our aim is at the large problems that are clearly beyond 
+the reach of current planners.
+To obtain such problems, we first built large problems of CELL-ASSEMBLY.
+Also, we built IPC problems that cannot be solved by Fast Downward.
+We showed the example in this figure.
+The experimental environment of FD was
+
++ FD with LAMA2011
++ greedy best first search
++ with 15GB
++ with Xeon processor
++ within 6hrs.
+
+The problems are built with official generator as much as possible.
+If the generators are not available, I wrote my own script.
+
+The result problems are quite large.
+For instance, the smallest instance of woodworking problem
+we conducted our experiment on, is problem p86, which is at least
+twice larger than the largest problem number that is in IPC benchmarks.
+We tested upto p200.
+#+END_RESUME
+
+** Categorization results
+
+[[png:total-vs-group]]
+
+#+BEGIN_RESUME
+and this is the categorization results. For each point, the x-coordinate shows the
+number of components found in each problem and the y-coordinate shows the number of
+groups obtained by categorizing those components.
+
+In the bottom left, we see the brown bars and light-blue bars, represent the
+categorization results of single-order and two-mixed-order problems of
+CELL-ASSEMBLY. So CELL-ASSEMBLY problems are correctly decomposed as expected.
+
+More importantly, the result also shows that the compatible components do exists in
+some IPC problems.  Remember, these compatible components are the strong candidates
+of the elements that form loops, and this is the primary motivation for obtaining
+compatible components. If we form loops, we can super reduce the amount of
+computation, so this is very good news.
+#+END_RESUME
+
+* Conclusion
+
++ An automated *object categorization* and *problem decomposition* method
+  + for *very large* instances of *heterogeneous* repetitive problems
+  + like CELL-ASSEMBLY
++ Decomposed CELL-ASSEMBLY into compatible components
++ *Structural compatibilities, found in large instances of IPC domains.*
++ TODO : Full integration with Automated Cyclic Planner (ACP)
++ TODO : combining/interleaving several kinds of loops
+
+#+BEGIN_RESUME
+In conclusion,
++ We provided an automated *object categorization* and *problem decomposition*
+  method
+  + for *very large* instances of *heterogeneous* repetitive problems
+  + like CELL-ASSEMBLY
++ With experiments,
+  We showed that our method successfully
+  decompose CELL-ASSEMBLY into subproblems.
++ Finally, the most important finding is that *the structural compatibilities were
+  found in the large instances of IPC domains.*
++ However, since this is a workshop paper, there are lotsof TODOs.
+  The first priority is the full integration with Automated Cyclic Planner (ACP).
+  Since we found equivalent objects, I believe this can be done.
++ The next step is combining the loop plans returned by ACP.
+  This is again I'm not sure. The problem remains at how we interleave the actions.
+#+END_RESUME
+
+** Thanks for Listening!
+
+[[png:alien]]
+
