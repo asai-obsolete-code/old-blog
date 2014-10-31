@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="217.04102"
+   height="116.2207"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="place-non-place3.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="95.450272"
+     inkscape:cy="62.312218"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1024"
+     inkscape:window-height="691"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="レイヤー 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-161.22203,-141.11823)">
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       x="181.10728"
+       y="110.56159"
+       id="text2985"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2987"
+         x="181.10728"
+         y="110.56159" /><tspan
+         sodipodi:role="line"
+         x="181.10728"
+         y="123.06159"
+         id="tspan2989"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#000000;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'" /><tspan
+         sodipodi:role="line"
+         x="181.10728"
+         y="135.56158"
+         id="tspan2993"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#000000;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'" /><tspan
+         sodipodi:role="line"
+         x="181.10728"
+         y="148.06158"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#000000;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+         id="tspan4038">(:action get</tspan><tspan
+         sodipodi:role="line"
+         x="181.10728"
+         y="160.56158"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#000000;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+         id="tspan4040"> :parameters (?arm ?product ?table)</tspan><tspan
+         sodipodi:role="line"
+         x="181.10728"
+         y="173.06158"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#000000;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+         id="tspan4042"> :precondition (and <tspan
+   style="font-weight:normal;fill:#000000;stroke:none;stroke-width:0.20000000000000001;stroke-miterlimit:4;stroke-dasharray:none;-inkscape-font-specification:'Times New Roman,';font-family:Times New Roman;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%"
+   id="tspan4511">(on ?product ?table)</tspan></tspan><tspan
+         sodipodi:role="line"
+         x="181.10728"
+         y="185.56158"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#000000;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+         id="tspan4090">                                (clear ?arm))</tspan><tspan
+         sodipodi:role="line"
+         x="181.10728"
+         y="198.06158"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#000000;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+         id="tspan4044"> :effects      (and <tspan
+   style="font-weight:normal;fill:#000000;stroke:none;stroke-width:0.20000000000000001;stroke-miterlimit:4;stroke-dasharray:none;-inkscape-font-specification:'Times New Roman,';font-family:Times New Roman;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%"
+   id="tspan4509">(not-in-use ?table)</tspan></tspan><tspan
+         sodipodi:role="line"
+         x="181.10728"
+         y="210.56158"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.20000000000000001;stroke-miterlimit:4;stroke-dasharray:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+         id="tspan3003">                           (not (on ?product ?table))</tspan><tspan
+         sodipodi:role="line"
+         x="181.10728"
+         y="223.06158"
+         id="tspan3025"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#000000;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'">                           (in ?arm ?product)</tspan><tspan
+         sodipodi:role="line"
+         x="181.10728"
+         y="235.56158"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#000000;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+         id="tspan4092">                           (not (clear ?arm)))</tspan></text>
+  </g>
+</svg>

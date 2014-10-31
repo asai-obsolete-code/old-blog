@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="331.6257"
+   height="129.79445"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="place-non-place2.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="157.71394"
+     inkscape:cy="14.645614"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1024"
+     inkscape:window-height="691"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="レイヤー 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-142.851,-133.21197)">
+    <g
+       id="g4282"
+       transform="translate(0,3.7589173)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text2985"
+         y="119.14789"
+         x="150.14339"
+         style="font-size:10px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+         xml:space="preserve"><tspan
+           y="119.14789"
+           x="150.14339"
+           id="tspan2987"
+           sodipodi:role="line" /><tspan
+           style="font-style:normal;font-weight:normal;-inkscape-font-specification:'Times New Roman,'"
+           id="tspan2989"
+           y="131.64789"
+           x="150.14339"
+           sodipodi:role="line" /><tspan
+           style="font-style:normal;font-weight:normal;-inkscape-font-specification:'Times New Roman,'"
+           id="tspan2993"
+           y="144.14789"
+           x="150.14339"
+           sodipodi:role="line">(:action put-on</tspan><tspan
+           style="font-style:normal;font-weight:normal;-inkscape-font-specification:'Times New Roman,'"
+           id="tspan2997"
+           y="156.64789"
+           x="150.14339"
+           sodipodi:role="line"> :parameters (?arm ?product ?table)</tspan><tspan
+           style="font-style:normal;font-weight:normal;-inkscape-font-specification:'Times New Roman,'"
+           id="tspan3001"
+           y="169.14789"
+           x="150.14339"
+           sodipodi:role="line"> :precondition (and (in ?arm ?product)</tspan><tspan
+           id="tspan3066"
+           style="font-style:normal;font-weight:normal;-inkscape-font-specification:'Times New Roman,'"
+           y="181.64789"
+           x="150.14339"
+           sodipodi:role="line"><tspan
+   id="tspan3129"
+   style="font-weight:bold;fill:#ff0000;stroke:#000000;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;-inkscape-font-specification:'Times New Roman, Bold'">                               (not-in-use ?table)</tspan>)</tspan><tspan
+           style="font-style:normal;font-weight:normal;-inkscape-font-specification:'Times New Roman,'"
+           id="tspan3023"
+           y="194.14789"
+           x="150.14339"
+           sodipodi:role="line"> :effects (and <tspan
+   id="tspan3131"
+   style="font-weight:bold;fill:#00ff00;stroke:#000000;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;-inkscape-font-specification:'Times New Roman, Bold'">(not (not-in-use ?table))</tspan></tspan><tspan
+           id="tspan3068"
+           style="font-style:normal;font-weight:bold;fill:#4682b4;stroke:#000000;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;-inkscape-font-specification:'Times New Roman, Bold'"
+           y="206.64789"
+           x="150.14339"
+           sodipodi:role="line">                      (on ?product ?table)</tspan><tspan
+           id="tspan3070"
+           style="font-style:normal;font-weight:normal;-inkscape-font-specification:'Times New Roman,'"
+           y="219.14789"
+           x="150.14339"
+           sodipodi:role="line">                      (clear ?arm)))</tspan><tspan
+           style="font-style:normal;font-weight:normal;-inkscape-font-specification:'Times New Roman,'"
+           id="tspan3025"
+           y="231.64789"
+           x="150.14339"
+           sodipodi:role="line" /></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3919"
+         y="236.75735"
+         x="229.4305"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#4682b4;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman, Bold'"
+         xml:space="preserve"><tspan
+           id="tspan3951"
+           y="236.75735"
+           x="229.4305"
+           sodipodi:role="line"><tspan
+   id="tspan3923"
+   style="font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;stroke:none;-inkscape-font-specification:'Times New Roman,'">If an action </tspan>occupies a place,</tspan><tspan
+           id="tspan3967"
+           y="249.25735"
+           x="229.4305"
+           sodipodi:role="line"><tspan
+             id="tspan3969"
+             style="text-align:center;text-anchor:middle;fill:#ff0000">ensure the lock is free</tspan><tspan
+             id="tspan3953"
+             style="text-align:center;text-anchor:middle;fill:#000000;stroke:none"> &gt;</tspan><tspan
+             id="tspan3935"
+             style="text-align:center;text-anchor:middle;fill:#00ff00"> acquire the lock.</tspan></tspan></text>
+    </g>
+    <g
+       id="g4314"
+       transform="translate(0,-5.8010528)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text3056"
+         y="174.50728"
+         x="327.78726"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+         xml:space="preserve"><tspan
+           y="174.50728"
+           x="327.78726"
+           id="tspan3058"
+           sodipodi:role="line">(:action paint</tspan><tspan
+           id="tspan3060"
+           y="187.00728"
+           x="327.78726"
+           sodipodi:role="line"> :parameters (?product ?table ?color)</tspan><tspan
+           id="tspan3062"
+           y="199.50728"
+           x="327.78726"
+           sodipodi:role="line"> :precondition (on ?product ?table)</tspan><tspan
+           id="tspan3064"
+           y="212.00728"
+           x="327.78726"
+           sodipodi:role="line"> :effects (color ?table ?color))</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3973"
+         y="240.11986"
+         x="401.16617"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#4682b4;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman, Bold Italic'"
+         xml:space="preserve"><tspan
+           style="font-style:italic;font-weight:bold;fill:#ff0000;-inkscape-font-specification:'Times New Roman, Bold Italic'"
+           y="240.11986"
+           x="401.16617"
+           id="tspan3975"
+           sodipodi:role="line">No such construct!</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 321.87421,262.50642 321.87421,133.71197"
+       id="path3977"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>

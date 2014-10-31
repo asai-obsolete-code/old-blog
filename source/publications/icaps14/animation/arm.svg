@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="model2a"
+   height="405.31076"
+   width="546.48132"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="arm.svg">
+  <defs
+     id="defs43" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1024"
+     inkscape:window-height="691"
+     id="namedview41"
+     showgrid="false"
+     inkscape:zoom="1.2276931"
+     inkscape:cx="266.84476"
+     inkscape:cy="119.60825"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="model2a"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata3219">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     x="203.94934"
+     y="171.49275"
+     stroke-miterlimit="4"
+     width="52.343601"
+     height="52.343601"
+     style="color:#000000;fill:#816647;stroke:#000000;stroke-width:0.56371557999999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;enable-background:accumulate"
+     id="rect3217" />
+  <rect
+     x="263.69595"
+     y="181.64178"
+     stroke-miterlimit="4"
+     width="52.343601"
+     height="52.343601"
+     style="color:#000000;fill:#816647;stroke:#000000;stroke-width:0.56371558px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;enable-background:accumulate"
+     id="rect3217-4" />
+  <rect
+     x="405.60419"
+     y="251.69572"
+     stroke-miterlimit="4"
+     width="52.343601"
+     height="52.343601"
+     style="color:#000000;fill:#edd400;stroke:#000000;stroke-width:0.56371558px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;enable-background:accumulate"
+     id="rect3217-4-8" />
+  <rect
+     x="203.31627"
+     y="332.72958"
+     stroke-miterlimit="4"
+     width="52.343601"
+     height="52.343601"
+     style="color:#000000;fill:#816647;stroke:#000000;stroke-width:0.56371557999999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;enable-background:accumulate"
+     id="rect3217-0" />
+  <path
+     inkscape:connector-curvature="0"
+     stroke-miterlimit="4"
+     d="m 336.6542,280.07355 c 0,53.81495 -43.6259,97.44257 -97.44254,97.44257 -53.81496,0 -97.44257,-43.62593 -97.44257,-97.44257 0,-53.81496 43.62591,-97.44257 97.44257,-97.44257 53.81493,0 97.44254,43.62594 97.44254,97.44257 z"
+     style="color:#000000;fill:#cc0000;fill-opacity:0.0813397;stroke:#000000;stroke-width:0.56370801px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;enable-background:accumulate"
+     id="path3293-1-6-4-8" />
+  <path
+     inkscape:connector-curvature="0"
+     stroke-miterlimit="4"
+     d="m 444.89888,280.07355 c 0,53.81495 -43.62591,97.44257 -97.44254,97.44257 -53.81496,0 -97.44257,-43.62593 -97.44257,-97.44257 0,-53.81496 43.62591,-97.44257 97.44257,-97.44257 53.81493,0 97.44254,43.62594 97.44254,97.44257 z"
+     style="color:#000000;fill:#cc0000;fill-opacity:0.0813397;stroke:#000000;stroke-width:0.56370801px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;enable-background:accumulate"
+     id="path3293-1-6-4-78" />
+  <rect
+     x="388.61002"
+     y="194.4418"
+     stroke-miterlimit="4"
+     width="52.343601"
+     height="52.343601"
+     style="color:#000000;fill:#8ae234;stroke:#000000;stroke-width:0.56371558px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;enable-background:accumulate"
+     id="rect3217-4-87-0" />
+  <rect
+     style="fill:#eeeeee;stroke:#000000;stroke-width:0.56371558"
+     x="6.5345955"
+     y="371.52319"
+     width="189.02646"
+     height="33.505695"
+     id="rect2997-6" />
+  <rect
+     style="fill:#eeeeee;stroke:#000000;stroke-width:0.56371558"
+     x="0.28185779"
+     y="145.1179"
+     width="190.07608"
+     height="34.555508"
+     id="rect2997" />
+  <path
+     inkscape:connector-curvature="0"
+     stroke-miterlimit="4"
+     d="m 266.99681,280.07276 c 0,15.34413 -12.4388,27.7829 -27.78292,27.7829 -15.34412,0 -27.7829,-12.43877 -27.7829,-27.7829 0,-15.34415 12.43878,-27.78293 27.7829,-27.78293 15.34412,0 27.78292,12.43878 27.78292,27.78293 z"
+     style="color:#000000;fill:#cc0000;stroke:#000000;stroke-width:0.56370801px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;enable-background:accumulate"
+     id="armbase1" />
+  <path
+     inkscape:connector-curvature="0"
+     stroke-miterlimit="4"
+     d="m 375.24148,280.07276 c 0,15.34413 -12.4388,27.7829 -27.78292,27.7829 -15.34413,0 -27.78291,-12.43877 -27.78291,-27.7829 0,-15.34415 12.43878,-27.78293 27.78291,-27.78293 15.34412,0 27.78292,12.43878 27.78292,27.78293 z"
+     style="color:#000000;fill:#cc0000;stroke:#000000;stroke-width:0.56370801px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;enable-background:accumulate"
+     id="armbase2" />
+  <text
+     sodipodi:linespacing="125%"
+     line-height="125%"
+     x="96.583298"
+     y="174.21561"
+     font-variant="normal"
+     font-stretch="normal"
+     font-style="normal"
+     font-size="21.66571045px"
+     xml:space="preserve"
+     font-weight="normal"
+     style="font-size:30.92679787px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:LMRoman12"
+     id="text4319-9-6-6"><tspan
+       x="96.583298"
+       y="174.21561"
+       font-variant="normal"
+       font-stretch="normal"
+       line-height="125%"
+       font-style="normal"
+       font-size="21.66571045px"
+       font-weight="normal"
+       style="font-size:30.92679787px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:LMRoman12"
+       id="tspan4321-4-14-9">搬入コンベア</tspan></text>
+  <rect
+     x="9.3749266"
+     y="1.2353209"
+     width="535.87109"
+     height="133.49916"
+     style="color:#000000;fill:#ffffff;fill-rule:nonzero;stroke:#0e232e;stroke-width:2.47064185;enable-background:accumulate"
+     id="rect3367" />
+  <g
+     id="g3052"
+     transform="translate(303.00732,1.6290716)">
+    <rect
+       id="rect3217-4-87-1-5-7"
+       style="color:#000000;fill:#816647;stroke:#000000;stroke-width:0.29243746px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;enable-background:accumulate"
+       height="27.154175"
+       width="27.154175"
+       stroke-miterlimit="4"
+       y="52.222496"
+       x="20.212772" />
+    <rect
+       id="rect3217-4-87-3-9-6-5-9"
+       style="color:#000000;fill:#8ae234;stroke:#000000;stroke-width:0.29243746px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;enable-background:accumulate"
+       height="27.154175"
+       width="27.154175"
+       stroke-miterlimit="4"
+       y="10.020561"
+       x="20.212772" />
+    <rect
+       id="rect3217-4-5-4-5-4-7-3"
+       style="color:#000000;fill:#edd400;stroke:#000000;stroke-width:0.29243746px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;enable-background:accumulate"
+       height="27.154175"
+       width="27.154175"
+       stroke-miterlimit="4"
+       y="91.109474"
+       x="20.643818" />
+    <text
+       id="text3347"
+       style="font-size:29.64772034px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;color:#000000;fill:#0e232e;fill-rule:nonzero;enable-background:accumulate;font-family:LMRoman12"
+       xml:space="preserve"
+       font-size="28.88761711px"
+       font-stretch="normal"
+       line-height="125%"
+       font-variant="normal"
+       y="34.112946"
+       x="143.99181"
+       font-weight="normal"
+       font-style="normal"
+       sodipodi:linespacing="125%"><tspan
+         id="tspan3349"
+         x="143.99181"
+         y="34.112946">パーツトレイ</tspan></text>
+    <text
+       id="text3351"
+       style="font-size:29.64772034px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;color:#000000;fill:#0e232e;fill-rule:nonzero;enable-background:accumulate;font-family:LMRoman12"
+       xml:space="preserve"
+       font-size="28.88761711px"
+       font-stretch="normal"
+       line-height="125%"
+       font-variant="normal"
+       y="115.56214"
+       x="115.37023"
+       font-weight="normal"
+       font-style="normal"
+       sodipodi:linespacing="125%"><tspan
+         id="tspan3353"
+         x="115.37023"
+         y="115.56214">特殊機械</tspan></text>
+    <text
+       id="text3355"
+       style="font-size:29.64772034px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;color:#000000;fill:#0e232e;fill-rule:nonzero;enable-background:accumulate;font-family:LMRoman12"
+       xml:space="preserve"
+       font-size="28.88761711px"
+       font-stretch="normal"
+       line-height="125%"
+       font-variant="normal"
+       y="75.452118"
+       x="131.5256"
+       font-weight="normal"
+       font-style="normal"
+       sodipodi:linespacing="125%"><tspan
+         id="tspan3357"
+         x="131.5256"
+         y="75.452118">組み立て台</tspan></text>
+  </g>
+  <text
+     sodipodi:linespacing="125%"
+     line-height="125%"
+     x="103.43204"
+     y="402.03204"
+     font-variant="normal"
+     font-stretch="normal"
+     font-style="normal"
+     font-size="21.66571045px"
+     xml:space="preserve"
+     font-weight="normal"
+     style="font-size:30.92679787px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:LMRoman12"
+     id="text4319-9-6-6-1"><tspan
+       x="103.43204"
+       y="402.03204"
+       font-variant="normal"
+       font-stretch="normal"
+       line-height="125%"
+       font-style="normal"
+       font-size="21.66571045px"
+       font-weight="normal"
+       style="font-size:30.92679787px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:LMRoman12"
+       id="tspan4321-4-14-9-5">搬出コンベア</tspan></text>
+  <rect
+     style="opacity:0.98999999;fill:#cccccf;stroke:#000000;stroke-width:0.47366035;stroke-miterlimit:4;stroke-dasharray:none"
+     x="346.94559"
+     y="272.2905"
+     stroke-miterlimit="4"
+     width="83.736313"
+     height="16.070662"
+     id="arm2" />
+  <rect
+     style="opacity:0.98999999;fill:#cccccf;stroke:#000000;stroke-width:0.47366035;stroke-miterlimit:4;stroke-dasharray:none"
+     x="155.3607"
+     y="272.70593"
+     stroke-miterlimit="4"
+     width="83.736313"
+     height="16.070662"
+     id="arm1" />
+  <script
+     xlink:href="arm.js"
+     id="script39"
+     type="text/javascript" />
+  <g
+     id="g3045"
+     transform="translate(-209.33571,14.661645)">
+    <g
+       transform="translate(105.15942,-77.380902)"
+       id="g3041">
+      <path
+         inkscape:connector-curvature="0"
+         stroke-miterlimit="4"
+         d="m 263.16119,110.44887 c 0,11.90744 -9.65283,21.56025 -21.56027,21.56025 -11.90744,0 -21.56026,-9.65281 -21.56026,-21.56025 0,-11.907463 9.65282,-21.560282 21.56026,-21.560282 11.90744,0 21.56027,9.652819 21.56027,21.560282 z"
+         style="color:#000000;fill:#cc0000;stroke:#000000;stroke-width:0.43745211px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;enable-background:accumulate"
+         id="armbase2-3" />
+      <rect
+         style="opacity:0.98999999;fill:#cccccf;stroke:#000000;stroke-width:0.36757275;stroke-miterlimit:4;stroke-dasharray:none"
+         x="241.20285"
+         y="104.40963"
+         stroke-miterlimit="4"
+         width="64.98156"
+         height="12.471252"
+         id="arm2-2" />
+    </g>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3037"
+       y="87.641853"
+       x="358.48004"
+       style="font-size:30px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Roman No9 L;-inkscape-font-specification:Nimbus Roman No9 L"
+       xml:space="preserve"><tspan
+         y="87.641853"
+         x="358.48004"
+         id="tspan3039"
+         sodipodi:role="line">ロボットアーム</tspan></text>
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Roman No9 L;-inkscape-font-specification:Nimbus Roman No9 L"
+     x="333.88092"
+     y="156.28366"
+     id="text3060"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3062"
+       x="333.88092"
+       y="156.28366">組み立て</tspan><tspan
+       sodipodi:role="line"
+       x="333.88092"
+       y="178.78366"
+       id="tspan3064">専用</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Roman No9 L;-inkscape-font-specification:Nimbus Roman No9 L"
+     x="256.58145"
+     y="403.92825"
+     id="text3068"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3070"
+       x="256.58145"
+       y="403.92825">搬出専用</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Roman No9 L;-inkscape-font-specification:Nimbus Roman No9 L"
+     x="238.09593"
+     y="163.00729"
+     id="text3068-2"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3070-1"
+       x="238.09593"
+       y="163.00729">搬入専用</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Roman No9 L;-inkscape-font-specification:Nimbus Roman No9 L"
+     x="478.82687"
+     y="329.82782"
+     id="text3054"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       x="478.82687"
+       y="329.82782"
+       id="tspan3058">塗装専用</tspan></text>
+</svg>

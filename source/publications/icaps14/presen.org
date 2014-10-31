@@ -1,0 +1,730 @@
+#+title: -
+#+author: Masataro Asai
+#+include: "head.org"
+#+LINK: img file:img/%s
+#+LINK: png file:img/%s.png
+#+LINK: jpg file:img/%s.jpg
+
+#+BEGIN_outline-text-1
+#+BEGIN_XLARGE
+#+BEGIN_CENTER
+Fully automated cyclic planning for
+large-scale manufacturing domains.
+#+END_CENTER
+#+END_XLARGE
+
+#+BEGIN_CENTER
+#+BEGIN_SMALLER
+Masataro Asai Univ. tokyo
+
+Alex Fukunaga (Assoc. prof, advisor)
+#+END_SMALLER
+#+END_CENTER
+
+#+BEGIN_RESUME
+Hi everyone. On Monday I presented at KEPS about
+problem decomposiiton, but that work was made
+for integrating with this work actually.
+
+Now I bliefly describe the mass-manufacturing problem first.
+This problem, called CELL-ASSEMBLY, was our primary problem of interest, and
+solving this problem was our first short term goal last year.
+However, the method developped for the problem was found to be general, and indeed
+applicable to other domains.
+#+END_RESUME
+#+END_outline-text-1
+
+* Motion Planning in Cell Assembling System
+
++ It's *NOT* about spatial search, all about *actions* !
++ Require professional human resource w/o automated planner
+
+#+BEGIN_HTML
+<object width="600" height="450" type="video/avi" data="./video/assembly.avi">
+<param name="autoplay" value="true">
+<param name="loop" value="true">
+<param name="muted" value="true">
+<param name="control" value="true">
+</object>
+#+END_HTML
+
+#+BEGIN_RESUME
+The task is to
+optimize the flow and the timing of motion of Robot arms.
+Note that it's *NOT* about spatial search, all about *actions*.
+We use temporal planners to solve the problem, or
+combine classical planners with postprocessing sheduler.
+
+Before applying the automated planning,
+it requires very expensive professional human resource.
+#+END_RESUME
+
+* CELL-ASSEMBLY
+
+[[png:model2a]]
+
+gripper + woodworking + logistics.
+
++ [[png:products]] : many products, with [[png:parts]] : parts
++ to complete each product, multiple operations -- [[png:tables]] 
++ [[png:arms]] moves to carry  [[png:products]] without collision.
+
+#+BEGIN_RESUME
+Eventually, the problem was formulated into a PDDL problem
+which is similar to gripper, plus woodworking, plus logistics.
+
++ There are many products in the conveyor that should be assembled with parts.
++ To complete each product, multiple assembling operations are required.
+  Assembling should be done on the tables.
++ Finally, the robot arms move in order to transport the products
+  while avoiding the collision.
+#+END_RESUME
+
+** Planner's Task
+
+[[png:model2a]]
+
+*Assembling recipes* are provided in the problem
+
+*All products use the same recipe* (Identical)
+
+#+BEGIN_ALIGNRIGHT
+... (we tried to relax it in the KEPS paper!)
+#+END_ALIGNRIGHT
+
+.
+
+#+BEGIN_CENTER
+Primary Task : *optimizing the arm motion*
+#+END_CENTER
+
+#+BEGIN_RESUME
+In this domain, assembling recipes for the products are provided in the problem.
+Where to do what in what order, is already specified.
+
+Therefore the primary task of a planner is to *optimize the arm motion*.
+#+END_RESUME
+
+** High degree of symmetry
+
+#+CAPTION: Simplest problem with many product
+[[png:model2a-products]]
+
+#+BEGIN_RESUME
+The difficulty in this problem is its high degree of symmetry,
+There might be hundreds of thousands of products that should be assembled,
+not only in PDDL problem but also in the realistic assembly systems.
+Symmetry is the main cause of difficulty in some domains such as gripper.
+The problem gets exponentially difficult because of
+the high branching factor
+*regardless* of the difficulty of each subproblem.
+#+END_RESUME
+
+** No Existing Planner Can Solve This Practical Problem!
+
+#+BEGIN_CENTER
+#+BEGIN_INLINE
++ symmetry breaking
++ ＜-＞ *ANOTHER METHOD*
+#+END_INLINE
+
+.
+#+END_CENTER
+
+[[png:no-other-existing-planner]]
+
+#+BEGIN_RESUME
+Indeed, any state-of-the-art planners failed
+to solve cell-assembly problem instances
+with the number of products around 16.
+This is expected results but unacceptable!!
+
++ There already exists a technique called symmetry breaking.
++ However our method, described from now on, is a generic method
+  to tackle this problem from another point of view.
+#+END_RESUME
+
+* Summary of Contribution
+
++ Automated Framework to Form a Loop Structure ::
+     #+LaTeX: . \\
+     First attempt: form and find the /best/ cyclic plan
++ General domain/problem analysis method (owner/lock) ::
+     #+LaTeX: . \\
+     the basic method is applicable to other domains
++ Solved EXTREMELY large PDDL instances (inc. IPC domains!) ::
+     #+LaTeX: . \\
+     This is /clearly beyond/ state-of-the-art planners
+
+#+BEGIN_RESUME
+Now, here is the Summary of Contribution.
++ Firstly, we developped a new Framework for cyclic planning ::
+     This is a first attempt, maybe, not sure,
+     to form and find the /best/ cyclic plan automatically.
++ Secondly, we developped a general domain/problem analysis method for it ::
+     and the basic method is applicable to the other domains.
++ Thirdly, it actually solved EXTREMELY large PDDL instances ::
+     that are beyond the ability of state-of-the-art planners.
+     It's ability is not limited to CELL-ASSEMBLY problem, and
+     it actually solves Large IPC problem (and variants).
+#+END_RESUME
+
+* Strategy: Cyclic Planning
+
+One loop -- completes one product / all products to the next steps
+
+#+attr_latex: :width \textwidth
+[[png:cyclic-planning]]
+
+#+BEGIN_RESUME
+The strategy we adopted for solving those problems
+is a cyclic planning framework.
+Running one loop completes one product and
+moves the partially-assembled products to their next steps.
+#+END_RESUME
+
+** Loop unrolling ＜-＞ Loop /rolling/
+#+attr_latex: :width \textwidth
+[[png:static/python-loop]]
+
+#+BEGIN_RESUME
+The idea is essentially the following.
+Assume there are at least 3 actions needed to complete one cycle,
+and also there are 1000 products.
+Normally we have to compute a plan with length 3000.
+However, the length of the plan actually required to be solved is just 3.
+And the planning is far more easier than the original problem.
+#+END_RESUME
+
+** Interactions between subproblems
+#+attr_latex: :width \textwidth
+[[png:cyclic-planning]]
+
+#+BEGIN_RESUME
+But do not misunderstand that
+each cycle is just solving a subproblem independently.
+Each cycle actually assembles multiple products,
+so it's combining and interleaving each subproblems
+in a very complex manner.
+#+END_RESUME
+
+* Loop : representation
+
+Loop ⇔ Beginning of a Cycle
+
+#+attr_latex: :width \textwidth
+[[png:cyclic-planning]]
+
+#+BEGIN_RESUME
+Now let's go further into how we represent a loop.
+A loop plan is a plan to execute one cycle.
+Since it is a plan, each cycle has it's own starting state.
+This is important because it means, conversely, each starting state has
+several loop plans.
+#+END_RESUME
+
+** Steady State S_i
+
+#+BEGIN_ALIGNRIGHT
+Beginneing of the cycle
+#+END_ALIGNRIGHT
+
+#+attr_latex: :width \textwidth
+[[png:steady-state]]
+
+#+BEGIN_RESUME
+We define this beginning of the cycle as a steady state, indexed with /i/.
+
+In cell-assembly example,
+there are some partially processed product i,i+1,i+2,
+and in the next cycle, they go to the next manufacturing step.
+In a cycle, there are multiple intermediate states.
+The objects in the rest of the world, such as arms and tables,
+are restored to the original state.
+#+END_RESUME
+
+** Unrolling
+#+attr_latex: :width \textwidth
+[[png:unroll]]
+
+#+BEGIN_RESUME
+Finally, we can unroll the loop plan by substituting
+the indexed variables with actual objects,
+just copying the same plan.
+
+Now the goal is, automatically building these kinds of steady states and
+getting efficient loop plans.
+#+END_RESUME
+
+* Difficulty
+
+#+BEGIN_CENTER
+/It is not trivial/ to detect the information
+
+necessary for constructing an efficient loop.
+#+END_CENTER
+
+#+BEGIN_RESUME
+/It is not trivial/ to detect the information
+necessary for constructing an efficient loop.
+There were two challenges here.
+#+END_RESUME
+
+** Difficulty
+
++ WHICH STATES are the steady state? ::
+     #+LaTeX: . \\
+     = which state can form a loop?
+
+     Checking ALL states from Init -- impractical
++ Which SS yields a cost-efficient loop plan? ::
+     #+LaTeX: . \\
+     Difficulty : (# of SSs) x (evaluation time for each SS)
+     
+     *(# of SSs)* -- still exponentially large (e.g. 5x10^6)
+
+     *(expensive evaluation)* -- loop plan : calls /FastDownward/ each time
+
+#+BEGIN_CENTER
+Even if we have a finite set of steady states,
+
+_checking ALL steady states is again impractical!_
+#+END_CENTER
+
+#+BEGIN_RESUME
+The first one is about
+which state is a steady state.
+This is the same question as
+which states can form a loop.
+Checking ALL states reachable from the initial state is impractical
+because the number of states
+is exponentially large in most planning problems.
+
+The second issue is that
+we have to get the cost-efficient loop plan.
+This can further be decomposed into two problems:
+The first one is the number of steady states.
+This might be again exponentially large, and actually it was.
+The second one is that the evaluation of each steady state is expensive,
+because each evaluation calls standard planner like Fast Downward
+to obtain the loop plan and get it's length.
+Therefore, checking ALL steady states is impractical.
+#+END_RESUME
+
+# ** Manually labelling predicates and objects...
+
+# #+attr_latex: :width \textwidth
+# [[png:labelling]]
+
+# Easy but domain-dependent & human-driven.
+
+# _(the evaluation difficulty still remains)_
+
+# #+BEGIN_RESUME
+# There might be a simple countermeasure.
+# If we assume a human level knowledge by labelling predicates and objects,
+# forming a steady state is relatively easy,
+
+# In the figure,
+# there is an example steady state "at bi+2 table, at bi+1 painter, at bi machine".
+# The predicate "at" and the objects "table,painter,machine"
+# can be labelled by human.
+# If we label the SS like that, then enumerating SS gets much easier.
+
+# However it's /less/ Artificial Intelligence-ish, right? It requires human!
+# Moreover, the evaluation difficulty still remains.
+# So the next task is to automate this labelling.
+# #+END_RESUME
+
+* Process -- to Enumerate SSs
+
+*Observation:*
+
+#+BEGIN_QUOTE
+[[png:single-product-plan]]
+
+3 processes (/Attatch ＞ _Carry_ ＞ Attatch/)
+
+There is at most *1* product in a process.
+
+# + *Assume* we have a method to detect it!
+#+END_QUOTE
+
+#+BEGIN_RESUME
+We developped a notion of /process/ to efficiently
+construct a steady state.
+
+We first build a plan for assembling a single product
+by choosing one object in the original problem.
+Then, in human level understanding,
+the result plan consists of several segments, so-called processes.
+There is at most *1* product in a process.
+In this example, there are 3 processes.
+
+# Now let's assume as if we already have a method
+# to detect such process automatically!
+# ...It might sound silly but please don't worry, I'll describe how to do it later.
+# If we assume so, the enumeration of Steady States become easier.
+
+So how can /process/ be detected?
+#+END_RESUME
+
+# ** Process -- continue
+# #+BEGIN_QUOTE
+# Attatch ＞ _Weld_ ＞ Attatch : 3 processes
+# #+END_QUOTE
+
+# | <c>              | <c>         | <c>      | <c>         |        <r> |
+# |                  | Attatching? | Welding? | attatching? | bit vector |
+# |------------------+-------------+----------+-------------+------------|
+# |                  | no          | yes      | no          |            |
+# | Steady State S_i | 0           | 1        | 0           |      *010* |
+# |------------------+-------------+----------+-------------+------------|
+
+# 000,001,010,011,100,101,110,111
+
+# #+BEGIN_CENTER
+# How can processes be detected??
+# #+END_CENTER
+
+# #+BEGIN_RESUME
+# Consider we have a steady state and processes detected, like this.
+# Since we have processes,
+# we can check a process is occupied by any product in the steady state.
+# We ask, "is it attatching part1 to any product?".
+# If the answer no, we assign 0 for it.
+# Otherwise we assign 1 for it.
+# Finally, we get a bit vector in the rightmost column.
+# If so, we can enumerate all Steady States
+# by enumerating over all possible bit vectors.
+
+# However, we assumed that we have /processes/ already,
+# So how can /process/ be detected?
+# #+END_RESUME
+
+** Process = Unit Capacity Resource
+
+assemble @ table1 \approx use table1 (resource)
+
++ /Process/ = {table, machine, painter} : /places/
++ /Which predicate specifies a resource?/ is not trivial
+
+It's /difficult even for human!/ w/o analysing PDDL
+
+*semantically indistinguishable* -- (X A Y)
+
+#+BEGIN_LARGER
+|               | seems like.. |
+|---------------+--------------|
+| (color X red) | not a place  |
+| (at X table)  | a place      |
+| (P X Y)       | ??????       |
+#+END_LARGER
+
+#+BEGIN_RESUME
+A process is a set of unit capacity resources.
+For example, assembling the product at table1 consumes the table1.
+It should be released if each process completes.
+
++ Then each process corresponds to a set of unit capacity resources.
+  Informally speaking, in cell-assembly, they are /places/
+  like tables, machines and so on.
+
++ However, /which predicate specifies a resource?/ is not trivial.
+  For example, for human,
+  the object red doesn't seem like a place,
+  and table seems like a place,
+  however no one actually knows if they represent a place or not,
+  until we analyse the actual PDDL problem,
+  especially when it looks like the third one, (P X Y).
+  It's the same for a planning agent because,
+  semantically they all look the same! just (P A Y)!
+
+Now we want to let the planner do it automatically.
+#+END_RESUME
+
+** Detection mechanism
+
+*Question* Is a predicate /o= (P X Y Z...)/ a place?
+
+*Answer* find a /lock/ predicate /l/ that satisfies *some condition* with /o/.
+
+If it exists, it is a place.
+
+*Condition* : for all action /a/,
+
+1 . _If /a/ occupies a place, /a/ should check if the place is not in use, and /a/
+should acquire the lock._
+
+2 . If /a/ leaves the place, release the lock.
+
+#+BEGIN_RESUME
+The detection proceeds as follows.
+We need to know if a predicate /o= (P X Y Z...)/ is a place.
+To answer that, 
+we search for the corresponding lock predicate l
+that satisfies both condition below over all actions.
+
+The first one is, informally speaking, _If /a/ occupies a place, /a/ should check
+ if the place is not in use, and /a/ should acquire the lock._ The second one is,
+ if /a/ leaves the place, release the lock.
+
+Next, let's see how the predicate "at" differs from the predicate "color"
+and why the former is a place.
+#+END_RESUME
+
+** What's the difference?
+#+attr_latex: :width \textwidth
+[[png:place-non-place1]]
+
+Puts a product in an arm onto a table
+
+#+BEGIN_ALIGNRIGHT
+Paint a product
+#+END_ALIGNRIGHT
+
+#+BEGIN_RESUME
+Now here are 2 actions "put-on" and "paint".
+Basically, put-on puts a product in an arm onto a table.
+Here, the predicate "(on product table)" satisfies the previous rule...
+#+END_RESUME
+
+** What's the difference?
+#+attr_latex: :width \textwidth
+[[png:place-non-place2]]
+
+#+BEGIN_RESUME
+because there is a predicate "(not-in-use ?table)" which matches the condition.
+Once we found it, we should test it for all actions.
+Contrarly, in the action "paint", the predicate "color" do not have such
+constructs, so it is not a place.
+#+END_RESUME
+
+# ** What's the difference?
+
+# [[png:place-non-place3]]
+
+# ** What's the difference?
+
+# [[png:place-non-place4]]
+
+** Detects ANY places possible
+
+# [[png:place-non-place-arm]]
+
+hiralious example, but...
+
+#+attr_latex: :width \textwidth
+[[png:static/hiralious]]
+
+#+BEGIN_RESUME
+# The detection method is automated
+# and it itself is not
+# related to any concepts like process or CELL-ASSEMBLY.
+# One Actually, (in arm product) were the unit capacity resources
+# because there is a corresponding lock predicate "(clear ?arm)".
+
+The last example here is something no one even know how to read.
+However the machine can still recognize it
+because the detection method is general and automated.
+#+END_RESUME
+
+** ACP : Automated Cyclic Planner
+#+attr_latex: :height 0.8\paperheight
+[[png:processes]]
+
+#+BEGIN_RESUME
+Now we finally get to summarize our framework, Automated Cyclic Planner ACP.
+Firstly, it solves a single product plan.
+Next it detects the change of resource usage in the plan, and make it a process.
+Once we get processes, assignment of products to each processes
+is represented by a bit vector, which is very easy to enumerate.
+#+END_RESUME
+
+** Infeasibility/Deadlock Detection
+
+Using compact representation of steady state,
+
+[[png:static/deadlock-detection]]
+
+Reduced # : 5x10^6 → 677
+
+#+BEGIN_RESUME
+We further apply a infeasibility and deadlock detection in this abstract
+representation of the cycle. It efficiently reduces the number of steady states,
+for example, from 5x10^6 to 677.
+After these pruning, we obtain many loop plans for each steady state
+by solving the loop problem with underlying planner, fast downward.
+#+END_RESUME
+
+* Unrolling
+#+attr_latex: :width \textwidth
+[[png:unroll]]
+
+#+BEGIN_RESUME
+Now Finally get back to this slide again.
+We can unroll the best loop plan.
+#+END_RESUME
+
+* Experiments
+
++ 5 CELL-ASSEMBLY problems (each with 4,16,64,256,1024 products)
++ Woodworking (each with *same* 4,16,64,256,1024 parts)
++ Barman (each with *same* 4,16,64,256,1024 cocktail)
+
+#+BEGIN_RESUME
+The experiments were done on 3 domains, CELL-ASSEMBLY, 
+minimally modified Woodworking, and Barman.
+There are 5 kinds of problems for CELL-ASSEMBLY,
+each corresponds to the different assembly systems.
+For these 7 kinds of problems,
+there are 5 variants, with varying number of products, parts, or cocktails.
+#+END_RESUME
+
+** ACP vs ...
+
++ 5 temporal planners
+  + FD/LAMA2011, FD/LMcut (+ min-slack scheduler)
+  + yahsp2, DAEyahsp, CPT4
++ best results of Simple Cyclic Planner (SCP)
+  + 5 base planner x 9 configuration
+
+#+BEGIN_RESUME
+In these problems, ACP was compared with 3 temporal planners and 2
+classical planners combined with minimum slack postproessing scheduler.
+
+We also find that comparing ACP with standard planners is not sufficient, because
+we can easily come up with trivial cyclic planner, called Simple Cyclic Planner
+SCP, which just solves the K-product problem and just concatenate the result plan.
+We get the best out of 5 times 9 = 45 configuration of SCP and compare it with ACP.
+#+END_RESUME
+
+** Simple Cyclic Planner
+
+Solve K = {1 ... 9}-products plan
+
+with 5 planners (2FDs,yahsp,DAE,CPT)
+
+get the average makespan per product (K-makespan/K)
+
+#+BEGIN_RESUME
+SCP solves 1 to 9 products plan. Since the total number of products such as
+16 and 64 might not be evenly devided into K-product subproblems,
+so we get the average makespan per product.
+#+END_RESUME
+
+** All standard planners fails
+#+attr_latex: :width 0.8\textwidth
+[[png:no-other-existing-planner]]
+
+similar results on other domains
+
+#+BEGIN_RESUME
+Now the results.
+As we showed in the beginning,
+the standard strips planner has failed to
+solve problems because of the high branching factor and the memory limit.
+#+END_RESUME
+
+** Average makespan compared to SCP / lower bound
+#+attr_latex: :width 0.8\textwidth
+[[png:static/results-poster]]
+
+#+BEGIN_RESUME
+And here are the comparison between
+ACP, SCP and the lower bound obtained by CPT4.
+You would notice that the makespan per product is converging to some value
+in ACP. This is because the bad plan before the first cycle
+and after the last cycle is getting amortized.
+
+In the lower bound analysis, we used
+CPT4, an optimal temporal planner by vincent vidal.
+However, it actually failed to even compute the first lower bound.
+So we analysed the bottolneck of each cycle by hand
+and multiplied it by the number of product and made it a manual lower bound.
+Eventually, the gap was around 3 in cell assembly and woodworking.
+
+It was not good in Barman domain,
+but this is because ACP cannot handle multiple resources currently.
+#+END_RESUME
+
+** Domain Independence
+#+attr_latex: :width 0.8\textwidth
+[[png:static/results-poster]]
+
+Too much assumptions & strong requirements?
+
+#+BEGIN_RESUME
+The restriction might seem quite strong,
+but the same program solves the other IPC domains! acutually!
+
+I like to do these kind of bizarre stuff!
+#+END_RESUME
+
+* Summary of Contribution
+
++ Automated Framework to Form a Loop Structure ::
+     #+LaTeX: . \\
+     First attempt: form and find the /best/ cyclic plan
++ General domain/problem analysis method ::
+     #+LaTeX: . \\
+     the basic method is applicable to other domains
++ Solved EXTREMELY large PDDL instances ::
+     #+LaTeX: . \\
+     beyond state-of-the-art planners
+
+     Solve Large IPC problem (and variants) correctly
+
+#+BEGIN_RESUME
+Now I repeat the Summary of Contribution.
++ Firstly, we developped a new Framework for cyclic planning ::
+     This is a first attempt to form and find the /best/ cyclic plan automatically.
++ Secondly, we developped a general domain/problem analysis method for it ::
+     and the basic method is applicable to the other domains.
++ Thirdly, it actually solved EXTREMELY large PDDL instances ::
+     that are beyond the ability of state-of-the-art planners.
+     It's ability is not limited to CELL-ASSEMBLY problem, and
+     it actually solves Large IPC problem (and variants).
+#+END_RESUME
+
+** Is it useful?
+
+No one doesn't even try to solve that large problems!
+
+Dirty attempt -- lessons might be learned
+
+Global lock/owner in STRIPS -- it may find a way to use
+
+#+BEGIN_RESUME
+One thing I want to emphasize is that the fact no one doesn't even try to solve
+/that large/ problems!
+
+We know it's impossible, but even solving problems dirty
+might help you understand the behavior of such kind of domains.
+
+But at least, the automated detection of global lock and its owner in STRIPS domain
+might be useful, though I'm not sure about its real value.
+#+END_RESUME
+
+** So, what's next?
+
++ Categorizing the objects into identical groups (KEPS paper)
+  + several mixed-orders becomes available (100 x A / 200 x B)
+  + (100 loops A) + (200 loops B)
+  + (100 loops AB) + (100 loops B)
++ Categorization -＞ Checks serial decomposability / not.
+  + check if a resource is released or not
+  + consider the "release" action of the resources as an abstract action
++ *Unit* capacity -＞ *arbitrary* capacity
+  + Detect *numbers* in a problem, automatically?
+  + up-converting STRIPS to ADL (opposite to the common strategy)
+
+Thanks for listening!
+
+#+BEGIN_RESUME
+There is bunch of tasks I have to apply this framework to even larger range of
+domains, but not sure I can do it successfully. Maybe just beaten by symmetry
+breaking technique I am also interested in. 
+
+Thanks for listening!
+#+END_RESUME

@@ -1,0 +1,1310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>-</title>
+<!-- 2014-10-31 金 15:53 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Masataro Asai" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="css/layout.css" />
+<link rel="stylesheet" type="text/css" href="css/default.css" />
+<script type="text/javascript" src="./jquery.js"></script>
+<script type="text/javascript" src="./code.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">-</h1>
+<div class="outline-text-1">
+<div class="xlarge">
+<div class="center">
+<p>
+Fully automated cyclic planning for
+large-scale manufacturing domains.
+</p>
+</div>
+
+</div>
+
+<div class="center">
+<div class="smaller">
+<p>
+Masataro Asai Univ. tokyo
+</p>
+
+<p>
+Alex Fukunaga (Assoc. prof, advisor)
+</p>
+
+</div>
+</div>
+
+<div class="resume">
+<p>
+Hi everyone. On Monday I presented at KEPS about
+problem decomposiiton, but that work was made
+for integrating with this work actually.
+</p>
+
+<p>
+Now I bliefly describe the mass-manufacturing problem first.
+This problem, called CELL-ASSEMBLY, was our primary problem of interest, and
+solving this problem was our first short term goal last year.
+However, the method developped for the problem was found to be general, and indeed
+applicable to other domains.
+</p>
+
+</div>
+
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Motion Planning in Cell Assembling System</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>It's <b>NOT</b> about spatial search, all about <b>actions</b> !
+</li>
+<li>Require professional human resource w/o automated planner
+</li>
+</ul>
+
+<object width="600" height="450" type="video/avi" data="./video/assembly.avi">
+<param name="autoplay" value="true">
+<param name="loop" value="true">
+<param name="muted" value="true">
+<param name="control" value="true">
+</object>
+
+<div class="resume">
+<p>
+The task is to
+optimize the flow and the timing of motion of Robot arms.
+Note that it's <b>NOT</b> about spatial search, all about <b>actions</b>.
+We use temporal planners to solve the problem, or
+combine classical planners with postprocessing sheduler.
+</p>
+
+<p>
+Before applying the automated planning,
+it requires very expensive professional human resource.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> CELL-ASSEMBLY</h2>
+<div class="outline-text-2" id="text-2">
+
+<div class="figure">
+<p><img src="img/model2a.png" alt="model2a.png" />
+</p>
+</div>
+
+<p>
+gripper + woodworking + logistics.
+</p>
+
+<ul class="org-ul">
+<li><img src="img/products.png" alt="products.png" /> : many products, with <img src="img/parts.png" alt="parts.png" /> : parts
+</li>
+<li>to complete each product, multiple operations &#x2013; <img src="img/tables.png" alt="tables.png" /> 
+</li>
+<li><img src="img/arms.png" alt="arms.png" /> moves to carry  <img src="img/products.png" alt="products.png" /> without collision.
+</li>
+</ul>
+
+<div class="resume">
+<p>
+Eventually, the problem was formulated into a PDDL problem
+which is similar to gripper, plus woodworking, plus logistics.
+</p>
+
+<ul class="org-ul">
+<li>There are many products in the conveyor that should be assembled with parts.
+</li>
+<li>To complete each product, multiple assembling operations are required.
+Assembling should be done on the tables.
+</li>
+<li>Finally, the robot arms move in order to transport the products
+while avoiding the collision.
+</li>
+</ul>
+
+</div>
+</div>
+
+<div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Planner's Task</h3>
+<div class="outline-text-3" id="text-2-1">
+
+<div class="figure">
+<p><img src="img/model2a.png" alt="model2a.png" />
+</p>
+</div>
+
+<p>
+<b>Assembling recipes</b> are provided in the problem
+</p>
+
+<p>
+<b>All products use the same recipe</b> (Identical)
+</p>
+
+<div class="alignright">
+<p>
+&#x2026; (we tried to relax it in the KEPS paper!)
+</p>
+
+</div>
+
+<p>
+.
+</p>
+
+<div class="center">
+<p>
+Primary Task : <b>optimizing the arm motion</b>
+</p>
+</div>
+
+<div class="resume">
+<p>
+In this domain, assembling recipes for the products are provided in the problem.
+Where to do what in what order, is already specified.
+</p>
+
+<p>
+Therefore the primary task of a planner is to <b>optimize the arm motion</b>.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> High degree of symmetry</h3>
+<div class="outline-text-3" id="text-2-2">
+
+<div class="figure">
+<p><img src="img/model2a-products.png" alt="model2a-products.png" />
+</p>
+<p><span class="figure-number">Figure 1:</span> Simplest problem with many product</p>
+</div>
+
+<div class="resume">
+<p>
+The difficulty in this problem is its high degree of symmetry,
+There might be hundreds of thousands of products that should be assembled,
+not only in PDDL problem but also in the realistic assembly systems.
+Symmetry is the main cause of difficulty in some domains such as gripper.
+The problem gets exponentially difficult because of
+the high branching factor
+<b>regardless</b> of the difficulty of each subproblem.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> No Existing Planner Can Solve This Practical Problem!</h3>
+<div class="outline-text-3" id="text-2-3">
+<div class="center">
+<div class="inline">
+<ul class="org-ul">
+<li>symmetry breaking
+</li>
+<li>＜-＞ <b>ANOTHER METHOD</b>
+</li>
+</ul>
+
+</div>
+
+<p>
+.
+</p>
+</div>
+
+
+<div class="figure">
+<p><img src="img/no-other-existing-planner.png" alt="no-other-existing-planner.png" />
+</p>
+</div>
+
+<div class="resume">
+<p>
+Indeed, any state-of-the-art planners failed
+to solve cell-assembly problem instances
+with the number of products around 16.
+This is expected results but unacceptable!!
+</p>
+
+<ul class="org-ul">
+<li>There already exists a technique called symmetry breaking.
+</li>
+<li>However our method, described from now on, is a generic method
+to tackle this problem from another point of view.
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Summary of Contribution</h2>
+<div class="outline-text-2" id="text-3">
+<dl class="org-dl">
+<dt>Automated Framework to Form a Loop Structure</dt><dd><p>
+First attempt: form and find the <i>best</i> cyclic plan
+</p>
+</dd>
+<dt>General domain/problem analysis method (owner/lock)</dt><dd><p>
+the basic method is applicable to other domains
+</p>
+</dd>
+<dt>Solved EXTREMELY large PDDL instances (inc. IPC domains!)</dt><dd><p>
+This is <i>clearly beyond</i> state-of-the-art planners
+</p>
+</dd>
+</dl>
+
+<div class="resume">
+<p>
+Now, here is the Summary of Contribution.
+</p>
+<dl class="org-dl">
+<dt>Firstly, we developped a new Framework for cyclic planning</dt><dd>     This is a first attempt, maybe, not sure,
+to form and find the <i>best</i> cyclic plan automatically.
+</dd>
+<dt>Secondly, we developped a general domain/problem analysis method for it</dt><dd>     and the basic method is applicable to the other domains.
+</dd>
+<dt>Thirdly, it actually solved EXTREMELY large PDDL instances</dt><dd>     that are beyond the ability of state-of-the-art planners.
+It's ability is not limited to CELL-ASSEMBLY problem, and
+it actually solves Large IPC problem (and variants).
+</dd>
+</dl>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Strategy: Cyclic Planning</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+One loop &#x2013; completes one product / all products to the next steps
+</p>
+
+
+<div class="figure">
+<p><img src="img/cyclic-planning.png" alt="cyclic-planning.png" />
+</p>
+</div>
+
+<div class="resume">
+<p>
+The strategy we adopted for solving those problems
+is a cyclic planning framework.
+Running one loop completes one product and
+moves the partially-assembled products to their next steps.
+</p>
+
+</div>
+</div>
+
+<div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> Loop unrolling ＜-＞ Loop <i>rolling</i></h3>
+<div class="outline-text-3" id="text-4-1">
+
+<div class="figure">
+<p><img src="img/static/python-loop.png" alt="python-loop.png" />
+</p>
+</div>
+
+<div class="resume">
+<p>
+The idea is essentially the following.
+Assume there are at least 3 actions needed to complete one cycle,
+and also there are 1000 products.
+Normally we have to compute a plan with length 3000.
+However, the length of the plan actually required to be solved is just 3.
+And the planning is far more easier than the original problem.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> Interactions between subproblems</h3>
+<div class="outline-text-3" id="text-4-2">
+
+<div class="figure">
+<p><img src="img/cyclic-planning.png" alt="cyclic-planning.png" />
+</p>
+</div>
+
+<div class="resume">
+<p>
+But do not misunderstand that
+each cycle is just solving a subproblem independently.
+Each cycle actually assembles multiple products,
+so it's combining and interleaving each subproblems
+in a very complex manner.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Loop : representation</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Loop ⇔ Beginning of a Cycle
+</p>
+
+
+<div class="figure">
+<p><img src="img/cyclic-planning.png" alt="cyclic-planning.png" />
+</p>
+</div>
+
+<div class="resume">
+<p>
+Now let's go further into how we represent a loop.
+A loop plan is a plan to execute one cycle.
+Since it is a plan, each cycle has it's own starting state.
+This is important because it means, conversely, each starting state has
+several loop plans.
+</p>
+
+</div>
+</div>
+
+<div id="outline-container-sec-5-1" class="outline-3">
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> Steady State S<sub>i</sub></h3>
+<div class="outline-text-3" id="text-5-1">
+<div class="alignright">
+<p>
+Beginneing of the cycle
+</p>
+
+</div>
+
+
+<div class="figure">
+<p><img src="img/steady-state.png" alt="steady-state.png" />
+</p>
+</div>
+
+<div class="resume">
+<p>
+We define this beginning of the cycle as a steady state, indexed with <i>i</i>.
+</p>
+
+<p>
+In cell-assembly example,
+there are some partially processed product i,i+1,i+2,
+and in the next cycle, they go to the next manufacturing step.
+In a cycle, there are multiple intermediate states.
+The objects in the rest of the world, such as arms and tables,
+are restored to the original state.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5-2" class="outline-3">
+<h3 id="sec-5-2"><span class="section-number-3">5.2</span> Unrolling</h3>
+<div class="outline-text-3" id="text-5-2">
+
+<div class="figure">
+<p><img src="img/unroll.png" alt="unroll.png" />
+</p>
+</div>
+
+<div class="resume">
+<p>
+Finally, we can unroll the loop plan by substituting
+the indexed variables with actual objects,
+just copying the same plan.
+</p>
+
+<p>
+Now the goal is, automatically building these kinds of steady states and
+getting efficient loop plans.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Difficulty</h2>
+<div class="outline-text-2" id="text-6">
+<div class="center">
+<p>
+<i>It is not trivial</i> to detect the information
+</p>
+
+<p>
+necessary for constructing an efficient loop.
+</p>
+</div>
+
+<div class="resume">
+<p>
+<i>It is not trivial</i> to detect the information
+necessary for constructing an efficient loop.
+There were two challenges here.
+</p>
+
+</div>
+</div>
+
+<div id="outline-container-sec-6-1" class="outline-3">
+<h3 id="sec-6-1"><span class="section-number-3">6.1</span> Difficulty</h3>
+<div class="outline-text-3" id="text-6-1">
+<dl class="org-dl">
+<dt>WHICH STATES are the steady state?</dt><dd><p>
+= which state can form a loop?
+</p>
+
+<p>
+Checking ALL states from Init &#x2013; impractical
+</p>
+</dd>
+<dt>Which SS yields a cost-efficient loop plan?</dt><dd><p>
+Difficulty : (# of SSs) x (evaluation time for each SS)
+</p>
+
+<p>
+<b>(# of SSs)</b> &#x2013; still exponentially large (e.g. 5x10<sup>6</sup>)
+</p>
+
+<p>
+<b>(expensive evaluation)</b> &#x2013; loop plan : calls <i>FastDownward</i> each time
+</p>
+</dd>
+</dl>
+
+<div class="center">
+<p>
+Even if we have a finite set of steady states,
+</p>
+
+<p>
+<span class="underline">checking ALL steady states is again impractical!</span>
+</p>
+</div>
+
+<div class="resume">
+<p>
+The first one is about
+which state is a steady state.
+This is the same question as
+which states can form a loop.
+Checking ALL states reachable from the initial state is impractical
+because the number of states
+is exponentially large in most planning problems.
+</p>
+
+<p>
+The second issue is that
+we have to get the cost-efficient loop plan.
+This can further be decomposed into two problems:
+The first one is the number of steady states.
+This might be again exponentially large, and actually it was.
+The second one is that the evaluation of each steady state is expensive,
+because each evaluation calls standard planner like Fast Downward
+to obtain the loop plan and get it's length.
+Therefore, checking ALL steady states is impractical.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> Process &#x2013; to Enumerate SSs</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+<b>Observation:</b>
+</p>
+
+<blockquote>
+
+<div class="figure">
+<p><img src="img/single-product-plan.png" alt="single-product-plan.png" />
+</p>
+</div>
+
+<p>
+3 processes (<i>Attatch ＞ <span class="underline">Carry</span> ＞ Attatch</i>)
+</p>
+
+<p>
+There is at most <b>1</b> product in a process.
+</p>
+</blockquote>
+
+<div class="resume">
+<p>
+We developped a notion of <i>process</i> to efficiently
+construct a steady state.
+</p>
+
+<p>
+We first build a plan for assembling a single product
+by choosing one object in the original problem.
+Then, in human level understanding,
+the result plan consists of several segments, so-called processes.
+There is at most <b>1</b> product in a process.
+In this example, there are 3 processes.
+</p>
+
+<p>
+So how can <i>process</i> be detected?
+</p>
+
+</div>
+</div>
+
+<div id="outline-container-sec-7-1" class="outline-3">
+<h3 id="sec-7-1"><span class="section-number-3">7.1</span> Process = Unit Capacity Resource</h3>
+<div class="outline-text-3" id="text-7-1">
+<p>
+assemble @ table1 &asymp; use table1 (resource)
+</p>
+
+<ul class="org-ul">
+<li><i>Process</i> = {table, machine, painter} : <i>places</i>
+</li>
+<li><i>Which predicate specifies a resource?</i> is not trivial
+</li>
+</ul>
+
+<p>
+It's <i>difficult even for human!</i> w/o analysing PDDL
+</p>
+
+<p>
+<b>semantically indistinguishable</b> &#x2013; (X A Y)
+</p>
+
+<div class="larger">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">&#xa0;</th>
+<th scope="col" class="left">seems like..</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">(color X red)</td>
+<td class="left">not a place</td>
+</tr>
+
+<tr>
+<td class="left">(at X table)</td>
+<td class="left">a place</td>
+</tr>
+
+<tr>
+<td class="left">(P X Y)</td>
+<td class="left">??????</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="resume">
+<p>
+A process is a set of unit capacity resources.
+For example, assembling the product at table1 consumes the table1.
+It should be released if each process completes.
+</p>
+
+<ul class="org-ul">
+<li>Then each process corresponds to a set of unit capacity resources.
+Informally speaking, in cell-assembly, they are <i>places</i>
+like tables, machines and so on.
+</li>
+
+<li>However, <i>which predicate specifies a resource?</i> is not trivial.
+For example, for human,
+the object red doesn't seem like a place,
+and table seems like a place,
+however no one actually knows if they represent a place or not,
+until we analyse the actual PDDL problem,
+especially when it looks like the third one, (P X Y).
+It's the same for a planning agent because,
+semantically they all look the same! just (P A Y)!
+</li>
+</ul>
+
+<p>
+Now we want to let the planner do it automatically.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-7-2" class="outline-3">
+<h3 id="sec-7-2"><span class="section-number-3">7.2</span> Detection mechanism</h3>
+<div class="outline-text-3" id="text-7-2">
+<p>
+<b>Question</b> Is a predicate <i>o= (P X Y Z&#x2026;)</i> a place?
+</p>
+
+<p>
+<b>Answer</b> find a <i>lock</i> predicate <i>l</i> that satisfies <b>some condition</b> with <i>o</i>.
+</p>
+
+<p>
+If it exists, it is a place.
+</p>
+
+<p>
+<b>Condition</b> : for all action <i>a</i>,
+</p>
+
+<p>
+1 . <span class="underline">If <i>a</i> occupies a place, <i>a</i> should check if the place is not in use, and <i>a</i>
+should acquire the lock.</span>
+</p>
+
+<p>
+2 . If <i>a</i> leaves the place, release the lock.
+</p>
+
+<div class="resume">
+<p>
+The detection proceeds as follows.
+We need to know if a predicate <i>o= (P X Y Z&#x2026;)</i> is a place.
+To answer that, 
+we search for the corresponding lock predicate l
+that satisfies both condition below over all actions.
+</p>
+
+<p>
+The first one is, informally speaking, <span class="underline">If <i>a</i> occupies a place, <i>a</i> should check
+ if the place is not in use, and <i>a</i> should acquire the lock.</span> The second one is,
+ if <i>a</i> leaves the place, release the lock.
+</p>
+
+<p>
+Next, let's see how the predicate "at" differs from the predicate "color"
+and why the former is a place.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-7-3" class="outline-3">
+<h3 id="sec-7-3"><span class="section-number-3">7.3</span> What's the difference?</h3>
+<div class="outline-text-3" id="text-7-3">
+
+<div class="figure">
+<p><img src="img/place-non-place1.png" alt="place-non-place1.png" />
+</p>
+</div>
+
+<p>
+Puts a product in an arm onto a table
+</p>
+
+<div class="alignright">
+<p>
+Paint a product
+</p>
+
+</div>
+
+<div class="resume">
+<p>
+Now here are 2 actions "put-on" and "paint".
+Basically, put-on puts a product in an arm onto a table.
+Here, the predicate "(on product table)" satisfies the previous rule&#x2026;
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-7-4" class="outline-3">
+<h3 id="sec-7-4"><span class="section-number-3">7.4</span> What's the difference?</h3>
+<div class="outline-text-3" id="text-7-4">
+
+<div class="figure">
+<p><img src="img/place-non-place2.png" alt="place-non-place2.png" />
+</p>
+</div>
+
+<div class="resume">
+<p>
+because there is a predicate "(not-in-use ?table)" which matches the condition.
+Once we found it, we should test it for all actions.
+Contrarly, in the action "paint", the predicate "color" do not have such
+constructs, so it is not a place.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-7-5" class="outline-3">
+<h3 id="sec-7-5"><span class="section-number-3">7.5</span> Detects ANY places possible</h3>
+<div class="outline-text-3" id="text-7-5">
+<p>
+hiralious example, but&#x2026;
+</p>
+
+
+<div class="figure">
+<p><img src="img/static/hiralious.png" alt="hiralious.png" />
+</p>
+</div>
+
+<div class="resume">
+<p>
+The last example here is something no one even know how to read.
+However the machine can still recognize it
+because the detection method is general and automated.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-7-6" class="outline-3">
+<h3 id="sec-7-6"><span class="section-number-3">7.6</span> ACP : Automated Cyclic Planner</h3>
+<div class="outline-text-3" id="text-7-6">
+
+<div class="figure">
+<p><img src="img/processes.png" alt="processes.png" />
+</p>
+</div>
+
+<div class="resume">
+<p>
+Now we finally get to summarize our framework, Automated Cyclic Planner ACP.
+Firstly, it solves a single product plan.
+Next it detects the change of resource usage in the plan, and make it a process.
+Once we get processes, assignment of products to each processes
+is represented by a bit vector, which is very easy to enumerate.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-7-7" class="outline-3">
+<h3 id="sec-7-7"><span class="section-number-3">7.7</span> Infeasibility/Deadlock Detection</h3>
+<div class="outline-text-3" id="text-7-7">
+<p>
+Using compact representation of steady state,
+</p>
+
+
+<div class="figure">
+<p><img src="img/static/deadlock-detection.png" alt="deadlock-detection.png" />
+</p>
+</div>
+
+<p>
+Reduced # : 5x10<sup>6</sup> → 677
+</p>
+
+<div class="resume">
+<p>
+We further apply a infeasibility and deadlock detection in this abstract
+representation of the cycle. It efficiently reduces the number of steady states,
+for example, from 5x10<sup>6</sup> to 677.
+After these pruning, we obtain many loop plans for each steady state
+by solving the loop problem with underlying planner, fast downward.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> Unrolling</h2>
+<div class="outline-text-2" id="text-8">
+
+<div class="figure">
+<p><img src="img/unroll.png" alt="unroll.png" />
+</p>
+</div>
+
+<div class="resume">
+<p>
+Now Finally get back to this slide again.
+We can unroll the best loop plan.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9"><span class="section-number-2">9</span> Experiments</h2>
+<div class="outline-text-2" id="text-9">
+<ul class="org-ul">
+<li>5 CELL-ASSEMBLY problems (each with 4,16,64,256,1024 products)
+</li>
+<li>Woodworking (each with <b>same</b> 4,16,64,256,1024 parts)
+</li>
+<li>Barman (each with <b>same</b> 4,16,64,256,1024 cocktail)
+</li>
+</ul>
+
+<div class="resume">
+<p>
+The experiments were done on 3 domains, CELL-ASSEMBLY, 
+minimally modified Woodworking, and Barman.
+There are 5 kinds of problems for CELL-ASSEMBLY,
+each corresponds to the different assembly systems.
+For these 7 kinds of problems,
+there are 5 variants, with varying number of products, parts, or cocktails.
+</p>
+
+</div>
+</div>
+
+<div id="outline-container-sec-9-1" class="outline-3">
+<h3 id="sec-9-1"><span class="section-number-3">9.1</span> ACP vs &#x2026;</h3>
+<div class="outline-text-3" id="text-9-1">
+<ul class="org-ul">
+<li>5 temporal planners
+<ul class="org-ul">
+<li>FD/LAMA2011, FD/LMcut (+ min-slack scheduler)
+</li>
+<li>yahsp2, DAEyahsp, CPT4
+</li>
+</ul>
+</li>
+<li>best results of Simple Cyclic Planner (SCP)
+<ul class="org-ul">
+<li>5 base planner x 9 configuration
+</li>
+</ul>
+</li>
+</ul>
+
+<div class="resume">
+<p>
+In these problems, ACP was compared with 3 temporal planners and 2
+classical planners combined with minimum slack postproessing scheduler.
+</p>
+
+<p>
+We also find that comparing ACP with standard planners is not sufficient, because
+we can easily come up with trivial cyclic planner, called Simple Cyclic Planner
+SCP, which just solves the K-product problem and just concatenate the result plan.
+We get the best out of 5 times 9 = 45 configuration of SCP and compare it with ACP.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-9-2" class="outline-3">
+<h3 id="sec-9-2"><span class="section-number-3">9.2</span> Simple Cyclic Planner</h3>
+<div class="outline-text-3" id="text-9-2">
+<p>
+Solve K = {1 &#x2026; 9}-products plan
+</p>
+
+<p>
+with 5 planners (2FDs,yahsp,DAE,CPT)
+</p>
+
+<p>
+get the average makespan per product (K-makespan/K)
+</p>
+
+<div class="resume">
+<p>
+SCP solves 1 to 9 products plan. Since the total number of products such as
+16 and 64 might not be evenly devided into K-product subproblems,
+so we get the average makespan per product.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-9-3" class="outline-3">
+<h3 id="sec-9-3"><span class="section-number-3">9.3</span> All standard planners fails</h3>
+<div class="outline-text-3" id="text-9-3">
+
+<div class="figure">
+<p><img src="img/no-other-existing-planner.png" alt="no-other-existing-planner.png" />
+</p>
+</div>
+
+<p>
+similar results on other domains
+</p>
+
+<div class="resume">
+<p>
+Now the results.
+As we showed in the beginning,
+the standard strips planner has failed to
+solve problems because of the high branching factor and the memory limit.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-9-4" class="outline-3">
+<h3 id="sec-9-4"><span class="section-number-3">9.4</span> Average makespan compared to SCP / lower bound</h3>
+<div class="outline-text-3" id="text-9-4">
+
+<div class="figure">
+<p><img src="img/static/results-poster.png" alt="results-poster.png" />
+</p>
+</div>
+
+<div class="resume">
+<p>
+And here are the comparison between
+ACP, SCP and the lower bound obtained by CPT4.
+You would notice that the makespan per product is converging to some value
+in ACP. This is because the bad plan before the first cycle
+and after the last cycle is getting amortized.
+</p>
+
+<p>
+In the lower bound analysis, we used
+CPT4, an optimal temporal planner by vincent vidal.
+However, it actually failed to even compute the first lower bound.
+So we analysed the bottolneck of each cycle by hand
+and multiplied it by the number of product and made it a manual lower bound.
+Eventually, the gap was around 3 in cell assembly and woodworking.
+</p>
+
+<p>
+It was not good in Barman domain,
+but this is because ACP cannot handle multiple resources currently.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-9-5" class="outline-3">
+<h3 id="sec-9-5"><span class="section-number-3">9.5</span> Domain Independence</h3>
+<div class="outline-text-3" id="text-9-5">
+
+<div class="figure">
+<p><img src="img/static/results-poster.png" alt="results-poster.png" />
+</p>
+</div>
+
+<p>
+Too much assumptions &amp; strong requirements?
+</p>
+
+<div class="resume">
+<p>
+The restriction might seem quite strong,
+but the same program solves the other IPC domains! acutually!
+</p>
+
+<p>
+I like to do these kind of bizarre stuff!
+</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-10" class="outline-2">
+<h2 id="sec-10"><span class="section-number-2">10</span> Summary of Contribution</h2>
+<div class="outline-text-2" id="text-10">
+<dl class="org-dl">
+<dt>Automated Framework to Form a Loop Structure</dt><dd><p>
+First attempt: form and find the <i>best</i> cyclic plan
+</p>
+</dd>
+<dt>General domain/problem analysis method</dt><dd><p>
+the basic method is applicable to other domains
+</p>
+</dd>
+<dt>Solved EXTREMELY large PDDL instances</dt><dd><p>
+beyond state-of-the-art planners
+</p>
+
+<p>
+Solve Large IPC problem (and variants) correctly
+</p>
+</dd>
+</dl>
+
+<div class="resume">
+<p>
+Now I repeat the Summary of Contribution.
+</p>
+<dl class="org-dl">
+<dt>Firstly, we developped a new Framework for cyclic planning</dt><dd>     This is a first attempt to form and find the <i>best</i> cyclic plan automatically.
+</dd>
+<dt>Secondly, we developped a general domain/problem analysis method for it</dt><dd>     and the basic method is applicable to the other domains.
+</dd>
+<dt>Thirdly, it actually solved EXTREMELY large PDDL instances</dt><dd>     that are beyond the ability of state-of-the-art planners.
+It's ability is not limited to CELL-ASSEMBLY problem, and
+it actually solves Large IPC problem (and variants).
+</dd>
+</dl>
+
+</div>
+</div>
+
+<div id="outline-container-sec-10-1" class="outline-3">
+<h3 id="sec-10-1"><span class="section-number-3">10.1</span> Is it useful?</h3>
+<div class="outline-text-3" id="text-10-1">
+<p>
+No one doesn't even try to solve that large problems!
+</p>
+
+<p>
+Dirty attempt &#x2013; lessons might be learned
+</p>
+
+<p>
+Global lock/owner in STRIPS &#x2013; it may find a way to use
+</p>
+
+<div class="resume">
+<p>
+One thing I want to emphasize is that the fact no one doesn't even try to solve
+<i>that large</i> problems!
+</p>
+
+<p>
+We know it's impossible, but even solving problems dirty
+might help you understand the behavior of such kind of domains.
+</p>
+
+<p>
+But at least, the automated detection of global lock and its owner in STRIPS domain
+might be useful, though I'm not sure about its real value.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-10-2" class="outline-3">
+<h3 id="sec-10-2"><span class="section-number-3">10.2</span> So, what's next?</h3>
+<div class="outline-text-3" id="text-10-2">
+<ul class="org-ul">
+<li>Categorizing the objects into identical groups (KEPS paper)
+<ul class="org-ul">
+<li>several mixed-orders becomes available (100 x A / 200 x B)
+</li>
+<li>(100 loops A) + (200 loops B)
+</li>
+<li>(100 loops AB) + (100 loops B)
+</li>
+</ul>
+</li>
+<li>Categorization -＞ Checks serial decomposability / not.
+<ul class="org-ul">
+<li>check if a resource is released or not
+</li>
+<li>consider the "release" action of the resources as an abstract action
+</li>
+</ul>
+</li>
+<li><b>Unit</b> capacity -＞ <b>arbitrary</b> capacity
+<ul class="org-ul">
+<li>Detect <b>numbers</b> in a problem, automatically?
+</li>
+<li>up-converting STRIPS to ADL (opposite to the common strategy)
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+Thanks for listening!
+</p>
+
+<div class="resume">
+<p>
+There is bunch of tasks I have to apply this framework to even larger range of
+domains, but not sure I can do it successfully. Maybe just beaten by symmetry
+breaking technique I am also interested in. 
+</p>
+
+<p>
+Thanks for listening!
+</p>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Masataro Asai</p>
+<p class="date">Created: 2014-10-31 金 15:53</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode N/A-fixup)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
