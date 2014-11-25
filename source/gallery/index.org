@@ -43,7 +43,7 @@ paid closed course @ Fuji Speedway Gymkhana Field.
 
 ---
 
-[[/blog/2013/03/14/utac-leaflet/][Advertising leaflet that I made for the club]]
+[[../blog/2013/03/14/utac-leaflet/][Advertising leaflet that I made for the club]]
 
 [[http://team-utac.com/][UTAC Club Website]]
 
