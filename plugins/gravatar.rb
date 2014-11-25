@@ -1,1 +1,1 @@
-/mnt/video/guicho/repos/guicho271828.github.com/gravatar-octopress/gravatar.rb
+../gravatar-octopress/gravatar.rb
