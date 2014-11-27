@@ -36,7 +36,7 @@ footer: true
 
 [[./frp.html][DIY FRP Test]]
 
-[[https://www.youtube.com/watch?v%3DRJ9lbUc1Ci8&index%3D83&list%3DUUucmK4IFzmKsipvi3qIIw5Q][Few of my runs (sloooow...)]] 
+[[https://www.youtube.com/watch?v%3DRJ9lbUc1Ci8][One of my run]] 
 
 Just to note, this is a legal activity under a
 paid closed course @ Fuji Speedway Gymkhana Field.
