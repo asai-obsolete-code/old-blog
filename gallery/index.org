@@ -17,15 +17,16 @@ footer: true
   + Compression Ratio 9.0, ~130ps
 + 2010 Dec: Stock ECU -> Custom ECU Flash-ROM
   + Bought a general-purpose flash-ROM writer from http://www.sivava.com/
-  + [[../editor/editor.html][Created my own fuel-mapping/ignition timing software]]
+  + [[../editor/editor.html][Created my own fuel-mapping&ignition timing software]]
 + 2012 June: Engine Swap:
   + Miata MX-5 1.8L NB8('00) Stock
-    + Variable Resonance Intake
+    + Variable Resonance Intake -- Made a [[https://www.youtube.com/watch?v%3Dl46wbUEi5YU&list%3DUUucmK4IFzmKsipvi3qIIw5Q][Resonance Intake Controller using Arduino]]
     + Compression Ratio 9.5
     + ~145ps
   + plus DIY high-compression (9.5 -> 10.1)
     + 0.7mm DIY face-milling on cylinder head
     + ~155ps?
+
 
 [[./gymkhana.html][Miata MX-5 & Gymkhana & the Team]]
 
@@ -35,6 +36,14 @@ footer: true
 
 [[./frp.html][DIY FRP Test]]
 
+[[https://www.youtube.com/watch?v%3DRJ9lbUc1Ci8][One of my run]] 
 
+Just to note, this is a legal activity under a
+paid closed course @ Fuji Speedway Gymkhana Field.
 
+---
+
+[[../blog/2013/03/14/utac-leaflet/][Advertising leaflet that I made for the club]]
+
+[[http://team-utac.com/][UTAC Club Website]]
 
