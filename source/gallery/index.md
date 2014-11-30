@@ -14,11 +14,14 @@ footer: true
     -   [Created my own fuel-mapping&ignition timing software](../editor/editor.html)
 -   2012 June: Engine Swap:
     -   Miata MX-5 1.8L NB8('00) Stock
-        -   Variable Resonance Intake &#x2013; Made a [Resonance Intake Controller using Arduino](https://www.youtube.com/watch?v%3Dl46wbUEi5YU&list%3DUUucmK4IFzmKsipvi3qIIw5Q)
+        -   Variable Resonance Intake
+        -   Since my custom ECU works only for old engine, 
+            I had to make a [Resonance Intake Controller using Arduino](https://www.youtube.com/watch?v=l46wbUEi5YU)
+            in order to get the advantage of new engine
         -   Compression Ratio 9.5
         -   ~145ps
     -   plus DIY high-compression (9.5 -> 10.1)
-        -   0.7mm DIY face-milling on cylinder head
+        -   0.7mm face-milling on cylinder head
         -   ~155ps?
 
 [Miata MX-5 & Gymkhana & the Team](./gymkhana.html)
@@ -29,7 +32,7 @@ footer: true
 
 [DIY FRP Test](./frp.html)
 
-[One of my run](https://www.youtube.com/watch?v%3DRJ9lbUc1Ci8) 
+[One of my run](https://www.youtube.com/watch?v=RJ9lbUc1Ci8)
 
 Just to note, this is a legal activity under a
 paid closed course @ Fuji Speedway Gymkhana Field.
