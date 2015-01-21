@@ -14,6 +14,9 @@ footer: true
 -   Asai, M.; Fukunaga, A: 2014. Applying Problem Decomposition to Extremely Large
     Planning Domains. Knowledge Engineering for Planning and Scheduling (KEPS) Workshop
     (ICAPS2014). [pdf](keps14.pdf) (~~submitted version~~ -> final version) [poster](./keps14-poster.pdf) [presentation](./keps14/)
+-   **New!** Asai, M.; Fukunaga, A: 2015. Solving Large Scale Planning Problems with
+    Component Macros. In *ICAPS2015*. [pdf](./icaps15-submission7.pdf) (submitted version)
+
 
 Presentation can be moved forward/backward with N/P key.
 [For the further help and usage, click here](http://guicho271828.github.io/another-org-info/).
