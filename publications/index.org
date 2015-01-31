@@ -12,15 +12,16 @@ footer: true
 # octopress-export-org-to-md: page
 # End:
 
-* Peer-Reviewed Papers
+* Peer-Reviewed Papers (In Chronological Order)
 
-+ Asai, M.; Fukunaga, A: 2014. Fully Automated Cyclic Planning for Large-Scale
-  Manufacturing Domains. In /ICAPS2014/. [[file:icaps14.pdf][pdf]] [[./icaps14-poster.pdf][poster]] [[./icaps14/][presentation]]
-+ Asai, M.; Fukunaga, A: 2014. Applying Problem Decomposition to Extremely Large
-  Planning Domains. Knowledge Engineering for Planning and Scheduling (KEPS) Workshop
-  (ICAPS2014). [[file:keps14.pdf][pdf]] (+submitted version+ -> final version) [[./keps14-poster.pdf][poster]] [[./keps14/][presentation]]
-+ *New!* Asai, M.; Fukunaga, A: 2015. Solving Large Scale Planning Problems with
-  Component Macros. In /ICAPS2015/. [[./icaps15-submission7.pdf][pdf]] (submitted version)
+1. Asai, M.; Fukunaga, A: 2015. Solving Large Scale Planning Problems with
+   Component Macros. In /ICAPS2015/. [[./icaps15-submission7.pdf][pdf]] submitted version. CAP planner is
+   available at https://github.com/guicho271828/CAP .
+2. Asai, M.; Fukunaga, A: 2014. Applying Problem Decomposition to Extremely Large
+   Planning Domains. Knowledge Engineering for Planning and Scheduling (KEPS) Workshop
+   (ICAPS2014). [[file:keps14.pdf][pdf]] (+submitted version+ -> final version) [[./keps14-poster.pdf][poster]] [[./keps14/][presentation]]
+3. Asai, M.; Fukunaga, A: 2014. Fully Automated Cyclic Planning for Large-Scale
+   Manufacturing Domains. In /ICAPS2014/. [[file:icaps14.pdf][pdf]] [[./icaps14-poster.pdf][poster]] [[./icaps14/][presentation]]
 
 # [[./icaps14-poster.pdf][poster]] [[./icaps14/][presentation]]
 
@@ -32,7 +33,11 @@ Presentation can be moved forward/backward with N/P key.
 See [[https://github.com/guicho271828][my github repo]] for the latest activity!
 #+HTML: 
 
-
++ [[https://github.com/guicho271828/CAP][CAP]] -- Component Abstraction Planner, which decompose the given problem,
+  solve each subproblem, make the subplans into macros and then plans in an
+  enhanced problem with those macros
+  + 1.5 coverage in large domains!
+  + Higer coverage in ipc2011 learning track, without learning time!
 + [[https://github.com/guicho271828/pddl][PDDL]] -- A Common Lisp library to read/write/analyse PDDL files. It has
   + a PDDL reader / parser
   + CLOS-based object oriented interface to analyse each objects

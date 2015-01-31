@@ -4,7 +4,7 @@
   <title><![CDATA[CL-USER> (start-up (the engine *bp-ze*))]]></title>
   <link href="http://guicho271828.github.io/atom.xml" rel="self"/>
   <link href="http://guicho271828.github.io/"/>
-  <updated>2015-01-21T10:26:58+09:00</updated>
+  <updated>2015-01-31T10:07:18+09:00</updated>
   <id>http://guicho271828.github.io/</id>
   <author>
     <name><![CDATA[guicho2.71828]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Component Abstraction Planner Made Available]]></title>
+    <link href="http://guicho271828.github.io/blog/2015/01/31/component-abstraction-planner-available/"/>
+    <updated>2015-01-31T09:53:24+09:00</updated>
+    <id>http://guicho271828.github.io/blog/2015/01/31/component-abstraction-planner-available</id>
+    <content type="html"><![CDATA[<p>Component Abstraction Planner, latest work of mine, has been made publicly
+available at <a href="https://github.com/guicho271828/CAP">https://github.com/guicho271828/CAP</a> . Installation guide is
+provided in the link.</p>
+
+<p>For ICAPS15 paper, see the Publications page.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Recursive Macroexpansion]]></title>
@@ -1615,42 +1628,6 @@ Another オレオレLisp入門かな…。</p>
 
 <p>はあ、今日はバイトの事をするはずだったのに、自分のブログの設定に費やし
 てしまった。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Second Commit]]></title>
-    <link href="http://guicho271828.github.io/blog/2013/03/06/second-commit/"/>
-    <updated>2013-03-06T23:03:00+09:00</updated>
-    <id>http://guicho271828.github.io/blog/2013/03/06/second-commit</id>
-    <content type="html"><![CDATA[<p>早くmarkdownからorgに移行しないとな。</p>
-
-<p>まだいろいろと機能の確認中。ある程度自由に書ける&amp;設定をいじれるようになっ
-て、環境が整ったら、いよいよ書かなくてはいけないことを書こう。</p>
-
-<h1>見出し</h1>
-
-<p>見出しが # だと全部H1になってしまって問題だな。
-どうにかできないのかこれ。ファイル名からメインのタイトルを取るんだから、
-本文中の # はH2にするべきだろ。スタイルシートでやっても全部ごちゃごちゃ
-になっちゃうだろうし….</p>
-
-<p>とりあえず、firebugでjekyllがどんなソースを吐いてるのか監視しながらやっ
-てみる。すると、ファイル名から来たタイトルの方はentity-titleというクラ
-スになってることはわかった。どうやらスタイルシートでごちゃごちゃになる
-わけではなさそうだ。</p>
-
-<h2>テーマ編集</h2>
-
-<p>テーマの編集のために色々調べてるけど… sassは初めて使うから慣れてない。
-前使ったのはなんだっけ？たしかsassではなくて別のスタイルシート言語だっ
-た覚えがある。</p>
-
-<h2>rakeのバージョン</h2>
-
-<p>rakeのバージョンが <em>新しすぎる</em> せいでなんか毎回 bundle exec rake &hellip; とし
-なくてはいけなくなってる。これ、このフォルダで指定できるようにできない
-のか。</p>
 ]]></content>
   </entry>
   

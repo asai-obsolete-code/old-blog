@@ -9,8 +9,7 @@
   <meta name="author" content="guicho2.71828">
 
   
-  <meta name="description" content="前回の続き。状態を持つmacroletを書くにはどうすればいいのか！？
-これが答えだ！ ">
+  <meta name="description" content="inner-conditional の紹介をします。 Q.なにができるの? ループ(など)の中の条件判定を、内側に書いたままで外側に出せます。 ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -69,6 +68,54 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/05/06/shao-jie-raiburari-inner-conditional/">紹介: ライブラリ Inner-conditional</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-05-06T20:41:00+09:00" pubdate data-updated="true">May 6<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="https://github.com/guicho271828/inner-conditional">inner-conditional</a> の紹介をします。</p>
+
+<h1>Q.なにができるの?</h1>
+
+<ol type="a">
+<li>ループ(など)の中の条件判定を、内側に書いたままで外側に出せます。</li>
+</ol>
+
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/05/06/shao-jie-raiburari-inner-conditional/">(continue-to (rest article)) &#8211;></a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -577,69 +624,6 @@ Arduino-Make はそこのところを無視しているためアップロード�
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/03/06/second-commit/">Second Commit</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-03-06T23:03:00+09:00" pubdate data-updated="true">Mar 6<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>早くmarkdownからorgに移行しないとな。</p>
-
-<p>まだいろいろと機能の確認中。ある程度自由に書ける&amp;設定をいじれるようになっ
-て、環境が整ったら、いよいよ書かなくてはいけないことを書こう。</p>
-
-<h1>見出し</h1>
-
-<p>見出しが # だと全部H1になってしまって問題だな。
-どうにかできないのかこれ。ファイル名からメインのタイトルを取るんだから、
-本文中の # はH2にするべきだろ。スタイルシートでやっても全部ごちゃごちゃ
-になっちゃうだろうし….</p>
-
-<p>とりあえず、firebugでjekyllがどんなソースを吐いてるのか監視しながらやっ
-てみる。すると、ファイル名から来たタイトルの方はentity-titleというクラ
-スになってることはわかった。どうやらスタイルシートでごちゃごちゃになる
-わけではなさそうだ。</p>
-
-<h2>テーマ編集</h2>
-
-<p>テーマの編集のために色々調べてるけど… sassは初めて使うから慣れてない。
-前使ったのはなんだっけ？たしかsassではなくて別のスタイルシート言語だっ
-た覚えがある。</p>
-
-<h2>rakeのバージョン</h2>
-
-<p>rakeのバージョンが <em>新しすぎる</em> せいでなんか毎回 bundle exec rake &hellip; とし
-なくてはいけなくなってる。これ、このフォルダで指定できるようにできない
-のか。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -678,6 +662,10 @@ Arduino-Make はそこのところを無視しているためアップロード�
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2015/01/31/component-abstraction-planner-available/">Component Abstraction Planner Made Available</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/05/04/recursive-macroexpansion/">Recursive Macroexpansion</a>
       </li>
     
@@ -691,10 +679,6 @@ Arduino-Make はそこのところを無視しているためアップロード�
     
       <li class="post">
         <a href="/blog/2014/03/08/gallery-post/">Gallery Post</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/03/01/galambdafalsesheng-lue-tositeshi-inikuitoiuhua/">^がlambdaの省略として使いにくいという話</a>
       </li>
     
   </ul>

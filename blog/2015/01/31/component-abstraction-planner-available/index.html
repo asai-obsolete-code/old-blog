@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Publications - CL-USER> (start-up (the engine *bp-ze*))</title>
+  <title>Component Abstraction Planner Made Available - CL-USER> (start-up (the engine *bp-ze*))</title>
   <meta name="author" content="guicho2.71828">
 
   
-  <meta name="description" content="Publications Jan 17th, 2014 Peer-Reviewed Papers (In Chronological Order) Asai, M.; Fukunaga, A: 2015. Solving Large Scale Planning Problems with &hellip;">
+  <meta name="description" content="Component Abstraction Planner, latest work of mine, has been made publicly
+available at https://github.com/guicho271828/CAP . Installation guide is &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://guicho271828.github.io/publications">
+  <link rel="canonical" href="http://guicho271828.github.io/blog/2015/01/31/component-abstraction-planner-available">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="CL-USER> (start-up (the engine *bp-ze*))" type="application/atom+xml">
@@ -67,107 +68,15 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Publications</h1>
-    <p class="meta">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-01-17T00:24:00+09:00" pubdate data-updated="true">Jan 17<span>th</span>, 2014</time></p>
-  </header>
-  
-  <h1>Peer-Reviewed Papers (In Chronological Order)</h1>
-
-<ol>
-<li>Asai, M.; Fukunaga, A: 2015. Solving Large Scale Planning Problems with
-Component Macros. In <em>ICAPS2015</em>. <a href="./icaps15-submission7.pdf">pdf</a> submitted version. CAP planner is
-available at <a href="https://github.com/guicho271828/CAP">https://github.com/guicho271828/CAP</a> .</li>
-<li>Asai, M.; Fukunaga, A: 2014. Applying Problem Decomposition to Extremely Large
-Planning Domains. Knowledge Engineering for Planning and Scheduling (KEPS) Workshop
-(ICAPS2014). <a href="keps14.pdf">pdf</a> (<del>submitted version</del> &ndash;> final version) <a href="./keps14-poster.pdf">poster</a> <a href="./keps14/">presentation</a></li>
-<li>Asai, M.; Fukunaga, A: 2014. Fully Automated Cyclic Planning for Large-Scale
-Manufacturing Domains. In <em>ICAPS2014</em>. <a href="icaps14.pdf">pdf</a> <a href="./icaps14-poster.pdf">poster</a> <a href="./icaps14/">presentation</a></li>
-</ol>
-
-
-<p>Presentation can be moved forward/backward with N/P key.
-<a href="http://guicho271828.github.io/another-org-info/">For the further help and usage, click here</a>.</p>
-
-<h1>Software</h1>
-
-<p>See <a href="https://github.com/guicho271828">my github repo</a> for the latest activity!</p>
-
-<ul>
-<li><a href="https://github.com/guicho271828/CAP">CAP</a> &#x2013; Component Abstraction Planner, which decompose the given problem,
-solve each subproblem, make the subplans into macros and then plans in an
-enhanced problem with those macros
-
-<ul>
-<li>1.5 coverage in large domains!</li>
-<li>Higer coverage in ipc2011 learning track, without learning time!</li>
-</ul>
-</li>
-<li><a href="https://github.com/guicho271828/pddl">PDDL</a> &#x2013; A Common Lisp library to read/write/analyse PDDL files. It has
-
-<ul>
-<li>a PDDL reader / parser</li>
-<li>CLOS-based object oriented interface to analyse each objects
-
-<ul>
-<li>various useful accessors for objects e.g. predicate/propositions/action/types</li>
-<li>methods like <code>(ground-action action objects)</code></li>
-</ul>
-</li>
-<li>a pretty formatter</li>
-<li>a simulator (STRIPS and action-costs are supported)</li>
-</ul>
-</li>
-<li><a href="https://github.com/guicho271828/cell-assembly-pddl-models">CELL-ASSEMBLY</a> &#x2013; The PDDL files and the explanation of a CELL-ASSEMBLY
-manufacturing domain, which appears at [Asai, Fukunaga ICAPS2014]
-
-<ul>
-<li>Is currently enlisted as one of <a href="http://users.cecs.anu.edu.au/~patrik/sigaps/index.php?n%3DMain.RealDomains">&#8220;Real and Realistic Planning Domains&#8221;</a>
-    by Patrik Haslum</li>
-</ul>
-</li>
-<li><a href="https://github.com/guicho271828/aaai-template">aaai-template</a> &#x2013; For <a href="http://orgmode.org/">org-mode</a> lovers and reserchers of artificial intelligence. A
-set of scripts and templates for faster publishing of papers with <a href="http://www.aaai.org/">AAAI</a>
-style.
-
-<ul>
-<li>Included <code>Makefile</code> automates
-
-<ul>
-<li>converting SVG images to grayscale pngs (I recommend Inkscape as an editor)</li>
-<li>exporting <code>.org</code> files to <code>.tex</code> files</li>
-<li>typeset the TeX files with pdflatex</li>
-<li>checks for any <strong>Overfull hbox</strong></li>
-<li>checks for <strong>paper limit</strong></li>
-</ul>
-</li>
-<li>Combination of simple scripts <code>make-periodically</code>
-would be useful. It waits for the changes, and if a change is detected, it runs
-<code>make</code>, then notify the result via <code>inotify</code> (pop up inteface available in gtk).</li>
-</ul>
-</li>
-</ul>
-
-
-  
-    <footer>
+    
+      <h1 class="entry-title">Component Abstraction Planner Made Available</h1>
+    
+    
       <p class="meta">
         
-        
 
 
 
@@ -179,13 +88,49 @@ would be useful. It waits for the changes, and if a change is detected, it runs
   
 
 
-<time datetime="2014-01-17T00:24:00+09:00" pubdate data-updated="true">Jan 17<span>th</span>, 2014</time>
+<time datetime="2015-01-31T09:53:24+09:00" pubdate data-updated="true">Jan 31<span>st</span>, 2015</time>
         
       </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Component Abstraction Planner, latest work of mine, has been made publicly
+available at <a href="https://github.com/guicho271828/CAP">https://github.com/guicho271828/CAP</a> . Installation guide is
+provided in the link.</p>
+
+<p>For ICAPS15 paper, see the Publications page.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
       
-        <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://guicho271828.github.io/publications/index.html" data-via="guicho271828" data-counturl="http://guicho271828.github.io/publications/index.html" >Tweet</a>
+
+<span class="byline author vcard">Posted by <span class="fn">guicho2.71828</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-01-31T09:53:24+09:00" pubdate data-updated="true">Jan 31<span>st</span>, 2015</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://guicho271828.github.io/blog/2015/01/31/component-abstraction-planner-available/" data-via="guicho271828" data-counturl="http://guicho271828.github.io/blog/2015/01/31/component-abstraction-planner-available/" >Tweet</a>
   
   
   
@@ -193,9 +138,14 @@ would be useful. It waits for the changes, and if a change is detected, it runs
   
 </div>
 
+    
+    <p class="meta">
       
-    </footer>
-  
+        <a class="basic-alignment left" href="/blog/2014/05/04/recursive-macroexpansion/" title="Previous Post: Recursive Macroexpansion">&laquo; Recursive Macroexpansion</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>

@@ -9,9 +9,9 @@
   <meta name="author" content="guicho2.71828">
 
   
-  <meta name="description" content="とりあえずOctopressでブログ始めてみた・・・
-仕事でrubyを使うのならrubyと関わっておくことも重要かなと。 …本当は全部lispで作りたいんだけどね。仕方ない。
-">
+  <meta name="description" content="早くmarkdownからorgに移行しないとな。 まだいろいろと機能の確認中。ある程度自由に書ける&amp;設定をいじれるようになっ
+て、環境が整ったら、いよいよ書かなくてはいけないことを書こう。 見出し 見出しが # だと全部H1になってしまって問題だな。
+どうにかできないのかこれ。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -70,6 +70,69 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/06/second-commit/">Second Commit</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-06T23:03:00+09:00" pubdate data-updated="true">Mar 6<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>早くmarkdownからorgに移行しないとな。</p>
+
+<p>まだいろいろと機能の確認中。ある程度自由に書ける&amp;設定をいじれるようになっ
+て、環境が整ったら、いよいよ書かなくてはいけないことを書こう。</p>
+
+<h1>見出し</h1>
+
+<p>見出しが # だと全部H1になってしまって問題だな。
+どうにかできないのかこれ。ファイル名からメインのタイトルを取るんだから、
+本文中の # はH2にするべきだろ。スタイルシートでやっても全部ごちゃごちゃ
+になっちゃうだろうし….</p>
+
+<p>とりあえず、firebugでjekyllがどんなソースを吐いてるのか監視しながらやっ
+てみる。すると、ファイル名から来たタイトルの方はentity-titleというクラ
+スになってることはわかった。どうやらスタイルシートでごちゃごちゃになる
+わけではなさそうだ。</p>
+
+<h2>テーマ編集</h2>
+
+<p>テーマの編集のために色々調べてるけど… sassは初めて使うから慣れてない。
+前使ったのはなんだっけ？たしかsassではなくて別のスタイルシート言語だっ
+た覚えがある。</p>
+
+<h2>rakeのバージョン</h2>
+
+<p>rakeのバージョンが <em>新しすぎる</em> せいでなんか毎回 bundle exec rake &hellip; とし
+なくてはいけなくなってる。これ、このフォルダで指定できるようにできない
+のか。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -146,6 +209,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2015/01/31/component-abstraction-planner-available/">Component Abstraction Planner Made Available</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/05/04/recursive-macroexpansion/">Recursive Macroexpansion</a>
       </li>
     
@@ -159,10 +226,6 @@
     
       <li class="post">
         <a href="/blog/2014/03/08/gallery-post/">Gallery Post</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/03/01/galambdafalsesheng-lue-tositeshi-inikuitoiuhua/">^がlambdaの省略として使いにくいという話</a>
       </li>
     
   </ul>
