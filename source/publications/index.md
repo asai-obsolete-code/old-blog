@@ -7,15 +7,16 @@ sharing: true
 footer: true
 ---
 
-# Peer-Reviewed Papers
+# Peer-Reviewed Papers (In Chronological Order)
 
--   Asai, M.; Fukunaga, A: 2014. Fully Automated Cyclic Planning for Large-Scale
-    Manufacturing Domains. In *ICAPS2014*. [pdf](icaps14.pdf) [poster](./icaps14-poster.pdf) [presentation](./icaps14/)
--   Asai, M.; Fukunaga, A: 2014. Applying Problem Decomposition to Extremely Large
+1.  Asai, M.; Fukunaga, A: 2015. Solving Large Scale Planning Problems with
+    Component Macros. In *ICAPS2015*. [pdf](./icaps15-submission7.pdf) submitted version. CAP planner is
+    available at <https://github.com/guicho271828/CAP> .
+2.  Asai, M.; Fukunaga, A: 2014. Applying Problem Decomposition to Extremely Large
     Planning Domains. Knowledge Engineering for Planning and Scheduling (KEPS) Workshop
     (ICAPS2014). [pdf](keps14.pdf) (~~submitted version~~ -> final version) [poster](./keps14-poster.pdf) [presentation](./keps14/)
--   **New!** Asai, M.; Fukunaga, A: 2015. Solving Large Scale Planning Problems with
-    Component Macros. In *ICAPS2015*. [pdf](./icaps15-submission7.pdf) (submitted version)
+3.  Asai, M.; Fukunaga, A: 2014. Fully Automated Cyclic Planning for Large-Scale
+    Manufacturing Domains. In *ICAPS2014*. [pdf](icaps14.pdf) [poster](./icaps14-poster.pdf) [presentation](./icaps14/)
 
 
 Presentation can be moved forward/backward with N/P key.
@@ -25,6 +26,11 @@ Presentation can be moved forward/backward with N/P key.
 
 See [my github repo](https://github.com/guicho271828) for the latest activity!
 
+-   [CAP](https://github.com/guicho271828/CAP) &#x2013; Component Abstraction Planner, which decompose the given problem,
+    solve each subproblem, make the subplans into macros and then plans in an
+    enhanced problem with those macros
+    -   1.5 coverage in large domains!
+    -   Higer coverage in ipc2011 learning track, without learning time!
 -   [PDDL](https://github.com/guicho271828/pddl) &#x2013; A Common Lisp library to read/write/analyse PDDL files. It has
     -   a PDDL reader / parser
     -   CLOS-based object oriented interface to analyse each objects
