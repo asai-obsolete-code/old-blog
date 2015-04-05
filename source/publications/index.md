@@ -10,7 +10,7 @@ footer: true
 # Peer-Reviewed Papers (In Chronological Order)
 
 1.  Asai, M.; Fukunaga, A: 2015. Solving Large Scale Planning Problems with
-    Component Macros. In *ICAPS2015*. [pdf](./icaps15-submission7.pdf) submitted version. CAP planner is
+    Component Macros. In *ICAPS2015*. [pdf](./icaps15.pdf) . CAP planner is
     available at <https://github.com/guicho271828/CAP> .
 2.  Asai, M.; Fukunaga, A: 2014. Applying Problem Decomposition to Extremely Large
     Planning Domains. Knowledge Engineering for Planning and Scheduling (KEPS) Workshop
