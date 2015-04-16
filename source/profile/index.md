@@ -10,7 +10,7 @@ footer: true
 
 <guicho2.71828-at-gmail.com>
 
--   I am a Masters Student at University of Tokyo.
+-   Doctoral Student at University of Tokyo.
     -   Department of General Systems Studies, Graduate School of Arts and Sciences.
 -   My advisor is [Alex Fukunaga](http://metahack.org/).
 -   Research Interest : Artificial Intelligence, Automated Planning and Scheduling, Heuristic Search.
@@ -22,9 +22,9 @@ footer: true
 I received B.Eng. from the Faculty of Engineering, University of Tokyo.
 I was in [Yoshimura & Izmi Lab](http://save.sys.t.u-tokyo.ac.jp/index_e.html), whose members are mainly interested in FEM/MPS and *Traffic Simulation*.
 
-My graduate thesis was about using RRT-based agents for generating
+My graduate thesis was about using stochastic 2D agents for generating
 the cooperative behaviors in the traffic simulation. (The paper is in
-Japanese, so I do not provide it here.)
+Japanese, so I do not make it public here.)
 
 # Hobby / Personal Activity
 
@@ -33,4 +33,5 @@ Japanese, so I do not provide it here.)
     -   I have worked on a bipedal robot in the past
 -   [DIY modification of internal combustion engine](../gallery/)
 -   [Car, Driving, Gymkhana](../gallery/)
--   [Road racers (bicycles)](http://runkeeper.com/user/941210962/profile)
+-   [Road racers (bicycles)](http://runkeeper.com/user/941210962/profile) &#x2014; recently stolen. Cursing the thief as hell.
+-   FPGA wannabe.
