@@ -1,0 +1,11 @@
+<map id="LazySearch" name="LazySearch">
+<area shape="rect" id="node2" href="$classSearchEngine.html" title="SearchEngine" alt="" coords="329,56,431,83"/>
+<area shape="rect" id="node3" href="$classSearchSpace.html" title="SearchSpace" alt="" coords="15,5,115,32"/>
+<area shape="rect" id="node4" href="$classSearchStatistics.html" title="SearchStatistics" alt="" coords="6,56,125,83"/>
+<area shape="rect" id="node5" href="$classSearchProgress.html" title="SearchProgress" alt="" coords="8,107,123,133"/>
+<area shape="rect" id="node6" href="$classGlobalOperator.html" title="GlobalOperator" alt="" coords="325,107,435,133"/>
+<area shape="rect" id="node7" href="$classStateID.html" title="StateID" alt="" coords="347,196,413,223"/>
+<area shape="rect" id="node8" href="$classOpenList.html" title="OpenList\&lt; OpenListEntryLazy \&gt;" alt="" coords="275,247,485,273"/>
+<area shape="rect" id="node9" href="$classEvaluationContext.html" title="EvaluationContext" alt="" coords="315,297,445,324"/>
+<area shape="rect" id="node10" href="$classGlobalState.html" title="GlobalState" alt="" coords="335,348,425,375"/>
+</map>

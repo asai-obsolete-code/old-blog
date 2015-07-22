@@ -1,0 +1,5 @@
+<map id="SearchEngine" name="SearchEngine">
+<area shape="rect" id="node2" href="$classSearchSpace.html" title="SearchSpace" alt="" coords="5,5,104,32"/>
+<area shape="rect" id="node3" href="$classSearchStatistics.html" title="SearchStatistics" alt="" coords="129,5,247,32"/>
+<area shape="rect" id="node4" href="$classSearchProgress.html" title="SearchProgress" alt="" coords="272,5,387,32"/>
+</map>
