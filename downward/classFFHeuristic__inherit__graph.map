@@ -1,0 +1,6 @@
+<map id="FFHeuristic" name="FFHeuristic">
+<area shape="rect" id="node2" href="$classAdditiveHeuristic.html" title="AdditiveHeuristic" alt="" coords="11,229,132,256"/>
+<area shape="rect" id="node3" href="$classRelaxationHeuristic.html" title="RelaxationHeuristic" alt="" coords="4,155,139,181"/>
+<area shape="rect" id="node4" href="$classHeuristic.html" title="Heuristic" alt="" coords="35,80,108,107"/>
+<area shape="rect" id="node5" href="$classScalarEvaluator.html" title="ScalarEvaluator" alt="" coords="15,5,129,32"/>
+</map>

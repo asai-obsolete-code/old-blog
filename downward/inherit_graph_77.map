@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classSearchEngine.html" title="SearchEngine" alt="" coords="6,81,109,108"/>
+<area shape="rect" id="node2" href="$classEagerSearch.html" title="EagerSearch" alt="" coords="202,5,299,32"/>
+<area shape="rect" id="node3" href="$classEnforcedHillClimbingSearch.html" title="EnforcedHillClimbingSearch" alt="" coords="158,56,343,83"/>
+<area shape="rect" id="node4" href="$classIteratedSearch.html" title="IteratedSearch" alt="" coords="197,107,304,133"/>
+<area shape="rect" id="node5" href="$classLazySearch.html" title="LazySearch" alt="" coords="205,157,296,184"/>
+</map>

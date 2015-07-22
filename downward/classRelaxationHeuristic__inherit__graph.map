@@ -1,0 +1,7 @@
+<map id="RelaxationHeuristic" name="RelaxationHeuristic">
+<area shape="rect" id="node4" href="$classAdditiveHeuristic.html" title="AdditiveHeuristic" alt="" coords="5,229,125,256"/>
+<area shape="rect" id="node6" href="$classHSPMaxHeuristic.html" title="HSPMaxHeuristic" alt="" coords="150,229,276,256"/>
+<area shape="rect" id="node2" href="$classHeuristic.html" title="Heuristic" alt="" coords="101,80,175,107"/>
+<area shape="rect" id="node3" href="$classScalarEvaluator.html" title="ScalarEvaluator" alt="" coords="81,5,196,32"/>
+<area shape="rect" id="node5" href="$classFFHeuristic.html" title="FFHeuristic" alt="" coords="20,304,111,331"/>
+</map>
