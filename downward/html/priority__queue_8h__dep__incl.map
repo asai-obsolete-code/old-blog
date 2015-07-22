@@ -1,0 +1,14 @@
+<map id="priority_queue.h" name="priority_queue.h">
+<area shape="rect" id="node2" href="$additive__heuristic_8h.html" title="additive_heuristic.h" alt="" coords="150,80,284,107"/>
+<area shape="rect" id="node6" href="$cea__heuristic_8h.html" title="cea_heuristic.h" alt="" coords="309,80,419,107"/>
+<area shape="rect" id="node8" href="$cg__heuristic_8h.html" title="cg_heuristic.h" alt="" coords="443,80,545,107"/>
+<area shape="rect" id="node10" href="$lm__cut__heuristic_8h.html" title="lm_cut_heuristic.h" alt="" coords="573,80,701,107"/>
+<area shape="rect" id="node12" href="$max__heuristic_8h.html" title="max_heuristic.h" alt="" coords="732,80,847,107"/>
+<area shape="rect" id="node3" href="$additive__heuristic_8cc.html" title="additive_heuristic.cc" alt="" coords="5,155,145,181"/>
+<area shape="rect" id="node4" href="$ff__heuristic_8h.html" title="ff_heuristic.h" alt="" coords="171,155,268,181"/>
+<area shape="rect" id="node5" href="$ff__heuristic_8cc.html" title="ff_heuristic.cc" alt="" coords="168,229,272,256"/>
+<area shape="rect" id="node7" href="$cea__heuristic_8cc.html" title="cea_heuristic.cc" alt="" coords="296,155,412,181"/>
+<area shape="rect" id="node9" href="$cg__heuristic_8cc.html" title="cg_heuristic.cc" alt="" coords="438,155,548,181"/>
+<area shape="rect" id="node11" href="$lm__cut__heuristic_8cc.html" title="lm_cut_heuristic.cc" alt="" coords="573,155,707,181"/>
+<area shape="rect" id="node13" href="$max__heuristic_8cc.html" title="max_heuristic.cc" alt="" coords="731,155,852,181"/>
+</map>

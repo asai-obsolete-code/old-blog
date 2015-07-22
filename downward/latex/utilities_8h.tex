@@ -1,0 +1,258 @@
+\hypertarget{utilities_8h}{\section{utilities.\-h File Reference}
+\label{utilities_8h}\index{utilities.\-h@{utilities.\-h}}
+}
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$functional$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+Include dependency graph for utilities.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utilities_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utilities_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacestd}{std}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{utilities_8h_a157a956e14c5c44b3f73ef23a4776f64}{L\-I\-N\-U\-X}~0
+\item 
+\#define \hyperlink{utilities_8h_a74f72e4d7a33b6dfb6ec3271d58e67e1}{O\-S\-X}~1
+\item 
+\#define \hyperlink{utilities_8h_a196aad3dd84f9e5306a78c5e14a54795}{C\-Y\-G\-W\-I\-N}~2
+\item 
+\#define \hyperlink{utilities_8h_a987b73d7cc6da72732af75c5d7872d29}{W\-I\-N\-D\-O\-W\-S}~3
+\item 
+\#define \hyperlink{utilities_8h_a0c4bd19d66f24df656c706450585774b}{O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-S\-Y\-S\-T\-E\-M}~\hyperlink{utilities_8h_a157a956e14c5c44b3f73ef23a4776f64}{L\-I\-N\-U\-X}
+\item 
+\#define \hyperlink{utilities_8h_a9bc43e3ee0ae83643b65e07fe1fd0132}{N\-O\-\_\-\-R\-E\-T\-U\-R\-N}~\-\_\-\-\_\-attribute\-\_\-\-\_\-((noreturn))
+\item 
+\#define \hyperlink{utilities_8h_a4517f7e2967f5acb03ec0f7db14e1052}{A\-B\-O\-R\-T}(msg)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{utilities_8h_a50b9b9ef2cb7e906c14f9a67d540bf58}{Exit\-Code} \{ \\*
+\hyperlink{utilities_8h_a50b9b9ef2cb7e906c14f9a67d540bf58aa1ff9b3092ff2974bdfd40b8c7048bf9}{E\-X\-I\-T\-\_\-\-P\-L\-A\-N\-\_\-\-F\-O\-U\-N\-D} = 0, 
+\hyperlink{utilities_8h_a50b9b9ef2cb7e906c14f9a67d540bf58a65d77f70a4ecc1ce91e6895593b01738}{E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-E\-R\-R\-O\-R} = 1, 
+\hyperlink{utilities_8h_a50b9b9ef2cb7e906c14f9a67d540bf58ac701c9b1d5b7ea5dbd0fd117f13344c2}{E\-X\-I\-T\-\_\-\-I\-N\-P\-U\-T\-\_\-\-E\-R\-R\-O\-R} = 2, 
+\hyperlink{utilities_8h_a50b9b9ef2cb7e906c14f9a67d540bf58a2e9911fe826ed38fc7fe63d396bd7234}{E\-X\-I\-T\-\_\-\-U\-N\-S\-U\-P\-P\-O\-R\-T\-E\-D} = 3, 
+\\*
+\hyperlink{utilities_8h_a50b9b9ef2cb7e906c14f9a67d540bf58ab7b45241178d3bd01701a3fe8046dcb6}{E\-X\-I\-T\-\_\-\-U\-N\-S\-O\-L\-V\-A\-B\-L\-E} = 4, 
+\hyperlink{utilities_8h_a50b9b9ef2cb7e906c14f9a67d540bf58a7f2dae8c6830a6aa0afa61266957ff7d}{E\-X\-I\-T\-\_\-\-U\-N\-S\-O\-L\-V\-E\-D\-\_\-\-I\-N\-C\-O\-M\-P\-L\-E\-T\-E} = 5, 
+\hyperlink{utilities_8h_a50b9b9ef2cb7e906c14f9a67d540bf58a17955264aed418f376aa482dda88e5a8}{E\-X\-I\-T\-\_\-\-O\-U\-T\-\_\-\-O\-F\-\_\-\-M\-E\-M\-O\-R\-Y} = 6
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{utilities_8h_a9bc43e3ee0ae83643b65e07fe1fd0132}{N\-O\-\_\-\-R\-E\-T\-U\-R\-N} void \hyperlink{utilities_8h_a0f6801476c5064e863c18130764d5c1d}{exit\-\_\-with} (\hyperlink{utilities_8h_a50b9b9ef2cb7e906c14f9a67d540bf58}{Exit\-Code} returncode)
+\item 
+void \hyperlink{utilities_8h_aa6f1cf33faa5cabaf6cb5f3033130a2b}{register\-\_\-event\-\_\-handlers} ()
+\item 
+int \hyperlink{utilities_8h_a3a238c49d33a517c1d2778f45337f061}{get\-\_\-peak\-\_\-memory\-\_\-in\-\_\-kb} (bool use\-\_\-buffered\-\_\-input=true)
+\item 
+void \hyperlink{utilities_8h_aed9194851af2eee2c9f96171abb20c58}{print\-\_\-peak\-\_\-memory} (bool use\-\_\-buffered\-\_\-input=true)
+\item 
+bool \hyperlink{utilities_8h_abcff609cab6d7097a972a57b3004e315}{is\-\_\-product\-\_\-within\-\_\-limit} (int factor1, int factor2, int limit)
+\item 
+{\footnotesize template$<$class T $>$ }\\bool \hyperlink{utilities_8h_a36cd379b4fbab12c8c482d32f91cce90}{is\-\_\-sorted\-\_\-unique} (const std\-::vector$<$ T $>$ \&values)
+\item 
+{\footnotesize template$<$class T $>$ }\\ostream \& \hyperlink{namespacestd_aa097c0c633e1fd78b168d306ff57e378}{std\-::operator$<$$<$} (ostream \&stream, const vector$<$ T $>$ \&vec)
+\item 
+{\footnotesize template$<$class T $>$ }\\bool \hyperlink{utilities_8h_ad23670a9e4f03902713b3c27749d7e9f}{in\-\_\-bounds} (int index, const T \&container)
+\item 
+{\footnotesize template$<$class T $>$ }\\bool \hyperlink{utilities_8h_abffe86b316e37968ed149ea615114994}{in\-\_\-bounds} (size\-\_\-t index, const T \&container)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{utilities_8h_a44ab437244c3326f1cd4093f129e0a91}{unused\-\_\-parameter} (const T \&)
+\item 
+int \hyperlink{utilities_8h_a400fcf5489d38525ac1e175137fe15df}{get\-\_\-process\-\_\-id} ()
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{utilities_8h_af7101160ecf196ee18477f4ed3d6d332}{release\-\_\-vector\-\_\-memory} (std\-::vector$<$ T $>$ \&vec)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{utilities_8h_a4517f7e2967f5acb03ec0f7db14e1052}{\index{utilities.\-h@{utilities.\-h}!A\-B\-O\-R\-T@{A\-B\-O\-R\-T}}
+\index{A\-B\-O\-R\-T@{A\-B\-O\-R\-T}!utilities.h@{utilities.\-h}}
+\subsubsection[{A\-B\-O\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-B\-O\-R\-T(
+\begin{DoxyParamCaption}
+\item[{}]{msg}
+\end{DoxyParamCaption}
+)}}\label{utilities_8h_a4517f7e2967f5acb03ec0f7db14e1052}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+( \(\backslash\)
+        (std::cerr << \textcolor{stringliteral}{"Critical error in file "} << \_\_FILE\_\_ \(\backslash\)
+                   << \textcolor{stringliteral}{", line "} << \_\_LINE\_\_ << \textcolor{stringliteral}{": "} << std::endl \(\backslash\)
+                   << (msg) << std::endl), \(\backslash\)
+        (abort()), \(\backslash\)
+        (\textcolor{keywordtype}{void})0 \(\backslash\)
+    )
+\end{DoxyCode}
+\hypertarget{utilities_8h_a196aad3dd84f9e5306a78c5e14a54795}{\index{utilities.\-h@{utilities.\-h}!C\-Y\-G\-W\-I\-N@{C\-Y\-G\-W\-I\-N}}
+\index{C\-Y\-G\-W\-I\-N@{C\-Y\-G\-W\-I\-N}!utilities.h@{utilities.\-h}}
+\subsubsection[{C\-Y\-G\-W\-I\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-Y\-G\-W\-I\-N~2}}\label{utilities_8h_a196aad3dd84f9e5306a78c5e14a54795}
+\hypertarget{utilities_8h_a157a956e14c5c44b3f73ef23a4776f64}{\index{utilities.\-h@{utilities.\-h}!L\-I\-N\-U\-X@{L\-I\-N\-U\-X}}
+\index{L\-I\-N\-U\-X@{L\-I\-N\-U\-X}!utilities.h@{utilities.\-h}}
+\subsubsection[{L\-I\-N\-U\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-I\-N\-U\-X~0}}\label{utilities_8h_a157a956e14c5c44b3f73ef23a4776f64}
+\hypertarget{utilities_8h_a9bc43e3ee0ae83643b65e07fe1fd0132}{\index{utilities.\-h@{utilities.\-h}!N\-O\-\_\-\-R\-E\-T\-U\-R\-N@{N\-O\-\_\-\-R\-E\-T\-U\-R\-N}}
+\index{N\-O\-\_\-\-R\-E\-T\-U\-R\-N@{N\-O\-\_\-\-R\-E\-T\-U\-R\-N}!utilities.h@{utilities.\-h}}
+\subsubsection[{N\-O\-\_\-\-R\-E\-T\-U\-R\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\-O\-\_\-\-R\-E\-T\-U\-R\-N~\-\_\-\-\_\-attribute\-\_\-\-\_\-((noreturn))}}\label{utilities_8h_a9bc43e3ee0ae83643b65e07fe1fd0132}
+\hypertarget{utilities_8h_a0c4bd19d66f24df656c706450585774b}{\index{utilities.\-h@{utilities.\-h}!O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-S\-Y\-S\-T\-E\-M@{O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-S\-Y\-S\-T\-E\-M}}
+\index{O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-S\-Y\-S\-T\-E\-M@{O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-S\-Y\-S\-T\-E\-M}!utilities.h@{utilities.\-h}}
+\subsubsection[{O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-S\-Y\-S\-T\-E\-M}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-S\-Y\-S\-T\-E\-M~{\bf L\-I\-N\-U\-X}}}\label{utilities_8h_a0c4bd19d66f24df656c706450585774b}
+\hypertarget{utilities_8h_a74f72e4d7a33b6dfb6ec3271d58e67e1}{\index{utilities.\-h@{utilities.\-h}!O\-S\-X@{O\-S\-X}}
+\index{O\-S\-X@{O\-S\-X}!utilities.h@{utilities.\-h}}
+\subsubsection[{O\-S\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\-S\-X~1}}\label{utilities_8h_a74f72e4d7a33b6dfb6ec3271d58e67e1}
+\hypertarget{utilities_8h_a987b73d7cc6da72732af75c5d7872d29}{\index{utilities.\-h@{utilities.\-h}!W\-I\-N\-D\-O\-W\-S@{W\-I\-N\-D\-O\-W\-S}}
+\index{W\-I\-N\-D\-O\-W\-S@{W\-I\-N\-D\-O\-W\-S}!utilities.h@{utilities.\-h}}
+\subsubsection[{W\-I\-N\-D\-O\-W\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\-I\-N\-D\-O\-W\-S~3}}\label{utilities_8h_a987b73d7cc6da72732af75c5d7872d29}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{utilities_8h_a50b9b9ef2cb7e906c14f9a67d540bf58}{\index{utilities.\-h@{utilities.\-h}!Exit\-Code@{Exit\-Code}}
+\index{Exit\-Code@{Exit\-Code}!utilities.h@{utilities.\-h}}
+\subsubsection[{Exit\-Code}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Exit\-Code}}}\label{utilities_8h_a50b9b9ef2cb7e906c14f9a67d540bf58}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{E\-X\-I\-T\-\_\-\-P\-L\-A\-N\-\_\-\-F\-O\-U\-N\-D@{E\-X\-I\-T\-\_\-\-P\-L\-A\-N\-\_\-\-F\-O\-U\-N\-D}!utilities.\-h@{utilities.\-h}}\index{utilities.\-h@{utilities.\-h}!E\-X\-I\-T\-\_\-\-P\-L\-A\-N\-\_\-\-F\-O\-U\-N\-D@{E\-X\-I\-T\-\_\-\-P\-L\-A\-N\-\_\-\-F\-O\-U\-N\-D}}\item[{\em 
+\hypertarget{utilities_8h_a50b9b9ef2cb7e906c14f9a67d540bf58aa1ff9b3092ff2974bdfd40b8c7048bf9}{E\-X\-I\-T\-\_\-\-P\-L\-A\-N\-\_\-\-F\-O\-U\-N\-D}\label{utilities_8h_a50b9b9ef2cb7e906c14f9a67d540bf58aa1ff9b3092ff2974bdfd40b8c7048bf9}
+}]\index{E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-E\-R\-R\-O\-R@{E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-E\-R\-R\-O\-R}!utilities.\-h@{utilities.\-h}}\index{utilities.\-h@{utilities.\-h}!E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-E\-R\-R\-O\-R@{E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-E\-R\-R\-O\-R}}\item[{\em 
+\hypertarget{utilities_8h_a50b9b9ef2cb7e906c14f9a67d540bf58a65d77f70a4ecc1ce91e6895593b01738}{E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-E\-R\-R\-O\-R}\label{utilities_8h_a50b9b9ef2cb7e906c14f9a67d540bf58a65d77f70a4ecc1ce91e6895593b01738}
+}]\index{E\-X\-I\-T\-\_\-\-I\-N\-P\-U\-T\-\_\-\-E\-R\-R\-O\-R@{E\-X\-I\-T\-\_\-\-I\-N\-P\-U\-T\-\_\-\-E\-R\-R\-O\-R}!utilities.\-h@{utilities.\-h}}\index{utilities.\-h@{utilities.\-h}!E\-X\-I\-T\-\_\-\-I\-N\-P\-U\-T\-\_\-\-E\-R\-R\-O\-R@{E\-X\-I\-T\-\_\-\-I\-N\-P\-U\-T\-\_\-\-E\-R\-R\-O\-R}}\item[{\em 
+\hypertarget{utilities_8h_a50b9b9ef2cb7e906c14f9a67d540bf58ac701c9b1d5b7ea5dbd0fd117f13344c2}{E\-X\-I\-T\-\_\-\-I\-N\-P\-U\-T\-\_\-\-E\-R\-R\-O\-R}\label{utilities_8h_a50b9b9ef2cb7e906c14f9a67d540bf58ac701c9b1d5b7ea5dbd0fd117f13344c2}
+}]\index{E\-X\-I\-T\-\_\-\-U\-N\-S\-U\-P\-P\-O\-R\-T\-E\-D@{E\-X\-I\-T\-\_\-\-U\-N\-S\-U\-P\-P\-O\-R\-T\-E\-D}!utilities.\-h@{utilities.\-h}}\index{utilities.\-h@{utilities.\-h}!E\-X\-I\-T\-\_\-\-U\-N\-S\-U\-P\-P\-O\-R\-T\-E\-D@{E\-X\-I\-T\-\_\-\-U\-N\-S\-U\-P\-P\-O\-R\-T\-E\-D}}\item[{\em 
+\hypertarget{utilities_8h_a50b9b9ef2cb7e906c14f9a67d540bf58a2e9911fe826ed38fc7fe63d396bd7234}{E\-X\-I\-T\-\_\-\-U\-N\-S\-U\-P\-P\-O\-R\-T\-E\-D}\label{utilities_8h_a50b9b9ef2cb7e906c14f9a67d540bf58a2e9911fe826ed38fc7fe63d396bd7234}
+}]\index{E\-X\-I\-T\-\_\-\-U\-N\-S\-O\-L\-V\-A\-B\-L\-E@{E\-X\-I\-T\-\_\-\-U\-N\-S\-O\-L\-V\-A\-B\-L\-E}!utilities.\-h@{utilities.\-h}}\index{utilities.\-h@{utilities.\-h}!E\-X\-I\-T\-\_\-\-U\-N\-S\-O\-L\-V\-A\-B\-L\-E@{E\-X\-I\-T\-\_\-\-U\-N\-S\-O\-L\-V\-A\-B\-L\-E}}\item[{\em 
+\hypertarget{utilities_8h_a50b9b9ef2cb7e906c14f9a67d540bf58ab7b45241178d3bd01701a3fe8046dcb6}{E\-X\-I\-T\-\_\-\-U\-N\-S\-O\-L\-V\-A\-B\-L\-E}\label{utilities_8h_a50b9b9ef2cb7e906c14f9a67d540bf58ab7b45241178d3bd01701a3fe8046dcb6}
+}]\index{E\-X\-I\-T\-\_\-\-U\-N\-S\-O\-L\-V\-E\-D\-\_\-\-I\-N\-C\-O\-M\-P\-L\-E\-T\-E@{E\-X\-I\-T\-\_\-\-U\-N\-S\-O\-L\-V\-E\-D\-\_\-\-I\-N\-C\-O\-M\-P\-L\-E\-T\-E}!utilities.\-h@{utilities.\-h}}\index{utilities.\-h@{utilities.\-h}!E\-X\-I\-T\-\_\-\-U\-N\-S\-O\-L\-V\-E\-D\-\_\-\-I\-N\-C\-O\-M\-P\-L\-E\-T\-E@{E\-X\-I\-T\-\_\-\-U\-N\-S\-O\-L\-V\-E\-D\-\_\-\-I\-N\-C\-O\-M\-P\-L\-E\-T\-E}}\item[{\em 
+\hypertarget{utilities_8h_a50b9b9ef2cb7e906c14f9a67d540bf58a7f2dae8c6830a6aa0afa61266957ff7d}{E\-X\-I\-T\-\_\-\-U\-N\-S\-O\-L\-V\-E\-D\-\_\-\-I\-N\-C\-O\-M\-P\-L\-E\-T\-E}\label{utilities_8h_a50b9b9ef2cb7e906c14f9a67d540bf58a7f2dae8c6830a6aa0afa61266957ff7d}
+}]\index{E\-X\-I\-T\-\_\-\-O\-U\-T\-\_\-\-O\-F\-\_\-\-M\-E\-M\-O\-R\-Y@{E\-X\-I\-T\-\_\-\-O\-U\-T\-\_\-\-O\-F\-\_\-\-M\-E\-M\-O\-R\-Y}!utilities.\-h@{utilities.\-h}}\index{utilities.\-h@{utilities.\-h}!E\-X\-I\-T\-\_\-\-O\-U\-T\-\_\-\-O\-F\-\_\-\-M\-E\-M\-O\-R\-Y@{E\-X\-I\-T\-\_\-\-O\-U\-T\-\_\-\-O\-F\-\_\-\-M\-E\-M\-O\-R\-Y}}\item[{\em 
+\hypertarget{utilities_8h_a50b9b9ef2cb7e906c14f9a67d540bf58a17955264aed418f376aa482dda88e5a8}{E\-X\-I\-T\-\_\-\-O\-U\-T\-\_\-\-O\-F\-\_\-\-M\-E\-M\-O\-R\-Y}\label{utilities_8h_a50b9b9ef2cb7e906c14f9a67d540bf58a17955264aed418f376aa482dda88e5a8}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{utilities_8h_a0f6801476c5064e863c18130764d5c1d}{\index{utilities.\-h@{utilities.\-h}!exit\-\_\-with@{exit\-\_\-with}}
+\index{exit\-\_\-with@{exit\-\_\-with}!utilities.h@{utilities.\-h}}
+\subsubsection[{exit\-\_\-with}]{\setlength{\rightskip}{0pt plus 5cm}{\bf N\-O\-\_\-\-R\-E\-T\-U\-R\-N} void exit\-\_\-with (
+\begin{DoxyParamCaption}
+\item[{{\bf Exit\-Code}}]{returncode}
+\end{DoxyParamCaption}
+)}}\label{utilities_8h_a0f6801476c5064e863c18130764d5c1d}
+\hypertarget{utilities_8h_a3a238c49d33a517c1d2778f45337f061}{\index{utilities.\-h@{utilities.\-h}!get\-\_\-peak\-\_\-memory\-\_\-in\-\_\-kb@{get\-\_\-peak\-\_\-memory\-\_\-in\-\_\-kb}}
+\index{get\-\_\-peak\-\_\-memory\-\_\-in\-\_\-kb@{get\-\_\-peak\-\_\-memory\-\_\-in\-\_\-kb}!utilities.h@{utilities.\-h}}
+\subsubsection[{get\-\_\-peak\-\_\-memory\-\_\-in\-\_\-kb}]{\setlength{\rightskip}{0pt plus 5cm}int get\-\_\-peak\-\_\-memory\-\_\-in\-\_\-kb (
+\begin{DoxyParamCaption}
+\item[{bool}]{use\-\_\-buffered\-\_\-input = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{utilities_8h_a3a238c49d33a517c1d2778f45337f061}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{utilities_8h_a3a238c49d33a517c1d2778f45337f061_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{utilities_8h_a400fcf5489d38525ac1e175137fe15df}{\index{utilities.\-h@{utilities.\-h}!get\-\_\-process\-\_\-id@{get\-\_\-process\-\_\-id}}
+\index{get\-\_\-process\-\_\-id@{get\-\_\-process\-\_\-id}!utilities.h@{utilities.\-h}}
+\subsubsection[{get\-\_\-process\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}int get\-\_\-process\-\_\-id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{utilities_8h_a400fcf5489d38525ac1e175137fe15df}
+\hypertarget{utilities_8h_ad23670a9e4f03902713b3c27749d7e9f}{\index{utilities.\-h@{utilities.\-h}!in\-\_\-bounds@{in\-\_\-bounds}}
+\index{in\-\_\-bounds@{in\-\_\-bounds}!utilities.h@{utilities.\-h}}
+\subsubsection[{in\-\_\-bounds}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ bool in\-\_\-bounds (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{const T \&}]{container}
+\end{DoxyParamCaption}
+)}}\label{utilities_8h_ad23670a9e4f03902713b3c27749d7e9f}
+\hypertarget{utilities_8h_abffe86b316e37968ed149ea615114994}{\index{utilities.\-h@{utilities.\-h}!in\-\_\-bounds@{in\-\_\-bounds}}
+\index{in\-\_\-bounds@{in\-\_\-bounds}!utilities.h@{utilities.\-h}}
+\subsubsection[{in\-\_\-bounds}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ bool in\-\_\-bounds (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{index, }
+\item[{const T \&}]{container}
+\end{DoxyParamCaption}
+)}}\label{utilities_8h_abffe86b316e37968ed149ea615114994}
+\hypertarget{utilities_8h_abcff609cab6d7097a972a57b3004e315}{\index{utilities.\-h@{utilities.\-h}!is\-\_\-product\-\_\-within\-\_\-limit@{is\-\_\-product\-\_\-within\-\_\-limit}}
+\index{is\-\_\-product\-\_\-within\-\_\-limit@{is\-\_\-product\-\_\-within\-\_\-limit}!utilities.h@{utilities.\-h}}
+\subsubsection[{is\-\_\-product\-\_\-within\-\_\-limit}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-\_\-product\-\_\-within\-\_\-limit (
+\begin{DoxyParamCaption}
+\item[{int}]{factor1, }
+\item[{int}]{factor2, }
+\item[{int}]{limit}
+\end{DoxyParamCaption}
+)}}\label{utilities_8h_abcff609cab6d7097a972a57b3004e315}
+\hypertarget{utilities_8h_a36cd379b4fbab12c8c482d32f91cce90}{\index{utilities.\-h@{utilities.\-h}!is\-\_\-sorted\-\_\-unique@{is\-\_\-sorted\-\_\-unique}}
+\index{is\-\_\-sorted\-\_\-unique@{is\-\_\-sorted\-\_\-unique}!utilities.h@{utilities.\-h}}
+\subsubsection[{is\-\_\-sorted\-\_\-unique}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ bool is\-\_\-sorted\-\_\-unique (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ T $>$ \&}]{values}
+\end{DoxyParamCaption}
+)}}\label{utilities_8h_a36cd379b4fbab12c8c482d32f91cce90}
+\hypertarget{utilities_8h_aed9194851af2eee2c9f96171abb20c58}{\index{utilities.\-h@{utilities.\-h}!print\-\_\-peak\-\_\-memory@{print\-\_\-peak\-\_\-memory}}
+\index{print\-\_\-peak\-\_\-memory@{print\-\_\-peak\-\_\-memory}!utilities.h@{utilities.\-h}}
+\subsubsection[{print\-\_\-peak\-\_\-memory}]{\setlength{\rightskip}{0pt plus 5cm}void print\-\_\-peak\-\_\-memory (
+\begin{DoxyParamCaption}
+\item[{bool}]{use\-\_\-buffered\-\_\-input = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{utilities_8h_aed9194851af2eee2c9f96171abb20c58}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utilities_8h_aed9194851af2eee2c9f96171abb20c58_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{utilities_8h_aa6f1cf33faa5cabaf6cb5f3033130a2b}{\index{utilities.\-h@{utilities.\-h}!register\-\_\-event\-\_\-handlers@{register\-\_\-event\-\_\-handlers}}
+\index{register\-\_\-event\-\_\-handlers@{register\-\_\-event\-\_\-handlers}!utilities.h@{utilities.\-h}}
+\subsubsection[{register\-\_\-event\-\_\-handlers}]{\setlength{\rightskip}{0pt plus 5cm}void register\-\_\-event\-\_\-handlers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{utilities_8h_aa6f1cf33faa5cabaf6cb5f3033130a2b}
+\hypertarget{utilities_8h_af7101160ecf196ee18477f4ed3d6d332}{\index{utilities.\-h@{utilities.\-h}!release\-\_\-vector\-\_\-memory@{release\-\_\-vector\-\_\-memory}}
+\index{release\-\_\-vector\-\_\-memory@{release\-\_\-vector\-\_\-memory}!utilities.h@{utilities.\-h}}
+\subsubsection[{release\-\_\-vector\-\_\-memory}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void release\-\_\-vector\-\_\-memory (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ T $>$ \&}]{vec}
+\end{DoxyParamCaption}
+)}}\label{utilities_8h_af7101160ecf196ee18477f4ed3d6d332}
+\hypertarget{utilities_8h_a44ab437244c3326f1cd4093f129e0a91}{\index{utilities.\-h@{utilities.\-h}!unused\-\_\-parameter@{unused\-\_\-parameter}}
+\index{unused\-\_\-parameter@{unused\-\_\-parameter}!utilities.h@{utilities.\-h}}
+\subsubsection[{unused\-\_\-parameter}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void unused\-\_\-parameter (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{}
+\end{DoxyParamCaption}
+)}}\label{utilities_8h_a44ab437244c3326f1cd4093f129e0a91}

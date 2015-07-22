@@ -1,0 +1,96 @@
+\hypertarget{structValueNode}{\section{Value\-Node Struct Reference}
+\label{structValueNode}\index{Value\-Node@{Value\-Node}}
+}
+
+
+{\ttfamily \#include $<$domain\-\_\-transition\-\_\-graph.\-h$>$}
+
+
+
+Collaboration diagram for Value\-Node\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{structValueNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structValueNode_ab36d93146165dc6c2ba903808bd8a530}{Value\-Node} (\hyperlink{classDomainTransitionGraph}{Domain\-Transition\-Graph} $\ast$parent, int val)
+\item 
+void \hyperlink{structValueNode_acf7914bbe0f66b97e9d31a9c08908b22}{dump} () const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDomainTransitionGraph}{Domain\-Transition\-Graph} $\ast$ \hyperlink{structValueNode_a057ccc4e572cb28a310f6ef84aad4e82}{parent\-\_\-graph}
+\item 
+int \hyperlink{structValueNode_abc838c0ec99f92408713757aa4cf5f11}{value}
+\item 
+vector$<$ \hyperlink{structValueTransition}{Value\-Transition} $>$ \hyperlink{structValueNode_a30d89efb6ce79877950e8dfc88ae171e}{transitions}
+\item 
+vector$<$ int $>$ \hyperlink{structValueNode_a58dab80614d356de08095b4cc32e205f}{distances}
+\item 
+vector$<$ \hyperlink{structValueTransitionLabel}{Value\-Transition\-Label} $\ast$ $>$ \hyperlink{structValueNode_a851ebeecc5a2aca4604b4c35ea3ce0c2}{helpful\-\_\-transitions}
+\item 
+vector$<$ int $>$ \hyperlink{structValueNode_a5c8e44a1959e745b69b2ad83cb26d7d6}{children\-\_\-state}
+\item 
+\hyperlink{structValueNode}{Value\-Node} $\ast$ \hyperlink{structValueNode_a4f8368899fd6bb99afedfb70d7f84c19}{reached\-\_\-from}
+\item 
+\hyperlink{structValueTransitionLabel}{Value\-Transition\-Label} $\ast$ \hyperlink{structValueNode_a7ea5fd17a80694802c9485750d4b95f9}{reached\-\_\-by}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structValueNode_ab36d93146165dc6c2ba903808bd8a530}{\index{Value\-Node@{Value\-Node}!Value\-Node@{Value\-Node}}
+\index{Value\-Node@{Value\-Node}!ValueNode@{Value\-Node}}
+\subsubsection[{Value\-Node}]{\setlength{\rightskip}{0pt plus 5cm}Value\-Node\-::\-Value\-Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Domain\-Transition\-Graph} $\ast$}]{parent, }
+\item[{int}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structValueNode_ab36d93146165dc6c2ba903808bd8a530}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structValueNode_acf7914bbe0f66b97e9d31a9c08908b22}{\index{Value\-Node@{Value\-Node}!dump@{dump}}
+\index{dump@{dump}!ValueNode@{Value\-Node}}
+\subsubsection[{dump}]{\setlength{\rightskip}{0pt plus 5cm}void Value\-Node\-::dump (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{structValueNode_acf7914bbe0f66b97e9d31a9c08908b22}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structValueNode_a5c8e44a1959e745b69b2ad83cb26d7d6}{\index{Value\-Node@{Value\-Node}!children\-\_\-state@{children\-\_\-state}}
+\index{children\-\_\-state@{children\-\_\-state}!ValueNode@{Value\-Node}}
+\subsubsection[{children\-\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$ Value\-Node\-::children\-\_\-state}}\label{structValueNode_a5c8e44a1959e745b69b2ad83cb26d7d6}
+\hypertarget{structValueNode_a58dab80614d356de08095b4cc32e205f}{\index{Value\-Node@{Value\-Node}!distances@{distances}}
+\index{distances@{distances}!ValueNode@{Value\-Node}}
+\subsubsection[{distances}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$ Value\-Node\-::distances}}\label{structValueNode_a58dab80614d356de08095b4cc32e205f}
+\hypertarget{structValueNode_a851ebeecc5a2aca4604b4c35ea3ce0c2}{\index{Value\-Node@{Value\-Node}!helpful\-\_\-transitions@{helpful\-\_\-transitions}}
+\index{helpful\-\_\-transitions@{helpful\-\_\-transitions}!ValueNode@{Value\-Node}}
+\subsubsection[{helpful\-\_\-transitions}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Value\-Transition\-Label} $\ast$$>$ Value\-Node\-::helpful\-\_\-transitions}}\label{structValueNode_a851ebeecc5a2aca4604b4c35ea3ce0c2}
+\hypertarget{structValueNode_a057ccc4e572cb28a310f6ef84aad4e82}{\index{Value\-Node@{Value\-Node}!parent\-\_\-graph@{parent\-\_\-graph}}
+\index{parent\-\_\-graph@{parent\-\_\-graph}!ValueNode@{Value\-Node}}
+\subsubsection[{parent\-\_\-graph}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Domain\-Transition\-Graph}$\ast$ Value\-Node\-::parent\-\_\-graph}}\label{structValueNode_a057ccc4e572cb28a310f6ef84aad4e82}
+\hypertarget{structValueNode_a7ea5fd17a80694802c9485750d4b95f9}{\index{Value\-Node@{Value\-Node}!reached\-\_\-by@{reached\-\_\-by}}
+\index{reached\-\_\-by@{reached\-\_\-by}!ValueNode@{Value\-Node}}
+\subsubsection[{reached\-\_\-by}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Value\-Transition\-Label}$\ast$ Value\-Node\-::reached\-\_\-by}}\label{structValueNode_a7ea5fd17a80694802c9485750d4b95f9}
+\hypertarget{structValueNode_a4f8368899fd6bb99afedfb70d7f84c19}{\index{Value\-Node@{Value\-Node}!reached\-\_\-from@{reached\-\_\-from}}
+\index{reached\-\_\-from@{reached\-\_\-from}!ValueNode@{Value\-Node}}
+\subsubsection[{reached\-\_\-from}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Value\-Node}$\ast$ Value\-Node\-::reached\-\_\-from}}\label{structValueNode_a4f8368899fd6bb99afedfb70d7f84c19}
+\hypertarget{structValueNode_a30d89efb6ce79877950e8dfc88ae171e}{\index{Value\-Node@{Value\-Node}!transitions@{transitions}}
+\index{transitions@{transitions}!ValueNode@{Value\-Node}}
+\subsubsection[{transitions}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Value\-Transition}$>$ Value\-Node\-::transitions}}\label{structValueNode_a30d89efb6ce79877950e8dfc88ae171e}
+\hypertarget{structValueNode_abc838c0ec99f92408713757aa4cf5f11}{\index{Value\-Node@{Value\-Node}!value@{value}}
+\index{value@{value}!ValueNode@{Value\-Node}}
+\subsubsection[{value}]{\setlength{\rightskip}{0pt plus 5cm}int Value\-Node\-::value}}\label{structValueNode_abc838c0ec99f92408713757aa4cf5f11}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{domain__transition__graph_8h}{domain\-\_\-transition\-\_\-graph.\-h}\end{DoxyCompactItemize}

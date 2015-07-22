@@ -1,0 +1,18 @@
+<map id="ipc_max_heuristic.cc" name="ipc_max_heuristic.cc">
+<area shape="rect" id="node2" href="$ipc__max__heuristic_8h.html" title="ipc_max_heuristic.h" alt="" coords="501,155,640,181"/>
+<area shape="rect" id="node21" href="$evaluation__context_8h.html" title="evaluation_context.h" alt="" coords="93,80,235,107"/>
+<area shape="rect" id="node27" href="$option__parser_8h.html" title="option_parser.h" alt="" coords="1565,155,1675,181"/>
+<area shape="rect" id="node36" href="$plugin_8h.html" title="plugin.h" alt="" coords="2543,379,2609,405"/>
+<area shape="rect" id="node3" href="$heuristic_8h.html" title="heuristic.h" alt="" coords="529,229,611,256"/>
+<area shape="rect" id="node4" href="$operator__cost_8h.html" title="operator_cost.h" alt="" coords="515,304,625,331"/>
+<area shape="rect" id="node5" href="$scalar__evaluator_8h.html" title="scalar_evaluator.h" alt="" coords="312,304,440,331"/>
+<area shape="rect" id="node10" href="$task__proxy_8h.html" title="task_proxy.h" alt="" coords="1090,304,1187,331"/>
+<area shape="rect" id="node6" href="$evaluation__result_8h.html" title="evaluation_result.h" alt="" coords="129,379,259,405"/>
+<area shape="rect" id="node11" href="$abstract__task_8h.html" title="abstract_task.h" alt="" coords="1027,379,1137,405"/>
+<area shape="rect" id="node15" href="$utilities_8h.html" title="utilities.h" alt="" coords="1353,379,1427,405"/>
+<area shape="rect" id="node22" href="$heuristic__cache_8h.html" title="heuristic_cache.h" alt="" coords="162,155,285,181"/>
+<area shape="rect" id="node23" href="$global__state_8h.html" title="global_state.h" alt="" coords="835,304,937,331"/>
+<area shape="rect" id="node24" href="$int__packer_8h.html" title="int_packer.h" alt="" coords="565,379,659,405"/>
+<area shape="rect" id="node25" href="$state__id_8h.html" title="state_id.h" alt="" coords="1503,379,1581,405"/>
+<area shape="rect" id="node28" href="$option__parser__util_8h.html" title="option_parser_util.h" alt="" coords="1846,304,1980,331"/>
+</map>

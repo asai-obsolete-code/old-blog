@@ -1,0 +1,110 @@
+\hypertarget{classGeneratorSwitch}{\section{Generator\-Switch Class Reference}
+\label{classGeneratorSwitch}\index{Generator\-Switch@{Generator\-Switch}}
+}
+
+
+Inheritance diagram for Generator\-Switch\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{classGeneratorSwitch__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Generator\-Switch\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{classGeneratorSwitch__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGeneratorSwitch_a661f59b8cb03bfb5a91c501d37d7c9aa}{$\sim$\-Generator\-Switch} ()
+\item 
+\hyperlink{classGeneratorSwitch_a88ec7f0dfb491c4327b2b8b49230cb7d}{Generator\-Switch} (const \hyperlink{classVariableProxy}{Variable\-Proxy} \&switch\-\_\-var, list$<$ \hyperlink{classOperatorProxy}{Operator\-Proxy} $>$ \&\&immediate\-\_\-operators, const vector$<$ \hyperlink{classGeneratorBase}{Generator\-Base} $\ast$ $>$ \&\&generator\-\_\-for\-\_\-value, \hyperlink{classGeneratorBase}{Generator\-Base} $\ast$default\-\_\-generator)
+\item 
+virtual void \hyperlink{classGeneratorSwitch_afc8348b9849312455a93dce02898958a}{generate\-\_\-applicable\-\_\-ops} (const \hyperlink{classState}{State} \&state, vector$<$ \hyperlink{classOperatorProxy}{Operator\-Proxy} $>$ \&applicable\-\_\-ops) const 
+\item 
+virtual void \hyperlink{classGeneratorSwitch_ae90fed245667ca900fdd61121307ccbc}{generate\-\_\-applicable\-\_\-ops} (const \hyperlink{classGlobalState}{Global\-State} \&state, vector$<$ const \hyperlink{classGlobalOperator}{Global\-Operator} $\ast$ $>$ \&applicable\-\_\-ops) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classGeneratorSwitch_a661f59b8cb03bfb5a91c501d37d7c9aa}{\index{Generator\-Switch@{Generator\-Switch}!$\sim$\-Generator\-Switch@{$\sim$\-Generator\-Switch}}
+\index{$\sim$\-Generator\-Switch@{$\sim$\-Generator\-Switch}!GeneratorSwitch@{Generator\-Switch}}
+\subsubsection[{$\sim$\-Generator\-Switch}]{\setlength{\rightskip}{0pt plus 5cm}Generator\-Switch\-::$\sim$\-Generator\-Switch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGeneratorSwitch_a661f59b8cb03bfb5a91c501d37d7c9aa}
+\hypertarget{classGeneratorSwitch_a88ec7f0dfb491c4327b2b8b49230cb7d}{\index{Generator\-Switch@{Generator\-Switch}!Generator\-Switch@{Generator\-Switch}}
+\index{Generator\-Switch@{Generator\-Switch}!GeneratorSwitch@{Generator\-Switch}}
+\subsubsection[{Generator\-Switch}]{\setlength{\rightskip}{0pt plus 5cm}Generator\-Switch\-::\-Generator\-Switch (
+\begin{DoxyParamCaption}
+\item[{const {\bf Variable\-Proxy} \&}]{switch\-\_\-var, }
+\item[{list$<$ {\bf Operator\-Proxy} $>$ \&\&}]{immediate\-\_\-operators, }
+\item[{const vector$<$ {\bf Generator\-Base} $\ast$ $>$ \&\&}]{generator\-\_\-for\-\_\-value, }
+\item[{{\bf Generator\-Base} $\ast$}]{default\-\_\-generator}
+\end{DoxyParamCaption}
+)}}\label{classGeneratorSwitch_a88ec7f0dfb491c4327b2b8b49230cb7d}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classGeneratorSwitch_afc8348b9849312455a93dce02898958a}{\index{Generator\-Switch@{Generator\-Switch}!generate\-\_\-applicable\-\_\-ops@{generate\-\_\-applicable\-\_\-ops}}
+\index{generate\-\_\-applicable\-\_\-ops@{generate\-\_\-applicable\-\_\-ops}!GeneratorSwitch@{Generator\-Switch}}
+\subsubsection[{generate\-\_\-applicable\-\_\-ops}]{\setlength{\rightskip}{0pt plus 5cm}void Generator\-Switch\-::generate\-\_\-applicable\-\_\-ops (
+\begin{DoxyParamCaption}
+\item[{const {\bf State} \&}]{state, }
+\item[{vector$<$ {\bf Operator\-Proxy} $>$ \&}]{applicable\-\_\-ops}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classGeneratorSwitch_afc8348b9849312455a93dce02898958a}
+
+
+Implements \hyperlink{classGeneratorBase_a5bc20f356babc6861a3a52fcd14c95a0}{Generator\-Base}.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGeneratorSwitch_afc8348b9849312455a93dce02898958a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classGeneratorSwitch_ae90fed245667ca900fdd61121307ccbc}{\index{Generator\-Switch@{Generator\-Switch}!generate\-\_\-applicable\-\_\-ops@{generate\-\_\-applicable\-\_\-ops}}
+\index{generate\-\_\-applicable\-\_\-ops@{generate\-\_\-applicable\-\_\-ops}!GeneratorSwitch@{Generator\-Switch}}
+\subsubsection[{generate\-\_\-applicable\-\_\-ops}]{\setlength{\rightskip}{0pt plus 5cm}void Generator\-Switch\-::generate\-\_\-applicable\-\_\-ops (
+\begin{DoxyParamCaption}
+\item[{const {\bf Global\-State} \&}]{state, }
+\item[{vector$<$ const {\bf Global\-Operator} $\ast$ $>$ \&}]{applicable\-\_\-ops}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classGeneratorSwitch_ae90fed245667ca900fdd61121307ccbc}
+
+
+Implements \hyperlink{classGeneratorBase_aac7060bf6191abc9886d6a04ed1707d5}{Generator\-Base}.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGeneratorSwitch_ae90fed245667ca900fdd61121307ccbc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{successor__generator_8cc}{successor\-\_\-generator.\-cc}\end{DoxyCompactItemize}

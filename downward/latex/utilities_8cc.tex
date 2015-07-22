@@ -1,0 +1,103 @@
+\hypertarget{utilities_8cc}{\section{utilities.\-cc File Reference}
+\label{utilities_8cc}\index{utilities.\-cc@{utilities.\-cc}}
+}
+{\ttfamily \#include \char`\"{}utilities.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$cassert$>$}\\*
+{\ttfamily \#include $<$csignal$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$limits$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+Include dependency graph for utilities.\-cc\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utilities_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{utilities_8cc_aa6f1cf33faa5cabaf6cb5f3033130a2b}{register\-\_\-event\-\_\-handlers} ()
+\item 
+void \hyperlink{utilities_8cc_aa4a09f54758dbe72385a98b01c06ae0e}{exit\-\_\-with} (\hyperlink{utilities_8h_a50b9b9ef2cb7e906c14f9a67d540bf58}{Exit\-Code} exitcode)
+\item 
+int \hyperlink{utilities_8cc_ad6e89b0db19bdac1afc50dcaf196d27d}{get\-\_\-peak\-\_\-memory\-\_\-in\-\_\-kb} (bool use\-\_\-buffered\-\_\-input)
+\item 
+void \hyperlink{utilities_8cc_ac59c29db58afedea773b054efe321804}{print\-\_\-peak\-\_\-memory} (bool use\-\_\-buffered\-\_\-input)
+\item 
+bool \hyperlink{utilities_8cc_abcff609cab6d7097a972a57b3004e315}{is\-\_\-product\-\_\-within\-\_\-limit} (int factor1, int factor2, int limit)
+\item 
+int \hyperlink{utilities_8cc_a400fcf5489d38525ac1e175137fe15df}{get\-\_\-process\-\_\-id} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{utilities_8cc_aa4a09f54758dbe72385a98b01c06ae0e}{\index{utilities.\-cc@{utilities.\-cc}!exit\-\_\-with@{exit\-\_\-with}}
+\index{exit\-\_\-with@{exit\-\_\-with}!utilities.cc@{utilities.\-cc}}
+\subsubsection[{exit\-\_\-with}]{\setlength{\rightskip}{0pt plus 5cm}void exit\-\_\-with (
+\begin{DoxyParamCaption}
+\item[{{\bf Exit\-Code}}]{exitcode}
+\end{DoxyParamCaption}
+)}}\label{utilities_8cc_aa4a09f54758dbe72385a98b01c06ae0e}
+\hypertarget{utilities_8cc_ad6e89b0db19bdac1afc50dcaf196d27d}{\index{utilities.\-cc@{utilities.\-cc}!get\-\_\-peak\-\_\-memory\-\_\-in\-\_\-kb@{get\-\_\-peak\-\_\-memory\-\_\-in\-\_\-kb}}
+\index{get\-\_\-peak\-\_\-memory\-\_\-in\-\_\-kb@{get\-\_\-peak\-\_\-memory\-\_\-in\-\_\-kb}!utilities.cc@{utilities.\-cc}}
+\subsubsection[{get\-\_\-peak\-\_\-memory\-\_\-in\-\_\-kb}]{\setlength{\rightskip}{0pt plus 5cm}int get\-\_\-peak\-\_\-memory\-\_\-in\-\_\-kb (
+\begin{DoxyParamCaption}
+\item[{bool}]{use\-\_\-buffered\-\_\-input}
+\end{DoxyParamCaption}
+)}}\label{utilities_8cc_ad6e89b0db19bdac1afc50dcaf196d27d}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{utilities_8cc_ad6e89b0db19bdac1afc50dcaf196d27d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{utilities_8cc_a400fcf5489d38525ac1e175137fe15df}{\index{utilities.\-cc@{utilities.\-cc}!get\-\_\-process\-\_\-id@{get\-\_\-process\-\_\-id}}
+\index{get\-\_\-process\-\_\-id@{get\-\_\-process\-\_\-id}!utilities.cc@{utilities.\-cc}}
+\subsubsection[{get\-\_\-process\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}int get\-\_\-process\-\_\-id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{utilities_8cc_a400fcf5489d38525ac1e175137fe15df}
+\hypertarget{utilities_8cc_abcff609cab6d7097a972a57b3004e315}{\index{utilities.\-cc@{utilities.\-cc}!is\-\_\-product\-\_\-within\-\_\-limit@{is\-\_\-product\-\_\-within\-\_\-limit}}
+\index{is\-\_\-product\-\_\-within\-\_\-limit@{is\-\_\-product\-\_\-within\-\_\-limit}!utilities.cc@{utilities.\-cc}}
+\subsubsection[{is\-\_\-product\-\_\-within\-\_\-limit}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-\_\-product\-\_\-within\-\_\-limit (
+\begin{DoxyParamCaption}
+\item[{int}]{factor1, }
+\item[{int}]{factor2, }
+\item[{int}]{limit}
+\end{DoxyParamCaption}
+)}}\label{utilities_8cc_abcff609cab6d7097a972a57b3004e315}
+\hypertarget{utilities_8cc_ac59c29db58afedea773b054efe321804}{\index{utilities.\-cc@{utilities.\-cc}!print\-\_\-peak\-\_\-memory@{print\-\_\-peak\-\_\-memory}}
+\index{print\-\_\-peak\-\_\-memory@{print\-\_\-peak\-\_\-memory}!utilities.cc@{utilities.\-cc}}
+\subsubsection[{print\-\_\-peak\-\_\-memory}]{\setlength{\rightskip}{0pt plus 5cm}void print\-\_\-peak\-\_\-memory (
+\begin{DoxyParamCaption}
+\item[{bool}]{use\-\_\-buffered\-\_\-input}
+\end{DoxyParamCaption}
+)}}\label{utilities_8cc_ac59c29db58afedea773b054efe321804}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utilities_8cc_ac59c29db58afedea773b054efe321804_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{utilities_8cc_aa6f1cf33faa5cabaf6cb5f3033130a2b}{\index{utilities.\-cc@{utilities.\-cc}!register\-\_\-event\-\_\-handlers@{register\-\_\-event\-\_\-handlers}}
+\index{register\-\_\-event\-\_\-handlers@{register\-\_\-event\-\_\-handlers}!utilities.cc@{utilities.\-cc}}
+\subsubsection[{register\-\_\-event\-\_\-handlers}]{\setlength{\rightskip}{0pt plus 5cm}void register\-\_\-event\-\_\-handlers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{utilities_8cc_aa6f1cf33faa5cabaf6cb5f3033130a2b}

@@ -1,0 +1,6 @@
+<map id="SearchEngine::check_goal_and_set_plan" name="SearchEngine::check_goal_and_set_plan">
+<area shape="rect" id="node2" href="$globals_8cc.html#a2de7ebadf14705b7979e647a6271fef3" title="test_goal" alt="" coords="248,5,323,32"/>
+<area shape="rect" id="node3" href="$classSearchSpace.html#a51ba7bde5c15acbceb7ed22e81ca7e05" title="SearchSpace::trace_path" alt="" coords="201,56,370,83"/>
+<area shape="rect" id="node5" href="$classSearchEngine.html#aa45b79c8fca7258b59f30545525dcdb5" title="SearchEngine::set_plan" alt="" coords="205,107,365,133"/>
+<area shape="rect" id="node4" href="$classStateRegistry.html#ae2f555f6a879115edb9e0045169730a6" title="StateRegistry::lookup\l_state" alt="" coords="419,49,567,90"/>
+</map>

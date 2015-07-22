@@ -1,0 +1,122 @@
+\hypertarget{classCGCache}{\section{C\-G\-Cache Class Reference}
+\label{classCGCache}\index{C\-G\-Cache@{C\-G\-Cache}}
+}
+
+
+{\ttfamily \#include $<$cg\-\_\-cache.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCGCache_a96588e34b4c394b39462644711a55bdb}{C\-G\-Cache} ()
+\item 
+\hyperlink{classCGCache_a84abfac03826660e8b152f3e3b3e5dfb}{$\sim$\-C\-G\-Cache} ()
+\item 
+bool \hyperlink{classCGCache_a58802d9e1f1dad72bc2b15b89535f196}{is\-\_\-cached} (int var) const 
+\item 
+int \hyperlink{classCGCache_a54540ea4a44f5a2c29caa8883488a84d}{lookup} (int var, const \hyperlink{classGlobalState}{Global\-State} \&state, int from\-\_\-val, int to\-\_\-val) const 
+\item 
+void \hyperlink{classCGCache_a7677ea7457943d4081ae022ec58d5351}{store} (int var, const \hyperlink{classGlobalState}{Global\-State} \&state, int from\-\_\-val, int to\-\_\-val, int cost)
+\item 
+\hyperlink{structValueTransitionLabel}{Value\-Transition\-Label} $\ast$ \hyperlink{classCGCache_a5077434a3ab7427d9e0b13e01433be23}{lookup\-\_\-helpful\-\_\-transition} (int var, const \hyperlink{classGlobalState}{Global\-State} \&state, int from\-\_\-val, int to\-\_\-val) const 
+\item 
+void \hyperlink{classCGCache_ab9b77e6216328b13483854e6e68dc328}{store\-\_\-helpful\-\_\-transition} (int var, const \hyperlink{classGlobalState}{Global\-State} \&state, int from\-\_\-val, int to\-\_\-val, \hyperlink{structValueTransitionLabel}{Value\-Transition\-Label} $\ast$helpful\-\_\-transition)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{classCGCache_a171dd509e27a99afba696afe0c680b6d}{N\-O\-T\-\_\-\-C\-O\-M\-P\-U\-T\-E\-D} = -\/2
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCGCache_a96588e34b4c394b39462644711a55bdb}{\index{C\-G\-Cache@{C\-G\-Cache}!C\-G\-Cache@{C\-G\-Cache}}
+\index{C\-G\-Cache@{C\-G\-Cache}!CGCache@{C\-G\-Cache}}
+\subsubsection[{C\-G\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}C\-G\-Cache\-::\-C\-G\-Cache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCGCache_a96588e34b4c394b39462644711a55bdb}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCGCache_a96588e34b4c394b39462644711a55bdb_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classCGCache_a84abfac03826660e8b152f3e3b3e5dfb}{\index{C\-G\-Cache@{C\-G\-Cache}!$\sim$\-C\-G\-Cache@{$\sim$\-C\-G\-Cache}}
+\index{$\sim$\-C\-G\-Cache@{$\sim$\-C\-G\-Cache}!CGCache@{C\-G\-Cache}}
+\subsubsection[{$\sim$\-C\-G\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}C\-G\-Cache\-::$\sim$\-C\-G\-Cache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCGCache_a84abfac03826660e8b152f3e3b3e5dfb}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCGCache_a58802d9e1f1dad72bc2b15b89535f196}{\index{C\-G\-Cache@{C\-G\-Cache}!is\-\_\-cached@{is\-\_\-cached}}
+\index{is\-\_\-cached@{is\-\_\-cached}!CGCache@{C\-G\-Cache}}
+\subsubsection[{is\-\_\-cached}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-G\-Cache\-::is\-\_\-cached (
+\begin{DoxyParamCaption}
+\item[{int}]{var}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCGCache_a58802d9e1f1dad72bc2b15b89535f196}
+\hypertarget{classCGCache_a54540ea4a44f5a2c29caa8883488a84d}{\index{C\-G\-Cache@{C\-G\-Cache}!lookup@{lookup}}
+\index{lookup@{lookup}!CGCache@{C\-G\-Cache}}
+\subsubsection[{lookup}]{\setlength{\rightskip}{0pt plus 5cm}int C\-G\-Cache\-::lookup (
+\begin{DoxyParamCaption}
+\item[{int}]{var, }
+\item[{const {\bf Global\-State} \&}]{state, }
+\item[{int}]{from\-\_\-val, }
+\item[{int}]{to\-\_\-val}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCGCache_a54540ea4a44f5a2c29caa8883488a84d}
+\hypertarget{classCGCache_a5077434a3ab7427d9e0b13e01433be23}{\index{C\-G\-Cache@{C\-G\-Cache}!lookup\-\_\-helpful\-\_\-transition@{lookup\-\_\-helpful\-\_\-transition}}
+\index{lookup\-\_\-helpful\-\_\-transition@{lookup\-\_\-helpful\-\_\-transition}!CGCache@{C\-G\-Cache}}
+\subsubsection[{lookup\-\_\-helpful\-\_\-transition}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Value\-Transition\-Label}$\ast$ C\-G\-Cache\-::lookup\-\_\-helpful\-\_\-transition (
+\begin{DoxyParamCaption}
+\item[{int}]{var, }
+\item[{const {\bf Global\-State} \&}]{state, }
+\item[{int}]{from\-\_\-val, }
+\item[{int}]{to\-\_\-val}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCGCache_a5077434a3ab7427d9e0b13e01433be23}
+\hypertarget{classCGCache_a7677ea7457943d4081ae022ec58d5351}{\index{C\-G\-Cache@{C\-G\-Cache}!store@{store}}
+\index{store@{store}!CGCache@{C\-G\-Cache}}
+\subsubsection[{store}]{\setlength{\rightskip}{0pt plus 5cm}void C\-G\-Cache\-::store (
+\begin{DoxyParamCaption}
+\item[{int}]{var, }
+\item[{const {\bf Global\-State} \&}]{state, }
+\item[{int}]{from\-\_\-val, }
+\item[{int}]{to\-\_\-val, }
+\item[{int}]{cost}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCGCache_a7677ea7457943d4081ae022ec58d5351}
+\hypertarget{classCGCache_ab9b77e6216328b13483854e6e68dc328}{\index{C\-G\-Cache@{C\-G\-Cache}!store\-\_\-helpful\-\_\-transition@{store\-\_\-helpful\-\_\-transition}}
+\index{store\-\_\-helpful\-\_\-transition@{store\-\_\-helpful\-\_\-transition}!CGCache@{C\-G\-Cache}}
+\subsubsection[{store\-\_\-helpful\-\_\-transition}]{\setlength{\rightskip}{0pt plus 5cm}void C\-G\-Cache\-::store\-\_\-helpful\-\_\-transition (
+\begin{DoxyParamCaption}
+\item[{int}]{var, }
+\item[{const {\bf Global\-State} \&}]{state, }
+\item[{int}]{from\-\_\-val, }
+\item[{int}]{to\-\_\-val, }
+\item[{{\bf Value\-Transition\-Label} $\ast$}]{helpful\-\_\-transition}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCGCache_ab9b77e6216328b13483854e6e68dc328}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCGCache_a171dd509e27a99afba696afe0c680b6d}{\index{C\-G\-Cache@{C\-G\-Cache}!N\-O\-T\-\_\-\-C\-O\-M\-P\-U\-T\-E\-D@{N\-O\-T\-\_\-\-C\-O\-M\-P\-U\-T\-E\-D}}
+\index{N\-O\-T\-\_\-\-C\-O\-M\-P\-U\-T\-E\-D@{N\-O\-T\-\_\-\-C\-O\-M\-P\-U\-T\-E\-D}!CGCache@{C\-G\-Cache}}
+\subsubsection[{N\-O\-T\-\_\-\-C\-O\-M\-P\-U\-T\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}const int C\-G\-Cache\-::\-N\-O\-T\-\_\-\-C\-O\-M\-P\-U\-T\-E\-D = -\/2\hspace{0.3cm}{\ttfamily [static]}}}\label{classCGCache_a171dd509e27a99afba696afe0c680b6d}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{cg__cache_8h}{cg\-\_\-cache.\-h}\item 
+\hyperlink{cg__cache_8cc}{cg\-\_\-cache.\-cc}\end{DoxyCompactItemize}

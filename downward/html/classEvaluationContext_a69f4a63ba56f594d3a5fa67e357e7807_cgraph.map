@@ -1,0 +1,7 @@
+<map id="EvaluationContext::get_preferred_operators" name="EvaluationContext::get_preferred_operators">
+<area shape="rect" id="node2" href="$classEvaluationContext.html#a74c1d7b061b2bb69a481faa4abac62c0" title="EvaluationContext::\lget_result" alt="" coords="218,70,355,111"/>
+<area shape="rect" id="node6" href="$classEvaluationResult.html#ac4063d510fb0ef6e2e7085f1e9c37ce9" title="EvaluationResult::get\l_preferred_operators" alt="" coords="213,135,360,177"/>
+<area shape="rect" id="node3" href="$classEvaluationResult.html#ad56b6a8dbff00673aedb984fbe6f72a5" title="EvaluationResult::is\l_uninitialized" alt="" coords="425,5,564,46"/>
+<area shape="rect" id="node4" href="$classScalarEvaluator.html#a8ffb99b0f8f63e34183a3245a247a9ec" title="ScalarEvaluator::compute\l_result" alt="" coords="409,70,581,111"/>
+<area shape="rect" id="node5" href="$classSearchStatistics.html#a57f71a965c7693054ec18ba1b25a557f" title="SearchStatistics::inc\l_evaluations" alt="" coords="423,135,566,177"/>
+</map>

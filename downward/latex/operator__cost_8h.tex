@@ -1,0 +1,110 @@
+\hypertarget{operator__cost_8h}{\section{operator\-\_\-cost.\-h File Reference}
+\label{operator__cost_8h}\index{operator\-\_\-cost.\-h@{operator\-\_\-cost.\-h}}
+}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{operator__cost_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{operator__cost_8h_aea97a5a2fbe3b57faf505007e38f5de9}{Operator\-Cost} \{ \hyperlink{operator__cost_8h_aea97a5a2fbe3b57faf505007e38f5de9a50d1448013c6f17125caee18aa418af7}{N\-O\-R\-M\-A\-L} = 0, 
+\hyperlink{operator__cost_8h_aea97a5a2fbe3b57faf505007e38f5de9a7a725f13af144bdef532d0389ba75e0d}{O\-N\-E} = 1, 
+\hyperlink{operator__cost_8h_aea97a5a2fbe3b57faf505007e38f5de9a6b336d7760c7fde803cbbf4751e5dfe6}{P\-L\-U\-S\-O\-N\-E} = 2, 
+\hyperlink{operator__cost_8h_aea97a5a2fbe3b57faf505007e38f5de9a5551329e152736e1bcd8e8be62fabee8}{M\-A\-X\-\_\-\-O\-P\-E\-R\-A\-T\-O\-R\-\_\-\-C\-O\-S\-T}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{operator__cost_8h_adaa34fd9ebd06eaf08ea12b09344c6eb}{get\-\_\-adjusted\-\_\-action\-\_\-cost} (int cost, \hyperlink{operator__cost_8h_aea97a5a2fbe3b57faf505007e38f5de9}{Operator\-Cost} cost\-\_\-type)
+\item 
+int \hyperlink{operator__cost_8h_ad7022fcca0fca6b9c8755a73518a0258}{get\-\_\-adjusted\-\_\-action\-\_\-cost} (const \hyperlink{classGlobalOperator}{Global\-Operator} \&op, \hyperlink{operator__cost_8h_aea97a5a2fbe3b57faf505007e38f5de9}{Operator\-Cost} cost\-\_\-type)
+\item 
+void \hyperlink{operator__cost_8h_aab08718df4fa9ae2d2265d37c8ea0151}{add\-\_\-cost\-\_\-type\-\_\-option\-\_\-to\-\_\-parser} (\hyperlink{classOptionParser}{Option\-Parser} \&parser)
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{operator__cost_8h_aea97a5a2fbe3b57faf505007e38f5de9}{\index{operator\-\_\-cost.\-h@{operator\-\_\-cost.\-h}!Operator\-Cost@{Operator\-Cost}}
+\index{Operator\-Cost@{Operator\-Cost}!operator_cost.h@{operator\-\_\-cost.\-h}}
+\subsubsection[{Operator\-Cost}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Operator\-Cost}}}\label{operator__cost_8h_aea97a5a2fbe3b57faf505007e38f5de9}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{N\-O\-R\-M\-A\-L@{N\-O\-R\-M\-A\-L}!operator\-\_\-cost.\-h@{operator\-\_\-cost.\-h}}\index{operator\-\_\-cost.\-h@{operator\-\_\-cost.\-h}!N\-O\-R\-M\-A\-L@{N\-O\-R\-M\-A\-L}}\item[{\em 
+\hypertarget{operator__cost_8h_aea97a5a2fbe3b57faf505007e38f5de9a50d1448013c6f17125caee18aa418af7}{N\-O\-R\-M\-A\-L}\label{operator__cost_8h_aea97a5a2fbe3b57faf505007e38f5de9a50d1448013c6f17125caee18aa418af7}
+}]\index{O\-N\-E@{O\-N\-E}!operator\-\_\-cost.\-h@{operator\-\_\-cost.\-h}}\index{operator\-\_\-cost.\-h@{operator\-\_\-cost.\-h}!O\-N\-E@{O\-N\-E}}\item[{\em 
+\hypertarget{operator__cost_8h_aea97a5a2fbe3b57faf505007e38f5de9a7a725f13af144bdef532d0389ba75e0d}{O\-N\-E}\label{operator__cost_8h_aea97a5a2fbe3b57faf505007e38f5de9a7a725f13af144bdef532d0389ba75e0d}
+}]\index{P\-L\-U\-S\-O\-N\-E@{P\-L\-U\-S\-O\-N\-E}!operator\-\_\-cost.\-h@{operator\-\_\-cost.\-h}}\index{operator\-\_\-cost.\-h@{operator\-\_\-cost.\-h}!P\-L\-U\-S\-O\-N\-E@{P\-L\-U\-S\-O\-N\-E}}\item[{\em 
+\hypertarget{operator__cost_8h_aea97a5a2fbe3b57faf505007e38f5de9a6b336d7760c7fde803cbbf4751e5dfe6}{P\-L\-U\-S\-O\-N\-E}\label{operator__cost_8h_aea97a5a2fbe3b57faf505007e38f5de9a6b336d7760c7fde803cbbf4751e5dfe6}
+}]\index{M\-A\-X\-\_\-\-O\-P\-E\-R\-A\-T\-O\-R\-\_\-\-C\-O\-S\-T@{M\-A\-X\-\_\-\-O\-P\-E\-R\-A\-T\-O\-R\-\_\-\-C\-O\-S\-T}!operator\-\_\-cost.\-h@{operator\-\_\-cost.\-h}}\index{operator\-\_\-cost.\-h@{operator\-\_\-cost.\-h}!M\-A\-X\-\_\-\-O\-P\-E\-R\-A\-T\-O\-R\-\_\-\-C\-O\-S\-T@{M\-A\-X\-\_\-\-O\-P\-E\-R\-A\-T\-O\-R\-\_\-\-C\-O\-S\-T}}\item[{\em 
+\hypertarget{operator__cost_8h_aea97a5a2fbe3b57faf505007e38f5de9a5551329e152736e1bcd8e8be62fabee8}{M\-A\-X\-\_\-\-O\-P\-E\-R\-A\-T\-O\-R\-\_\-\-C\-O\-S\-T}\label{operator__cost_8h_aea97a5a2fbe3b57faf505007e38f5de9a5551329e152736e1bcd8e8be62fabee8}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{operator__cost_8h_aab08718df4fa9ae2d2265d37c8ea0151}{\index{operator\-\_\-cost.\-h@{operator\-\_\-cost.\-h}!add\-\_\-cost\-\_\-type\-\_\-option\-\_\-to\-\_\-parser@{add\-\_\-cost\-\_\-type\-\_\-option\-\_\-to\-\_\-parser}}
+\index{add\-\_\-cost\-\_\-type\-\_\-option\-\_\-to\-\_\-parser@{add\-\_\-cost\-\_\-type\-\_\-option\-\_\-to\-\_\-parser}!operator_cost.h@{operator\-\_\-cost.\-h}}
+\subsubsection[{add\-\_\-cost\-\_\-type\-\_\-option\-\_\-to\-\_\-parser}]{\setlength{\rightskip}{0pt plus 5cm}void add\-\_\-cost\-\_\-type\-\_\-option\-\_\-to\-\_\-parser (
+\begin{DoxyParamCaption}
+\item[{{\bf Option\-Parser} \&}]{parser}
+\end{DoxyParamCaption}
+)}}\label{operator__cost_8h_aab08718df4fa9ae2d2265d37c8ea0151}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{operator__cost_8h_aab08718df4fa9ae2d2265d37c8ea0151_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{operator__cost_8h_adaa34fd9ebd06eaf08ea12b09344c6eb}{\index{operator\-\_\-cost.\-h@{operator\-\_\-cost.\-h}!get\-\_\-adjusted\-\_\-action\-\_\-cost@{get\-\_\-adjusted\-\_\-action\-\_\-cost}}
+\index{get\-\_\-adjusted\-\_\-action\-\_\-cost@{get\-\_\-adjusted\-\_\-action\-\_\-cost}!operator_cost.h@{operator\-\_\-cost.\-h}}
+\subsubsection[{get\-\_\-adjusted\-\_\-action\-\_\-cost}]{\setlength{\rightskip}{0pt plus 5cm}int get\-\_\-adjusted\-\_\-action\-\_\-cost (
+\begin{DoxyParamCaption}
+\item[{int}]{cost, }
+\item[{{\bf Operator\-Cost}}]{cost\-\_\-type}
+\end{DoxyParamCaption}
+)}}\label{operator__cost_8h_adaa34fd9ebd06eaf08ea12b09344c6eb}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{operator__cost_8h_adaa34fd9ebd06eaf08ea12b09344c6eb_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{operator__cost_8h_ad7022fcca0fca6b9c8755a73518a0258}{\index{operator\-\_\-cost.\-h@{operator\-\_\-cost.\-h}!get\-\_\-adjusted\-\_\-action\-\_\-cost@{get\-\_\-adjusted\-\_\-action\-\_\-cost}}
+\index{get\-\_\-adjusted\-\_\-action\-\_\-cost@{get\-\_\-adjusted\-\_\-action\-\_\-cost}!operator_cost.h@{operator\-\_\-cost.\-h}}
+\subsubsection[{get\-\_\-adjusted\-\_\-action\-\_\-cost}]{\setlength{\rightskip}{0pt plus 5cm}int get\-\_\-adjusted\-\_\-action\-\_\-cost (
+\begin{DoxyParamCaption}
+\item[{const {\bf Global\-Operator} \&}]{op, }
+\item[{{\bf Operator\-Cost}}]{cost\-\_\-type}
+\end{DoxyParamCaption}
+)}}\label{operator__cost_8h_ad7022fcca0fca6b9c8755a73518a0258}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{operator__cost_8h_ad7022fcca0fca6b9c8755a73518a0258_cgraph}
+\end{center}
+\end{figure}
+
+

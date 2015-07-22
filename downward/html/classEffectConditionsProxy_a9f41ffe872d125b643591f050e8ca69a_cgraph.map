@@ -1,0 +1,5 @@
+<map id="EffectConditionsProxy::operator[]" name="EffectConditionsProxy::operator[]">
+<area shape="rect" id="node2" href="$classEffectConditionsProxy.html#af447849d62079e622be08a68df7dab14" title="EffectConditionsProxy\l::size" alt="" coords="222,5,375,46"/>
+<area shape="rect" id="node4" href="$classAbstractTask.html#a08f0a9248a99ccd0a1fdee940e0c0c4e" title="AbstractTask::get_operator\l_effect_condition" alt="" coords="209,70,389,111"/>
+<area shape="rect" id="node3" href="$classAbstractTask.html#a41642ad827682428ba1c099ecbde18ae" title="AbstractTask::get_num\l_operator_effect_conditions" alt="" coords="438,5,621,46"/>
+</map>

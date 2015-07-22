@@ -1,0 +1,352 @@
+\hypertarget{globals_8h}{\section{globals.\-h File Reference}
+\label{globals_8h}\index{globals.\-h@{globals.\-h}}
+}
+{\ttfamily \#include $<$iosfwd$>$}\\*
+{\ttfamily \#include $<$memory$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+Include dependency graph for globals.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{globals_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{globals_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{globals_8h_a2de7ebadf14705b7979e647a6271fef3}{test\-\_\-goal} (const \hyperlink{classGlobalState}{Global\-State} \&state)
+\item 
+void \hyperlink{globals_8h_a7f90b8430bf6b3429395742cfc89522b}{save\-\_\-plan} (const std\-::vector$<$ const \hyperlink{classGlobalOperator}{Global\-Operator} $\ast$ $>$ \&plan, bool generates\-\_\-multiple\-\_\-plan\-\_\-files=false)
+\item 
+int \hyperlink{globals_8h_ac1ab014b675ba9cd517d9a2f034e78de}{calculate\-\_\-plan\-\_\-cost} (const std\-::vector$<$ const \hyperlink{classGlobalOperator}{Global\-Operator} $\ast$ $>$ \&plan)
+\item 
+void \hyperlink{globals_8h_a92e5ba76f889bc12682580780504c4c7}{read\-\_\-everything} (std\-::istream \&in)
+\item 
+void \hyperlink{globals_8h_a703e05369045e63fbf550a60379dfb56}{dump\-\_\-everything} ()
+\item 
+bool \hyperlink{globals_8h_a5a7097355229b8b7cf2239c1d6f7eff3}{is\-\_\-unit\-\_\-cost} ()
+\item 
+bool \hyperlink{globals_8h_ad0b203d5c2a31a3e811c5d3c171980d8}{has\-\_\-axioms} ()
+\item 
+void \hyperlink{globals_8h_a6144f63ac9dc461a22e7b16bbf228f33}{verify\-\_\-no\-\_\-axioms} ()
+\item 
+bool \hyperlink{globals_8h_a3554f2b40569f0d5827b275967c7ac16}{has\-\_\-conditional\-\_\-effects} ()
+\item 
+void \hyperlink{globals_8h_a293e0e3504976527abc14bbbf892ba40}{verify\-\_\-no\-\_\-conditional\-\_\-effects} ()
+\item 
+void \hyperlink{globals_8h_ac8b586ff0d2d86ffdc28e4e911491fa2}{verify\-\_\-no\-\_\-axioms\-\_\-no\-\_\-conditional\-\_\-effects} ()
+\item 
+void \hyperlink{globals_8h_ae72acd7dedc5f1f1d9696d81be0464e6}{check\-\_\-magic} (std\-::istream \&in, std\-::string magic)
+\item 
+bool \hyperlink{globals_8h_a791858f2e209248510a5290c534b22e9}{are\-\_\-mutex} (const std\-::pair$<$ int, int $>$ \&a, const std\-::pair$<$ int, int $>$ \&b)
+\item 
+const \hyperlink{classGlobalState}{Global\-State} \& \hyperlink{globals_8h_aaf27ff6b3348217d127cd0f43a4d6b06}{g\-\_\-initial\-\_\-state} ()
+\item 
+const std\-::shared\-\_\-ptr\\*
+$<$ \hyperlink{classAbstractTask}{Abstract\-Task} $>$ \hyperlink{globals_8h_a49a3f61c57f7eb5f2426b47ba4879150}{g\-\_\-root\-\_\-task} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{globals_8h_a0fe74e7f6ce591fcffcaa333d768a8e7}{g\-\_\-use\-\_\-metric}
+\item 
+int \hyperlink{globals_8h_a0cffb0945ee4a5d1beee6c3e8af71f0f}{g\-\_\-min\-\_\-action\-\_\-cost}
+\item 
+int \hyperlink{globals_8h_a0a58480bd3522c4ab7cb2db178c71386}{g\-\_\-max\-\_\-action\-\_\-cost}
+\item 
+std\-::vector$<$ std\-::string $>$ \hyperlink{globals_8h_ac652815da9b6f5c37f1e399c8c8a6917}{g\-\_\-variable\-\_\-name}
+\item 
+std\-::vector$<$ int $>$ \hyperlink{globals_8h_a6c3e19343670e65be1628e83f0e9303e}{g\-\_\-variable\-\_\-domain}
+\item 
+std\-::vector$<$ std\-::vector\\*
+$<$ std\-::string $>$ $>$ \hyperlink{globals_8h_ab6c74ab527e708c4c93265264961afdf}{g\-\_\-fact\-\_\-names}
+\item 
+std\-::vector$<$ int $>$ \hyperlink{globals_8h_a6929e5bb94622ca9607304dfdd438add}{g\-\_\-axiom\-\_\-layers}
+\item 
+std\-::vector$<$ int $>$ \hyperlink{globals_8h_a1af9840f48cdef7cec469205ca395ad5}{g\-\_\-default\-\_\-axiom\-\_\-values}
+\item 
+\hyperlink{classIntPacker}{Int\-Packer} $\ast$ \hyperlink{globals_8h_af30f8aecf076b45f6257380668a047dd}{g\-\_\-state\-\_\-packer}
+\item 
+std\-::vector$<$ int $>$ \hyperlink{globals_8h_a241cf9130f13056dead5e81d278e2504}{g\-\_\-initial\-\_\-state\-\_\-data}
+\item 
+std\-::vector$<$ std\-::pair$<$ int, \\*
+int $>$ $>$ \hyperlink{globals_8h_a1bf5892616b776feeb278df2f91180bd}{g\-\_\-goal}
+\item 
+std\-::vector$<$ \hyperlink{classGlobalOperator}{Global\-Operator} $>$ \hyperlink{globals_8h_a36f4ee06706fc4687b0c1f9484685300}{g\-\_\-operators}
+\item 
+std\-::vector$<$ \hyperlink{classGlobalOperator}{Global\-Operator} $>$ \hyperlink{globals_8h_a645a691e31892f4349d861d12bf78fc3}{g\-\_\-axioms}
+\item 
+\hyperlink{classAxiomEvaluator}{Axiom\-Evaluator} $\ast$ \hyperlink{globals_8h_aa703cd713aeaa0e4d07314a87c612cfe}{g\-\_\-axiom\-\_\-evaluator}
+\item 
+\hyperlink{classSuccessorGenerator}{Successor\-Generator} $\ast$ \hyperlink{globals_8h_a587243fcead7eb312521578666069ba2}{g\-\_\-successor\-\_\-generator}
+\item 
+std\-::vector\\*
+$<$ \hyperlink{classDomainTransitionGraph}{Domain\-Transition\-Graph} $\ast$ $>$ \hyperlink{globals_8h_a5ad07161d00aa01f382a54d1e9058d0d}{g\-\_\-transition\-\_\-graphs}
+\item 
+Legacy\-Causal\-Graph $\ast$ \hyperlink{globals_8h_a91de17ca0e30c5019ce7f0ead8415aed}{g\-\_\-legacy\-\_\-causal\-\_\-graph}
+\item 
+\hyperlink{classTimer}{Timer} \hyperlink{globals_8h_af56bfc120096c51d4a165347c8f3a0b2}{g\-\_\-timer}
+\item 
+std\-::string \hyperlink{globals_8h_af01d55d0790c9d8281829313eaee4b15}{g\-\_\-plan\-\_\-filename}
+\item 
+int \hyperlink{globals_8h_adfc08f9194d1be82a25384fe406e235f}{g\-\_\-num\-\_\-previously\-\_\-generated\-\_\-plans}
+\item 
+bool \hyperlink{globals_8h_aa161789a1fe0f438ed10dfc14d4567de}{g\-\_\-is\-\_\-part\-\_\-of\-\_\-anytime\-\_\-portfolio}
+\item 
+\hyperlink{classRandomNumberGenerator}{Random\-Number\-Generator} \hyperlink{globals_8h_a007d468455d83627770b55135c1f46fc}{g\-\_\-rng}
+\item 
+\hyperlink{classStateRegistry}{State\-Registry} $\ast$ \hyperlink{globals_8h_af4a8e1df884273a697d14398f3bb53c9}{g\-\_\-state\-\_\-registry}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{globals_8h_a791858f2e209248510a5290c534b22e9}{\index{globals.\-h@{globals.\-h}!are\-\_\-mutex@{are\-\_\-mutex}}
+\index{are\-\_\-mutex@{are\-\_\-mutex}!globals.h@{globals.\-h}}
+\subsubsection[{are\-\_\-mutex}]{\setlength{\rightskip}{0pt plus 5cm}bool are\-\_\-mutex (
+\begin{DoxyParamCaption}
+\item[{const std\-::pair$<$ int, int $>$ \&}]{a, }
+\item[{const std\-::pair$<$ int, int $>$ \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{globals_8h_a791858f2e209248510a5290c534b22e9}
+\hypertarget{globals_8h_ac1ab014b675ba9cd517d9a2f034e78de}{\index{globals.\-h@{globals.\-h}!calculate\-\_\-plan\-\_\-cost@{calculate\-\_\-plan\-\_\-cost}}
+\index{calculate\-\_\-plan\-\_\-cost@{calculate\-\_\-plan\-\_\-cost}!globals.h@{globals.\-h}}
+\subsubsection[{calculate\-\_\-plan\-\_\-cost}]{\setlength{\rightskip}{0pt plus 5cm}int calculate\-\_\-plan\-\_\-cost (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ const {\bf Global\-Operator} $\ast$ $>$ \&}]{plan}
+\end{DoxyParamCaption}
+)}}\label{globals_8h_ac1ab014b675ba9cd517d9a2f034e78de}
+\hypertarget{globals_8h_ae72acd7dedc5f1f1d9696d81be0464e6}{\index{globals.\-h@{globals.\-h}!check\-\_\-magic@{check\-\_\-magic}}
+\index{check\-\_\-magic@{check\-\_\-magic}!globals.h@{globals.\-h}}
+\subsubsection[{check\-\_\-magic}]{\setlength{\rightskip}{0pt plus 5cm}void check\-\_\-magic (
+\begin{DoxyParamCaption}
+\item[{std\-::istream \&}]{in, }
+\item[{std\-::string}]{magic}
+\end{DoxyParamCaption}
+)}}\label{globals_8h_ae72acd7dedc5f1f1d9696d81be0464e6}
+\hypertarget{globals_8h_a703e05369045e63fbf550a60379dfb56}{\index{globals.\-h@{globals.\-h}!dump\-\_\-everything@{dump\-\_\-everything}}
+\index{dump\-\_\-everything@{dump\-\_\-everything}!globals.h@{globals.\-h}}
+\subsubsection[{dump\-\_\-everything}]{\setlength{\rightskip}{0pt plus 5cm}void dump\-\_\-everything (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{globals_8h_a703e05369045e63fbf550a60379dfb56}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{globals_8h_a703e05369045e63fbf550a60379dfb56_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{globals_8h_aaf27ff6b3348217d127cd0f43a4d6b06}{\index{globals.\-h@{globals.\-h}!g\-\_\-initial\-\_\-state@{g\-\_\-initial\-\_\-state}}
+\index{g\-\_\-initial\-\_\-state@{g\-\_\-initial\-\_\-state}!globals.h@{globals.\-h}}
+\subsubsection[{g\-\_\-initial\-\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Global\-State}\& g\-\_\-initial\-\_\-state (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{globals_8h_aaf27ff6b3348217d127cd0f43a4d6b06}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{globals_8h_aaf27ff6b3348217d127cd0f43a4d6b06_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{globals_8h_a49a3f61c57f7eb5f2426b47ba4879150}{\index{globals.\-h@{globals.\-h}!g\-\_\-root\-\_\-task@{g\-\_\-root\-\_\-task}}
+\index{g\-\_\-root\-\_\-task@{g\-\_\-root\-\_\-task}!globals.h@{globals.\-h}}
+\subsubsection[{g\-\_\-root\-\_\-task}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::shared\-\_\-ptr$<${\bf Abstract\-Task}$>$ g\-\_\-root\-\_\-task (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{globals_8h_a49a3f61c57f7eb5f2426b47ba4879150}
+\hypertarget{globals_8h_ad0b203d5c2a31a3e811c5d3c171980d8}{\index{globals.\-h@{globals.\-h}!has\-\_\-axioms@{has\-\_\-axioms}}
+\index{has\-\_\-axioms@{has\-\_\-axioms}!globals.h@{globals.\-h}}
+\subsubsection[{has\-\_\-axioms}]{\setlength{\rightskip}{0pt plus 5cm}bool has\-\_\-axioms (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{globals_8h_ad0b203d5c2a31a3e811c5d3c171980d8}
+\hypertarget{globals_8h_a3554f2b40569f0d5827b275967c7ac16}{\index{globals.\-h@{globals.\-h}!has\-\_\-conditional\-\_\-effects@{has\-\_\-conditional\-\_\-effects}}
+\index{has\-\_\-conditional\-\_\-effects@{has\-\_\-conditional\-\_\-effects}!globals.h@{globals.\-h}}
+\subsubsection[{has\-\_\-conditional\-\_\-effects}]{\setlength{\rightskip}{0pt plus 5cm}bool has\-\_\-conditional\-\_\-effects (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{globals_8h_a3554f2b40569f0d5827b275967c7ac16}
+\hypertarget{globals_8h_a5a7097355229b8b7cf2239c1d6f7eff3}{\index{globals.\-h@{globals.\-h}!is\-\_\-unit\-\_\-cost@{is\-\_\-unit\-\_\-cost}}
+\index{is\-\_\-unit\-\_\-cost@{is\-\_\-unit\-\_\-cost}!globals.h@{globals.\-h}}
+\subsubsection[{is\-\_\-unit\-\_\-cost}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-\_\-unit\-\_\-cost (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{globals_8h_a5a7097355229b8b7cf2239c1d6f7eff3}
+\hypertarget{globals_8h_a92e5ba76f889bc12682580780504c4c7}{\index{globals.\-h@{globals.\-h}!read\-\_\-everything@{read\-\_\-everything}}
+\index{read\-\_\-everything@{read\-\_\-everything}!globals.h@{globals.\-h}}
+\subsubsection[{read\-\_\-everything}]{\setlength{\rightskip}{0pt plus 5cm}void read\-\_\-everything (
+\begin{DoxyParamCaption}
+\item[{std\-::istream \&}]{in}
+\end{DoxyParamCaption}
+)}}\label{globals_8h_a92e5ba76f889bc12682580780504c4c7}
+\hypertarget{globals_8h_a7f90b8430bf6b3429395742cfc89522b}{\index{globals.\-h@{globals.\-h}!save\-\_\-plan@{save\-\_\-plan}}
+\index{save\-\_\-plan@{save\-\_\-plan}!globals.h@{globals.\-h}}
+\subsubsection[{save\-\_\-plan}]{\setlength{\rightskip}{0pt plus 5cm}void save\-\_\-plan (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ const {\bf Global\-Operator} $\ast$ $>$ \&}]{plan, }
+\item[{bool}]{generates\-\_\-multiple\-\_\-plan\-\_\-files = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{globals_8h_a7f90b8430bf6b3429395742cfc89522b}
+\hypertarget{globals_8h_a2de7ebadf14705b7979e647a6271fef3}{\index{globals.\-h@{globals.\-h}!test\-\_\-goal@{test\-\_\-goal}}
+\index{test\-\_\-goal@{test\-\_\-goal}!globals.h@{globals.\-h}}
+\subsubsection[{test\-\_\-goal}]{\setlength{\rightskip}{0pt plus 5cm}bool test\-\_\-goal (
+\begin{DoxyParamCaption}
+\item[{const {\bf Global\-State} \&}]{state}
+\end{DoxyParamCaption}
+)}}\label{globals_8h_a2de7ebadf14705b7979e647a6271fef3}
+\hypertarget{globals_8h_a6144f63ac9dc461a22e7b16bbf228f33}{\index{globals.\-h@{globals.\-h}!verify\-\_\-no\-\_\-axioms@{verify\-\_\-no\-\_\-axioms}}
+\index{verify\-\_\-no\-\_\-axioms@{verify\-\_\-no\-\_\-axioms}!globals.h@{globals.\-h}}
+\subsubsection[{verify\-\_\-no\-\_\-axioms}]{\setlength{\rightskip}{0pt plus 5cm}void verify\-\_\-no\-\_\-axioms (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{globals_8h_a6144f63ac9dc461a22e7b16bbf228f33}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{globals_8h_a6144f63ac9dc461a22e7b16bbf228f33_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{globals_8h_ac8b586ff0d2d86ffdc28e4e911491fa2}{\index{globals.\-h@{globals.\-h}!verify\-\_\-no\-\_\-axioms\-\_\-no\-\_\-conditional\-\_\-effects@{verify\-\_\-no\-\_\-axioms\-\_\-no\-\_\-conditional\-\_\-effects}}
+\index{verify\-\_\-no\-\_\-axioms\-\_\-no\-\_\-conditional\-\_\-effects@{verify\-\_\-no\-\_\-axioms\-\_\-no\-\_\-conditional\-\_\-effects}!globals.h@{globals.\-h}}
+\subsubsection[{verify\-\_\-no\-\_\-axioms\-\_\-no\-\_\-conditional\-\_\-effects}]{\setlength{\rightskip}{0pt plus 5cm}void verify\-\_\-no\-\_\-axioms\-\_\-no\-\_\-conditional\-\_\-effects (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{globals_8h_ac8b586ff0d2d86ffdc28e4e911491fa2}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{globals_8h_ac8b586ff0d2d86ffdc28e4e911491fa2_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{globals_8h_a293e0e3504976527abc14bbbf892ba40}{\index{globals.\-h@{globals.\-h}!verify\-\_\-no\-\_\-conditional\-\_\-effects@{verify\-\_\-no\-\_\-conditional\-\_\-effects}}
+\index{verify\-\_\-no\-\_\-conditional\-\_\-effects@{verify\-\_\-no\-\_\-conditional\-\_\-effects}!globals.h@{globals.\-h}}
+\subsubsection[{verify\-\_\-no\-\_\-conditional\-\_\-effects}]{\setlength{\rightskip}{0pt plus 5cm}void verify\-\_\-no\-\_\-conditional\-\_\-effects (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{globals_8h_a293e0e3504976527abc14bbbf892ba40}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{globals_8h_a293e0e3504976527abc14bbbf892ba40_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{globals_8h_aa703cd713aeaa0e4d07314a87c612cfe}{\index{globals.\-h@{globals.\-h}!g\-\_\-axiom\-\_\-evaluator@{g\-\_\-axiom\-\_\-evaluator}}
+\index{g\-\_\-axiom\-\_\-evaluator@{g\-\_\-axiom\-\_\-evaluator}!globals.h@{globals.\-h}}
+\subsubsection[{g\-\_\-axiom\-\_\-evaluator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Axiom\-Evaluator}$\ast$ g\-\_\-axiom\-\_\-evaluator}}\label{globals_8h_aa703cd713aeaa0e4d07314a87c612cfe}
+\hypertarget{globals_8h_a6929e5bb94622ca9607304dfdd438add}{\index{globals.\-h@{globals.\-h}!g\-\_\-axiom\-\_\-layers@{g\-\_\-axiom\-\_\-layers}}
+\index{g\-\_\-axiom\-\_\-layers@{g\-\_\-axiom\-\_\-layers}!globals.h@{globals.\-h}}
+\subsubsection[{g\-\_\-axiom\-\_\-layers}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$ g\-\_\-axiom\-\_\-layers}}\label{globals_8h_a6929e5bb94622ca9607304dfdd438add}
+\hypertarget{globals_8h_a645a691e31892f4349d861d12bf78fc3}{\index{globals.\-h@{globals.\-h}!g\-\_\-axioms@{g\-\_\-axioms}}
+\index{g\-\_\-axioms@{g\-\_\-axioms}!globals.h@{globals.\-h}}
+\subsubsection[{g\-\_\-axioms}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Global\-Operator}$>$ g\-\_\-axioms}}\label{globals_8h_a645a691e31892f4349d861d12bf78fc3}
+\hypertarget{globals_8h_a1af9840f48cdef7cec469205ca395ad5}{\index{globals.\-h@{globals.\-h}!g\-\_\-default\-\_\-axiom\-\_\-values@{g\-\_\-default\-\_\-axiom\-\_\-values}}
+\index{g\-\_\-default\-\_\-axiom\-\_\-values@{g\-\_\-default\-\_\-axiom\-\_\-values}!globals.h@{globals.\-h}}
+\subsubsection[{g\-\_\-default\-\_\-axiom\-\_\-values}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$ g\-\_\-default\-\_\-axiom\-\_\-values}}\label{globals_8h_a1af9840f48cdef7cec469205ca395ad5}
+\hypertarget{globals_8h_ab6c74ab527e708c4c93265264961afdf}{\index{globals.\-h@{globals.\-h}!g\-\_\-fact\-\_\-names@{g\-\_\-fact\-\_\-names}}
+\index{g\-\_\-fact\-\_\-names@{g\-\_\-fact\-\_\-names}!globals.h@{globals.\-h}}
+\subsubsection[{g\-\_\-fact\-\_\-names}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::vector$<$std\-::string$>$ $>$ g\-\_\-fact\-\_\-names}}\label{globals_8h_ab6c74ab527e708c4c93265264961afdf}
+\hypertarget{globals_8h_a1bf5892616b776feeb278df2f91180bd}{\index{globals.\-h@{globals.\-h}!g\-\_\-goal@{g\-\_\-goal}}
+\index{g\-\_\-goal@{g\-\_\-goal}!globals.h@{globals.\-h}}
+\subsubsection[{g\-\_\-goal}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::pair$<$int, int$>$ $>$ g\-\_\-goal}}\label{globals_8h_a1bf5892616b776feeb278df2f91180bd}
+\hypertarget{globals_8h_a241cf9130f13056dead5e81d278e2504}{\index{globals.\-h@{globals.\-h}!g\-\_\-initial\-\_\-state\-\_\-data@{g\-\_\-initial\-\_\-state\-\_\-data}}
+\index{g\-\_\-initial\-\_\-state\-\_\-data@{g\-\_\-initial\-\_\-state\-\_\-data}!globals.h@{globals.\-h}}
+\subsubsection[{g\-\_\-initial\-\_\-state\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$ g\-\_\-initial\-\_\-state\-\_\-data}}\label{globals_8h_a241cf9130f13056dead5e81d278e2504}
+\hypertarget{globals_8h_aa161789a1fe0f438ed10dfc14d4567de}{\index{globals.\-h@{globals.\-h}!g\-\_\-is\-\_\-part\-\_\-of\-\_\-anytime\-\_\-portfolio@{g\-\_\-is\-\_\-part\-\_\-of\-\_\-anytime\-\_\-portfolio}}
+\index{g\-\_\-is\-\_\-part\-\_\-of\-\_\-anytime\-\_\-portfolio@{g\-\_\-is\-\_\-part\-\_\-of\-\_\-anytime\-\_\-portfolio}!globals.h@{globals.\-h}}
+\subsubsection[{g\-\_\-is\-\_\-part\-\_\-of\-\_\-anytime\-\_\-portfolio}]{\setlength{\rightskip}{0pt plus 5cm}bool g\-\_\-is\-\_\-part\-\_\-of\-\_\-anytime\-\_\-portfolio}}\label{globals_8h_aa161789a1fe0f438ed10dfc14d4567de}
+\hypertarget{globals_8h_a91de17ca0e30c5019ce7f0ead8415aed}{\index{globals.\-h@{globals.\-h}!g\-\_\-legacy\-\_\-causal\-\_\-graph@{g\-\_\-legacy\-\_\-causal\-\_\-graph}}
+\index{g\-\_\-legacy\-\_\-causal\-\_\-graph@{g\-\_\-legacy\-\_\-causal\-\_\-graph}!globals.h@{globals.\-h}}
+\subsubsection[{g\-\_\-legacy\-\_\-causal\-\_\-graph}]{\setlength{\rightskip}{0pt plus 5cm}Legacy\-Causal\-Graph$\ast$ g\-\_\-legacy\-\_\-causal\-\_\-graph}}\label{globals_8h_a91de17ca0e30c5019ce7f0ead8415aed}
+\hypertarget{globals_8h_a0a58480bd3522c4ab7cb2db178c71386}{\index{globals.\-h@{globals.\-h}!g\-\_\-max\-\_\-action\-\_\-cost@{g\-\_\-max\-\_\-action\-\_\-cost}}
+\index{g\-\_\-max\-\_\-action\-\_\-cost@{g\-\_\-max\-\_\-action\-\_\-cost}!globals.h@{globals.\-h}}
+\subsubsection[{g\-\_\-max\-\_\-action\-\_\-cost}]{\setlength{\rightskip}{0pt plus 5cm}int g\-\_\-max\-\_\-action\-\_\-cost}}\label{globals_8h_a0a58480bd3522c4ab7cb2db178c71386}
+\hypertarget{globals_8h_a0cffb0945ee4a5d1beee6c3e8af71f0f}{\index{globals.\-h@{globals.\-h}!g\-\_\-min\-\_\-action\-\_\-cost@{g\-\_\-min\-\_\-action\-\_\-cost}}
+\index{g\-\_\-min\-\_\-action\-\_\-cost@{g\-\_\-min\-\_\-action\-\_\-cost}!globals.h@{globals.\-h}}
+\subsubsection[{g\-\_\-min\-\_\-action\-\_\-cost}]{\setlength{\rightskip}{0pt plus 5cm}int g\-\_\-min\-\_\-action\-\_\-cost}}\label{globals_8h_a0cffb0945ee4a5d1beee6c3e8af71f0f}
+\hypertarget{globals_8h_adfc08f9194d1be82a25384fe406e235f}{\index{globals.\-h@{globals.\-h}!g\-\_\-num\-\_\-previously\-\_\-generated\-\_\-plans@{g\-\_\-num\-\_\-previously\-\_\-generated\-\_\-plans}}
+\index{g\-\_\-num\-\_\-previously\-\_\-generated\-\_\-plans@{g\-\_\-num\-\_\-previously\-\_\-generated\-\_\-plans}!globals.h@{globals.\-h}}
+\subsubsection[{g\-\_\-num\-\_\-previously\-\_\-generated\-\_\-plans}]{\setlength{\rightskip}{0pt plus 5cm}int g\-\_\-num\-\_\-previously\-\_\-generated\-\_\-plans}}\label{globals_8h_adfc08f9194d1be82a25384fe406e235f}
+\hypertarget{globals_8h_a36f4ee06706fc4687b0c1f9484685300}{\index{globals.\-h@{globals.\-h}!g\-\_\-operators@{g\-\_\-operators}}
+\index{g\-\_\-operators@{g\-\_\-operators}!globals.h@{globals.\-h}}
+\subsubsection[{g\-\_\-operators}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Global\-Operator}$>$ g\-\_\-operators}}\label{globals_8h_a36f4ee06706fc4687b0c1f9484685300}
+\hypertarget{globals_8h_af01d55d0790c9d8281829313eaee4b15}{\index{globals.\-h@{globals.\-h}!g\-\_\-plan\-\_\-filename@{g\-\_\-plan\-\_\-filename}}
+\index{g\-\_\-plan\-\_\-filename@{g\-\_\-plan\-\_\-filename}!globals.h@{globals.\-h}}
+\subsubsection[{g\-\_\-plan\-\_\-filename}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string g\-\_\-plan\-\_\-filename}}\label{globals_8h_af01d55d0790c9d8281829313eaee4b15}
+\hypertarget{globals_8h_a007d468455d83627770b55135c1f46fc}{\index{globals.\-h@{globals.\-h}!g\-\_\-rng@{g\-\_\-rng}}
+\index{g\-\_\-rng@{g\-\_\-rng}!globals.h@{globals.\-h}}
+\subsubsection[{g\-\_\-rng}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Random\-Number\-Generator} g\-\_\-rng}}\label{globals_8h_a007d468455d83627770b55135c1f46fc}
+\hypertarget{globals_8h_af30f8aecf076b45f6257380668a047dd}{\index{globals.\-h@{globals.\-h}!g\-\_\-state\-\_\-packer@{g\-\_\-state\-\_\-packer}}
+\index{g\-\_\-state\-\_\-packer@{g\-\_\-state\-\_\-packer}!globals.h@{globals.\-h}}
+\subsubsection[{g\-\_\-state\-\_\-packer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Int\-Packer}$\ast$ g\-\_\-state\-\_\-packer}}\label{globals_8h_af30f8aecf076b45f6257380668a047dd}
+\hypertarget{globals_8h_af4a8e1df884273a697d14398f3bb53c9}{\index{globals.\-h@{globals.\-h}!g\-\_\-state\-\_\-registry@{g\-\_\-state\-\_\-registry}}
+\index{g\-\_\-state\-\_\-registry@{g\-\_\-state\-\_\-registry}!globals.h@{globals.\-h}}
+\subsubsection[{g\-\_\-state\-\_\-registry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf State\-Registry}$\ast$ g\-\_\-state\-\_\-registry}}\label{globals_8h_af4a8e1df884273a697d14398f3bb53c9}
+\hypertarget{globals_8h_a587243fcead7eb312521578666069ba2}{\index{globals.\-h@{globals.\-h}!g\-\_\-successor\-\_\-generator@{g\-\_\-successor\-\_\-generator}}
+\index{g\-\_\-successor\-\_\-generator@{g\-\_\-successor\-\_\-generator}!globals.h@{globals.\-h}}
+\subsubsection[{g\-\_\-successor\-\_\-generator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Successor\-Generator}$\ast$ g\-\_\-successor\-\_\-generator}}\label{globals_8h_a587243fcead7eb312521578666069ba2}
+\hypertarget{globals_8h_af56bfc120096c51d4a165347c8f3a0b2}{\index{globals.\-h@{globals.\-h}!g\-\_\-timer@{g\-\_\-timer}}
+\index{g\-\_\-timer@{g\-\_\-timer}!globals.h@{globals.\-h}}
+\subsubsection[{g\-\_\-timer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Timer} g\-\_\-timer}}\label{globals_8h_af56bfc120096c51d4a165347c8f3a0b2}
+\hypertarget{globals_8h_a5ad07161d00aa01f382a54d1e9058d0d}{\index{globals.\-h@{globals.\-h}!g\-\_\-transition\-\_\-graphs@{g\-\_\-transition\-\_\-graphs}}
+\index{g\-\_\-transition\-\_\-graphs@{g\-\_\-transition\-\_\-graphs}!globals.h@{globals.\-h}}
+\subsubsection[{g\-\_\-transition\-\_\-graphs}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Domain\-Transition\-Graph} $\ast$$>$ g\-\_\-transition\-\_\-graphs}}\label{globals_8h_a5ad07161d00aa01f382a54d1e9058d0d}
+\hypertarget{globals_8h_a0fe74e7f6ce591fcffcaa333d768a8e7}{\index{globals.\-h@{globals.\-h}!g\-\_\-use\-\_\-metric@{g\-\_\-use\-\_\-metric}}
+\index{g\-\_\-use\-\_\-metric@{g\-\_\-use\-\_\-metric}!globals.h@{globals.\-h}}
+\subsubsection[{g\-\_\-use\-\_\-metric}]{\setlength{\rightskip}{0pt plus 5cm}bool g\-\_\-use\-\_\-metric}}\label{globals_8h_a0fe74e7f6ce591fcffcaa333d768a8e7}
+\hypertarget{globals_8h_a6c3e19343670e65be1628e83f0e9303e}{\index{globals.\-h@{globals.\-h}!g\-\_\-variable\-\_\-domain@{g\-\_\-variable\-\_\-domain}}
+\index{g\-\_\-variable\-\_\-domain@{g\-\_\-variable\-\_\-domain}!globals.h@{globals.\-h}}
+\subsubsection[{g\-\_\-variable\-\_\-domain}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$ g\-\_\-variable\-\_\-domain}}\label{globals_8h_a6c3e19343670e65be1628e83f0e9303e}
+\hypertarget{globals_8h_ac652815da9b6f5c37f1e399c8c8a6917}{\index{globals.\-h@{globals.\-h}!g\-\_\-variable\-\_\-name@{g\-\_\-variable\-\_\-name}}
+\index{g\-\_\-variable\-\_\-name@{g\-\_\-variable\-\_\-name}!globals.h@{globals.\-h}}
+\subsubsection[{g\-\_\-variable\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::string$>$ g\-\_\-variable\-\_\-name}}\label{globals_8h_ac652815da9b6f5c37f1e399c8c8a6917}

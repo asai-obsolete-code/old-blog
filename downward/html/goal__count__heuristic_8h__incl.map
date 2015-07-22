@@ -1,0 +1,9 @@
+<map id="goal_count_heuristic.h" name="goal_count_heuristic.h">
+<area shape="rect" id="node2" href="$heuristic_8h.html" title="heuristic.h" alt="" coords="265,80,347,107"/>
+<area shape="rect" id="node3" href="$operator__cost_8h.html" title="operator_cost.h" alt="" coords="5,155,116,181"/>
+<area shape="rect" id="node4" href="$scalar__evaluator_8h.html" title="scalar_evaluator.h" alt="" coords="141,155,269,181"/>
+<area shape="rect" id="node9" href="$task__proxy_8h.html" title="task_proxy.h" alt="" coords="517,155,613,181"/>
+<area shape="rect" id="node5" href="$evaluation__result_8h.html" title="evaluation_result.h" alt="" coords="139,229,268,256"/>
+<area shape="rect" id="node10" href="$abstract__task_8h.html" title="abstract_task.h" alt="" coords="724,229,835,256"/>
+<area shape="rect" id="node14" href="$utilities_8h.html" title="utilities.h" alt="" coords="575,229,648,256"/>
+</map>

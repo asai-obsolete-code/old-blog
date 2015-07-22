@@ -1,0 +1,7 @@
+<map id="EvaluationContext::get_heuristic_value" name="EvaluationContext::get_heuristic_value">
+<area shape="rect" id="node2" href="$classEvaluationContext.html#a74c1d7b061b2bb69a481faa4abac62c0" title="EvaluationContext::\lget_result" alt="" coords="197,70,334,111"/>
+<area shape="rect" id="node6" href="$classEvaluationResult.html#a19bbe29131c228b9282a0122525936f6" title="EvaluationResult::get\l_h_value" alt="" coords="192,135,339,177"/>
+<area shape="rect" id="node3" href="$classEvaluationResult.html#ad56b6a8dbff00673aedb984fbe6f72a5" title="EvaluationResult::is\l_uninitialized" alt="" coords="404,5,543,46"/>
+<area shape="rect" id="node4" href="$classScalarEvaluator.html#a8ffb99b0f8f63e34183a3245a247a9ec" title="ScalarEvaluator::compute\l_result" alt="" coords="387,70,559,111"/>
+<area shape="rect" id="node5" href="$classSearchStatistics.html#a57f71a965c7693054ec18ba1b25a557f" title="SearchStatistics::inc\l_evaluations" alt="" coords="402,135,545,177"/>
+</map>

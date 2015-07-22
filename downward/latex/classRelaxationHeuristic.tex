@@ -1,0 +1,178 @@
+\hypertarget{classRelaxationHeuristic}{\section{Relaxation\-Heuristic Class Reference}
+\label{classRelaxationHeuristic}\index{Relaxation\-Heuristic@{Relaxation\-Heuristic}}
+}
+
+
+{\ttfamily \#include $<$relaxation\-\_\-heuristic.\-h$>$}
+
+
+
+Inheritance diagram for Relaxation\-Heuristic\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{classRelaxationHeuristic__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Relaxation\-Heuristic\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{classRelaxationHeuristic__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRelaxationHeuristic_accaab2791b2037b1d3d703d69d40a16b}{Relaxation\-Heuristic} (const \hyperlink{classOptions}{Options} \&options)
+\item 
+virtual \hyperlink{classRelaxationHeuristic_ab52c2bad0d4cdffdff5d671065a4b77e}{$\sim$\-Relaxation\-Heuristic} ()
+\item 
+virtual bool \hyperlink{classRelaxationHeuristic_a2e924767171bcbef35aa5b88236edf70}{dead\-\_\-ends\-\_\-are\-\_\-reliable} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structProposition}{Proposition} $\ast$ \hyperlink{classRelaxationHeuristic_a4b523d3a9322d516c305095f6e13e27e}{get\-\_\-proposition} (const \hyperlink{classFactProxy}{Fact\-Proxy} \&fact)
+\item 
+virtual void \hyperlink{classRelaxationHeuristic_aa34cc79d9e5e3e9aff4c4ed1b03a853e}{initialize} ()
+\item 
+virtual int \hyperlink{classRelaxationHeuristic_a7455dfe0d43241c0f0769db91ee87ec3}{compute\-\_\-heuristic} (const \hyperlink{classGlobalState}{Global\-State} \&state)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ \hyperlink{structUnaryOperator}{Unary\-Operator} $>$ \hyperlink{classRelaxationHeuristic_a9e94cfa3f8d37fe029b2ac1df7fb6d39}{unary\-\_\-operators}
+\item 
+std\-::vector$<$ std\-::vector\\*
+$<$ \hyperlink{structProposition}{Proposition} $>$ $>$ \hyperlink{classRelaxationHeuristic_af14ac5ca803abbcad071fd0a84d1ea7b}{propositions}
+\item 
+std\-::vector$<$ \hyperlink{structProposition}{Proposition} $\ast$ $>$ \hyperlink{classRelaxationHeuristic_a0d1cf8a6bc1f7fff5821cfe40458bc53}{goal\-\_\-propositions}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRelaxationHeuristic_accaab2791b2037b1d3d703d69d40a16b}{\index{Relaxation\-Heuristic@{Relaxation\-Heuristic}!Relaxation\-Heuristic@{Relaxation\-Heuristic}}
+\index{Relaxation\-Heuristic@{Relaxation\-Heuristic}!RelaxationHeuristic@{Relaxation\-Heuristic}}
+\subsubsection[{Relaxation\-Heuristic}]{\setlength{\rightskip}{0pt plus 5cm}Relaxation\-Heuristic\-::\-Relaxation\-Heuristic (
+\begin{DoxyParamCaption}
+\item[{const {\bf Options} \&}]{options}
+\end{DoxyParamCaption}
+)}}\label{classRelaxationHeuristic_accaab2791b2037b1d3d703d69d40a16b}
+\hypertarget{classRelaxationHeuristic_ab52c2bad0d4cdffdff5d671065a4b77e}{\index{Relaxation\-Heuristic@{Relaxation\-Heuristic}!$\sim$\-Relaxation\-Heuristic@{$\sim$\-Relaxation\-Heuristic}}
+\index{$\sim$\-Relaxation\-Heuristic@{$\sim$\-Relaxation\-Heuristic}!RelaxationHeuristic@{Relaxation\-Heuristic}}
+\subsubsection[{$\sim$\-Relaxation\-Heuristic}]{\setlength{\rightskip}{0pt plus 5cm}Relaxation\-Heuristic\-::$\sim$\-Relaxation\-Heuristic (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRelaxationHeuristic_ab52c2bad0d4cdffdff5d671065a4b77e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRelaxationHeuristic_a7455dfe0d43241c0f0769db91ee87ec3}{\index{Relaxation\-Heuristic@{Relaxation\-Heuristic}!compute\-\_\-heuristic@{compute\-\_\-heuristic}}
+\index{compute\-\_\-heuristic@{compute\-\_\-heuristic}!RelaxationHeuristic@{Relaxation\-Heuristic}}
+\subsubsection[{compute\-\_\-heuristic}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Relaxation\-Heuristic\-::compute\-\_\-heuristic (
+\begin{DoxyParamCaption}
+\item[{const {\bf Global\-State} \&}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classRelaxationHeuristic_a7455dfe0d43241c0f0769db91ee87ec3}
+
+
+Implements \hyperlink{classHeuristic_a4fd4e087281805e0e76a814e06d4e506}{Heuristic}.
+
+
+
+Implemented in \hyperlink{classAdditiveHeuristic_ad2c71f6c5198a7276b7892e2d0a5bca8}{Additive\-Heuristic}, \hyperlink{classFFHeuristic_a0b3c97fce6e723cf8f73ee9da0a58a79}{F\-F\-Heuristic}, and \hyperlink{classHSPMaxHeuristic_ac97158b2b7d25b8ec895ebc1c0bf2930}{H\-S\-P\-Max\-Heuristic}.
+
+\hypertarget{classRelaxationHeuristic_a2e924767171bcbef35aa5b88236edf70}{\index{Relaxation\-Heuristic@{Relaxation\-Heuristic}!dead\-\_\-ends\-\_\-are\-\_\-reliable@{dead\-\_\-ends\-\_\-are\-\_\-reliable}}
+\index{dead\-\_\-ends\-\_\-are\-\_\-reliable@{dead\-\_\-ends\-\_\-are\-\_\-reliable}!RelaxationHeuristic@{Relaxation\-Heuristic}}
+\subsubsection[{dead\-\_\-ends\-\_\-are\-\_\-reliable}]{\setlength{\rightskip}{0pt plus 5cm}bool Relaxation\-Heuristic\-::dead\-\_\-ends\-\_\-are\-\_\-reliable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRelaxationHeuristic_a2e924767171bcbef35aa5b88236edf70}
+
+
+Reimplemented from \hyperlink{classScalarEvaluator_aa4534363976871466aa2be88f82e1a74}{Scalar\-Evaluator}.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{classRelaxationHeuristic_a2e924767171bcbef35aa5b88236edf70_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRelaxationHeuristic_a4b523d3a9322d516c305095f6e13e27e}{\index{Relaxation\-Heuristic@{Relaxation\-Heuristic}!get\-\_\-proposition@{get\-\_\-proposition}}
+\index{get\-\_\-proposition@{get\-\_\-proposition}!RelaxationHeuristic@{Relaxation\-Heuristic}}
+\subsubsection[{get\-\_\-proposition}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Proposition} $\ast$ Relaxation\-Heuristic\-::get\-\_\-proposition (
+\begin{DoxyParamCaption}
+\item[{const {\bf Fact\-Proxy} \&}]{fact}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRelaxationHeuristic_a4b523d3a9322d516c305095f6e13e27e}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classRelaxationHeuristic_a4b523d3a9322d516c305095f6e13e27e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRelaxationHeuristic_aa34cc79d9e5e3e9aff4c4ed1b03a853e}{\index{Relaxation\-Heuristic@{Relaxation\-Heuristic}!initialize@{initialize}}
+\index{initialize@{initialize}!RelaxationHeuristic@{Relaxation\-Heuristic}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}void Relaxation\-Heuristic\-::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classRelaxationHeuristic_aa34cc79d9e5e3e9aff4c4ed1b03a853e}
+
+
+Reimplemented from \hyperlink{classHeuristic_a26e75bad1d806657c0ed274b4fe72f0a}{Heuristic}.
+
+
+
+Reimplemented in \hyperlink{classAdditiveHeuristic_a4c952cd832e8dd3ea364d8cac379ebbc}{Additive\-Heuristic}, \hyperlink{classFFHeuristic_ad17e4f428e5c4fc89d4e0de8e8ed6d80}{F\-F\-Heuristic}, and \hyperlink{classHSPMaxHeuristic_a95b1b3153abac96278a4b15093fe9c79}{H\-S\-P\-Max\-Heuristic}.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRelaxationHeuristic_aa34cc79d9e5e3e9aff4c4ed1b03a853e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classRelaxationHeuristic_a0d1cf8a6bc1f7fff5821cfe40458bc53}{\index{Relaxation\-Heuristic@{Relaxation\-Heuristic}!goal\-\_\-propositions@{goal\-\_\-propositions}}
+\index{goal\-\_\-propositions@{goal\-\_\-propositions}!RelaxationHeuristic@{Relaxation\-Heuristic}}
+\subsubsection[{goal\-\_\-propositions}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Proposition} $\ast$$>$ Relaxation\-Heuristic\-::goal\-\_\-propositions\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRelaxationHeuristic_a0d1cf8a6bc1f7fff5821cfe40458bc53}
+\hypertarget{classRelaxationHeuristic_af14ac5ca803abbcad071fd0a84d1ea7b}{\index{Relaxation\-Heuristic@{Relaxation\-Heuristic}!propositions@{propositions}}
+\index{propositions@{propositions}!RelaxationHeuristic@{Relaxation\-Heuristic}}
+\subsubsection[{propositions}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::vector$<${\bf Proposition}$>$ $>$ Relaxation\-Heuristic\-::propositions\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRelaxationHeuristic_af14ac5ca803abbcad071fd0a84d1ea7b}
+\hypertarget{classRelaxationHeuristic_a9e94cfa3f8d37fe029b2ac1df7fb6d39}{\index{Relaxation\-Heuristic@{Relaxation\-Heuristic}!unary\-\_\-operators@{unary\-\_\-operators}}
+\index{unary\-\_\-operators@{unary\-\_\-operators}!RelaxationHeuristic@{Relaxation\-Heuristic}}
+\subsubsection[{unary\-\_\-operators}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Unary\-Operator}$>$ Relaxation\-Heuristic\-::unary\-\_\-operators\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRelaxationHeuristic_a9e94cfa3f8d37fe029b2ac1df7fb6d39}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{relaxation__heuristic_8h}{relaxation\-\_\-heuristic.\-h}\item 
+\hyperlink{relaxation__heuristic_8cc}{relaxation\-\_\-heuristic.\-cc}\end{DoxyCompactItemize}

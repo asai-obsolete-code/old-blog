@@ -1,0 +1,15 @@
+<map id="AdditiveHeuristic::initialize" name="AdditiveHeuristic::initialize">
+<area shape="rect" id="node2" href="$classRelaxationHeuristic.html#aa34cc79d9e5e3e9aff4c4ed1b03a853e" title="RelaxationHeuristic\l::initialize" alt="" coords="184,166,320,207"/>
+<area shape="rect" id="node3" href="$classTaskProxy.html#ac90edab81b6721935b4bc2a7f8a35463" title="TaskProxy::get_variables" alt="" coords="369,5,540,32"/>
+<area shape="rect" id="node4" href="$classVariablesProxy.html#a01cfc73991b2c4a149dd778358531527" title="VariablesProxy::size" alt="" coords="383,56,526,83"/>
+<area shape="rect" id="node6" href="$classVariablesProxy.html#aaa996eb919f39adf2b80cba50c994b92" title="VariablesProxy::get\l_facts" alt="" coords="387,107,523,149"/>
+<area shape="rect" id="node7" href="$classTaskProxy.html#aea9718bc41d832ba8d587716db55c5cd" title="TaskProxy::get_goals" alt="" coords="380,173,529,200"/>
+<area shape="rect" id="node8" href="$classRelaxationHeuristic.html#a4b523d3a9322d516c305095f6e13e27e" title="RelaxationHeuristic\l::get_proposition" alt="" coords="387,225,523,266"/>
+<area shape="rect" id="node13" href="$classTaskProxy.html#a0f5cac4b7f9802ee580ef6cfce818365" title="TaskProxy::get_operators" alt="" coords="369,291,541,317"/>
+<area shape="rect" id="node14" href="$classTaskProxy.html#a50f8c773fed60b50000910c2d28eaa93" title="TaskProxy::get_axioms" alt="" coords="375,341,535,368"/>
+<area shape="rect" id="node5" href="$classAbstractTask.html#ab0f878648c015fb918567403e80d4e4b" title="AbstractTask::get_num\l_variables" alt="" coords="590,49,749,90"/>
+<area shape="rect" id="node9" href="$classFactProxy.html#ac11e3f1fc46e6f11364d22f70d93ee5e" title="FactProxy::get_variable" alt="" coords="589,156,749,183"/>
+<area shape="rect" id="node10" href="$classVariableProxy.html#ac3b398d41af8e1e188c2a743bbe802a6" title="VariableProxy::get_id" alt="" coords="596,207,743,233"/>
+<area shape="rect" id="node11" href="$classFactProxy.html#a3cbeec330f72fe8066d657489742e0a0" title="FactProxy::get_value" alt="" coords="596,257,743,284"/>
+<area shape="rect" id="node12" href="$utilities_8h.html#ad23670a9e4f03902713b3c27749d7e9f" title="in_bounds" alt="" coords="629,308,710,335"/>
+</map>

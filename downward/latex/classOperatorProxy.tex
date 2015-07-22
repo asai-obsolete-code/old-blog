@@ -1,0 +1,158 @@
+\hypertarget{classOperatorProxy}{\section{Operator\-Proxy Class Reference}
+\label{classOperatorProxy}\index{Operator\-Proxy@{Operator\-Proxy}}
+}
+
+
+{\ttfamily \#include $<$task\-\_\-proxy.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classOperatorProxy_a0ff9212de827c7ceef023c5160128154}{Operator\-Proxy} (const \hyperlink{classAbstractTask}{Abstract\-Task} \&task, int index, bool \hyperlink{classOperatorProxy_a2d573a6ad8530877f1d0467f7874c4b3}{is\-\_\-axiom})
+\item 
+\hyperlink{classOperatorProxy_a71dfdd6e432a1d944ddfdc509c3f566f}{$\sim$\-Operator\-Proxy} ()=default
+\item 
+bool \hyperlink{classOperatorProxy_a7697ce5753aecfc7d7c95f765ebf200d}{operator==} (const \hyperlink{classOperatorProxy}{Operator\-Proxy} \&other) const 
+\item 
+bool \hyperlink{classOperatorProxy_a1fe5933a37afc31978deea862caa5017}{operator!=} (const \hyperlink{classOperatorProxy}{Operator\-Proxy} \&other) const 
+\item 
+\hyperlink{classPreconditionsProxy}{Preconditions\-Proxy} \hyperlink{classOperatorProxy_aa21eff1459257a6d8db90666bdc738a8}{get\-\_\-preconditions} () const 
+\item 
+\hyperlink{classEffectsProxy}{Effects\-Proxy} \hyperlink{classOperatorProxy_ad1bcc58e597fcd0af4634afefd944ee6}{get\-\_\-effects} () const 
+\item 
+int \hyperlink{classOperatorProxy_ab5242f56741a6d13adecce2edae920ef}{get\-\_\-cost} () const 
+\item 
+bool \hyperlink{classOperatorProxy_a2d573a6ad8530877f1d0467f7874c4b3}{is\-\_\-axiom} () const 
+\item 
+const std\-::string \& \hyperlink{classOperatorProxy_a37dd91050b8bc99e0d50c0a853d833d1}{get\-\_\-name} () const 
+\item 
+int \hyperlink{classOperatorProxy_a0685a29a3841ab5e4953cce0003ef0cc}{get\-\_\-id} () const 
+\item 
+const \hyperlink{classGlobalOperator}{Global\-Operator} $\ast$ \hyperlink{classOperatorProxy_a8460a7a40bb4712cbc67341688900fb7}{get\-\_\-global\-\_\-operator} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classOperatorProxy_a0ff9212de827c7ceef023c5160128154}{\index{Operator\-Proxy@{Operator\-Proxy}!Operator\-Proxy@{Operator\-Proxy}}
+\index{Operator\-Proxy@{Operator\-Proxy}!OperatorProxy@{Operator\-Proxy}}
+\subsubsection[{Operator\-Proxy}]{\setlength{\rightskip}{0pt plus 5cm}Operator\-Proxy\-::\-Operator\-Proxy (
+\begin{DoxyParamCaption}
+\item[{const {\bf Abstract\-Task} \&}]{task, }
+\item[{int}]{index, }
+\item[{bool}]{is\-\_\-axiom}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classOperatorProxy_a0ff9212de827c7ceef023c5160128154}
+\hypertarget{classOperatorProxy_a71dfdd6e432a1d944ddfdc509c3f566f}{\index{Operator\-Proxy@{Operator\-Proxy}!$\sim$\-Operator\-Proxy@{$\sim$\-Operator\-Proxy}}
+\index{$\sim$\-Operator\-Proxy@{$\sim$\-Operator\-Proxy}!OperatorProxy@{Operator\-Proxy}}
+\subsubsection[{$\sim$\-Operator\-Proxy}]{\setlength{\rightskip}{0pt plus 5cm}Operator\-Proxy\-::$\sim$\-Operator\-Proxy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classOperatorProxy_a71dfdd6e432a1d944ddfdc509c3f566f}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classOperatorProxy_ab5242f56741a6d13adecce2edae920ef}{\index{Operator\-Proxy@{Operator\-Proxy}!get\-\_\-cost@{get\-\_\-cost}}
+\index{get\-\_\-cost@{get\-\_\-cost}!OperatorProxy@{Operator\-Proxy}}
+\subsubsection[{get\-\_\-cost}]{\setlength{\rightskip}{0pt plus 5cm}int Operator\-Proxy\-::get\-\_\-cost (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classOperatorProxy_ab5242f56741a6d13adecce2edae920ef}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOperatorProxy_ab5242f56741a6d13adecce2edae920ef_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classOperatorProxy_ad1bcc58e597fcd0af4634afefd944ee6}{\index{Operator\-Proxy@{Operator\-Proxy}!get\-\_\-effects@{get\-\_\-effects}}
+\index{get\-\_\-effects@{get\-\_\-effects}!OperatorProxy@{Operator\-Proxy}}
+\subsubsection[{get\-\_\-effects}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Effects\-Proxy} Operator\-Proxy\-::get\-\_\-effects (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classOperatorProxy_ad1bcc58e597fcd0af4634afefd944ee6}
+\hypertarget{classOperatorProxy_a8460a7a40bb4712cbc67341688900fb7}{\index{Operator\-Proxy@{Operator\-Proxy}!get\-\_\-global\-\_\-operator@{get\-\_\-global\-\_\-operator}}
+\index{get\-\_\-global\-\_\-operator@{get\-\_\-global\-\_\-operator}!OperatorProxy@{Operator\-Proxy}}
+\subsubsection[{get\-\_\-global\-\_\-operator}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Global\-Operator}$\ast$ Operator\-Proxy\-::get\-\_\-global\-\_\-operator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classOperatorProxy_a8460a7a40bb4712cbc67341688900fb7}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classOperatorProxy_a8460a7a40bb4712cbc67341688900fb7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classOperatorProxy_a0685a29a3841ab5e4953cce0003ef0cc}{\index{Operator\-Proxy@{Operator\-Proxy}!get\-\_\-id@{get\-\_\-id}}
+\index{get\-\_\-id@{get\-\_\-id}!OperatorProxy@{Operator\-Proxy}}
+\subsubsection[{get\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}int Operator\-Proxy\-::get\-\_\-id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classOperatorProxy_a0685a29a3841ab5e4953cce0003ef0cc}
+\hypertarget{classOperatorProxy_a37dd91050b8bc99e0d50c0a853d833d1}{\index{Operator\-Proxy@{Operator\-Proxy}!get\-\_\-name@{get\-\_\-name}}
+\index{get\-\_\-name@{get\-\_\-name}!OperatorProxy@{Operator\-Proxy}}
+\subsubsection[{get\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string\& Operator\-Proxy\-::get\-\_\-name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classOperatorProxy_a37dd91050b8bc99e0d50c0a853d833d1}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOperatorProxy_a37dd91050b8bc99e0d50c0a853d833d1_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classOperatorProxy_aa21eff1459257a6d8db90666bdc738a8}{\index{Operator\-Proxy@{Operator\-Proxy}!get\-\_\-preconditions@{get\-\_\-preconditions}}
+\index{get\-\_\-preconditions@{get\-\_\-preconditions}!OperatorProxy@{Operator\-Proxy}}
+\subsubsection[{get\-\_\-preconditions}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Preconditions\-Proxy} Operator\-Proxy\-::get\-\_\-preconditions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classOperatorProxy_aa21eff1459257a6d8db90666bdc738a8}
+\hypertarget{classOperatorProxy_a2d573a6ad8530877f1d0467f7874c4b3}{\index{Operator\-Proxy@{Operator\-Proxy}!is\-\_\-axiom@{is\-\_\-axiom}}
+\index{is\-\_\-axiom@{is\-\_\-axiom}!OperatorProxy@{Operator\-Proxy}}
+\subsubsection[{is\-\_\-axiom}]{\setlength{\rightskip}{0pt plus 5cm}bool Operator\-Proxy\-::is\-\_\-axiom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classOperatorProxy_a2d573a6ad8530877f1d0467f7874c4b3}
+\hypertarget{classOperatorProxy_a1fe5933a37afc31978deea862caa5017}{\index{Operator\-Proxy@{Operator\-Proxy}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!OperatorProxy@{Operator\-Proxy}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Operator\-Proxy\-::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Operator\-Proxy} \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classOperatorProxy_a1fe5933a37afc31978deea862caa5017}
+\hypertarget{classOperatorProxy_a7697ce5753aecfc7d7c95f765ebf200d}{\index{Operator\-Proxy@{Operator\-Proxy}!operator==@{operator==}}
+\index{operator==@{operator==}!OperatorProxy@{Operator\-Proxy}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Operator\-Proxy\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Operator\-Proxy} \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classOperatorProxy_a7697ce5753aecfc7d7c95f765ebf200d}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{task__proxy_8h}{task\-\_\-proxy.\-h}\end{DoxyCompactItemize}

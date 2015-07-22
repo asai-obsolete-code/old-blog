@@ -1,0 +1,135 @@
+\hypertarget{classGlobalOperator}{\section{Global\-Operator Class Reference}
+\label{classGlobalOperator}\index{Global\-Operator@{Global\-Operator}}
+}
+
+
+{\ttfamily \#include $<$global\-\_\-operator.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGlobalOperator_a550ed15585058f0a2f8a71a579714907}{Global\-Operator} (std\-::istream \&in, bool \hyperlink{classGlobalOperator_a0c9c5fce70001d45a29d8d3d4bd745bf}{is\-\_\-axiom})
+\item 
+void \hyperlink{classGlobalOperator_aa82116657c9d0e8ec8678472c212d696}{dump} () const 
+\item 
+const std\-::string \& \hyperlink{classGlobalOperator_a2011d37b6e7faa12b0fd14d86fedd486}{get\-\_\-name} () const 
+\item 
+bool \hyperlink{classGlobalOperator_a0c9c5fce70001d45a29d8d3d4bd745bf}{is\-\_\-axiom} () const 
+\item 
+const std\-::vector\\*
+$<$ \hyperlink{structGlobalCondition}{Global\-Condition} $>$ \& \hyperlink{classGlobalOperator_aff64eec39692326f31d30792c1b5d8f8}{get\-\_\-preconditions} () const 
+\item 
+const std\-::vector$<$ \hyperlink{structGlobalEffect}{Global\-Effect} $>$ \& \hyperlink{classGlobalOperator_a70bea7144ee8af6f526f6a29579da51f}{get\-\_\-effects} () const 
+\item 
+bool \hyperlink{classGlobalOperator_a1ff01782c1cc16bb07060f370dbe87b8}{is\-\_\-applicable} (const \hyperlink{classGlobalState}{Global\-State} \&state) const 
+\item 
+bool \hyperlink{classGlobalOperator_a48da06dfedb0e1192e157d63bd274f4f}{is\-\_\-marked} () const 
+\item 
+void \hyperlink{classGlobalOperator_abaeed24044a7cacb29b655d32f000215}{mark} () const 
+\item 
+void \hyperlink{classGlobalOperator_aa82d58b4145f4f967aaca7311da935a5}{unmark} () const 
+\item 
+int \hyperlink{classGlobalOperator_a599fca43db2814e373553974b1237e99}{get\-\_\-cost} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classGlobalOperator_a550ed15585058f0a2f8a71a579714907}{\index{Global\-Operator@{Global\-Operator}!Global\-Operator@{Global\-Operator}}
+\index{Global\-Operator@{Global\-Operator}!GlobalOperator@{Global\-Operator}}
+\subsubsection[{Global\-Operator}]{\setlength{\rightskip}{0pt plus 5cm}Global\-Operator\-::\-Global\-Operator (
+\begin{DoxyParamCaption}
+\item[{std\-::istream \&}]{in, }
+\item[{bool}]{is\-\_\-axiom}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classGlobalOperator_a550ed15585058f0a2f8a71a579714907}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGlobalOperator_a550ed15585058f0a2f8a71a579714907_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classGlobalOperator_aa82116657c9d0e8ec8678472c212d696}{\index{Global\-Operator@{Global\-Operator}!dump@{dump}}
+\index{dump@{dump}!GlobalOperator@{Global\-Operator}}
+\subsubsection[{dump}]{\setlength{\rightskip}{0pt plus 5cm}void Global\-Operator\-::dump (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classGlobalOperator_aa82116657c9d0e8ec8678472c212d696}
+\hypertarget{classGlobalOperator_a599fca43db2814e373553974b1237e99}{\index{Global\-Operator@{Global\-Operator}!get\-\_\-cost@{get\-\_\-cost}}
+\index{get\-\_\-cost@{get\-\_\-cost}!GlobalOperator@{Global\-Operator}}
+\subsubsection[{get\-\_\-cost}]{\setlength{\rightskip}{0pt plus 5cm}int Global\-Operator\-::get\-\_\-cost (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classGlobalOperator_a599fca43db2814e373553974b1237e99}
+\hypertarget{classGlobalOperator_a70bea7144ee8af6f526f6a29579da51f}{\index{Global\-Operator@{Global\-Operator}!get\-\_\-effects@{get\-\_\-effects}}
+\index{get\-\_\-effects@{get\-\_\-effects}!GlobalOperator@{Global\-Operator}}
+\subsubsection[{get\-\_\-effects}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::vector$<${\bf Global\-Effect}$>$\& Global\-Operator\-::get\-\_\-effects (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classGlobalOperator_a70bea7144ee8af6f526f6a29579da51f}
+\hypertarget{classGlobalOperator_a2011d37b6e7faa12b0fd14d86fedd486}{\index{Global\-Operator@{Global\-Operator}!get\-\_\-name@{get\-\_\-name}}
+\index{get\-\_\-name@{get\-\_\-name}!GlobalOperator@{Global\-Operator}}
+\subsubsection[{get\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string\& Global\-Operator\-::get\-\_\-name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classGlobalOperator_a2011d37b6e7faa12b0fd14d86fedd486}
+\hypertarget{classGlobalOperator_aff64eec39692326f31d30792c1b5d8f8}{\index{Global\-Operator@{Global\-Operator}!get\-\_\-preconditions@{get\-\_\-preconditions}}
+\index{get\-\_\-preconditions@{get\-\_\-preconditions}!GlobalOperator@{Global\-Operator}}
+\subsubsection[{get\-\_\-preconditions}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::vector$<${\bf Global\-Condition}$>$\& Global\-Operator\-::get\-\_\-preconditions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classGlobalOperator_aff64eec39692326f31d30792c1b5d8f8}
+\hypertarget{classGlobalOperator_a1ff01782c1cc16bb07060f370dbe87b8}{\index{Global\-Operator@{Global\-Operator}!is\-\_\-applicable@{is\-\_\-applicable}}
+\index{is\-\_\-applicable@{is\-\_\-applicable}!GlobalOperator@{Global\-Operator}}
+\subsubsection[{is\-\_\-applicable}]{\setlength{\rightskip}{0pt plus 5cm}bool Global\-Operator\-::is\-\_\-applicable (
+\begin{DoxyParamCaption}
+\item[{const {\bf Global\-State} \&}]{state}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classGlobalOperator_a1ff01782c1cc16bb07060f370dbe87b8}
+\hypertarget{classGlobalOperator_a0c9c5fce70001d45a29d8d3d4bd745bf}{\index{Global\-Operator@{Global\-Operator}!is\-\_\-axiom@{is\-\_\-axiom}}
+\index{is\-\_\-axiom@{is\-\_\-axiom}!GlobalOperator@{Global\-Operator}}
+\subsubsection[{is\-\_\-axiom}]{\setlength{\rightskip}{0pt plus 5cm}bool Global\-Operator\-::is\-\_\-axiom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classGlobalOperator_a0c9c5fce70001d45a29d8d3d4bd745bf}
+\hypertarget{classGlobalOperator_a48da06dfedb0e1192e157d63bd274f4f}{\index{Global\-Operator@{Global\-Operator}!is\-\_\-marked@{is\-\_\-marked}}
+\index{is\-\_\-marked@{is\-\_\-marked}!GlobalOperator@{Global\-Operator}}
+\subsubsection[{is\-\_\-marked}]{\setlength{\rightskip}{0pt plus 5cm}bool Global\-Operator\-::is\-\_\-marked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classGlobalOperator_a48da06dfedb0e1192e157d63bd274f4f}
+\hypertarget{classGlobalOperator_abaeed24044a7cacb29b655d32f000215}{\index{Global\-Operator@{Global\-Operator}!mark@{mark}}
+\index{mark@{mark}!GlobalOperator@{Global\-Operator}}
+\subsubsection[{mark}]{\setlength{\rightskip}{0pt plus 5cm}void Global\-Operator\-::mark (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classGlobalOperator_abaeed24044a7cacb29b655d32f000215}
+\hypertarget{classGlobalOperator_aa82d58b4145f4f967aaca7311da935a5}{\index{Global\-Operator@{Global\-Operator}!unmark@{unmark}}
+\index{unmark@{unmark}!GlobalOperator@{Global\-Operator}}
+\subsubsection[{unmark}]{\setlength{\rightskip}{0pt plus 5cm}void Global\-Operator\-::unmark (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classGlobalOperator_aa82d58b4145f4f967aaca7311da935a5}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{global__operator_8h}{global\-\_\-operator.\-h}\item 
+\hyperlink{global__operator_8cc}{global\-\_\-operator.\-cc}\end{DoxyCompactItemize}

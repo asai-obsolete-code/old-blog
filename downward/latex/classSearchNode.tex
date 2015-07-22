@@ -1,0 +1,277 @@
+\hypertarget{classSearchNode}{\section{Search\-Node Class Reference}
+\label{classSearchNode}\index{Search\-Node@{Search\-Node}}
+}
+
+
+{\ttfamily \#include $<$search\-\_\-space.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSearchNode_a31749c0d124254d50a3b7d1887eca531}{Search\-Node} (\hyperlink{classStateID}{State\-I\-D} state\-\_\-id\-\_\-, \hyperlink{structSearchNodeInfo}{Search\-Node\-Info} \&info\-\_\-, \hyperlink{operator__cost_8h_aea97a5a2fbe3b57faf505007e38f5de9}{Operator\-Cost} cost\-\_\-type\-\_\-)
+\item 
+\hyperlink{classStateID}{State\-I\-D} \hyperlink{classSearchNode_a1683291b8c3cc021eebc962a33a188d8}{get\-\_\-state\-\_\-id} () const 
+\item 
+\hyperlink{classGlobalState}{Global\-State} \hyperlink{classSearchNode_a2b9024c1cefb9d38663d9b6c24b060e6}{get\-\_\-state} () const 
+\item 
+bool \hyperlink{classSearchNode_a8b39e4ab527b2ff96fac4cebd0dc03b2}{is\-\_\-new} () const 
+\item 
+bool \hyperlink{classSearchNode_a825e90bb6b6652666b7854b77f38f5db}{is\-\_\-open} () const 
+\item 
+bool \hyperlink{classSearchNode_a62bdaff59af0aa9c5f712cded05b97ef}{is\-\_\-closed} () const 
+\item 
+bool \hyperlink{classSearchNode_a122f43b9dcf7e5be7aca4b81bfcc9b5b}{is\-\_\-dead\-\_\-end} () const 
+\item 
+bool \hyperlink{classSearchNode_a450682f6fc503846e9230245ba057eda}{is\-\_\-h\-\_\-dirty} () const 
+\item 
+void \hyperlink{classSearchNode_ad5db250a2114bbb97c16f19f4ada06e7}{set\-\_\-h\-\_\-dirty} ()
+\item 
+void \hyperlink{classSearchNode_a2c5240c7948a08d397c0fe235403c3ac}{clear\-\_\-h\-\_\-dirty} ()
+\item 
+int \hyperlink{classSearchNode_aa299b21012d7fa1f90c3bccef5df8439}{get\-\_\-g} () const 
+\item 
+int \hyperlink{classSearchNode_a96eb7376415f022f090d45b68e5a7b90}{get\-\_\-real\-\_\-g} () const 
+\item 
+int \hyperlink{classSearchNode_a89b705ff62c9ac41ead314ae76466afa}{get\-\_\-h} () const 
+\item 
+void \hyperlink{classSearchNode_ae4836802efa4b8e0643dfefa59a96c32}{open\-\_\-initial} (int h)
+\item 
+void \hyperlink{classSearchNode_a6ad78d5b4a0b76e49ba62182b72a05a5}{open} (int h, const \hyperlink{classSearchNode}{Search\-Node} \&parent\-\_\-node, const \hyperlink{classGlobalOperator}{Global\-Operator} $\ast$parent\-\_\-op)
+\item 
+void \hyperlink{classSearchNode_ace9cdda641a7e73df265c3d8141aa236}{reopen} (const \hyperlink{classSearchNode}{Search\-Node} \&parent\-\_\-node, const \hyperlink{classGlobalOperator}{Global\-Operator} $\ast$parent\-\_\-op)
+\item 
+void \hyperlink{classSearchNode_a4790c765cd6123d95281c598c6daf064}{update\-\_\-parent} (const \hyperlink{classSearchNode}{Search\-Node} \&parent\-\_\-node, const \hyperlink{classGlobalOperator}{Global\-Operator} $\ast$parent\-\_\-op)
+\item 
+void \hyperlink{classSearchNode_ad8e218a82c61a7491e98aa479fda54a1}{increase\-\_\-h} (int h)
+\item 
+void \hyperlink{classSearchNode_ada089a292fcae21387d019e357cf4928}{close} ()
+\item 
+void \hyperlink{classSearchNode_aa18be25ebe8b3ffaef2065f27382eeb5}{mark\-\_\-as\-\_\-dead\-\_\-end} ()
+\item 
+void \hyperlink{classSearchNode_a2b8ea5f6b2ded25baca165cfcee95f18}{dump} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSearchNode_a31749c0d124254d50a3b7d1887eca531}{\index{Search\-Node@{Search\-Node}!Search\-Node@{Search\-Node}}
+\index{Search\-Node@{Search\-Node}!SearchNode@{Search\-Node}}
+\subsubsection[{Search\-Node}]{\setlength{\rightskip}{0pt plus 5cm}Search\-Node\-::\-Search\-Node (
+\begin{DoxyParamCaption}
+\item[{{\bf State\-I\-D}}]{state\-\_\-id\-\_\-, }
+\item[{{\bf Search\-Node\-Info} \&}]{info\-\_\-, }
+\item[{{\bf Operator\-Cost}}]{cost\-\_\-type\-\_\-}
+\end{DoxyParamCaption}
+)}}\label{classSearchNode_a31749c0d124254d50a3b7d1887eca531}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSearchNode_a2c5240c7948a08d397c0fe235403c3ac}{\index{Search\-Node@{Search\-Node}!clear\-\_\-h\-\_\-dirty@{clear\-\_\-h\-\_\-dirty}}
+\index{clear\-\_\-h\-\_\-dirty@{clear\-\_\-h\-\_\-dirty}!SearchNode@{Search\-Node}}
+\subsubsection[{clear\-\_\-h\-\_\-dirty}]{\setlength{\rightskip}{0pt plus 5cm}void Search\-Node\-::clear\-\_\-h\-\_\-dirty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSearchNode_a2c5240c7948a08d397c0fe235403c3ac}
+\hypertarget{classSearchNode_ada089a292fcae21387d019e357cf4928}{\index{Search\-Node@{Search\-Node}!close@{close}}
+\index{close@{close}!SearchNode@{Search\-Node}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}void Search\-Node\-::close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSearchNode_ada089a292fcae21387d019e357cf4928}
+\hypertarget{classSearchNode_a2b8ea5f6b2ded25baca165cfcee95f18}{\index{Search\-Node@{Search\-Node}!dump@{dump}}
+\index{dump@{dump}!SearchNode@{Search\-Node}}
+\subsubsection[{dump}]{\setlength{\rightskip}{0pt plus 5cm}void Search\-Node\-::dump (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classSearchNode_a2b8ea5f6b2ded25baca165cfcee95f18}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSearchNode_a2b8ea5f6b2ded25baca165cfcee95f18_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classSearchNode_aa299b21012d7fa1f90c3bccef5df8439}{\index{Search\-Node@{Search\-Node}!get\-\_\-g@{get\-\_\-g}}
+\index{get\-\_\-g@{get\-\_\-g}!SearchNode@{Search\-Node}}
+\subsubsection[{get\-\_\-g}]{\setlength{\rightskip}{0pt plus 5cm}int Search\-Node\-::get\-\_\-g (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classSearchNode_aa299b21012d7fa1f90c3bccef5df8439}
+\hypertarget{classSearchNode_a89b705ff62c9ac41ead314ae76466afa}{\index{Search\-Node@{Search\-Node}!get\-\_\-h@{get\-\_\-h}}
+\index{get\-\_\-h@{get\-\_\-h}!SearchNode@{Search\-Node}}
+\subsubsection[{get\-\_\-h}]{\setlength{\rightskip}{0pt plus 5cm}int Search\-Node\-::get\-\_\-h (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classSearchNode_a89b705ff62c9ac41ead314ae76466afa}
+\hypertarget{classSearchNode_a96eb7376415f022f090d45b68e5a7b90}{\index{Search\-Node@{Search\-Node}!get\-\_\-real\-\_\-g@{get\-\_\-real\-\_\-g}}
+\index{get\-\_\-real\-\_\-g@{get\-\_\-real\-\_\-g}!SearchNode@{Search\-Node}}
+\subsubsection[{get\-\_\-real\-\_\-g}]{\setlength{\rightskip}{0pt plus 5cm}int Search\-Node\-::get\-\_\-real\-\_\-g (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classSearchNode_a96eb7376415f022f090d45b68e5a7b90}
+\hypertarget{classSearchNode_a2b9024c1cefb9d38663d9b6c24b060e6}{\index{Search\-Node@{Search\-Node}!get\-\_\-state@{get\-\_\-state}}
+\index{get\-\_\-state@{get\-\_\-state}!SearchNode@{Search\-Node}}
+\subsubsection[{get\-\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Global\-State} Search\-Node\-::get\-\_\-state (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classSearchNode_a2b9024c1cefb9d38663d9b6c24b060e6}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classSearchNode_a2b9024c1cefb9d38663d9b6c24b060e6_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classSearchNode_a1683291b8c3cc021eebc962a33a188d8}{\index{Search\-Node@{Search\-Node}!get\-\_\-state\-\_\-id@{get\-\_\-state\-\_\-id}}
+\index{get\-\_\-state\-\_\-id@{get\-\_\-state\-\_\-id}!SearchNode@{Search\-Node}}
+\subsubsection[{get\-\_\-state\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf State\-I\-D} Search\-Node\-::get\-\_\-state\-\_\-id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classSearchNode_a1683291b8c3cc021eebc962a33a188d8}
+\hypertarget{classSearchNode_ad8e218a82c61a7491e98aa479fda54a1}{\index{Search\-Node@{Search\-Node}!increase\-\_\-h@{increase\-\_\-h}}
+\index{increase\-\_\-h@{increase\-\_\-h}!SearchNode@{Search\-Node}}
+\subsubsection[{increase\-\_\-h}]{\setlength{\rightskip}{0pt plus 5cm}void Search\-Node\-::increase\-\_\-h (
+\begin{DoxyParamCaption}
+\item[{int}]{h}
+\end{DoxyParamCaption}
+)}}\label{classSearchNode_ad8e218a82c61a7491e98aa479fda54a1}
+\hypertarget{classSearchNode_a62bdaff59af0aa9c5f712cded05b97ef}{\index{Search\-Node@{Search\-Node}!is\-\_\-closed@{is\-\_\-closed}}
+\index{is\-\_\-closed@{is\-\_\-closed}!SearchNode@{Search\-Node}}
+\subsubsection[{is\-\_\-closed}]{\setlength{\rightskip}{0pt plus 5cm}bool Search\-Node\-::is\-\_\-closed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classSearchNode_a62bdaff59af0aa9c5f712cded05b97ef}
+\hypertarget{classSearchNode_a122f43b9dcf7e5be7aca4b81bfcc9b5b}{\index{Search\-Node@{Search\-Node}!is\-\_\-dead\-\_\-end@{is\-\_\-dead\-\_\-end}}
+\index{is\-\_\-dead\-\_\-end@{is\-\_\-dead\-\_\-end}!SearchNode@{Search\-Node}}
+\subsubsection[{is\-\_\-dead\-\_\-end}]{\setlength{\rightskip}{0pt plus 5cm}bool Search\-Node\-::is\-\_\-dead\-\_\-end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classSearchNode_a122f43b9dcf7e5be7aca4b81bfcc9b5b}
+\hypertarget{classSearchNode_a450682f6fc503846e9230245ba057eda}{\index{Search\-Node@{Search\-Node}!is\-\_\-h\-\_\-dirty@{is\-\_\-h\-\_\-dirty}}
+\index{is\-\_\-h\-\_\-dirty@{is\-\_\-h\-\_\-dirty}!SearchNode@{Search\-Node}}
+\subsubsection[{is\-\_\-h\-\_\-dirty}]{\setlength{\rightskip}{0pt plus 5cm}bool Search\-Node\-::is\-\_\-h\-\_\-dirty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classSearchNode_a450682f6fc503846e9230245ba057eda}
+\hypertarget{classSearchNode_a8b39e4ab527b2ff96fac4cebd0dc03b2}{\index{Search\-Node@{Search\-Node}!is\-\_\-new@{is\-\_\-new}}
+\index{is\-\_\-new@{is\-\_\-new}!SearchNode@{Search\-Node}}
+\subsubsection[{is\-\_\-new}]{\setlength{\rightskip}{0pt plus 5cm}bool Search\-Node\-::is\-\_\-new (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classSearchNode_a8b39e4ab527b2ff96fac4cebd0dc03b2}
+\hypertarget{classSearchNode_a825e90bb6b6652666b7854b77f38f5db}{\index{Search\-Node@{Search\-Node}!is\-\_\-open@{is\-\_\-open}}
+\index{is\-\_\-open@{is\-\_\-open}!SearchNode@{Search\-Node}}
+\subsubsection[{is\-\_\-open}]{\setlength{\rightskip}{0pt plus 5cm}bool Search\-Node\-::is\-\_\-open (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classSearchNode_a825e90bb6b6652666b7854b77f38f5db}
+\hypertarget{classSearchNode_aa18be25ebe8b3ffaef2065f27382eeb5}{\index{Search\-Node@{Search\-Node}!mark\-\_\-as\-\_\-dead\-\_\-end@{mark\-\_\-as\-\_\-dead\-\_\-end}}
+\index{mark\-\_\-as\-\_\-dead\-\_\-end@{mark\-\_\-as\-\_\-dead\-\_\-end}!SearchNode@{Search\-Node}}
+\subsubsection[{mark\-\_\-as\-\_\-dead\-\_\-end}]{\setlength{\rightskip}{0pt plus 5cm}void Search\-Node\-::mark\-\_\-as\-\_\-dead\-\_\-end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSearchNode_aa18be25ebe8b3ffaef2065f27382eeb5}
+\hypertarget{classSearchNode_a6ad78d5b4a0b76e49ba62182b72a05a5}{\index{Search\-Node@{Search\-Node}!open@{open}}
+\index{open@{open}!SearchNode@{Search\-Node}}
+\subsubsection[{open}]{\setlength{\rightskip}{0pt plus 5cm}void Search\-Node\-::open (
+\begin{DoxyParamCaption}
+\item[{int}]{h, }
+\item[{const {\bf Search\-Node} \&}]{parent\-\_\-node, }
+\item[{const {\bf Global\-Operator} $\ast$}]{parent\-\_\-op}
+\end{DoxyParamCaption}
+)}}\label{classSearchNode_a6ad78d5b4a0b76e49ba62182b72a05a5}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSearchNode_a6ad78d5b4a0b76e49ba62182b72a05a5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classSearchNode_ae4836802efa4b8e0643dfefa59a96c32}{\index{Search\-Node@{Search\-Node}!open\-\_\-initial@{open\-\_\-initial}}
+\index{open\-\_\-initial@{open\-\_\-initial}!SearchNode@{Search\-Node}}
+\subsubsection[{open\-\_\-initial}]{\setlength{\rightskip}{0pt plus 5cm}void Search\-Node\-::open\-\_\-initial (
+\begin{DoxyParamCaption}
+\item[{int}]{h}
+\end{DoxyParamCaption}
+)}}\label{classSearchNode_ae4836802efa4b8e0643dfefa59a96c32}
+\hypertarget{classSearchNode_ace9cdda641a7e73df265c3d8141aa236}{\index{Search\-Node@{Search\-Node}!reopen@{reopen}}
+\index{reopen@{reopen}!SearchNode@{Search\-Node}}
+\subsubsection[{reopen}]{\setlength{\rightskip}{0pt plus 5cm}void Search\-Node\-::reopen (
+\begin{DoxyParamCaption}
+\item[{const {\bf Search\-Node} \&}]{parent\-\_\-node, }
+\item[{const {\bf Global\-Operator} $\ast$}]{parent\-\_\-op}
+\end{DoxyParamCaption}
+)}}\label{classSearchNode_ace9cdda641a7e73df265c3d8141aa236}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSearchNode_ace9cdda641a7e73df265c3d8141aa236_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classSearchNode_ad5db250a2114bbb97c16f19f4ada06e7}{\index{Search\-Node@{Search\-Node}!set\-\_\-h\-\_\-dirty@{set\-\_\-h\-\_\-dirty}}
+\index{set\-\_\-h\-\_\-dirty@{set\-\_\-h\-\_\-dirty}!SearchNode@{Search\-Node}}
+\subsubsection[{set\-\_\-h\-\_\-dirty}]{\setlength{\rightskip}{0pt plus 5cm}void Search\-Node\-::set\-\_\-h\-\_\-dirty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSearchNode_ad5db250a2114bbb97c16f19f4ada06e7}
+\hypertarget{classSearchNode_a4790c765cd6123d95281c598c6daf064}{\index{Search\-Node@{Search\-Node}!update\-\_\-parent@{update\-\_\-parent}}
+\index{update\-\_\-parent@{update\-\_\-parent}!SearchNode@{Search\-Node}}
+\subsubsection[{update\-\_\-parent}]{\setlength{\rightskip}{0pt plus 5cm}void Search\-Node\-::update\-\_\-parent (
+\begin{DoxyParamCaption}
+\item[{const {\bf Search\-Node} \&}]{parent\-\_\-node, }
+\item[{const {\bf Global\-Operator} $\ast$}]{parent\-\_\-op}
+\end{DoxyParamCaption}
+)}}\label{classSearchNode_a4790c765cd6123d95281c598c6daf064}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSearchNode_a4790c765cd6123d95281c598c6daf064_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{search__space_8h}{search\-\_\-space.\-h}\item 
+\hyperlink{search__space_8cc}{search\-\_\-space.\-cc}\end{DoxyCompactItemize}

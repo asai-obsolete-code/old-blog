@@ -1,0 +1,6 @@
+<map id="get_adjusted_action_cost" name="get_adjusted_action_cost">
+<area shape="rect" id="node2" href="$classGlobalOperator.html#a0c9c5fce70001d45a29d8d3d4bd745bf" title="GlobalOperator::is\l_axiom" alt="" coords="246,5,373,46"/>
+<area shape="rect" id="node3" href="$operator__cost_8cc.html#adaa34fd9ebd06eaf08ea12b09344c6eb" title="get_adjusted_action_cost" alt="" coords="224,71,395,97"/>
+<area shape="rect" id="node5" href="$classGlobalOperator.html#a599fca43db2814e373553974b1237e99" title="GlobalOperator::get_cost" alt="" coords="226,121,393,148"/>
+<area shape="rect" id="node4" href="$globals_8cc.html#a5a7097355229b8b7cf2239c1d6f7eff3" title="is_unit_cost" alt="" coords="443,71,535,97"/>
+</map>

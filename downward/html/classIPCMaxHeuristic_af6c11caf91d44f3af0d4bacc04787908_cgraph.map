@@ -1,0 +1,8 @@
+<map id="IPCMaxHeuristic::compute_heuristic" name="IPCMaxHeuristic::compute_heuristic">
+<area shape="rect" id="node2" href="$classEvaluationContext.html#a0922a801e720bb65221ed95bad2c614a" title="EvaluationContext::\lget_heuristic_value" alt="" coords="235,103,373,145"/>
+<area shape="rect" id="node3" href="$classEvaluationContext.html#a74c1d7b061b2bb69a481faa4abac62c0" title="EvaluationContext::\lget_result" alt="" coords="426,70,563,111"/>
+<area shape="rect" id="node7" href="$classEvaluationResult.html#a19bbe29131c228b9282a0122525936f6" title="EvaluationResult::get\l_h_value" alt="" coords="421,135,568,177"/>
+<area shape="rect" id="node4" href="$classEvaluationResult.html#ad56b6a8dbff00673aedb984fbe6f72a5" title="EvaluationResult::is\l_uninitialized" alt="" coords="633,5,772,46"/>
+<area shape="rect" id="node5" href="$classScalarEvaluator.html#a8ffb99b0f8f63e34183a3245a247a9ec" title="ScalarEvaluator::compute\l_result" alt="" coords="617,70,789,111"/>
+<area shape="rect" id="node6" href="$classSearchStatistics.html#a57f71a965c7693054ec18ba1b25a557f" title="SearchStatistics::inc\l_evaluations" alt="" coords="631,135,774,177"/>
+</map>

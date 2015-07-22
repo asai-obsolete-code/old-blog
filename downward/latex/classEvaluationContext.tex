@@ -1,0 +1,219 @@
+\hypertarget{classEvaluationContext}{\section{Evaluation\-Context Class Reference}
+\label{classEvaluationContext}\index{Evaluation\-Context@{Evaluation\-Context}}
+}
+
+
+{\ttfamily \#include $<$evaluation\-\_\-context.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEvaluationContext_a71c9f43b9b62c4939ebf7046205d7b8d}{Evaluation\-Context} (const \hyperlink{classHeuristicCache}{Heuristic\-Cache} \&cache, int g\-\_\-value, bool \hyperlink{classEvaluationContext_afb7203396d74b1fb61b76cc0a44b0610}{is\-\_\-preferred}, \hyperlink{classSearchStatistics}{Search\-Statistics} $\ast$statistics)
+\item 
+\hyperlink{classEvaluationContext_a48cdd3805cba557037e353b94da5075e}{Evaluation\-Context} (const \hyperlink{classGlobalState}{Global\-State} \&state, int g\-\_\-value, bool \hyperlink{classEvaluationContext_afb7203396d74b1fb61b76cc0a44b0610}{is\-\_\-preferred}, \hyperlink{classSearchStatistics}{Search\-Statistics} $\ast$statistics)
+\item 
+\hyperlink{classEvaluationContext_addd016c1c824ea3372fe94293cffbccc}{Evaluation\-Context} (const \hyperlink{classGlobalState}{Global\-State} \&state, \hyperlink{classSearchStatistics}{Search\-Statistics} $\ast$statistics=nullptr)
+\item 
+\hyperlink{classEvaluationContext_afe96180b6e67a0719fda86142848da3e}{$\sim$\-Evaluation\-Context} ()=default
+\item 
+const \hyperlink{classEvaluationResult}{Evaluation\-Result} \& \hyperlink{classEvaluationContext_a74c1d7b061b2bb69a481faa4abac62c0}{get\-\_\-result} (\hyperlink{classScalarEvaluator}{Scalar\-Evaluator} $\ast$heur)
+\item 
+const \hyperlink{classHeuristicCache}{Heuristic\-Cache} \& \hyperlink{classEvaluationContext_a0935497a024c42e47e105c2247a2f492}{get\-\_\-cache} () const 
+\item 
+const \hyperlink{classGlobalState}{Global\-State} \& \hyperlink{classEvaluationContext_a21399aa76c2baaf352922c8ad203eed7}{get\-\_\-state} () const 
+\item 
+int \hyperlink{classEvaluationContext_a6ff33ce72e425200c6474be100023a9e}{get\-\_\-g\-\_\-value} () const 
+\item 
+bool \hyperlink{classEvaluationContext_afb7203396d74b1fb61b76cc0a44b0610}{is\-\_\-preferred} () const 
+\item 
+bool \hyperlink{classEvaluationContext_a808f44a988b1b57089b73c548131ec87}{is\-\_\-heuristic\-\_\-infinite} (\hyperlink{classScalarEvaluator}{Scalar\-Evaluator} $\ast$heur)
+\item 
+int \hyperlink{classEvaluationContext_a0922a801e720bb65221ed95bad2c614a}{get\-\_\-heuristic\-\_\-value} (\hyperlink{classScalarEvaluator}{Scalar\-Evaluator} $\ast$heur)
+\item 
+int \hyperlink{classEvaluationContext_a3a7931d4b5899fac556b27e8474a08d3}{get\-\_\-heuristic\-\_\-value\-\_\-or\-\_\-infinity} (\hyperlink{classScalarEvaluator}{Scalar\-Evaluator} $\ast$heur)
+\item 
+const std\-::vector$<$ const \\*
+\hyperlink{classGlobalOperator}{Global\-Operator} $\ast$ $>$ \& \hyperlink{classEvaluationContext_a69f4a63ba56f594d3a5fa67e357e7807}{get\-\_\-preferred\-\_\-operators} (\hyperlink{classScalarEvaluator}{Scalar\-Evaluator} $\ast$heur)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classEvaluationContext_a71c9f43b9b62c4939ebf7046205d7b8d}{\index{Evaluation\-Context@{Evaluation\-Context}!Evaluation\-Context@{Evaluation\-Context}}
+\index{Evaluation\-Context@{Evaluation\-Context}!EvaluationContext@{Evaluation\-Context}}
+\subsubsection[{Evaluation\-Context}]{\setlength{\rightskip}{0pt plus 5cm}Evaluation\-Context\-::\-Evaluation\-Context (
+\begin{DoxyParamCaption}
+\item[{const {\bf Heuristic\-Cache} \&}]{cache, }
+\item[{int}]{g\-\_\-value, }
+\item[{bool}]{is\-\_\-preferred, }
+\item[{{\bf Search\-Statistics} $\ast$}]{statistics}
+\end{DoxyParamCaption}
+)}}\label{classEvaluationContext_a71c9f43b9b62c4939ebf7046205d7b8d}
+\hypertarget{classEvaluationContext_a48cdd3805cba557037e353b94da5075e}{\index{Evaluation\-Context@{Evaluation\-Context}!Evaluation\-Context@{Evaluation\-Context}}
+\index{Evaluation\-Context@{Evaluation\-Context}!EvaluationContext@{Evaluation\-Context}}
+\subsubsection[{Evaluation\-Context}]{\setlength{\rightskip}{0pt plus 5cm}Evaluation\-Context\-::\-Evaluation\-Context (
+\begin{DoxyParamCaption}
+\item[{const {\bf Global\-State} \&}]{state, }
+\item[{int}]{g\-\_\-value, }
+\item[{bool}]{is\-\_\-preferred, }
+\item[{{\bf Search\-Statistics} $\ast$}]{statistics}
+\end{DoxyParamCaption}
+)}}\label{classEvaluationContext_a48cdd3805cba557037e353b94da5075e}
+\hypertarget{classEvaluationContext_addd016c1c824ea3372fe94293cffbccc}{\index{Evaluation\-Context@{Evaluation\-Context}!Evaluation\-Context@{Evaluation\-Context}}
+\index{Evaluation\-Context@{Evaluation\-Context}!EvaluationContext@{Evaluation\-Context}}
+\subsubsection[{Evaluation\-Context}]{\setlength{\rightskip}{0pt plus 5cm}Evaluation\-Context\-::\-Evaluation\-Context (
+\begin{DoxyParamCaption}
+\item[{const {\bf Global\-State} \&}]{state, }
+\item[{{\bf Search\-Statistics} $\ast$}]{statistics = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)}}\label{classEvaluationContext_addd016c1c824ea3372fe94293cffbccc}
+\hypertarget{classEvaluationContext_afe96180b6e67a0719fda86142848da3e}{\index{Evaluation\-Context@{Evaluation\-Context}!$\sim$\-Evaluation\-Context@{$\sim$\-Evaluation\-Context}}
+\index{$\sim$\-Evaluation\-Context@{$\sim$\-Evaluation\-Context}!EvaluationContext@{Evaluation\-Context}}
+\subsubsection[{$\sim$\-Evaluation\-Context}]{\setlength{\rightskip}{0pt plus 5cm}Evaluation\-Context\-::$\sim$\-Evaluation\-Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classEvaluationContext_afe96180b6e67a0719fda86142848da3e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classEvaluationContext_a0935497a024c42e47e105c2247a2f492}{\index{Evaluation\-Context@{Evaluation\-Context}!get\-\_\-cache@{get\-\_\-cache}}
+\index{get\-\_\-cache@{get\-\_\-cache}!EvaluationContext@{Evaluation\-Context}}
+\subsubsection[{get\-\_\-cache}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Heuristic\-Cache} \& Evaluation\-Context\-::get\-\_\-cache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classEvaluationContext_a0935497a024c42e47e105c2247a2f492}
+\hypertarget{classEvaluationContext_a6ff33ce72e425200c6474be100023a9e}{\index{Evaluation\-Context@{Evaluation\-Context}!get\-\_\-g\-\_\-value@{get\-\_\-g\-\_\-value}}
+\index{get\-\_\-g\-\_\-value@{get\-\_\-g\-\_\-value}!EvaluationContext@{Evaluation\-Context}}
+\subsubsection[{get\-\_\-g\-\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}int Evaluation\-Context\-::get\-\_\-g\-\_\-value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classEvaluationContext_a6ff33ce72e425200c6474be100023a9e}
+\hypertarget{classEvaluationContext_a0922a801e720bb65221ed95bad2c614a}{\index{Evaluation\-Context@{Evaluation\-Context}!get\-\_\-heuristic\-\_\-value@{get\-\_\-heuristic\-\_\-value}}
+\index{get\-\_\-heuristic\-\_\-value@{get\-\_\-heuristic\-\_\-value}!EvaluationContext@{Evaluation\-Context}}
+\subsubsection[{get\-\_\-heuristic\-\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}int Evaluation\-Context\-::get\-\_\-heuristic\-\_\-value (
+\begin{DoxyParamCaption}
+\item[{{\bf Scalar\-Evaluator} $\ast$}]{heur}
+\end{DoxyParamCaption}
+)}}\label{classEvaluationContext_a0922a801e720bb65221ed95bad2c614a}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEvaluationContext_a0922a801e720bb65221ed95bad2c614a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classEvaluationContext_a3a7931d4b5899fac556b27e8474a08d3}{\index{Evaluation\-Context@{Evaluation\-Context}!get\-\_\-heuristic\-\_\-value\-\_\-or\-\_\-infinity@{get\-\_\-heuristic\-\_\-value\-\_\-or\-\_\-infinity}}
+\index{get\-\_\-heuristic\-\_\-value\-\_\-or\-\_\-infinity@{get\-\_\-heuristic\-\_\-value\-\_\-or\-\_\-infinity}!EvaluationContext@{Evaluation\-Context}}
+\subsubsection[{get\-\_\-heuristic\-\_\-value\-\_\-or\-\_\-infinity}]{\setlength{\rightskip}{0pt plus 5cm}int Evaluation\-Context\-::get\-\_\-heuristic\-\_\-value\-\_\-or\-\_\-infinity (
+\begin{DoxyParamCaption}
+\item[{{\bf Scalar\-Evaluator} $\ast$}]{heur}
+\end{DoxyParamCaption}
+)}}\label{classEvaluationContext_a3a7931d4b5899fac556b27e8474a08d3}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEvaluationContext_a3a7931d4b5899fac556b27e8474a08d3_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classEvaluationContext_a69f4a63ba56f594d3a5fa67e357e7807}{\index{Evaluation\-Context@{Evaluation\-Context}!get\-\_\-preferred\-\_\-operators@{get\-\_\-preferred\-\_\-operators}}
+\index{get\-\_\-preferred\-\_\-operators@{get\-\_\-preferred\-\_\-operators}!EvaluationContext@{Evaluation\-Context}}
+\subsubsection[{get\-\_\-preferred\-\_\-operators}]{\setlength{\rightskip}{0pt plus 5cm}const vector$<$ const {\bf Global\-Operator} $\ast$ $>$ \& Evaluation\-Context\-::get\-\_\-preferred\-\_\-operators (
+\begin{DoxyParamCaption}
+\item[{{\bf Scalar\-Evaluator} $\ast$}]{heur}
+\end{DoxyParamCaption}
+)}}\label{classEvaluationContext_a69f4a63ba56f594d3a5fa67e357e7807}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEvaluationContext_a69f4a63ba56f594d3a5fa67e357e7807_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classEvaluationContext_a74c1d7b061b2bb69a481faa4abac62c0}{\index{Evaluation\-Context@{Evaluation\-Context}!get\-\_\-result@{get\-\_\-result}}
+\index{get\-\_\-result@{get\-\_\-result}!EvaluationContext@{Evaluation\-Context}}
+\subsubsection[{get\-\_\-result}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Evaluation\-Result} \& Evaluation\-Context\-::get\-\_\-result (
+\begin{DoxyParamCaption}
+\item[{{\bf Scalar\-Evaluator} $\ast$}]{heur}
+\end{DoxyParamCaption}
+)}}\label{classEvaluationContext_a74c1d7b061b2bb69a481faa4abac62c0}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEvaluationContext_a74c1d7b061b2bb69a481faa4abac62c0_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classEvaluationContext_a21399aa76c2baaf352922c8ad203eed7}{\index{Evaluation\-Context@{Evaluation\-Context}!get\-\_\-state@{get\-\_\-state}}
+\index{get\-\_\-state@{get\-\_\-state}!EvaluationContext@{Evaluation\-Context}}
+\subsubsection[{get\-\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Global\-State} \& Evaluation\-Context\-::get\-\_\-state (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classEvaluationContext_a21399aa76c2baaf352922c8ad203eed7}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classEvaluationContext_a21399aa76c2baaf352922c8ad203eed7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classEvaluationContext_a808f44a988b1b57089b73c548131ec87}{\index{Evaluation\-Context@{Evaluation\-Context}!is\-\_\-heuristic\-\_\-infinite@{is\-\_\-heuristic\-\_\-infinite}}
+\index{is\-\_\-heuristic\-\_\-infinite@{is\-\_\-heuristic\-\_\-infinite}!EvaluationContext@{Evaluation\-Context}}
+\subsubsection[{is\-\_\-heuristic\-\_\-infinite}]{\setlength{\rightskip}{0pt plus 5cm}bool Evaluation\-Context\-::is\-\_\-heuristic\-\_\-infinite (
+\begin{DoxyParamCaption}
+\item[{{\bf Scalar\-Evaluator} $\ast$}]{heur}
+\end{DoxyParamCaption}
+)}}\label{classEvaluationContext_a808f44a988b1b57089b73c548131ec87}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEvaluationContext_a808f44a988b1b57089b73c548131ec87_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classEvaluationContext_afb7203396d74b1fb61b76cc0a44b0610}{\index{Evaluation\-Context@{Evaluation\-Context}!is\-\_\-preferred@{is\-\_\-preferred}}
+\index{is\-\_\-preferred@{is\-\_\-preferred}!EvaluationContext@{Evaluation\-Context}}
+\subsubsection[{is\-\_\-preferred}]{\setlength{\rightskip}{0pt plus 5cm}bool Evaluation\-Context\-::is\-\_\-preferred (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classEvaluationContext_afb7203396d74b1fb61b76cc0a44b0610}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{evaluation__context_8h}{evaluation\-\_\-context.\-h}\item 
+\hyperlink{evaluation__context_8cc}{evaluation\-\_\-context.\-cc}\end{DoxyCompactItemize}

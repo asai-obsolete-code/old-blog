@@ -1,0 +1,157 @@
+\hypertarget{classRandomNumberGenerator}{\section{Random\-Number\-Generator Class Reference}
+\label{classRandomNumberGenerator}\index{Random\-Number\-Generator@{Random\-Number\-Generator}}
+}
+
+
+{\ttfamily \#include $<$rng.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRandomNumberGenerator_a8e7e711ea58f13f3ed95becbe33684e9}{Random\-Number\-Generator} ()
+\item 
+\hyperlink{classRandomNumberGenerator_aad6093b84afbbd4035ca212aa6db9353}{Random\-Number\-Generator} (int \hyperlink{classRandomNumberGenerator_acfbecc34525561920a9c5199fe48673a}{seed})
+\item 
+\hyperlink{classRandomNumberGenerator_a5567db9a0e079b2188d0800c9d065f33}{Random\-Number\-Generator} (const \hyperlink{classRandomNumberGenerator}{Random\-Number\-Generator} \&)=delete
+\item 
+\hyperlink{classRandomNumberGenerator}{Random\-Number\-Generator} \& \hyperlink{classRandomNumberGenerator_aca181ea227eecad35f2eba39c1a75459}{operator=} (const \hyperlink{classRandomNumberGenerator}{Random\-Number\-Generator} \&)=delete
+\item 
+\hyperlink{classRandomNumberGenerator_af4949b4234bd8d8283028162f8a8e7f5}{$\sim$\-Random\-Number\-Generator} ()
+\item 
+void \hyperlink{classRandomNumberGenerator_acfbecc34525561920a9c5199fe48673a}{seed} (int seed)
+\item 
+double \hyperlink{classRandomNumberGenerator_af24ebb29a219641d8234ae178010cfaa}{operator()} ()
+\item 
+int \hyperlink{classRandomNumberGenerator_aa2a4a0a8b903b39eed19953f542e9ce8}{operator()} (int bound)
+\item 
+{\footnotesize template$<$class T $>$ }\\std\-::vector$<$ T $>$\-::const\-\_\-iterator \hyperlink{classRandomNumberGenerator_a9d8504466d72cc3b06c1450b7d60cb22}{choose} (const std\-::vector$<$ T $>$ \&vec)
+\item 
+{\footnotesize template$<$class T $>$ }\\std\-::vector$<$ T $>$\-::iterator \hyperlink{classRandomNumberGenerator_a15e94bb4c22d07569c0864029f76213c}{choose} (std\-::vector$<$ T $>$ \&vec)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{classRandomNumberGenerator_ae9ac233ae41471a32afd3524322b885a}{shuffle} (std\-::vector$<$ T $>$ \&vec)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRandomNumberGenerator_a8e7e711ea58f13f3ed95becbe33684e9}{\index{Random\-Number\-Generator@{Random\-Number\-Generator}!Random\-Number\-Generator@{Random\-Number\-Generator}}
+\index{Random\-Number\-Generator@{Random\-Number\-Generator}!RandomNumberGenerator@{Random\-Number\-Generator}}
+\subsubsection[{Random\-Number\-Generator}]{\setlength{\rightskip}{0pt plus 5cm}Random\-Number\-Generator\-::\-Random\-Number\-Generator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRandomNumberGenerator_a8e7e711ea58f13f3ed95becbe33684e9}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classRandomNumberGenerator_a8e7e711ea58f13f3ed95becbe33684e9_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRandomNumberGenerator_aad6093b84afbbd4035ca212aa6db9353}{\index{Random\-Number\-Generator@{Random\-Number\-Generator}!Random\-Number\-Generator@{Random\-Number\-Generator}}
+\index{Random\-Number\-Generator@{Random\-Number\-Generator}!RandomNumberGenerator@{Random\-Number\-Generator}}
+\subsubsection[{Random\-Number\-Generator}]{\setlength{\rightskip}{0pt plus 5cm}Random\-Number\-Generator\-::\-Random\-Number\-Generator (
+\begin{DoxyParamCaption}
+\item[{int}]{seed}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classRandomNumberGenerator_aad6093b84afbbd4035ca212aa6db9353}
+\hypertarget{classRandomNumberGenerator_a5567db9a0e079b2188d0800c9d065f33}{\index{Random\-Number\-Generator@{Random\-Number\-Generator}!Random\-Number\-Generator@{Random\-Number\-Generator}}
+\index{Random\-Number\-Generator@{Random\-Number\-Generator}!RandomNumberGenerator@{Random\-Number\-Generator}}
+\subsubsection[{Random\-Number\-Generator}]{\setlength{\rightskip}{0pt plus 5cm}Random\-Number\-Generator\-::\-Random\-Number\-Generator (
+\begin{DoxyParamCaption}
+\item[{const {\bf Random\-Number\-Generator} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}}\label{classRandomNumberGenerator_a5567db9a0e079b2188d0800c9d065f33}
+\hypertarget{classRandomNumberGenerator_af4949b4234bd8d8283028162f8a8e7f5}{\index{Random\-Number\-Generator@{Random\-Number\-Generator}!$\sim$\-Random\-Number\-Generator@{$\sim$\-Random\-Number\-Generator}}
+\index{$\sim$\-Random\-Number\-Generator@{$\sim$\-Random\-Number\-Generator}!RandomNumberGenerator@{Random\-Number\-Generator}}
+\subsubsection[{$\sim$\-Random\-Number\-Generator}]{\setlength{\rightskip}{0pt plus 5cm}Random\-Number\-Generator\-::$\sim$\-Random\-Number\-Generator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRandomNumberGenerator_af4949b4234bd8d8283028162f8a8e7f5}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRandomNumberGenerator_a9d8504466d72cc3b06c1450b7d60cb22}{\index{Random\-Number\-Generator@{Random\-Number\-Generator}!choose@{choose}}
+\index{choose@{choose}!RandomNumberGenerator@{Random\-Number\-Generator}}
+\subsubsection[{choose}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ std\-::vector$<$T$>$\-::const\-\_\-iterator Random\-Number\-Generator\-::choose (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ T $>$ \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRandomNumberGenerator_a9d8504466d72cc3b06c1450b7d60cb22}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRandomNumberGenerator_a9d8504466d72cc3b06c1450b7d60cb22_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRandomNumberGenerator_a15e94bb4c22d07569c0864029f76213c}{\index{Random\-Number\-Generator@{Random\-Number\-Generator}!choose@{choose}}
+\index{choose@{choose}!RandomNumberGenerator@{Random\-Number\-Generator}}
+\subsubsection[{choose}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ std\-::vector$<$T$>$\-::iterator Random\-Number\-Generator\-::choose (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ T $>$ \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRandomNumberGenerator_a15e94bb4c22d07569c0864029f76213c}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRandomNumberGenerator_a15e94bb4c22d07569c0864029f76213c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRandomNumberGenerator_af24ebb29a219641d8234ae178010cfaa}{\index{Random\-Number\-Generator@{Random\-Number\-Generator}!operator()@{operator()}}
+\index{operator()@{operator()}!RandomNumberGenerator@{Random\-Number\-Generator}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}double Random\-Number\-Generator\-::operator() (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRandomNumberGenerator_af24ebb29a219641d8234ae178010cfaa}
+\hypertarget{classRandomNumberGenerator_aa2a4a0a8b903b39eed19953f542e9ce8}{\index{Random\-Number\-Generator@{Random\-Number\-Generator}!operator()@{operator()}}
+\index{operator()@{operator()}!RandomNumberGenerator@{Random\-Number\-Generator}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}int Random\-Number\-Generator\-::operator() (
+\begin{DoxyParamCaption}
+\item[{int}]{bound}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRandomNumberGenerator_aa2a4a0a8b903b39eed19953f542e9ce8}
+\hypertarget{classRandomNumberGenerator_aca181ea227eecad35f2eba39c1a75459}{\index{Random\-Number\-Generator@{Random\-Number\-Generator}!operator=@{operator=}}
+\index{operator=@{operator=}!RandomNumberGenerator@{Random\-Number\-Generator}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Random\-Number\-Generator}\& Random\-Number\-Generator\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Random\-Number\-Generator} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}}\label{classRandomNumberGenerator_aca181ea227eecad35f2eba39c1a75459}
+\hypertarget{classRandomNumberGenerator_acfbecc34525561920a9c5199fe48673a}{\index{Random\-Number\-Generator@{Random\-Number\-Generator}!seed@{seed}}
+\index{seed@{seed}!RandomNumberGenerator@{Random\-Number\-Generator}}
+\subsubsection[{seed}]{\setlength{\rightskip}{0pt plus 5cm}void Random\-Number\-Generator\-::seed (
+\begin{DoxyParamCaption}
+\item[{int}]{seed}
+\end{DoxyParamCaption}
+)}}\label{classRandomNumberGenerator_acfbecc34525561920a9c5199fe48673a}
+\hypertarget{classRandomNumberGenerator_ae9ac233ae41471a32afd3524322b885a}{\index{Random\-Number\-Generator@{Random\-Number\-Generator}!shuffle@{shuffle}}
+\index{shuffle@{shuffle}!RandomNumberGenerator@{Random\-Number\-Generator}}
+\subsubsection[{shuffle}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void Random\-Number\-Generator\-::shuffle (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ T $>$ \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRandomNumberGenerator_ae9ac233ae41471a32afd3524322b885a}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{rng_8h}{rng.\-h}\item 
+\hyperlink{rng_8cc}{rng.\-cc}\end{DoxyCompactItemize}

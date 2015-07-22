@@ -1,0 +1,33 @@
+\hypertarget{index_brief_sec}{}\section{Brief Description}\label{index_brief_sec}
+Following is a brief description of the general structure of Fast Downward\-:
+
+Fast Downward is a heuristic search progression planner, using the S\-A\-S+ formalism. Many heuristics have been implemented in Fast Downward, and they will not be described here. This section describes the main classes involved with search in Fast Downward.\hypertarget{index_search_engine_sec}{}\subsection{Search Engine}\label{index_search_engine_sec}
+The \hyperlink{classSearchEngine}{Search\-Engine} class is the base class for all search algorithms. The method search() of \hyperlink{classSearchEngine}{Search\-Engine} performs the actual search, by repeatedly calling the virtual method step() until a solution is found, or the search space is exhausted.
+
+There are two main implementations of \hyperlink{classSearchEngine}{Search\-Engine}\-:
+\begin{DoxyItemize}
+\item \hyperlink{classEagerSearch}{Eager\-Search} -\/ implements eager search (i.\-e. each state and its heuristic value is computed before inserting into the open list)
+\item \hyperlink{classLazySearch}{Lazy\-Search} -\/ implements lazy search (i.\-e. each state and its heuristic value is computed only when removed from the open list)
+\end{DoxyItemize}
+
+Each of these main classes can use a generic open list to support using multiple heuristics in various ways. They have been subclasses to create a simple way to use some standard search algorithms, like A$\ast$ (A\-Star\-Search\-Engine).\hypertarget{index_open_list_sec}{}\subsection{Open List}\label{index_open_list_sec}
+The \hyperlink{classOpenList}{Open\-List} class is the base class for all open lists. In Fast Downward, the open list (and not the search engine) is responsible for handling multiple heuristics and preferred operators in various ways.
+
+
+\begin{DoxyItemize}
+\item Standard\-Scalar\-Open\-List -\/ implements a standard (one value) open list
+\item Tie\-Breaking\-Open\-List -\/ implements a standard tie breaking open list (i.\-e. value1 is more important than value2)
+\item Pareto\-Open\-List -\/ implements pareto-\/optimal open lists (i.\-e. the next node to be removed is pareto optimal according to all values)
+\item Alternation\-Open\-List -\/ implements the dual queues approach
+\end{DoxyItemize}
+
+Most open lists use Evaluator objects (Standard\-Scalar\-Open\-List has one Evaluator, Tie\-Breaking\-Open\-List and Pareto\-Open\-List have several Evaluators). Alternation\-Open\-List uses several other \hyperlink{classOpenList}{Open\-List} objects, each of which contain their own Evaluators.\hypertarget{index_evaluator_sec}{}\subsection{Evaluators and Heuristics}\label{index_evaluator_sec}
+Evaluator objects (which generalize heuristics) are objects which evaluate a state, and are used by open lists. Currently, the only supported Evaluator is a \hyperlink{classScalarEvaluator}{Scalar\-Evaluator}, which returns a single numeric value.
+
+The implemented Scalar\-Evaluators are\-:
+\begin{DoxyItemize}
+\item \hyperlink{classHeuristic}{Heuristic} -\/ any heuristic is an evaluator, where the evaluation is the heuristic value
+\item \hyperlink{classGEvaluator}{G\-Evaluator} -\/ the evaluation of a state is simply the g-\/value of a state
+\item \hyperlink{classSumEvaluator}{Sum\-Evaluator} -\/ the evaluation of a state is the sum of several internal evaluators. This can be used to create f=g+h where g is a \hyperlink{classGEvaluator}{G\-Evaluator}, and h is a \hyperlink{classHeuristic}{Heuristic}.
+\item \hyperlink{classWeightedEvaluator}{Weighted\-Evaluator} -\/ the evaluation of a state is weighted by a constant factor. This can be used in weighted A$\ast$ (i.\-e. f=g+wh) 
+\end{DoxyItemize}

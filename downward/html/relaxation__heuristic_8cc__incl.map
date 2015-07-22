@@ -1,0 +1,16 @@
+<map id="relaxation_heuristic.cc" name="relaxation_heuristic.cc">
+<area shape="rect" id="node2" href="$relaxation__heuristic_8h.html" title="relaxation_heuristic.h" alt="" coords="411,80,556,107"/>
+<area shape="rect" id="node10" href="$task__proxy_8h.html" title="task_proxy.h" alt="" coords="783,229,880,256"/>
+<area shape="rect" id="node15" href="$utilities_8h.html" title="utilities.h" alt="" coords="1401,304,1475,331"/>
+<area shape="rect" id="node21" href="$global__operator_8h.html" title="global_operator.h" alt="" coords="1015,155,1136,181"/>
+<area shape="rect" id="node22" href="$global__state_8h.html" title="global_state.h" alt="" coords="1123,229,1225,256"/>
+<area shape="rect" id="node25" href="$globals_8h.html" title="globals.h" alt="" coords="61,304,135,331"/>
+<area shape="rect" id="node27" href="$utilities__hash_8h.html" title="utilities_hash.h" alt="" coords="1268,304,1377,331"/>
+<area shape="rect" id="node3" href="$heuristic_8h.html" title="heuristic.h" alt="" coords="304,155,385,181"/>
+<area shape="rect" id="node4" href="$operator__cost_8h.html" title="operator_cost.h" alt="" coords="243,229,353,256"/>
+<area shape="rect" id="node5" href="$scalar__evaluator_8h.html" title="scalar_evaluator.h" alt="" coords="91,229,219,256"/>
+<area shape="rect" id="node6" href="$evaluation__result_8h.html" title="evaluation_result.h" alt="" coords="160,304,289,331"/>
+<area shape="rect" id="node11" href="$abstract__task_8h.html" title="abstract_task.h" alt="" coords="632,304,743,331"/>
+<area shape="rect" id="node23" href="$int__packer_8h.html" title="int_packer.h" alt="" coords="1100,304,1193,331"/>
+<area shape="rect" id="node24" href="$state__id_8h.html" title="state_id.h" alt="" coords="1551,304,1629,331"/>
+</map>

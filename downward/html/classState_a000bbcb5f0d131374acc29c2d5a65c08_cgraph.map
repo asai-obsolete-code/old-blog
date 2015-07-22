@@ -1,0 +1,13 @@
+<map id="State::get_successor" name="State::get_successor">
+<area shape="rect" id="node2" href="$classAbstractTask.html#a0e713664080d2a70036b6307779e7593" title="AbstractTask::get_num\l_axioms" alt="" coords="205,5,363,46"/>
+<area shape="rect" id="node3" href="$classOperatorProxy.html#a2d573a6ad8530877f1d0467f7874c4b3" title="OperatorProxy::is_axiom" alt="" coords="201,71,367,97"/>
+<area shape="rect" id="node4" href="$classOperatorProxy.html#ad1bcc58e597fcd0af4634afefd944ee6" title="OperatorProxy::get\l_effects" alt="" coords="218,122,350,163"/>
+<area shape="rect" id="node5" href="$task__proxy_8h.html#ae831584621b7d11de1e699eac224eb35" title="does_fire" alt="" coords="247,188,321,215"/>
+<area shape="rect" id="node7" href="$classFactProxy.html#ac11e3f1fc46e6f11364d22f70d93ee5e" title="FactProxy::get_variable" alt="" coords="204,239,364,265"/>
+<area shape="rect" id="node8" href="$classVariableProxy.html#ac3b398d41af8e1e188c2a743bbe802a6" title="VariableProxy::get_id" alt="" coords="211,289,357,316"/>
+<area shape="rect" id="node9" href="$classFactProxy.html#a3cbeec330f72fe8066d657489742e0a0" title="FactProxy::get_value" alt="" coords="211,340,357,367"/>
+<area shape="rect" id="node10" href="$classState.html#a190690b30579dad2a05e870ff171ca9f" title="State::State" alt="" coords="238,391,330,417"/>
+<area shape="rect" id="node6" href="$classEffectProxy.html#aaf1a977be327948a5247a9cf41ea0040" title="EffectProxy::get_conditions" alt="" coords="417,188,599,215"/>
+<area shape="rect" id="node11" href="$classState.html#aa6a01718876f9abbb5aacbef952ecb21" title="State::size" alt="" coords="465,361,551,388"/>
+<area shape="rect" id="node12" href="$classAbstractTask.html#ab0f878648c015fb918567403e80d4e4b" title="AbstractTask::get_num\l_variables" alt="" coords="429,413,587,454"/>
+</map>

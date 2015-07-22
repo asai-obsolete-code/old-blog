@@ -1,0 +1,104 @@
+\hypertarget{classSegmentedArrayVector}{\section{Segmented\-Array\-Vector$<$ Element, Allocator $>$ Class Template Reference}
+\label{classSegmentedArrayVector}\index{Segmented\-Array\-Vector$<$ Element, Allocator $>$@{Segmented\-Array\-Vector$<$ Element, Allocator $>$}}
+}
+
+
+{\ttfamily \#include $<$segmented\-\_\-vector.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSegmentedArrayVector_ac17dbea2f5c89d91ab5fc43147e36118}{Segmented\-Array\-Vector} (size\-\_\-t elements\-\_\-per\-\_\-array\-\_\-)
+\item 
+\hyperlink{classSegmentedArrayVector_a1de81b80c2fbba50be8733b853127956}{Segmented\-Array\-Vector} (size\-\_\-t elements\-\_\-per\-\_\-array\-\_\-, const Element\-Allocator \&allocator\-\_\-)
+\item 
+\hyperlink{classSegmentedArrayVector_a726619d3b1d216b6980313a653ee7f68}{$\sim$\-Segmented\-Array\-Vector} ()
+\item 
+Element $\ast$ \hyperlink{classSegmentedArrayVector_aada885ec25b0c19294204de4b19fd90e}{operator\mbox{[}$\,$\mbox{]}} (size\-\_\-t index)
+\item 
+const Element $\ast$ \hyperlink{classSegmentedArrayVector_a1bc6d1e8c955ec83bc708bc6fa9ffdbc}{operator\mbox{[}$\,$\mbox{]}} (size\-\_\-t index) const 
+\item 
+size\-\_\-t \hyperlink{classSegmentedArrayVector_a6efe1e990f0e94d743b8d5e996be32af}{size} () const 
+\item 
+void \hyperlink{classSegmentedArrayVector_a81171a5200eb39fe7a77fff837bec77c}{push\-\_\-back} (const Element $\ast$entry)
+\item 
+void \hyperlink{classSegmentedArrayVector_a334007fae5874508618d6ca45547250b}{pop\-\_\-back} ()
+\item 
+void \hyperlink{classSegmentedArrayVector_a28f4fdd005ee4cc66dd8ae63987879c2}{resize} (size\-\_\-t new\-\_\-size, const Element $\ast$entry)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSegmentedArrayVector_ac17dbea2f5c89d91ab5fc43147e36118}{\index{Segmented\-Array\-Vector@{Segmented\-Array\-Vector}!Segmented\-Array\-Vector@{Segmented\-Array\-Vector}}
+\index{Segmented\-Array\-Vector@{Segmented\-Array\-Vector}!SegmentedArrayVector@{Segmented\-Array\-Vector}}
+\subsubsection[{Segmented\-Array\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Element, class Allocator = std\-::allocator$<$\-Element$>$$>$ {\bf Segmented\-Array\-Vector}$<$ Element, Allocator $>$\-::{\bf Segmented\-Array\-Vector} (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{elements\-\_\-per\-\_\-array\-\_\-}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classSegmentedArrayVector_ac17dbea2f5c89d91ab5fc43147e36118}
+\hypertarget{classSegmentedArrayVector_a1de81b80c2fbba50be8733b853127956}{\index{Segmented\-Array\-Vector@{Segmented\-Array\-Vector}!Segmented\-Array\-Vector@{Segmented\-Array\-Vector}}
+\index{Segmented\-Array\-Vector@{Segmented\-Array\-Vector}!SegmentedArrayVector@{Segmented\-Array\-Vector}}
+\subsubsection[{Segmented\-Array\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Element, class Allocator = std\-::allocator$<$\-Element$>$$>$ {\bf Segmented\-Array\-Vector}$<$ Element, Allocator $>$\-::{\bf Segmented\-Array\-Vector} (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{elements\-\_\-per\-\_\-array\-\_\-, }
+\item[{const Element\-Allocator \&}]{allocator\-\_\-}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classSegmentedArrayVector_a1de81b80c2fbba50be8733b853127956}
+\hypertarget{classSegmentedArrayVector_a726619d3b1d216b6980313a653ee7f68}{\index{Segmented\-Array\-Vector@{Segmented\-Array\-Vector}!$\sim$\-Segmented\-Array\-Vector@{$\sim$\-Segmented\-Array\-Vector}}
+\index{$\sim$\-Segmented\-Array\-Vector@{$\sim$\-Segmented\-Array\-Vector}!SegmentedArrayVector@{Segmented\-Array\-Vector}}
+\subsubsection[{$\sim$\-Segmented\-Array\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Element, class Allocator = std\-::allocator$<$\-Element$>$$>$ {\bf Segmented\-Array\-Vector}$<$ Element, Allocator $>$\-::$\sim${\bf Segmented\-Array\-Vector} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classSegmentedArrayVector_a726619d3b1d216b6980313a653ee7f68}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSegmentedArrayVector_aada885ec25b0c19294204de4b19fd90e}{\index{Segmented\-Array\-Vector@{Segmented\-Array\-Vector}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!SegmentedArrayVector@{Segmented\-Array\-Vector}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Element, class Allocator = std\-::allocator$<$\-Element$>$$>$ Element$\ast$ {\bf Segmented\-Array\-Vector}$<$ Element, Allocator $>$\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classSegmentedArrayVector_aada885ec25b0c19294204de4b19fd90e}
+\hypertarget{classSegmentedArrayVector_a1bc6d1e8c955ec83bc708bc6fa9ffdbc}{\index{Segmented\-Array\-Vector@{Segmented\-Array\-Vector}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!SegmentedArrayVector@{Segmented\-Array\-Vector}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Element, class Allocator = std\-::allocator$<$\-Element$>$$>$ const Element$\ast$ {\bf Segmented\-Array\-Vector}$<$ Element, Allocator $>$\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classSegmentedArrayVector_a1bc6d1e8c955ec83bc708bc6fa9ffdbc}
+\hypertarget{classSegmentedArrayVector_a334007fae5874508618d6ca45547250b}{\index{Segmented\-Array\-Vector@{Segmented\-Array\-Vector}!pop\-\_\-back@{pop\-\_\-back}}
+\index{pop\-\_\-back@{pop\-\_\-back}!SegmentedArrayVector@{Segmented\-Array\-Vector}}
+\subsubsection[{pop\-\_\-back}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Element, class Allocator = std\-::allocator$<$\-Element$>$$>$ void {\bf Segmented\-Array\-Vector}$<$ Element, Allocator $>$\-::pop\-\_\-back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classSegmentedArrayVector_a334007fae5874508618d6ca45547250b}
+\hypertarget{classSegmentedArrayVector_a81171a5200eb39fe7a77fff837bec77c}{\index{Segmented\-Array\-Vector@{Segmented\-Array\-Vector}!push\-\_\-back@{push\-\_\-back}}
+\index{push\-\_\-back@{push\-\_\-back}!SegmentedArrayVector@{Segmented\-Array\-Vector}}
+\subsubsection[{push\-\_\-back}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Element, class Allocator = std\-::allocator$<$\-Element$>$$>$ void {\bf Segmented\-Array\-Vector}$<$ Element, Allocator $>$\-::push\-\_\-back (
+\begin{DoxyParamCaption}
+\item[{const Element $\ast$}]{entry}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classSegmentedArrayVector_a81171a5200eb39fe7a77fff837bec77c}
+\hypertarget{classSegmentedArrayVector_a28f4fdd005ee4cc66dd8ae63987879c2}{\index{Segmented\-Array\-Vector@{Segmented\-Array\-Vector}!resize@{resize}}
+\index{resize@{resize}!SegmentedArrayVector@{Segmented\-Array\-Vector}}
+\subsubsection[{resize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Element, class Allocator = std\-::allocator$<$\-Element$>$$>$ void {\bf Segmented\-Array\-Vector}$<$ Element, Allocator $>$\-::resize (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{new\-\_\-size, }
+\item[{const Element $\ast$}]{entry}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classSegmentedArrayVector_a28f4fdd005ee4cc66dd8ae63987879c2}
+\hypertarget{classSegmentedArrayVector_a6efe1e990f0e94d743b8d5e996be32af}{\index{Segmented\-Array\-Vector@{Segmented\-Array\-Vector}!size@{size}}
+\index{size@{size}!SegmentedArrayVector@{Segmented\-Array\-Vector}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Element, class Allocator = std\-::allocator$<$\-Element$>$$>$ size\-\_\-t {\bf Segmented\-Array\-Vector}$<$ Element, Allocator $>$\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classSegmentedArrayVector_a6efe1e990f0e94d743b8d5e996be32af}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{segmented__vector_8h}{segmented\-\_\-vector.\-h}\end{DoxyCompactItemize}

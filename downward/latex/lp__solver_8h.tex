@@ -1,0 +1,123 @@
+\hypertarget{lp__solver_8h}{\section{lp\-\_\-solver.\-h File Reference}
+\label{lp__solver_8h}\index{lp\-\_\-solver.\-h@{lp\-\_\-solver.\-h}}
+}
+{\ttfamily \#include \char`\"{}utilities.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$functional$>$}\\*
+{\ttfamily \#include $<$memory$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+Include dependency graph for lp\-\_\-solver.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lp__solver_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{lp__solver_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classLPConstraint}{L\-P\-Constraint}
+\item 
+struct \hyperlink{structLPVariable}{L\-P\-Variable}
+\item 
+class \hyperlink{classLPSolver}{L\-P\-Solver}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{lp__solver_8h_ae9524bd445f46614ae099a22a36d836c}{L\-P\-\_\-\-M\-E\-T\-H\-O\-D}(X)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{lp__solver_8h_afcef224dc8aa2dbbeaf0052712fbc448}{L\-P\-Solver\-Type} \{ \hyperlink{lp__solver_8h_afcef224dc8aa2dbbeaf0052712fbc448a5a8d0cfaadd7efd6c44c000085157da7}{L\-P\-Solver\-Type\-::\-C\-L\-P}, 
+\hyperlink{lp__solver_8h_afcef224dc8aa2dbbeaf0052712fbc448a8666e2b0660c6fba6898d2c2f6303362}{L\-P\-Solver\-Type\-::\-C\-P\-L\-E\-X}, 
+\hyperlink{lp__solver_8h_afcef224dc8aa2dbbeaf0052712fbc448a8c01e66017b29ee197f9c2ada4450804}{L\-P\-Solver\-Type\-::\-G\-U\-R\-O\-B\-I}
+ \}
+\item 
+enum \hyperlink{lp__solver_8h_a57b9dc98e5b29f15798faade96232f60}{L\-P\-Objective\-Sense} \{ \hyperlink{lp__solver_8h_a57b9dc98e5b29f15798faade96232f60a7af98b3d657f545ebf5476f68cb5ce6f}{L\-P\-Objective\-Sense\-::\-M\-A\-X\-I\-M\-I\-Z\-E}, 
+\hyperlink{lp__solver_8h_a57b9dc98e5b29f15798faade96232f60a704bfa6c1ed5e479c8cfb5bdfc8cccda}{L\-P\-Objective\-Sense\-::\-M\-I\-N\-I\-M\-I\-Z\-E}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{lp__solver_8h_af00fa0a4f15ee314b9f6d86be54c2f1e}{add\-\_\-lp\-\_\-solver\-\_\-option\-\_\-to\-\_\-parser} (\hyperlink{classOptionParser}{Option\-Parser} \&parser)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{lp__solver_8h_ae9524bd445f46614ae099a22a36d836c}{\index{lp\-\_\-solver.\-h@{lp\-\_\-solver.\-h}!L\-P\-\_\-\-M\-E\-T\-H\-O\-D@{L\-P\-\_\-\-M\-E\-T\-H\-O\-D}}
+\index{L\-P\-\_\-\-M\-E\-T\-H\-O\-D@{L\-P\-\_\-\-M\-E\-T\-H\-O\-D}!lp_solver.h@{lp\-\_\-solver.\-h}}
+\subsubsection[{L\-P\-\_\-\-M\-E\-T\-H\-O\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-P\-\_\-\-M\-E\-T\-H\-O\-D(
+\begin{DoxyParamCaption}
+\item[{}]{X}
+\end{DoxyParamCaption}
+)}}\label{lp__solver_8h_ae9524bd445f46614ae099a22a36d836c}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\hyperlink{utilities_8h_a9bc43e3ee0ae83643b65e07fe1fd0132}{NO\_RETURN} X \{ \hyperlink{utilities_8h_a4517f7e2967f5acb03ec0f7db14e1052}{\(\backslash\)}
+\hyperlink{utilities_8h_a4517f7e2967f5acb03ec0f7db14e1052}{        ABORT}(\textcolor{stringliteral}{"LP method called but the planner was compiled without LP support.\(\backslash\)n"} \(\backslash\)
+              \textcolor{stringliteral}{"See http://www.fast-downward.org/LPBuildInstructions\(\backslash\)n"} \(\backslash\)
+              \textcolor{stringliteral}{"to install an LP solver and use it in the planner."}); \(\backslash\)
+\}
+\end{DoxyCode}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{lp__solver_8h_a57b9dc98e5b29f15798faade96232f60}{\index{lp\-\_\-solver.\-h@{lp\-\_\-solver.\-h}!L\-P\-Objective\-Sense@{L\-P\-Objective\-Sense}}
+\index{L\-P\-Objective\-Sense@{L\-P\-Objective\-Sense}!lp_solver.h@{lp\-\_\-solver.\-h}}
+\subsubsection[{L\-P\-Objective\-Sense}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf L\-P\-Objective\-Sense}\hspace{0.3cm}{\ttfamily [strong]}}}\label{lp__solver_8h_a57b9dc98e5b29f15798faade96232f60}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\-A\-X\-I\-M\-I\-Z\-E@{M\-A\-X\-I\-M\-I\-Z\-E}!lp\-\_\-solver.\-h@{lp\-\_\-solver.\-h}}\index{lp\-\_\-solver.\-h@{lp\-\_\-solver.\-h}!M\-A\-X\-I\-M\-I\-Z\-E@{M\-A\-X\-I\-M\-I\-Z\-E}}\item[{\em 
+\hypertarget{lp__solver_8h_a57b9dc98e5b29f15798faade96232f60a7af98b3d657f545ebf5476f68cb5ce6f}{M\-A\-X\-I\-M\-I\-Z\-E}\label{lp__solver_8h_a57b9dc98e5b29f15798faade96232f60a7af98b3d657f545ebf5476f68cb5ce6f}
+}]\index{M\-I\-N\-I\-M\-I\-Z\-E@{M\-I\-N\-I\-M\-I\-Z\-E}!lp\-\_\-solver.\-h@{lp\-\_\-solver.\-h}}\index{lp\-\_\-solver.\-h@{lp\-\_\-solver.\-h}!M\-I\-N\-I\-M\-I\-Z\-E@{M\-I\-N\-I\-M\-I\-Z\-E}}\item[{\em 
+\hypertarget{lp__solver_8h_a57b9dc98e5b29f15798faade96232f60a704bfa6c1ed5e479c8cfb5bdfc8cccda}{M\-I\-N\-I\-M\-I\-Z\-E}\label{lp__solver_8h_a57b9dc98e5b29f15798faade96232f60a704bfa6c1ed5e479c8cfb5bdfc8cccda}
+}]\end{description}
+\end{Desc}
+\hypertarget{lp__solver_8h_afcef224dc8aa2dbbeaf0052712fbc448}{\index{lp\-\_\-solver.\-h@{lp\-\_\-solver.\-h}!L\-P\-Solver\-Type@{L\-P\-Solver\-Type}}
+\index{L\-P\-Solver\-Type@{L\-P\-Solver\-Type}!lp_solver.h@{lp\-\_\-solver.\-h}}
+\subsubsection[{L\-P\-Solver\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf L\-P\-Solver\-Type}\hspace{0.3cm}{\ttfamily [strong]}}}\label{lp__solver_8h_afcef224dc8aa2dbbeaf0052712fbc448}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{C\-L\-P@{C\-L\-P}!lp\-\_\-solver.\-h@{lp\-\_\-solver.\-h}}\index{lp\-\_\-solver.\-h@{lp\-\_\-solver.\-h}!C\-L\-P@{C\-L\-P}}\item[{\em 
+\hypertarget{lp__solver_8h_afcef224dc8aa2dbbeaf0052712fbc448a5a8d0cfaadd7efd6c44c000085157da7}{C\-L\-P}\label{lp__solver_8h_afcef224dc8aa2dbbeaf0052712fbc448a5a8d0cfaadd7efd6c44c000085157da7}
+}]\index{C\-P\-L\-E\-X@{C\-P\-L\-E\-X}!lp\-\_\-solver.\-h@{lp\-\_\-solver.\-h}}\index{lp\-\_\-solver.\-h@{lp\-\_\-solver.\-h}!C\-P\-L\-E\-X@{C\-P\-L\-E\-X}}\item[{\em 
+\hypertarget{lp__solver_8h_afcef224dc8aa2dbbeaf0052712fbc448a8666e2b0660c6fba6898d2c2f6303362}{C\-P\-L\-E\-X}\label{lp__solver_8h_afcef224dc8aa2dbbeaf0052712fbc448a8666e2b0660c6fba6898d2c2f6303362}
+}]\index{G\-U\-R\-O\-B\-I@{G\-U\-R\-O\-B\-I}!lp\-\_\-solver.\-h@{lp\-\_\-solver.\-h}}\index{lp\-\_\-solver.\-h@{lp\-\_\-solver.\-h}!G\-U\-R\-O\-B\-I@{G\-U\-R\-O\-B\-I}}\item[{\em 
+\hypertarget{lp__solver_8h_afcef224dc8aa2dbbeaf0052712fbc448a8c01e66017b29ee197f9c2ada4450804}{G\-U\-R\-O\-B\-I}\label{lp__solver_8h_afcef224dc8aa2dbbeaf0052712fbc448a8c01e66017b29ee197f9c2ada4450804}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{lp__solver_8h_af00fa0a4f15ee314b9f6d86be54c2f1e}{\index{lp\-\_\-solver.\-h@{lp\-\_\-solver.\-h}!add\-\_\-lp\-\_\-solver\-\_\-option\-\_\-to\-\_\-parser@{add\-\_\-lp\-\_\-solver\-\_\-option\-\_\-to\-\_\-parser}}
+\index{add\-\_\-lp\-\_\-solver\-\_\-option\-\_\-to\-\_\-parser@{add\-\_\-lp\-\_\-solver\-\_\-option\-\_\-to\-\_\-parser}!lp_solver.h@{lp\-\_\-solver.\-h}}
+\subsubsection[{add\-\_\-lp\-\_\-solver\-\_\-option\-\_\-to\-\_\-parser}]{\setlength{\rightskip}{0pt plus 5cm}void add\-\_\-lp\-\_\-solver\-\_\-option\-\_\-to\-\_\-parser (
+\begin{DoxyParamCaption}
+\item[{{\bf Option\-Parser} \&}]{parser}
+\end{DoxyParamCaption}
+)}}\label{lp__solver_8h_af00fa0a4f15ee314b9f6d86be54c2f1e}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lp__solver_8h_af00fa0a4f15ee314b9f6d86be54c2f1e_cgraph}
+\end{center}
+\end{figure}
+
+

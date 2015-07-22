@@ -1,0 +1,233 @@
+\hypertarget{classDocPrinter}{\section{Doc\-Printer Class Reference}
+\label{classDocPrinter}\index{Doc\-Printer@{Doc\-Printer}}
+}
+
+
+{\ttfamily \#include $<$option\-\_\-parser\-\_\-util.\-h$>$}
+
+
+
+Inheritance diagram for Doc\-Printer\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{classDocPrinter__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDocPrinter_af6d4306e2dc03bc5151adf76e03e1f15}{Doc\-Printer} (std\-::ostream \&out)
+\item 
+virtual \hyperlink{classDocPrinter_aba059ba132eb4143d2454e30e8bec9c5}{$\sim$\-Doc\-Printer} ()
+\item 
+virtual void \hyperlink{classDocPrinter_a7da00e32e5758f07b5a1b6cd5d4e9824}{print\-\_\-all} ()
+\item 
+virtual void \hyperlink{classDocPrinter_a70234bd56a73aa917edf170be8415ce6}{print\-\_\-category} (std\-::string category\-\_\-name)
+\item 
+virtual void \hyperlink{classDocPrinter_a0253343f6a7ffef9de4c915d2091d5db}{print\-\_\-element} (std\-::string call\-\_\-name, const \hyperlink{structDocStruct}{Doc\-Struct} \&info)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classDocPrinter_abb2a5b5121292d292ff682f94e187534}{print\-\_\-synopsis} (const \hyperlink{structDocStruct}{Doc\-Struct} \&info)=0
+\item 
+virtual void \hyperlink{classDocPrinter_aa967b483b8def39d7ba5f039bd3c4acd}{print\-\_\-usage} (std\-::string call\-\_\-name, const \hyperlink{structDocStruct}{Doc\-Struct} \&info)=0
+\item 
+virtual void \hyperlink{classDocPrinter_a9e8339a87ec6aa5bc11017eec937372c}{print\-\_\-arguments} (const \hyperlink{structDocStruct}{Doc\-Struct} \&info)=0
+\item 
+virtual void \hyperlink{classDocPrinter_ae53baee3061725f2d2e02c75c6e8a5a3}{print\-\_\-notes} (const \hyperlink{structDocStruct}{Doc\-Struct} \&info)=0
+\item 
+virtual void \hyperlink{classDocPrinter_aba345d8b3a03bca1aa7c2363260dfdf8}{print\-\_\-language\-\_\-features} (const \hyperlink{structDocStruct}{Doc\-Struct} \&info)=0
+\item 
+virtual void \hyperlink{classDocPrinter_a16854272b22ca9129f9afb9c42157736}{print\-\_\-properties} (const \hyperlink{structDocStruct}{Doc\-Struct} \&info)=0
+\item 
+virtual void \hyperlink{classDocPrinter_a7a8d538ac102b331f891b4cd86c814ab}{print\-\_\-category\-\_\-header} (std\-::string category\-\_\-name)=0
+\item 
+virtual void \hyperlink{classDocPrinter_aa96cf13e25fdd6cb854b0efb8e89046a}{print\-\_\-category\-\_\-footer} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{classDocPrinter_a30860614cca992c360838670c209eb00}{os}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDocPrinter_af6d4306e2dc03bc5151adf76e03e1f15}{\index{Doc\-Printer@{Doc\-Printer}!Doc\-Printer@{Doc\-Printer}}
+\index{Doc\-Printer@{Doc\-Printer}!DocPrinter@{Doc\-Printer}}
+\subsubsection[{Doc\-Printer}]{\setlength{\rightskip}{0pt plus 5cm}Doc\-Printer\-::\-Doc\-Printer (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{out}
+\end{DoxyParamCaption}
+)}}\label{classDocPrinter_af6d4306e2dc03bc5151adf76e03e1f15}
+\hypertarget{classDocPrinter_aba059ba132eb4143d2454e30e8bec9c5}{\index{Doc\-Printer@{Doc\-Printer}!$\sim$\-Doc\-Printer@{$\sim$\-Doc\-Printer}}
+\index{$\sim$\-Doc\-Printer@{$\sim$\-Doc\-Printer}!DocPrinter@{Doc\-Printer}}
+\subsubsection[{$\sim$\-Doc\-Printer}]{\setlength{\rightskip}{0pt plus 5cm}Doc\-Printer\-::$\sim$\-Doc\-Printer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDocPrinter_aba059ba132eb4143d2454e30e8bec9c5}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDocPrinter_a7da00e32e5758f07b5a1b6cd5d4e9824}{\index{Doc\-Printer@{Doc\-Printer}!print\-\_\-all@{print\-\_\-all}}
+\index{print\-\_\-all@{print\-\_\-all}!DocPrinter@{Doc\-Printer}}
+\subsubsection[{print\-\_\-all}]{\setlength{\rightskip}{0pt plus 5cm}void Doc\-Printer\-::print\-\_\-all (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDocPrinter_a7da00e32e5758f07b5a1b6cd5d4e9824}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDocPrinter_a7da00e32e5758f07b5a1b6cd5d4e9824_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDocPrinter_a9e8339a87ec6aa5bc11017eec937372c}{\index{Doc\-Printer@{Doc\-Printer}!print\-\_\-arguments@{print\-\_\-arguments}}
+\index{print\-\_\-arguments@{print\-\_\-arguments}!DocPrinter@{Doc\-Printer}}
+\subsubsection[{print\-\_\-arguments}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Doc\-Printer\-::print\-\_\-arguments (
+\begin{DoxyParamCaption}
+\item[{const {\bf Doc\-Struct} \&}]{info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classDocPrinter_a9e8339a87ec6aa5bc11017eec937372c}
+
+
+Implemented in \hyperlink{classPlainPrinter_a6eb1b927ed5dd5f3604041872110e51a}{Plain\-Printer}, and \hyperlink{classTxt2TagsPrinter_a211dc59422b4a7bed65e27ac9e2aff11}{Txt2\-Tags\-Printer}.
+
+\hypertarget{classDocPrinter_a70234bd56a73aa917edf170be8415ce6}{\index{Doc\-Printer@{Doc\-Printer}!print\-\_\-category@{print\-\_\-category}}
+\index{print\-\_\-category@{print\-\_\-category}!DocPrinter@{Doc\-Printer}}
+\subsubsection[{print\-\_\-category}]{\setlength{\rightskip}{0pt plus 5cm}void Doc\-Printer\-::print\-\_\-category (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{category\-\_\-name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDocPrinter_a70234bd56a73aa917edf170be8415ce6}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDocPrinter_a70234bd56a73aa917edf170be8415ce6_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDocPrinter_aa96cf13e25fdd6cb854b0efb8e89046a}{\index{Doc\-Printer@{Doc\-Printer}!print\-\_\-category\-\_\-footer@{print\-\_\-category\-\_\-footer}}
+\index{print\-\_\-category\-\_\-footer@{print\-\_\-category\-\_\-footer}!DocPrinter@{Doc\-Printer}}
+\subsubsection[{print\-\_\-category\-\_\-footer}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Doc\-Printer\-::print\-\_\-category\-\_\-footer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classDocPrinter_aa96cf13e25fdd6cb854b0efb8e89046a}
+
+
+Implemented in \hyperlink{classPlainPrinter_a324d849386ce24478f5711b2fc3b26c2}{Plain\-Printer}, and \hyperlink{classTxt2TagsPrinter_ae937c09e8f3eeb2fb30c118facf60a7e}{Txt2\-Tags\-Printer}.
+
+\hypertarget{classDocPrinter_a7a8d538ac102b331f891b4cd86c814ab}{\index{Doc\-Printer@{Doc\-Printer}!print\-\_\-category\-\_\-header@{print\-\_\-category\-\_\-header}}
+\index{print\-\_\-category\-\_\-header@{print\-\_\-category\-\_\-header}!DocPrinter@{Doc\-Printer}}
+\subsubsection[{print\-\_\-category\-\_\-header}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Doc\-Printer\-::print\-\_\-category\-\_\-header (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{category\-\_\-name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classDocPrinter_a7a8d538ac102b331f891b4cd86c814ab}
+
+
+Implemented in \hyperlink{classPlainPrinter_a860ced811a6309d1889ab926ebdd4f67}{Plain\-Printer}, and \hyperlink{classTxt2TagsPrinter_a272f9f74d06e9926b9de61c96e02ecd7}{Txt2\-Tags\-Printer}.
+
+\hypertarget{classDocPrinter_a0253343f6a7ffef9de4c915d2091d5db}{\index{Doc\-Printer@{Doc\-Printer}!print\-\_\-element@{print\-\_\-element}}
+\index{print\-\_\-element@{print\-\_\-element}!DocPrinter@{Doc\-Printer}}
+\subsubsection[{print\-\_\-element}]{\setlength{\rightskip}{0pt plus 5cm}void Doc\-Printer\-::print\-\_\-element (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{call\-\_\-name, }
+\item[{const {\bf Doc\-Struct} \&}]{info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDocPrinter_a0253343f6a7ffef9de4c915d2091d5db}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDocPrinter_a0253343f6a7ffef9de4c915d2091d5db_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDocPrinter_aba345d8b3a03bca1aa7c2363260dfdf8}{\index{Doc\-Printer@{Doc\-Printer}!print\-\_\-language\-\_\-features@{print\-\_\-language\-\_\-features}}
+\index{print\-\_\-language\-\_\-features@{print\-\_\-language\-\_\-features}!DocPrinter@{Doc\-Printer}}
+\subsubsection[{print\-\_\-language\-\_\-features}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Doc\-Printer\-::print\-\_\-language\-\_\-features (
+\begin{DoxyParamCaption}
+\item[{const {\bf Doc\-Struct} \&}]{info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classDocPrinter_aba345d8b3a03bca1aa7c2363260dfdf8}
+
+
+Implemented in \hyperlink{classPlainPrinter_aa20ff6c29f9cffad1522892485316775}{Plain\-Printer}, and \hyperlink{classTxt2TagsPrinter_a330214e600158887ef50f012523b8f32}{Txt2\-Tags\-Printer}.
+
+\hypertarget{classDocPrinter_ae53baee3061725f2d2e02c75c6e8a5a3}{\index{Doc\-Printer@{Doc\-Printer}!print\-\_\-notes@{print\-\_\-notes}}
+\index{print\-\_\-notes@{print\-\_\-notes}!DocPrinter@{Doc\-Printer}}
+\subsubsection[{print\-\_\-notes}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Doc\-Printer\-::print\-\_\-notes (
+\begin{DoxyParamCaption}
+\item[{const {\bf Doc\-Struct} \&}]{info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classDocPrinter_ae53baee3061725f2d2e02c75c6e8a5a3}
+
+
+Implemented in \hyperlink{classPlainPrinter_a105fabd1f37aa1d99e4272e3ebb4d3b8}{Plain\-Printer}, and \hyperlink{classTxt2TagsPrinter_a2c966dac44b8926523a956c37b073870}{Txt2\-Tags\-Printer}.
+
+\hypertarget{classDocPrinter_a16854272b22ca9129f9afb9c42157736}{\index{Doc\-Printer@{Doc\-Printer}!print\-\_\-properties@{print\-\_\-properties}}
+\index{print\-\_\-properties@{print\-\_\-properties}!DocPrinter@{Doc\-Printer}}
+\subsubsection[{print\-\_\-properties}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Doc\-Printer\-::print\-\_\-properties (
+\begin{DoxyParamCaption}
+\item[{const {\bf Doc\-Struct} \&}]{info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classDocPrinter_a16854272b22ca9129f9afb9c42157736}
+
+
+Implemented in \hyperlink{classPlainPrinter_a0768f7e6781dfaebf0e54535f1031467}{Plain\-Printer}, and \hyperlink{classTxt2TagsPrinter_abcf56c43f241406e207861f98c58fb3c}{Txt2\-Tags\-Printer}.
+
+\hypertarget{classDocPrinter_abb2a5b5121292d292ff682f94e187534}{\index{Doc\-Printer@{Doc\-Printer}!print\-\_\-synopsis@{print\-\_\-synopsis}}
+\index{print\-\_\-synopsis@{print\-\_\-synopsis}!DocPrinter@{Doc\-Printer}}
+\subsubsection[{print\-\_\-synopsis}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Doc\-Printer\-::print\-\_\-synopsis (
+\begin{DoxyParamCaption}
+\item[{const {\bf Doc\-Struct} \&}]{info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classDocPrinter_abb2a5b5121292d292ff682f94e187534}
+
+
+Implemented in \hyperlink{classPlainPrinter_ac998df8a56c056800eda2c1d9ca3f628}{Plain\-Printer}, and \hyperlink{classTxt2TagsPrinter_a6bcc28d9a842cdb08f2f20b857480d7f}{Txt2\-Tags\-Printer}.
+
+\hypertarget{classDocPrinter_aa967b483b8def39d7ba5f039bd3c4acd}{\index{Doc\-Printer@{Doc\-Printer}!print\-\_\-usage@{print\-\_\-usage}}
+\index{print\-\_\-usage@{print\-\_\-usage}!DocPrinter@{Doc\-Printer}}
+\subsubsection[{print\-\_\-usage}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Doc\-Printer\-::print\-\_\-usage (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{call\-\_\-name, }
+\item[{const {\bf Doc\-Struct} \&}]{info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classDocPrinter_aa967b483b8def39d7ba5f039bd3c4acd}
+
+
+Implemented in \hyperlink{classPlainPrinter_ab5478f9542ccf99138668975ab3192d8}{Plain\-Printer}, and \hyperlink{classTxt2TagsPrinter_a1052b10fce569cf5a7dd8d2071e58987}{Txt2\-Tags\-Printer}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classDocPrinter_a30860614cca992c360838670c209eb00}{\index{Doc\-Printer@{Doc\-Printer}!os@{os}}
+\index{os@{os}!DocPrinter@{Doc\-Printer}}
+\subsubsection[{os}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& Doc\-Printer\-::os\hspace{0.3cm}{\ttfamily [protected]}}}\label{classDocPrinter_a30860614cca992c360838670c209eb00}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{option__parser__util_8h}{option\-\_\-parser\-\_\-util.\-h}\item 
+\hyperlink{option__parser__util_8cc}{option\-\_\-parser\-\_\-util.\-cc}\end{DoxyCompactItemize}

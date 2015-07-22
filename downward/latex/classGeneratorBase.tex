@@ -1,0 +1,64 @@
+\hypertarget{classGeneratorBase}{\section{Generator\-Base Class Reference}
+\label{classGeneratorBase}\index{Generator\-Base@{Generator\-Base}}
+}
+
+
+Inheritance diagram for Generator\-Base\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGeneratorBase__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classGeneratorBase_a6359aca0713b427c7e455efe2bf7f0a3}{$\sim$\-Generator\-Base} ()=default
+\item 
+virtual void \hyperlink{classGeneratorBase_a5bc20f356babc6861a3a52fcd14c95a0}{generate\-\_\-applicable\-\_\-ops} (const \hyperlink{classState}{State} \&state, vector$<$ \hyperlink{classOperatorProxy}{Operator\-Proxy} $>$ \&applicable\-\_\-ops) const =0
+\item 
+virtual void \hyperlink{classGeneratorBase_aac7060bf6191abc9886d6a04ed1707d5}{generate\-\_\-applicable\-\_\-ops} (const \hyperlink{classGlobalState}{Global\-State} \&state, vector$<$ const \hyperlink{classGlobalOperator}{Global\-Operator} $\ast$ $>$ \&applicable\-\_\-ops) const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classGeneratorBase_a6359aca0713b427c7e455efe2bf7f0a3}{\index{Generator\-Base@{Generator\-Base}!$\sim$\-Generator\-Base@{$\sim$\-Generator\-Base}}
+\index{$\sim$\-Generator\-Base@{$\sim$\-Generator\-Base}!GeneratorBase@{Generator\-Base}}
+\subsubsection[{$\sim$\-Generator\-Base}]{\setlength{\rightskip}{0pt plus 5cm}virtual Generator\-Base\-::$\sim$\-Generator\-Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}}\label{classGeneratorBase_a6359aca0713b427c7e455efe2bf7f0a3}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classGeneratorBase_a5bc20f356babc6861a3a52fcd14c95a0}{\index{Generator\-Base@{Generator\-Base}!generate\-\_\-applicable\-\_\-ops@{generate\-\_\-applicable\-\_\-ops}}
+\index{generate\-\_\-applicable\-\_\-ops@{generate\-\_\-applicable\-\_\-ops}!GeneratorBase@{Generator\-Base}}
+\subsubsection[{generate\-\_\-applicable\-\_\-ops}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Generator\-Base\-::generate\-\_\-applicable\-\_\-ops (
+\begin{DoxyParamCaption}
+\item[{const {\bf State} \&}]{state, }
+\item[{vector$<$ {\bf Operator\-Proxy} $>$ \&}]{applicable\-\_\-ops}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classGeneratorBase_a5bc20f356babc6861a3a52fcd14c95a0}
+
+
+Implemented in \hyperlink{classGeneratorEmpty_adcae6e52fac7e0fbac9194ee84981b6d}{Generator\-Empty}, \hyperlink{classGeneratorLeaf_a415c18df2f771c0ba344b27ae5ea9c91}{Generator\-Leaf}, and \hyperlink{classGeneratorSwitch_afc8348b9849312455a93dce02898958a}{Generator\-Switch}.
+
+\hypertarget{classGeneratorBase_aac7060bf6191abc9886d6a04ed1707d5}{\index{Generator\-Base@{Generator\-Base}!generate\-\_\-applicable\-\_\-ops@{generate\-\_\-applicable\-\_\-ops}}
+\index{generate\-\_\-applicable\-\_\-ops@{generate\-\_\-applicable\-\_\-ops}!GeneratorBase@{Generator\-Base}}
+\subsubsection[{generate\-\_\-applicable\-\_\-ops}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Generator\-Base\-::generate\-\_\-applicable\-\_\-ops (
+\begin{DoxyParamCaption}
+\item[{const {\bf Global\-State} \&}]{state, }
+\item[{vector$<$ const {\bf Global\-Operator} $\ast$ $>$ \&}]{applicable\-\_\-ops}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classGeneratorBase_aac7060bf6191abc9886d6a04ed1707d5}
+
+
+Implemented in \hyperlink{classGeneratorEmpty_a57531ab4b565c0bf892766d48ca881b8}{Generator\-Empty}, \hyperlink{classGeneratorLeaf_abda5144b90f4d5815c3c53b586b61d0f}{Generator\-Leaf}, and \hyperlink{classGeneratorSwitch_ae90fed245667ca900fdd61121307ccbc}{Generator\-Switch}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{successor__generator_8cc}{successor\-\_\-generator.\-cc}\end{DoxyCompactItemize}

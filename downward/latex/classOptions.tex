@@ -1,0 +1,157 @@
+\hypertarget{classOptions}{\section{Options Class Reference}
+\label{classOptions}\index{Options@{Options}}
+}
+
+
+{\ttfamily \#include $<$option\-\_\-parser\-\_\-util.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classOptions_a10145b91789f83fc9674f128d92fd4b0}{Options} (bool hm=false)
+\item 
+void \hyperlink{classOptions_af7b9a4c275ac0a80ea853ae7d51cae51}{set\-\_\-help\-\_\-mode} (bool hm)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{classOptions_a442b5282575a1c2c4db119021ab8715d}{set} (std\-::string key, T value)
+\item 
+{\footnotesize template$<$class T $>$ }\\T \hyperlink{classOptions_a806470a0ddf00e44814367ff771ac33a}{get} (std\-::string key) const 
+\item 
+{\footnotesize template$<$class T $>$ }\\T \hyperlink{classOptions_a31fc7c11f256b0669c99250a3682d69f}{get} (std\-::string key, const T \&default\-\_\-value) const 
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{classOptions_aec0a66ed37817abc9e131bd081d46f5a}{verify\-\_\-list\-\_\-non\-\_\-empty} (std\-::string key) const 
+\item 
+{\footnotesize template$<$class T $>$ }\\std\-::vector$<$ T $>$ \hyperlink{classOptions_a3dd5279c438308943c8d6db41103e932}{get\-\_\-list} (std\-::string key) const 
+\item 
+int \hyperlink{classOptions_ad9bf14674bec42487e3dcd6f2c7a83e1}{get\-\_\-enum} (std\-::string key) const 
+\item 
+bool \hyperlink{classOptions_a92594d318d5bd1c4cff9e8fef0e108ed}{contains} (std\-::string key) const 
+\item 
+std\-::string \hyperlink{classOptions_ae8061eb7d905cda89598b6a4d360f1b1}{get\-\_\-unparsed\-\_\-config} () const 
+\item 
+void \hyperlink{classOptions_a4ce7d22ca205a18d73f5bdbd255c69d7}{set\-\_\-unparsed\-\_\-config} (const std\-::string \&config)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::map$<$ std\-::string, boost\-::any $>$ \hyperlink{classOptions_a1a01ac6aee89c9697c6718d97a90cf7d}{storage}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classOptions_a10145b91789f83fc9674f128d92fd4b0}{\index{Options@{Options}!Options@{Options}}
+\index{Options@{Options}!Options@{Options}}
+\subsubsection[{Options}]{\setlength{\rightskip}{0pt plus 5cm}Options\-::\-Options (
+\begin{DoxyParamCaption}
+\item[{bool}]{hm = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classOptions_a10145b91789f83fc9674f128d92fd4b0}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classOptions_a92594d318d5bd1c4cff9e8fef0e108ed}{\index{Options@{Options}!contains@{contains}}
+\index{contains@{contains}!Options@{Options}}
+\subsubsection[{contains}]{\setlength{\rightskip}{0pt plus 5cm}bool Options\-::contains (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classOptions_a92594d318d5bd1c4cff9e8fef0e108ed}
+\hypertarget{classOptions_a806470a0ddf00e44814367ff771ac33a}{\index{Options@{Options}!get@{get}}
+\index{get@{get}!Options@{Options}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ T Options\-::get (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classOptions_a806470a0ddf00e44814367ff771ac33a}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{classOptions_a806470a0ddf00e44814367ff771ac33a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classOptions_a31fc7c11f256b0669c99250a3682d69f}{\index{Options@{Options}!get@{get}}
+\index{get@{get}!Options@{Options}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ T Options\-::get (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{key, }
+\item[{const T \&}]{default\-\_\-value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classOptions_a31fc7c11f256b0669c99250a3682d69f}
+\hypertarget{classOptions_ad9bf14674bec42487e3dcd6f2c7a83e1}{\index{Options@{Options}!get\-\_\-enum@{get\-\_\-enum}}
+\index{get\-\_\-enum@{get\-\_\-enum}!Options@{Options}}
+\subsubsection[{get\-\_\-enum}]{\setlength{\rightskip}{0pt plus 5cm}int Options\-::get\-\_\-enum (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classOptions_ad9bf14674bec42487e3dcd6f2c7a83e1}
+\hypertarget{classOptions_a3dd5279c438308943c8d6db41103e932}{\index{Options@{Options}!get\-\_\-list@{get\-\_\-list}}
+\index{get\-\_\-list@{get\-\_\-list}!Options@{Options}}
+\subsubsection[{get\-\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ std\-::vector$<$T$>$ Options\-::get\-\_\-list (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classOptions_a3dd5279c438308943c8d6db41103e932}
+\hypertarget{classOptions_ae8061eb7d905cda89598b6a4d360f1b1}{\index{Options@{Options}!get\-\_\-unparsed\-\_\-config@{get\-\_\-unparsed\-\_\-config}}
+\index{get\-\_\-unparsed\-\_\-config@{get\-\_\-unparsed\-\_\-config}!Options@{Options}}
+\subsubsection[{get\-\_\-unparsed\-\_\-config}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Options\-::get\-\_\-unparsed\-\_\-config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classOptions_ae8061eb7d905cda89598b6a4d360f1b1}
+\hypertarget{classOptions_a442b5282575a1c2c4db119021ab8715d}{\index{Options@{Options}!set@{set}}
+\index{set@{set}!Options@{Options}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void Options\-::set (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{key, }
+\item[{T}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classOptions_a442b5282575a1c2c4db119021ab8715d}
+\hypertarget{classOptions_af7b9a4c275ac0a80ea853ae7d51cae51}{\index{Options@{Options}!set\-\_\-help\-\_\-mode@{set\-\_\-help\-\_\-mode}}
+\index{set\-\_\-help\-\_\-mode@{set\-\_\-help\-\_\-mode}!Options@{Options}}
+\subsubsection[{set\-\_\-help\-\_\-mode}]{\setlength{\rightskip}{0pt plus 5cm}void Options\-::set\-\_\-help\-\_\-mode (
+\begin{DoxyParamCaption}
+\item[{bool}]{hm}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classOptions_af7b9a4c275ac0a80ea853ae7d51cae51}
+\hypertarget{classOptions_a4ce7d22ca205a18d73f5bdbd255c69d7}{\index{Options@{Options}!set\-\_\-unparsed\-\_\-config@{set\-\_\-unparsed\-\_\-config}}
+\index{set\-\_\-unparsed\-\_\-config@{set\-\_\-unparsed\-\_\-config}!Options@{Options}}
+\subsubsection[{set\-\_\-unparsed\-\_\-config}]{\setlength{\rightskip}{0pt plus 5cm}void Options\-::set\-\_\-unparsed\-\_\-config (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{config}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classOptions_a4ce7d22ca205a18d73f5bdbd255c69d7}
+\hypertarget{classOptions_aec0a66ed37817abc9e131bd081d46f5a}{\index{Options@{Options}!verify\-\_\-list\-\_\-non\-\_\-empty@{verify\-\_\-list\-\_\-non\-\_\-empty}}
+\index{verify\-\_\-list\-\_\-non\-\_\-empty@{verify\-\_\-list\-\_\-non\-\_\-empty}!Options@{Options}}
+\subsubsection[{verify\-\_\-list\-\_\-non\-\_\-empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void Options\-::verify\-\_\-list\-\_\-non\-\_\-empty (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classOptions_aec0a66ed37817abc9e131bd081d46f5a}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{classOptions_aec0a66ed37817abc9e131bd081d46f5a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classOptions_a1a01ac6aee89c9697c6718d97a90cf7d}{\index{Options@{Options}!storage@{storage}}
+\index{storage@{storage}!Options@{Options}}
+\subsubsection[{storage}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$std\-::string, boost\-::any$>$ Options\-::storage}}\label{classOptions_a1a01ac6aee89c9697c6718d97a90cf7d}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{option__parser__util_8h}{option\-\_\-parser\-\_\-util.\-h}\end{DoxyCompactItemize}

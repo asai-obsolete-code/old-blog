@@ -1,0 +1,66 @@
+\hypertarget{enforced__hill__climbing__search_8h}{\section{enforced\-\_\-hill\-\_\-climbing\-\_\-search.\-h File Reference}
+\label{enforced__hill__climbing__search_8h}\index{enforced\-\_\-hill\-\_\-climbing\-\_\-search.\-h@{enforced\-\_\-hill\-\_\-climbing\-\_\-search.\-h}}
+}
+{\ttfamily \#include \char`\"{}evaluation\-\_\-context.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}search\-\_\-engine.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}open\-\_\-lists/open\-\_\-list.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$set$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+Include dependency graph for enforced\-\_\-hill\-\_\-climbing\-\_\-search.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enforced__hill__climbing__search_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{enforced__hill__climbing__search_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classEnforcedHillClimbingSearch}{Enforced\-Hill\-Climbing\-Search}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\-::pair$<$ \hyperlink{classStateID}{State\-I\-D}, \\*
+std\-::pair$<$ int, const \\*
+\hyperlink{classGlobalOperator}{Global\-Operator} $\ast$ $>$ $>$ \hyperlink{enforced__hill__climbing__search_8h_a477b7b73740ba954b98894c4c75f19ba}{Open\-List\-Entry\-E\-H\-C}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{enforced__hill__climbing__search_8h_acc0e33a2358936a9d50dbefb22bf0942}{Preferred\-Usage} \{ \hyperlink{enforced__hill__climbing__search_8h_acc0e33a2358936a9d50dbefb22bf0942af24d56130fc3b819617dd09c6eed5392}{Preferred\-Usage\-::\-P\-R\-U\-N\-E\-\_\-\-B\-Y\-\_\-\-P\-R\-E\-F\-E\-R\-R\-E\-D}, 
+\hyperlink{enforced__hill__climbing__search_8h_acc0e33a2358936a9d50dbefb22bf0942a2f4e53b7950a61e125470b91e02acb8b}{Preferred\-Usage\-::\-R\-A\-N\-K\-\_\-\-P\-R\-E\-F\-E\-R\-R\-E\-D\-\_\-\-F\-I\-R\-S\-T}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{enforced__hill__climbing__search_8h_a477b7b73740ba954b98894c4c75f19ba}{\index{enforced\-\_\-hill\-\_\-climbing\-\_\-search.\-h@{enforced\-\_\-hill\-\_\-climbing\-\_\-search.\-h}!Open\-List\-Entry\-E\-H\-C@{Open\-List\-Entry\-E\-H\-C}}
+\index{Open\-List\-Entry\-E\-H\-C@{Open\-List\-Entry\-E\-H\-C}!enforced_hill_climbing_search.h@{enforced\-\_\-hill\-\_\-climbing\-\_\-search.\-h}}
+\subsubsection[{Open\-List\-Entry\-E\-H\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::pair$<${\bf State\-I\-D}, std\-::pair$<$int, const {\bf Global\-Operator} $\ast$ $>$ $>$ {\bf Open\-List\-Entry\-E\-H\-C}}}\label{enforced__hill__climbing__search_8h_a477b7b73740ba954b98894c4c75f19ba}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{enforced__hill__climbing__search_8h_acc0e33a2358936a9d50dbefb22bf0942}{\index{enforced\-\_\-hill\-\_\-climbing\-\_\-search.\-h@{enforced\-\_\-hill\-\_\-climbing\-\_\-search.\-h}!Preferred\-Usage@{Preferred\-Usage}}
+\index{Preferred\-Usage@{Preferred\-Usage}!enforced_hill_climbing_search.h@{enforced\-\_\-hill\-\_\-climbing\-\_\-search.\-h}}
+\subsubsection[{Preferred\-Usage}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Preferred\-Usage}\hspace{0.3cm}{\ttfamily [strong]}}}\label{enforced__hill__climbing__search_8h_acc0e33a2358936a9d50dbefb22bf0942}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{P\-R\-U\-N\-E\-\_\-\-B\-Y\-\_\-\-P\-R\-E\-F\-E\-R\-R\-E\-D@{P\-R\-U\-N\-E\-\_\-\-B\-Y\-\_\-\-P\-R\-E\-F\-E\-R\-R\-E\-D}!enforced\-\_\-hill\-\_\-climbing\-\_\-search.\-h@{enforced\-\_\-hill\-\_\-climbing\-\_\-search.\-h}}\index{enforced\-\_\-hill\-\_\-climbing\-\_\-search.\-h@{enforced\-\_\-hill\-\_\-climbing\-\_\-search.\-h}!P\-R\-U\-N\-E\-\_\-\-B\-Y\-\_\-\-P\-R\-E\-F\-E\-R\-R\-E\-D@{P\-R\-U\-N\-E\-\_\-\-B\-Y\-\_\-\-P\-R\-E\-F\-E\-R\-R\-E\-D}}\item[{\em 
+\hypertarget{enforced__hill__climbing__search_8h_acc0e33a2358936a9d50dbefb22bf0942af24d56130fc3b819617dd09c6eed5392}{P\-R\-U\-N\-E\-\_\-\-B\-Y\-\_\-\-P\-R\-E\-F\-E\-R\-R\-E\-D}\label{enforced__hill__climbing__search_8h_acc0e33a2358936a9d50dbefb22bf0942af24d56130fc3b819617dd09c6eed5392}
+}]\index{R\-A\-N\-K\-\_\-\-P\-R\-E\-F\-E\-R\-R\-E\-D\-\_\-\-F\-I\-R\-S\-T@{R\-A\-N\-K\-\_\-\-P\-R\-E\-F\-E\-R\-R\-E\-D\-\_\-\-F\-I\-R\-S\-T}!enforced\-\_\-hill\-\_\-climbing\-\_\-search.\-h@{enforced\-\_\-hill\-\_\-climbing\-\_\-search.\-h}}\index{enforced\-\_\-hill\-\_\-climbing\-\_\-search.\-h@{enforced\-\_\-hill\-\_\-climbing\-\_\-search.\-h}!R\-A\-N\-K\-\_\-\-P\-R\-E\-F\-E\-R\-R\-E\-D\-\_\-\-F\-I\-R\-S\-T@{R\-A\-N\-K\-\_\-\-P\-R\-E\-F\-E\-R\-R\-E\-D\-\_\-\-F\-I\-R\-S\-T}}\item[{\em 
+\hypertarget{enforced__hill__climbing__search_8h_acc0e33a2358936a9d50dbefb22bf0942a2f4e53b7950a61e125470b91e02acb8b}{R\-A\-N\-K\-\_\-\-P\-R\-E\-F\-E\-R\-R\-E\-D\-\_\-\-F\-I\-R\-S\-T}\label{enforced__hill__climbing__search_8h_acc0e33a2358936a9d50dbefb22bf0942a2f4e53b7950a61e125470b91e02acb8b}
+}]\end{description}
+\end{Desc}

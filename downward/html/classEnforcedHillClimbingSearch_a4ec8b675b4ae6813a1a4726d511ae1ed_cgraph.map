@@ -1,0 +1,22 @@
+<map id="EnforcedHillClimbingSearch::initialize" name="EnforcedHillClimbingSearch::initialize">
+<area shape="rect" id="node2" href="$classEvaluationContext.html#a808f44a988b1b57089b73c548131ec87" title="EvaluationContext::\lis_heuristic_infinite" alt="" coords="255,201,393,242"/>
+<area shape="rect" id="node8" href="$classSearchStatistics.html#aca5c210b6a0b0145899c61ef238b9ae1" title="SearchStatistics::inc\l_evaluated_states" alt="" coords="253,318,395,359"/>
+<area shape="rect" id="node9" href="$search__engine_8cc.html#a24e30638c33c2f680999742bf577575a" title="print_initial_h_values" alt="" coords="253,267,395,293"/>
+<area shape="rect" id="node14" href="$classScalarEvaluator.html#aa4534363976871466aa2be88f82e1a74" title="ScalarEvaluator::dead\l_ends_are_reliable" alt="" coords="249,383,399,425"/>
+<area shape="rect" id="node15" href="$utilities_8cc.html#aa4a09f54758dbe72385a98b01c06ae0e" title="exit_with" alt="" coords="287,449,361,476"/>
+<area shape="rect" id="node16" href="$classEvaluationContext.html#a0922a801e720bb65221ed95bad2c614a" title="EvaluationContext::\lget_heuristic_value" alt="" coords="255,135,393,177"/>
+<area shape="rect" id="node17" href="$classSearchSpace.html#a9ce30b006d01420e904454592117c4ad" title="SearchSpace::get_node" alt="" coords="243,500,405,527"/>
+<area shape="rect" id="node19" href="$classEvaluationContext.html#a21399aa76c2baaf352922c8ad203eed7" title="EvaluationContext::\lget_state" alt="" coords="255,551,393,593"/>
+<area shape="rect" id="node21" href="$classSearchNode.html#ae4836802efa4b8e0643dfefa59a96c32" title="SearchNode::open_initial" alt="" coords="241,617,407,644"/>
+<area shape="rect" id="node3" href="$classEvaluationContext.html#a74c1d7b061b2bb69a481faa4abac62c0" title="EvaluationContext::\lget_result" alt="" coords="473,70,610,111"/>
+<area shape="rect" id="node7" href="$classEvaluationResult.html#abdfc41d11307fe76818ee1ac70e33a12" title="EvaluationResult::is\l_infinite" alt="" coords="472,201,611,242"/>
+<area shape="rect" id="node4" href="$classEvaluationResult.html#ad56b6a8dbff00673aedb984fbe6f72a5" title="EvaluationResult::is\l_uninitialized" alt="" coords="692,5,831,46"/>
+<area shape="rect" id="node5" href="$classScalarEvaluator.html#a8ffb99b0f8f63e34183a3245a247a9ec" title="ScalarEvaluator::compute\l_result" alt="" coords="675,70,847,111"/>
+<area shape="rect" id="node6" href="$classSearchStatistics.html#a57f71a965c7693054ec18ba1b25a557f" title="SearchStatistics::inc\l_evaluations" alt="" coords="690,135,833,177"/>
+<area shape="rect" id="node10" href="$classEvaluationContext.html#a0935497a024c42e47e105c2247a2f492" title="EvaluationContext::\lget_cache" alt="" coords="473,266,610,307"/>
+<area shape="rect" id="node11" href="$classHeuristicCache.html#a868bc67ecfc8c58b4828783dcc03f7cc" title="HeuristicCache::for\l_each_heuristic_value" alt="" coords="466,331,617,373"/>
+<area shape="rect" id="node12" href="$classHeuristic.html#a537447ab5e02c23e085246f188abf37d" title="Heuristic::get_description" alt="" coords="456,397,627,424"/>
+<area shape="rect" id="node13" href="$classEvaluationResult.html#a19bbe29131c228b9282a0122525936f6" title="EvaluationResult::get\l_h_value" alt="" coords="468,135,615,177"/>
+<area shape="rect" id="node18" href="$classGlobalState.html#adeb4f6ce9b02c7bf478ac0785f5c52db" title="GlobalState::get_id" alt="" coords="475,500,608,527"/>
+<area shape="rect" id="node20" href="$classHeuristicCache.html#a4ab89780c4e52e0dd570db752091f3af" title="HeuristicCache::get\l_state" alt="" coords="472,551,611,593"/>
+</map>

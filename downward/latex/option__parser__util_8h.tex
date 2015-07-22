@@ -1,0 +1,216 @@
+\hypertarget{option__parser__util_8h}{\section{option\-\_\-parser\-\_\-util.\-h File Reference}
+\label{option__parser__util_8h}\index{option\-\_\-parser\-\_\-util.\-h@{option\-\_\-parser\-\_\-util.\-h}}
+}
+{\ttfamily \#include \char`\"{}utilities.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$ios$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$tree.\-hh$>$}\\*
+{\ttfamily \#include $<$tree\-\_\-util.\-hh$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+{\ttfamily \#include $<$boost/any.\-hpp$>$}\\*
+Include dependency graph for option\-\_\-parser\-\_\-util.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{option__parser__util_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{option__parser__util_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classOpenList}{Open\-List$<$ Entry $>$}
+\item 
+struct \hyperlink{structParseNode}{Parse\-Node}
+\item 
+struct \hyperlink{structArgError}{Arg\-Error}
+\item 
+struct \hyperlink{structParseError}{Parse\-Error}
+\item 
+class \hyperlink{classRegistry}{Registry$<$ T $>$}
+\item 
+class \hyperlink{classPredefinitions}{Predefinitions$<$ T $>$}
+\item 
+class \hyperlink{classSynergy}{Synergy}
+\item 
+struct \hyperlink{structTypeNamer}{Type\-Namer$<$ T $>$}
+\item 
+struct \hyperlink{structTypeNamer_3_01int_01_4}{Type\-Namer$<$ int $>$}
+\item 
+struct \hyperlink{structTypeNamer_3_01bool_01_4}{Type\-Namer$<$ bool $>$}
+\item 
+struct \hyperlink{structTypeNamer_3_01double_01_4}{Type\-Namer$<$ double $>$}
+\item 
+struct \hyperlink{structTypeNamer_3_01std_1_1string_01_4}{Type\-Namer$<$ std\-::string $>$}
+\item 
+struct \hyperlink{structTypeNamer_3_01Heuristic_01_5_01_4}{Type\-Namer$<$ Heuristic $\ast$ $>$}
+\item 
+struct \hyperlink{structTypeNamer_3_01LandmarkGraph_01_5_01_4}{Type\-Namer$<$ Landmark\-Graph $\ast$ $>$}
+\item 
+struct \hyperlink{structTypeNamer_3_01ScalarEvaluator_01_5_01_4}{Type\-Namer$<$ Scalar\-Evaluator $\ast$ $>$}
+\item 
+struct \hyperlink{structTypeNamer_3_01SearchEngine_01_5_01_4}{Type\-Namer$<$ Search\-Engine $\ast$ $>$}
+\item 
+struct \hyperlink{structTypeNamer_3_01ParseTree_01_4}{Type\-Namer$<$ Parse\-Tree $>$}
+\item 
+struct \hyperlink{structTypeNamer_3_01Synergy_01_5_01_4}{Type\-Namer$<$ Synergy $\ast$ $>$}
+\item 
+struct \hyperlink{structTypeNamer_3_01MergeStrategy_01_5_01_4}{Type\-Namer$<$ Merge\-Strategy $\ast$ $>$}
+\item 
+struct \hyperlink{structTypeNamer_3_01ShrinkStrategy_01_5_01_4}{Type\-Namer$<$ Shrink\-Strategy $\ast$ $>$}
+\item 
+struct \hyperlink{structTypeNamer_3_01Labels_01_5_01_4}{Type\-Namer$<$ Labels $\ast$ $>$}
+\item 
+struct \hyperlink{structTypeNamer_3_01std_1_1shared__ptr_3_01AbstractTask_01_4_01_4}{Type\-Namer$<$ std\-::shared\-\_\-ptr$<$ Abstract\-Task $>$ $>$}
+\item 
+struct \hyperlink{structTypeNamer_3_01OpenList_3_01Entry_01_4_01_5_01_4}{Type\-Namer$<$ Open\-List$<$ Entry $>$ $\ast$ $>$}
+\item 
+struct \hyperlink{structTypeNamer_3_01std_1_1vector_3_01T_01_4_01_4}{Type\-Namer$<$ std\-::vector$<$ T $>$ $>$}
+\item 
+struct \hyperlink{structTypeDocumenter}{Type\-Documenter$<$ T $>$}
+\item 
+struct \hyperlink{structTypeDocumenter_3_01Heuristic_01_5_01_4}{Type\-Documenter$<$ Heuristic $\ast$ $>$}
+\item 
+struct \hyperlink{structTypeDocumenter_3_01LandmarkGraph_01_5_01_4}{Type\-Documenter$<$ Landmark\-Graph $\ast$ $>$}
+\item 
+struct \hyperlink{structTypeDocumenter_3_01ScalarEvaluator_01_5_01_4}{Type\-Documenter$<$ Scalar\-Evaluator $\ast$ $>$}
+\item 
+class \hyperlink{classOptions}{Options}
+\item 
+struct \hyperlink{structOptionFlags}{Option\-Flags}
+\item 
+struct \hyperlink{structArgumentInfo}{Argument\-Info}
+\item 
+struct \hyperlink{structPropertyInfo}{Property\-Info}
+\item 
+struct \hyperlink{structNoteInfo}{Note\-Info}
+\item 
+struct \hyperlink{structLanguageSupportInfo}{Language\-Support\-Info}
+\item 
+struct \hyperlink{structDocStruct}{Doc\-Struct}
+\item 
+class \hyperlink{classDocStore}{Doc\-Store}
+\item 
+class \hyperlink{classDocPrinter}{Doc\-Printer}
+\item 
+class \hyperlink{classTxt2TagsPrinter}{Txt2\-Tags\-Printer}
+\item 
+class \hyperlink{classPlainPrinter}{Plain\-Printer}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef tree$<$ \hyperlink{structParseNode}{Parse\-Node} $>$ \hyperlink{option__parser__util_8h_aec975d670a266efbd55f05ed9f9baf9a}{Parse\-Tree}
+\item 
+typedef std\-::vector$<$ std\-::pair\\*
+$<$ std\-::string, std\-::string $>$ $>$ \hyperlink{option__parser__util_8h_a916a9983a28a9efe2c606860052d5fe0}{Value\-Explanations}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\tree$<$ T $>$\-::sibling\-\_\-iterator \hyperlink{option__parser__util_8h_a8fbb42932f4dec0388c7e39bc6ebde83}{last\-\_\-child} (const tree$<$ T $>$ \&tr, typename tree$<$ T $>$\-::sibling\-\_\-iterator ti)
+\item 
+{\footnotesize template$<$class T $>$ }\\tree$<$ T $>$\-::sibling\-\_\-iterator \hyperlink{option__parser__util_8h_aa54d32933f819dd4a1d21194d06d4510}{last\-\_\-child\-\_\-of\-\_\-root} (const tree$<$ T $>$ \&tr)
+\item 
+{\footnotesize template$<$class T $>$ }\\tree$<$ T $>$\-::sibling\-\_\-iterator \hyperlink{option__parser__util_8h_a61cd2fb45af191c6007f152131019ab3}{first\-\_\-child} (const tree$<$ T $>$ \&tr, typename tree$<$ T $>$\-::sibling\-\_\-iterator ti)
+\item 
+{\footnotesize template$<$class T $>$ }\\tree$<$ T $>$\-::sibling\-\_\-iterator \hyperlink{option__parser__util_8h_a4ea24f981730f302344ea034fdec1306}{first\-\_\-child\-\_\-of\-\_\-root} (const tree$<$ T $>$ \&tr)
+\item 
+{\footnotesize template$<$class T $>$ }\\tree$<$ T $>$\-::sibling\-\_\-iterator \hyperlink{option__parser__util_8h_a525398f795832919481f57d86e0c8fc1}{end\-\_\-of\-\_\-roots\-\_\-children} (const tree$<$ T $>$ \&tr)
+\item 
+{\footnotesize template$<$class T $>$ }\\tree$<$ T $>$ \hyperlink{option__parser__util_8h_a6330371c65dec42cd7d0f526cf8bb371}{subtree} (const tree$<$ T $>$ \&tr, typename tree$<$ T $>$\-::sibling\-\_\-iterator ti)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{option__parser__util_8h_aec975d670a266efbd55f05ed9f9baf9a}{\index{option\-\_\-parser\-\_\-util.\-h@{option\-\_\-parser\-\_\-util.\-h}!Parse\-Tree@{Parse\-Tree}}
+\index{Parse\-Tree@{Parse\-Tree}!option_parser_util.h@{option\-\_\-parser\-\_\-util.\-h}}
+\subsubsection[{Parse\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}typedef tree$<${\bf Parse\-Node}$>$ {\bf Parse\-Tree}}}\label{option__parser__util_8h_aec975d670a266efbd55f05ed9f9baf9a}
+\hypertarget{option__parser__util_8h_a916a9983a28a9efe2c606860052d5fe0}{\index{option\-\_\-parser\-\_\-util.\-h@{option\-\_\-parser\-\_\-util.\-h}!Value\-Explanations@{Value\-Explanations}}
+\index{Value\-Explanations@{Value\-Explanations}!option_parser_util.h@{option\-\_\-parser\-\_\-util.\-h}}
+\subsubsection[{Value\-Explanations}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::vector$<$std\-::pair$<$std\-::string, std\-::string$>$ $>$ {\bf Value\-Explanations}}}\label{option__parser__util_8h_a916a9983a28a9efe2c606860052d5fe0}
+
+
+\subsection{Function Documentation}
+\hypertarget{option__parser__util_8h_a525398f795832919481f57d86e0c8fc1}{\index{option\-\_\-parser\-\_\-util.\-h@{option\-\_\-parser\-\_\-util.\-h}!end\-\_\-of\-\_\-roots\-\_\-children@{end\-\_\-of\-\_\-roots\-\_\-children}}
+\index{end\-\_\-of\-\_\-roots\-\_\-children@{end\-\_\-of\-\_\-roots\-\_\-children}!option_parser_util.h@{option\-\_\-parser\-\_\-util.\-h}}
+\subsubsection[{end\-\_\-of\-\_\-roots\-\_\-children}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ tree$<$T$>$\-::sibling\-\_\-iterator end\-\_\-of\-\_\-roots\-\_\-children (
+\begin{DoxyParamCaption}
+\item[{const tree$<$ T $>$ \&}]{tr}
+\end{DoxyParamCaption}
+)}}\label{option__parser__util_8h_a525398f795832919481f57d86e0c8fc1}
+\hypertarget{option__parser__util_8h_a61cd2fb45af191c6007f152131019ab3}{\index{option\-\_\-parser\-\_\-util.\-h@{option\-\_\-parser\-\_\-util.\-h}!first\-\_\-child@{first\-\_\-child}}
+\index{first\-\_\-child@{first\-\_\-child}!option_parser_util.h@{option\-\_\-parser\-\_\-util.\-h}}
+\subsubsection[{first\-\_\-child}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ tree$<$T$>$\-::sibling\-\_\-iterator first\-\_\-child (
+\begin{DoxyParamCaption}
+\item[{const tree$<$ T $>$ \&}]{tr, }
+\item[{typename tree$<$ T $>$\-::sibling\-\_\-iterator}]{ti}
+\end{DoxyParamCaption}
+)}}\label{option__parser__util_8h_a61cd2fb45af191c6007f152131019ab3}
+\hypertarget{option__parser__util_8h_a4ea24f981730f302344ea034fdec1306}{\index{option\-\_\-parser\-\_\-util.\-h@{option\-\_\-parser\-\_\-util.\-h}!first\-\_\-child\-\_\-of\-\_\-root@{first\-\_\-child\-\_\-of\-\_\-root}}
+\index{first\-\_\-child\-\_\-of\-\_\-root@{first\-\_\-child\-\_\-of\-\_\-root}!option_parser_util.h@{option\-\_\-parser\-\_\-util.\-h}}
+\subsubsection[{first\-\_\-child\-\_\-of\-\_\-root}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ tree$<$T$>$\-::sibling\-\_\-iterator first\-\_\-child\-\_\-of\-\_\-root (
+\begin{DoxyParamCaption}
+\item[{const tree$<$ T $>$ \&}]{tr}
+\end{DoxyParamCaption}
+)}}\label{option__parser__util_8h_a4ea24f981730f302344ea034fdec1306}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{option__parser__util_8h_a4ea24f981730f302344ea034fdec1306_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{option__parser__util_8h_a8fbb42932f4dec0388c7e39bc6ebde83}{\index{option\-\_\-parser\-\_\-util.\-h@{option\-\_\-parser\-\_\-util.\-h}!last\-\_\-child@{last\-\_\-child}}
+\index{last\-\_\-child@{last\-\_\-child}!option_parser_util.h@{option\-\_\-parser\-\_\-util.\-h}}
+\subsubsection[{last\-\_\-child}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ tree$<$T$>$\-::sibling\-\_\-iterator last\-\_\-child (
+\begin{DoxyParamCaption}
+\item[{const tree$<$ T $>$ \&}]{tr, }
+\item[{typename tree$<$ T $>$\-::sibling\-\_\-iterator}]{ti}
+\end{DoxyParamCaption}
+)}}\label{option__parser__util_8h_a8fbb42932f4dec0388c7e39bc6ebde83}
+\hypertarget{option__parser__util_8h_aa54d32933f819dd4a1d21194d06d4510}{\index{option\-\_\-parser\-\_\-util.\-h@{option\-\_\-parser\-\_\-util.\-h}!last\-\_\-child\-\_\-of\-\_\-root@{last\-\_\-child\-\_\-of\-\_\-root}}
+\index{last\-\_\-child\-\_\-of\-\_\-root@{last\-\_\-child\-\_\-of\-\_\-root}!option_parser_util.h@{option\-\_\-parser\-\_\-util.\-h}}
+\subsubsection[{last\-\_\-child\-\_\-of\-\_\-root}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ tree$<$T$>$\-::sibling\-\_\-iterator last\-\_\-child\-\_\-of\-\_\-root (
+\begin{DoxyParamCaption}
+\item[{const tree$<$ T $>$ \&}]{tr}
+\end{DoxyParamCaption}
+)}}\label{option__parser__util_8h_aa54d32933f819dd4a1d21194d06d4510}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{option__parser__util_8h_aa54d32933f819dd4a1d21194d06d4510_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{option__parser__util_8h_a6330371c65dec42cd7d0f526cf8bb371}{\index{option\-\_\-parser\-\_\-util.\-h@{option\-\_\-parser\-\_\-util.\-h}!subtree@{subtree}}
+\index{subtree@{subtree}!option_parser_util.h@{option\-\_\-parser\-\_\-util.\-h}}
+\subsubsection[{subtree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ tree$<$T$>$ subtree (
+\begin{DoxyParamCaption}
+\item[{const tree$<$ T $>$ \&}]{tr, }
+\item[{typename tree$<$ T $>$\-::sibling\-\_\-iterator}]{ti}
+\end{DoxyParamCaption}
+)}}\label{option__parser__util_8h_a6330371c65dec42cd7d0f526cf8bb371}

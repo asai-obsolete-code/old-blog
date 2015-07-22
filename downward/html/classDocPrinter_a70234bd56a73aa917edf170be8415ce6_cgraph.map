@@ -1,0 +1,14 @@
+<map id="DocPrinter::print_category" name="DocPrinter::print_category">
+<area shape="rect" id="node2" href="$classDocPrinter.html#a7a8d538ac102b331f891b4cd86c814ab" title="DocPrinter::print_category\l_header" alt="" coords="230,15,405,57"/>
+<area shape="rect" id="node3" href="$classDocStore.html#a55af131cd6b424f7c7e1ccadf77dca5f" title="DocStore::instance" alt="" coords="250,81,385,108"/>
+<area shape="rect" id="node4" href="$classDocPrinter.html#a0253343f6a7ffef9de4c915d2091d5db" title="DocPrinter::print_element" alt="" coords="232,132,403,159"/>
+<area shape="rect" id="node11" href="$classDocStore.html#aa41ed6e54cf6c61332cb0d037731593d" title="DocStore::get" alt="" coords="266,183,369,209"/>
+<area shape="rect" id="node12" href="$classDocStore.html#ace9674ccb03fa34d70ab2ced166d2e89" title="DocStore::get_keys" alt="" coords="248,233,387,260"/>
+<area shape="rect" id="node13" href="$classDocPrinter.html#aa96cf13e25fdd6cb854b0efb8e89046a" title="DocPrinter::print_category\l_footer" alt="" coords="230,285,405,326"/>
+<area shape="rect" id="node5" href="$classDocPrinter.html#abb2a5b5121292d292ff682f94e187534" title="DocPrinter::print_synopsis" alt="" coords="459,5,635,32"/>
+<area shape="rect" id="node6" href="$classDocPrinter.html#aa967b483b8def39d7ba5f039bd3c4acd" title="DocPrinter::print_usage" alt="" coords="467,56,626,83"/>
+<area shape="rect" id="node7" href="$classDocPrinter.html#a9e8339a87ec6aa5bc11017eec937372c" title="DocPrinter::print_arguments" alt="" coords="454,107,639,133"/>
+<area shape="rect" id="node8" href="$classDocPrinter.html#ae53baee3061725f2d2e02c75c6e8a5a3" title="DocPrinter::print_notes" alt="" coords="469,157,625,184"/>
+<area shape="rect" id="node9" href="$classDocPrinter.html#aba345d8b3a03bca1aa7c2363260dfdf8" title="DocPrinter::print_language\l_features" alt="" coords="459,209,635,250"/>
+<area shape="rect" id="node10" href="$classDocPrinter.html#a16854272b22ca9129f9afb9c42157736" title="DocPrinter::print_properties" alt="" coords="456,275,637,301"/>
+</map>

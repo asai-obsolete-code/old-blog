@@ -1,0 +1,109 @@
+\hypertarget{task__proxy_8h}{\section{task\-\_\-proxy.\-h File Reference}
+\label{task__proxy_8h}\index{task\-\_\-proxy.\-h@{task\-\_\-proxy.\-h}}
+}
+{\ttfamily \#include \char`\"{}abstract\-\_\-task.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}utilities.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$cassert$>$}\\*
+{\ttfamily \#include $<$cstddef$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+Include dependency graph for task\-\_\-proxy.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{task__proxy_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{task__proxy_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classProxyIterator}{Proxy\-Iterator$<$ Proxy\-Collection $>$}
+\item 
+class \hyperlink{classFactProxy}{Fact\-Proxy}
+\item 
+class \hyperlink{classFactsProxyIterator}{Facts\-Proxy\-Iterator}
+\item 
+class \hyperlink{classFactsProxy}{Facts\-Proxy}
+\item 
+class \hyperlink{classConditionsProxy}{Conditions\-Proxy}
+\item 
+class \hyperlink{classVariableProxy}{Variable\-Proxy}
+\item 
+class \hyperlink{classVariablesProxy}{Variables\-Proxy}
+\item 
+class \hyperlink{classPreconditionsProxy}{Preconditions\-Proxy}
+\item 
+class \hyperlink{classEffectConditionsProxy}{Effect\-Conditions\-Proxy}
+\item 
+class \hyperlink{classEffectProxy}{Effect\-Proxy}
+\item 
+class \hyperlink{classEffectsProxy}{Effects\-Proxy}
+\item 
+class \hyperlink{classOperatorProxy}{Operator\-Proxy}
+\item 
+class \hyperlink{classOperatorsProxy}{Operators\-Proxy}
+\item 
+class \hyperlink{classAxiomsProxy}{Axioms\-Proxy}
+\item 
+class \hyperlink{classGoalsProxy}{Goals\-Proxy}
+\item 
+class \hyperlink{classState}{State}
+\item 
+class \hyperlink{classTaskProxy}{Task\-Proxy}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Proxy\-Collection $>$ }\\\hyperlink{classProxyIterator}{Proxy\-Iterator}$<$ Proxy\-Collection $>$ \hyperlink{task__proxy_8h_af1c6138ddedc0fb5dfb38612ae495d23}{begin} (Proxy\-Collection \&collection)
+\item 
+{\footnotesize template$<$class Proxy\-Collection $>$ }\\\hyperlink{classProxyIterator}{Proxy\-Iterator}$<$ Proxy\-Collection $>$ \hyperlink{task__proxy_8h_a07f77cedc7ef581e61253d88b5fa8463}{end} (Proxy\-Collection \&collection)
+\item 
+bool \hyperlink{task__proxy_8h_ae831584621b7d11de1e699eac224eb35}{does\-\_\-fire} (\hyperlink{classEffectProxy}{Effect\-Proxy} effect, const \hyperlink{classState}{State} \&state)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{task__proxy_8h_af1c6138ddedc0fb5dfb38612ae495d23}{\index{task\-\_\-proxy.\-h@{task\-\_\-proxy.\-h}!begin@{begin}}
+\index{begin@{begin}!task_proxy.h@{task\-\_\-proxy.\-h}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Proxy\-Collection $>$ {\bf Proxy\-Iterator}$<$Proxy\-Collection$>$ begin (
+\begin{DoxyParamCaption}
+\item[{Proxy\-Collection \&}]{collection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{task__proxy_8h_af1c6138ddedc0fb5dfb38612ae495d23}
+\hypertarget{task__proxy_8h_ae831584621b7d11de1e699eac224eb35}{\index{task\-\_\-proxy.\-h@{task\-\_\-proxy.\-h}!does\-\_\-fire@{does\-\_\-fire}}
+\index{does\-\_\-fire@{does\-\_\-fire}!task_proxy.h@{task\-\_\-proxy.\-h}}
+\subsubsection[{does\-\_\-fire}]{\setlength{\rightskip}{0pt plus 5cm}bool does\-\_\-fire (
+\begin{DoxyParamCaption}
+\item[{{\bf Effect\-Proxy}}]{effect, }
+\item[{const {\bf State} \&}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{task__proxy_8h_ae831584621b7d11de1e699eac224eb35}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{task__proxy_8h_ae831584621b7d11de1e699eac224eb35_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{task__proxy_8h_a07f77cedc7ef581e61253d88b5fa8463}{\index{task\-\_\-proxy.\-h@{task\-\_\-proxy.\-h}!end@{end}}
+\index{end@{end}!task_proxy.h@{task\-\_\-proxy.\-h}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Proxy\-Collection $>$ {\bf Proxy\-Iterator}$<$Proxy\-Collection$>$ end (
+\begin{DoxyParamCaption}
+\item[{Proxy\-Collection \&}]{collection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{task__proxy_8h_a07f77cedc7ef581e61253d88b5fa8463}

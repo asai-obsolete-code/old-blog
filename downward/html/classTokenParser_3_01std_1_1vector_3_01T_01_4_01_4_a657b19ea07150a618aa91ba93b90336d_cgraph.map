@@ -1,0 +1,8 @@
+<map id="TokenParser&lt; std::vector&lt; T &gt; &gt;::parse" name="TokenParser&lt; std::vector&lt; T &gt; &gt;::parse">
+<area shape="rect" id="node2" href="$classOptionParser.html#aa30a0a9106c2660088363eba8e875936" title="OptionParser::get_parse_tree" alt="" coords="224,5,416,32"/>
+<area shape="rect" id="node3" href="$option__parser__util_8h.html#a4ea24f981730f302344ea034fdec1306" title="first_child_of_root" alt="" coords="257,56,383,83"/>
+<area shape="rect" id="node5" href="$option__parser__util_8h.html#a525398f795832919481f57d86e0c8fc1" title="end_of_roots_children" alt="" coords="245,107,395,133"/>
+<area shape="rect" id="node6" href="$option__parser__util_8h.html#a6330371c65dec42cd7d0f526cf8bb371" title="subtree" alt="" coords="287,157,353,184"/>
+<area shape="rect" id="node7" href="$classOptionParser.html#a1587e4915a30a4d2f1d1c936a6f75315" title="OptionParser::dry_run" alt="" coords="245,208,395,235"/>
+<area shape="rect" id="node4" href="$option__parser__util_8h.html#a61cd2fb45af191c6007f152131019ab3" title="first_child" alt="" coords="465,56,543,83"/>
+</map>

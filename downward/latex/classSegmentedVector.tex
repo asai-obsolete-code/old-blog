@@ -1,0 +1,103 @@
+\hypertarget{classSegmentedVector}{\section{Segmented\-Vector$<$ Entry, Allocator $>$ Class Template Reference}
+\label{classSegmentedVector}\index{Segmented\-Vector$<$ Entry, Allocator $>$@{Segmented\-Vector$<$ Entry, Allocator $>$}}
+}
+
+
+{\ttfamily \#include $<$segmented\-\_\-vector.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSegmentedVector_a5dcb317e685d3d6dfa85fb3afe524e27}{Segmented\-Vector} ()
+\item 
+\hyperlink{classSegmentedVector_ac277a452558e58ca4c749f180e370e96}{Segmented\-Vector} (const Entry\-Allocator \&allocator\-\_\-)
+\item 
+\hyperlink{classSegmentedVector_af9dadab6ba69124409b6bd40b52006c7}{$\sim$\-Segmented\-Vector} ()
+\item 
+Entry \& \hyperlink{classSegmentedVector_a91fbfa8f636ac4e4fb7d022e9fc1956c}{operator\mbox{[}$\,$\mbox{]}} (size\-\_\-t index)
+\item 
+const Entry \& \hyperlink{classSegmentedVector_a43999003970d4f5b20a097d673450113}{operator\mbox{[}$\,$\mbox{]}} (size\-\_\-t index) const 
+\item 
+size\-\_\-t \hyperlink{classSegmentedVector_a6a139b65c0fa335bfb29e24d260cf9b7}{size} () const 
+\item 
+void \hyperlink{classSegmentedVector_a7a2e9ebc35d160b15f0bcf216d9d8294}{push\-\_\-back} (const Entry \&entry)
+\item 
+void \hyperlink{classSegmentedVector_a0eb950e61f11965108d15a6e0ad74f7a}{pop\-\_\-back} ()
+\item 
+void \hyperlink{classSegmentedVector_accc8146ae999650ca6cd8826bec6f8a5}{resize} (size\-\_\-t new\-\_\-size, Entry entry=Entry())
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSegmentedVector_a5dcb317e685d3d6dfa85fb3afe524e27}{\index{Segmented\-Vector@{Segmented\-Vector}!Segmented\-Vector@{Segmented\-Vector}}
+\index{Segmented\-Vector@{Segmented\-Vector}!SegmentedVector@{Segmented\-Vector}}
+\subsubsection[{Segmented\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Entry, class Allocator = std\-::allocator$<$\-Entry$>$$>$ {\bf Segmented\-Vector}$<$ Entry, Allocator $>$\-::{\bf Segmented\-Vector} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classSegmentedVector_a5dcb317e685d3d6dfa85fb3afe524e27}
+\hypertarget{classSegmentedVector_ac277a452558e58ca4c749f180e370e96}{\index{Segmented\-Vector@{Segmented\-Vector}!Segmented\-Vector@{Segmented\-Vector}}
+\index{Segmented\-Vector@{Segmented\-Vector}!SegmentedVector@{Segmented\-Vector}}
+\subsubsection[{Segmented\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Entry, class Allocator = std\-::allocator$<$\-Entry$>$$>$ {\bf Segmented\-Vector}$<$ Entry, Allocator $>$\-::{\bf Segmented\-Vector} (
+\begin{DoxyParamCaption}
+\item[{const Entry\-Allocator \&}]{allocator\-\_\-}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classSegmentedVector_ac277a452558e58ca4c749f180e370e96}
+\hypertarget{classSegmentedVector_af9dadab6ba69124409b6bd40b52006c7}{\index{Segmented\-Vector@{Segmented\-Vector}!$\sim$\-Segmented\-Vector@{$\sim$\-Segmented\-Vector}}
+\index{$\sim$\-Segmented\-Vector@{$\sim$\-Segmented\-Vector}!SegmentedVector@{Segmented\-Vector}}
+\subsubsection[{$\sim$\-Segmented\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Entry, class Allocator = std\-::allocator$<$\-Entry$>$$>$ {\bf Segmented\-Vector}$<$ Entry, Allocator $>$\-::$\sim${\bf Segmented\-Vector} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classSegmentedVector_af9dadab6ba69124409b6bd40b52006c7}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSegmentedVector_a91fbfa8f636ac4e4fb7d022e9fc1956c}{\index{Segmented\-Vector@{Segmented\-Vector}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!SegmentedVector@{Segmented\-Vector}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Entry, class Allocator = std\-::allocator$<$\-Entry$>$$>$ Entry\& {\bf Segmented\-Vector}$<$ Entry, Allocator $>$\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classSegmentedVector_a91fbfa8f636ac4e4fb7d022e9fc1956c}
+\hypertarget{classSegmentedVector_a43999003970d4f5b20a097d673450113}{\index{Segmented\-Vector@{Segmented\-Vector}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!SegmentedVector@{Segmented\-Vector}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Entry, class Allocator = std\-::allocator$<$\-Entry$>$$>$ const Entry\& {\bf Segmented\-Vector}$<$ Entry, Allocator $>$\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classSegmentedVector_a43999003970d4f5b20a097d673450113}
+\hypertarget{classSegmentedVector_a0eb950e61f11965108d15a6e0ad74f7a}{\index{Segmented\-Vector@{Segmented\-Vector}!pop\-\_\-back@{pop\-\_\-back}}
+\index{pop\-\_\-back@{pop\-\_\-back}!SegmentedVector@{Segmented\-Vector}}
+\subsubsection[{pop\-\_\-back}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Entry, class Allocator = std\-::allocator$<$\-Entry$>$$>$ void {\bf Segmented\-Vector}$<$ Entry, Allocator $>$\-::pop\-\_\-back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classSegmentedVector_a0eb950e61f11965108d15a6e0ad74f7a}
+\hypertarget{classSegmentedVector_a7a2e9ebc35d160b15f0bcf216d9d8294}{\index{Segmented\-Vector@{Segmented\-Vector}!push\-\_\-back@{push\-\_\-back}}
+\index{push\-\_\-back@{push\-\_\-back}!SegmentedVector@{Segmented\-Vector}}
+\subsubsection[{push\-\_\-back}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Entry, class Allocator = std\-::allocator$<$\-Entry$>$$>$ void {\bf Segmented\-Vector}$<$ Entry, Allocator $>$\-::push\-\_\-back (
+\begin{DoxyParamCaption}
+\item[{const Entry \&}]{entry}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classSegmentedVector_a7a2e9ebc35d160b15f0bcf216d9d8294}
+\hypertarget{classSegmentedVector_accc8146ae999650ca6cd8826bec6f8a5}{\index{Segmented\-Vector@{Segmented\-Vector}!resize@{resize}}
+\index{resize@{resize}!SegmentedVector@{Segmented\-Vector}}
+\subsubsection[{resize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Entry, class Allocator = std\-::allocator$<$\-Entry$>$$>$ void {\bf Segmented\-Vector}$<$ Entry, Allocator $>$\-::resize (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{new\-\_\-size, }
+\item[{Entry}]{entry = {\ttfamily Entry()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classSegmentedVector_accc8146ae999650ca6cd8826bec6f8a5}
+\hypertarget{classSegmentedVector_a6a139b65c0fa335bfb29e24d260cf9b7}{\index{Segmented\-Vector@{Segmented\-Vector}!size@{size}}
+\index{size@{size}!SegmentedVector@{Segmented\-Vector}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Entry, class Allocator = std\-::allocator$<$\-Entry$>$$>$ size\-\_\-t {\bf Segmented\-Vector}$<$ Entry, Allocator $>$\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classSegmentedVector_a6a139b65c0fa335bfb29e24d260cf9b7}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{segmented__vector_8h}{segmented\-\_\-vector.\-h}\end{DoxyCompactItemize}

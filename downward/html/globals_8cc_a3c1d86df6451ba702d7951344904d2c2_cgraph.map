@@ -1,0 +1,14 @@
+<map id="read_everything" name="read_everything">
+<area shape="rect" id="node2" href="$globals_8cc.html#a94f47a68609603b3c816df6e8b98efa8" title="read_and_verify_version" alt="" coords="168,5,331,32"/>
+<area shape="rect" id="node3" href="$globals_8cc.html#ae93d1b2bffd7ddf57f48eb63c2a6b9d0" title="check_magic" alt="" coords="379,132,477,159"/>
+<area shape="rect" id="node5" href="$globals_8cc.html#a5fa692bbede8e391f5138957c63278e4" title="read_metric" alt="" coords="204,107,295,133"/>
+<area shape="rect" id="node6" href="$globals_8cc.html#a69c095f28fe3ea6c86bfe99f0cda751a" title="read_variables" alt="" coords="196,157,303,184"/>
+<area shape="rect" id="node7" href="$globals_8cc.html#aba529973a7a4138d81a60de75b402c97" title="read_mutexes" alt="" coords="197,208,301,235"/>
+<area shape="rect" id="node8" href="$globals_8cc.html#a06d8336dac92d6917caa875b04dc5732" title="read_goal" alt="" coords="210,259,289,285"/>
+<area shape="rect" id="node9" href="$globals_8cc.html#a5fdcdd69a0c7351e86b07de704854ad0" title="read_operators" alt="" coords="195,309,303,336"/>
+<area shape="rect" id="node10" href="$globals_8cc.html#a5bec5647f9ffa68684e813b7564b3060" title="read_axioms" alt="" coords="201,360,297,387"/>
+<area shape="rect" id="node11" href="$globals_8cc.html#adc4bad9547fe1a2c9aad4a6b64b558e1" title="peek_magic" alt="" coords="203,411,295,437"/>
+<area shape="rect" id="node12" href="$classDomainTransitionGraph.html#aba53fff6f1e933d0fded474ef2d6182f" title="DomainTransitionGraph\l::read_all" alt="" coords="170,462,329,503"/>
+<area shape="rect" id="node13" href="$globals_8cc.html#a5185eb05df510d80c001e5d0ebb384e9" title="g_root_task" alt="" coords="204,528,295,555"/>
+<area shape="rect" id="node4" href="$utilities_8cc.html#aa4a09f54758dbe72385a98b01c06ae0e" title="exit_with" alt="" coords="525,132,600,159"/>
+</map>

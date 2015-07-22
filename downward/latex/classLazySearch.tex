@@ -1,0 +1,300 @@
+\hypertarget{classLazySearch}{\section{Lazy\-Search Class Reference}
+\label{classLazySearch}\index{Lazy\-Search@{Lazy\-Search}}
+}
+
+
+{\ttfamily \#include $<$lazy\-\_\-search.\-h$>$}
+
+
+
+Inheritance diagram for Lazy\-Search\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{classLazySearch__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Lazy\-Search\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLazySearch__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLazySearch_a7899b6aab5ec92a59f8c34c3efffde34}{Lazy\-Search} (const \hyperlink{classOptions}{Options} \&opts)
+\item 
+virtual \hyperlink{classLazySearch_ad2d7c08e418dcc9e604697cca5adccc2}{$\sim$\-Lazy\-Search} ()=default
+\item 
+void \hyperlink{classLazySearch_aee996209b530866fd5c89a48ef613289}{set\-\_\-pref\-\_\-operator\-\_\-heuristics} (std\-::vector$<$ \hyperlink{classHeuristic}{Heuristic} $\ast$ $>$ \&heur)
+\item 
+virtual void \hyperlink{classLazySearch_a2a8d856f44fedaa3f040784156789329}{print\-\_\-statistics} () const override
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classLazySearch_af2ad0d5761ea2a35c64aded9caa4246e}{initialize} ()
+\item 
+virtual \hyperlink{search__engine_8h_a366b21ffe1b22f34ec2fa8f101b979f3}{Search\-Status} \hyperlink{classLazySearch_a58d840359308153dab0d7c7f39be10bd}{step} ()
+\item 
+void \hyperlink{classLazySearch_a19cd42338e21b07532404fc3c189a22f}{generate\-\_\-successors} ()
+\item 
+\hyperlink{search__engine_8h_a366b21ffe1b22f34ec2fa8f101b979f3}{Search\-Status} \hyperlink{classLazySearch_af8bd390a076909a7088dbc5e3dcb41bc}{fetch\-\_\-next\-\_\-state} ()
+\item 
+void \hyperlink{classLazySearch_a19d3e061ca7656aab252ae80ecbc0cc8}{reward\-\_\-progress} ()
+\item 
+void \hyperlink{classLazySearch_a89885f82964750088e4bcd53733e7367}{get\-\_\-successor\-\_\-operators} (std\-::vector$<$ const \hyperlink{classGlobalOperator}{Global\-Operator} $\ast$ $>$ \&ops)
+\item 
+void \hyperlink{classLazySearch_a6964324c7dccddeb40d58c7a4220e110}{print\-\_\-checkpoint\-\_\-line} (int g) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classOpenList}{Open\-List}$<$ \hyperlink{lazy__search_8h_a1d8132fb7e600cfa9f52c42559750b5c}{Open\-List\-Entry\-Lazy} $>$ $\ast$ \hyperlink{classLazySearch_a67eadc9a21234e4aac2ea9fa8cfc3ef3}{open\-\_\-list}
+\item 
+bool \hyperlink{classLazySearch_a5d08aa7f2a8eb170ab0e32b006265218}{reopen\-\_\-closed\-\_\-nodes}
+\item 
+bool \hyperlink{classLazySearch_a3eeed1027fba7d23478de6a9ecc26988}{randomize\-\_\-successors}
+\item 
+bool \hyperlink{classLazySearch_a732a63ac9f996f5ff3e02b4b1283ac3a}{preferred\-\_\-successors\-\_\-first}
+\item 
+std\-::vector$<$ \hyperlink{classHeuristic}{Heuristic} $\ast$ $>$ \hyperlink{classLazySearch_a8252cee86ea2ca31fe4b7e2d35c2b952}{heuristics}
+\item 
+std\-::vector$<$ \hyperlink{classHeuristic}{Heuristic} $\ast$ $>$ \hyperlink{classLazySearch_a7f1e75bf8bbf159776ea65afe15110c2}{preferred\-\_\-operator\-\_\-heuristics}
+\item 
+std\-::vector$<$ \hyperlink{classHeuristic}{Heuristic} $\ast$ $>$ \hyperlink{classLazySearch_a0e6f2058093334ca068a87c828e77b32}{estimate\-\_\-heuristics}
+\item 
+\hyperlink{classGlobalState}{Global\-State} \hyperlink{classLazySearch_a18b13c44ec6b91896779eb41d26038cb}{current\-\_\-state}
+\item 
+\hyperlink{classStateID}{State\-I\-D} \hyperlink{classLazySearch_a39019af3180b660aa0c256fc0e51285b}{current\-\_\-predecessor\-\_\-id}
+\item 
+const \hyperlink{classGlobalOperator}{Global\-Operator} $\ast$ \hyperlink{classLazySearch_a928bb4390d1b061e2c1c6dd6588ed14d}{current\-\_\-operator}
+\item 
+int \hyperlink{classLazySearch_aa9a52970b26305529f0cc5e896f9111e}{current\-\_\-g}
+\item 
+int \hyperlink{classLazySearch_a7dfc150f2a8fcdbec91914f4ce2625f9}{current\-\_\-real\-\_\-g}
+\item 
+\hyperlink{classEvaluationContext}{Evaluation\-Context} \hyperlink{classLazySearch_a9d67f87af37f3deb2ca38ebc9eabb019}{current\-\_\-eval\-\_\-context}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classLazySearch_a7899b6aab5ec92a59f8c34c3efffde34}{\index{Lazy\-Search@{Lazy\-Search}!Lazy\-Search@{Lazy\-Search}}
+\index{Lazy\-Search@{Lazy\-Search}!LazySearch@{Lazy\-Search}}
+\subsubsection[{Lazy\-Search}]{\setlength{\rightskip}{0pt plus 5cm}Lazy\-Search\-::\-Lazy\-Search (
+\begin{DoxyParamCaption}
+\item[{const {\bf Options} \&}]{opts}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classLazySearch_a7899b6aab5ec92a59f8c34c3efffde34}
+\hypertarget{classLazySearch_ad2d7c08e418dcc9e604697cca5adccc2}{\index{Lazy\-Search@{Lazy\-Search}!$\sim$\-Lazy\-Search@{$\sim$\-Lazy\-Search}}
+\index{$\sim$\-Lazy\-Search@{$\sim$\-Lazy\-Search}!LazySearch@{Lazy\-Search}}
+\subsubsection[{$\sim$\-Lazy\-Search}]{\setlength{\rightskip}{0pt plus 5cm}virtual Lazy\-Search\-::$\sim$\-Lazy\-Search (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}}\label{classLazySearch_ad2d7c08e418dcc9e604697cca5adccc2}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classLazySearch_af8bd390a076909a7088dbc5e3dcb41bc}{\index{Lazy\-Search@{Lazy\-Search}!fetch\-\_\-next\-\_\-state@{fetch\-\_\-next\-\_\-state}}
+\index{fetch\-\_\-next\-\_\-state@{fetch\-\_\-next\-\_\-state}!LazySearch@{Lazy\-Search}}
+\subsubsection[{fetch\-\_\-next\-\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Search\-Status} Lazy\-Search\-::fetch\-\_\-next\-\_\-state (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLazySearch_af8bd390a076909a7088dbc5e3dcb41bc}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLazySearch_af8bd390a076909a7088dbc5e3dcb41bc_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classLazySearch_a19cd42338e21b07532404fc3c189a22f}{\index{Lazy\-Search@{Lazy\-Search}!generate\-\_\-successors@{generate\-\_\-successors}}
+\index{generate\-\_\-successors@{generate\-\_\-successors}!LazySearch@{Lazy\-Search}}
+\subsubsection[{generate\-\_\-successors}]{\setlength{\rightskip}{0pt plus 5cm}void Lazy\-Search\-::generate\-\_\-successors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLazySearch_a19cd42338e21b07532404fc3c189a22f}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLazySearch_a19cd42338e21b07532404fc3c189a22f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classLazySearch_a89885f82964750088e4bcd53733e7367}{\index{Lazy\-Search@{Lazy\-Search}!get\-\_\-successor\-\_\-operators@{get\-\_\-successor\-\_\-operators}}
+\index{get\-\_\-successor\-\_\-operators@{get\-\_\-successor\-\_\-operators}!LazySearch@{Lazy\-Search}}
+\subsubsection[{get\-\_\-successor\-\_\-operators}]{\setlength{\rightskip}{0pt plus 5cm}void Lazy\-Search\-::get\-\_\-successor\-\_\-operators (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ const {\bf Global\-Operator} $\ast$ $>$ \&}]{ops}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLazySearch_a89885f82964750088e4bcd53733e7367}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLazySearch_a89885f82964750088e4bcd53733e7367_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classLazySearch_af2ad0d5761ea2a35c64aded9caa4246e}{\index{Lazy\-Search@{Lazy\-Search}!initialize@{initialize}}
+\index{initialize@{initialize}!LazySearch@{Lazy\-Search}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}void Lazy\-Search\-::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classLazySearch_af2ad0d5761ea2a35c64aded9caa4246e}
+
+
+Reimplemented from \hyperlink{classSearchEngine_a72ae04f864fc906a5caa1d17bbbd3e95}{Search\-Engine}.
+
+\hypertarget{classLazySearch_a6964324c7dccddeb40d58c7a4220e110}{\index{Lazy\-Search@{Lazy\-Search}!print\-\_\-checkpoint\-\_\-line@{print\-\_\-checkpoint\-\_\-line}}
+\index{print\-\_\-checkpoint\-\_\-line@{print\-\_\-checkpoint\-\_\-line}!LazySearch@{Lazy\-Search}}
+\subsubsection[{print\-\_\-checkpoint\-\_\-line}]{\setlength{\rightskip}{0pt plus 5cm}void Lazy\-Search\-::print\-\_\-checkpoint\-\_\-line (
+\begin{DoxyParamCaption}
+\item[{int}]{g}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLazySearch_a6964324c7dccddeb40d58c7a4220e110}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLazySearch_a6964324c7dccddeb40d58c7a4220e110_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classLazySearch_a2a8d856f44fedaa3f040784156789329}{\index{Lazy\-Search@{Lazy\-Search}!print\-\_\-statistics@{print\-\_\-statistics}}
+\index{print\-\_\-statistics@{print\-\_\-statistics}!LazySearch@{Lazy\-Search}}
+\subsubsection[{print\-\_\-statistics}]{\setlength{\rightskip}{0pt plus 5cm}void Lazy\-Search\-::print\-\_\-statistics (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classLazySearch_a2a8d856f44fedaa3f040784156789329}
+
+
+Reimplemented from \hyperlink{classSearchEngine_a237e4e74b03bc1e1f777e91d98e62490}{Search\-Engine}.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLazySearch_a2a8d856f44fedaa3f040784156789329_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classLazySearch_a19d3e061ca7656aab252ae80ecbc0cc8}{\index{Lazy\-Search@{Lazy\-Search}!reward\-\_\-progress@{reward\-\_\-progress}}
+\index{reward\-\_\-progress@{reward\-\_\-progress}!LazySearch@{Lazy\-Search}}
+\subsubsection[{reward\-\_\-progress}]{\setlength{\rightskip}{0pt plus 5cm}void Lazy\-Search\-::reward\-\_\-progress (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLazySearch_a19d3e061ca7656aab252ae80ecbc0cc8}
+\hypertarget{classLazySearch_aee996209b530866fd5c89a48ef613289}{\index{Lazy\-Search@{Lazy\-Search}!set\-\_\-pref\-\_\-operator\-\_\-heuristics@{set\-\_\-pref\-\_\-operator\-\_\-heuristics}}
+\index{set\-\_\-pref\-\_\-operator\-\_\-heuristics@{set\-\_\-pref\-\_\-operator\-\_\-heuristics}!LazySearch@{Lazy\-Search}}
+\subsubsection[{set\-\_\-pref\-\_\-operator\-\_\-heuristics}]{\setlength{\rightskip}{0pt plus 5cm}void Lazy\-Search\-::set\-\_\-pref\-\_\-operator\-\_\-heuristics (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf Heuristic} $\ast$ $>$ \&}]{heur}
+\end{DoxyParamCaption}
+)}}\label{classLazySearch_aee996209b530866fd5c89a48ef613289}
+\hypertarget{classLazySearch_a58d840359308153dab0d7c7f39be10bd}{\index{Lazy\-Search@{Lazy\-Search}!step@{step}}
+\index{step@{step}!LazySearch@{Lazy\-Search}}
+\subsubsection[{step}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Search\-Status} Lazy\-Search\-::step (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classLazySearch_a58d840359308153dab0d7c7f39be10bd}
+
+
+Implements \hyperlink{classSearchEngine_a2c003ac4636fd1442fd2d4eb8db5ab8d}{Search\-Engine}.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classLazySearch_a58d840359308153dab0d7c7f39be10bd_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classLazySearch_a9d67f87af37f3deb2ca38ebc9eabb019}{\index{Lazy\-Search@{Lazy\-Search}!current\-\_\-eval\-\_\-context@{current\-\_\-eval\-\_\-context}}
+\index{current\-\_\-eval\-\_\-context@{current\-\_\-eval\-\_\-context}!LazySearch@{Lazy\-Search}}
+\subsubsection[{current\-\_\-eval\-\_\-context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Evaluation\-Context} Lazy\-Search\-::current\-\_\-eval\-\_\-context\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLazySearch_a9d67f87af37f3deb2ca38ebc9eabb019}
+\hypertarget{classLazySearch_aa9a52970b26305529f0cc5e896f9111e}{\index{Lazy\-Search@{Lazy\-Search}!current\-\_\-g@{current\-\_\-g}}
+\index{current\-\_\-g@{current\-\_\-g}!LazySearch@{Lazy\-Search}}
+\subsubsection[{current\-\_\-g}]{\setlength{\rightskip}{0pt plus 5cm}int Lazy\-Search\-::current\-\_\-g\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLazySearch_aa9a52970b26305529f0cc5e896f9111e}
+\hypertarget{classLazySearch_a928bb4390d1b061e2c1c6dd6588ed14d}{\index{Lazy\-Search@{Lazy\-Search}!current\-\_\-operator@{current\-\_\-operator}}
+\index{current\-\_\-operator@{current\-\_\-operator}!LazySearch@{Lazy\-Search}}
+\subsubsection[{current\-\_\-operator}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Global\-Operator}$\ast$ Lazy\-Search\-::current\-\_\-operator\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLazySearch_a928bb4390d1b061e2c1c6dd6588ed14d}
+\hypertarget{classLazySearch_a39019af3180b660aa0c256fc0e51285b}{\index{Lazy\-Search@{Lazy\-Search}!current\-\_\-predecessor\-\_\-id@{current\-\_\-predecessor\-\_\-id}}
+\index{current\-\_\-predecessor\-\_\-id@{current\-\_\-predecessor\-\_\-id}!LazySearch@{Lazy\-Search}}
+\subsubsection[{current\-\_\-predecessor\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf State\-I\-D} Lazy\-Search\-::current\-\_\-predecessor\-\_\-id\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLazySearch_a39019af3180b660aa0c256fc0e51285b}
+\hypertarget{classLazySearch_a7dfc150f2a8fcdbec91914f4ce2625f9}{\index{Lazy\-Search@{Lazy\-Search}!current\-\_\-real\-\_\-g@{current\-\_\-real\-\_\-g}}
+\index{current\-\_\-real\-\_\-g@{current\-\_\-real\-\_\-g}!LazySearch@{Lazy\-Search}}
+\subsubsection[{current\-\_\-real\-\_\-g}]{\setlength{\rightskip}{0pt plus 5cm}int Lazy\-Search\-::current\-\_\-real\-\_\-g\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLazySearch_a7dfc150f2a8fcdbec91914f4ce2625f9}
+\hypertarget{classLazySearch_a18b13c44ec6b91896779eb41d26038cb}{\index{Lazy\-Search@{Lazy\-Search}!current\-\_\-state@{current\-\_\-state}}
+\index{current\-\_\-state@{current\-\_\-state}!LazySearch@{Lazy\-Search}}
+\subsubsection[{current\-\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Global\-State} Lazy\-Search\-::current\-\_\-state\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLazySearch_a18b13c44ec6b91896779eb41d26038cb}
+\hypertarget{classLazySearch_a0e6f2058093334ca068a87c828e77b32}{\index{Lazy\-Search@{Lazy\-Search}!estimate\-\_\-heuristics@{estimate\-\_\-heuristics}}
+\index{estimate\-\_\-heuristics@{estimate\-\_\-heuristics}!LazySearch@{Lazy\-Search}}
+\subsubsection[{estimate\-\_\-heuristics}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Heuristic} $\ast$$>$ Lazy\-Search\-::estimate\-\_\-heuristics\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLazySearch_a0e6f2058093334ca068a87c828e77b32}
+\hypertarget{classLazySearch_a8252cee86ea2ca31fe4b7e2d35c2b952}{\index{Lazy\-Search@{Lazy\-Search}!heuristics@{heuristics}}
+\index{heuristics@{heuristics}!LazySearch@{Lazy\-Search}}
+\subsubsection[{heuristics}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Heuristic} $\ast$$>$ Lazy\-Search\-::heuristics\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLazySearch_a8252cee86ea2ca31fe4b7e2d35c2b952}
+\hypertarget{classLazySearch_a67eadc9a21234e4aac2ea9fa8cfc3ef3}{\index{Lazy\-Search@{Lazy\-Search}!open\-\_\-list@{open\-\_\-list}}
+\index{open\-\_\-list@{open\-\_\-list}!LazySearch@{Lazy\-Search}}
+\subsubsection[{open\-\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Open\-List}$<${\bf Open\-List\-Entry\-Lazy}$>$$\ast$ Lazy\-Search\-::open\-\_\-list\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLazySearch_a67eadc9a21234e4aac2ea9fa8cfc3ef3}
+\hypertarget{classLazySearch_a7f1e75bf8bbf159776ea65afe15110c2}{\index{Lazy\-Search@{Lazy\-Search}!preferred\-\_\-operator\-\_\-heuristics@{preferred\-\_\-operator\-\_\-heuristics}}
+\index{preferred\-\_\-operator\-\_\-heuristics@{preferred\-\_\-operator\-\_\-heuristics}!LazySearch@{Lazy\-Search}}
+\subsubsection[{preferred\-\_\-operator\-\_\-heuristics}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Heuristic} $\ast$$>$ Lazy\-Search\-::preferred\-\_\-operator\-\_\-heuristics\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLazySearch_a7f1e75bf8bbf159776ea65afe15110c2}
+\hypertarget{classLazySearch_a732a63ac9f996f5ff3e02b4b1283ac3a}{\index{Lazy\-Search@{Lazy\-Search}!preferred\-\_\-successors\-\_\-first@{preferred\-\_\-successors\-\_\-first}}
+\index{preferred\-\_\-successors\-\_\-first@{preferred\-\_\-successors\-\_\-first}!LazySearch@{Lazy\-Search}}
+\subsubsection[{preferred\-\_\-successors\-\_\-first}]{\setlength{\rightskip}{0pt plus 5cm}bool Lazy\-Search\-::preferred\-\_\-successors\-\_\-first\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLazySearch_a732a63ac9f996f5ff3e02b4b1283ac3a}
+\hypertarget{classLazySearch_a3eeed1027fba7d23478de6a9ecc26988}{\index{Lazy\-Search@{Lazy\-Search}!randomize\-\_\-successors@{randomize\-\_\-successors}}
+\index{randomize\-\_\-successors@{randomize\-\_\-successors}!LazySearch@{Lazy\-Search}}
+\subsubsection[{randomize\-\_\-successors}]{\setlength{\rightskip}{0pt plus 5cm}bool Lazy\-Search\-::randomize\-\_\-successors\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLazySearch_a3eeed1027fba7d23478de6a9ecc26988}
+\hypertarget{classLazySearch_a5d08aa7f2a8eb170ab0e32b006265218}{\index{Lazy\-Search@{Lazy\-Search}!reopen\-\_\-closed\-\_\-nodes@{reopen\-\_\-closed\-\_\-nodes}}
+\index{reopen\-\_\-closed\-\_\-nodes@{reopen\-\_\-closed\-\_\-nodes}!LazySearch@{Lazy\-Search}}
+\subsubsection[{reopen\-\_\-closed\-\_\-nodes}]{\setlength{\rightskip}{0pt plus 5cm}bool Lazy\-Search\-::reopen\-\_\-closed\-\_\-nodes\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLazySearch_a5d08aa7f2a8eb170ab0e32b006265218}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{lazy__search_8h}{lazy\-\_\-search.\-h}\item 
+\hyperlink{lazy__search_8cc}{lazy\-\_\-search.\-cc}\end{DoxyCompactItemize}

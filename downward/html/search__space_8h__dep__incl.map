@@ -1,0 +1,14 @@
+<map id="search_space.h" name="search_space.h">
+<area shape="rect" id="node2" href="$search__engine_8h.html" title="search_engine.h" alt="" coords="452,80,568,107"/>
+<area shape="rect" id="node9" href="$lazy__search_8h.html" title="lazy_search.h" alt="" coords="723,163,825,189"/>
+<area shape="rect" id="node13" href="$search__space_8cc.html" title="search_space.cc" alt="" coords="729,80,849,107"/>
+<area shape="rect" id="node3" href="$eager__search_8h.html" title="eager_search.h" alt="" coords="10,163,120,189"/>
+<area shape="rect" id="node5" href="$enforced__hill__climbing__search_8h.html" title="enforced_hill_climbing\l_search.h" alt="" coords="147,155,297,197"/>
+<area shape="rect" id="node7" href="$iterated__search_8h.html" title="iterated_search.h" alt="" coords="323,163,445,189"/>
+<area shape="rect" id="node11" href="$planner_8cc.html" title="planner.cc" alt="" coords="469,163,551,189"/>
+<area shape="rect" id="node12" href="$search__engine_8cc.html" title="search_engine.cc" alt="" coords="575,163,699,189"/>
+<area shape="rect" id="node4" href="$eager__search_8cc.html" title="eager_search.cc" alt="" coords="5,253,123,280"/>
+<area shape="rect" id="node6" href="$enforced__hill__climbing__search_8cc.html" title="enforced_hill_climbing\l_search.cc" alt="" coords="147,246,297,287"/>
+<area shape="rect" id="node8" href="$iterated__search_8cc.html" title="iterated_search.cc" alt="" coords="322,253,451,280"/>
+<area shape="rect" id="node10" href="$lazy__search_8cc.html" title="lazy_search.cc" alt="" coords="719,253,829,280"/>
+</map>

@@ -1,0 +1,139 @@
+\hypertarget{classAbstractQueue}{\section{Abstract\-Queue$<$ Value $>$ Class Template Reference}
+\label{classAbstractQueue}\index{Abstract\-Queue$<$ Value $>$@{Abstract\-Queue$<$ Value $>$}}
+}
+
+
+{\ttfamily \#include $<$priority\-\_\-queue.\-h$>$}
+
+
+
+Inheritance diagram for Abstract\-Queue$<$ Value $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classAbstractQueue__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\-::pair$<$ int, Value $>$ \hyperlink{classAbstractQueue_abe60381528bc4cf9d4032f33f2ff6f3c}{Entry}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAbstractQueue_a65ca5c20345be92ce6b968715c5e9405}{Abstract\-Queue} ()
+\item 
+virtual \hyperlink{classAbstractQueue_a03cf0c0107bfdafb71c75872862e31fc}{$\sim$\-Abstract\-Queue} ()
+\item 
+virtual void \hyperlink{classAbstractQueue_af9268b0501749d8ab1b220a5db62a24e}{push} (int key, const Value \&value)=0
+\item 
+virtual \hyperlink{classAbstractQueue_abe60381528bc4cf9d4032f33f2ff6f3c}{Entry} \hyperlink{classAbstractQueue_aaec692216c729a7e7ca79b02a826cbf3}{pop} ()=0
+\item 
+virtual bool \hyperlink{classAbstractQueue_a38635110a147c0c1914e0f2f277a10de}{empty} () const =0
+\item 
+virtual void \hyperlink{classAbstractQueue_a2e976dcbc1ca3e97d05591cd466ff3e7}{clear} ()=0
+\item 
+virtual \hyperlink{classAbstractQueue}{Abstract\-Queue}$<$ Value $>$ $\ast$ \hyperlink{classAbstractQueue_a4c9793d6ec0442bbf806c2f57d6fd426}{convert\-\_\-if\-\_\-necessary} (int)
+\item 
+virtual void \hyperlink{classAbstractQueue_a2db622c67d66a0ee3d18e9e98145ece9}{add\-\_\-virtual\-\_\-pushes} (int num\-\_\-extra\-\_\-pushes)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classAbstractQueue_abe60381528bc4cf9d4032f33f2ff6f3c}{\index{Abstract\-Queue@{Abstract\-Queue}!Entry@{Entry}}
+\index{Entry@{Entry}!AbstractQueue@{Abstract\-Queue}}
+\subsubsection[{Entry}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Value$>$ typedef std\-::pair$<$int, Value$>$ {\bf Abstract\-Queue}$<$ Value $>$\-::{\bf Entry}}}\label{classAbstractQueue_abe60381528bc4cf9d4032f33f2ff6f3c}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classAbstractQueue_a65ca5c20345be92ce6b968715c5e9405}{\index{Abstract\-Queue@{Abstract\-Queue}!Abstract\-Queue@{Abstract\-Queue}}
+\index{Abstract\-Queue@{Abstract\-Queue}!AbstractQueue@{Abstract\-Queue}}
+\subsubsection[{Abstract\-Queue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Value$>$ {\bf Abstract\-Queue}$<$ Value $>$\-::{\bf Abstract\-Queue} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classAbstractQueue_a65ca5c20345be92ce6b968715c5e9405}
+\hypertarget{classAbstractQueue_a03cf0c0107bfdafb71c75872862e31fc}{\index{Abstract\-Queue@{Abstract\-Queue}!$\sim$\-Abstract\-Queue@{$\sim$\-Abstract\-Queue}}
+\index{$\sim$\-Abstract\-Queue@{$\sim$\-Abstract\-Queue}!AbstractQueue@{Abstract\-Queue}}
+\subsubsection[{$\sim$\-Abstract\-Queue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Value$>$ virtual {\bf Abstract\-Queue}$<$ Value $>$\-::$\sim${\bf Abstract\-Queue} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classAbstractQueue_a03cf0c0107bfdafb71c75872862e31fc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classAbstractQueue_a2db622c67d66a0ee3d18e9e98145ece9}{\index{Abstract\-Queue@{Abstract\-Queue}!add\-\_\-virtual\-\_\-pushes@{add\-\_\-virtual\-\_\-pushes}}
+\index{add\-\_\-virtual\-\_\-pushes@{add\-\_\-virtual\-\_\-pushes}!AbstractQueue@{Abstract\-Queue}}
+\subsubsection[{add\-\_\-virtual\-\_\-pushes}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Value$>$ virtual void {\bf Abstract\-Queue}$<$ Value $>$\-::add\-\_\-virtual\-\_\-pushes (
+\begin{DoxyParamCaption}
+\item[{int}]{num\-\_\-extra\-\_\-pushes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classAbstractQueue_a2db622c67d66a0ee3d18e9e98145ece9}
+
+
+Implemented in \hyperlink{classBucketQueue_a362473bbbcf135376ec07be1b651b49d}{Bucket\-Queue$<$ Value $>$}, and \hyperlink{classHeapQueue_ad3d89c1e3f76c64ea10630bf5468c86f}{Heap\-Queue$<$ Value $>$}.
+
+\hypertarget{classAbstractQueue_a2e976dcbc1ca3e97d05591cd466ff3e7}{\index{Abstract\-Queue@{Abstract\-Queue}!clear@{clear}}
+\index{clear@{clear}!AbstractQueue@{Abstract\-Queue}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Value$>$ virtual void {\bf Abstract\-Queue}$<$ Value $>$\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classAbstractQueue_a2e976dcbc1ca3e97d05591cd466ff3e7}
+
+
+Implemented in \hyperlink{classBucketQueue_a749f5dc24bb6bb5754cb78f677b97d26}{Bucket\-Queue$<$ Value $>$}, and \hyperlink{classHeapQueue_af58d2cdb07e463b1d99013caf828df83}{Heap\-Queue$<$ Value $>$}.
+
+\hypertarget{classAbstractQueue_a4c9793d6ec0442bbf806c2f57d6fd426}{\index{Abstract\-Queue@{Abstract\-Queue}!convert\-\_\-if\-\_\-necessary@{convert\-\_\-if\-\_\-necessary}}
+\index{convert\-\_\-if\-\_\-necessary@{convert\-\_\-if\-\_\-necessary}!AbstractQueue@{Abstract\-Queue}}
+\subsubsection[{convert\-\_\-if\-\_\-necessary}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Value$>$ virtual {\bf Abstract\-Queue}$<$Value$>$$\ast$ {\bf Abstract\-Queue}$<$ Value $>$\-::convert\-\_\-if\-\_\-necessary (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classAbstractQueue_a4c9793d6ec0442bbf806c2f57d6fd426}
+
+
+Reimplemented in \hyperlink{classBucketQueue_a4d56a716545e8a2a6e11481cd07d01ac}{Bucket\-Queue$<$ Value $>$}.
+
+\hypertarget{classAbstractQueue_a38635110a147c0c1914e0f2f277a10de}{\index{Abstract\-Queue@{Abstract\-Queue}!empty@{empty}}
+\index{empty@{empty}!AbstractQueue@{Abstract\-Queue}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Value$>$ virtual bool {\bf Abstract\-Queue}$<$ Value $>$\-::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classAbstractQueue_a38635110a147c0c1914e0f2f277a10de}
+
+
+Implemented in \hyperlink{classBucketQueue_a3cf60e426df86413789dc19beee350b3}{Bucket\-Queue$<$ Value $>$}, and \hyperlink{classHeapQueue_a521d3e13a491f221947eee52a6ddfc0b}{Heap\-Queue$<$ Value $>$}.
+
+\hypertarget{classAbstractQueue_aaec692216c729a7e7ca79b02a826cbf3}{\index{Abstract\-Queue@{Abstract\-Queue}!pop@{pop}}
+\index{pop@{pop}!AbstractQueue@{Abstract\-Queue}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Value$>$ virtual {\bf Entry} {\bf Abstract\-Queue}$<$ Value $>$\-::pop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classAbstractQueue_aaec692216c729a7e7ca79b02a826cbf3}
+
+
+Implemented in \hyperlink{classBucketQueue_a2141b91ece1d2180d56ec74f07aa747e}{Bucket\-Queue$<$ Value $>$}, and \hyperlink{classHeapQueue_a6fcbe11f528e5ae359ae780c671d7125}{Heap\-Queue$<$ Value $>$}.
+
+\hypertarget{classAbstractQueue_af9268b0501749d8ab1b220a5db62a24e}{\index{Abstract\-Queue@{Abstract\-Queue}!push@{push}}
+\index{push@{push}!AbstractQueue@{Abstract\-Queue}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Value$>$ virtual void {\bf Abstract\-Queue}$<$ Value $>$\-::push (
+\begin{DoxyParamCaption}
+\item[{int}]{key, }
+\item[{const Value \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classAbstractQueue_af9268b0501749d8ab1b220a5db62a24e}
+
+
+Implemented in \hyperlink{classBucketQueue_a1dc89d8bd4fd657dfc0218ca947f0d24}{Bucket\-Queue$<$ Value $>$}, and \hyperlink{classHeapQueue_a59850c8362a38865ee21b3db3d71f9e4}{Heap\-Queue$<$ Value $>$}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{priority__queue_8h}{priority\-\_\-queue.\-h}\end{DoxyCompactItemize}

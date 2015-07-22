@@ -1,0 +1,7 @@
+<map id="FFHeuristic::compute_heuristic" name="FFHeuristic::compute_heuristic">
+<area shape="rect" id="node2" href="$classHeuristic.html#ac3193969815e60e8240d0ab11d95de74" title="Heuristic::convert\l_global_state" alt="" coords="227,5,352,46"/>
+<area shape="rect" id="node5" href="$classAdditiveHeuristic.html#a704d2da5f869d2e0b3ed726b87130343" title="AdditiveHeuristic::\lcompute_add_and_ff" alt="" coords="218,70,361,111"/>
+<area shape="rect" id="node6" href="$classTaskProxy.html#a0f5cac4b7f9802ee580ef6cfce818365" title="TaskProxy::get_operators" alt="" coords="203,136,375,163"/>
+<area shape="rect" id="node3" href="$classTaskProxy.html#a34cb2a41ebd0d1d89ab739d5eb2835f5" title="TaskProxy::convert\l_global_state" alt="" coords="424,5,560,46"/>
+<area shape="rect" id="node4" href="$classAbstractTask.html#a047d223704b817c72274f42c05fe3c7d" title="AbstractTask::get_state\l_values" alt="" coords="608,5,771,46"/>
+</map>
