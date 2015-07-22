@@ -1,0 +1,30 @@
+<map id="lazy_search.cc" name="lazy_search.cc">
+<area shape="rect" id="node2" href="$lazy__search_8h.html" title="lazy_search.h" alt="" coords="859,80,961,107"/>
+<area shape="rect" id="node7" href="$heuristic__cache_8h.html" title="heuristic_cache.h" alt="" coords="822,229,945,256"/>
+<area shape="rect" id="node13" href="$heuristic_8h.html" title="heuristic.h" alt="" coords="1457,304,1539,331"/>
+<area shape="rect" id="node30" href="$globals_8h.html" title="globals.h" alt="" coords="1505,453,1579,480"/>
+<area shape="rect" id="node35" href="$g__evaluator_8h.html" title="g_evaluator.h" alt="" coords="119,80,219,107"/>
+<area shape="rect" id="node36" href="$plugin_8h.html" title="plugin.h" alt="" coords="2483,453,2549,480"/>
+<area shape="rect" id="node43" href="$rng_8h.html" title="rng.h" alt="" coords="2120,80,2171,107"/>
+<area shape="rect" id="node46" href="$successor__generator_8h.html" title="successor_generator.h" alt="" coords="2220,304,2373,331"/>
+<area shape="rect" id="node48" href="$sum__evaluator_8h.html" title="sum_evaluator.h" alt="" coords="321,229,439,256"/>
+<area shape="rect" id="node50" href="$weighted__evaluator_8h.html" title="weighted_evaluator.h" alt="" coords="243,80,388,107"/>
+<area shape="rect" id="node3" href="$evaluation__context_8h.html" title="evaluation_context.h" alt="" coords="738,155,880,181"/>
+<area shape="rect" id="node8" href="$global__state_8h.html" title="global_state.h" alt="" coords="1122,453,1224,480"/>
+<area shape="rect" id="node15" href="$scalar__evaluator_8h.html" title="scalar_evaluator.h" alt="" coords="259,379,387,405"/>
+<area shape="rect" id="node25" href="$search__engine_8h.html" title="search_engine.h" alt="" coords="1037,155,1153,181"/>
+<area shape="rect" id="node27" href="$search__progress_8h.html" title="search_progress.h" alt="" coords="566,229,695,256"/>
+<area shape="rect" id="node28" href="$search__space_8h.html" title="search_space.h" alt="" coords="1292,229,1407,256"/>
+<area shape="rect" id="node4" href="$evaluation__result_8h.html" title="evaluation_result.h" alt="" coords="463,453,592,480"/>
+<area shape="rect" id="node9" href="$int__packer_8h.html" title="int_packer.h" alt="" coords="992,536,1085,563"/>
+<area shape="rect" id="node10" href="$state__id_8h.html" title="state_id.h" alt="" coords="1262,536,1340,563"/>
+<area shape="rect" id="node14" href="$operator__cost_8h.html" title="operator_cost.h" alt="" coords="1220,379,1331,405"/>
+<area shape="rect" id="node17" href="$task__proxy_8h.html" title="task_proxy.h" alt="" coords="1789,379,1885,405"/>
+<area shape="rect" id="node18" href="$abstract__task_8h.html" title="abstract_task.h" alt="" coords="1945,453,2056,480"/>
+<area shape="rect" id="node22" href="$utilities_8h.html" title="utilities.h" alt="" coords="1705,453,1779,480"/>
+<area shape="rect" id="node26" href="$global__operator_8h.html" title="global_operator.h" alt="" coords="1023,379,1144,405"/>
+<area shape="rect" id="node33" href="$search__statistics_8h.html" title="search_statistics.h" alt="" coords="1022,229,1153,256"/>
+<area shape="rect" id="node29" href="$per__state__information_8h.html" title="per_state_information.h" alt="" coords="1407,379,1565,405"/>
+<area shape="rect" id="node32" href="$search__node__info_8h.html" title="search_node_info.h" alt="" coords="1095,304,1229,331"/>
+<area shape="rect" id="node49" href="$combining__evaluator_8h.html" title="combining_evaluator.h" alt="" coords="44,304,196,331"/>
+</map>

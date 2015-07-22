@@ -1,0 +1,15 @@
+<map id="search_space.cc" name="search_space.cc">
+<area shape="rect" id="node2" href="$search__space_8h.html" title="search_space.h" alt="" coords="917,80,1032,107"/>
+<area shape="rect" id="node3" href="$global__state_8h.html" title="global_state.h" alt="" coords="1038,304,1140,331"/>
+<area shape="rect" id="node11" href="$globals_8h.html" title="globals.h" alt="" coords="544,304,617,331"/>
+<area shape="rect" id="node28" href="$search__node__info_8h.html" title="search_node_info.h" alt="" coords="1183,155,1317,181"/>
+<area shape="rect" id="node29" href="$global__operator_8h.html" title="global_operator.h" alt="" coords="1162,229,1282,256"/>
+<area shape="rect" id="node9" href="$operator__cost_8h.html" title="operator_cost.h" alt="" coords="894,155,1005,181"/>
+<area shape="rect" id="node10" href="$per__state__information_8h.html" title="per_state_information.h" alt="" coords="536,155,694,181"/>
+<area shape="rect" id="node4" href="$int__packer_8h.html" title="int_packer.h" alt="" coords="854,379,948,405"/>
+<area shape="rect" id="node6" href="$state__id_8h.html" title="state_id.h" alt="" coords="972,379,1050,405"/>
+<area shape="rect" id="node15" href="$segmented__vector_8h.html" title="segmented_vector.h" alt="" coords="328,304,468,331"/>
+<area shape="rect" id="node18" href="$utilities_8h.html" title="utilities.h" alt="" coords="113,379,186,405"/>
+<area shape="rect" id="node22" href="$state__registry_8h.html" title="state_registry.h" alt="" coords="606,229,717,256"/>
+<area shape="rect" id="node23" href="$utilities__hash_8h.html" title="utilities_hash.h" alt="" coords="310,379,420,405"/>
+</map>

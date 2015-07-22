@@ -1,0 +1,21 @@
+<map id="CausalGraph::CausalGraph" name="CausalGraph::CausalGraph">
+<area shape="rect" id="node2" href="$classTaskProxy.html#ac90edab81b6721935b4bc2a7f8a35463" title="TaskProxy::get_variables" alt="" coords="239,85,409,112"/>
+<area shape="rect" id="node3" href="$classVariablesProxy.html#a01cfc73991b2c4a149dd778358531527" title="VariablesProxy::size" alt="" coords="253,136,395,163"/>
+<area shape="rect" id="node5" href="$classTaskProxy.html#a0f5cac4b7f9802ee580ef6cfce818365" title="TaskProxy::get_operators" alt="" coords="238,187,410,213"/>
+<area shape="rect" id="node6" href="$structCausalGraphBuilder.html#adae0f168f463cd392b11b93430e5c7f9" title="CausalGraphBuilder\l::handle_operator" alt="" coords="255,238,393,279"/>
+<area shape="rect" id="node17" href="$classTaskProxy.html#a50f8c773fed60b50000910c2d28eaa93" title="TaskProxy::get_axioms" alt="" coords="244,304,404,331"/>
+<area shape="rect" id="node18" href="$classIntRelationBuilder.html#a412be827918c1f7392811e574db12f51" title="IntRelationBuilder\l::compute_relation" alt="" coords="259,478,389,519"/>
+<area shape="rect" id="node4" href="$classAbstractTask.html#ab0f878648c015fb918567403e80d4e4b" title="AbstractTask::get_num\l_variables" alt="" coords="459,5,618,46"/>
+<area shape="rect" id="node7" href="$classOperatorProxy.html#ad1bcc58e597fcd0af4634afefd944ee6" title="OperatorProxy::get\l_effects" alt="" coords="473,238,605,279"/>
+<area shape="rect" id="node8" href="$classOperatorProxy.html#aa21eff1459257a6d8db90666bdc738a8" title="OperatorProxy::get\l_preconditions" alt="" coords="473,303,605,345"/>
+<area shape="rect" id="node9" href="$structCausalGraphBuilder.html#a07d4a8c5185dd840b766f10b4927c858" title="CausalGraphBuilder\l::handle_pre_eff_arc" alt="" coords="469,369,609,410"/>
+<area shape="rect" id="node11" href="$classVariableProxy.html#ae37248cfd9655937cf1032f146f1304f" title="VariableProxy::get_fact" alt="" coords="459,435,618,461"/>
+<area shape="rect" id="node14" href="$classFactProxy.html#ac11e3f1fc46e6f11364d22f70d93ee5e" title="FactProxy::get_variable" alt="" coords="459,71,619,97"/>
+<area shape="rect" id="node15" href="$classVariableProxy.html#ac3b398d41af8e1e188c2a743bbe802a6" title="VariableProxy::get_id" alt="" coords="465,121,612,148"/>
+<area shape="rect" id="node16" href="$structCausalGraphBuilder.html#a91630fdfada365f3e7274c3c70117ca9" title="CausalGraphBuilder\l::handle_eff_eff_edge" alt="" coords="465,173,612,214"/>
+<area shape="rect" id="node10" href="$classIntRelationBuilder.html#aa802c1cfc9cc6398247c3d5376cb5ee5" title="IntRelationBuilder\l::add_pair" alt="" coords="669,267,795,309"/>
+<area shape="rect" id="node12" href="$classVariableProxy.html#a603b9c3d1c7a59a12641b530305d44c2" title="VariableProxy::get\l_domain_size" alt="" coords="667,427,797,469"/>
+<area shape="rect" id="node13" href="$classAbstractTask.html#a8f229a999a431a27c75daad6bb86474e" title="AbstractTask::get_variable\l_domain_size" alt="" coords="845,427,1024,469"/>
+<area shape="rect" id="node19" href="$task__proxy_8h.html#af1c6138ddedc0fb5dfb38612ae495d23" title="begin" alt="" coords="512,485,565,512"/>
+<area shape="rect" id="node20" href="$task__proxy_8h.html#a07f77cedc7ef581e61253d88b5fa8463" title="end" alt="" coords="517,536,560,563"/>
+</map>

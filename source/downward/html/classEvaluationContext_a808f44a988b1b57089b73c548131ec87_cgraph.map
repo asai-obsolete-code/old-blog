@@ -1,0 +1,7 @@
+<map id="EvaluationContext::is_heuristic_infinite" name="EvaluationContext::is_heuristic_infinite">
+<area shape="rect" id="node2" href="$classEvaluationContext.html#a74c1d7b061b2bb69a481faa4abac62c0" title="EvaluationContext::\lget_result" alt="" coords="193,70,330,111"/>
+<area shape="rect" id="node6" href="$classEvaluationResult.html#abdfc41d11307fe76818ee1ac70e33a12" title="EvaluationResult::is\l_infinite" alt="" coords="192,135,331,177"/>
+<area shape="rect" id="node3" href="$classEvaluationResult.html#ad56b6a8dbff00673aedb984fbe6f72a5" title="EvaluationResult::is\l_uninitialized" alt="" coords="396,5,535,46"/>
+<area shape="rect" id="node4" href="$classScalarEvaluator.html#a8ffb99b0f8f63e34183a3245a247a9ec" title="ScalarEvaluator::compute\l_result" alt="" coords="379,70,551,111"/>
+<area shape="rect" id="node5" href="$classSearchStatistics.html#a57f71a965c7693054ec18ba1b25a557f" title="SearchStatistics::inc\l_evaluations" alt="" coords="394,135,537,177"/>
+</map>

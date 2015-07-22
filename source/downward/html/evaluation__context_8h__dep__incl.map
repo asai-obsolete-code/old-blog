@@ -1,0 +1,16 @@
+<map id="evaluation_context.h" name="evaluation_context.h">
+<area shape="rect" id="node2" href="$combining__evaluator_8cc.html" title="combining_evaluator.cc" alt="" coords="5,88,163,115"/>
+<area shape="rect" id="node3" href="$eager__search_8cc.html" title="eager_search.cc" alt="" coords="187,88,305,115"/>
+<area shape="rect" id="node4" href="$enforced__hill__climbing__search_8h.html" title="enforced_hill_climbing\l_search.h" alt="" coords="330,81,480,122"/>
+<area shape="rect" id="node6" href="$evaluation__context_8cc.html" title="evaluation_context.cc" alt="" coords="505,88,653,115"/>
+<area shape="rect" id="node7" href="$g__evaluator_8cc.html" title="g_evaluator.cc" alt="" coords="679,88,785,115"/>
+<area shape="rect" id="node8" href="$heuristic_8cc.html" title="heuristic.cc" alt="" coords="810,88,899,115"/>
+<area shape="rect" id="node9" href="$ipc__max__heuristic_8cc.html" title="ipc_max_heuristic.cc" alt="" coords="923,88,1068,115"/>
+<area shape="rect" id="node10" href="$lazy__search_8h.html" title="lazy_search.h" alt="" coords="1093,88,1195,115"/>
+<area shape="rect" id="node12" href="$pref__evaluator_8cc.html" title="pref_evaluator.cc" alt="" coords="1220,88,1343,115"/>
+<area shape="rect" id="node13" href="$search__engine_8cc.html" title="search_engine.cc" alt="" coords="1367,88,1491,115"/>
+<area shape="rect" id="node14" href="$search__progress_8cc.html" title="search_progress.cc" alt="" coords="1515,88,1649,115"/>
+<area shape="rect" id="node15" href="$weighted__evaluator_8cc.html" title="weighted_evaluator.cc" alt="" coords="1675,88,1827,115"/>
+<area shape="rect" id="node5" href="$enforced__hill__climbing__search_8cc.html" title="enforced_hill_climbing\l_search.cc" alt="" coords="330,171,480,213"/>
+<area shape="rect" id="node11" href="$lazy__search_8cc.html" title="lazy_search.cc" alt="" coords="1089,179,1199,205"/>
+</map>

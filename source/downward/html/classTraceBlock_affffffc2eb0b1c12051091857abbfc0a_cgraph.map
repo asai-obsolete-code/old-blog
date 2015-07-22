@@ -1,0 +1,6 @@
+<map id="TraceBlock::~TraceBlock" name="TraceBlock::~TraceBlock">
+<area shape="rect" id="node2" href="$classMemoryTracer.html#a2d9296691218d9b0b09defdb9efa364c" title="MemoryTracer::leave\l_block" alt="" coords="225,5,370,46"/>
+<area shape="rect" id="node3" href="$classMemoryTracer.html#a1676e126303e8089280cbd51297d1b7b" title="MemoryTracer::print\l_trace_message" alt="" coords="419,5,557,46"/>
+<area shape="rect" id="node4" href="$utilities_8cc.html#ad6e89b0db19bdac1afc50dcaf196d27d" title="get_peak_memory_in_kb" alt="" coords="606,12,773,39"/>
+<area shape="rect" id="node5" href="$utilities_8h.html#a44ab437244c3326f1cd4093f129e0a91" title="unused_parameter" alt="" coords="822,12,951,39"/>
+</map>

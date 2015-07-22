@@ -1,0 +1,7 @@
+<map id="BlindSearchHeuristic::compute_heuristic" name="BlindSearchHeuristic::compute_heuristic">
+<area shape="rect" id="node2" href="$classHeuristic.html#ac3193969815e60e8240d0ab11d95de74" title="Heuristic::convert\l_global_state" alt="" coords="197,5,323,46"/>
+<area shape="rect" id="node5" href="$task__tools_8h.html#a14ce404b29d8066a06c2fe548f2122e1" title="is_goal_state" alt="" coords="211,71,309,97"/>
+<area shape="rect" id="node3" href="$classTaskProxy.html#a34cb2a41ebd0d1d89ab739d5eb2835f5" title="TaskProxy::convert\l_global_state" alt="" coords="377,5,513,46"/>
+<area shape="rect" id="node4" href="$classAbstractTask.html#a047d223704b817c72274f42c05fe3c7d" title="AbstractTask::get_state\l_values" alt="" coords="568,5,731,46"/>
+<area shape="rect" id="node6" href="$classTaskProxy.html#aea9718bc41d832ba8d587716db55c5cd" title="TaskProxy::get_goals" alt="" coords="371,71,520,97"/>
+</map>

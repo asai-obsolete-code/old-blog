@@ -1,0 +1,6 @@
+<map id="RelaxationHeuristic::get_proposition" name="RelaxationHeuristic::get_proposition">
+<area shape="rect" id="node2" href="$classFactProxy.html#ac11e3f1fc46e6f11364d22f70d93ee5e" title="FactProxy::get_variable" alt="" coords="189,5,349,32"/>
+<area shape="rect" id="node3" href="$classVariableProxy.html#ac3b398d41af8e1e188c2a743bbe802a6" title="VariableProxy::get_id" alt="" coords="196,56,343,83"/>
+<area shape="rect" id="node4" href="$classFactProxy.html#a3cbeec330f72fe8066d657489742e0a0" title="FactProxy::get_value" alt="" coords="196,107,343,133"/>
+<area shape="rect" id="node5" href="$utilities_8h.html#ad23670a9e4f03902713b3c27749d7e9f" title="in_bounds" alt="" coords="229,157,310,184"/>
+</map>

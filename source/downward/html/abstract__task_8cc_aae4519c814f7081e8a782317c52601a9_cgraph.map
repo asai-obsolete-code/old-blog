@@ -1,0 +1,9 @@
+<map id="get_task_from_options" name="get_task_from_options">
+<area shape="rect" id="node2" href="$classOptions.html#ad9bf14674bec42487e3dcd6f2c7a83e1" title="Options::get_enum" alt="" coords="209,5,341,32"/>
+<area shape="rect" id="node3" href="$classOptions.html#a92594d318d5bd1c4cff9e8fef0e108ed" title="Options::contains" alt="" coords="213,56,337,83"/>
+<area shape="rect" id="node4" href="$utilities_8cc.html#aa4a09f54758dbe72385a98b01c06ae0e" title="exit_with" alt="" coords="417,107,492,133"/>
+<area shape="rect" id="node5" href="$classOptions.html#a806470a0ddf00e44814367ff771ac33a" title="Options::get" alt="" coords="228,157,321,184"/>
+<area shape="rect" id="node7" href="$classOptions.html#a442b5282575a1c2c4db119021ab8715d" title="Options::set" alt="" coords="228,208,321,235"/>
+<area shape="rect" id="node8" href="$globals_8cc.html#a5185eb05df510d80c001e5d0ebb384e9" title="g_root_task" alt="" coords="229,259,320,285"/>
+<area shape="rect" id="node6" href="$structTypeNamer.html#ac738bb56c94af92f426789a014832511" title="TypeNamer::name" alt="" coords="389,157,520,184"/>
+</map>

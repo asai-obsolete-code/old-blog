@@ -1,0 +1,24 @@
+<map id="globals.cc" name="globals.cc">
+<area shape="rect" id="node2" href="$globals_8h.html" title="globals.h" alt="" coords="285,155,358,181"/>
+<area shape="rect" id="node7" href="$axioms_8h.html" title="axioms.h" alt="" coords="1214,80,1287,107"/>
+<area shape="rect" id="node8" href="$global__state_8h.html" title="global_state.h" alt="" coords="1249,155,1351,181"/>
+<area shape="rect" id="node9" href="$int__packer_8h.html" title="int_packer.h" alt="" coords="1249,229,1342,256"/>
+<area shape="rect" id="node13" href="$causal__graph_8h.html" title="causal_graph.h" alt="" coords="855,80,965,107"/>
+<area shape="rect" id="node14" href="$domain__transition__graph_8h.html" title="domain_transition_graph.h" alt="" coords="2528,155,2702,181"/>
+<area shape="rect" id="node17" href="$global__operator_8h.html" title="global_operator.h" alt="" coords="1364,80,1485,107"/>
+<area shape="rect" id="node18" href="$heuristic_8h.html" title="heuristic.h" alt="" coords="990,80,1071,107"/>
+<area shape="rect" id="node27" href="$utilities_8h.html" title="utilities.h" alt="" coords="1870,229,1943,256"/>
+<area shape="rect" id="node30" href="$rng_8h.html" title="rng.h" alt="" coords="2227,155,2278,181"/>
+<area shape="rect" id="node33" href="$root__task_8h.html" title="root_task.h" alt="" coords="477,155,563,181"/>
+<area shape="rect" id="node34" href="$state__registry_8h.html" title="state_registry.h" alt="" coords="1599,80,1710,107"/>
+<area shape="rect" id="node38" href="$successor__generator_8h.html" title="successor_generator.h" alt="" coords="486,80,639,107"/>
+<area shape="rect" id="node40" href="$timer_8h.html" title="timer.h" alt="" coords="716,80,778,107"/>
+<area shape="rect" id="node10" href="$state__id_8h.html" title="state_id.h" alt="" coords="2311,229,2389,256"/>
+<area shape="rect" id="node19" href="$operator__cost_8h.html" title="operator_cost.h" alt="" coords="910,155,1021,181"/>
+<area shape="rect" id="node20" href="$scalar__evaluator_8h.html" title="scalar_evaluator.h" alt="" coords="1529,155,1657,181"/>
+<area shape="rect" id="node24" href="$task__proxy_8h.html" title="task_proxy.h" alt="" coords="788,155,885,181"/>
+<area shape="rect" id="node21" href="$evaluation__result_8h.html" title="evaluation_result.h" alt="" coords="1550,229,1679,256"/>
+<area shape="rect" id="node25" href="$abstract__task_8h.html" title="abstract_task.h" alt="" coords="465,229,575,256"/>
+<area shape="rect" id="node35" href="$segmented__vector_8h.html" title="segmented_vector.h" alt="" coords="2063,155,2202,181"/>
+<area shape="rect" id="node36" href="$utilities__hash_8h.html" title="utilities_hash.h" alt="" coords="1417,229,1526,256"/>
+</map>

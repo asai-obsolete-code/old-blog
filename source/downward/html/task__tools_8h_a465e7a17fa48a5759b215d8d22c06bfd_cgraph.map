@@ -1,0 +1,6 @@
+<map id="has_axioms" name="has_axioms">
+<area shape="rect" id="node2" href="$classTaskProxy.html#a50f8c773fed60b50000910c2d28eaa93" title="TaskProxy::get_axioms" alt="" coords="147,5,307,32"/>
+<area shape="rect" id="node3" href="$classAxiomsProxy.html#ab246c21d3176f9c7f2d713a1d31c65dc" title="AxiomsProxy::empty" alt="" coords="155,56,299,83"/>
+<area shape="rect" id="node4" href="$classAxiomsProxy.html#aea7209589c94878185298ddf3a328720" title="AxiomsProxy::size" alt="" coords="355,56,487,83"/>
+<area shape="rect" id="node5" href="$classAbstractTask.html#a0e713664080d2a70036b6307779e7593" title="AbstractTask::get_num\l_axioms" alt="" coords="537,49,695,90"/>
+</map>

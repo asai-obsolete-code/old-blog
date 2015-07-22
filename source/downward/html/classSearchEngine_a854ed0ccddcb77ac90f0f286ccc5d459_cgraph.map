@@ -1,0 +1,5 @@
+<map id="SearchEngine::search" name="SearchEngine::search">
+<area shape="rect" id="node2" href="$classSearchEngine.html#a72ae04f864fc906a5caa1d17bbbd3e95" title="SearchEngine::initialize" alt="" coords="206,5,365,32"/>
+<area shape="rect" id="node3" href="$classSearchEngine.html#a2c003ac4636fd1442fd2d4eb8db5ab8d" title="SearchEngine::step" alt="" coords="217,56,353,83"/>
+<area shape="rect" id="node4" href="$classCountdownTimer.html#a11351f52bb11757af4264f59c1f6c144" title="CountdownTimer::is\l_expired" alt="" coords="216,107,355,149"/>
+</map>

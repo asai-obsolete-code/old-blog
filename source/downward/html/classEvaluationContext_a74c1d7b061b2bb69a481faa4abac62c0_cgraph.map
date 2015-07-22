@@ -1,0 +1,5 @@
+<map id="EvaluationContext::get_result" name="EvaluationContext::get_result">
+<area shape="rect" id="node2" href="$classEvaluationResult.html#ad56b6a8dbff00673aedb984fbe6f72a5" title="EvaluationResult::is\l_uninitialized" alt="" coords="209,5,348,46"/>
+<area shape="rect" id="node3" href="$classScalarEvaluator.html#a8ffb99b0f8f63e34183a3245a247a9ec" title="ScalarEvaluator::compute\l_result" alt="" coords="193,70,365,111"/>
+<area shape="rect" id="node4" href="$classSearchStatistics.html#a57f71a965c7693054ec18ba1b25a557f" title="SearchStatistics::inc\l_evaluations" alt="" coords="207,135,350,177"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Heuristic::set_preferred" name="Heuristic::set_preferred">
+<area shape="rect" id="node2" href="$classHeuristic.html#a1311c3ee01e571cab3d69d0c400d7489" title="Heuristic::set_preferred" alt="" coords="214,71,373,97"/>
+<area shape="rect" id="node5" href="$classOperatorProxy.html#a8460a7a40bb4712cbc67341688900fb7" title="OperatorProxy::get\l_global_operator" alt="" coords="227,122,359,163"/>
+<area shape="rect" id="node3" href="$classGlobalOperator.html#a48da06dfedb0e1192e157d63bd274f4f" title="GlobalOperator::is\l_marked" alt="" coords="442,5,569,46"/>
+<area shape="rect" id="node4" href="$classGlobalOperator.html#abaeed24044a7cacb29b655d32f000215" title="GlobalOperator::mark" alt="" coords="432,71,579,97"/>
+<area shape="rect" id="node6" href="$classAbstractTask.html#ad0335ea9f89fa54b846780b55fad2545" title="AbstractTask::get_global\l_operator" alt="" coords="422,122,589,163"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="SearchEngine::save_plan_if_necessary" name="SearchEngine::save_plan_if_necessary">
+<area shape="rect" id="node2" href="$classSearchEngine.html#a19a4c78770ceca16897f1af6f9abdcfe" title="SearchEngine::found\l_solution" alt="" coords="201,5,343,46"/>
+<area shape="rect" id="node3" href="$globals_8cc.html#a9cec919661eb4c89f1551ab66f132221" title="save_plan" alt="" coords="231,71,313,97"/>
+<area shape="rect" id="node6" href="$classSearchEngine.html#aa9247578b9d90d249148097fb7fda6a3" title="SearchEngine::get_plan" alt="" coords="192,121,352,148"/>
+<area shape="rect" id="node4" href="$globals_8cc.html#a145b52ba7b7b13b6736f43da7fa95ce8" title="calculate_plan_cost" alt="" coords="401,45,538,72"/>
+<area shape="rect" id="node5" href="$globals_8cc.html#a5a7097355229b8b7cf2239c1d6f7eff3" title="is_unit_cost" alt="" coords="423,96,515,123"/>
+</map>

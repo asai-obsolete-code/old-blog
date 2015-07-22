@@ -1,0 +1,10 @@
+<map id="Heuristic::compute_result" name="Heuristic::compute_result">
+<area shape="rect" id="node2" href="$classHeuristic.html#a26e75bad1d806657c0ed274b4fe72f0a" title="Heuristic::initialize" alt="" coords="195,5,325,32"/>
+<area shape="rect" id="node3" href="$classEvaluationContext.html#a21399aa76c2baaf352922c8ad203eed7" title="EvaluationContext::\lget_state" alt="" coords="191,57,329,98"/>
+<area shape="rect" id="node5" href="$classHeuristic.html#a4fd4e087281805e0e76a814e06d4e506" title="Heuristic::compute\l_heuristic" alt="" coords="194,122,326,163"/>
+<area shape="rect" id="node6" href="$task__tools_8h.html#aaae02e73e92bfeb1134c8a16bc7a7fbe" title="is_applicable" alt="" coords="211,188,309,215"/>
+<area shape="rect" id="node8" href="$classEvaluationResult.html#a1c562352723a4ec890f1287f1eff2e2a" title="EvaluationResult::set\l_h_value" alt="" coords="187,239,333,281"/>
+<area shape="rect" id="node9" href="$classEvaluationResult.html#a7722ecb7894681875ba7f5e97b48227e" title="EvaluationResult::set\l_preferred_operators" alt="" coords="187,305,333,346"/>
+<area shape="rect" id="node4" href="$classHeuristicCache.html#a4ab89780c4e52e0dd570db752091f3af" title="HeuristicCache::get\l_state" alt="" coords="381,57,520,98"/>
+<area shape="rect" id="node7" href="$classOperatorProxy.html#aa21eff1459257a6d8db90666bdc738a8" title="OperatorProxy::get\l_preconditions" alt="" coords="385,181,517,222"/>
+</map>
