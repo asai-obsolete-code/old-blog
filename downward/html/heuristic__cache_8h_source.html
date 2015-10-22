@@ -111,41 +111,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classEvaluationResult.html">EvaluationResult</a> &amp;<a class="code" href="classHeuristicCache.html#a6f886c2549970b8f67642e0402b7ff72">operator[]</a>(<a class="code" href="classScalarEvaluator.html">ScalarEvaluator</a> *heur);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">const</span> <a class="code" href="classGlobalState.html">GlobalState</a> &amp;<a class="code" href="classHeuristicCache.html#a4ab89780c4e52e0dd570db752091f3af">get_state</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> Callback&gt;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classHeuristicCache.html#a868bc67ecfc8c58b4828783dcc03f7cc">   30</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classHeuristicCache.html#a868bc67ecfc8c58b4828783dcc03f7cc">for_each_heuristic_value</a>(<span class="keyword">const</span> Callback &amp;callback)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;element : eval_results) {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keyword">const</span> <a class="code" href="classScalarEvaluator.html">ScalarEvaluator</a> *eval = element.first;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keyword">const</span> <a class="code" href="classEvaluationResult.html">EvaluationResult</a> &amp;result = element.second;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keyword">const</span> <a class="code" href="classHeuristic.html">Heuristic</a> *heuristic = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="classHeuristic.html">Heuristic</a> *<span class="keyword">&gt;</span>(eval);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">if</span> (heuristic) {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <span class="comment">/* We want to consider only Heuristic instances, not other</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">                   ScalarEvaluator instances. */</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                callback(heuristic, result);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classHeuristicCache.html#abae17971fa07a8cee1f2941ac564b33c">dump</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> Callback&gt;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classHeuristicCache.html#a868bc67ecfc8c58b4828783dcc03f7cc">   31</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classHeuristicCache.html#a868bc67ecfc8c58b4828783dcc03f7cc">for_each_heuristic_value</a>(<span class="keyword">const</span> Callback &amp;callback)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;element : eval_results) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keyword">const</span> <a class="code" href="classScalarEvaluator.html">ScalarEvaluator</a> *eval = element.first;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keyword">const</span> <a class="code" href="classEvaluationResult.html">EvaluationResult</a> &amp;result = element.second;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keyword">const</span> <a class="code" href="classHeuristic.html">Heuristic</a> *heuristic = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="classHeuristic.html">Heuristic</a> *<span class="keyword">&gt;</span>(eval);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordflow">if</span> (heuristic) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                <span class="comment">/* We want to consider only Heuristic instances, not other</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">                   ScalarEvaluator instances. */</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                callback(heuristic, result);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classGlobalState_html"><div class="ttname"><a href="classGlobalState.html">GlobalState</a></div><div class="ttdef"><b>Definition:</b> global_state.h:18</div></div>
 <div class="ttc" id="classScalarEvaluator_html"><div class="ttname"><a href="classScalarEvaluator.html">ScalarEvaluator</a></div><div class="ttdef"><b>Definition:</b> scalar_evaluator.h:11</div></div>
 <div class="ttc" id="heuristic__cache_8h_html_ada861ee7a926b9ad6d99f477c2753cc5"><div class="ttname"><a href="heuristic__cache_8h.html#ada861ee7a926b9ad6d99f477c2753cc5">EvaluationResults</a></div><div class="ttdeci">std::unordered_map&lt; ScalarEvaluator *, EvaluationResult &gt; EvaluationResults</div><div class="ttdef"><b>Definition:</b> heuristic_cache.h:12</div></div>
 <div class="ttc" id="heuristic_8h_html"><div class="ttname"><a href="heuristic_8h.html">heuristic.h</a></div></div>
-<div class="ttc" id="classHeuristicCache_html_a4ab89780c4e52e0dd570db752091f3af"><div class="ttname"><a href="classHeuristicCache.html#a4ab89780c4e52e0dd570db752091f3af">HeuristicCache::get_state</a></div><div class="ttdeci">const GlobalState &amp; get_state() const </div><div class="ttdef"><b>Definition:</b> heuristic_cache.cc:14</div></div>
-<div class="ttc" id="classHeuristicCache_html_a868bc67ecfc8c58b4828783dcc03f7cc"><div class="ttname"><a href="classHeuristicCache.html#a868bc67ecfc8c58b4828783dcc03f7cc">HeuristicCache::for_each_heuristic_value</a></div><div class="ttdeci">void for_each_heuristic_value(const Callback &amp;callback) const </div><div class="ttdef"><b>Definition:</b> heuristic_cache.h:30</div></div>
+<div class="ttc" id="classHeuristicCache_html_a4ab89780c4e52e0dd570db752091f3af"><div class="ttname"><a href="classHeuristicCache.html#a4ab89780c4e52e0dd570db752091f3af">HeuristicCache::get_state</a></div><div class="ttdeci">const GlobalState &amp; get_state() const </div><div class="ttdef"><b>Definition:</b> heuristic_cache.cc:15</div></div>
+<div class="ttc" id="classHeuristicCache_html_a868bc67ecfc8c58b4828783dcc03f7cc"><div class="ttname"><a href="classHeuristicCache.html#a868bc67ecfc8c58b4828783dcc03f7cc">HeuristicCache::for_each_heuristic_value</a></div><div class="ttdeci">void for_each_heuristic_value(const Callback &amp;callback) const </div><div class="ttdef"><b>Definition:</b> heuristic_cache.h:31</div></div>
 <div class="ttc" id="classHeuristicCache_html"><div class="ttname"><a href="classHeuristicCache.html">HeuristicCache</a></div><div class="ttdef"><b>Definition:</b> heuristic_cache.h:17</div></div>
 <div class="ttc" id="global__state_8h_html"><div class="ttname"><a href="global__state_8h.html">global_state.h</a></div></div>
 <div class="ttc" id="classHeuristicCache_html_a640010334ec9c5e72aacb0d935c21623"><div class="ttname"><a href="classHeuristicCache.html#a640010334ec9c5e72aacb0d935c21623">HeuristicCache::~HeuristicCache</a></div><div class="ttdeci">~HeuristicCache()=default</div></div>
 <div class="ttc" id="evaluation__result_8h_html"><div class="ttname"><a href="evaluation__result_8h.html">evaluation_result.h</a></div></div>
-<div class="ttc" id="classHeuristicCache_html_ad4586b89f8d90338395ce5a0a2e1f5ca"><div class="ttname"><a href="classHeuristicCache.html#ad4586b89f8d90338395ce5a0a2e1f5ca">HeuristicCache::HeuristicCache</a></div><div class="ttdeci">HeuristicCache(const GlobalState &amp;state)</div><div class="ttdef"><b>Definition:</b> heuristic_cache.cc:6</div></div>
-<div class="ttc" id="classHeuristicCache_html_a6f886c2549970b8f67642e0402b7ff72"><div class="ttname"><a href="classHeuristicCache.html#a6f886c2549970b8f67642e0402b7ff72">HeuristicCache::operator[]</a></div><div class="ttdeci">EvaluationResult &amp; operator[](ScalarEvaluator *heur)</div><div class="ttdef"><b>Definition:</b> heuristic_cache.cc:10</div></div>
+<div class="ttc" id="classHeuristicCache_html_abae17971fa07a8cee1f2941ac564b33c"><div class="ttname"><a href="classHeuristicCache.html#abae17971fa07a8cee1f2941ac564b33c">HeuristicCache::dump</a></div><div class="ttdeci">void dump() const </div><div class="ttdef"><b>Definition:</b> heuristic_cache.cc:19</div></div>
+<div class="ttc" id="classHeuristicCache_html_ad4586b89f8d90338395ce5a0a2e1f5ca"><div class="ttname"><a href="classHeuristicCache.html#ad4586b89f8d90338395ce5a0a2e1f5ca">HeuristicCache::HeuristicCache</a></div><div class="ttdeci">HeuristicCache(const GlobalState &amp;state)</div><div class="ttdef"><b>Definition:</b> heuristic_cache.cc:7</div></div>
+<div class="ttc" id="classHeuristicCache_html_a6f886c2549970b8f67642e0402b7ff72"><div class="ttname"><a href="classHeuristicCache.html#a6f886c2549970b8f67642e0402b7ff72">HeuristicCache::operator[]</a></div><div class="ttdeci">EvaluationResult &amp; operator[](ScalarEvaluator *heur)</div><div class="ttdef"><b>Definition:</b> heuristic_cache.cc:11</div></div>
 <div class="ttc" id="classHeuristic_html"><div class="ttname"><a href="classHeuristic.html">Heuristic</a></div><div class="ttdef"><b>Definition:</b> heuristic.h:17</div></div>
 <div class="ttc" id="classEvaluationResult_html"><div class="ttname"><a href="classEvaluationResult.html">EvaluationResult</a></div><div class="ttdef"><b>Definition:</b> evaluation_result.h:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 22 2015 14:10:30 for Fast Downward by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 14 2015 08:43:50 for Fast Downward by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

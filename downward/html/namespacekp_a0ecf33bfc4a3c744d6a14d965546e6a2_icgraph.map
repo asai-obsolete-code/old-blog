@@ -1,0 +1,25 @@
+<map id="kp::destructor" name="kp::destructor">
+<area shape="rect" id="node2" href="$classtree.html#a05d5fd71c206efc8ac30df5cd46176bc" title="Erase all children of the node pointed to by iterator. " alt="" coords="157,81,293,108"/>
+<area shape="rect" id="node3" href="$classtree.html#af7978c72a08d31a88d068403ce762957" title="Erase element at position pointed to by iterator, return incremented iterator. " alt="" coords="367,31,451,57"/>
+<area shape="rect" id="node9" href="$classtree.html#ab090190d800c8bdf32535f8aa8857949" title="Replace node at &#39;position&#39; with other node (keeping same children); &#39;position&#39; becomes invalid..." alt="" coords="178,233,273,260"/>
+<area shape="rect" id="node8" href="$classtree.html#af313f7b5e83bf9b42eb56384e057316e" title="Replace node at &#39;position&#39; with subtree starting at &#39;from&#39; (do not erase subtree at &#39;from&#39;); see abov..." alt="" coords="362,81,457,108"/>
+<area shape="rect" id="node4" href="$classtree.html#aa8cf6dfe17504abfc0ffabb5a4ba9d0a" title="Erase all nodes of the tree. " alt="" coords="561,5,641,32"/>
+<area shape="rect" id="node6" href="$classtree.html#afc5bef13996f2fd939d83837aa8e090d" title="Replace string of siblings (plus their children) with copy of a new string (with children); see above..." alt="" coords="554,132,649,159"/>
+<area shape="rect" id="node7" href="$classtree.html#a32e2ff253b76486cee84b40737604bf8" title="Move &#39;source&#39; node (plus its children) to become the node at &#39;target&#39; (erasing the node at &#39;target&#39;)..." alt="" coords="540,56,663,83"/>
+<area shape="rect" id="node5" href="$classtree.html#af0169b515c95f4299fd2d984137b7868" title="tree::~tree" alt="" coords="769,5,852,32"/>
+<area shape="rect" id="node10" href="$classtree.html#ab72378e7a772a82f90d91ef7493f27bc" title="tree::tree" alt="" coords="372,132,447,159"/>
+<area shape="rect" id="node11" href="$classtree.html#a91c383c68439af9e55a26a57ea927fac" title="Append the node (plus its children) at other_position as last/first child of position. " alt="" coords="345,183,473,209"/>
+<area shape="rect" id="node12" href="$classtree.html#adadca03c1d831a97414a8e033035f01a" title="tree::prepend_child" alt="" coords="343,233,475,260"/>
+<area shape="rect" id="node13" href="$classtree.html#a683dda6a81ce1e22f93db0feed0a9104" title="Insert node (with children) pointed to by subtree as previous sibling of node pointed to by position..." alt="" coords="342,284,477,311"/>
+<area shape="rect" id="node17" href="$classtree.html#a68d8330dd25bc779fef9ccc19d37c7ac" title="Insert node (with children) pointed to by subtree as next sibling of node pointed to by position..." alt="" coords="342,335,477,377"/>
+<area shape="rect" id="node18" href="$classtree.html#adb61bebed6c56eb5641b0b7fab7fe625" title="Extract a new tree formed by the range of siblings plus all their children. " alt="" coords="362,401,457,428"/>
+<area shape="rect" id="node14" href="$classtree.html#ab54b9862f3891737d6b4740d47dd9c68" title="Append the nodes in the from&#45;to range (plus their children) as last/first children of position..." alt="" coords="528,233,675,260"/>
+<area shape="rect" id="node15" href="$classtree.html#aaf01873bc5f94464ab156bffa34ed079" title="tree::prepend_children" alt="" coords="526,284,677,311"/>
+<area shape="rect" id="node16" href="$classtree.html#a1e3cd901f8f8d8a3da0e1d32e9282db1" title="Merge with other tree, creating new branches and leaves only if they are not already present..." alt="" coords="557,335,645,361"/>
+<area shape="rect" id="node19" href="$option__parser__util_8h.html#a6330371c65dec42cd7d0f526cf8bb371" title="subtree" alt="" coords="569,401,634,428"/>
+<area shape="rect" id="node20" href="$classOptionParser.html#ad7112dde4b52cccec43ed4cbd687ddca" title="OptionParser::add_option" alt="" coords="726,372,895,399"/>
+<area shape="rect" id="node24" href="$classTokenParser_3_01std_1_1vector_3_01T_01_4_01_4.html#a657b19ea07150a618aa91ba93b90336d" title="TokenParser\&lt; std::vector\l\&lt; T \&gt; \&gt;::parse" alt="" coords="725,423,896,465"/>
+<area shape="rect" id="node21" href="$classHeuristic.html#a1d20e58f0d2bbd0b9135d1b546545b9e" title="Heuristic::add_options\l_to_parser" alt="" coords="959,299,1111,341"/>
+<area shape="rect" id="node22" href="$classShrinkStrategy.html#a7272db9f60d941ee32904998a51bceb2" title="ShrinkStrategy::add\l_options_to_parser" alt="" coords="966,365,1103,406"/>
+<area shape="rect" id="node23" href="$classSearchEngine.html#a3dcbdd70e489f491e52f4175961916c8" title="SearchEngine::add_options\l_to_parser" alt="" coords="944,430,1125,471"/>
+</map>

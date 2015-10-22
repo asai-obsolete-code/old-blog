@@ -1,0 +1,6 @@
+<map id="StateRegistry::size" name="StateRegistry::size">
+<area shape="rect" id="node2" href="$classPerStateInformation.html#ab1fdaf457e8c0e68a5791e9356b3b71c" title="PerStateInformation\l\&lt; SearchNodeInfo \&gt;::end" alt="" coords="190,5,359,46"/>
+<area shape="rect" id="node3" href="$classPerStateInformation.html#a872e037dbe9bd1e8e655a5477b9de6c8" title="PerStateInformation\l\&lt; SearchNodeInfo \&gt;::\loperator[]" alt="" coords="201,69,349,125"/>
+<area shape="rect" id="node4" href="$classSearchSpace.html#a673004266cbc246d337b0d55b7f88d33" title="SearchSpace::print\l_statistics" alt="" coords="208,149,341,190"/>
+<area shape="rect" id="node5" href="$classEagerSearch.html#a96bb41d45681b398293fc53b43b73782" title="EagerSearch::print\l_statistics" alt="" coords="408,149,539,190"/>
+</map>

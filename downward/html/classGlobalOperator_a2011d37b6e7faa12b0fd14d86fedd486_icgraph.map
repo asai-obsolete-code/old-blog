@@ -1,0 +1,6 @@
+<map id="GlobalOperator::get_name" name="GlobalOperator::get_name">
+<area shape="rect" id="node2" href="$classRootTask.html#adb7ac227f8595146614ab51d89793765" title="RootTask::get_operator_name" alt="" coords="230,5,429,32"/>
+<area shape="rect" id="node3" href="$classSearchNode.html#a2b8ea5f6b2ded25baca165cfcee95f18" title="SearchNode::dump" alt="" coords="262,56,397,83"/>
+<area shape="rect" id="node4" href="$classSearchSpace.html#aa31625c0ff35d5c5ab7c3e4b0db69761" title="SearchSpace::dump" alt="" coords="259,107,399,133"/>
+<area shape="rect" id="node5" href="$classEagerSearch.html#ade1c6231195370eeabe0d8a25998a81d" title="EagerSearch::dump_search\l_space" alt="" coords="478,99,661,141"/>
+</map>

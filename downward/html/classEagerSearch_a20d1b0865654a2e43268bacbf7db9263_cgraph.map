@@ -1,0 +1,8 @@
+<map id="EagerSearch::per_node_reopen" name="EagerSearch::per_node_reopen">
+<area shape="rect" id="node2" href="$classSearchSpace.html#a9ce30b006d01420e904454592117c4ad" title="SearchSpace::get_node" alt="" coords="222,5,383,32"/>
+<area shape="rect" id="node3" href="$classGlobalState.html#adeb4f6ce9b02c7bf478ac0785f5c52db" title="GlobalState::get_id" alt="" coords="445,31,579,57"/>
+<area shape="rect" id="node4" href="$classSearchStatistics.html#a6aec8829af5092c6227c71277b1ea7e8" title="SearchStatistics::inc\l_reopened" alt="" coords="231,107,374,149"/>
+<area shape="rect" id="node5" href="$classSearchEngine.html#aa2ea8c75e8d3157d6d247ce89f0d792a" title="SearchEngine::get_context" alt="" coords="213,173,392,200"/>
+<area shape="rect" id="node7" href="$classOpenList.html#a054ebb8337007378b53bc3712afd9916" title="OpenList::insert" alt="" coords="245,224,360,251"/>
+<area shape="rect" id="node6" href="$classSearchStatistics.html#aca5c210b6a0b0145899c61ef238b9ae1" title="SearchStatistics::inc\l_evaluated_states" alt="" coords="441,166,583,207"/>
+</map>

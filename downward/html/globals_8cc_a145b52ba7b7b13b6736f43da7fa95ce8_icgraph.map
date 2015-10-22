@@ -1,0 +1,5 @@
+<map id="calculate_plan_cost" name="calculate_plan_cost">
+<area shape="rect" id="node2" href="$globals_8cc.html#a9cec919661eb4c89f1551ab66f132221" title="save_plan" alt="" coords="193,12,274,39"/>
+<area shape="rect" id="node3" href="$classSearchEngine.html#a42484decda17a8073d315594de94eb88" title="SearchEngine::save\l_plan_if_necessary" alt="" coords="323,5,461,46"/>
+<area shape="rect" id="node4" href="$planner_8cc.html#a217dbf8b442f20279ea00b898af96f52" title="main" alt="" coords="509,12,560,39"/>
+</map>

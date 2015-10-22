@@ -1,0 +1,7 @@
+<map id="HeuristicCache::dump" name="HeuristicCache::dump">
+<area shape="rect" id="node2" href="$classGlobalState.html#ac01fe7d855a92a2685ecaee75a7d84ff" title="GlobalState::dump_pddl" alt="" coords="210,5,371,32"/>
+<area shape="rect" id="node3" href="$classHeuristicCache.html#a868bc67ecfc8c58b4828783dcc03f7cc" title="HeuristicCache::for\l_each_heuristic_value" alt="" coords="215,57,366,98"/>
+<area shape="rect" id="node4" href="$classHeuristic.html#a537447ab5e02c23e085246f188abf37d" title="Heuristic::get_description" alt="" coords="205,123,376,149"/>
+<area shape="rect" id="node5" href="$classEvaluationResult.html#abdfc41d11307fe76818ee1ac70e33a12" title="EvaluationResult::is\l_infinite" alt="" coords="221,174,360,215"/>
+<area shape="rect" id="node6" href="$classEvaluationResult.html#a19bbe29131c228b9282a0122525936f6" title="EvaluationResult::get\l_h_value" alt="" coords="217,239,364,281"/>
+</map>

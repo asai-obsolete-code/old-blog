@@ -1,0 +1,29 @@
+<map id="merge_and_shrink/labels.cc" name="merge_and_shrink/labels.cc">
+<area shape="rect" id="node2" href="$labels_8h.html" title="labels.h" alt="" coords="1159,560,1225,587"/>
+<area shape="rect" id="node5" href="$transition__system_8h.html" title="transition_system.h" alt="" coords="279,560,413,587"/>
+<area shape="rect" id="node11" href="$equivalence__relation_8h.html" title="../equivalence_relation.h" alt="" coords="92,560,255,587"/>
+<area shape="rect" id="node15" href="$globals_8h.html" title="../globals.h" alt="" coords="693,560,779,587"/>
+<area shape="rect" id="node18" href="$option__parser_8h.html" title="../option_parser.h" alt="" coords="1689,336,1812,363"/>
+<area shape="rect" id="node22" href="$task__proxy_8h.html" title="task_proxy.h" alt="" coords="1205,485,1301,512"/>
+<area shape="rect" id="node24" href="$utilities_8h.html" title="utilities.h" alt="" coords="1537,560,1611,587"/>
+<area shape="rect" id="node37" href="$plugin_8h.html" title="../plugin.h" alt="" coords="1218,80,1296,107"/>
+<area shape="rect" id="node49" href="$rng_8h.html" title="../rng.h" alt="" coords="2451,560,2513,587"/>
+<area shape="rect" id="node19" href="$heuristic_8h.html" title="heuristic.h" alt="" coords="1140,411,1221,437"/>
+<area shape="rect" id="node29" href="$option__parser__util_8h.html" title="option_parser_util.h" alt="" coords="1789,411,1923,437"/>
+<area shape="rect" id="node20" href="$operator__cost_8h.html" title="operator_cost.h" alt="" coords="1327,485,1437,512"/>
+<area shape="rect" id="node21" href="$scalar__evaluator_8h.html" title="scalar_evaluator.h" alt="" coords="799,485,927,512"/>
+<area shape="rect" id="node23" href="$abstract__task_8h.html" title="abstract_task.h" alt="" coords="1300,560,1411,587"/>
+<area shape="rect" id="node33" href="$tree_8hh.html" title="tree.hh" alt="" coords="1918,560,1980,587"/>
+<area shape="rect" id="node34" href="$tree__util_8hh.html" title="tree_util.hh" alt="" coords="2003,485,2089,512"/>
+<area shape="rect" id="node35" href="$any_8hpp.html" title="boost/any.hpp" alt="" coords="2165,485,2269,512"/>
+<area shape="rect" id="node38" href="$alternation__open__list_8h.html" title="open_lists/alternation\l_open_list.h" alt="" coords="786,155,931,197"/>
+<area shape="rect" id="node41" href="$bucket__open__list_8h.html" title="open_lists/bucket_open\l_list.h" alt="" coords="1007,155,1165,197"/>
+<area shape="rect" id="node44" href="$standard__scalar__open__list_8h.html" title="open_lists/standard\l_scalar_open_list.h" alt="" coords="1190,155,1324,197"/>
+<area shape="rect" id="node46" href="$tiebreaking__open__list_8h.html" title="open_lists/tiebreaking\l_open_list.h" alt="" coords="1349,155,1496,197"/>
+<area shape="rect" id="node47" href="$open__tree_8h.html" title="open_lists/open_tree.h" alt="" coords="1862,253,2015,280"/>
+<area shape="rect" id="node48" href="$open__tree2_8h.html" title="open_lists/open_tree2.h" alt="" coords="1805,163,1964,189"/>
+<area shape="rect" id="node39" href="$open__list_8h.html" title="open_list.h" alt="" coords="1057,253,1143,280"/>
+<area shape="rect" id="node40" href="$alternation__open__list_8cc.html" title="alternation_open_list.cc" alt="" coords="773,253,931,280"/>
+<area shape="rect" id="node43" href="$bucket__open__list_8cc.html" title="bucket_open_list.cc" alt="" coords="1648,253,1787,280"/>
+<area shape="rect" id="node45" href="$standard__scalar__open__list_8cc.html" title="standard_scalar_open\l_list.cc" alt="" coords="1348,246,1496,287"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="ext/boost/throw_exception.hpp" name="ext/boost/throw_exception.hpp">
+<area shape="rect" id="node2" href="$attribute__noreturn_8hpp.html" title="boost/exception/detail\l/attribute_noreturn.hpp" alt="" coords="5,81,157,122"/>
+<area shape="rect" id="node3" href="$detail_2workaround_8hpp.html" title="boost/detail/workaround.hpp" alt="" coords="182,88,367,115"/>
+<area shape="rect" id="node4" href="$config_8hpp.html" title="boost/config.hpp" alt="" coords="281,171,399,197"/>
+<area shape="rect" id="node14" href="$exception_8hpp.html" title="boost/exception/exception.hpp" alt="" coords="546,88,744,115"/>
+<area shape="rect" id="node15" href="$current__function_8hpp.html" title="boost/current_function.hpp" alt="" coords="769,88,945,115"/>
+<area shape="rect" id="node5" href="$select__compiler__config_8hpp.html" title="boost/config/select\l_compiler_config.hpp" alt="" coords="25,246,169,287"/>
+<area shape="rect" id="node6" href="$select__stdlib__config_8hpp.html" title="boost/config/select\l_stdlib_config.hpp" alt="" coords="194,246,325,287"/>
+<area shape="rect" id="node10" href="$select__platform__config_8hpp.html" title="boost/config/select\l_platform_config.hpp" alt="" coords="350,246,492,287"/>
+<area shape="rect" id="node11" href="$suffix_8hpp.html" title="boost/config/suffix.hpp" alt="" coords="517,253,671,280"/>
+<area shape="rect" id="node8" href="$utility_8hpp.html" title="boost/config/no_tr1\l/utility.hpp" alt="" coords="256,337,389,378"/>
+</map>

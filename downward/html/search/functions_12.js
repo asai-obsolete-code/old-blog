@@ -1,14 +1,11 @@
 var searchData=
 [
-  ['valuenode',['ValueNode',['../structValueNode.html#ab36d93146165dc6c2ba903808bd8a530',1,'ValueNode']]],
-  ['valuetransition',['ValueTransition',['../structValueTransition.html#a5d058daa3111a5519039ac1050acb95a',1,'ValueTransition']]],
-  ['valuetransitionlabel',['ValueTransitionLabel',['../structValueTransitionLabel.html#ae64bb0cd3fd181d966fdeab3a9a2e860',1,'ValueTransitionLabel']]],
-  ['variableinfo',['VariableInfo',['../classIntPacker_1_1VariableInfo.html#a788bbdd083529631308d4ffe6b09da1e',1,'IntPacker::VariableInfo::VariableInfo(int range_, int bin_index_, int shift_)'],['../classIntPacker_1_1VariableInfo.html#a7c24ea8cd92e74d520e7ebd3ee942ac6',1,'IntPacker::VariableInfo::VariableInfo()']]],
-  ['variableorderfinder',['VariableOrderFinder',['../classVariableOrderFinder.html#a3b1f2bd3cb0a9334c555b3d3dad66ca1',1,'VariableOrderFinder']]],
-  ['variableproxy',['VariableProxy',['../classVariableProxy.html#a74d2b3b5692fb88495b414d037d309f7',1,'VariableProxy']]],
-  ['variablesproxy',['VariablesProxy',['../classVariablesProxy.html#a9f1b14cf71a9526acdbcbe38d309cfc3',1,'VariablesProxy']]],
-  ['verify_5flist_5fnon_5fempty',['verify_list_non_empty',['../classOptions.html#aec0a66ed37817abc9e131bd081d46f5a',1,'Options']]],
-  ['verify_5fno_5faxioms',['verify_no_axioms',['../globals_8cc.html#a6144f63ac9dc461a22e7b16bbf228f33',1,'verify_no_axioms():&#160;globals.cc'],['../globals_8h.html#a6144f63ac9dc461a22e7b16bbf228f33',1,'verify_no_axioms():&#160;globals.cc'],['../task__tools_8cc.html#ac79de3989fce6ad0ea15ad3be01d9bb4',1,'verify_no_axioms(TaskProxy task):&#160;task_tools.cc'],['../task__tools_8h.html#ac79de3989fce6ad0ea15ad3be01d9bb4',1,'verify_no_axioms(TaskProxy task):&#160;task_tools.cc']]],
-  ['verify_5fno_5faxioms_5fno_5fconditional_5feffects',['verify_no_axioms_no_conditional_effects',['../globals_8cc.html#ac8b586ff0d2d86ffdc28e4e911491fa2',1,'verify_no_axioms_no_conditional_effects():&#160;globals.cc'],['../globals_8h.html#ac8b586ff0d2d86ffdc28e4e911491fa2',1,'verify_no_axioms_no_conditional_effects():&#160;globals.cc']]],
-  ['verify_5fno_5fconditional_5feffects',['verify_no_conditional_effects',['../globals_8cc.html#a293e0e3504976527abc14bbbf892ba40',1,'verify_no_conditional_effects():&#160;globals.cc'],['../globals_8h.html#a293e0e3504976527abc14bbbf892ba40',1,'verify_no_conditional_effects():&#160;globals.cc'],['../task__tools_8cc.html#a8db7f9e63556ff19c4cdea9e403457ad',1,'verify_no_conditional_effects(TaskProxy task):&#160;task_tools.cc'],['../task__tools_8h.html#a8db7f9e63556ff19c4cdea9e403457ad',1,'verify_no_conditional_effects(TaskProxy task):&#160;task_tools.cc']]]
+  ['unaryoperator',['UnaryOperator',['../structUnaryOperator.html#a0dab651e89564afdc1d342ed32db5d50',1,'UnaryOperator']]],
+  ['unmark',['unmark',['../classGlobalOperator.html#aa82d58b4145f4f967aaca7311da935a5',1,'GlobalOperator']]],
+  ['unsafe_5fany_5fcast',['unsafe_any_cast',['../namespaceboost.html#a49c5843afb96d60071fb46c41f6f3a0e',1,'boost::unsafe_any_cast(any *operand)'],['../namespaceboost.html#a6d867de13c4ac0ec225898a6415c7b71',1,'boost::unsafe_any_cast(const any *operand)']]],
+  ['unsubscribe',['unsubscribe',['../classStateRegistry.html#a8d99889e5ff3a3de7739558751d94437',1,'StateRegistry']]],
+  ['unused_5fparameter',['unused_parameter',['../utilities_8h.html#a44ab437244c3326f1cd4093f129e0a91',1,'utilities.h']]],
+  ['update_5fh_5fmax_5fsupporter',['update_h_max_supporter',['../structRelaxedOperator.html#a9083fbd3caa6fe272ccc8e9518cf80be',1,'RelaxedOperator']]],
+  ['update_5fparent',['update_parent',['../classSearchNode.html#a4790c765cd6123d95281c598c6daf064',1,'SearchNode']]],
+  ['usage',['usage',['../classOptionParser.html#a0ff324cd8d3117adf9f568be5bb730a0',1,'OptionParser']]]
 ];

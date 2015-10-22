@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['max_5foperator_5fcost',['MAX_OPERATOR_COST',['../operator__cost_8h.html#aea97a5a2fbe3b57faf505007e38f5de9a5551329e152736e1bcd8e8be62fabee8',1,'operator_cost.h']]],
-  ['maximize',['MAXIMIZE',['../lp__solver_8h.html#a57b9dc98e5b29f15798faade96232f60a7af98b3d657f545ebf5476f68cb5ce6f',1,'lp_solver.h']]],
-  ['minimize',['MINIMIZE',['../lp__solver_8h.html#a57b9dc98e5b29f15798faade96232f60a704bfa6c1ed5e479c8cfb5bdfc8cccda',1,'lp_solver.h']]]
+  ['level',['LEVEL',['../variable__order__finder_8h.html#a9662b01c10fe7ff02a1c24c393333dc9aa4b1e64b6e370537f87e5806385ee069',1,'variable_order_finder.h']]],
+  ['low',['LOW',['../classShrinkFH.html#a7d69ca8ab9f370f2dfeca9d6bd5178dfa6bf19121d5d6d023e64af3edd963df5e',1,'ShrinkFH']]]
 ];

@@ -1,0 +1,9 @@
+<map id="Heuristic::get_description" name="Heuristic::get_description">
+<area shape="rect" id="node2" href="$classHeuristicCache.html#abae17971fa07a8cee1f2941ac564b33c" title="HeuristicCache::dump" alt="" coords="228,5,380,32"/>
+<area shape="rect" id="node3" href="$search__engine_8h.html#a24e30638c33c2f680999742bf577575a" title="print_initial_h_values" alt="" coords="233,56,375,83"/>
+<area shape="rect" id="node5" href="$classSearchProgress.html#a9235b86df0c6cba7cc17c67e7ec5519f" title="SearchProgress::check\l_progress" alt="" coords="225,107,383,149"/>
+<area shape="rect" id="node4" href="$classEagerSearch.html#ad2a84b79cbb0db13f18d9e32996303e0" title="EagerSearch::initialize" alt="" coords="451,60,603,87"/>
+<area shape="rect" id="node6" href="$classEagerSearch.html#a8533416de3639b7445903a0734b54fd7" title="EagerSearch::per_node_new" alt="" coords="432,115,621,141"/>
+<area shape="rect" id="node7" href="$classEagerSearch.html#a486ff0b490b899fdfb359cf14a8d6459" title="EagerSearch::per_node" alt="" coords="670,115,829,141"/>
+<area shape="rect" id="node8" href="$classEagerSearch.html#a579812c68f5321a6eb9e6fe0da59e14c" title="EagerSearch::step" alt="" coords="877,115,1008,141"/>
+</map>

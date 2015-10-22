@@ -1,0 +1,6 @@
+<map id="is_applicable" name="is_applicable">
+<area shape="rect" id="node2" href="$structGlobalEffect.html#af1f916d79e074b7a8abf058215a4ac77" title="GlobalEffect::does_fire" alt="" coords="152,12,307,39"/>
+<area shape="rect" id="node5" href="$classHeuristic.html#a47b52f0c6ccdb8caa8b3e3e292600324" title="Heuristic::compute\l_result" alt="" coords="163,63,295,105"/>
+<area shape="rect" id="node3" href="$classStateRegistry.html#af6ec9371ef06ba1031e705cf538e40ca" title="StateRegistry::get\l_successor_state" alt="" coords="355,5,483,46"/>
+<area shape="rect" id="node4" href="$classEagerSearch.html#a579812c68f5321a6eb9e6fe0da59e14c" title="EagerSearch::step" alt="" coords="531,12,661,39"/>
+</map>

@@ -1,0 +1,24 @@
+<map id="tree::end" name="tree::end">
+<area shape="rect" id="node2" href="$classtree.html#aa784ffa6dec85f52754dde8bd6a99aeb" title="Return sibling iterator to the first child of given node. " alt="" coords="181,5,264,32"/>
+<area shape="rect" id="node3" href="$classtree.html#a748532ca50c5e2ffecae79663d77f5ed" title="Move all child nodes of &#39;from&#39; to be children of &#39;position&#39;. " alt="" coords="173,56,272,83"/>
+<area shape="rect" id="node4" href="$classtree.html#a2a304316640301e8ac99424fe64f8817" title="tree::sort" alt="" coords="399,111,473,137"/>
+<area shape="rect" id="node5" href="$classtree.html#a275cc39b461e0c76256db19bdbbd5a81" title="tree::equal_subtree" alt="" coords="156,224,289,251"/>
+<area shape="rect" id="node6" href="$classtree.html#adb61bebed6c56eb5641b0b7fab7fe625" title="Extract a new tree formed by the range of siblings plus all their children. " alt="" coords="175,325,270,352"/>
+<area shape="rect" id="node8" href="$classOptionParser.html#ad7112dde4b52cccec43ed4cbd687ddca" title="OptionParser::add_option" alt="" coords="555,285,725,312"/>
+<area shape="rect" id="node13" href="$classtree.html#a68ad599f29cc97cfb36259097c19b7ca" title="Count the total number of nodes. " alt="" coords="185,427,261,453"/>
+<area shape="rect" id="node14" href="$classtree.html#ae9f7fd30c51443d46ca8941d5bc06da2" title="Check if tree is empty. " alt="" coords="179,579,267,605"/>
+<area shape="rect" id="node15" href="$namespacekptree.html#a8a5bca26e430b0d5cba946c3f30db0de" title="kptree::print_subtree\l_bracketed" alt="" coords="365,529,507,570"/>
+<area shape="rect" id="node16" href="$namespacekptree.html#a1cc4d0c67d4989a1271cbd7e5fd09ace" title="kptree::print_tree\l_bracketed" alt="" coords="580,499,700,541"/>
+<area shape="rect" id="node17" href="$classtree_1_1iterator__base.html#a7fad2f6cc1a6a667b5c71bb16c9b84e5" title="tree::iterator_base\l::begin" alt="" coords="159,158,286,199"/>
+<area shape="rect" id="node19" href="$classtree_1_1breadth__first__queued__iterator.html#adbe5b96bce085cae18a967e4fe2891b1" title="tree::breadth_first\l_queued_iterator::operator++" alt="" coords="128,630,317,671"/>
+<area shape="rect" id="node20" href="$option__parser__util_8h.html#a8fbb42932f4dec0388c7e39bc6ebde83" title="last_child" alt="" coords="184,696,261,723"/>
+<area shape="rect" id="node22" href="$option__parser__util_8h.html#a525398f795832919481f57d86e0c8fc1" title="end_of_roots_children" alt="" coords="148,376,297,403"/>
+<area shape="rect" id="node7" href="$option__parser__util_8h.html#a6330371c65dec42cd7d0f526cf8bb371" title="subtree" alt="" coords="403,325,469,352"/>
+<area shape="rect" id="node12" href="$classTokenParser_3_01std_1_1vector_3_01T_01_4_01_4.html#a657b19ea07150a618aa91ba93b90336d" title="TokenParser\&lt; std::vector\l\&lt; T \&gt; \&gt;::parse" alt="" coords="555,358,725,399"/>
+<area shape="rect" id="node9" href="$classHeuristic.html#a1d20e58f0d2bbd0b9135d1b546545b9e" title="Heuristic::add_options\l_to_parser" alt="" coords="788,213,940,254"/>
+<area shape="rect" id="node10" href="$classShrinkStrategy.html#a7272db9f60d941ee32904998a51bceb2" title="ShrinkStrategy::add\l_options_to_parser" alt="" coords="795,278,933,319"/>
+<area shape="rect" id="node11" href="$classSearchEngine.html#a3dcbdd70e489f491e52f4175961916c8" title="SearchEngine::add_options\l_to_parser" alt="" coords="773,343,955,385"/>
+<area shape="rect" id="node18" href="$classtree.html#a1e3cd901f8f8d8a3da0e1d32e9282db1" title="Merge with other tree, creating new branches and leaves only if they are not already present..." alt="" coords="392,165,480,192"/>
+<area shape="rect" id="node21" href="$option__parser__util_8h.html#aa54d32933f819dd4a1d21194d06d4510" title="last_child_of_root" alt="" coords="374,696,498,723"/>
+<area shape="rect" id="node23" href="$classOptionParser.html#a5d62806719c9c3e2ef962952977cce7f" title="OptionParser::parse" alt="" coords="367,427,505,453"/>
+</map>

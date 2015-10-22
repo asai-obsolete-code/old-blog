@@ -1,0 +1,12 @@
+<map id="TaskProxy::get_variables" name="TaskProxy::get_variables">
+<area shape="rect" id="node2" href="$classCausalGraph.html#a98f5dcff9e838b52ce3a0c1ab3cd97e1" title="CausalGraph::CausalGraph" alt="" coords="226,5,409,32"/>
+<area shape="rect" id="node3" href="$classLabels.html#a8cd3407c9f1f138bc2c029946d23caa2" title="Labels::initialize" alt="" coords="260,56,375,83"/>
+<area shape="rect" id="node5" href="$classMergeStrategy.html#a12ae514567bc64018e938f4bcbdd89c8" title="MergeStrategy::initialize" alt="" coords="236,107,399,133"/>
+<area shape="rect" id="node8" href="$classTransitionSystem.html#a49fb4d822c6be3dcfb5db4afe47e040f" title="TransitionSystem::build\l_atomic_transition_systems" alt="" coords="225,158,410,199"/>
+<area shape="rect" id="node9" href="$classAtomicTransitionSystem.html#aeb1ad58782a0e740d044b9bcece41f9f" title="AtomicTransitionSystem\l::AtomicTransitionSystem" alt="" coords="231,223,404,265"/>
+<area shape="rect" id="node10" href="$classRelaxationHeuristic.html#aa34cc79d9e5e3e9aff4c4ed1b03a853e" title="RelaxationHeuristic\l::initialize" alt="" coords="249,289,385,330"/>
+<area shape="rect" id="node11" href="$classVariableOrderFinder.html#a3b1f2bd3cb0a9334c555b3d3dad66ca1" title="VariableOrderFinder\l::VariableOrderFinder" alt="" coords="245,354,390,395"/>
+<area shape="rect" id="node4" href="$classMergeAndShrinkHeuristic.html#a5b55431fcc506a84a6a63e0e60da8662" title="MergeAndShrinkHeuristic\l::MergeAndShrinkHeuristic" alt="" coords="459,45,637,86"/>
+<area shape="rect" id="node6" href="$classMergeDFP.html#a5359eecd4c374b4010a92da9b6302118" title="MergeDFP::initialize" alt="" coords="478,111,618,137"/>
+<area shape="rect" id="node7" href="$classMergeLinear.html#a5acbc93ba6df4ae49170799ec788fb6b" title="MergeLinear::initialize" alt="" coords="474,161,622,188"/>
+</map>

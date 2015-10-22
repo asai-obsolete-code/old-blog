@@ -85,6 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classEagerSearch-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">EagerSearch Class Reference</div>  </div>
@@ -104,7 +105,7 @@ Collaboration diagram for EagerSearch:</div>
 <div class="dyncontent">
 <div class="center"><img src="classEagerSearch__coll__graph.png" border="0" usemap="#EagerSearch_coll__map" alt="Collaboration graph"/></div>
 <map name="EagerSearch_coll__map" id="EagerSearch_coll__map">
-<area shape="rect" id="node2" href="classSearchEngine.html" title="SearchEngine" alt="" coords="137,96,239,123"/><area shape="rect" id="node3" href="classSearchSpace.html" title="SearchSpace" alt="" coords="5,5,104,32"/><area shape="rect" id="node4" href="classSearchStatistics.html" title="SearchStatistics" alt="" coords="129,5,247,32"/><area shape="rect" id="node5" href="classSearchProgress.html" title="SearchProgress" alt="" coords="272,5,387,32"/></map>
+<area shape="rect" id="node2" href="classSearchEngine.html" title="SearchEngine" alt="" coords="251,189,353,216"/><area shape="rect" id="node3" href="classPerStateInformation.html" title="PerStateInformation\l\&lt; HeuristicCache * \&gt;" alt="" coords="17,83,161,125"/><area shape="rect" id="node4" href="classPerStateInformationBase.html" title="PerStateInformationBase" alt="" coords="5,5,173,32"/><area shape="rect" id="node5" href="classSearchSpace.html" title="SearchSpace" alt="" coords="186,91,285,117"/><area shape="rect" id="node6" href="classSearchStatistics.html" title="SearchStatistics" alt="" coords="310,91,428,117"/><area shape="rect" id="node7" href="classSearchProgress.html" title="SearchProgress" alt="" coords="453,91,568,117"/><area shape="rect" id="node8" href="classOpenList.html" title="OpenList\&lt; StateID \&gt;" alt="" coords="378,189,520,216"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -113,6 +114,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3c83aaaa9c15bd7e60cb239d2c329704"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af675ad5c78c5cfa73b464cf25e91e4e4"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEagerSearch.html#af675ad5c78c5cfa73b464cf25e91e4e4">~EagerSearch</a> ()=default</td></tr>
 <tr class="separator:af675ad5c78c5cfa73b464cf25e91e4e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2a84b79cbb0db13f18d9e32996303e0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEagerSearch.html#ad2a84b79cbb0db13f18d9e32996303e0">initialize</a> () override</td></tr>
+<tr class="separator:ad2a84b79cbb0db13f18d9e32996303e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a579812c68f5321a6eb9e6fe0da59e14c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="search__engine_8h.html#a366b21ffe1b22f34ec2fa8f101b979f3">SearchStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEagerSearch.html#a579812c68f5321a6eb9e6fe0da59e14c">step</a> () override</td></tr>
+<tr class="separator:a579812c68f5321a6eb9e6fe0da59e14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96bb41d45681b398293fc53b43b73782"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEagerSearch.html#a96bb41d45681b398293fc53b43b73782">print_statistics</a> () const override</td></tr>
 <tr class="separator:a96bb41d45681b398293fc53b43b73782"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade1c6231195370eeabe0d8a25998a81d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEagerSearch.html#ade1c6231195370eeabe0d8a25998a81d">dump_search_space</a> () const </td></tr>
@@ -122,6 +127,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa28bc22933ce50faebba4d87279ddc17 inherit pub_methods_classSearchEngine"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a863ab87efd742b9a8f20b87774ab570f inherit pub_methods_classSearchEngine"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSearchEngine.html#a863ab87efd742b9a8f20b87774ab570f">~SearchEngine</a> ()</td></tr>
 <tr class="separator:a863ab87efd742b9a8f20b87774ab570f inherit pub_methods_classSearchEngine"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a426076fbe6a497b36bdcf2e9aa1d1308 inherit pub_methods_classSearchEngine"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSearchEngine.html#a426076fbe6a497b36bdcf2e9aa1d1308">initialize</a> (<a class="el" href="classPerStateInformation.html">PerStateInformation</a>&lt; <a class="el" href="classHeuristicCache.html">HeuristicCache</a> * &gt; *other_hcaches)</td></tr>
+<tr class="separator:a426076fbe6a497b36bdcf2e9aa1d1308 inherit pub_methods_classSearchEngine"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42484decda17a8073d315594de94eb88 inherit pub_methods_classSearchEngine"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSearchEngine.html#a42484decda17a8073d315594de94eb88">save_plan_if_necessary</a> () const </td></tr>
 <tr class="separator:a42484decda17a8073d315594de94eb88 inherit pub_methods_classSearchEngine"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19a4c78770ceca16897f1af6f9abdcfe inherit pub_methods_classSearchEngine"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSearchEngine.html#a19a4c78770ceca16897f1af6f9abdcfe">found_solution</a> () const </td></tr>
@@ -141,11 +148,22 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ad2a84b79cbb0db13f18d9e32996303e0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEagerSearch.html#ad2a84b79cbb0db13f18d9e32996303e0">initialize</a> () override</td></tr>
-<tr class="separator:ad2a84b79cbb0db13f18d9e32996303e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a579812c68f5321a6eb9e6fe0da59e14c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="search__engine_8h.html#a366b21ffe1b22f34ec2fa8f101b979f3">SearchStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEagerSearch.html#a579812c68f5321a6eb9e6fe0da59e14c">step</a> () override</td></tr>
-<tr class="separator:a579812c68f5321a6eb9e6fe0da59e14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55d06001e2a981acfc0a22cc4d510150"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEagerSearch.html#a55d06001e2a981acfc0a22cc4d510150">reward_progress</a> ()</td></tr>
+<tr class="separator:a55d06001e2a981acfc0a22cc4d510150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a486ff0b490b899fdfb359cf14a8d6459"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEagerSearch.html#a486ff0b490b899fdfb359cf14a8d6459">per_node</a> (<a class="el" href="classGlobalState.html">GlobalState</a> succ, <a class="el" href="classGlobalState.html">GlobalState</a> state, const <a class="el" href="classGlobalOperator.html">GlobalOperator</a> *op, bool is_preferred)</td></tr>
+<tr class="separator:a486ff0b490b899fdfb359cf14a8d6459"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8533416de3639b7445903a0734b54fd7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEagerSearch.html#a8533416de3639b7445903a0734b54fd7">per_node_new</a> (<a class="el" href="classGlobalState.html">GlobalState</a> succ, <a class="el" href="classGlobalState.html">GlobalState</a> state, const <a class="el" href="classGlobalOperator.html">GlobalOperator</a> *op, bool is_preferred)</td></tr>
+<tr class="separator:a8533416de3639b7445903a0734b54fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20d1b0865654a2e43268bacbf7db9263"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEagerSearch.html#a20d1b0865654a2e43268bacbf7db9263">per_node_reopen</a> (<a class="el" href="classGlobalState.html">GlobalState</a> succ, <a class="el" href="classGlobalState.html">GlobalState</a> state, const <a class="el" href="classGlobalOperator.html">GlobalOperator</a> *op, bool is_preferred)</td></tr>
+<tr class="separator:a20d1b0865654a2e43268bacbf7db9263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26e022f6530c43f07de448529d79bfda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEagerSearch.html#a26e022f6530c43f07de448529d79bfda">print_checkpoint_line</a> (int g) const </td></tr>
+<tr class="separator:a26e022f6530c43f07de448529d79bfda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03a759ac6eb4941eada1a71bc8809882"><td class="memItemLeft" align="right" valign="top">virtual std::pair&lt; <a class="el" href="classSearchNode.html">SearchNode</a>, <br class="typebreak"/>
+bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEagerSearch.html#a03a759ac6eb4941eada1a71bc8809882">fetch_next_node</a> ()</td></tr>
+<tr class="separator:a03a759ac6eb4941eada1a71bc8809882"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classSearchEngine"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classSearchEngine')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classSearchEngine.html">SearchEngine</a></td></tr>
+<tr class="memitem:aa2ea8c75e8d3157d6d247ce89f0d792a inherit pro_methods_classSearchEngine"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classEvaluationContext.html">EvaluationContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSearchEngine.html#aa2ea8c75e8d3157d6d247ce89f0d792a">get_context</a> (const <a class="el" href="classGlobalState.html">GlobalState</a> &amp;state, int g, bool is_preferred, <a class="el" href="classSearchStatistics.html">SearchStatistics</a> *<a class="el" href="classSearchEngine.html#a904954dd91947b71a737215b8b5ea9e8">statistics</a>, <a class="el" href="classSearchSpace.html">SearchSpace</a> *space)</td></tr>
+<tr class="separator:aa2ea8c75e8d3157d6d247ce89f0d792a inherit pro_methods_classSearchEngine"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa45b79c8fca7258b59f30545525dcdb5 inherit pro_methods_classSearchEngine"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSearchEngine.html#aa45b79c8fca7258b59f30545525dcdb5">set_plan</a> (const <a class="el" href="classSearchEngine.html#a847191ccfee2c9e52d94aac85e144e2a">Plan</a> &amp;plan)</td></tr>
 <tr class="separator:aa45b79c8fca7258b59f30545525dcdb5 inherit pro_methods_classSearchEngine"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4df85a6125380a052341794a4540c902 inherit pro_methods_classSearchEngine"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSearchEngine.html#a4df85a6125380a052341794a4540c902">check_goal_and_set_plan</a> (const <a class="el" href="classGlobalState.html">GlobalState</a> &amp;state)</td></tr>
@@ -153,15 +171,10 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aaa3c4e315c3d7d5e7a63107f8a03ffa0 inherit pro_methods_classSearchEngine"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSearchEngine.html#aaa3c4e315c3d7d5e7a63107f8a03ffa0">get_adjusted_cost</a> (const <a class="el" href="classGlobalOperator.html">GlobalOperator</a> &amp;op) const </td></tr>
 <tr class="separator:aaa3c4e315c3d7d5e7a63107f8a03ffa0 inherit pro_methods_classSearchEngine"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_classSearchEngine"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classSearchEngine')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classSearchEngine.html">SearchEngine</a></td></tr>
-<tr class="memitem:a847191ccfee2c9e52d94aac85e144e2a inherit pub_types_classSearchEngine"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; const <br class="typebreak"/>
-<a class="el" href="classGlobalOperator.html">GlobalOperator</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSearchEngine.html#a847191ccfee2c9e52d94aac85e144e2a">Plan</a></td></tr>
-<tr class="separator:a847191ccfee2c9e52d94aac85e144e2a inherit pub_types_classSearchEngine"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_methods_classSearchEngine"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classSearchEngine')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classSearchEngine.html">SearchEngine</a></td></tr>
-<tr class="memitem:a3dcbdd70e489f491e52f4175961916c8 inherit pub_static_methods_classSearchEngine"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSearchEngine.html#a3dcbdd70e489f491e52f4175961916c8">add_options_to_parser</a> (<a class="el" href="classOptionParser.html">OptionParser</a> &amp;parser)</td></tr>
-<tr class="separator:a3dcbdd70e489f491e52f4175961916c8 inherit pub_static_methods_classSearchEngine"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:aab3d66ec650bea335ba9c32767610991"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOpenList.html">OpenList</a>&lt; <a class="el" href="classStateID.html">StateID</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEagerSearch.html#aab3d66ec650bea335ba9c32767610991">open_list</a></td></tr>
+<tr class="separator:aab3d66ec650bea335ba9c32767610991"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classSearchEngine"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classSearchEngine')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classSearchEngine.html">SearchEngine</a></td></tr>
 <tr class="memitem:a25da0eadad8b694e645738f096c1afc4 inherit pro_attribs_classSearchEngine"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSearchSpace.html">SearchSpace</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSearchEngine.html#a25da0eadad8b694e645738f096c1afc4">search_space</a></td></tr>
 <tr class="separator:a25da0eadad8b694e645738f096c1afc4 inherit pro_attribs_classSearchEngine"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,6 +188,20 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a598e111e16f596260c9fd566b11275f5 inherit pro_attribs_classSearchEngine"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab86002dc0b5e0d25cf58587b7a03e185 inherit pro_attribs_classSearchEngine"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSearchEngine.html#ab86002dc0b5e0d25cf58587b7a03e185">max_time</a></td></tr>
 <tr class="separator:ab86002dc0b5e0d25cf58587b7a03e185 inherit pro_attribs_classSearchEngine"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classSearchEngine"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classSearchEngine')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classSearchEngine.html">SearchEngine</a></td></tr>
+<tr class="memitem:a847191ccfee2c9e52d94aac85e144e2a inherit pub_types_classSearchEngine"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; const <br class="typebreak"/>
+<a class="el" href="classGlobalOperator.html">GlobalOperator</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSearchEngine.html#a847191ccfee2c9e52d94aac85e144e2a">Plan</a></td></tr>
+<tr class="separator:a847191ccfee2c9e52d94aac85e144e2a inherit pub_types_classSearchEngine"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classSearchEngine"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classSearchEngine')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classSearchEngine.html">SearchEngine</a></td></tr>
+<tr class="memitem:a3dcbdd70e489f491e52f4175961916c8 inherit pub_static_methods_classSearchEngine"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSearchEngine.html#a3dcbdd70e489f491e52f4175961916c8">add_options_to_parser</a> (<a class="el" href="classOptionParser.html">OptionParser</a> &amp;parser)</td></tr>
+<tr class="separator:a3dcbdd70e489f491e52f4175961916c8 inherit pub_static_methods_classSearchEngine"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classSearchEngine"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classSearchEngine')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classSearchEngine.html">SearchEngine</a></td></tr>
+<tr class="memitem:a2870c1be61e39f00082f4dac1ad3649c inherit pub_attribs_classSearchEngine"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPerStateInformation.html">PerStateInformation</a><br class="typebreak"/>
+&lt; <a class="el" href="classHeuristicCache.html">HeuristicCache</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSearchEngine.html#a2870c1be61e39f00082f4dac1ad3649c">hcaches</a></td></tr>
+<tr class="separator:a2870c1be61e39f00082f4dac1ad3649c inherit pub_attribs_classSearchEngine"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a3c83aaaa9c15bd7e60cb239d2c329704"></a>
@@ -249,6 +276,47 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a03a759ac6eb4941eada1a71bc8809882"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pair&lt; <a class="el" href="classSearchNode.html">SearchNode</a>, bool &gt; EagerSearch::fetch_next_node </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classEagerSearch_a03a759ac6eb4941eada1a71bc8809882_cgraph.png" border="0" usemap="#classEagerSearch_a03a759ac6eb4941eada1a71bc8809882_cgraph" alt=""/></div>
+<map name="classEagerSearch_a03a759ac6eb4941eada1a71bc8809882_cgraph" id="classEagerSearch_a03a759ac6eb4941eada1a71bc8809882_cgraph">
+<area shape="rect" id="node2" href="classOpenList.html#aa17af208ac1962d3005cbe5d4a93e9dd" title="OpenList::empty" alt="" coords="218,43,337,69"/><area shape="rect" id="node3" href="classSearchSpace.html#a9ce30b006d01420e904454592117c4ad" title="SearchSpace::get_node" alt="" coords="197,93,358,120"/><area shape="rect" id="node5" href="globals_8cc.html#aaf27ff6b3348217d127cd0f43a4d6b06" title="g_initial_state" alt="" coords="226,144,329,171"/><area shape="rect" id="node13" href="classStateRegistry.html#ae2f555f6a879115edb9e0045169730a6" title="StateRegistry::lookup\l_state" alt="" coords="606,223,754,265"/><area shape="rect" id="node14" href="classOpenList.html#ae225b03466861773c3cab933eb1fc977" title="OpenList::remove_min" alt="" coords="201,245,354,272"/><area shape="rect" id="node15" href="classSearchNode.html#a62bdaff59af0aa9c5f712cded05b97ef" title="SearchNode::is_closed" alt="" coords="199,296,356,323"/><area shape="rect" id="node16" href="classSearchNode.html#ada089a292fcae21387d019e357cf4928" title="SearchNode::close" alt="" coords="211,347,344,373"/><area shape="rect" id="node17" href="classSearchNode.html#a122f43b9dcf7e5be7aca4b81bfcc9b5b" title="SearchNode::is_dead_end" alt="" coords="190,397,365,424"/><area shape="rect" id="node18" href="classSearchStatistics.html#a375dc81d063973c7b2adeded062726f9" title="SearchStatistics::inc\l_expanded" alt="" coords="206,449,349,490"/><area shape="rect" id="node4" href="classGlobalState.html#adeb4f6ce9b02c7bf478ac0785f5c52db" title="GlobalState::get_id" alt="" coords="413,77,547,104"/><area shape="rect" id="node6" href="classStateRegistry.html#ab557f312201e32d5de2b6ccf7ef6df87" title="StateRegistry::get\l_initial_state" alt="" coords="416,129,544,170"/><area shape="rect" id="node7" href="classIntPacker.html#a09cea124402536a933145360f33b0891" title="IntPacker::get_num_bins" alt="" coords="597,5,763,32"/><area shape="rect" id="node8" href="classIntPacker.html#a12f8374a73cad207e16d5ee969a9da13" title="IntPacker::set" alt="" coords="813,56,917,83"/><area shape="rect" id="node9" href="classAxiomEvaluator.html#a470288573fe4c91aeedaa4b36dc7c4e1" title="AxiomEvaluator::evaluate" alt="" coords="595,107,765,133"/><area shape="rect" id="node12" href="classSegmentedArrayVector.html#a81171a5200eb39fe7a77fff837bec77c" title="SegmentedArrayVector\l::push_back" alt="" coords="601,158,759,199"/><area shape="rect" id="node10" href="globals_8cc.html#ad0b203d5c2a31a3e811c5d3c171980d8" title="has_axioms" alt="" coords="819,107,911,133"/><area shape="rect" id="node11" href="classIntPacker.html#ab8a207a1f2fea76a796bf85ff2236297" title="IntPacker::get" alt="" coords="813,157,917,184"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classEagerSearch_a03a759ac6eb4941eada1a71bc8809882_icgraph.png" border="0" usemap="#classEagerSearch_a03a759ac6eb4941eada1a71bc8809882_icgraph" alt=""/></div>
+<map name="classEagerSearch_a03a759ac6eb4941eada1a71bc8809882_icgraph" id="classEagerSearch_a03a759ac6eb4941eada1a71bc8809882_icgraph">
+<area shape="rect" id="node2" href="classEagerSearch.html#a579812c68f5321a6eb9e6fe0da59e14c" title="EagerSearch::step" alt="" coords="189,12,320,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="ad2a84b79cbb0db13f18d9e32996303e0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -265,7 +333,7 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -277,7 +345,241 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classEagerSearch_ad2a84b79cbb0db13f18d9e32996303e0_cgraph.png" border="0" usemap="#classEagerSearch_ad2a84b79cbb0db13f18d9e32996303e0_cgraph" alt=""/></div>
 <map name="classEagerSearch_ad2a84b79cbb0db13f18d9e32996303e0_cgraph" id="classEagerSearch_ad2a84b79cbb0db13f18d9e32996303e0_cgraph">
-<area shape="rect" id="node2" href="classScalarEvaluator.html#a23640092537e3403bbc5b40389f7f253" title="ScalarEvaluator::get\l_involved_heuristics" alt="" coords="219,55,359,97"/><area shape="rect" id="node3" href="globals_8cc.html#aaf27ff6b3348217d127cd0f43a4d6b06" title="g_initial_state" alt="" coords="238,121,341,148"/><area shape="rect" id="node12" href="classSearchStatistics.html#aca5c210b6a0b0145899c61ef238b9ae1" title="SearchStatistics::inc\l_evaluated_states" alt="" coords="218,173,361,214"/><area shape="rect" id="node13" href="classSearchProgress.html#a9235b86df0c6cba7cc17c67e7ec5519f" title="SearchProgress::check\l_progress" alt="" coords="210,238,369,279"/><area shape="rect" id="node18" href="classSearchSpace.html#a9ce30b006d01420e904454592117c4ad" title="SearchSpace::get_node" alt="" coords="209,421,370,448"/><area shape="rect" id="node20" href="classSearchNode.html#ae4836802efa4b8e0643dfefa59a96c32" title="SearchNode::open_initial" alt="" coords="206,472,373,499"/><area shape="rect" id="node21" href="classEvaluationContext.html#a0922a801e720bb65221ed95bad2c614a" title="EvaluationContext::\lget_heuristic_value" alt="" coords="221,355,358,397"/><area shape="rect" id="node26" href="search__engine_8cc.html#a24e30638c33c2f680999742bf577575a" title="print_initial_h_values" alt="" coords="218,304,361,331"/><area shape="rect" id="node4" href="classStateRegistry.html#ab557f312201e32d5de2b6ccf7ef6df87" title="StateRegistry::get\l_initial_state" alt="" coords="443,107,571,149"/><area shape="rect" id="node5" href="classIntPacker.html#a09cea124402536a933145360f33b0891" title="IntPacker::get_num_bins" alt="" coords="643,239,810,265"/><area shape="rect" id="node6" href="classIntPacker.html#a12f8374a73cad207e16d5ee969a9da13" title="IntPacker::set" alt="" coords="861,5,965,32"/><area shape="rect" id="node7" href="classAxiomEvaluator.html#a470288573fe4c91aeedaa4b36dc7c4e1" title="AxiomEvaluator::evaluate" alt="" coords="641,56,812,83"/><area shape="rect" id="node10" href="classSegmentedArrayVector.html#a81171a5200eb39fe7a77fff837bec77c" title="SegmentedArrayVector\l::push_back" alt="" coords="648,107,805,149"/><area shape="rect" id="node11" href="classStateRegistry.html#ae2f555f6a879115edb9e0045169730a6" title="StateRegistry::lookup\l_state" alt="" coords="653,173,801,214"/><area shape="rect" id="node8" href="globals_8cc.html#ad0b203d5c2a31a3e811c5d3c171980d8" title="has_axioms" alt="" coords="867,56,959,83"/><area shape="rect" id="node9" href="classIntPacker.html#ab8a207a1f2fea76a796bf85ff2236297" title="IntPacker::get" alt="" coords="861,107,965,133"/><area shape="rect" id="node14" href="classEvaluationContext.html#a0935497a024c42e47e105c2247a2f492" title="EvaluationContext::\lget_cache" alt="" coords="438,173,575,214"/><area shape="rect" id="node15" href="classHeuristicCache.html#a868bc67ecfc8c58b4828783dcc03f7cc" title="HeuristicCache::for\l_each_heuristic_value" alt="" coords="431,238,582,279"/><area shape="rect" id="node16" href="classEvaluationResult.html#a19bbe29131c228b9282a0122525936f6" title="EvaluationResult::get\l_h_value" alt="" coords="433,355,580,397"/><area shape="rect" id="node17" href="classHeuristic.html#a537447ab5e02c23e085246f188abf37d" title="Heuristic::get_description" alt="" coords="421,304,592,331"/><area shape="rect" id="node19" href="classGlobalState.html#adeb4f6ce9b02c7bf478ac0785f5c52db" title="GlobalState::get_id" alt="" coords="440,552,573,579"/><area shape="rect" id="node22" href="classEvaluationContext.html#a74c1d7b061b2bb69a481faa4abac62c0" title="EvaluationContext::\lget_result" alt="" coords="438,486,575,527"/><area shape="rect" id="node23" href="classEvaluationResult.html#ad56b6a8dbff00673aedb984fbe6f72a5" title="EvaluationResult::is\l_uninitialized" alt="" coords="657,421,796,462"/><area shape="rect" id="node24" href="classScalarEvaluator.html#a8ffb99b0f8f63e34183a3245a247a9ec" title="ScalarEvaluator::compute\l_result" alt="" coords="641,486,813,527"/><area shape="rect" id="node25" href="classSearchStatistics.html#a57f71a965c7693054ec18ba1b25a557f" title="SearchStatistics::inc\l_evaluations" alt="" coords="655,551,798,593"/><area shape="rect" id="node27" href="classEvaluationResult.html#abdfc41d11307fe76818ee1ac70e33a12" title="EvaluationResult::is\l_infinite" alt="" coords="437,421,576,462"/></map>
+<area shape="rect" id="node2" href="classOpenList.html#a30389d1027eb01f6d84b62d33bafbfd5" title="OpenList::get_involved\l_heuristics" alt="" coords="217,118,372,159"/><area shape="rect" id="node3" href="globals_8cc.html#aaf27ff6b3348217d127cd0f43a4d6b06" title="g_initial_state" alt="" coords="243,184,346,211"/><area shape="rect" id="node12" href="classSearchEngine.html#aa2ea8c75e8d3157d6d247ce89f0d792a" title="SearchEngine::get_context" alt="" coords="205,235,384,261"/><area shape="rect" id="node14" href="classOpenList.html#aa1a799e111a9b8f1972c63853be14108" title="OpenList::is_dead_end" alt="" coords="217,285,372,312"/><area shape="rect" id="node15" href="classSearchProgress.html#a9235b86df0c6cba7cc17c67e7ec5519f" title="SearchProgress::check\l_progress" alt="" coords="215,337,374,378"/><area shape="rect" id="node20" href="classEagerSearch.html#a26e022f6530c43f07de448529d79bfda" title="EagerSearch::print\l_checkpoint_line" alt="" coords="229,454,360,495"/><area shape="rect" id="node24" href="classSearchSpace.html#a9ce30b006d01420e904454592117c4ad" title="SearchSpace::get_node" alt="" coords="214,520,375,547"/><area shape="rect" id="node26" href="classSearchNode.html#a3fa77436f58af06a61bace73f0976345" title="SearchNode::open_initial" alt="" coords="211,571,378,597"/><area shape="rect" id="node27" href="classOpenList.html#a054ebb8337007378b53bc3712afd9916" title="OpenList::insert" alt="" coords="237,621,352,648"/><area shape="rect" id="node28" href="search__engine_8cc.html#a24e30638c33c2f680999742bf577575a" title="print_initial_h_values" alt="" coords="223,403,366,429"/><area shape="rect" id="node4" href="classStateRegistry.html#ab557f312201e32d5de2b6ccf7ef6df87" title="StateRegistry::get\l_initial_state" alt="" coords="453,147,581,189"/><area shape="rect" id="node5" href="classIntPacker.html#a09cea124402536a933145360f33b0891" title="IntPacker::get_num_bins" alt="" coords="653,213,819,240"/><area shape="rect" id="node6" href="classIntPacker.html#a12f8374a73cad207e16d5ee969a9da13" title="IntPacker::set" alt="" coords="883,172,987,199"/><area shape="rect" id="node7" href="classAxiomEvaluator.html#a470288573fe4c91aeedaa4b36dc7c4e1" title="AxiomEvaluator::evaluate" alt="" coords="651,31,821,57"/><area shape="rect" id="node10" href="classSegmentedArrayVector.html#a81171a5200eb39fe7a77fff837bec77c" title="SegmentedArrayVector\l::push_back" alt="" coords="657,82,815,123"/><area shape="rect" id="node11" href="classStateRegistry.html#ae2f555f6a879115edb9e0045169730a6" title="StateRegistry::lookup\l_state" alt="" coords="662,147,810,189"/><area shape="rect" id="node8" href="globals_8cc.html#ad0b203d5c2a31a3e811c5d3c171980d8" title="has_axioms" alt="" coords="889,5,981,32"/><area shape="rect" id="node9" href="classIntPacker.html#ab8a207a1f2fea76a796bf85ff2236297" title="IntPacker::get" alt="" coords="883,56,987,83"/><area shape="rect" id="node13" href="classSearchStatistics.html#aca5c210b6a0b0145899c61ef238b9ae1" title="SearchStatistics::inc\l_evaluated_states" alt="" coords="446,213,589,254"/><area shape="rect" id="node16" href="classEvaluationContext.html#a0935497a024c42e47e105c2247a2f492" title="EvaluationContext::\lget_cache" alt="" coords="449,330,586,371"/><area shape="rect" id="node17" href="classHeuristicCache.html#a868bc67ecfc8c58b4828783dcc03f7cc" title="HeuristicCache::for\l_each_heuristic_value" alt="" coords="442,395,593,437"/><area shape="rect" id="node18" href="classEvaluationResult.html#a19bbe29131c228b9282a0122525936f6" title="EvaluationResult::get\l_h_value" alt="" coords="444,461,591,502"/><area shape="rect" id="node19" href="classHeuristic.html#a537447ab5e02c23e085246f188abf37d" title="Heuristic::get_description" alt="" coords="432,279,603,305"/><area shape="rect" id="node21" href="classSearchStatistics.html#a3b4ebaca2e03995e8f793821b7232479" title="SearchStatistics::print\l_basic_statistics" alt="" coords="442,591,593,633"/><area shape="rect" id="node22" href="utilities_8cc.html#ad6e89b0db19bdac1afc50dcaf196d27d" title="get_peak_memory_in_kb" alt="" coords="653,599,819,625"/><area shape="rect" id="node23" href="utilities_8h.html#a44ab437244c3326f1cd4093f129e0a91" title="unused_parameter" alt="" coords="870,599,999,625"/><area shape="rect" id="node25" href="classGlobalState.html#adeb4f6ce9b02c7bf478ac0785f5c52db" title="GlobalState::get_id" alt="" coords="451,657,584,684"/><area shape="rect" id="node29" href="classEvaluationResult.html#abdfc41d11307fe76818ee1ac70e33a12" title="EvaluationResult::is\l_infinite" alt="" coords="448,526,587,567"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a486ff0b490b899fdfb359cf14a8d6459"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EagerSearch::per_node </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGlobalState.html">GlobalState</a>&#160;</td>
+          <td class="paramname"><em>succ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classGlobalState.html">GlobalState</a>&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classGlobalOperator.html">GlobalOperator</a> *&#160;</td>
+          <td class="paramname"><em>op</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_preferred</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classEagerSearch_a486ff0b490b899fdfb359cf14a8d6459_cgraph.png" border="0" usemap="#classEagerSearch_a486ff0b490b899fdfb359cf14a8d6459_cgraph" alt=""/></div>
+<map name="classEagerSearch_a486ff0b490b899fdfb359cf14a8d6459_cgraph" id="classEagerSearch_a486ff0b490b899fdfb359cf14a8d6459_cgraph">
+<area shape="rect" id="node2" href="classSearchSpace.html#a9ce30b006d01420e904454592117c4ad" title="SearchSpace::get_node" alt="" coords="479,121,641,148"/><area shape="rect" id="node4" href="classEagerSearch.html#a8533416de3639b7445903a0734b54fd7" title="EagerSearch::per_node_new" alt="" coords="213,303,403,329"/><area shape="rect" id="node7" href="classSearchEngine.html#aaa3c4e315c3d7d5e7a63107f8a03ffa0" title="SearchEngine::get_adjusted_cost" alt="" coords="451,572,669,599"/><area shape="rect" id="node23" href="classEagerSearch.html#a20d1b0865654a2e43268bacbf7db9263" title="EagerSearch::per_node\l_reopen" alt="" coords="229,169,387,210"/><area shape="rect" id="node3" href="classGlobalState.html#adeb4f6ce9b02c7bf478ac0785f5c52db" title="GlobalState::get_id" alt="" coords="737,113,871,140"/><area shape="rect" id="node5" href="classSearchEngine.html#aa2ea8c75e8d3157d6d247ce89f0d792a" title="SearchEngine::get_context" alt="" coords="471,172,649,199"/><area shape="rect" id="node10" href="classOpenList.html#aa1a799e111a9b8f1972c63853be14108" title="OpenList::is_dead_end" alt="" coords="483,521,637,548"/><area shape="rect" id="node11" href="classOpenList.html#a054ebb8337007378b53bc3712afd9916" title="OpenList::insert" alt="" coords="503,223,617,249"/><area shape="rect" id="node12" href="classSearchProgress.html#a9235b86df0c6cba7cc17c67e7ec5519f" title="SearchProgress::check\l_progress" alt="" coords="481,390,639,431"/><area shape="rect" id="node17" href="classEagerSearch.html#a26e022f6530c43f07de448529d79bfda" title="EagerSearch::print\l_checkpoint_line" alt="" coords="495,455,625,497"/><area shape="rect" id="node21" href="classEagerSearch.html#a55d06001e2a981acfc0a22cc4d510150" title="EagerSearch::reward\l_progress" alt="" coords="488,325,632,366"/><area shape="rect" id="node6" href="classSearchStatistics.html#aca5c210b6a0b0145899c61ef238b9ae1" title="SearchStatistics::inc\l_evaluated_states" alt="" coords="733,165,875,206"/><area shape="rect" id="node8" href="operator__cost_8cc.html#adaa34fd9ebd06eaf08ea12b09344c6eb" title="get_adjusted_action_cost" alt="" coords="719,596,889,623"/><area shape="rect" id="node9" href="globals_8cc.html#a5a7097355229b8b7cf2239c1d6f7eff3" title="is_unit_cost" alt="" coords="977,596,1069,623"/><area shape="rect" id="node13" href="classEvaluationContext.html#a0935497a024c42e47e105c2247a2f492" title="EvaluationContext::\lget_cache" alt="" coords="735,282,873,323"/><area shape="rect" id="node14" href="classHeuristicCache.html#a868bc67ecfc8c58b4828783dcc03f7cc" title="HeuristicCache::for\l_each_heuristic_value" alt="" coords="729,347,879,389"/><area shape="rect" id="node15" href="classEvaluationResult.html#a19bbe29131c228b9282a0122525936f6" title="EvaluationResult::get\l_h_value" alt="" coords="731,413,877,454"/><area shape="rect" id="node16" href="classHeuristic.html#a537447ab5e02c23e085246f188abf37d" title="Heuristic::get_description" alt="" coords="719,479,889,505"/><area shape="rect" id="node18" href="classSearchStatistics.html#a3b4ebaca2e03995e8f793821b7232479" title="SearchStatistics::print\l_basic_statistics" alt="" coords="729,530,879,571"/><area shape="rect" id="node19" href="utilities_8cc.html#ad6e89b0db19bdac1afc50dcaf196d27d" title="get_peak_memory_in_kb" alt="" coords="939,537,1106,564"/><area shape="rect" id="node20" href="utilities_8h.html#a44ab437244c3326f1cd4093f129e0a91" title="unused_parameter" alt="" coords="1155,537,1285,564"/><area shape="rect" id="node22" href="classOpenList.html#a294fefe0445d28d37e322ef6358155ff" title="OpenList::boost_preferred" alt="" coords="718,231,890,257"/><area shape="rect" id="node24" href="classSearchStatistics.html#a6aec8829af5092c6227c71277b1ea7e8" title="SearchStatistics::inc\l_reopened" alt="" coords="489,5,631,46"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classEagerSearch_a486ff0b490b899fdfb359cf14a8d6459_icgraph.png" border="0" usemap="#classEagerSearch_a486ff0b490b899fdfb359cf14a8d6459_icgraph" alt=""/></div>
+<map name="classEagerSearch_a486ff0b490b899fdfb359cf14a8d6459_icgraph" id="classEagerSearch_a486ff0b490b899fdfb359cf14a8d6459_icgraph">
+<area shape="rect" id="node2" href="classEagerSearch.html#a579812c68f5321a6eb9e6fe0da59e14c" title="EagerSearch::step" alt="" coords="213,5,344,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8533416de3639b7445903a0734b54fd7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EagerSearch::per_node_new </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGlobalState.html">GlobalState</a>&#160;</td>
+          <td class="paramname"><em>succ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classGlobalState.html">GlobalState</a>&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classGlobalOperator.html">GlobalOperator</a> *&#160;</td>
+          <td class="paramname"><em>op</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_preferred</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classEagerSearch_a8533416de3639b7445903a0734b54fd7_cgraph.png" border="0" usemap="#classEagerSearch_a8533416de3639b7445903a0734b54fd7_cgraph" alt=""/></div>
+<map name="classEagerSearch_a8533416de3639b7445903a0734b54fd7_cgraph" id="classEagerSearch_a8533416de3639b7445903a0734b54fd7_cgraph">
+<area shape="rect" id="node2" href="classSearchSpace.html#a9ce30b006d01420e904454592117c4ad" title="SearchSpace::get_node" alt="" coords="271,5,433,32"/><area shape="rect" id="node3" href="classGlobalState.html#adeb4f6ce9b02c7bf478ac0785f5c52db" title="GlobalState::get_id" alt="" coords="529,16,663,43"/><area shape="rect" id="node4" href="classSearchEngine.html#aa2ea8c75e8d3157d6d247ce89f0d792a" title="SearchEngine::get_context" alt="" coords="263,107,441,133"/><area shape="rect" id="node6" href="classSearchEngine.html#aaa3c4e315c3d7d5e7a63107f8a03ffa0" title="SearchEngine::get_adjusted_cost" alt="" coords="243,157,461,184"/><area shape="rect" id="node9" href="classOpenList.html#aa1a799e111a9b8f1972c63853be14108" title="OpenList::is_dead_end" alt="" coords="275,208,429,235"/><area shape="rect" id="node10" href="classOpenList.html#a054ebb8337007378b53bc3712afd9916" title="OpenList::insert" alt="" coords="295,259,409,285"/><area shape="rect" id="node11" href="classSearchProgress.html#a9235b86df0c6cba7cc17c67e7ec5519f" title="SearchProgress::check\l_progress" alt="" coords="273,310,431,351"/><area shape="rect" id="node16" href="classEagerSearch.html#a26e022f6530c43f07de448529d79bfda" title="EagerSearch::print\l_checkpoint_line" alt="" coords="287,386,417,427"/><area shape="rect" id="node20" href="classEagerSearch.html#a55d06001e2a981acfc0a22cc4d510150" title="EagerSearch::reward\l_progress" alt="" coords="280,474,424,515"/><area shape="rect" id="node5" href="classSearchStatistics.html#aca5c210b6a0b0145899c61ef238b9ae1" title="SearchStatistics::inc\l_evaluated_states" alt="" coords="525,77,667,118"/><area shape="rect" id="node7" href="operator__cost_8cc.html#adaa34fd9ebd06eaf08ea12b09344c6eb" title="get_adjusted_action_cost" alt="" coords="511,143,681,169"/><area shape="rect" id="node8" href="globals_8cc.html#a5a7097355229b8b7cf2239c1d6f7eff3" title="is_unit_cost" alt="" coords="769,143,861,169"/><area shape="rect" id="node12" href="classEvaluationContext.html#a0935497a024c42e47e105c2247a2f492" title="EvaluationContext::\lget_cache" alt="" coords="527,194,665,235"/><area shape="rect" id="node13" href="classHeuristicCache.html#a868bc67ecfc8c58b4828783dcc03f7cc" title="HeuristicCache::for\l_each_heuristic_value" alt="" coords="521,259,671,301"/><area shape="rect" id="node14" href="classEvaluationResult.html#a19bbe29131c228b9282a0122525936f6" title="EvaluationResult::get\l_h_value" alt="" coords="523,325,669,366"/><area shape="rect" id="node15" href="classHeuristic.html#a537447ab5e02c23e085246f188abf37d" title="Heuristic::get_description" alt="" coords="511,391,681,417"/><area shape="rect" id="node17" href="classSearchStatistics.html#a3b4ebaca2e03995e8f793821b7232479" title="SearchStatistics::print\l_basic_statistics" alt="" coords="521,442,671,483"/><area shape="rect" id="node18" href="utilities_8cc.html#ad6e89b0db19bdac1afc50dcaf196d27d" title="get_peak_memory_in_kb" alt="" coords="731,449,898,476"/><area shape="rect" id="node19" href="utilities_8h.html#a44ab437244c3326f1cd4093f129e0a91" title="unused_parameter" alt="" coords="947,449,1077,476"/><area shape="rect" id="node21" href="classOpenList.html#a294fefe0445d28d37e322ef6358155ff" title="OpenList::boost_preferred" alt="" coords="510,508,682,535"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classEagerSearch_a8533416de3639b7445903a0734b54fd7_icgraph.png" border="0" usemap="#classEagerSearch_a8533416de3639b7445903a0734b54fd7_icgraph" alt=""/></div>
+<map name="classEagerSearch_a8533416de3639b7445903a0734b54fd7_icgraph" id="classEagerSearch_a8533416de3639b7445903a0734b54fd7_icgraph">
+<area shape="rect" id="node2" href="classEagerSearch.html#a486ff0b490b899fdfb359cf14a8d6459" title="EagerSearch::per_node" alt="" coords="243,5,402,32"/><area shape="rect" id="node3" href="classEagerSearch.html#a579812c68f5321a6eb9e6fe0da59e14c" title="EagerSearch::step" alt="" coords="451,5,581,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a20d1b0865654a2e43268bacbf7db9263"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EagerSearch::per_node_reopen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGlobalState.html">GlobalState</a>&#160;</td>
+          <td class="paramname"><em>succ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classGlobalState.html">GlobalState</a>&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classGlobalOperator.html">GlobalOperator</a> *&#160;</td>
+          <td class="paramname"><em>op</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_preferred</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classEagerSearch_a20d1b0865654a2e43268bacbf7db9263_cgraph.png" border="0" usemap="#classEagerSearch_a20d1b0865654a2e43268bacbf7db9263_cgraph" alt=""/></div>
+<map name="classEagerSearch_a20d1b0865654a2e43268bacbf7db9263_cgraph" id="classEagerSearch_a20d1b0865654a2e43268bacbf7db9263_cgraph">
+<area shape="rect" id="node2" href="classSearchSpace.html#a9ce30b006d01420e904454592117c4ad" title="SearchSpace::get_node" alt="" coords="222,5,383,32"/><area shape="rect" id="node3" href="classGlobalState.html#adeb4f6ce9b02c7bf478ac0785f5c52db" title="GlobalState::get_id" alt="" coords="445,31,579,57"/><area shape="rect" id="node4" href="classSearchStatistics.html#a6aec8829af5092c6227c71277b1ea7e8" title="SearchStatistics::inc\l_reopened" alt="" coords="231,107,374,149"/><area shape="rect" id="node5" href="classSearchEngine.html#aa2ea8c75e8d3157d6d247ce89f0d792a" title="SearchEngine::get_context" alt="" coords="213,173,392,200"/><area shape="rect" id="node7" href="classOpenList.html#a054ebb8337007378b53bc3712afd9916" title="OpenList::insert" alt="" coords="245,224,360,251"/><area shape="rect" id="node6" href="classSearchStatistics.html#aca5c210b6a0b0145899c61ef238b9ae1" title="SearchStatistics::inc\l_evaluated_states" alt="" coords="441,166,583,207"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classEagerSearch_a20d1b0865654a2e43268bacbf7db9263_icgraph.png" border="0" usemap="#classEagerSearch_a20d1b0865654a2e43268bacbf7db9263_icgraph" alt=""/></div>
+<map name="classEagerSearch_a20d1b0865654a2e43268bacbf7db9263_icgraph" id="classEagerSearch_a20d1b0865654a2e43268bacbf7db9263_icgraph">
+<area shape="rect" id="node2" href="classEagerSearch.html#a486ff0b490b899fdfb359cf14a8d6459" title="EagerSearch::per_node" alt="" coords="214,12,373,39"/><area shape="rect" id="node3" href="classEagerSearch.html#a579812c68f5321a6eb9e6fe0da59e14c" title="EagerSearch::step" alt="" coords="421,12,552,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a26e022f6530c43f07de448529d79bfda"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EagerSearch::print_checkpoint_line </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classEagerSearch_a26e022f6530c43f07de448529d79bfda_cgraph.png" border="0" usemap="#classEagerSearch_a26e022f6530c43f07de448529d79bfda_cgraph" alt=""/></div>
+<map name="classEagerSearch_a26e022f6530c43f07de448529d79bfda_cgraph" id="classEagerSearch_a26e022f6530c43f07de448529d79bfda_cgraph">
+<area shape="rect" id="node2" href="classSearchStatistics.html#a3b4ebaca2e03995e8f793821b7232479" title="SearchStatistics::print\l_basic_statistics" alt="" coords="185,5,335,46"/><area shape="rect" id="node3" href="utilities_8cc.html#ad6e89b0db19bdac1afc50dcaf196d27d" title="get_peak_memory_in_kb" alt="" coords="385,12,551,39"/><area shape="rect" id="node4" href="utilities_8h.html#a44ab437244c3326f1cd4093f129e0a91" title="unused_parameter" alt="" coords="601,12,730,39"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classEagerSearch_a26e022f6530c43f07de448529d79bfda_icgraph.png" border="0" usemap="#classEagerSearch_a26e022f6530c43f07de448529d79bfda_icgraph" alt=""/></div>
+<map name="classEagerSearch_a26e022f6530c43f07de448529d79bfda_icgraph" id="classEagerSearch_a26e022f6530c43f07de448529d79bfda_icgraph">
+<area shape="rect" id="node2" href="classEagerSearch.html#ad2a84b79cbb0db13f18d9e32996303e0" title="EagerSearch::initialize" alt="" coords="203,5,355,32"/><area shape="rect" id="node3" href="classEagerSearch.html#a8533416de3639b7445903a0734b54fd7" title="EagerSearch::per_node_new" alt="" coords="184,56,373,83"/><area shape="rect" id="node4" href="classEagerSearch.html#a486ff0b490b899fdfb359cf14a8d6459" title="EagerSearch::per_node" alt="" coords="422,56,581,83"/><area shape="rect" id="node5" href="classEagerSearch.html#a579812c68f5321a6eb9e6fe0da59e14c" title="EagerSearch::step" alt="" coords="629,56,760,83"/></map>
 </div>
 </p>
 
@@ -317,6 +619,47 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a55d06001e2a981acfc0a22cc4d510150"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EagerSearch::reward_progress </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classEagerSearch_a55d06001e2a981acfc0a22cc4d510150_cgraph.png" border="0" usemap="#classEagerSearch_a55d06001e2a981acfc0a22cc4d510150_cgraph" alt=""/></div>
+<map name="classEagerSearch_a55d06001e2a981acfc0a22cc4d510150_cgraph" id="classEagerSearch_a55d06001e2a981acfc0a22cc4d510150_cgraph">
+<area shape="rect" id="node2" href="classOpenList.html#a294fefe0445d28d37e322ef6358155ff" title="OpenList::boost_preferred" alt="" coords="198,12,370,39"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classEagerSearch_a55d06001e2a981acfc0a22cc4d510150_icgraph.png" border="0" usemap="#classEagerSearch_a55d06001e2a981acfc0a22cc4d510150_icgraph" alt=""/></div>
+<map name="classEagerSearch_a55d06001e2a981acfc0a22cc4d510150_icgraph" id="classEagerSearch_a55d06001e2a981acfc0a22cc4d510150_icgraph">
+<area shape="rect" id="node2" href="classEagerSearch.html#a8533416de3639b7445903a0734b54fd7" title="EagerSearch::per_node_new" alt="" coords="197,12,387,39"/><area shape="rect" id="node3" href="classEagerSearch.html#a486ff0b490b899fdfb359cf14a8d6459" title="EagerSearch::per_node" alt="" coords="435,12,594,39"/><area shape="rect" id="node4" href="classEagerSearch.html#a579812c68f5321a6eb9e6fe0da59e14c" title="EagerSearch::step" alt="" coords="643,12,773,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a579812c68f5321a6eb9e6fe0da59e14c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -333,7 +676,7 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -345,9 +688,30 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classEagerSearch_a579812c68f5321a6eb9e6fe0da59e14c_cgraph.png" border="0" usemap="#classEagerSearch_a579812c68f5321a6eb9e6fe0da59e14c_cgraph" alt=""/></div>
 <map name="classEagerSearch_a579812c68f5321a6eb9e6fe0da59e14c_cgraph" id="classEagerSearch_a579812c68f5321a6eb9e6fe0da59e14c_cgraph">
-<area shape="rect" id="node2" href="classSearchNode.html#a2b9024c1cefb9d38663d9b6c24b060e6" title="SearchNode::get_state" alt="" coords="459,5,615,32"/><area shape="rect" id="node4" href="classSearchEngine.html#a4df85a6125380a052341794a4540c902" title="SearchEngine::check\l_goal_and_set_plan" alt="" coords="220,125,367,166"/><area shape="rect" id="node8" href="classSuccessorGenerator.html#aaa61482e0e3e3d6997b961e5bdb76ee7" title="SuccessorGenerator\l::generate_applicable_ops" alt="" coords="207,573,380,614"/><area shape="rect" id="node9" href="classSearchNode.html#aa299b21012d7fa1f90c3bccef5df8439" title="SearchNode::get_g" alt="" coords="226,639,361,665"/><area shape="rect" id="node10" href="classEvaluationContext.html#a69f4a63ba56f594d3a5fa67e357e7807" title="EvaluationContext::\lget_preferred_operators" alt="" coords="214,690,373,731"/><area shape="rect" id="node16" href="classSearchNode.html#a96eb7376415f022f090d45b68e5a7b90" title="SearchNode::get_real_g" alt="" coords="212,887,375,913"/><area shape="rect" id="node17" href="classStateRegistry.html#af6ec9371ef06ba1031e705cf538e40ca" title="StateRegistry::get\l_successor_state" alt="" coords="229,435,357,477"/><area shape="rect" id="node26" href="classSearchStatistics.html#a076f18cb5b7bce47b93b7bfe3ca81bfe" title="SearchStatistics::inc\l_generated" alt="" coords="222,938,365,979"/><area shape="rect" id="node27" href="classSearchSpace.html#a9ce30b006d01420e904454592117c4ad" title="SearchSpace::get_node" alt="" coords="213,1004,374,1031"/><area shape="rect" id="node28" href="classGlobalState.html#adeb4f6ce9b02c7bf478ac0785f5c52db" title="GlobalState::get_id" alt="" coords="471,1055,604,1081"/><area shape="rect" id="node29" href="classSearchNode.html#a122f43b9dcf7e5be7aca4b81bfcc9b5b" title="SearchNode::is_dead_end" alt="" coords="206,1105,381,1132"/><area shape="rect" id="node30" href="classSearchNode.html#a8b39e4ab527b2ff96fac4cebd0dc03b2" title="SearchNode::is_new" alt="" coords="222,1156,365,1183"/><area shape="rect" id="node31" href="classSearchNode.html#ad5db250a2114bbb97c16f19f4ada06e7" title="SearchNode::set_h_dirty" alt="" coords="210,1207,377,1233"/><area shape="rect" id="node32" href="classSearchEngine.html#aaa3c4e315c3d7d5e7a63107f8a03ffa0" title="SearchEngine::get_adjusted_cost" alt="" coords="185,1257,402,1284"/><area shape="rect" id="node34" href="classSearchStatistics.html#aca5c210b6a0b0145899c61ef238b9ae1" title="SearchStatistics::inc\l_evaluated_states" alt="" coords="222,1477,365,1518"/><area shape="rect" id="node35" href="classSearchNode.html#a2c5240c7948a08d397c0fe235403c3ac" title="SearchNode::clear_h\l_dirty" alt="" coords="221,1542,365,1583"/><area shape="rect" id="node36" href="classSearchNode.html#aa18be25ebe8b3ffaef2065f27382eeb5" title="SearchNode::mark_as\l_dead_end" alt="" coords="217,1607,369,1649"/><area shape="rect" id="node37" href="classSearchStatistics.html#af23d412b185b33b7f7f0486a7cca853c" title="SearchStatistics::inc\l_dead_ends" alt="" coords="222,1673,365,1714"/><area shape="rect" id="node38" href="classEvaluationContext.html#a0922a801e720bb65221ed95bad2c614a" title="EvaluationContext::\lget_heuristic_value" alt="" coords="225,755,362,797"/><area shape="rect" id="node40" href="classSearchNode.html#a6ad78d5b4a0b76e49ba62182b72a05a5" title="SearchNode::open" alt="" coords="228,1375,359,1401"/><area shape="rect" id="node43" href="classSearchProgress.html#a9235b86df0c6cba7cc17c67e7ec5519f" title="SearchProgress::check\l_progress" alt="" coords="214,821,373,862"/><area shape="rect" id="node47" href="classSearchNode.html#a62bdaff59af0aa9c5f712cded05b97ef" title="SearchNode::is_closed" alt="" coords="215,1739,372,1765"/><area shape="rect" id="node48" href="classSearchStatistics.html#a6aec8829af5092c6227c71277b1ea7e8" title="SearchStatistics::inc\l_reopened" alt="" coords="222,1790,365,1831"/><area shape="rect" id="node49" href="classSearchNode.html#ace9cdda641a7e73df265c3d8141aa236" title="SearchNode::reopen" alt="" coords="223,1425,364,1452"/><area shape="rect" id="node50" href="classSearchNode.html#a4790c765cd6123d95281c598c6daf064" title="SearchNode::update\l_parent" alt="" coords="223,1309,364,1350"/><area shape="rect" id="node3" href="classStateRegistry.html#ae2f555f6a879115edb9e0045169730a6" title="StateRegistry::lookup\l_state" alt="" coords="685,150,833,191"/><area shape="rect" id="node5" href="globals_8cc.html#a2de7ebadf14705b7979e647a6271fef3" title="test_goal" alt="" coords="500,107,575,133"/><area shape="rect" id="node6" href="classSearchSpace.html#a51ba7bde5c15acbceb7ed22e81ca7e05" title="SearchSpace::trace_path" alt="" coords="453,157,622,184"/><area shape="rect" id="node7" href="classSearchEngine.html#aa45b79c8fca7258b59f30545525dcdb5" title="SearchEngine::set_plan" alt="" coords="457,56,617,83"/><area shape="rect" id="node11" href="classEvaluationContext.html#a74c1d7b061b2bb69a481faa4abac62c0" title="EvaluationContext::\lget_result" alt="" coords="469,742,606,783"/><area shape="rect" id="node15" href="classEvaluationResult.html#ac4063d510fb0ef6e2e7085f1e9c37ce9" title="EvaluationResult::get\l_preferred_operators" alt="" coords="464,677,611,718"/><area shape="rect" id="node12" href="classEvaluationResult.html#ad56b6a8dbff00673aedb984fbe6f72a5" title="EvaluationResult::is\l_uninitialized" alt="" coords="689,677,828,718"/><area shape="rect" id="node13" href="classScalarEvaluator.html#a8ffb99b0f8f63e34183a3245a247a9ec" title="ScalarEvaluator::compute\l_result" alt="" coords="673,742,845,783"/><area shape="rect" id="node14" href="classSearchStatistics.html#a57f71a965c7693054ec18ba1b25a557f" title="SearchStatistics::inc\l_evaluations" alt="" coords="687,807,830,849"/><area shape="rect" id="node18" href="classGlobalOperator.html#a0c9c5fce70001d45a29d8d3d4bd745bf" title="GlobalOperator::is\l_axiom" alt="" coords="474,377,601,418"/><area shape="rect" id="node19" href="classSegmentedArrayVector.html#a81171a5200eb39fe7a77fff837bec77c" title="SegmentedArrayVector\l::push_back" alt="" coords="459,494,616,535"/><area shape="rect" id="node20" href="classSegmentedArrayVector.html#a6efe1e990f0e94d743b8d5e996be32af" title="SegmentedArrayVector\l::size" alt="" coords="459,611,616,653"/><area shape="rect" id="node21" href="classGlobalOperator.html#a70bea7144ee8af6f526f6a29579da51f" title="GlobalOperator::get\l_effects" alt="" coords="470,259,605,301"/><area shape="rect" id="node22" href="structGlobalEffect.html#af1f916d79e074b7a8abf058215a4ac77" title="GlobalEffect::does_fire" alt="" coords="460,325,615,352"/><area shape="rect" id="node24" href="classIntPacker.html#a12f8374a73cad207e16d5ee969a9da13" title="IntPacker::set" alt="" coords="707,501,811,528"/><area shape="rect" id="node25" href="classAxiomEvaluator.html#a470288573fe4c91aeedaa4b36dc7c4e1" title="AxiomEvaluator::evaluate" alt="" coords="452,560,623,587"/><area shape="rect" id="node23" href="task__tools_8h.html#aaae02e73e92bfeb1134c8a16bc7a7fbe" title="is_applicable" alt="" coords="710,325,807,352"/><area shape="rect" id="node33" href="operator__cost_8cc.html#adaa34fd9ebd06eaf08ea12b09344c6eb" title="get_adjusted_action_cost" alt="" coords="452,1320,623,1347"/><area shape="rect" id="node39" href="classEvaluationResult.html#a19bbe29131c228b9282a0122525936f6" title="EvaluationResult::get\l_h_value" alt="" coords="464,807,611,849"/><area shape="rect" id="node41" href="classGlobalOperator.html#a599fca43db2814e373553974b1237e99" title="GlobalOperator::get_cost" alt="" coords="454,1424,621,1451"/><area shape="rect" id="node42" href="classSearchNode.html#a1683291b8c3cc021eebc962a33a188d8" title="SearchNode::get_state_id" alt="" coords="451,1373,624,1400"/><area shape="rect" id="node44" href="classEvaluationContext.html#a0935497a024c42e47e105c2247a2f492" title="EvaluationContext::\lget_cache" alt="" coords="469,873,606,914"/><area shape="rect" id="node45" href="classHeuristicCache.html#a868bc67ecfc8c58b4828783dcc03f7cc" title="HeuristicCache::for\l_each_heuristic_value" alt="" coords="462,938,613,979"/><area shape="rect" id="node46" href="classHeuristic.html#a537447ab5e02c23e085246f188abf37d" title="Heuristic::get_description" alt="" coords="452,1004,623,1031"/></map>
+<area shape="rect" id="node2" href="classEagerSearch.html#a03a759ac6eb4941eada1a71bc8809882" title="EagerSearch::fetch\l_next_node" alt="" coords="203,778,338,819"/><area shape="rect" id="node19" href="classSearchEngine.html#a4df85a6125380a052341794a4540c902" title="SearchEngine::check\l_goal_and_set_plan" alt="" coords="197,1091,344,1133"/><area shape="rect" id="node23" href="classSuccessorGenerator.html#aaa61482e0e3e3d6997b961e5bdb76ee7" title="SuccessorGenerator\l::generate_applicable_ops" alt="" coords="184,1157,357,1198"/><area shape="rect" id="node24" href="classSearchEngine.html#aa2ea8c75e8d3157d6d247ce89f0d792a" title="SearchEngine::get_context" alt="" coords="663,456,841,483"/><area shape="rect" id="node26" href="classEvaluationContext.html#a808f44a988b1b57089b73c548131ec87" title="EvaluationContext::\lis_heuristic_infinite" alt="" coords="202,1298,339,1339"/><area shape="rect" id="node32" href="classEvaluationContext.html#a69f4a63ba56f594d3a5fa67e357e7807" title="EvaluationContext::\lget_preferred_operators" alt="" coords="191,1233,350,1274"/><area shape="rect" id="node34" href="classStateRegistry.html#af6ec9371ef06ba1031e705cf538e40ca" title="StateRegistry::get\l_successor_state" alt="" coords="688,937,816,978"/><area shape="rect" id="node40" href="classSearchStatistics.html#a076f18cb5b7bce47b93b7bfe3ca81bfe" title="SearchStatistics::inc\l_generated" alt="" coords="199,1363,342,1405"/><area shape="rect" id="node41" href="classEagerSearch.html#a486ff0b490b899fdfb359cf14a8d6459" title="EagerSearch::per_node" alt="" coords="191,397,350,424"/><area shape="rect" id="node3" href="classOpenList.html#aa17af208ac1962d3005cbe5d4a93e9dd" title="OpenList::empty" alt="" coords="441,608,559,635"/><area shape="rect" id="node4" href="classSearchSpace.html#a9ce30b006d01420e904454592117c4ad" title="SearchSpace::get_node" alt="" coords="671,507,833,533"/><area shape="rect" id="node6" href="globals_8cc.html#aaf27ff6b3348217d127cd0f43a4d6b06" title="g_initial_state" alt="" coords="449,709,551,736"/><area shape="rect" id="node13" href="classStateRegistry.html#ae2f555f6a879115edb9e0045169730a6" title="StateRegistry::lookup\l_state" alt="" coords="921,651,1069,693"/><area shape="rect" id="node14" href="classOpenList.html#ae225b03466861773c3cab933eb1fc977" title="OpenList::remove_min" alt="" coords="423,760,577,787"/><area shape="rect" id="node15" href="classSearchNode.html#a62bdaff59af0aa9c5f712cded05b97ef" title="SearchNode::is_closed" alt="" coords="421,811,579,837"/><area shape="rect" id="node16" href="classSearchNode.html#ada089a292fcae21387d019e357cf4928" title="SearchNode::close" alt="" coords="433,861,567,888"/><area shape="rect" id="node17" href="classSearchNode.html#a122f43b9dcf7e5be7aca4b81bfcc9b5b" title="SearchNode::is_dead_end" alt="" coords="413,912,587,939"/><area shape="rect" id="node18" href="classSearchStatistics.html#a375dc81d063973c7b2adeded062726f9" title="SearchStatistics::inc\l_expanded" alt="" coords="429,963,571,1005"/><area shape="rect" id="node5" href="classGlobalState.html#adeb4f6ce9b02c7bf478ac0785f5c52db" title="GlobalState::get_id" alt="" coords="928,401,1061,428"/><area shape="rect" id="node7" href="classStateRegistry.html#ab557f312201e32d5de2b6ccf7ef6df87" title="StateRegistry::get\l_initial_state" alt="" coords="688,710,816,751"/><area shape="rect" id="node8" href="classIntPacker.html#a12f8374a73cad207e16d5ee969a9da13" title="IntPacker::set" alt="" coords="1128,835,1232,861"/><area shape="rect" id="node9" href="classAxiomEvaluator.html#a470288573fe4c91aeedaa4b36dc7c4e1" title="AxiomEvaluator::evaluate" alt="" coords="909,885,1080,912"/><area shape="rect" id="node12" href="classSegmentedArrayVector.html#a81171a5200eb39fe7a77fff837bec77c" title="SegmentedArrayVector\l::push_back" alt="" coords="916,769,1073,810"/><area shape="rect" id="node10" href="globals_8cc.html#ad0b203d5c2a31a3e811c5d3c171980d8" title="has_axioms" alt="" coords="1134,885,1226,912"/><area shape="rect" id="node11" href="classIntPacker.html#ab8a207a1f2fea76a796bf85ff2236297" title="IntPacker::get" alt="" coords="1128,936,1232,963"/><area shape="rect" id="node20" href="globals_8cc.html#a2de7ebadf14705b7979e647a6271fef3" title="test_goal" alt="" coords="463,1080,537,1107"/><area shape="rect" id="node21" href="classSearchSpace.html#a51ba7bde5c15acbceb7ed22e81ca7e05" title="SearchSpace::trace_path" alt="" coords="415,1131,585,1157"/><area shape="rect" id="node22" href="classSearchEngine.html#aa45b79c8fca7258b59f30545525dcdb5" title="SearchEngine::set_plan" alt="" coords="420,1181,580,1208"/><area shape="rect" id="node25" href="classSearchStatistics.html#aca5c210b6a0b0145899c61ef238b9ae1" title="SearchStatistics::inc\l_evaluated_states" alt="" coords="923,453,1066,494"/><area shape="rect" id="node27" href="classEvaluationContext.html#a74c1d7b061b2bb69a481faa4abac62c0" title="EvaluationContext::\lget_result" alt="" coords="431,1298,569,1339"/><area shape="rect" id="node31" href="classEvaluationResult.html#abdfc41d11307fe76818ee1ac70e33a12" title="EvaluationResult::is\l_infinite" alt="" coords="431,1363,569,1405"/><area shape="rect" id="node28" href="classEvaluationResult.html#ad56b6a8dbff00673aedb984fbe6f72a5" title="EvaluationResult::is\l_uninitialized" alt="" coords="683,1363,821,1405"/><area shape="rect" id="node29" href="classScalarEvaluator.html#a8ffb99b0f8f63e34183a3245a247a9ec" title="ScalarEvaluator::compute\l_result" alt="" coords="666,1233,838,1274"/><area shape="rect" id="node30" href="classSearchStatistics.html#a57f71a965c7693054ec18ba1b25a557f" title="SearchStatistics::inc\l_evaluations" alt="" coords="681,1298,823,1339"/><area shape="rect" id="node33" href="classEvaluationResult.html#ac4063d510fb0ef6e2e7085f1e9c37ce9" title="EvaluationResult::get\l_preferred_operators" alt="" coords="427,1233,573,1274"/><area shape="rect" id="node35" href="classGlobalOperator.html#a0c9c5fce70001d45a29d8d3d4bd745bf" title="GlobalOperator::is\l_axiom" alt="" coords="931,937,1058,978"/><area shape="rect" id="node36" href="classSegmentedArrayVector.html#a6efe1e990f0e94d743b8d5e996be32af" title="SegmentedArrayVector\l::size" alt="" coords="916,1002,1073,1043"/><area shape="rect" id="node37" href="classGlobalOperator.html#a70bea7144ee8af6f526f6a29579da51f" title="GlobalOperator::get\l_effects" alt="" coords="927,1067,1062,1109"/><area shape="rect" id="node38" href="structGlobalEffect.html#af1f916d79e074b7a8abf058215a4ac77" title="GlobalEffect::does_fire" alt="" coords="917,1133,1072,1160"/><area shape="rect" id="node39" href="task__tools_8h.html#aaae02e73e92bfeb1134c8a16bc7a7fbe" title="is_applicable" alt="" coords="1131,1133,1229,1160"/><area shape="rect" id="node42" href="classEagerSearch.html#a8533416de3639b7445903a0734b54fd7" title="EagerSearch::per_node_new" alt="" coords="405,275,595,301"/><area shape="rect" id="node43" href="classSearchEngine.html#aaa3c4e315c3d7d5e7a63107f8a03ffa0" title="SearchEngine::get_adjusted_cost" alt="" coords="643,5,861,32"/><area shape="rect" id="node50" href="classEagerSearch.html#a20d1b0865654a2e43268bacbf7db9263" title="EagerSearch::per_node\l_reopen" alt="" coords="421,390,579,431"/><area shape="rect" id="node45" href="classOpenList.html#aa1a799e111a9b8f1972c63853be14108" title="OpenList::is_dead_end" alt="" coords="675,56,829,83"/><area shape="rect" id="node46" href="classOpenList.html#a054ebb8337007378b53bc3712afd9916" title="OpenList::insert" alt="" coords="695,355,809,381"/><area shape="rect" id="node47" href="classSearchProgress.html#a9235b86df0c6cba7cc17c67e7ec5519f" title="SearchProgress::check\l_progress" alt="" coords="673,107,831,149"/><area shape="rect" id="node48" href="classEagerSearch.html#a26e022f6530c43f07de448529d79bfda" title="EagerSearch::print\l_checkpoint_line" alt="" coords="687,173,817,214"/><area shape="rect" id="node49" href="classEagerSearch.html#a55d06001e2a981acfc0a22cc4d510150" title="EagerSearch::reward\l_progress" alt="" coords="680,238,824,279"/><area shape="rect" id="node44" href="operator__cost_8cc.html#adaa34fd9ebd06eaf08ea12b09344c6eb" title="get_adjusted_action_cost" alt="" coords="909,5,1080,32"/></map>
 </div>
 </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="aab3d66ec650bea335ba9c32767610991"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenList.html">OpenList</a>&lt;<a class="el" href="classStateID.html">StateID</a>&gt;* EagerSearch::open_list</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -358,7 +722,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 22 2015 14:10:30 for Fast Downward by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 14 2015 08:44:02 for Fast Downward by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

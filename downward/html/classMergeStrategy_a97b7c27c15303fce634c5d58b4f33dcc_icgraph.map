@@ -1,0 +1,9 @@
+<map id="MergeStrategy::initialized" name="MergeStrategy::initialized">
+<area shape="rect" id="node2" href="$classMergeDFP.html#aabf51480c8177fe61946b6553395d5c5" title="MergeDFP::get_next" alt="" coords="453,5,595,32"/>
+<area shape="rect" id="node3" href="$classMergeLinear.html#a5b3c8ef66f0c29423bc2e8766f1ff904" title="MergeLinear::get_next" alt="" coords="449,56,599,83"/>
+<area shape="rect" id="node4" href="$classMergeStrategy.html#a12ae514567bc64018e938f4bcbdd89c8" title="MergeStrategy::initialize" alt="" coords="224,165,387,192"/>
+<area shape="rect" id="node8" href="$classMergeStrategy.html#ae5eec0af9ab5b34bc64767926efd9b66" title="MergeStrategy::done" alt="" coords="234,56,377,83"/>
+<area shape="rect" id="node5" href="$classMergeAndShrinkHeuristic.html#a5b55431fcc506a84a6a63e0e60da8662" title="MergeAndShrinkHeuristic\l::MergeAndShrinkHeuristic" alt="" coords="435,107,613,149"/>
+<area shape="rect" id="node6" href="$classMergeDFP.html#a5359eecd4c374b4010a92da9b6302118" title="MergeDFP::initialize" alt="" coords="454,173,594,200"/>
+<area shape="rect" id="node7" href="$classMergeLinear.html#a5acbc93ba6df4ae49170799ec788fb6b" title="MergeLinear::initialize" alt="" coords="450,224,598,251"/>
+</map>

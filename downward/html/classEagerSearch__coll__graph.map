@@ -1,6 +1,9 @@
 <map id="EagerSearch" name="EagerSearch">
-<area shape="rect" id="node2" href="$classSearchEngine.html" title="SearchEngine" alt="" coords="137,96,239,123"/>
-<area shape="rect" id="node3" href="$classSearchSpace.html" title="SearchSpace" alt="" coords="5,5,104,32"/>
-<area shape="rect" id="node4" href="$classSearchStatistics.html" title="SearchStatistics" alt="" coords="129,5,247,32"/>
-<area shape="rect" id="node5" href="$classSearchProgress.html" title="SearchProgress" alt="" coords="272,5,387,32"/>
+<area shape="rect" id="node2" href="$classSearchEngine.html" title="SearchEngine" alt="" coords="251,189,353,216"/>
+<area shape="rect" id="node3" href="$classPerStateInformation.html" title="PerStateInformation\l\&lt; HeuristicCache * \&gt;" alt="" coords="17,83,161,125"/>
+<area shape="rect" id="node4" href="$classPerStateInformationBase.html" title="PerStateInformationBase" alt="" coords="5,5,173,32"/>
+<area shape="rect" id="node5" href="$classSearchSpace.html" title="SearchSpace" alt="" coords="186,91,285,117"/>
+<area shape="rect" id="node6" href="$classSearchStatistics.html" title="SearchStatistics" alt="" coords="310,91,428,117"/>
+<area shape="rect" id="node7" href="$classSearchProgress.html" title="SearchProgress" alt="" coords="453,91,568,117"/>
+<area shape="rect" id="node8" href="$classOpenList.html" title="OpenList\&lt; StateID \&gt;" alt="" coords="378,189,520,216"/>
 </map>

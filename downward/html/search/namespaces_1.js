@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['std',['std',['../namespacestd.html',1,'']]]
+  ['cea_5fheuristic',['cea_heuristic',['../namespacecea__heuristic.html',1,'']]]
 ];

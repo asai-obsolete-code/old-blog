@@ -1,0 +1,7 @@
+<map id="tree::replace" name="tree::replace">
+<area shape="rect" id="node2" href="$classtree.html#a05d5fd71c206efc8ac30df5cd46176bc" title="Erase all children of the node pointed to by iterator. " alt="" coords="149,5,285,32"/>
+<area shape="rect" id="node3" href="$namespacekp.html#a0ecf33bfc4a3c744d6a14d965546e6a2" title="kp::destructor" alt="" coords="337,44,439,71"/>
+<area shape="rect" id="node4" href="$namespacekp.html#a6fa683a92eb3b2cf85eb7e95e7c9a84d" title="kp::constructor" alt="" coords="333,120,443,147"/>
+<area shape="rect" id="node5" href="$classtree.html#a989e89a62693299d3d7eb637957b040a" title="Insert empty node as last/first child of node pointed to by position. " alt="" coords="153,157,281,184"/>
+<area shape="rect" id="node6" href="$classtree.html#a450520d59f3d548a0f5a594571efd304" title="Return iterator to the parent of a node. " alt="" coords="173,208,261,235"/>
+</map>

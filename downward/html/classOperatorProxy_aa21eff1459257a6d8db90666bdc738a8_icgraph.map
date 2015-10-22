@@ -1,0 +1,9 @@
+<map id="OperatorProxy::get_preconditions" name="OperatorProxy::get_preconditions">
+<area shape="rect" id="node2" href="$structCausalGraphBuilder.html#adae0f168f463cd392b11b93430e5c7f9" title="CausalGraphBuilder\l::handle_operator" alt="" coords="187,5,325,46"/>
+<area shape="rect" id="node4" href="$task__tools_8h.html#aaae02e73e92bfeb1134c8a16bc7a7fbe" title="is_applicable" alt="" coords="207,71,305,97"/>
+<area shape="rect" id="node3" href="$classCausalGraph.html#a98f5dcff9e838b52ce3a0c1ab3cd97e1" title="CausalGraph::CausalGraph" alt="" coords="374,12,557,39"/>
+<area shape="rect" id="node5" href="$structGlobalEffect.html#af1f916d79e074b7a8abf058215a4ac77" title="GlobalEffect::does_fire" alt="" coords="388,67,543,93"/>
+<area shape="rect" id="node8" href="$classHeuristic.html#a47b52f0c6ccdb8caa8b3e3e292600324" title="Heuristic::compute\l_result" alt="" coords="399,118,531,159"/>
+<area shape="rect" id="node6" href="$classStateRegistry.html#af6ec9371ef06ba1031e705cf538e40ca" title="StateRegistry::get\l_successor_state" alt="" coords="605,59,733,101"/>
+<area shape="rect" id="node7" href="$classEagerSearch.html#a579812c68f5321a6eb9e6fe0da59e14c" title="EagerSearch::step" alt="" coords="781,67,912,93"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="tree::insert" name="tree::insert">
+<area shape="rect" id="node2" href="$classtree.html#af11d736ea971ab93651350161f5a7535" title="Short&#45;hand to insert topmost node in otherwise empty tree. " alt="" coords="154,107,259,133"/>
+<area shape="rect" id="node11" href="$classtree.html#a683dda6a81ce1e22f93db0feed0a9104" title="Insert node (with children) pointed to by subtree as previous sibling of node pointed to by position..." alt="" coords="139,208,274,235"/>
+<area shape="rect" id="node16" href="$classtree.html#aa6460c1d8ad7508b10d5496cdc8b6f2f" title="Replace node with a new node, making the old node a child of the new node. " alt="" coords="167,259,247,285"/>
+<area shape="rect" id="node3" href="$classtree.html#a5925c012af64fe91a3a5ed39e3ba9d9a" title="tree::tree" alt="" coords="361,56,436,83"/>
+<area shape="rect" id="node4" href="$classtree.html#adb61bebed6c56eb5641b0b7fab7fe625" title="Extract a new tree formed by the range of siblings plus all their children. " alt="" coords="351,107,446,133"/>
+<area shape="rect" id="node5" href="$option__parser__util_8h.html#a6330371c65dec42cd7d0f526cf8bb371" title="subtree" alt="" coords="523,107,589,133"/>
+<area shape="rect" id="node6" href="$classOptionParser.html#ad7112dde4b52cccec43ed4cbd687ddca" title="OptionParser::add_option" alt="" coords="638,77,807,104"/>
+<area shape="rect" id="node10" href="$classTokenParser_3_01std_1_1vector_3_01T_01_4_01_4.html#a657b19ea07150a618aa91ba93b90336d" title="TokenParser\&lt; std::vector\l\&lt; T \&gt; \&gt;::parse" alt="" coords="637,129,808,170"/>
+<area shape="rect" id="node7" href="$classHeuristic.html#a1d20e58f0d2bbd0b9135d1b546545b9e" title="Heuristic::add_options\l_to_parser" alt="" coords="871,5,1023,46"/>
+<area shape="rect" id="node8" href="$classShrinkStrategy.html#a7272db9f60d941ee32904998a51bceb2" title="ShrinkStrategy::add\l_options_to_parser" alt="" coords="878,70,1015,111"/>
+<area shape="rect" id="node9" href="$classSearchEngine.html#a3dcbdd70e489f491e52f4175961916c8" title="SearchEngine::add_options\l_to_parser" alt="" coords="856,135,1037,177"/>
+<area shape="rect" id="node12" href="$classtree.html#ab54b9862f3891737d6b4740d47dd9c68" title="Append the nodes in the from&#45;to range (plus their children) as last/first children of position..." alt="" coords="325,157,472,184"/>
+<area shape="rect" id="node13" href="$classtree.html#aaf01873bc5f94464ab156bffa34ed079" title="tree::prepend_children" alt="" coords="323,208,474,235"/>
+<area shape="rect" id="node14" href="$classtree.html#afc5bef13996f2fd939d83837aa8e090d" title="Replace string of siblings (plus their children) with copy of a new string (with children); see above..." alt="" coords="351,259,446,285"/>
+<area shape="rect" id="node15" href="$classtree.html#a1e3cd901f8f8d8a3da0e1d32e9282db1" title="Merge with other tree, creating new branches and leaves only if they are not already present..." alt="" coords="355,309,443,336"/>
+</map>

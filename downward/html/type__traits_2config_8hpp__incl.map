@@ -1,0 +1,9 @@
+<map id="ext/boost/type_traits/config.hpp" name="ext/boost/type_traits/config.hpp">
+<area shape="rect" id="node2" href="$config_8hpp.html" title="boost/config.hpp" alt="" coords="261,171,379,197"/>
+<area shape="rect" id="node11" href="$detail_2workaround_8hpp.html" title="boost/detail/workaround.hpp" alt="" coords="293,96,477,123"/>
+<area shape="rect" id="node3" href="$select__compiler__config_8hpp.html" title="boost/config/select\l_compiler_config.hpp" alt="" coords="5,246,149,287"/>
+<area shape="rect" id="node4" href="$select__stdlib__config_8hpp.html" title="boost/config/select\l_stdlib_config.hpp" alt="" coords="174,246,305,287"/>
+<area shape="rect" id="node8" href="$select__platform__config_8hpp.html" title="boost/config/select\l_platform_config.hpp" alt="" coords="330,246,472,287"/>
+<area shape="rect" id="node9" href="$suffix_8hpp.html" title="boost/config/suffix.hpp" alt="" coords="497,253,651,280"/>
+<area shape="rect" id="node6" href="$utility_8hpp.html" title="boost/config/no_tr1\l/utility.hpp" alt="" coords="236,337,369,378"/>
+</map>

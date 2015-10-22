@@ -1,0 +1,8 @@
+<map id="DocStore::add_arg" name="DocStore::add_arg">
+<area shape="rect" id="node2" href="$classOptionParser.html#add7cb615a0caae99cf34c399513ca1da" title="OptionParser::add_enum\l_option" alt="" coords="185,11,351,53"/>
+<area shape="rect" id="node6" href="$classOptionParser.html#ad7112dde4b52cccec43ed4cbd687ddca" title="OptionParser::add_option" alt="" coords="401,77,570,104"/>
+<area shape="rect" id="node3" href="$operator__cost_8h.html#aab08718df4fa9ae2d2265d37c8ea0151" title="add_cost_type_option\l_to_parser" alt="" coords="411,11,560,53"/>
+<area shape="rect" id="node4" href="$classHeuristic.html#a1d20e58f0d2bbd0b9135d1b546545b9e" title="Heuristic::add_options\l_to_parser" alt="" coords="633,70,785,111"/>
+<area shape="rect" id="node5" href="$classSearchEngine.html#a3dcbdd70e489f491e52f4175961916c8" title="SearchEngine::add_options\l_to_parser" alt="" coords="619,5,800,46"/>
+<area shape="rect" id="node7" href="$classShrinkStrategy.html#a7272db9f60d941ee32904998a51bceb2" title="ShrinkStrategy::add\l_options_to_parser" alt="" coords="641,135,778,177"/>
+</map>

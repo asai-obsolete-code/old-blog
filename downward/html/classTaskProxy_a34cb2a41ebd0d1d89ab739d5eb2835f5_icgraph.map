@@ -1,0 +1,5 @@
+<map id="TaskProxy::convert_global_state" name="TaskProxy::convert_global_state">
+<area shape="rect" id="node2" href="$classHeuristic.html#ac3193969815e60e8240d0ab11d95de74" title="Heuristic::convert\l_global_state" alt="" coords="189,38,315,79"/>
+<area shape="rect" id="node3" href="$classBlindSearchHeuristic.html#a7a6527bad7788c79a80811f6dacefa64" title="BlindSearchHeuristic\l::compute_heuristic" alt="" coords="376,5,520,46"/>
+<area shape="rect" id="node4" href="$classMergeAndShrinkHeuristic.html#ac22dda3713996a6ae3cf6b61ba962904" title="MergeAndShrinkHeuristic\l::compute_heuristic" alt="" coords="363,70,533,111"/>
+</map>

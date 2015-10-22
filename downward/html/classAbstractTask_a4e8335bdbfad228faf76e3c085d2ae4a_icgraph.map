@@ -1,0 +1,4 @@
+<map id="AbstractTask::get_num_goals" name="AbstractTask::get_num_goals">
+<area shape="rect" id="node2" href="$classGoalsProxy.html#abfc758e237e5ef8d56fd1e0c0f3eb6f8" title="GoalsProxy::size" alt="" coords="213,12,336,39"/>
+<area shape="rect" id="node3" href="$classGoalsProxy.html#aa976feb7b10e95fab32135a65e135247" title="GoalsProxy::operator[]" alt="" coords="385,12,538,39"/>
+</map>

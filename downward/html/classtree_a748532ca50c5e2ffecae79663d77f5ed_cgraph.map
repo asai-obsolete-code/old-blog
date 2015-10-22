@@ -1,0 +1,5 @@
+<map id="tree::reparent" name="tree::reparent">
+<area shape="rect" id="node2" href="$classtree.html#ae1ba1b04978de8758f231e2e81b609e5" title="Move nodes in range to be children of &#39;position&#39;. " alt="" coords="152,5,251,32"/>
+<area shape="rect" id="node4" href="$classtree.html#a0d09fe9fd34fbfc9c9e4e28cb694448e" title="Return iterator to the end of the tree. " alt="" coords="165,56,238,83"/>
+<area shape="rect" id="node3" href="$classtree.html#a76b3a629c0208d5ae5b4ffcd4492e05e" title="Return iterator to the beginning of the tree. " alt="" coords="299,5,381,32"/>
+</map>

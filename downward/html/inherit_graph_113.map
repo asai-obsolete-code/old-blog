@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classTraceBlock.html" title="TraceBlock" alt="" coords="5,5,93,32"/>
+<area shape="rect" id="node1" href="$classPerStateInformationBase.html" title="PerStateInformationBase" alt="" coords="5,77,173,104"/>
+<area shape="rect" id="node2" href="$classPerStateInformation.html" title="PerStateInformation\l\&lt; Entry \&gt;" alt="" coords="225,5,364,46"/>
+<area shape="rect" id="node3" href="$classPerStateInformation.html" title="PerStateInformation\l\&lt; HeuristicCache * \&gt;" alt="" coords="222,70,367,111"/>
+<area shape="rect" id="node4" href="$classPerStateInformation.html" title="PerStateInformation\l\&lt; SearchNodeInfo \&gt;" alt="" coords="225,135,365,177"/>
 </map>

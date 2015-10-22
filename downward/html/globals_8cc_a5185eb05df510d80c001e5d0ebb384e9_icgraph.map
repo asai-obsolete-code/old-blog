@@ -1,0 +1,6 @@
+<map id="g_root_task" name="g_root_task">
+<area shape="rect" id="node2" href="$abstract__task_8h.html#a8174af556120e3855f341d56be339ef4" title="get_task_from_options" alt="" coords="144,5,299,32"/>
+<area shape="rect" id="node3" href="$globals_8cc.html#a3c1d86df6451ba702d7951344904d2c2" title="read_everything" alt="" coords="164,56,279,83"/>
+<area shape="rect" id="node5" href="$classHeuristic.html#ad7f1131249b7ffabebb167c2c5b21847" title="Heuristic::default\l_options" alt="" coords="161,107,282,149"/>
+<area shape="rect" id="node4" href="$planner_8cc.html#a217dbf8b442f20279ea00b898af96f52" title="main" alt="" coords="347,56,397,83"/>
+</map>

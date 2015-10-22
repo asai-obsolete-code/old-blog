@@ -1,6 +1,4 @@
 <map id="SearchEngine" name="SearchEngine">
 <area shape="rect" id="node2" href="$classEagerSearch.html" title="EagerSearch" alt="" coords="5,80,101,107"/>
-<area shape="rect" id="node3" href="$classEnforcedHillClimbingSearch.html" title="EnforcedHillClimbingSearch" alt="" coords="126,80,311,107"/>
-<area shape="rect" id="node4" href="$classIteratedSearch.html" title="IteratedSearch" alt="" coords="336,80,443,107"/>
-<area shape="rect" id="node5" href="$classLazySearch.html" title="LazySearch" alt="" coords="467,80,557,107"/>
+<area shape="rect" id="node3" href="$classMultiSearch.html" title="MultiSearch" alt="" coords="127,80,217,107"/>
 </map>

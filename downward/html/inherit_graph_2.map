@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classAbstractQueue.html" title="AbstractQueue\&lt; RelaxedProposition * \&gt;" alt="" coords="6,5,261,32"/>
+<area shape="rect" id="node1" href="$classAbstractTask.html" title="AbstractTask" alt="" coords="6,31,106,57"/>
+<area shape="rect" id="node2" href="$classDelegatingTask.html" title="DelegatingTask" alt="" coords="155,5,269,32"/>
+<area shape="rect" id="node4" href="$classRootTask.html" title="RootTask" alt="" coords="173,56,251,83"/>
+<area shape="rect" id="node3" href="$classCostAdaptedTask.html" title="CostAdaptedTask" alt="" coords="318,5,445,32"/>
 </map>

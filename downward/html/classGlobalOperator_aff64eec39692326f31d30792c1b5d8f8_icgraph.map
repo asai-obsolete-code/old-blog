@@ -1,0 +1,5 @@
+<map id="GlobalOperator::get_preconditions" name="GlobalOperator::get_preconditions">
+<area shape="rect" id="node2" href="$classDomainTransitionGraph.html#a80221d83ff7109b5f5b64a8851a4a075" title="DomainTransitionGraph\l::read_data" alt="" coords="206,5,365,46"/>
+<area shape="rect" id="node3" href="$classRootTask.html#ae78ed7674c9071317117cec0f19b026f" title="RootTask::get_num_operator\l_preconditions" alt="" coords="190,70,381,111"/>
+<area shape="rect" id="node4" href="$classRootTask.html#aa9f9d67cc6824ccd7008666bb53262e4" title="RootTask::get_operator\l_precondition" alt="" coords="206,135,365,177"/>
+</map>

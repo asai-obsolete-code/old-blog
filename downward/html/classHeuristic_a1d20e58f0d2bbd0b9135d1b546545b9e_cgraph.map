@@ -1,20 +1,29 @@
 <map id="Heuristic::add_options_to_parser" name="Heuristic::add_options_to_parser">
-<area shape="rect" id="node2" href="$operator__cost_8cc.html#aab08718df4fa9ae2d2265d37c8ea0151" title="add_cost_type_option\l_to_parser" alt="" coords="205,211,355,253"/>
-<area shape="rect" id="node14" href="$classOptionParser.html#aecacb6728fc2e135f1c012b05c3e05ae" title="OptionParser::add_option" alt="" coords="403,411,573,437"/>
-<area shape="rect" id="node3" href="$classOptionParser.html#a903c91ec09488a50cc3faa9b5257d1de" title="OptionParser::add_enum\l_option" alt="" coords="405,175,571,217"/>
-<area shape="rect" id="node4" href="$classDocStore.html#a55af131cd6b424f7c7e1ccadf77dca5f" title="DocStore::instance" alt="" coords="646,208,781,235"/>
-<area shape="rect" id="node5" href="$classDocStore.html#ae14a668d96193c54cc7356a7e6dfe5ad" title="DocStore::add_arg" alt="" coords="648,259,779,285"/>
-<area shape="rect" id="node6" href="$classOptions.html#a92594d318d5bd1c4cff9e8fef0e108ed" title="Options::contains" alt="" coords="651,107,775,133"/>
-<area shape="rect" id="node7" href="$option__parser_8cc.html#adce6993724364165fc1882219f55ce46" title="str_to_lower" alt="" coords="667,5,760,32"/>
-<area shape="rect" id="node8" href="$classOptions.html#a806470a0ddf00e44814367ff771ac33a" title="Options::get" alt="" coords="667,56,760,83"/>
-<area shape="rect" id="node11" href="$classOptionParser.html#a015ea07574bd300c07d9b653bdd7a41b" title="OptionParser::error" alt="" coords="854,417,986,444"/>
-<area shape="rect" id="node13" href="$classOptions.html#a442b5282575a1c2c4db119021ab8715d" title="Options::set" alt="" coords="667,309,760,336"/>
-<area shape="rect" id="node9" href="$structTypeNamer.html#ac738bb56c94af92f426789a014832511" title="TypeNamer::name" alt="" coords="855,355,985,381"/>
-<area shape="rect" id="node10" href="$utilities_8cc.html#aa4a09f54758dbe72385a98b01c06ae0e" title="exit_with" alt="" coords="883,56,957,83"/>
-<area shape="rect" id="node12" href="$classOptionParser.html#aa30a0a9106c2660088363eba8e875936" title="OptionParser::get_parse_tree" alt="" coords="1035,456,1227,483"/>
-<area shape="rect" id="node15" href="$classOptionParser.html#afc8ffbbe52b63f06da9c4ea3316ecf6a" title="OptionParser::help_mode" alt="" coords="629,563,798,589"/>
-<area shape="rect" id="node16" href="$classOptionParser.html#a7d2b6253b2983dd75a9b0283eb4fa7db" title="OptionParser::OptionParser" alt="" coords="622,613,805,640"/>
-<area shape="rect" id="node17" href="$classOptionParser.html#a1587e4915a30a4d2f1d1c936a6f75315" title="OptionParser::dry_run" alt="" coords="639,664,788,691"/>
-<area shape="rect" id="node18" href="$option__parser__util_8h.html#a6330371c65dec42cd7d0f526cf8bb371" title="subtree" alt="" coords="681,461,746,488"/>
-<area shape="rect" id="node19" href="$classTokenParser.html#a9502e8ea93230ac11b28847fcf325e07" title="TokenParser::parse" alt="" coords="645,512,781,539"/>
+<area shape="rect" id="node2" href="$operator__cost_8cc.html#aab08718df4fa9ae2d2265d37c8ea0151" title="add_cost_type_option\l_to_parser" alt="" coords="205,198,355,239"/>
+<area shape="rect" id="node15" href="$classOptionParser.html#ad7112dde4b52cccec43ed4cbd687ddca" title="OptionParser::add_option" alt="" coords="403,411,573,437"/>
+<area shape="rect" id="node3" href="$classOptionParser.html#add7cb615a0caae99cf34c399513ca1da" title="OptionParser::add_enum\l_option" alt="" coords="405,150,571,191"/>
+<area shape="rect" id="node4" href="$classDocStore.html#a55af131cd6b424f7c7e1ccadf77dca5f" title="DocStore::instance" alt="" coords="646,259,781,285"/>
+<area shape="rect" id="node5" href="$classDocStore.html#a4e14e4871177c612b485e0f2e2cfc754" title="DocStore::add_arg" alt="" coords="648,157,779,184"/>
+<area shape="rect" id="node6" href="$classOptions.html#a92594d318d5bd1c4cff9e8fef0e108ed" title="Options::contains" alt="" coords="651,5,775,32"/>
+<area shape="rect" id="node7" href="$classOptions.html#a806470a0ddf00e44814367ff771ac33a" title="Options::get" alt="" coords="667,56,760,83"/>
+<area shape="rect" id="node12" href="$classOptionParser.html#a015ea07574bd300c07d9b653bdd7a41b" title="OptionParser::error" alt="" coords="854,360,986,387"/>
+<area shape="rect" id="node14" href="$classOptions.html#a442b5282575a1c2c4db119021ab8715d" title="Options::set" alt="" coords="667,208,760,235"/>
+<area shape="rect" id="node8" href="$structTypeNamer.html#ac738bb56c94af92f426789a014832511" title="TypeNamer::name" alt="" coords="855,221,985,248"/>
+<area shape="rect" id="node9" href="$utilities_8cc.html#aa4a09f54758dbe72385a98b01c06ae0e" title="exit_with" alt="" coords="883,81,957,108"/>
+<area shape="rect" id="node10" href="$namespaceboost.html#a23ef0d202fe131d94930996ceb81ccae" title="boost::any_cast" alt="" coords="863,31,977,57"/>
+<area shape="rect" id="node11" href="$classboost_1_1any.html#a15794975b616e77a465a786d61e4c0e5" title="boost::any::type" alt="" coords="1073,31,1189,57"/>
+<area shape="rect" id="node13" href="$classOptionParser.html#aa30a0a9106c2660088363eba8e875936" title="OptionParser::get_parse_tree" alt="" coords="1035,385,1227,412"/>
+<area shape="rect" id="node16" href="$classOptionParser.html#afc8ffbbe52b63f06da9c4ea3316ecf6a" title="OptionParser::help_mode" alt="" coords="629,715,798,741"/>
+<area shape="rect" id="node17" href="$classtree.html#a76b3a629c0208d5ae5b4ffcd4492e05e" title="Return iterator to the beginning of the tree. " alt="" coords="1089,563,1172,589"/>
+<area shape="rect" id="node18" href="$classtree.html#a0d09fe9fd34fbfc9c9e4e28cb694448e" title="Return iterator to the end of the tree. " alt="" coords="1094,613,1167,640"/>
+<area shape="rect" id="node19" href="$classOptionParser.html#a7d2b6253b2983dd75a9b0283eb4fa7db" title="OptionParser::OptionParser" alt="" coords="622,461,805,488"/>
+<area shape="rect" id="node20" href="$classOptionParser.html#a1587e4915a30a4d2f1d1c936a6f75315" title="OptionParser::dry_run" alt="" coords="639,512,788,539"/>
+<area shape="rect" id="node21" href="$option__parser__util_8h.html#a6330371c65dec42cd7d0f526cf8bb371" title="subtree" alt="" coords="681,664,746,691"/>
+<area shape="rect" id="node28" href="$classTokenParser.html#a9502e8ea93230ac11b28847fcf325e07" title="TokenParser::parse" alt="" coords="645,411,781,437"/>
+<area shape="rect" id="node22" href="$classtree.html#adb61bebed6c56eb5641b0b7fab7fe625" title="Extract a new tree formed by the range of siblings plus all their children. " alt="" coords="873,664,967,691"/>
+<area shape="rect" id="node23" href="$classtree.html#af11d736ea971ab93651350161f5a7535" title="Short&#45;hand to insert topmost node in otherwise empty tree. " alt="" coords="1078,715,1183,741"/>
+<area shape="rect" id="node26" href="$classtree.html#ab090190d800c8bdf32535f8aa8857949" title="Replace node at &#39;position&#39; with other node (keeping same children); &#39;position&#39; becomes invalid..." alt="" coords="1083,664,1178,691"/>
+<area shape="rect" id="node24" href="$classtree.html#abd3877aa257981dabf6c77343690e802" title="Insert node as previous sibling of node pointed to by position. " alt="" coords="1285,715,1369,741"/>
+<area shape="rect" id="node25" href="$namespacekp.html#a6fa683a92eb3b2cf85eb7e95e7c9a84d" title="kp::constructor" alt="" coords="1427,664,1536,691"/>
+<area shape="rect" id="node27" href="$namespacekp.html#a0ecf33bfc4a3c744d6a14d965546e6a2" title="kp::destructor" alt="" coords="1275,664,1378,691"/>
 </map>

@@ -1,15 +1,23 @@
 <map id="search_progress.cc" name="search_progress.cc">
-<area shape="rect" id="node2" href="$search__progress_8h.html" title="search_progress.h" alt="" coords="1113,155,1241,181"/>
-<area shape="rect" id="node4" href="$evaluation__context_8h.html" title="evaluation_context.h" alt="" coords="953,80,1095,107"/>
-<area shape="rect" id="node14" href="$heuristic_8h.html" title="heuristic.h" alt="" coords="632,229,713,256"/>
-<area shape="rect" id="node5" href="$evaluation__result_8h.html" title="evaluation_result.h" alt="" coords="1097,379,1227,405"/>
-<area shape="rect" id="node8" href="$heuristic__cache_8h.html" title="heuristic_cache.h" alt="" coords="862,155,985,181"/>
-<area shape="rect" id="node9" href="$global__state_8h.html" title="global_state.h" alt="" coords="743,304,845,331"/>
-<area shape="rect" id="node10" href="$int__packer_8h.html" title="int_packer.h" alt="" coords="711,379,804,405"/>
-<area shape="rect" id="node11" href="$state__id_8h.html" title="state_id.h" alt="" coords="930,379,1008,405"/>
-<area shape="rect" id="node15" href="$operator__cost_8h.html" title="operator_cost.h" alt="" coords="119,304,229,331"/>
-<area shape="rect" id="node16" href="$scalar__evaluator_8h.html" title="scalar_evaluator.h" alt="" coords="871,304,999,331"/>
-<area shape="rect" id="node18" href="$task__proxy_8h.html" title="task_proxy.h" alt="" coords="255,304,352,331"/>
-<area shape="rect" id="node19" href="$abstract__task_8h.html" title="abstract_task.h" alt="" coords="144,379,255,405"/>
-<area shape="rect" id="node23" href="$utilities_8h.html" title="utilities.h" alt="" coords="420,379,493,405"/>
+<area shape="rect" id="node2" href="$search__progress_8h.html" title="search_progress.h" alt="" coords="1822,155,1951,181"/>
+<area shape="rect" id="node4" href="$evaluation__context_8h.html" title="evaluation_context.h" alt="" coords="1541,80,1683,107"/>
+<area shape="rect" id="node14" href="$heuristic_8h.html" title="heuristic.h" alt="" coords="519,304,600,331"/>
+<area shape="rect" id="node5" href="$evaluation__result_8h.html" title="evaluation_result.h" alt="" coords="1827,453,1956,480"/>
+<area shape="rect" id="node8" href="$heuristic__cache_8h.html" title="heuristic_cache.h" alt="" coords="1550,229,1673,256"/>
+<area shape="rect" id="node27" href="$search__space_8h.html" title="search_space.h" alt="" coords="809,155,924,181"/>
+<area shape="rect" id="node9" href="$global__state_8h.html" title="global_state.h" alt="" coords="778,379,880,405"/>
+<area shape="rect" id="node10" href="$int__packer_8h.html" title="int_packer.h" alt="" coords="868,453,961,480"/>
+<area shape="rect" id="node11" href="$state__id_8h.html" title="state_id.h" alt="" coords="1271,453,1349,480"/>
+<area shape="rect" id="node15" href="$operator__cost_8h.html" title="operator_cost.h" alt="" coords="93,379,204,405"/>
+<area shape="rect" id="node16" href="$scalar__evaluator_8h.html" title="scalar_evaluator.h" alt="" coords="1388,379,1516,405"/>
+<area shape="rect" id="node18" href="$task__proxy_8h.html" title="task_proxy.h" alt="" coords="453,379,549,405"/>
+<area shape="rect" id="node19" href="$abstract__task_8h.html" title="abstract_task.h" alt="" coords="337,453,448,480"/>
+<area shape="rect" id="node23" href="$utilities_8h.html" title="utilities.h" alt="" coords="1579,453,1652,480"/>
+<area shape="rect" id="node28" href="$per__state__information_8h.html" title="per_state_information.h" alt="" coords="1237,229,1395,256"/>
+<area shape="rect" id="node37" href="$search__node__info_8h.html" title="search_node_info.h" alt="" coords="746,229,880,256"/>
+<area shape="rect" id="node29" href="$globals_8h.html" title="globals.h" alt="" coords="188,453,261,480"/>
+<area shape="rect" id="node31" href="$segmented__vector_8h.html" title="segmented_vector.h" alt="" coords="1642,379,1781,405"/>
+<area shape="rect" id="node33" href="$state__registry_8h.html" title="state_registry.h" alt="" coords="1111,304,1221,331"/>
+<area shape="rect" id="node34" href="$utilities__hash_8h.html" title="utilities_hash.h" alt="" coords="985,453,1095,480"/>
+<area shape="rect" id="node38" href="$global__operator_8h.html" title="global_operator.h" alt="" coords="679,304,800,331"/>
 </map>

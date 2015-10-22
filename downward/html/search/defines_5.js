@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['track_5fside_5feffects',['TRACK_SIDE_EFFECTS',['../domain__transition__graph_8cc.html#ab4a51f5a1712834c685ba52f1147522b',1,'domain_transition_graph.cc']]]
+  ['linux',['LINUX',['../utilities_8h.html#a157a956e14c5c44b3f73ef23a4776f64',1,'utilities.h']]]
 ];

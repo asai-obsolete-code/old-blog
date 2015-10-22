@@ -1,0 +1,10 @@
+<map id="FactProxy::get_variable" name="FactProxy::get_variable">
+<area shape="rect" id="node2" href="$structCausalGraphBuilder.html#adae0f168f463cd392b11b93430e5c7f9" title="CausalGraphBuilder\l::handle_operator" alt="" coords="237,5,376,46"/>
+<area shape="rect" id="node4" href="$classTransitionSystem.html#a49fb4d822c6be3dcfb5db4afe47e040f" title="TransitionSystem::build\l_atomic_transition_systems" alt="" coords="214,70,399,111"/>
+<area shape="rect" id="node5" href="$classRelaxationHeuristic.html#a4b523d3a9322d516c305095f6e13e27e" title="RelaxationHeuristic\l::get_proposition" alt="" coords="239,135,375,177"/>
+<area shape="rect" id="node7" href="$successor__generator_8cc.html#a3f7905e1db487b80eb9a82088cab8f47" title="smaller_variable_id" alt="" coords="240,201,373,228"/>
+<area shape="rect" id="node8" href="$classState.html#a000bbcb5f0d131374acc29c2d5a65c08" title="State::get_successor" alt="" coords="233,252,380,279"/>
+<area shape="rect" id="node9" href="$classFactProxy.html#a4f8e8bdcc26959bfc42291b8ccac0609" title="FactProxy::FactProxy" alt="" coords="231,303,382,329"/>
+<area shape="rect" id="node3" href="$classCausalGraph.html#a98f5dcff9e838b52ce3a0c1ab3cd97e1" title="CausalGraph::CausalGraph" alt="" coords="449,12,631,39"/>
+<area shape="rect" id="node6" href="$classRelaxationHeuristic.html#aa34cc79d9e5e3e9aff4c4ed1b03a853e" title="RelaxationHeuristic\l::initialize" alt="" coords="472,135,608,177"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="ShrinkStrategy" name="ShrinkStrategy">
+<area shape="rect" id="node2" href="$classShrinkBisimulation.html" title="ShrinkBisimulation" alt="" coords="4,80,133,107"/>
+<area shape="rect" id="node3" href="$classShrinkBucketBased.html" title="ShrinkBucketBased" alt="" coords="159,80,296,107"/>
+<area shape="rect" id="node4" href="$classShrinkFH.html" title="ShrinkFH" alt="" coords="131,155,207,181"/>
+<area shape="rect" id="node5" href="$classShrinkRandom.html" title="ShrinkRandom" alt="" coords="233,155,340,181"/>
+</map>

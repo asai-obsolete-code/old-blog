@@ -1,0 +1,5 @@
+<map id="OptionParser::add_option" name="OptionParser::add_option">
+<area shape="rect" id="node2" href="$classHeuristic.html#a1d20e58f0d2bbd0b9135d1b546545b9e" title="Heuristic::add_options\l_to_parser" alt="" coords="239,5,391,46"/>
+<area shape="rect" id="node3" href="$classShrinkStrategy.html#a7272db9f60d941ee32904998a51bceb2" title="ShrinkStrategy::add\l_options_to_parser" alt="" coords="246,70,383,111"/>
+<area shape="rect" id="node4" href="$classSearchEngine.html#a3dcbdd70e489f491e52f4175961916c8" title="SearchEngine::add_options\l_to_parser" alt="" coords="224,135,405,177"/>
+</map>

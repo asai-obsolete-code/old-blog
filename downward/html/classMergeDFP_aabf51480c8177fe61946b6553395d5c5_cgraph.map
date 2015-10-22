@@ -1,0 +1,5 @@
+<map id="MergeDFP::get_next" name="MergeDFP::get_next">
+<area shape="rect" id="node2" href="$classMergeStrategy.html#a97b7c27c15303fce634c5d58b4f33dcc" title="MergeStrategy::initialized" alt="" coords="390,5,559,32"/>
+<area shape="rect" id="node3" href="$classMergeStrategy.html#ae5eec0af9ab5b34bc64767926efd9b66" title="MergeStrategy::done" alt="" coords="198,31,341,57"/>
+<area shape="rect" id="node4" href="$classTransitionSystem.html#a9c75f0c92a9b6f74de23f83e9ed6cec4" title="TransitionSystem::is\l_goal_relevant" alt="" coords="198,82,341,123"/>
+</map>

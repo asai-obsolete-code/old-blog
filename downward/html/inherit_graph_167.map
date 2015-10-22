@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classTransitionSystem.html" title="TransitionSystem" alt="" coords="6,31,130,57"/>
+<area shape="rect" id="node2" href="$classAtomicTransitionSystem.html" title="AtomicTransitionSystem" alt="" coords="189,5,355,32"/>
+<area shape="rect" id="node3" href="$classCompositeTransitionSystem.html" title="CompositeTransitionSystem" alt="" coords="179,56,365,83"/>
+</map>

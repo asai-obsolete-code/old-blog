@@ -1,0 +1,6 @@
+<map id="release_vector_memory" name="release_vector_memory">
+<area shape="rect" id="node2" href="$classLabels.html#a96686b4a12ae400bcf9488f5128ba27e" title="Labels::reduce" alt="" coords="251,5,357,32"/>
+<area shape="rect" id="node3" href="$classTransitionSystem.html#a29eb8a84f965b357059379512b3c319f" title="TransitionSystem::apply\l_abstraction" alt="" coords="223,57,385,98"/>
+<area shape="rect" id="node4" href="$classTransitionSystem.html#a3a49f936c98697e9dd762e6d1cf5b94b" title="TransitionSystem::apply\l_label_reduction" alt="" coords="223,122,385,163"/>
+<area shape="rect" id="node5" href="$classTransitionSystem.html#a4596897e07b15a87c1d0e7926de198a4" title="TransitionSystem::release\l_memory" alt="" coords="217,187,391,229"/>
+</map>

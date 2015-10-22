@@ -1,0 +1,9 @@
+<map id="MergeAndShrinkHeuristic::initialize" name="MergeAndShrinkHeuristic::initialize">
+<area shape="rect" id="node2" href="$utilities_8cc.html#ad6e89b0db19bdac1afc50dcaf196d27d" title="get_peak_memory_in_kb" alt="" coords="225,12,391,39"/>
+<area shape="rect" id="node4" href="$globals_8cc.html#a6144f63ac9dc461a22e7b16bbf228f33" title="verify_no_axioms" alt="" coords="246,69,370,96"/>
+<area shape="rect" id="node7" href="$classTaskProxy.html#a0b3d803f47cd0f8c1440093f72ccee15" title="TaskProxy::get_initial\l_state" alt="" coords="234,133,382,174"/>
+<area shape="rect" id="node3" href="$utilities_8h.html#a44ab437244c3326f1cd4093f129e0a91" title="unused_parameter" alt="" coords="457,5,586,32"/>
+<area shape="rect" id="node5" href="$globals_8cc.html#ad0b203d5c2a31a3e811c5d3c171980d8" title="has_axioms" alt="" coords="475,56,567,83"/>
+<area shape="rect" id="node6" href="$utilities_8cc.html#aa4a09f54758dbe72385a98b01c06ae0e" title="exit_with" alt="" coords="484,107,559,133"/>
+<area shape="rect" id="node8" href="$classAbstractTask.html#a9de0ce6fb5349cc114cef522c54c595e" title="AbstractTask::get_initial\l_state_values" alt="" coords="440,158,603,199"/>
+</map>

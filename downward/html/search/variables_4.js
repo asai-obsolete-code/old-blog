@@ -5,6 +5,6 @@ var searchData=
   ['effect',['effect',['../structValueTransitionLabel.html#ab1874d03f64a1fa7aa681c3d17df0d78',1,'ValueTransitionLabel::effect()'],['../structUnaryOperator.html#ab8cc5c54af7d951a2cf943e142fff161',1,'UnaryOperator::effect()']]],
   ['effect_5fof',['effect_of',['../structRelaxedProposition.html#a5679f5937f62ed7f3e4158c1163e508f',1,'RelaxedProposition']]],
   ['effects',['effects',['../structRelaxedOperator.html#acbe10020c12c3fe9fb8f3fac28ffa92a',1,'RelaxedOperator']]],
-  ['estimate_5fheuristics',['estimate_heuristics',['../classLazySearch.html#a0e6f2058093334ca068a87c828e77b32',1,'LazySearch']]],
-  ['expanded',['expanded',['../structcea__heuristic_1_1LocalProblemNode.html#ab67974efdbdd4bc581e7b7f986139115',1,'cea_heuristic::LocalProblemNode']]]
+  ['emit_5ffrontier',['emit_frontier',['../classOpenList.html#a1ca76b9b69e9578f296a9aff282cf246',1,'OpenList']]],
+  ['evaluators',['evaluators',['../classAbstractTieBreakingOpenList.html#a3b7b2f9a5066cf50c02695ae0ead23e0',1,'AbstractTieBreakingOpenList']]]
 ];

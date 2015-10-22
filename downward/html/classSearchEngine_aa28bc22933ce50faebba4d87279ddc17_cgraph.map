@@ -1,5 +1,7 @@
 <map id="SearchEngine::SearchEngine" name="SearchEngine::SearchEngine">
-<area shape="rect" id="node2" href="$classOptions.html#a806470a0ddf00e44814367ff771ac33a" title="Options::get" alt="" coords="245,5,339,32"/>
-<area shape="rect" id="node4" href="$utilities_8cc.html#aa4a09f54758dbe72385a98b01c06ae0e" title="exit_with" alt="" coords="415,56,489,83"/>
+<area shape="rect" id="node2" href="$classOptions.html#a806470a0ddf00e44814367ff771ac33a" title="Options::get" alt="" coords="245,56,339,83"/>
+<area shape="rect" id="node4" href="$utilities_8cc.html#aa4a09f54758dbe72385a98b01c06ae0e" title="exit_with" alt="" coords="415,107,489,133"/>
 <area shape="rect" id="node3" href="$structTypeNamer.html#ac738bb56c94af92f426789a014832511" title="TypeNamer::name" alt="" coords="387,5,517,32"/>
+<area shape="rect" id="node5" href="$namespaceboost.html#a23ef0d202fe131d94930996ceb81ccae" title="boost::any_cast" alt="" coords="395,56,509,83"/>
+<area shape="rect" id="node6" href="$classboost_1_1any.html#a15794975b616e77a465a786d61e4c0e5" title="boost::any::type" alt="" coords="566,56,682,83"/>
 </map>

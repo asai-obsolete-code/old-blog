@@ -1,0 +1,6 @@
+<map id="tree::insert_subtree" name="tree::insert_subtree">
+<area shape="rect" id="node2" href="$classtree.html#ab54b9862f3891737d6b4740d47dd9c68" title="Append the nodes in the from&#45;to range (plus their children) as last/first children of position..." alt="" coords="192,5,339,32"/>
+<area shape="rect" id="node3" href="$classtree.html#aaf01873bc5f94464ab156bffa34ed079" title="tree::prepend_children" alt="" coords="190,56,341,83"/>
+<area shape="rect" id="node4" href="$classtree.html#afc5bef13996f2fd939d83837aa8e090d" title="Replace string of siblings (plus their children) with copy of a new string (with children); see above..." alt="" coords="218,107,313,133"/>
+<area shape="rect" id="node5" href="$classtree.html#a1e3cd901f8f8d8a3da0e1d32e9282db1" title="Merge with other tree, creating new branches and leaves only if they are not already present..." alt="" coords="221,157,309,184"/>
+</map>

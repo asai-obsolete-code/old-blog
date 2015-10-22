@@ -1,6 +1,7 @@
 var searchData=
 [
   ['delegatingtask',['DelegatingTask',['../classDelegatingTask.html',1,'']]],
+  ['diversityheuristic',['DiversityHeuristic',['../classDiversityHeuristic.html',1,'']]],
   ['docprinter',['DocPrinter',['../classDocPrinter.html',1,'']]],
   ['docstore',['DocStore',['../classDocStore.html',1,'']]],
   ['docstruct',['DocStruct',['../structDocStruct.html',1,'']]],

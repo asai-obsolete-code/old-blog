@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['packedstatebin',['PackedStateBin',['../global__state_8h.html#a63554388b267a48ff0e7648098d3beee',1,'global_state.h']]],
-  ['parsetree',['ParseTree',['../option__parser__util_8h.html#aec975d670a266efbd55f05ed9f9baf9a',1,'option_parser_util.h']]],
-  ['plan',['Plan',['../classSearchEngine.html#a847191ccfee2c9e52d94aac85e144e2a',1,'SearchEngine']]]
+  ['intrelation',['IntRelation',['../causal__graph_8h.html#a6c33a7b1d04c81ffde3e658c203c7907',1,'causal_graph.h']]],
+  ['itemtype',['ItemType',['../classConditionsProxy.html#a10602694ed5094da8bdc7e6e3167bf02',1,'ConditionsProxy::ItemType()'],['../classVariablesProxy.html#a093cf096f5e5f2e806fea7897f217a8a',1,'VariablesProxy::ItemType()'],['../classEffectsProxy.html#a7cafa2192ee2e829a7479129e871e7eb',1,'EffectsProxy::ItemType()'],['../classOperatorsProxy.html#a939f7923474cafe6703e8d751a4ec214',1,'OperatorsProxy::ItemType()'],['../classAxiomsProxy.html#abefbb803d0603832ce3784793040cc30',1,'AxiomsProxy::ItemType()'],['../classState.html#a0bc46283299274e3e145886dbc4a2860',1,'State::ItemType()']]],
+  ['iterator',['iterator',['../classtree.html#a2079982538b88d21fe1ccea34fe7ce0e',1,'tree']]],
+  ['iterator_5fcategory',['iterator_category',['../classtree_1_1iterator__base.html#a7d0ace14418254eaab7526f1d0aabf40',1,'tree::iterator_base']]]
 ];

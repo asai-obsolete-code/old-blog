@@ -87,76 +87,94 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="plugin_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PLUGIN_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PLUGIN_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;open_lists/alternation_open_list.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;open_lists/bucket_open_list.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;open_lists/pareto_open_list.h&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;open_lists/standard_scalar_open_list.h&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;open_lists/tiebreaking_open_list.h&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classPlugin.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPlugin.html">Plugin</a> {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classPlugin.html#a446ba1aeaf2886904f51bbebbcd8e35a">   19</a></span>&#160;    <a class="code" href="classPlugin.html#a446ba1aeaf2886904f51bbebbcd8e35a">Plugin</a>(<span class="keyword">const</span> std::string &amp;key, <span class="keyword">typename</span> <a class="code" href="classRegistry.html">Registry&lt;T *&gt;::Factory</a> factory) {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="classRegistry.html#a6036963c4d06bfe4bee6f3f478733922">Registry&lt;T *&gt;::instance</a>()-&gt;register_object(key, factory);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classPlugin.html#a0b59a5d82d708941f2f534bd476c7e65">~Plugin</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classPlugin.html#a446ba1aeaf2886904f51bbebbcd8e35a">Plugin</a>(<span class="keyword">const</span> <a class="code" href="classPlugin.html">Plugin&lt;T&gt;</a> &amp;other) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// TODO: This class will replace Plugin once we no longer need to support raw pointers.</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classPluginShared.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPluginShared.html">PluginShared</a> {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classPluginShared.html#a8650ce9e5057d53647ee777377e0066c">   31</a></span>&#160;    <a class="code" href="classPluginShared.html#a8650ce9e5057d53647ee777377e0066c">PluginShared</a>(<span class="keyword">const</span> std::string &amp;key, <span class="keyword">typename</span> <a class="code" href="classRegistry.html">Registry</a>&lt;std::shared_ptr&lt;T&gt; &gt;::Factory factory) {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="classRegistry.html">Registry&lt;std::shared_ptr&lt;T&gt;</a> &gt;::instance()-&gt;<a class="code" href="classRegistry.html#ac8743ef4f6c786cdc586c10690304b65">register_object</a>(key, factory);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classPluginShared.html#ad6da17fee985c5f447b5095cc4c7291b">~PluginShared</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classPluginShared.html#a8650ce9e5057d53647ee777377e0066c">PluginShared</a>(<span class="keyword">const</span> <a class="code" href="classPluginShared.html">PluginShared&lt;T&gt;</a> &amp;other) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Entry&gt;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classPlugin_3_01OpenList_3_01Entry_01_4_01_4.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPlugin.html">Plugin</a>&lt;<a class="code" href="classOpenList.html">OpenList</a>&lt;Entry &gt; &gt; {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classPlugin.html#a446ba1aeaf2886904f51bbebbcd8e35a">Plugin</a>(<span class="keyword">const</span> <a class="code" href="classPlugin.html">Plugin</a>&lt;<a class="code" href="classOpenList.html">OpenList&lt;Entry &gt;</a> &gt; &amp;copy);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="classPlugin.html#a0b59a5d82d708941f2f534bd476c7e65">~Plugin</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classPlugin_3_01OpenList_3_01Entry_01_4_01_4.html#a660cc8eb88b74c1d75b397a9ccaa6e47">   44</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classPlugin_3_01OpenList_3_01Entry_01_4_01_4.html#a660cc8eb88b74c1d75b397a9ccaa6e47">register_open_lists</a>() {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="classRegistry.html">Registry&lt;OpenList&lt;Entry &gt;</a> *&gt;::instance()-&gt;<a class="code" href="classRegistry.html#ac8743ef4f6c786cdc586c10690304b65">register_object</a>(</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="stringliteral">&quot;single&quot;</span>, StandardScalarOpenList&lt;Entry&gt;::_parse);</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="alternation__open__list_8h.html">open_lists/alternation_open_list.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="bucket__open__list_8h.html">open_lists/bucket_open_list.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// #include &quot;open_lists/pareto_open_list.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="standard__scalar__open__list_8h.html">open_lists/standard_scalar_open_list.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tiebreaking__open__list_8h.html">open_lists/tiebreaking_open_list.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="open__tree_8h.html">open_lists/open_tree.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="open__tree2_8h.html">open_lists/open_tree2.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classPlugin.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPlugin.html">Plugin</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classPlugin.html#a446ba1aeaf2886904f51bbebbcd8e35a">   21</a></span>&#160;    <a class="code" href="classPlugin.html#a446ba1aeaf2886904f51bbebbcd8e35a">Plugin</a>(<span class="keyword">const</span> std::string &amp;key, <span class="keyword">typename</span> <a class="code" href="classRegistry.html">Registry&lt;T *&gt;::Factory</a> factory) {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="classRegistry.html#a6036963c4d06bfe4bee6f3f478733922">Registry&lt;T *&gt;::instance</a>()-&gt;register_object(key, factory);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classPlugin.html#a0b59a5d82d708941f2f534bd476c7e65">~Plugin</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classPlugin.html#a446ba1aeaf2886904f51bbebbcd8e35a">Plugin</a>(<span class="keyword">const</span> <a class="code" href="classPlugin.html">Plugin&lt;T&gt;</a> &amp;other) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// TODO: This class will replace Plugin once we no longer need to support raw pointers.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classPluginShared.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPluginShared.html">PluginShared</a> {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classPluginShared.html#a8650ce9e5057d53647ee777377e0066c">   33</a></span>&#160;    <a class="code" href="classPluginShared.html#a8650ce9e5057d53647ee777377e0066c">PluginShared</a>(<span class="keyword">const</span> std::string &amp;key, <span class="keyword">typename</span> <a class="code" href="classRegistry.html">Registry</a>&lt;std::shared_ptr&lt;T&gt; &gt;::Factory factory) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="classRegistry.html">Registry&lt;std::shared_ptr&lt;T&gt;</a> &gt;::instance()-&gt;<a class="code" href="classRegistry.html#ac8743ef4f6c786cdc586c10690304b65">register_object</a>(key, factory);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classPluginShared.html#ad6da17fee985c5f447b5095cc4c7291b">~PluginShared</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classPluginShared.html#a8650ce9e5057d53647ee777377e0066c">PluginShared</a>(<span class="keyword">const</span> <a class="code" href="classPluginShared.html">PluginShared&lt;T&gt;</a> &amp;other) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Entry&gt;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classPlugin_3_01OpenList_3_01Entry_01_4_01_4.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPlugin.html">Plugin</a>&lt;<a class="code" href="classOpenList.html">OpenList</a>&lt;Entry &gt; &gt; {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="classPlugin.html#a446ba1aeaf2886904f51bbebbcd8e35a">Plugin</a>(<span class="keyword">const</span> <a class="code" href="classPlugin.html">Plugin</a>&lt;<a class="code" href="classOpenList.html">OpenList&lt;Entry &gt;</a> &gt; &amp;copy);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classPlugin.html#a0b59a5d82d708941f2f534bd476c7e65">~Plugin</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classPlugin_3_01OpenList_3_01Entry_01_4_01_4.html#a660cc8eb88b74c1d75b397a9ccaa6e47">   46</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classPlugin_3_01OpenList_3_01Entry_01_4_01_4.html#a660cc8eb88b74c1d75b397a9ccaa6e47">register_open_lists</a>() {</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="classRegistry.html">Registry&lt;OpenList&lt;Entry &gt;</a> *&gt;::instance()-&gt;<a class="code" href="classRegistry.html#ac8743ef4f6c786cdc586c10690304b65">register_object</a>(</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="stringliteral">&quot;single_buckets&quot;</span>, BucketOpenList&lt;Entry&gt;::_parse);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="stringliteral">&quot;single&quot;</span>, <a class="code" href="classStandardScalarOpenList.html">StandardScalarOpenList&lt;Entry&gt;::_parse</a>);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="classRegistry.html">Registry&lt;OpenList&lt;Entry &gt;</a> *&gt;::instance()-&gt;<a class="code" href="classRegistry.html#ac8743ef4f6c786cdc586c10690304b65">register_object</a>(</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="stringliteral">&quot;tiebreaking&quot;</span>, TieBreakingOpenList&lt;Entry&gt;::_parse);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="stringliteral">&quot;single_buckets&quot;</span>, <a class="code" href="classBucketOpenList.html">BucketOpenList&lt;Entry&gt;::_parse</a>);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="classRegistry.html">Registry&lt;OpenList&lt;Entry &gt;</a> *&gt;::instance()-&gt;<a class="code" href="classRegistry.html#ac8743ef4f6c786cdc586c10690304b65">register_object</a>(</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="stringliteral">&quot;alt&quot;</span>, AlternationOpenList&lt;Entry&gt;::_parse);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="stringliteral">&quot;tiebreaking&quot;</span>, <a class="code" href="classTieBreakingOpenList.html">TieBreakingOpenList&lt;Entry&gt;::_parse</a>);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="classRegistry.html">Registry&lt;OpenList&lt;Entry &gt;</a> *&gt;::instance()-&gt;<a class="code" href="classRegistry.html#ac8743ef4f6c786cdc586c10690304b65">register_object</a>(</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="stringliteral">&quot;pareto&quot;</span>, ParetoOpenList&lt;Entry&gt;::_parse);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classPluginShared_html_a8650ce9e5057d53647ee777377e0066c"><div class="ttname"><a href="classPluginShared.html#a8650ce9e5057d53647ee777377e0066c">PluginShared::PluginShared</a></div><div class="ttdeci">PluginShared(const std::string &amp;key, typename Registry&lt; std::shared_ptr&lt; T &gt; &gt;::Factory factory)</div><div class="ttdef"><b>Definition:</b> plugin.h:31</div></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="stringliteral">&quot;alt&quot;</span>, <a class="code" href="classAlternationOpenList.html">AlternationOpenList&lt;Entry&gt;::_parse</a>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="comment">/* Registry&lt;OpenList&lt;Entry &gt; *&gt;::instance()-&gt;register_object( */</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="comment">/*     &quot;pareto&quot;, ParetoOpenList&lt;Entry&gt;::_parse); */</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="classRegistry.html">Registry&lt;OpenList&lt;Entry &gt;</a> *&gt;::instance()-&gt;<a class="code" href="classRegistry.html#ac8743ef4f6c786cdc586c10690304b65">register_object</a>(</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="stringliteral">&quot;tree&quot;</span>, <a class="code" href="classOpenTree.html">OpenTree&lt;Entry&gt;::_parse</a>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="classRegistry.html">Registry&lt;OpenList&lt;Entry &gt;</a> *&gt;::instance()-&gt;<a class="code" href="classRegistry.html#ac8743ef4f6c786cdc586c10690304b65">register_object</a>(</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="stringliteral">&quot;dtree&quot;</span>, <a class="code" href="classOpenDTree.html">OpenDTree&lt;Entry&gt;::_parse</a>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classOpenDTree_html"><div class="ttname"><a href="classOpenDTree.html">OpenDTree</a></div><div class="ttdef"><b>Definition:</b> open_tree2.h:9</div></div>
+<div class="ttc" id="standard__scalar__open__list_8h_html"><div class="ttname"><a href="standard__scalar__open__list_8h.html">standard_scalar_open_list.h</a></div></div>
+<div class="ttc" id="classPluginShared_html_a8650ce9e5057d53647ee777377e0066c"><div class="ttname"><a href="classPluginShared.html#a8650ce9e5057d53647ee777377e0066c">PluginShared::PluginShared</a></div><div class="ttdeci">PluginShared(const std::string &amp;key, typename Registry&lt; std::shared_ptr&lt; T &gt; &gt;::Factory factory)</div><div class="ttdef"><b>Definition:</b> plugin.h:33</div></div>
+<div class="ttc" id="classBucketOpenList_html"><div class="ttname"><a href="classBucketOpenList.html">BucketOpenList</a></div><div class="ttdef"><b>Definition:</b> bucket_open_list.h:19</div></div>
 <div class="ttc" id="classRegistry_html_a6036963c4d06bfe4bee6f3f478733922"><div class="ttname"><a href="classRegistry.html#a6036963c4d06bfe4bee6f3f478733922">Registry::instance</a></div><div class="ttdeci">static Registry&lt; T &gt; * instance()</div><div class="ttdef"><b>Definition:</b> option_parser_util.h:90</div></div>
-<div class="ttc" id="classOpenList_html"><div class="ttname"><a href="classOpenList.html">OpenList</a></div><div class="ttdef"><b>Definition:</b> option_parser.h:46</div></div>
+<div class="ttc" id="bucket__open__list_8h_html"><div class="ttname"><a href="bucket__open__list_8h.html">bucket_open_list.h</a></div></div>
+<div class="ttc" id="classOpenList_html"><div class="ttname"><a href="classOpenList.html">OpenList</a></div><div class="ttdef"><b>Definition:</b> open_list.h:11</div></div>
 <div class="ttc" id="classPluginShared_html_ad6da17fee985c5f447b5095cc4c7291b"><div class="ttname"><a href="classPluginShared.html#ad6da17fee985c5f447b5095cc4c7291b">PluginShared::~PluginShared</a></div><div class="ttdeci">~PluginShared()=default</div></div>
-<div class="ttc" id="classPluginShared_html"><div class="ttname"><a href="classPluginShared.html">PluginShared</a></div><div class="ttdef"><b>Definition:</b> plugin.h:29</div></div>
-<div class="ttc" id="classPlugin_html_a446ba1aeaf2886904f51bbebbcd8e35a"><div class="ttname"><a href="classPlugin.html#a446ba1aeaf2886904f51bbebbcd8e35a">Plugin::Plugin</a></div><div class="ttdeci">Plugin(const std::string &amp;key, typename Registry&lt; T * &gt;::Factory factory)</div><div class="ttdef"><b>Definition:</b> plugin.h:19</div></div>
-<div class="ttc" id="classPlugin_html"><div class="ttname"><a href="classPlugin.html">Plugin</a></div><div class="ttdef"><b>Definition:</b> plugin.h:17</div></div>
+<div class="ttc" id="classPluginShared_html"><div class="ttname"><a href="classPluginShared.html">PluginShared</a></div><div class="ttdef"><b>Definition:</b> plugin.h:31</div></div>
+<div class="ttc" id="classPlugin_html_a446ba1aeaf2886904f51bbebbcd8e35a"><div class="ttname"><a href="classPlugin.html#a446ba1aeaf2886904f51bbebbcd8e35a">Plugin::Plugin</a></div><div class="ttdeci">Plugin(const std::string &amp;key, typename Registry&lt; T * &gt;::Factory factory)</div><div class="ttdef"><b>Definition:</b> plugin.h:21</div></div>
+<div class="ttc" id="classTieBreakingOpenList_html"><div class="ttname"><a href="classTieBreakingOpenList.html">TieBreakingOpenList</a></div><div class="ttdef"><b>Definition:</b> tiebreaking_open_list.h:7</div></div>
+<div class="ttc" id="open__tree2_8h_html"><div class="ttname"><a href="open__tree2_8h.html">open_tree2.h</a></div></div>
+<div class="ttc" id="classStandardScalarOpenList_html"><div class="ttname"><a href="classStandardScalarOpenList.html">StandardScalarOpenList</a></div><div class="ttdef"><b>Definition:</b> standard_scalar_open_list.h:21</div></div>
+<div class="ttc" id="classAlternationOpenList_html"><div class="ttname"><a href="classAlternationOpenList.html">AlternationOpenList</a></div><div class="ttdef"><b>Definition:</b> alternation_open_list.h:14</div></div>
+<div class="ttc" id="classPlugin_html"><div class="ttname"><a href="classPlugin.html">Plugin</a></div><div class="ttdef"><b>Definition:</b> plugin.h:19</div></div>
+<div class="ttc" id="open__tree_8h_html"><div class="ttname"><a href="open__tree_8h.html">open_tree.h</a></div></div>
+<div class="ttc" id="alternation__open__list_8h_html"><div class="ttname"><a href="alternation__open__list_8h.html">alternation_open_list.h</a></div></div>
 <div class="ttc" id="classRegistry_html_ac8743ef4f6c786cdc586c10690304b65"><div class="ttname"><a href="classRegistry.html#ac8743ef4f6c786cdc586c10690304b65">Registry::register_object</a></div><div class="ttdeci">void register_object(std::string k, Factory f)</div><div class="ttdef"><b>Definition:</b> option_parser_util.h:95</div></div>
-<div class="ttc" id="classPlugin_3_01OpenList_3_01Entry_01_4_01_4_html_a660cc8eb88b74c1d75b397a9ccaa6e47"><div class="ttname"><a href="classPlugin_3_01OpenList_3_01Entry_01_4_01_4.html#a660cc8eb88b74c1d75b397a9ccaa6e47">Plugin&lt; OpenList&lt; Entry &gt; &gt;::register_open_lists</a></div><div class="ttdeci">static void register_open_lists()</div><div class="ttdef"><b>Definition:</b> plugin.h:44</div></div>
+<div class="ttc" id="classOpenTree_html"><div class="ttname"><a href="classOpenTree.html">OpenTree</a></div><div class="ttdef"><b>Definition:</b> open_tree.h:56</div></div>
+<div class="ttc" id="classPlugin_3_01OpenList_3_01Entry_01_4_01_4_html_a660cc8eb88b74c1d75b397a9ccaa6e47"><div class="ttname"><a href="classPlugin_3_01OpenList_3_01Entry_01_4_01_4.html#a660cc8eb88b74c1d75b397a9ccaa6e47">Plugin&lt; OpenList&lt; Entry &gt; &gt;::register_open_lists</a></div><div class="ttdeci">static void register_open_lists()</div><div class="ttdef"><b>Definition:</b> plugin.h:46</div></div>
 <div class="ttc" id="classRegistry_html"><div class="ttname"><a href="classRegistry.html">Registry</a></div><div class="ttdef"><b>Definition:</b> option_parser_util.h:87</div></div>
+<div class="ttc" id="tiebreaking__open__list_8h_html"><div class="ttname"><a href="tiebreaking__open__list_8h.html">tiebreaking_open_list.h</a></div></div>
 <div class="ttc" id="classPlugin_html_a0b59a5d82d708941f2f534bd476c7e65"><div class="ttname"><a href="classPlugin.html#a0b59a5d82d708941f2f534bd476c7e65">Plugin::~Plugin</a></div><div class="ttdeci">~Plugin()=default</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 22 2015 14:10:30 for Fast Downward by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 14 2015 08:43:50 for Fast Downward by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

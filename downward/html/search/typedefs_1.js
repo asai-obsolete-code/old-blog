@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['elementlistconstiter',['ElementListConstIter',['../equivalence__relation_8h.html#adcd1a68c6846e41421e3868fd40bdd81',1,'equivalence_relation.h']]],
-  ['elementlistiter',['ElementListIter',['../equivalence__relation_8h.html#a22c88987f7fe558cb3981e02adfe10f9',1,'equivalence_relation.h']]],
-  ['entry',['Entry',['../classAbstractQueue.html#abe60381528bc4cf9d4032f33f2ff6f3c',1,'AbstractQueue::Entry()'],['../classAdaptiveQueue.html#a72a962211b8c52208580935d01bcaaa4',1,'AdaptiveQueue::Entry()']]],
-  ['evaluationresults',['EvaluationResults',['../heuristic__cache_8h.html#ada861ee7a926b9ad6d99f477c2753cc5',1,'heuristic_cache.h']]]
+  ['base_5ftype',['base_type',['../structboost_1_1detail_1_1msvc__register__type.html#a859f9ac56fbe951c8c9ed00f4d3be244',1,'boost::detail::msvc_register_type']]],
+  ['bin',['Bin',['../classIntPacker.html#aaba4fb76f4a256591346d2a8b4119b0f',1,'IntPacker']]],
+  ['blocklistconstiter',['BlockListConstIter',['../equivalence__relation_8h.html#a12e817b65a28b802e85b48c8b600c4a5',1,'equivalence_relation.h']]],
+  ['blocklistiter',['BlockListIter',['../equivalence__relation_8h.html#aca0c076d78f69261e7e98a148610cee9',1,'equivalence_relation.h']]],
+  ['breadth_5ffirst_5fiterator',['breadth_first_iterator',['../classtree.html#a5f654926b4f16bd091931a08cc49d4c4',1,'tree']]],
+  ['bucket',['Bucket',['../classShrinkBucketBased.html#a62513958870ccbe3f134e64f96578cb1',1,'ShrinkBucketBased']]]
 ];

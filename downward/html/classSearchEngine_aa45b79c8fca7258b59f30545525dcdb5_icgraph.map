@@ -1,0 +1,5 @@
+<map id="SearchEngine::set_plan" name="SearchEngine::set_plan">
+<area shape="rect" id="node2" href="$classMultiSearch.html#a22103750ed73bbc3495bb4057077feec" title="MultiSearch::step" alt="" coords="225,5,349,32"/>
+<area shape="rect" id="node3" href="$classSearchEngine.html#a4df85a6125380a052341794a4540c902" title="SearchEngine::check\l_goal_and_set_plan" alt="" coords="213,57,360,98"/>
+<area shape="rect" id="node4" href="$classEagerSearch.html#a579812c68f5321a6eb9e6fe0da59e14c" title="EagerSearch::step" alt="" coords="408,64,539,91"/>
+</map>
