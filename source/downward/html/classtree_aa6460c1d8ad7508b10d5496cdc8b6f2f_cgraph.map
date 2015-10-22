@@ -1,0 +1,6 @@
+<map id="tree::wrap" name="tree::wrap">
+<area shape="rect" id="node2" href="$classtree.html#abd3877aa257981dabf6c77343690e802" title="Insert node as previous sibling of node pointed to by position. " alt="" coords="141,5,225,32"/>
+<area shape="rect" id="node4" href="$classtree.html#ae1ba1b04978de8758f231e2e81b609e5" title="Move nodes in range to be children of &#39;position&#39;. " alt="" coords="133,56,232,83"/>
+<area shape="rect" id="node3" href="$namespacekp.html#a6fa683a92eb3b2cf85eb7e95e7c9a84d" title="kp::constructor" alt="" coords="280,5,389,32"/>
+<area shape="rect" id="node5" href="$classtree.html#a76b3a629c0208d5ae5b4ffcd4492e05e" title="Return iterator to the beginning of the tree. " alt="" coords="293,56,376,83"/>
+</map>

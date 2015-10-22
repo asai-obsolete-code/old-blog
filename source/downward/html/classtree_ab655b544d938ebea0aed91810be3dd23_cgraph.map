@@ -1,0 +1,4 @@
+<map id="tree::equal" name="tree::equal">
+<area shape="rect" id="node2" href="$classtree.html#a9605b028195248894dc8cf506cd256e3" title="Determine whether the iterator is an &#39;end&#39; iterator and thus not actually pointing to a node..." alt="" coords="160,5,256,32"/>
+<area shape="rect" id="node3" href="$classtree_1_1iterator__base.html#a435004214270928d106dd4c8f6a36f17" title="Number of children of the node pointed to by the iterator. " alt="" coords="137,57,279,98"/>
+</map>

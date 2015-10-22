@@ -1,7 +1,6 @@
 <map id="successor_generator.h" name="successor_generator.h">
-<area shape="rect" id="node2" href="$eager__search_8cc.html" title="eager_search.cc" alt="" coords="5,88,123,115"/>
-<area shape="rect" id="node3" href="$enforced__hill__climbing__search_8cc.html" title="enforced_hill_climbing\l_search.cc" alt="" coords="147,81,297,122"/>
-<area shape="rect" id="node4" href="$globals_8cc.html" title="globals.cc" alt="" coords="322,88,403,115"/>
-<area shape="rect" id="node5" href="$lazy__search_8cc.html" title="lazy_search.cc" alt="" coords="427,88,537,115"/>
-<area shape="rect" id="node6" href="$successor__generator_8cc.html" title="successor_generator.cc" alt="" coords="562,88,723,115"/>
+<area shape="rect" id="node2" href="$eager__search_8cc.html" title="eager_search.cc" alt="" coords="5,80,123,107"/>
+<area shape="rect" id="node3" href="$globals_8cc.html" title="globals.cc" alt="" coords="147,80,228,107"/>
+<area shape="rect" id="node4" href="$multi__search_8cc.html" title="multi_search.cc" alt="" coords="253,80,368,107"/>
+<area shape="rect" id="node5" href="$successor__generator_8cc.html" title="successor_generator.cc" alt="" coords="393,80,553,107"/>
 </map>

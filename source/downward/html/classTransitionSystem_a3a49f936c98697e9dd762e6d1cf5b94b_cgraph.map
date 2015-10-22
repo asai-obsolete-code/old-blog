@@ -1,0 +1,7 @@
+<map id="TransitionSystem::apply_label_reduction" name="TransitionSystem::apply_label_reduction">
+<area shape="rect" id="node2" href="$utilities_8h.html#af7101160ecf196ee18477f4ed3d6d332" title="release_vector_memory" alt="" coords="227,5,389,32"/>
+<area shape="rect" id="node3" href="$classLabels.html#afeea601c057a921376900e0a3d71a7dc" title="Labels::get_label_cost" alt="" coords="232,56,384,83"/>
+<area shape="rect" id="node5" href="$classTransitionSystem.html#ac8fd7988e722e3938c36f9c18c14c4e9" title="TransitionSystem::get_cost" alt="" coords="217,108,399,135"/>
+<area shape="rect" id="node4" href="$classLabels.html#a8db1f9e1faeb7f370adaac643f6758a2" title="Labels::initialized" alt="" coords="463,53,585,80"/>
+<area shape="rect" id="node6" href="$classTransitionSystem.html#a587608ee518435c68a16e9eca099dc0f" title="TransitionSystem::get\l_abstract_state" alt="" coords="449,105,599,146"/>
+</map>

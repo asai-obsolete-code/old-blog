@@ -1,0 +1,5 @@
+<map id="GlobalOperator::is_axiom" name="GlobalOperator::is_axiom">
+<area shape="rect" id="node2" href="$operator__cost_8h.html#ad7022fcca0fca6b9c8755a73518a0258" title="get_adjusted_action_cost" alt="" coords="181,5,352,32"/>
+<area shape="rect" id="node3" href="$classStateRegistry.html#af6ec9371ef06ba1031e705cf538e40ca" title="StateRegistry::get\l_successor_state" alt="" coords="203,57,331,98"/>
+<area shape="rect" id="node4" href="$classEagerSearch.html#a579812c68f5321a6eb9e6fe0da59e14c" title="EagerSearch::step" alt="" coords="400,64,531,91"/>
+</map>

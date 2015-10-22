@@ -1,0 +1,6 @@
+<map id="TaskProxy::get_axioms" name="TaskProxy::get_axioms">
+<area shape="rect" id="node2" href="$classCausalGraph.html#a98f5dcff9e838b52ce3a0c1ab3cd97e1" title="CausalGraph::CausalGraph" alt="" coords="214,5,397,32"/>
+<area shape="rect" id="node3" href="$classRelaxationHeuristic.html#aa34cc79d9e5e3e9aff4c4ed1b03a853e" title="RelaxationHeuristic\l::initialize" alt="" coords="237,57,373,98"/>
+<area shape="rect" id="node4" href="$task__tools_8h.html#a465e7a17fa48a5759b215d8d22c06bfd" title="has_axioms" alt="" coords="259,123,351,149"/>
+<area shape="rect" id="node5" href="$task__tools_8h.html#ac79de3989fce6ad0ea15ad3be01d9bb4" title="verify_no_axioms" alt="" coords="446,123,570,149"/>
+</map>

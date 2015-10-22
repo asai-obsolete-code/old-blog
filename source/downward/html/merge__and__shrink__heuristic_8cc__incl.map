@@ -1,0 +1,33 @@
+<map id="merge_and_shrink/merge_and_shrink_heuristic.cc" name="merge_and_shrink/merge_and_shrink_heuristic.cc">
+<area shape="rect" id="node2" href="$merge__and__shrink__heuristic_8h.html" title="merge_and_shrink_heuristic.h" alt="" coords="925,360,1120,387"/>
+<area shape="rect" id="node7" href="$utilities_8h.html" title="utilities.h" alt="" coords="2720,592,2793,619"/>
+<area shape="rect" id="node16" href="$labels_8h.html" title="labels.h" alt="" coords="44,592,111,619"/>
+<area shape="rect" id="node17" href="$merge__strategy_8h.html" title="merge_strategy.h" alt="" coords="576,517,699,544"/>
+<area shape="rect" id="node18" href="$shrink__strategy_8h.html" title="shrink_strategy.h" alt="" coords="429,517,552,544"/>
+<area shape="rect" id="node20" href="$transition__system_8h.html" title="transition_system.h" alt="" coords="269,517,404,544"/>
+<area shape="rect" id="node23" href="$option__parser_8h.html" title="../option_parser.h" alt="" coords="2113,360,2236,387"/>
+<area shape="rect" id="node33" href="$plugin_8h.html" title="../plugin.h" alt="" coords="1818,96,1896,123"/>
+<area shape="rect" id="node48" href="$task__tools_8h.html" title="../task_tools.h" alt="" coords="835,96,940,123"/>
+<area shape="rect" id="node49" href="$timer_8h.html" title="../timer.h" alt="" coords="3229,96,3303,123"/>
+<area shape="rect" id="node3" href="$heuristic_8h.html" title="../heuristic.h" alt="" coords="1166,443,1260,469"/>
+<area shape="rect" id="node4" href="$operator__cost_8h.html" title="operator_cost.h" alt="" coords="1099,517,1209,544"/>
+<area shape="rect" id="node5" href="$scalar__evaluator_8h.html" title="scalar_evaluator.h" alt="" coords="1387,517,1515,544"/>
+<area shape="rect" id="node6" href="$task__proxy_8h.html" title="task_proxy.h" alt="" coords="926,517,1023,544"/>
+<area shape="rect" id="node24" href="$option__parser__util_8h.html" title="option_parser_util.h" alt="" coords="2206,443,2340,469"/>
+<area shape="rect" id="node29" href="$tree_8hh.html" title="tree.hh" alt="" coords="2433,592,2495,619"/>
+<area shape="rect" id="node30" href="$tree__util_8hh.html" title="tree_util.hh" alt="" coords="2406,517,2492,544"/>
+<area shape="rect" id="node31" href="$any_8hpp.html" title="boost/any.hpp" alt="" coords="2304,592,2408,619"/>
+<area shape="rect" id="node34" href="$alternation__open__list_8h.html" title="open_lists/alternation\l_open_list.h" alt="" coords="1233,171,1377,213"/>
+<area shape="rect" id="node37" href="$bucket__open__list_8h.html" title="open_lists/bucket_open\l_list.h" alt="" coords="1551,171,1709,213"/>
+<area shape="rect" id="node40" href="$standard__scalar__open__list_8h.html" title="open_lists/standard\l_scalar_open_list.h" alt="" coords="2063,171,2197,213"/>
+<area shape="rect" id="node42" href="$tiebreaking__open__list_8h.html" title="open_lists/tiebreaking\l_open_list.h" alt="" coords="1783,171,1931,213"/>
+<area shape="rect" id="node45" href="$open__tree_8h.html" title="open_lists/open_tree.h" alt="" coords="2389,269,2541,296"/>
+<area shape="rect" id="node47" href="$open__tree2_8h.html" title="open_lists/open_tree2.h" alt="" coords="2356,179,2515,205"/>
+<area shape="rect" id="node35" href="$open__list_8h.html" title="open_list.h" alt="" coords="1429,443,1515,469"/>
+<area shape="rect" id="node36" href="$alternation__open__list_8cc.html" title="alternation_open_list.cc" alt="" coords="1226,269,1384,296"/>
+<area shape="rect" id="node39" href="$bucket__open__list_8cc.html" title="bucket_open_list.cc" alt="" coords="1561,269,1700,296"/>
+<area shape="rect" id="node41" href="$standard__scalar__open__list_8cc.html" title="standard_scalar_open\l_list.cc" alt="" coords="2164,262,2312,303"/>
+<area shape="rect" id="node43" href="$abstract__tiebreaking__open__list_8h.html" title="abstract_tiebreaking\l_open_list.h" alt="" coords="1684,353,1823,394"/>
+<area shape="rect" id="node44" href="$tiebreaking__open__list_8cc.html" title="tiebreaking_open_list.cc" alt="" coords="1825,269,1988,296"/>
+<area shape="rect" id="node46" href="$per__state__information_8h.html" title="per_state_information.h" alt="" coords="2793,517,2951,544"/>
+</map>

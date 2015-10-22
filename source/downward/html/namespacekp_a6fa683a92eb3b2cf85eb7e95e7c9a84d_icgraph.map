@@ -1,0 +1,27 @@
+<map id="kp::constructor" name="kp::constructor">
+<area shape="rect" id="node2" href="$classtree.html#a989e89a62693299d3d7eb637957b040a" title="Insert empty node as last/first child of node pointed to by position. " alt="" coords="165,95,293,121"/>
+<area shape="rect" id="node6" href="$classtree.html#aa0d0fb11d97ad48314fae6ccccdf26bf" title="tree::prepend_child" alt="" coords="163,171,295,197"/>
+<area shape="rect" id="node8" href="$classtree.html#abd3877aa257981dabf6c77343690e802" title="Insert node as previous sibling of node pointed to by position. " alt="" coords="187,401,271,428"/>
+<area shape="rect" id="node23" href="$classtree.html#a24d2bd78776bc659863a548013329c5e" title="Insert node as next sibling of node pointed to by position. " alt="" coords="171,295,288,321"/>
+<area shape="rect" id="node25" href="$classtree.html#ab090190d800c8bdf32535f8aa8857949" title="Replace node at &#39;position&#39; with other node (keeping same children); &#39;position&#39; becomes invalid..." alt="" coords="182,240,277,267"/>
+<area shape="rect" id="node3" href="$classtree.html#a91c383c68439af9e55a26a57ea927fac" title="Append the node (plus its children) at other_position as last/first child of position. " alt="" coords="348,107,476,133"/>
+<area shape="rect" id="node4" href="$classtree.html#af313f7b5e83bf9b42eb56384e057316e" title="Replace node at &#39;position&#39; with subtree starting at &#39;from&#39; (do not erase subtree at &#39;from&#39;); see abov..." alt="" coords="365,5,459,32"/>
+<area shape="rect" id="node5" href="$classtree.html#a1e3cd901f8f8d8a3da0e1d32e9282db1" title="Merge with other tree, creating new branches and leaves only if they are not already present..." alt="" coords="560,140,648,167"/>
+<area shape="rect" id="node7" href="$classtree.html#adadca03c1d831a97414a8e033035f01a" title="tree::prepend_child" alt="" coords="346,157,478,184"/>
+<area shape="rect" id="node9" href="$classtree.html#af11d736ea971ab93651350161f5a7535" title="Short&#45;hand to insert topmost node in otherwise empty tree. " alt="" coords="359,427,465,453"/>
+<area shape="rect" id="node18" href="$classtree.html#a683dda6a81ce1e22f93db0feed0a9104" title="Insert node (with children) pointed to by subtree as previous sibling of node pointed to by position..." alt="" coords="345,376,479,403"/>
+<area shape="rect" id="node22" href="$classtree.html#aa6460c1d8ad7508b10d5496cdc8b6f2f" title="Replace node with a new node, making the old node a child of the new node. " alt="" coords="372,477,452,504"/>
+<area shape="rect" id="node10" href="$classtree.html#a5925c012af64fe91a3a5ed39e3ba9d9a" title="tree::tree" alt="" coords="567,477,641,504"/>
+<area shape="rect" id="node11" href="$classtree.html#adb61bebed6c56eb5641b0b7fab7fe625" title="Extract a new tree formed by the range of siblings plus all their children. " alt="" coords="557,376,651,403"/>
+<area shape="rect" id="node12" href="$option__parser__util_8h.html#a6330371c65dec42cd7d0f526cf8bb371" title="subtree" alt="" coords="729,376,794,403"/>
+<area shape="rect" id="node13" href="$classOptionParser.html#ad7112dde4b52cccec43ed4cbd687ddca" title="OptionParser::add_option" alt="" coords="843,347,1013,373"/>
+<area shape="rect" id="node17" href="$classTokenParser_3_01std_1_1vector_3_01T_01_4_01_4.html#a657b19ea07150a618aa91ba93b90336d" title="TokenParser\&lt; std::vector\l\&lt; T \&gt; \&gt;::parse" alt="" coords="843,398,1013,439"/>
+<area shape="rect" id="node14" href="$classHeuristic.html#a1d20e58f0d2bbd0b9135d1b546545b9e" title="Heuristic::add_options\l_to_parser" alt="" coords="1076,274,1228,315"/>
+<area shape="rect" id="node15" href="$classShrinkStrategy.html#a7272db9f60d941ee32904998a51bceb2" title="ShrinkStrategy::add\l_options_to_parser" alt="" coords="1083,339,1221,381"/>
+<area shape="rect" id="node16" href="$classSearchEngine.html#a3dcbdd70e489f491e52f4175961916c8" title="SearchEngine::add_options\l_to_parser" alt="" coords="1061,405,1243,446"/>
+<area shape="rect" id="node19" href="$classtree.html#ab54b9862f3891737d6b4740d47dd9c68" title="Append the nodes in the from&#45;to range (plus their children) as last/first children of position..." alt="" coords="531,325,677,352"/>
+<area shape="rect" id="node20" href="$classtree.html#aaf01873bc5f94464ab156bffa34ed079" title="tree::prepend_children" alt="" coords="529,427,679,453"/>
+<area shape="rect" id="node21" href="$classtree.html#afc5bef13996f2fd939d83837aa8e090d" title="Replace string of siblings (plus their children) with copy of a new string (with children); see above..." alt="" coords="557,275,651,301"/>
+<area shape="rect" id="node24" href="$classtree.html#a68d8330dd25bc779fef9ccc19d37c7ac" title="Insert node (with children) pointed to by subtree as next sibling of node pointed to by position..." alt="" coords="345,310,479,351"/>
+<area shape="rect" id="node26" href="$classtree.html#ab72378e7a772a82f90d91ef7493f27bc" title="tree::tree" alt="" coords="375,259,449,285"/>
+</map>

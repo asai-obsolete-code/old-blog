@@ -1,0 +1,4 @@
+<map id="SearchSpace::trace_path" name="SearchSpace::trace_path">
+<area shape="rect" id="node2" href="$classSearchEngine.html#a4df85a6125380a052341794a4540c902" title="SearchEngine::check\l_goal_and_set_plan" alt="" coords="224,5,371,46"/>
+<area shape="rect" id="node3" href="$classEagerSearch.html#a579812c68f5321a6eb9e6fe0da59e14c" title="EagerSearch::step" alt="" coords="419,12,549,39"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="tree::append_child" name="tree::append_child">
+<area shape="rect" id="node2" href="$classtree.html#a91c383c68439af9e55a26a57ea927fac" title="Append the node (plus its children) at other_position as last/first child of position. " alt="" coords="181,5,309,32"/>
+<area shape="rect" id="node3" href="$classtree.html#af313f7b5e83bf9b42eb56384e057316e" title="Replace node at &#39;position&#39; with subtree starting at &#39;from&#39; (do not erase subtree at &#39;from&#39;); see abov..." alt="" coords="198,56,293,83"/>
+<area shape="rect" id="node4" href="$classtree.html#a1e3cd901f8f8d8a3da0e1d32e9282db1" title="Merge with other tree, creating new branches and leaves only if they are not already present..." alt="" coords="201,107,289,133"/>
+</map>

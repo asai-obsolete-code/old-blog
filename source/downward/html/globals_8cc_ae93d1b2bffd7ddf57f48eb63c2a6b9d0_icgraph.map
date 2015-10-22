@@ -1,0 +1,11 @@
+<map id="check_magic" name="check_magic">
+<area shape="rect" id="node2" href="$classDomainTransitionGraph.html#a80221d83ff7109b5f5b64a8851a4a075" title="DomainTransitionGraph\l::read_data" alt="" coords="175,5,334,46"/>
+<area shape="rect" id="node3" href="$classGlobalOperator.html#a550ed15585058f0a2f8a71a579714907" title="GlobalOperator::GlobalOperator" alt="" coords="153,71,357,97"/>
+<area shape="rect" id="node4" href="$globals_8cc.html#a94f47a68609603b3c816df6e8b98efa8" title="read_and_verify_version" alt="" coords="173,121,336,148"/>
+<area shape="rect" id="node5" href="$globals_8cc.html#a3c1d86df6451ba702d7951344904d2c2" title="read_everything" alt="" coords="405,248,520,275"/>
+<area shape="rect" id="node7" href="$globals_8cc.html#a5fa692bbede8e391f5138957c63278e4" title="read_metric" alt="" coords="209,223,300,249"/>
+<area shape="rect" id="node8" href="$globals_8cc.html#a69c095f28fe3ea6c86bfe99f0cda751a" title="read_variables" alt="" coords="201,273,308,300"/>
+<area shape="rect" id="node9" href="$globals_8cc.html#aba529973a7a4138d81a60de75b402c97" title="read_mutexes" alt="" coords="203,324,307,351"/>
+<area shape="rect" id="node10" href="$globals_8cc.html#a06d8336dac92d6917caa875b04dc5732" title="read_goal" alt="" coords="215,375,294,401"/>
+<area shape="rect" id="node6" href="$planner_8cc.html#a217dbf8b442f20279ea00b898af96f52" title="main" alt="" coords="568,248,619,275"/>
+</map>

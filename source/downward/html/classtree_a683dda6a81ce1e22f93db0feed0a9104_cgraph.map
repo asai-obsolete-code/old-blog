@@ -1,0 +1,6 @@
+<map id="tree::insert_subtree" name="tree::insert_subtree">
+<area shape="rect" id="node2" href="$classtree.html#abd3877aa257981dabf6c77343690e802" title="Insert node as previous sibling of node pointed to by position. " alt="" coords="195,5,279,32"/>
+<area shape="rect" id="node4" href="$classtree.html#ab090190d800c8bdf32535f8aa8857949" title="Replace node at &#39;position&#39; with other node (keeping same children); &#39;position&#39; becomes invalid..." alt="" coords="190,56,285,83"/>
+<area shape="rect" id="node3" href="$namespacekp.html#a6fa683a92eb3b2cf85eb7e95e7c9a84d" title="kp::constructor" alt="" coords="333,5,443,32"/>
+<area shape="rect" id="node5" href="$namespacekp.html#a0ecf33bfc4a3c744d6a14d965546e6a2" title="kp::destructor" alt="" coords="337,56,439,83"/>
+</map>

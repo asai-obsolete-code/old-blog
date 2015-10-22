@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classEquivalenceRelation.html" title="EquivalenceRelation" alt="" coords="5,5,147,32"/>
+<area shape="rect" id="node1" href="$classboost_1_1exception__detail_1_1clone__base.html" title="boost::exception_detail\l::clone_base" alt="" coords="6,5,162,46"/>
+<area shape="rect" id="node2" href="$classboost_1_1exception__detail_1_1clone__impl.html" title="boost::exception_detail\l::clone_impl\&lt; T \&gt;" alt="" coords="215,17,371,58"/>
+<area shape="rect" id="node3" href="$classboost_1_1exception.html" title="boost::exception" alt="" coords="25,121,143,148"/>
+<area shape="rect" id="node4" href="$structboost_1_1exception__detail_1_1error__info__injector.html" title="boost::exception_detail\l::error_info_injector\&lt; T \&gt;" alt="" coords="211,93,376,134"/>
 </map>

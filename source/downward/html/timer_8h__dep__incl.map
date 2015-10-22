@@ -1,11 +1,13 @@
 <map id="timer.h" name="timer.h">
-<area shape="rect" id="node2" href="$causal__graph_8cc.html" title="causal_graph.cc" alt="" coords="5,80,121,107"/>
-<area shape="rect" id="node3" href="$countdown__timer_8h.html" title="countdown_timer.h" alt="" coords="147,80,279,107"/>
-<area shape="rect" id="node6" href="$globals_8cc.html" title="globals.cc" alt="" coords="303,80,384,107"/>
-<area shape="rect" id="node7" href="$planner_8cc.html" title="planner.cc" alt="" coords="409,80,491,107"/>
-<area shape="rect" id="node8" href="$search__statistics_8cc.html" title="search_statistics.cc" alt="" coords="516,80,655,107"/>
-<area shape="rect" id="node9" href="$timer_8cc.html" title="timer.cc" alt="" coords="679,80,748,107"/>
-<area shape="rect" id="node10" href="$tracer_8cc.html" title="tracer.cc" alt="" coords="773,80,845,107"/>
-<area shape="rect" id="node4" href="$countdown__timer_8cc.html" title="countdown_timer.cc" alt="" coords="67,155,205,181"/>
-<area shape="rect" id="node5" href="$search__engine_8cc.html" title="search_engine.cc" alt="" coords="230,155,353,181"/>
+<area shape="rect" id="node2" href="$causal__graph_8cc.html" title="causal_graph.cc" alt="" coords="5,88,121,115"/>
+<area shape="rect" id="node3" href="$countdown__timer_8h.html" title="countdown_timer.h" alt="" coords="147,88,279,115"/>
+<area shape="rect" id="node6" href="$globals_8cc.html" title="globals.cc" alt="" coords="303,88,384,115"/>
+<area shape="rect" id="node7" href="$merge__and__shrink__heuristic_8cc.html" title="merge_and_shrink/merge\l_and_shrink_heuristic.cc" alt="" coords="409,81,577,122"/>
+<area shape="rect" id="node8" href="$transition__system_8cc.html" title="merge_and_shrink/transition\l_system.cc" alt="" coords="602,81,787,122"/>
+<area shape="rect" id="node9" href="$planner_8cc.html" title="planner.cc" alt="" coords="812,88,893,115"/>
+<area shape="rect" id="node10" href="$search__statistics_8cc.html" title="search_statistics.cc" alt="" coords="919,88,1057,115"/>
+<area shape="rect" id="node11" href="$timer_8cc.html" title="timer.cc" alt="" coords="1081,88,1151,115"/>
+<area shape="rect" id="node12" href="$tracer_8cc.html" title="tracer.cc" alt="" coords="1175,88,1248,115"/>
+<area shape="rect" id="node4" href="$countdown__timer_8cc.html" title="countdown_timer.cc" alt="" coords="67,171,205,197"/>
+<area shape="rect" id="node5" href="$search__engine_8cc.html" title="search_engine.cc" alt="" coords="230,171,353,197"/>
 </map>

@@ -1,0 +1,9 @@
+<map id="ext/boost/static_assert.hpp" name="ext/boost/static_assert.hpp">
+<area shape="rect" id="node2" href="$config_8hpp.html" title="boost/config.hpp" alt="" coords="261,155,379,181"/>
+<area shape="rect" id="node11" href="$detail_2workaround_8hpp.html" title="boost/detail/workaround.hpp" alt="" coords="293,80,477,107"/>
+<area shape="rect" id="node3" href="$select__compiler__config_8hpp.html" title="boost/config/select\l_compiler_config.hpp" alt="" coords="5,230,149,271"/>
+<area shape="rect" id="node4" href="$select__stdlib__config_8hpp.html" title="boost/config/select\l_stdlib_config.hpp" alt="" coords="174,230,305,271"/>
+<area shape="rect" id="node8" href="$select__platform__config_8hpp.html" title="boost/config/select\l_platform_config.hpp" alt="" coords="330,230,472,271"/>
+<area shape="rect" id="node9" href="$suffix_8hpp.html" title="boost/config/suffix.hpp" alt="" coords="497,237,651,264"/>
+<area shape="rect" id="node6" href="$utility_8hpp.html" title="boost/config/no_tr1\l/utility.hpp" alt="" coords="236,321,369,362"/>
+</map>

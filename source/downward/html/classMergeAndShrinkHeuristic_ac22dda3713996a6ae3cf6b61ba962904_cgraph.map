@@ -1,0 +1,5 @@
+<map id="MergeAndShrinkHeuristic::compute_heuristic" name="MergeAndShrinkHeuristic::compute_heuristic">
+<area shape="rect" id="node2" href="$classHeuristic.html#ac3193969815e60e8240d0ab11d95de74" title="Heuristic::convert\l_global_state" alt="" coords="224,5,349,46"/>
+<area shape="rect" id="node3" href="$classTaskProxy.html#a34cb2a41ebd0d1d89ab739d5eb2835f5" title="TaskProxy::convert\l_global_state" alt="" coords="397,5,533,46"/>
+<area shape="rect" id="node4" href="$classAbstractTask.html#a047d223704b817c72274f42c05fe3c7d" title="AbstractTask::get_state\l_values" alt="" coords="581,5,744,46"/>
+</map>

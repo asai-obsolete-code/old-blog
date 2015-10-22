@@ -1,0 +1,8 @@
+<map id="tree::erase_children" name="tree::erase_children">
+<area shape="rect" id="node2" href="$classtree.html#af7978c72a08d31a88d068403ce762957" title="Erase element at position pointed to by iterator, return incremented iterator. " alt="" coords="195,56,279,83"/>
+<area shape="rect" id="node7" href="$classtree.html#af313f7b5e83bf9b42eb56384e057316e" title="Replace node at &#39;position&#39; with subtree starting at &#39;from&#39; (do not erase subtree at &#39;from&#39;); see abov..." alt="" coords="190,107,285,133"/>
+<area shape="rect" id="node3" href="$classtree.html#aa8cf6dfe17504abfc0ffabb5a4ba9d0a" title="Erase all nodes of the tree. " alt="" coords="355,5,435,32"/>
+<area shape="rect" id="node5" href="$classtree.html#afc5bef13996f2fd939d83837aa8e090d" title="Replace string of siblings (plus their children) with copy of a new string (with children); see above..." alt="" coords="347,56,442,83"/>
+<area shape="rect" id="node6" href="$classtree.html#a32e2ff253b76486cee84b40737604bf8" title="Move &#39;source&#39; node (plus its children) to become the node at &#39;target&#39; (erasing the node at &#39;target&#39;)..." alt="" coords="333,107,456,133"/>
+<area shape="rect" id="node4" href="$classtree.html#af0169b515c95f4299fd2d984137b7868" title="tree::~tree" alt="" coords="504,5,587,32"/>
+</map>

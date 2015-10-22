@@ -1,9 +1,24 @@
 var searchData=
 [
-  ['operator_5fcost_2ecc',['operator_cost.cc',['../operator__cost_8cc.html',1,'']]],
-  ['operator_5fcost_2eh',['operator_cost.h',['../operator__cost_8h.html',1,'']]],
-  ['option_5fparser_2ecc',['option_parser.cc',['../option__parser_8cc.html',1,'']]],
-  ['option_5fparser_2eh',['option_parser.h',['../option__parser_8h.html',1,'']]],
-  ['option_5fparser_5futil_2ecc',['option_parser_util.cc',['../option__parser__util_8cc.html',1,'']]],
-  ['option_5fparser_5futil_2eh',['option_parser_util.h',['../option__parser__util_8h.html',1,'']]]
+  ['macos_2ehpp',['macos.hpp',['../macos_8hpp.html',1,'']]],
+  ['max_5fevaluator_2ecc',['max_evaluator.cc',['../max__evaluator_8cc.html',1,'']]],
+  ['max_5fevaluator_2eh',['max_evaluator.h',['../max__evaluator_8h.html',1,'']]],
+  ['memory_2ehpp',['memory.hpp',['../memory_8hpp.html',1,'']]],
+  ['merge_5fand_5fshrink_5fheuristic_2ecc',['merge_and_shrink_heuristic.cc',['../merge__and__shrink__heuristic_8cc.html',1,'']]],
+  ['merge_5fand_5fshrink_5fheuristic_2eh',['merge_and_shrink_heuristic.h',['../merge__and__shrink__heuristic_8h.html',1,'']]],
+  ['merge_5fdfp_2ecc',['merge_dfp.cc',['../merge__dfp_8cc.html',1,'']]],
+  ['merge_5fdfp_2eh',['merge_dfp.h',['../merge__dfp_8h.html',1,'']]],
+  ['merge_5flinear_2ecc',['merge_linear.cc',['../merge__linear_8cc.html',1,'']]],
+  ['merge_5flinear_2eh',['merge_linear.h',['../merge__linear_8h.html',1,'']]],
+  ['merge_5fstrategy_2ecc',['merge_strategy.cc',['../merge__strategy_8cc.html',1,'']]],
+  ['merge_5fstrategy_2eh',['merge_strategy.h',['../merge__strategy_8h.html',1,'']]],
+  ['metrowerks_2ehpp',['metrowerks.hpp',['../metrowerks_8hpp.html',1,'']]],
+  ['modena_2ehpp',['modena.hpp',['../modena_8hpp.html',1,'']]],
+  ['mpw_2ehpp',['mpw.hpp',['../mpw_8hpp.html',1,'']]],
+  ['msl_2ehpp',['msl.hpp',['../msl_8hpp.html',1,'']]],
+  ['msvc_2ehpp',['msvc.hpp',['../msvc_8hpp.html',1,'']]],
+  ['msvc_5fprefix_2ehpp',['msvc_prefix.hpp',['../msvc__prefix_8hpp.html',1,'']]],
+  ['msvc_5fsuffix_2ehpp',['msvc_suffix.hpp',['../msvc__suffix_8hpp.html',1,'']]],
+  ['multi_5fsearch_2ecc',['multi_search.cc',['../multi__search_8cc.html',1,'']]],
+  ['multi_5fsearch_2eh',['multi_search.h',['../multi__search_8h.html',1,'']]]
 ];

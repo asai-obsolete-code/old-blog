@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['win32_5flean_5fand_5fmean',['WIN32_LEAN_AND_MEAN',['../utilities__windows_8h.html#ac7bef5d85e3dcd73eef56ad39ffc84a9',1,'utilities_windows.h']]],
-  ['windows',['WINDOWS',['../utilities_8h.html#a987b73d7cc6da72732af75c5d7872d29',1,'utilities.h']]]
+  ['no_5freturn',['NO_RETURN',['../utilities_8h.html#a9bc43e3ee0ae83643b65e07fe1fd0132',1,'utilities.h']]],
+  ['nominmax',['NOMINMAX',['../utilities__windows_8h.html#a9f918755b601cf4bffca775992e6fb90',1,'utilities_windows.h']]]
 ];

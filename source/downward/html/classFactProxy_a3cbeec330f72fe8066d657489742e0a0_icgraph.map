@@ -1,0 +1,6 @@
+<map id="FactProxy::get_value" name="FactProxy::get_value">
+<area shape="rect" id="node2" href="$classTransitionSystem.html#a49fb4d822c6be3dcfb5db4afe47e040f" title="TransitionSystem::build\l_atomic_transition_systems" alt="" coords="201,5,386,46"/>
+<area shape="rect" id="node3" href="$classRelaxationHeuristic.html#a4b523d3a9322d516c305095f6e13e27e" title="RelaxationHeuristic\l::get_proposition" alt="" coords="225,70,361,111"/>
+<area shape="rect" id="node5" href="$classState.html#a000bbcb5f0d131374acc29c2d5a65c08" title="State::get_successor" alt="" coords="220,136,367,163"/>
+<area shape="rect" id="node4" href="$classRelaxationHeuristic.html#aa34cc79d9e5e3e9aff4c4ed1b03a853e" title="RelaxationHeuristic\l::initialize" alt="" coords="435,70,571,111"/>
+</map>

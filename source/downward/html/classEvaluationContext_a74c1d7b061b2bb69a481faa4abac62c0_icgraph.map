@@ -1,0 +1,9 @@
+<map id="EvaluationContext::get_result" name="EvaluationContext::get_result">
+<area shape="rect" id="node2" href="$classEvaluationContext.html#a808f44a988b1b57089b73c548131ec87" title="EvaluationContext::\lis_heuristic_infinite" alt="" coords="203,5,341,46"/>
+<area shape="rect" id="node4" href="$classEvaluationContext.html#a0922a801e720bb65221ed95bad2c614a" title="EvaluationContext::\lget_heuristic_value" alt="" coords="203,70,341,111"/>
+<area shape="rect" id="node5" href="$classEvaluationContext.html#a3a7931d4b5899fac556b27e8474a08d3" title="EvaluationContext::\lget_heuristic_value\l_or_infinity" alt="" coords="203,200,341,256"/>
+<area shape="rect" id="node8" href="$classEvaluationContext.html#a69f4a63ba56f594d3a5fa67e357e7807" title="EvaluationContext::\lget_preferred_operators" alt="" coords="193,135,351,177"/>
+<area shape="rect" id="node3" href="$classEagerSearch.html#a579812c68f5321a6eb9e6fe0da59e14c" title="EagerSearch::step" alt="" coords="405,64,536,91"/>
+<area shape="rect" id="node6" href="$classCombiningEvaluator.html#a9da792d602f409634bea4ceb32421369" title="CombiningEvaluator\l::compute_result" alt="" coords="401,167,540,209"/>
+<area shape="rect" id="node7" href="$classWeightedEvaluator.html#a5885d8f741de0cd655610f939da724d8" title="WeightedEvaluator::\lcompute_result" alt="" coords="401,233,541,274"/>
+</map>

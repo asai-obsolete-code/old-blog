@@ -1,0 +1,12 @@
+<map id="TaskProxy::get_operators" name="TaskProxy::get_operators">
+<area shape="rect" id="node2" href="$classBlindSearchHeuristic.html#af684ed73096822d1d8e2d8fe27d7f974" title="BlindSearchHeuristic\l::BlindSearchHeuristic" alt="" coords="245,5,397,46"/>
+<area shape="rect" id="node3" href="$classCausalGraph.html#a98f5dcff9e838b52ce3a0c1ab3cd97e1" title="CausalGraph::CausalGraph" alt="" coords="230,71,413,97"/>
+<area shape="rect" id="node4" href="$classLabels.html#a8cd3407c9f1f138bc2c029946d23caa2" title="Labels::initialize" alt="" coords="264,121,379,148"/>
+<area shape="rect" id="node6" href="$classTransitionSystem.html#a7157e3607d861f90987098bd86d2daed" title="TransitionSystem::Transition\lSystem" alt="" coords="227,173,416,214"/>
+<area shape="rect" id="node7" href="$classTransitionSystem.html#a49fb4d822c6be3dcfb5db4afe47e040f" title="TransitionSystem::build\l_atomic_transition_systems" alt="" coords="229,238,414,279"/>
+<area shape="rect" id="node8" href="$classAtomicTransitionSystem.html#aeb1ad58782a0e740d044b9bcece41f9f" title="AtomicTransitionSystem\l::AtomicTransitionSystem" alt="" coords="235,303,408,345"/>
+<area shape="rect" id="node9" href="$classRelaxationHeuristic.html#aa34cc79d9e5e3e9aff4c4ed1b03a853e" title="RelaxationHeuristic\l::initialize" alt="" coords="253,369,389,410"/>
+<area shape="rect" id="node10" href="$task__tools_8h.html#a1053b6dfc4fc969dfd784c8d07c1d05a" title="is_unit_cost" alt="" coords="275,435,367,461"/>
+<area shape="rect" id="node11" href="$task__tools_8h.html#a8db7f9e63556ff19c4cdea9e403457ad" title="verify_no_conditional\l_effects" alt="" coords="249,486,393,527"/>
+<area shape="rect" id="node5" href="$classMergeAndShrinkHeuristic.html#a5b55431fcc506a84a6a63e0e60da8662" title="MergeAndShrinkHeuristic\l::MergeAndShrinkHeuristic" alt="" coords="464,114,643,155"/>
+</map>

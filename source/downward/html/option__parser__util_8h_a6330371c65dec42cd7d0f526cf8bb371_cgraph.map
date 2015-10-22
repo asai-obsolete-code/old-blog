@@ -1,0 +1,10 @@
+<map id="subtree" name="subtree">
+<area shape="rect" id="node2" href="$classtree.html#adb61bebed6c56eb5641b0b7fab7fe625" title="Extract a new tree formed by the range of siblings plus all their children. " alt="" coords="121,81,215,108"/>
+<area shape="rect" id="node3" href="$classtree.html#af11d736ea971ab93651350161f5a7535" title="Short&#45;hand to insert topmost node in otherwise empty tree. " alt="" coords="265,5,370,32"/>
+<area shape="rect" id="node6" href="$classtree.html#ab090190d800c8bdf32535f8aa8857949" title="Replace node at &#39;position&#39; with other node (keeping same children); &#39;position&#39; becomes invalid..." alt="" coords="270,56,365,83"/>
+<area shape="rect" id="node8" href="$classtree.html#a76b3a629c0208d5ae5b4ffcd4492e05e" title="Return iterator to the beginning of the tree. " alt="" coords="276,107,359,133"/>
+<area shape="rect" id="node9" href="$classtree.html#a0d09fe9fd34fbfc9c9e4e28cb694448e" title="Return iterator to the end of the tree. " alt="" coords="281,157,354,184"/>
+<area shape="rect" id="node4" href="$classtree.html#abd3877aa257981dabf6c77343690e802" title="Insert node as previous sibling of node pointed to by position. " alt="" coords="429,5,513,32"/>
+<area shape="rect" id="node5" href="$namespacekp.html#a6fa683a92eb3b2cf85eb7e95e7c9a84d" title="kp::constructor" alt="" coords="571,31,680,57"/>
+<area shape="rect" id="node7" href="$namespacekp.html#a0ecf33bfc4a3c744d6a14d965546e6a2" title="kp::destructor" alt="" coords="419,107,522,133"/>
+</map>

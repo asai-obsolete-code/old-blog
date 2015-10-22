@@ -1,0 +1,7 @@
+<map id="EvaluationResult::set_h_value" name="EvaluationResult::set_h_value">
+<area shape="rect" id="node2" href="$classCombiningEvaluator.html#a9da792d602f409634bea4ceb32421369" title="CombiningEvaluator\l::compute_result" alt="" coords="211,5,349,46"/>
+<area shape="rect" id="node3" href="$classGEvaluator.html#ab12df6ccde6e9d8f592e027846ca3483" title="GEvaluator::compute\l_result" alt="" coords="207,70,353,111"/>
+<area shape="rect" id="node4" href="$classHeuristic.html#a47b52f0c6ccdb8caa8b3e3e292600324" title="Heuristic::compute\l_result" alt="" coords="214,135,346,177"/>
+<area shape="rect" id="node5" href="$classPrefEvaluator.html#aed50d397377a2db650fee37364258855" title="PrefEvaluator::compute\l_result" alt="" coords="201,201,359,242"/>
+<area shape="rect" id="node6" href="$classWeightedEvaluator.html#a5885d8f741de0cd655610f939da724d8" title="WeightedEvaluator::\lcompute_result" alt="" coords="210,266,350,307"/>
+</map>

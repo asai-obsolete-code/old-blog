@@ -1,0 +1,4 @@
+<map id="AbstractTask::get_num_operator_preconditions" name="AbstractTask::get_num_operator_preconditions">
+<area shape="rect" id="node2" href="$classPreconditionsProxy.html#a63cac56561ada0b576cff8f732a3a902" title="PreconditionsProxy\l::size" alt="" coords="214,5,349,46"/>
+<area shape="rect" id="node3" href="$classPreconditionsProxy.html#ae350b0dfab627206414f3dc3a8a819ce" title="PreconditionsProxy\l::operator[]" alt="" coords="398,5,533,46"/>
+</map>

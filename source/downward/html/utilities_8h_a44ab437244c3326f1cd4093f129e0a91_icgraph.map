@@ -1,0 +1,17 @@
+<map id="unused_parameter" name="unused_parameter">
+<area shape="rect" id="node2" href="$utilities_8h.html#a3a238c49d33a517c1d2778f45337f061" title="get_peak_memory_in_kb" alt="" coords="185,115,351,141"/>
+<area shape="rect" id="node3" href="$classMergeAndShrinkHeuristic.html#a316de8856a9e31dc1a90e18ac99bcb6f" title="MergeAndShrinkHeuristic\l::initialize" alt="" coords="400,9,571,50"/>
+<area shape="rect" id="node4" href="$classSearchStatistics.html#a3b4ebaca2e03995e8f793821b7232479" title="SearchStatistics::print\l_basic_statistics" alt="" coords="410,74,561,115"/>
+<area shape="rect" id="node10" href="$classMemoryTracer.html#a1676e126303e8089280cbd51297d1b7b" title="MemoryTracer::print\l_trace_message" alt="" coords="416,139,555,181"/>
+<area shape="rect" id="node16" href="$utilities_8h.html#aed9194851af2eee2c9f96171abb20c58" title="print_peak_memory" alt="" coords="417,205,553,232"/>
+<area shape="rect" id="node5" href="$classEagerSearch.html#a26e022f6530c43f07de448529d79bfda" title="EagerSearch::print\l_checkpoint_line" alt="" coords="627,41,757,82"/>
+<area shape="rect" id="node6" href="$classEagerSearch.html#ad2a84b79cbb0db13f18d9e32996303e0" title="EagerSearch::initialize" alt="" coords="832,5,984,32"/>
+<area shape="rect" id="node7" href="$classEagerSearch.html#a8533416de3639b7445903a0734b54fd7" title="EagerSearch::per_node_new" alt="" coords="813,56,1003,83"/>
+<area shape="rect" id="node8" href="$classEagerSearch.html#a486ff0b490b899fdfb359cf14a8d6459" title="EagerSearch::per_node" alt="" coords="1051,56,1210,83"/>
+<area shape="rect" id="node9" href="$classEagerSearch.html#a579812c68f5321a6eb9e6fe0da59e14c" title="EagerSearch::step" alt="" coords="1259,56,1389,83"/>
+<area shape="rect" id="node11" href="$classMemoryTracer.html#ab96f774ed622820f5f3670831d3ea818" title="MemoryTracer::enter\l_block" alt="" coords="621,106,763,147"/>
+<area shape="rect" id="node13" href="$classMemoryTracer.html#a2d9296691218d9b0b09defdb9efa364c" title="MemoryTracer::leave\l_block" alt="" coords="619,171,765,213"/>
+<area shape="rect" id="node15" href="$tracer_8h.html#a03d562b3be1df4656b8021acabf897a9" title="trace" alt="" coords="667,237,717,264"/>
+<area shape="rect" id="node12" href="$classTraceBlock.html#a6a499f9c10137d7276c58ad02f0deab3" title="TraceBlock::TraceBlock" alt="" coords="827,113,989,140"/>
+<area shape="rect" id="node14" href="$classTraceBlock.html#affffffc2eb0b1c12051091857abbfc0a" title="TraceBlock::~TraceBlock" alt="" coords="823,179,993,205"/>
+</map>

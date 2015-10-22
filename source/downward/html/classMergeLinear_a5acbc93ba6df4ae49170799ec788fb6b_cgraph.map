@@ -1,0 +1,7 @@
+<map id="MergeLinear::initialize" name="MergeLinear::initialize">
+<area shape="rect" id="node2" href="$classMergeStrategy.html#a12ae514567bc64018e938f4bcbdd89c8" title="MergeStrategy::initialize" alt="" coords="203,56,365,83"/>
+<area shape="rect" id="node3" href="$classMergeStrategy.html#a97b7c27c15303fce634c5d58b4f33dcc" title="MergeStrategy::initialized" alt="" coords="414,5,583,32"/>
+<area shape="rect" id="node4" href="$classTaskProxy.html#ac90edab81b6721935b4bc2a7f8a35463" title="TaskProxy::get_variables" alt="" coords="413,56,584,83"/>
+<area shape="rect" id="node5" href="$classVariablesProxy.html#a01cfc73991b2c4a149dd778358531527" title="VariablesProxy::size" alt="" coords="427,107,570,133"/>
+<area shape="rect" id="node6" href="$classAbstractTask.html#ab0f878648c015fb918567403e80d4e4b" title="AbstractTask::get_num\l_variables" alt="" coords="633,99,791,141"/>
+</map>

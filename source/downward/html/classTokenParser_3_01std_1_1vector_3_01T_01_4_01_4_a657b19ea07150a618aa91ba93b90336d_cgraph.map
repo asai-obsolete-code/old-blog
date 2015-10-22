@@ -1,8 +1,16 @@
 <map id="TokenParser&lt; std::vector&lt; T &gt; &gt;::parse" name="TokenParser&lt; std::vector&lt; T &gt; &gt;::parse">
 <area shape="rect" id="node2" href="$classOptionParser.html#aa30a0a9106c2660088363eba8e875936" title="OptionParser::get_parse_tree" alt="" coords="224,5,416,32"/>
-<area shape="rect" id="node3" href="$option__parser__util_8h.html#a4ea24f981730f302344ea034fdec1306" title="first_child_of_root" alt="" coords="257,56,383,83"/>
-<area shape="rect" id="node5" href="$option__parser__util_8h.html#a525398f795832919481f57d86e0c8fc1" title="end_of_roots_children" alt="" coords="245,107,395,133"/>
-<area shape="rect" id="node6" href="$option__parser__util_8h.html#a6330371c65dec42cd7d0f526cf8bb371" title="subtree" alt="" coords="287,157,353,184"/>
-<area shape="rect" id="node7" href="$classOptionParser.html#a1587e4915a30a4d2f1d1c936a6f75315" title="OptionParser::dry_run" alt="" coords="245,208,395,235"/>
-<area shape="rect" id="node4" href="$option__parser__util_8h.html#a61cd2fb45af191c6007f152131019ab3" title="first_child" alt="" coords="465,56,543,83"/>
+<area shape="rect" id="node3" href="$classtree.html#a76b3a629c0208d5ae5b4ffcd4492e05e" title="Return iterator to the beginning of the tree. " alt="" coords="673,107,756,133"/>
+<area shape="rect" id="node4" href="$option__parser__util_8h.html#a4ea24f981730f302344ea034fdec1306" title="first_child_of_root" alt="" coords="257,56,383,83"/>
+<area shape="rect" id="node6" href="$option__parser__util_8h.html#a525398f795832919481f57d86e0c8fc1" title="end_of_roots_children" alt="" coords="464,157,613,184"/>
+<area shape="rect" id="node8" href="$option__parser__util_8h.html#a6330371c65dec42cd7d0f526cf8bb371" title="subtree" alt="" coords="287,208,353,235"/>
+<area shape="rect" id="node15" href="$classOptionParser.html#a1587e4915a30a4d2f1d1c936a6f75315" title="OptionParser::dry_run" alt="" coords="245,259,395,285"/>
+<area shape="rect" id="node5" href="$option__parser__util_8h.html#a61cd2fb45af191c6007f152131019ab3" title="first_child" alt="" coords="499,5,578,32"/>
+<area shape="rect" id="node7" href="$classtree.html#a0d09fe9fd34fbfc9c9e4e28cb694448e" title="Return iterator to the end of the tree. " alt="" coords="678,157,751,184"/>
+<area shape="rect" id="node9" href="$classtree.html#adb61bebed6c56eb5641b0b7fab7fe625" title="Extract a new tree formed by the range of siblings plus all their children. " alt="" coords="491,208,586,235"/>
+<area shape="rect" id="node10" href="$classtree.html#af11d736ea971ab93651350161f5a7535" title="Short&#45;hand to insert topmost node in otherwise empty tree. " alt="" coords="662,208,767,235"/>
+<area shape="rect" id="node13" href="$classtree.html#ab090190d800c8bdf32535f8aa8857949" title="Replace node at &#39;position&#39; with other node (keeping same children); &#39;position&#39; becomes invalid..." alt="" coords="667,259,762,285"/>
+<area shape="rect" id="node11" href="$classtree.html#abd3877aa257981dabf6c77343690e802" title="Insert node as previous sibling of node pointed to by position. " alt="" coords="826,208,910,235"/>
+<area shape="rect" id="node12" href="$namespacekp.html#a6fa683a92eb3b2cf85eb7e95e7c9a84d" title="kp::constructor" alt="" coords="968,259,1077,285"/>
+<area shape="rect" id="node14" href="$namespacekp.html#a0ecf33bfc4a3c744d6a14d965546e6a2" title="kp::destructor" alt="" coords="817,259,919,285"/>
 </map>

@@ -1,0 +1,5 @@
+<map id="AbstractTask::get_initial_state_values" name="AbstractTask::get_initial_state_values">
+<area shape="rect" id="node2" href="$classTaskProxy.html#a0b3d803f47cd0f8c1440093f72ccee15" title="TaskProxy::get_initial\l_state" alt="" coords="217,38,365,79"/>
+<area shape="rect" id="node3" href="$classMergeAndShrinkHeuristic.html#a316de8856a9e31dc1a90e18ac99bcb6f" title="MergeAndShrinkHeuristic\l::initialize" alt="" coords="415,5,585,46"/>
+<area shape="rect" id="node4" href="$classAtomicTransitionSystem.html#aeb1ad58782a0e740d044b9bcece41f9f" title="AtomicTransitionSystem\l::AtomicTransitionSystem" alt="" coords="413,70,587,111"/>
+</map>

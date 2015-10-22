@@ -1,7 +1,6 @@
 <map id="causal_graph.h" name="causal_graph.h">
 <area shape="rect" id="node2" href="$causal__graph_8cc.html" title="causal_graph.cc" alt="" coords="5,80,121,107"/>
-<area shape="rect" id="node3" href="$cg__cache_8cc.html" title="cg_cache.cc" alt="" coords="147,80,243,107"/>
-<area shape="rect" id="node4" href="$globals_8cc.html" title="globals.cc" alt="" coords="267,80,348,107"/>
-<area shape="rect" id="node5" href="$task__proxy_8cc.html" title="task_proxy.cc" alt="" coords="373,80,477,107"/>
-<area shape="rect" id="node6" href="$variable__order__finder_8cc.html" title="variable_order_finder.cc" alt="" coords="501,80,660,107"/>
+<area shape="rect" id="node3" href="$globals_8cc.html" title="globals.cc" alt="" coords="147,80,228,107"/>
+<area shape="rect" id="node4" href="$task__proxy_8cc.html" title="task_proxy.cc" alt="" coords="253,80,357,107"/>
+<area shape="rect" id="node5" href="$variable__order__finder_8cc.html" title="variable_order_finder.cc" alt="" coords="381,80,540,107"/>
 </map>

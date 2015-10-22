@@ -1,8 +1,9 @@
 <map id="task_tools.h" name="task_tools.h">
-<area shape="rect" id="node2" href="$additive__heuristic_8cc.html" title="additive_heuristic.cc" alt="" coords="5,80,145,107"/>
-<area shape="rect" id="node3" href="$blind__search__heuristic_8cc.html" title="blind_search_heuristic.cc" alt="" coords="171,80,340,107"/>
-<area shape="rect" id="node4" href="$ff__heuristic_8cc.html" title="ff_heuristic.cc" alt="" coords="365,80,469,107"/>
-<area shape="rect" id="node5" href="$lm__cut__heuristic_8cc.html" title="lm_cut_heuristic.cc" alt="" coords="494,80,628,107"/>
-<area shape="rect" id="node6" href="$successor__generator_8cc.html" title="successor_generator.cc" alt="" coords="653,80,813,107"/>
-<area shape="rect" id="node7" href="$task__tools_8cc.html" title="task_tools.cc" alt="" coords="838,80,937,107"/>
+<area shape="rect" id="node2" href="$blind__search__heuristic_8cc.html" title="blind_search_heuristic.cc" alt="" coords="5,88,173,115"/>
+<area shape="rect" id="node3" href="$diversity__heuristic_8cc.html" title="diversity_heuristic.cc" alt="" coords="198,88,343,115"/>
+<area shape="rect" id="node4" href="$lm__cut__heuristic_8cc.html" title="lm_cut_heuristic.cc" alt="" coords="367,88,501,115"/>
+<area shape="rect" id="node5" href="$merge__and__shrink__heuristic_8cc.html" title="merge_and_shrink/merge\l_and_shrink_heuristic.cc" alt="" coords="527,81,695,122"/>
+<area shape="rect" id="node6" href="$random__heuristic_8cc.html" title="random_heuristic.cc" alt="" coords="719,88,857,115"/>
+<area shape="rect" id="node7" href="$successor__generator_8cc.html" title="successor_generator.cc" alt="" coords="882,88,1043,115"/>
+<area shape="rect" id="node8" href="$task__tools_8cc.html" title="task_tools.cc" alt="" coords="1067,88,1167,115"/>
 </map>

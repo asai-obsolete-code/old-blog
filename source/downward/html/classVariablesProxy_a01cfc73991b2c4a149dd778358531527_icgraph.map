@@ -1,0 +1,11 @@
+<map id="VariablesProxy::size" name="VariablesProxy::size">
+<area shape="rect" id="node2" href="$classCausalGraph.html#a98f5dcff9e838b52ce3a0c1ab3cd97e1" title="CausalGraph::CausalGraph" alt="" coords="198,5,381,32"/>
+<area shape="rect" id="node3" href="$classLabels.html#a8cd3407c9f1f138bc2c029946d23caa2" title="Labels::initialize" alt="" coords="232,56,347,83"/>
+<area shape="rect" id="node5" href="$classMergeStrategy.html#a12ae514567bc64018e938f4bcbdd89c8" title="MergeStrategy::initialize" alt="" coords="208,107,371,133"/>
+<area shape="rect" id="node8" href="$classRelaxationHeuristic.html#aa34cc79d9e5e3e9aff4c4ed1b03a853e" title="RelaxationHeuristic\l::initialize" alt="" coords="221,158,357,199"/>
+<area shape="rect" id="node9" href="$classVariablesProxy.html#abbed7eda6d29581678adb86a406cab2f" title="VariablesProxy::operator[]" alt="" coords="203,224,376,251"/>
+<area shape="rect" id="node10" href="$classVariableOrderFinder.html#a3b1f2bd3cb0a9334c555b3d3dad66ca1" title="VariableOrderFinder\l::VariableOrderFinder" alt="" coords="217,275,362,317"/>
+<area shape="rect" id="node4" href="$classMergeAndShrinkHeuristic.html#a5b55431fcc506a84a6a63e0e60da8662" title="MergeAndShrinkHeuristic\l::MergeAndShrinkHeuristic" alt="" coords="429,45,608,86"/>
+<area shape="rect" id="node6" href="$classMergeDFP.html#a5359eecd4c374b4010a92da9b6302118" title="MergeDFP::initialize" alt="" coords="449,111,589,137"/>
+<area shape="rect" id="node7" href="$classMergeLinear.html#a5acbc93ba6df4ae49170799ec788fb6b" title="MergeLinear::initialize" alt="" coords="445,161,593,188"/>
+</map>

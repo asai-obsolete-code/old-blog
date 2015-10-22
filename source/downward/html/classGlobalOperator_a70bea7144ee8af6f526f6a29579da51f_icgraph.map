@@ -1,0 +1,10 @@
+<map id="GlobalOperator::get_effects" name="GlobalOperator::get_effects">
+<area shape="rect" id="node2" href="$classAxiomEvaluator.html#a1ff4add414b7a5dcc6e2ca9bf71a5cc7" title="AxiomEvaluator::AxiomEvaluator" alt="" coords="190,5,405,32"/>
+<area shape="rect" id="node3" href="$classDomainTransitionGraph.html#a80221d83ff7109b5f5b64a8851a4a075" title="DomainTransitionGraph\l::read_data" alt="" coords="218,57,377,98"/>
+<area shape="rect" id="node4" href="$classRootTask.html#a74ec7d0968e42fcb0c5847509f518023" title="RootTask::get_num_operator\l_effects" alt="" coords="202,122,393,163"/>
+<area shape="rect" id="node5" href="$classRootTask.html#aec7d32ea79fc430f6d280c74e5264e4d" title="RootTask::get_num_operator\l_effect_conditions" alt="" coords="202,187,393,229"/>
+<area shape="rect" id="node6" href="$classRootTask.html#aa37d8174fe1d2e62642502e7483b88b2" title="RootTask::get_operator\l_effect_condition" alt="" coords="218,253,377,294"/>
+<area shape="rect" id="node7" href="$classRootTask.html#a7880bd37c8750a2f7045440de8d9e39e" title="RootTask::get_operator\l_effect" alt="" coords="218,318,377,359"/>
+<area shape="rect" id="node8" href="$classStateRegistry.html#af6ec9371ef06ba1031e705cf538e40ca" title="StateRegistry::get\l_successor_state" alt="" coords="233,383,361,425"/>
+<area shape="rect" id="node9" href="$classEagerSearch.html#a579812c68f5321a6eb9e6fe0da59e14c" title="EagerSearch::step" alt="" coords="453,391,584,417"/>
+</map>

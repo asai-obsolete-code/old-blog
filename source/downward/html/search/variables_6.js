@@ -24,5 +24,6 @@ var searchData=
   ['g_5fuse_5fmetric',['g_use_metric',['../globals_8cc.html#a0fe74e7f6ce591fcffcaa333d768a8e7',1,'g_use_metric():&#160;globals.cc'],['../globals_8h.html#a0fe74e7f6ce591fcffcaa333d768a8e7',1,'g_use_metric():&#160;globals.cc']]],
   ['g_5fvariable_5fdomain',['g_variable_domain',['../globals_8cc.html#ae78e94b46ed46477c99fe01124969e9f',1,'g_variable_domain():&#160;globals.cc'],['../globals_8h.html#a6c3e19343670e65be1628e83f0e9303e',1,'g_variable_domain():&#160;globals.cc']]],
   ['g_5fvariable_5fname',['g_variable_name',['../globals_8cc.html#aca058ae61560a7fe0e5af5d06487e8c5',1,'g_variable_name():&#160;globals.cc'],['../globals_8h.html#ac652815da9b6f5c37f1e399c8c8a6917',1,'g_variable_name():&#160;globals.cc']]],
-  ['goal_5fpropositions',['goal_propositions',['../classRelaxationHeuristic.html#a0d1cf8a6bc1f7fff5821cfe40458bc53',1,'RelaxationHeuristic']]]
+  ['goal_5fpropositions',['goal_propositions',['../classRelaxationHeuristic.html#a0d1cf8a6bc1f7fff5821cfe40458bc53',1,'RelaxationHeuristic']]],
+  ['group',['group',['../structSignature.html#a43cc58e22f29f874c9979c1e48619357',1,'Signature']]]
 ];

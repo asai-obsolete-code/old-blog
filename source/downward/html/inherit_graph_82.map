@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classSearchStatistics.html" title="SearchStatistics" alt="" coords="6,5,125,32"/>
+<area shape="rect" id="node1" href="$classGeneratorBase.html" title="GeneratorBase" alt="" coords="5,56,115,83"/>
+<area shape="rect" id="node2" href="$classGeneratorEmpty.html" title="GeneratorEmpty" alt="" coords="164,5,281,32"/>
+<area shape="rect" id="node3" href="$classGeneratorLeaf.html" title="GeneratorLeaf" alt="" coords="171,56,275,83"/>
+<area shape="rect" id="node4" href="$classGeneratorSwitch.html" title="GeneratorSwitch" alt="" coords="163,107,282,133"/>
 </map>

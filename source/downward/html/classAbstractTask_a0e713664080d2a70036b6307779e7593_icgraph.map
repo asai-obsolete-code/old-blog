@@ -1,0 +1,8 @@
+<map id="AbstractTask::get_num_axioms" name="AbstractTask::get_num_axioms">
+<area shape="rect" id="node2" href="$classAxiomsProxy.html#aea7209589c94878185298ddf3a328720" title="AxiomsProxy::size" alt="" coords="221,31,353,57"/>
+<area shape="rect" id="node7" href="$classState.html#a000bbcb5f0d131374acc29c2d5a65c08" title="State::get_successor" alt="" coords="213,81,360,108"/>
+<area shape="rect" id="node3" href="$classAxiomsProxy.html#ab246c21d3176f9c7f2d713a1d31c65dc" title="AxiomsProxy::empty" alt="" coords="417,5,561,32"/>
+<area shape="rect" id="node6" href="$classAxiomsProxy.html#ab553b5ccabf34ab61180eb4f6ce80008" title="AxiomsProxy::operator[]" alt="" coords="408,56,571,83"/>
+<area shape="rect" id="node4" href="$task__tools_8h.html#a465e7a17fa48a5759b215d8d22c06bfd" title="has_axioms" alt="" coords="619,5,711,32"/>
+<area shape="rect" id="node5" href="$task__tools_8h.html#ac79de3989fce6ad0ea15ad3be01d9bb4" title="verify_no_axioms" alt="" coords="761,5,885,32"/>
+</map>

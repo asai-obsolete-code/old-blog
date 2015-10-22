@@ -1,0 +1,7 @@
+<map id="TaskProxy::get_goals" name="TaskProxy::get_goals">
+<area shape="rect" id="node2" href="$classAtomicTransitionSystem.html#aeb1ad58782a0e740d044b9bcece41f9f" title="AtomicTransitionSystem\l::AtomicTransitionSystem" alt="" coords="203,5,376,46"/>
+<area shape="rect" id="node3" href="$classRelaxationHeuristic.html#aa34cc79d9e5e3e9aff4c4ed1b03a853e" title="RelaxationHeuristic\l::initialize" alt="" coords="221,70,357,111"/>
+<area shape="rect" id="node4" href="$task__tools_8h.html#a14ce404b29d8066a06c2fe548f2122e1" title="is_goal_state" alt="" coords="240,136,339,163"/>
+<area shape="rect" id="node6" href="$classVariableOrderFinder.html#a3b1f2bd3cb0a9334c555b3d3dad66ca1" title="VariableOrderFinder\l::VariableOrderFinder" alt="" coords="217,187,362,229"/>
+<area shape="rect" id="node5" href="$classBlindSearchHeuristic.html#a7a6527bad7788c79a80811f6dacefa64" title="BlindSearchHeuristic\l::compute_heuristic" alt="" coords="424,129,568,170"/>
+</map>

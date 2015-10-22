@@ -1,0 +1,16 @@
+<map id="AbstractTask::get_num_variables" name="AbstractTask::get_num_variables">
+<area shape="rect" id="node2" href="$classFactsProxy.html#aed16c31e3040df9e26836662bbab8442" title="FactsProxy::end" alt="" coords="230,115,349,141"/>
+<area shape="rect" id="node3" href="$classVariablesProxy.html#a01cfc73991b2c4a149dd778358531527" title="VariablesProxy::size" alt="" coords="218,165,361,192"/>
+<area shape="rect" id="node13" href="$classState.html#a190690b30579dad2a05e870ff171ca9f" title="State::State" alt="" coords="243,216,335,243"/>
+<area shape="rect" id="node15" href="$classFactProxy.html#a4f8e8bdcc26959bfc42291b8ccac0609" title="FactProxy::FactProxy" alt="" coords="214,267,365,293"/>
+<area shape="rect" id="node4" href="$classCausalGraph.html#a98f5dcff9e838b52ce3a0c1ab3cd97e1" title="CausalGraph::CausalGraph" alt="" coords="414,5,597,32"/>
+<area shape="rect" id="node5" href="$classLabels.html#a8cd3407c9f1f138bc2c029946d23caa2" title="Labels::initialize" alt="" coords="448,56,563,83"/>
+<area shape="rect" id="node7" href="$classMergeStrategy.html#a12ae514567bc64018e938f4bcbdd89c8" title="MergeStrategy::initialize" alt="" coords="424,107,587,133"/>
+<area shape="rect" id="node10" href="$classRelaxationHeuristic.html#aa34cc79d9e5e3e9aff4c4ed1b03a853e" title="RelaxationHeuristic\l::initialize" alt="" coords="437,158,573,199"/>
+<area shape="rect" id="node11" href="$classVariablesProxy.html#abbed7eda6d29581678adb86a406cab2f" title="VariablesProxy::operator[]" alt="" coords="419,224,592,251"/>
+<area shape="rect" id="node12" href="$classVariableOrderFinder.html#a3b1f2bd3cb0a9334c555b3d3dad66ca1" title="VariableOrderFinder\l::VariableOrderFinder" alt="" coords="433,275,578,317"/>
+<area shape="rect" id="node6" href="$classMergeAndShrinkHeuristic.html#a5b55431fcc506a84a6a63e0e60da8662" title="MergeAndShrinkHeuristic\l::MergeAndShrinkHeuristic" alt="" coords="645,45,824,86"/>
+<area shape="rect" id="node8" href="$classMergeDFP.html#a5359eecd4c374b4010a92da9b6302118" title="MergeDFP::initialize" alt="" coords="665,111,805,137"/>
+<area shape="rect" id="node9" href="$classMergeLinear.html#a5acbc93ba6df4ae49170799ec788fb6b" title="MergeLinear::initialize" alt="" coords="661,161,809,188"/>
+<area shape="rect" id="node14" href="$classState.html#a000bbcb5f0d131374acc29c2d5a65c08" title="State::get_successor" alt="" coords="432,341,579,368"/>
+</map>

@@ -79,7 +79,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
-      <li><a href="functions.html#index_a"><span>a</span></a></li>
+      <li><a href="functions.html#index__"><span>_</span></a></li>
+      <li><a href="functions_a.html#index_a"><span>a</span></a></li>
       <li><a href="functions_b.html#index_b"><span>b</span></a></li>
       <li><a href="functions_c.html#index_c"><span>c</span></a></li>
       <li><a href="functions_d.html#index_d"><span>d</span></a></li>
@@ -123,14 +124,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
 <li>save_plan_if_necessary()
-: <a class="el" href="classIteratedSearch.html#a06b7fc61e3492db9e1f50c5d0726366c">IteratedSearch</a>
-, <a class="el" href="classSearchEngine.html#a42484decda17a8073d315594de94eb88">SearchEngine</a>
+: <a class="el" href="classSearchEngine.html#a42484decda17a8073d315594de94eb88">SearchEngine</a>
 </li>
 <li>ScalarEvaluator()
 : <a class="el" href="classScalarEvaluator.html#ac497109b542bc9f0724f417713530a20">ScalarEvaluator</a>
 </li>
 <li>search()
-: <a class="el" href="classSearchEngine.html#a854ed0ccddcb77ac90f0f286ccc5d459">SearchEngine</a>
+: <a class="el" href="classOpenDTree.html#af73158ed285dac5210e9fe8c138082de">OpenDTree&lt; Entry &gt;</a>
+, <a class="el" href="classOpenTree.html#a2638c6b90856bad9e94f1ad98089b397">OpenTree&lt; Entry &gt;</a>
+, <a class="el" href="classSearchEngine.html#a854ed0ccddcb77ac90f0f286ccc5d459">SearchEngine</a>
+</li>
+<li>search_and_cleanup()
+: <a class="el" href="classOpenDTree.html#a96046373add8ea40f13b53d0156b304d">OpenDTree&lt; Entry &gt;</a>
+, <a class="el" href="classOpenTree.html#a49474000e00d700ad3e115c9ac956830">OpenTree&lt; Entry &gt;</a>
 </li>
 <li>search_progress
 : <a class="el" href="classSearchEngine.html#a639a53ef1ca2db26c936ca62dbdf5e81">SearchEngine</a>
@@ -166,31 +172,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classSegmentedVector.html#a5dcb317e685d3d6dfa85fb3afe524e27">SegmentedVector&lt; Entry, Allocator &gt;</a>
 </li>
 <li>set()
-: <a class="el" href="classIntPacker.html#a12f8374a73cad207e16d5ee969a9da13">IntPacker</a>
+: <a class="el" href="structboost_1_1exception__detail_1_1error__info__container.html#a0b3f7bfa81c15a0cc9162023e71dd6e7">boost::exception_detail::error_info_container</a>
+, <a class="el" href="classIntPacker.html#a12f8374a73cad207e16d5ee969a9da13">IntPacker</a>
 , <a class="el" href="classIntPacker_1_1VariableInfo.html#a1c0f791e1e5d0dde211281c6fb4e584d">IntPacker::VariableInfo</a>
 , <a class="el" href="classOptions.html#a442b5282575a1c2c4db119021ab8715d">Options</a>
 </li>
 <li>set_bound()
 : <a class="el" href="classSearchEngine.html#ad1d3c8d14d209c139c49f6503910a05a">SearchEngine</a>
 </li>
-<li>set_h_dirty()
-: <a class="el" href="classSearchNode.html#ad5db250a2114bbb97c16f19f4ada06e7">SearchNode</a>
+<li>set_cost()
+: <a class="el" href="classLabelGroup.html#a79f72a00cc69b7016c359f70e5433039">LabelGroup</a>
+</li>
+<li>set_entry()
+: <a class="el" href="classTreeNode.html#a2c62889f39ec49b3c2d4c8765242578d">TreeNode&lt; Entry &gt;</a>
 </li>
 <li>set_h_value()
 : <a class="el" href="classEvaluationResult.html#a1c562352723a4ec890f1287f1eff2e2a">EvaluationResult</a>
+</li>
+<li>set_head()
+: <a class="el" href="classtree.html#af11d736ea971ab93651350161f5a7535">tree&lt; T, tree_node_allocator &gt;</a>
 </li>
 <li>set_help_mode()
 : <a class="el" href="classOptionParser.html#a280d3a9daf3916579cffb7c759d2ea7f">OptionParser</a>
 , <a class="el" href="classOptions.html#af7b9a4c275ac0a80ea853ae7d51cae51">Options</a>
 </li>
-<li>set_lower_bound()
-: <a class="el" href="classLPConstraint.html#a000b78a27a35327bc9e561f304a455c2">LPConstraint</a>
-</li>
 <li>set_plan()
 : <a class="el" href="classSearchEngine.html#aa45b79c8fca7258b59f30545525dcdb5">SearchEngine</a>
-</li>
-<li>set_pref_operator_heuristics()
-: <a class="el" href="classLazySearch.html#aee996209b530866fd5c89a48ef613289">LazySearch</a>
 </li>
 <li>set_preferred()
 : <a class="el" href="classHeuristic.html#a1311c3ee01e571cab3d69d0c400d7489">Heuristic</a>
@@ -204,37 +211,96 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>set_unparsed_config()
 : <a class="el" href="classOptions.html#a4ce7d22ca205a18d73f5bdbd255c69d7">Options</a>
 </li>
-<li>set_upper_bound()
-: <a class="el" href="classLPConstraint.html#abac76822f118b27d008a71b3b51f48d9">LPConstraint</a>
+<li>shrink()
+: <a class="el" href="classShrinkBisimulation.html#a41296061627593b1779f3c82d1fe65e6">ShrinkBisimulation</a>
+, <a class="el" href="classShrinkBucketBased.html#a7217fc0cbd84e0432bcf0ae013e73287">ShrinkBucketBased</a>
+, <a class="el" href="classShrinkStrategy.html#a2dcfbd11fc41e8a569092c9fdfbf3695">ShrinkStrategy</a>
+</li>
+<li>shrink_before_merge()
+: <a class="el" href="classShrinkStrategy.html#aa9661a9e941bd14711950ed66232055c">ShrinkStrategy</a>
+</li>
+<li>ShrinkBisimulation()
+: <a class="el" href="classShrinkBisimulation.html#abbba5190c86b7270ef1fde45ef6cd828">ShrinkBisimulation</a>
+</li>
+<li>ShrinkBucketBased()
+: <a class="el" href="classShrinkBucketBased.html#ab4a77c83f862032940f6d513526f7cee">ShrinkBucketBased</a>
+</li>
+<li>ShrinkFH()
+: <a class="el" href="classShrinkFH.html#a33a5557524b16e9ff2aa86c5527ba575">ShrinkFH</a>
+</li>
+<li>ShrinkRandom()
+: <a class="el" href="classShrinkRandom.html#a965ebe37a68930f93740d3eefe026bd4">ShrinkRandom</a>
+</li>
+<li>ShrinkStrategy()
+: <a class="el" href="classShrinkStrategy.html#a79d757aec56977ad843e07365c091b02">ShrinkStrategy</a>
 </li>
 <li>shuffle()
 : <a class="el" href="classRandomNumberGenerator.html#ae9ac233ae41471a32afd3524322b885a">RandomNumberGenerator</a>
+</li>
+<li>sibling()
+: <a class="el" href="classtree.html#a02a9dd5a8f79e01137fe7d9f1f8b76b7">tree&lt; T, tree_node_allocator &gt;</a>
+</li>
+<li>sibling_iterator()
+: <a class="el" href="classtree_1_1sibling__iterator.html#adaaf56c800ed241d36802abab3925a2a">tree&lt; T, tree_node_allocator &gt;::sibling_iterator</a>
+</li>
+<li>Signature()
+: <a class="el" href="structSignature.html#affea99e4db966c0dbaedd1f78153dce2">Signature</a>
 </li>
 <li>simplify()
 : <a class="el" href="structValueTransition.html#af7b4cb11553914228c1ffff816c1765a">ValueTransition</a>
 </li>
 <li>size()
-: <a class="el" href="classAxiomsProxy.html#aea7209589c94878185298ddf3a328720">AxiomsProxy</a>
+: <a class="el" href="classAlternationOpenList.html#acd9889a046284ca36b2a9ea2b8c248de">AlternationOpenList&lt; Entry &gt;</a>
+, <a class="el" href="classAxiomsProxy.html#aea7209589c94878185298ddf3a328720">AxiomsProxy</a>
 , <a class="el" href="classConditionsProxy.html#af0710776571971659082f0140e4cdba3">ConditionsProxy</a>
 , <a class="el" href="classEffectConditionsProxy.html#af447849d62079e622be08a68df7dab14">EffectConditionsProxy</a>
 , <a class="el" href="classEffectsProxy.html#ab153e05e58aef798690cd76d565aaaf9">EffectsProxy</a>
 , <a class="el" href="classGoalsProxy.html#abfc758e237e5ef8d56fd1e0c0f3eb6f8">GoalsProxy</a>
+, <a class="el" href="classLabelGroup.html#a182ba7b4d1f6251a9c59ef57b362df2b">LabelGroup</a>
 , <a class="el" href="classOperatorsProxy.html#a25f2894eab5294000cabbd01557e08f8">OperatorsProxy</a>
 , <a class="el" href="classPreconditionsProxy.html#a63cac56561ada0b576cff8f732a3a902">PreconditionsProxy</a>
 , <a class="el" href="classSegmentedArrayVector.html#a6efe1e990f0e94d743b8d5e996be32af">SegmentedArrayVector&lt; Element, Allocator &gt;</a>
 , <a class="el" href="classSegmentedVector.html#a6a139b65c0fa335bfb29e24d260cf9b7">SegmentedVector&lt; Entry, Allocator &gt;</a>
 , <a class="el" href="classState.html#aa6a01718876f9abbb5aacbef952ecb21">State</a>
 , <a class="el" href="classStateRegistry.html#a4e437b21bc89d14db1d501bb03c545a9">StateRegistry</a>
+, <a class="el" href="classtree.html#a68ad599f29cc97cfb36259097c19b7ca">tree&lt; T, tree_node_allocator &gt;</a>
 , <a class="el" href="classVariablesProxy.html#a01cfc73991b2c4a149dd778358531527">VariablesProxy</a>
 </li>
-<li>source
-: <a class="el" href="structcea__heuristic_1_1LocalTransition.html#aaba912a6833b1e67b4ea87b8bd0b29a7">cea_heuristic::LocalTransition</a>
+<li>size_type
+: <a class="el" href="classtree_1_1iterator__base.html#aa2b239ac4db713d5b191e696584a9076">tree&lt; T, tree_node_allocator &gt;::iterator_base</a>
+</li>
+<li>skip_children()
+: <a class="el" href="classtree_1_1iterator__base.html#aa0be7989b9dd4c5bcdcc0d47a56d11fb">tree&lt; T, tree_node_allocator &gt;::iterator_base</a>
+</li>
+<li>skip_current_children_
+: <a class="el" href="classtree_1_1iterator__base.html#a88239267268c728952e0cd89b9326e82">tree&lt; T, tree_node_allocator &gt;::iterator_base</a>
+</li>
+<li>sort()
+: <a class="el" href="classtree.html#a498ec42a5eb44cba8bf9ef6e7fd5db9e">tree&lt; T, tree_node_allocator &gt;</a>
+</li>
+<li>src
+: <a class="el" href="structTransition.html#a407bbff4bf5d5c472257a26e83be8efc">Transition</a>
+</li>
+<li>StandardScalarOpenList()
+: <a class="el" href="classStandardScalarOpenList.html#acfce21c55d1725b061c64bd8bea378ef">StandardScalarOpenList&lt; Entry &gt;</a>
 </li>
 <li>start_parsing()
 : <a class="el" href="classOptionParser.html#a672b8b902d2c30dcb54c5d8a5481baaa">OptionParser</a>
 </li>
+<li>state
+: <a class="el" href="structSignature.html#a9c6af5f771339c6033a09049c9c9c99c">Signature</a>
+</li>
 <li>State()
 : <a class="el" href="classState.html#a190690b30579dad2a05e870ff171ca9f">State</a>
+</li>
+<li>state
+: <a class="el" href="classTreeNode.html#a61d30876f725b5ce0c897940dfbab972">TreeNode&lt; Entry &gt;</a>
+</li>
+<li>StateEquivalenceClass
+: <a class="el" href="classShrinkStrategy.html#a305f10d66e1107e984bad11727f4efac">ShrinkStrategy</a>
+</li>
+<li>StateEquivalenceRelation
+: <a class="el" href="classShrinkStrategy.html#a3dbc1ac089d9bc4c0986ec22e9faf94d">ShrinkStrategy</a>
 </li>
 <li>StateRegistry
 : <a class="el" href="classGlobalState.html#ab5efff6db8e98ec0a35ba239b664d5f8">GlobalState</a>
@@ -247,6 +313,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>statistics
 : <a class="el" href="classSearchEngine.html#a904954dd91947b71a737215b8b5ea9e8">SearchEngine</a>
+, <a class="el" href="classTransitionSystem.html#abd632189b5a511a5e83caae1f3163ac1">TransitionSystem</a>
 </li>
 <li>status
 : <a class="el" href="structRelaxedProposition.html#ae220b85dd3767656e8882afa9209fcbc">RelaxedProposition</a>
@@ -254,8 +321,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>step()
 : <a class="el" href="classEagerSearch.html#a579812c68f5321a6eb9e6fe0da59e14c">EagerSearch</a>
-, <a class="el" href="classEnforcedHillClimbingSearch.html#a792b3c175edfe829dd67401eb1060fce">EnforcedHillClimbingSearch</a>
-, <a class="el" href="classLazySearch.html#a58d840359308153dab0d7c7f39be10bd">LazySearch</a>
+, <a class="el" href="classMultiSearch.html#a22103750ed73bbc3495bb4057077feec">MultiSearch</a>
 , <a class="el" href="classSearchEngine.html#a2c003ac4636fd1442fd2d4eb8db5ab8d">SearchEngine</a>
 </li>
 <li>stop()
@@ -265,29 +331,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>storage
 : <a class="el" href="classOptions.html#a1a01ac6aee89c9697c6718d97a90cf7d">Options</a>
 </li>
-<li>store()
-: <a class="el" href="classCGCache.html#a7677ea7457943d4081ae022ec58d5351">CGCache</a>
-</li>
-<li>store_helpful_transition()
-: <a class="el" href="classCGCache.html#ab9b77e6216328b13483854e6e68dc328">CGCache</a>
-</li>
 <li>subscribe()
 : <a class="el" href="classStateRegistry.html#a962e7b5b4024a5334cc9f14ee2c02f42">StateRegistry</a>
 </li>
 <li>substr
 : <a class="el" href="structParseError.html#afdf019ca7c83bb77412262baf3c319ee">ParseError</a>
 </li>
+<li>subtree()
+: <a class="el" href="classtree.html#a830cccac50df183c44c6ff83cab5a27f">tree&lt; T, tree_node_allocator &gt;</a>
+</li>
 <li>succ_builder
 : <a class="el" href="structCausalGraphBuilder.html#a9a722f3782f6737608fd4b5fc8d9ea4e">CausalGraphBuilder</a>
+</li>
+<li>succ_signature
+: <a class="el" href="structSignature.html#ac7a6df6d5e8883e380eb6751b02062cd">Signature</a>
 </li>
 <li>SuccessorGenerator()
 : <a class="el" href="classSuccessorGenerator.html#af2a0ac3a134815b9644b0475c05053c4">SuccessorGenerator</a>
 </li>
 <li>SumEvaluator()
-: <a class="el" href="classSumEvaluator.html#a77e17a40880beb1b1f4611baa8440e61">SumEvaluator</a>
+: <a class="el" href="classSumEvaluator.html#ad4cbe51a347eab320a300fc5cad68a56">SumEvaluator</a>
 </li>
 <li>support_help
 : <a class="el" href="structDocStruct.html#a5ab754df0511c5d44c26063e59472b6b">DocStruct</a>
+</li>
+<li>swap()
+: <a class="el" href="classboost_1_1any.html#a2c4c4e3b0a17e5c06f82a97905e6bed6">boost::any</a>
+, <a class="el" href="classtree.html#adc67ebdd1db6d695f66f919fa0debbd9">tree&lt; T, tree_node_allocator &gt;</a>
 </li>
 <li>synopsis
 : <a class="el" href="structDocStruct.html#af808bfe418f51eacf0c1101513d3677f">DocStruct</a>
@@ -300,7 +370,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 22 2015 14:10:31 for Fast Downward by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 14 2015 08:44:49 for Fast Downward by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

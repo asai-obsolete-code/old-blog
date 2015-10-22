@@ -1,0 +1,15 @@
+<map id="TransitionSystem::build_atomic_transition_systems" name="TransitionSystem::build_atomic_transition_systems">
+<area shape="rect" id="node2" href="$classTaskProxy.html#ac90edab81b6721935b4bc2a7f8a35463" title="TaskProxy::get_variables" alt="" coords="241,5,412,32"/>
+<area shape="rect" id="node3" href="$classTaskProxy.html#a0f5cac4b7f9802ee580ef6cfce818365" title="TaskProxy::get_operators" alt="" coords="241,56,413,83"/>
+<area shape="rect" id="node4" href="$classOperatorsProxy.html#a25f2894eab5294000cabbd01557e08f8" title="OperatorsProxy::size" alt="" coords="254,107,399,133"/>
+<area shape="rect" id="node6" href="$classLabels.html#ad1be7588e2d4798e4dbac498e242c7e3" title="Labels::add_label" alt="" coords="265,157,388,184"/>
+<area shape="rect" id="node8" href="$classFactProxy.html#ac11e3f1fc46e6f11364d22f70d93ee5e" title="FactProxy::get_variable" alt="" coords="247,208,407,235"/>
+<area shape="rect" id="node9" href="$classVariableProxy.html#ac3b398d41af8e1e188c2a743bbe802a6" title="VariableProxy::get_id" alt="" coords="253,259,400,285"/>
+<area shape="rect" id="node10" href="$classFactProxy.html#a3cbeec330f72fe8066d657489742e0a0" title="FactProxy::get_value" alt="" coords="253,309,400,336"/>
+<area shape="rect" id="node11" href="$classVariableProxy.html#a603b9c3d1c7a59a12641b530305d44c2" title="VariableProxy::get\l_domain_size" alt="" coords="262,462,391,503"/>
+<area shape="rect" id="node13" href="$classLabels.html#a7e5af105d288e0cd06e70e90ed7b89cb" title="Labels::get_size" alt="" coords="268,411,385,437"/>
+<area shape="rect" id="node14" href="$classLabels.html#afeea601c057a921376900e0a3d71a7dc" title="Labels::get_label_cost" alt="" coords="251,360,403,387"/>
+<area shape="rect" id="node5" href="$classAbstractTask.html#a616388eda808179e2dafcf8030348732" title="AbstractTask::get_num\l_operators" alt="" coords="471,99,630,141"/>
+<area shape="rect" id="node7" href="$classLabels.html#a8db1f9e1faeb7f370adaac643f6758a2" title="Labels::initialized" alt="" coords="489,263,612,289"/>
+<area shape="rect" id="node12" href="$classAbstractTask.html#a8f229a999a431a27c75daad6bb86474e" title="AbstractTask::get_variable\l_domain_size" alt="" coords="461,462,640,503"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="EvaluationResult::is_uninitialized" name="EvaluationResult::is_uninitialized">
+<area shape="rect" id="node2" href="$classEvaluationContext.html#a74c1d7b061b2bb69a481faa4abac62c0" title="EvaluationContext::\lget_result" alt="" coords="193,103,330,145"/>
+<area shape="rect" id="node3" href="$classEvaluationContext.html#a808f44a988b1b57089b73c548131ec87" title="EvaluationContext::\lis_heuristic_infinite" alt="" coords="390,5,527,46"/>
+<area shape="rect" id="node5" href="$classEvaluationContext.html#a0922a801e720bb65221ed95bad2c614a" title="EvaluationContext::\lget_heuristic_value" alt="" coords="390,70,527,111"/>
+<area shape="rect" id="node6" href="$classEvaluationContext.html#a3a7931d4b5899fac556b27e8474a08d3" title="EvaluationContext::\lget_heuristic_value\l_or_infinity" alt="" coords="390,200,527,256"/>
+<area shape="rect" id="node9" href="$classEvaluationContext.html#a69f4a63ba56f594d3a5fa67e357e7807" title="EvaluationContext::\lget_preferred_operators" alt="" coords="379,135,538,177"/>
+<area shape="rect" id="node4" href="$classEagerSearch.html#a579812c68f5321a6eb9e6fe0da59e14c" title="EagerSearch::step" alt="" coords="592,64,723,91"/>
+<area shape="rect" id="node7" href="$classCombiningEvaluator.html#a9da792d602f409634bea4ceb32421369" title="CombiningEvaluator\l::compute_result" alt="" coords="588,167,727,209"/>
+<area shape="rect" id="node8" href="$classWeightedEvaluator.html#a5885d8f741de0cd655610f939da724d8" title="WeightedEvaluator::\lcompute_result" alt="" coords="587,233,727,274"/>
+</map>

@@ -88,19 +88,19 @@ Search Engine</h2>
 <p>There are two main implementations of <a class="el" href="classSearchEngine.html">SearchEngine</a>:</p>
 <ul>
 <li><a class="el" href="classEagerSearch.html">EagerSearch</a> - implements eager search (i.e. each state and its heuristic value is computed before inserting into the open list)</li>
-<li><a class="el" href="classLazySearch.html">LazySearch</a> - implements lazy search (i.e. each state and its heuristic value is computed only when removed from the open list)</li>
+<li>LazySearch - implements lazy search (i.e. each state and its heuristic value is computed only when removed from the open list)</li>
 </ul>
 <p>Each of these main classes can use a generic open list to support using multiple heuristics in various ways. They have been subclasses to create a simple way to use some standard search algorithms, like A* (AStarSearchEngine).</p>
 <h2><a class="anchor" id="open_list_sec"></a>
 Open List</h2>
 <p>The <a class="el" href="classOpenList.html">OpenList</a> class is the base class for all open lists. In Fast Downward, the open list (and not the search engine) is responsible for handling multiple heuristics and preferred operators in various ways.</p>
 <ul>
-<li>StandardScalarOpenList - implements a standard (one value) open list</li>
-<li>TieBreakingOpenList - implements a standard tie breaking open list (i.e. value1 is more important than value2)</li>
+<li><a class="el" href="classStandardScalarOpenList.html">StandardScalarOpenList</a> - implements a standard (one value) open list</li>
+<li><a class="el" href="classTieBreakingOpenList.html">TieBreakingOpenList</a> - implements a standard tie breaking open list (i.e. value1 is more important than value2)</li>
 <li>ParetoOpenList - implements pareto-optimal open lists (i.e. the next node to be removed is pareto optimal according to all values)</li>
-<li>AlternationOpenList - implements the dual queues approach</li>
+<li><a class="el" href="classAlternationOpenList.html">AlternationOpenList</a> - implements the dual queues approach</li>
 </ul>
-<p>Most open lists use Evaluator objects (StandardScalarOpenList has one Evaluator, TieBreakingOpenList and ParetoOpenList have several Evaluators). AlternationOpenList uses several other <a class="el" href="classOpenList.html">OpenList</a> objects, each of which contain their own Evaluators.</p>
+<p>Most open lists use Evaluator objects (<a class="el" href="classStandardScalarOpenList.html">StandardScalarOpenList</a> has one Evaluator, <a class="el" href="classTieBreakingOpenList.html">TieBreakingOpenList</a> and ParetoOpenList have several Evaluators). <a class="el" href="classAlternationOpenList.html">AlternationOpenList</a> uses several other <a class="el" href="classOpenList.html">OpenList</a> objects, each of which contain their own Evaluators.</p>
 <h2><a class="anchor" id="evaluator_sec"></a>
 Evaluators and Heuristics</h2>
 <p>Evaluator objects (which generalize heuristics) are objects which evaluate a state, and are used by open lists. Currently, the only supported Evaluator is a <a class="el" href="classScalarEvaluator.html">ScalarEvaluator</a>, which returns a single numeric value.</p>
@@ -114,7 +114,7 @@ Evaluators and Heuristics</h2>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 22 2015 14:10:31 for Fast Downward by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 14 2015 08:44:48 for Fast Downward by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

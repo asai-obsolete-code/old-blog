@@ -1,0 +1,9 @@
+<map id="tree::subtree" name="tree::subtree">
+<area shape="rect" id="node2" href="$classtree.html#af11d736ea971ab93651350161f5a7535" title="Short&#45;hand to insert topmost node in otherwise empty tree. " alt="" coords="150,5,255,32"/>
+<area shape="rect" id="node5" href="$classtree.html#ab090190d800c8bdf32535f8aa8857949" title="Replace node at &#39;position&#39; with other node (keeping same children); &#39;position&#39; becomes invalid..." alt="" coords="155,56,250,83"/>
+<area shape="rect" id="node7" href="$classtree.html#a76b3a629c0208d5ae5b4ffcd4492e05e" title="Return iterator to the beginning of the tree. " alt="" coords="161,107,244,133"/>
+<area shape="rect" id="node8" href="$classtree.html#a0d09fe9fd34fbfc9c9e4e28cb694448e" title="Return iterator to the end of the tree. " alt="" coords="166,157,239,184"/>
+<area shape="rect" id="node3" href="$classtree.html#abd3877aa257981dabf6c77343690e802" title="Insert node as previous sibling of node pointed to by position. " alt="" coords="314,5,398,32"/>
+<area shape="rect" id="node4" href="$namespacekp.html#a6fa683a92eb3b2cf85eb7e95e7c9a84d" title="kp::constructor" alt="" coords="456,31,565,57"/>
+<area shape="rect" id="node6" href="$namespacekp.html#a0ecf33bfc4a3c744d6a14d965546e6a2" title="kp::destructor" alt="" coords="305,107,407,133"/>
+</map>

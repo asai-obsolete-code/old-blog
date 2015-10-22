@@ -1,0 +1,10 @@
+<map id="AbstractTask::get_num_operators" name="AbstractTask::get_num_operators">
+<area shape="rect" id="node2" href="$classOperatorsProxy.html#a25f2894eab5294000cabbd01557e08f8" title="OperatorsProxy::size" alt="" coords="214,147,359,174"/>
+<area shape="rect" id="node3" href="$classLabels.html#a8cd3407c9f1f138bc2c029946d23caa2" title="Labels::initialize" alt="" coords="645,114,760,140"/>
+<area shape="rect" id="node5" href="$classTransitionSystem.html#a7157e3607d861f90987098bd86d2daed" title="TransitionSystem::Transition\lSystem" alt="" coords="408,41,597,82"/>
+<area shape="rect" id="node6" href="$classTransitionSystem.html#a49fb4d822c6be3dcfb5db4afe47e040f" title="TransitionSystem::build\l_atomic_transition_systems" alt="" coords="410,106,595,148"/>
+<area shape="rect" id="node7" href="$classAtomicTransitionSystem.html#aeb1ad58782a0e740d044b9bcece41f9f" title="AtomicTransitionSystem\l::AtomicTransitionSystem" alt="" coords="416,172,589,213"/>
+<area shape="rect" id="node8" href="$classOperatorsProxy.html#af3146b105a508de47adce891272c4307" title="OperatorsProxy::empty" alt="" coords="424,238,581,264"/>
+<area shape="rect" id="node9" href="$classOperatorsProxy.html#a153274802a51f1560fbfb09a0199c9eb" title="OperatorsProxy::operator[]" alt="" coords="415,288,591,315"/>
+<area shape="rect" id="node4" href="$classMergeAndShrinkHeuristic.html#a5b55431fcc506a84a6a63e0e60da8662" title="MergeAndShrinkHeuristic\l::MergeAndShrinkHeuristic" alt="" coords="808,106,987,148"/>
+</map>

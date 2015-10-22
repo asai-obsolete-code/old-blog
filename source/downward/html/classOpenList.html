@@ -82,19 +82,504 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classOpenList-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">OpenList&lt; Entry &gt; Class Template Reference</div>  </div>
+<div class="title">OpenList&lt; Entry &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="option__parser_8h_source.html">option_parser.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="open__list_8h_source.html">open_list.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for OpenList&lt; Entry &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="classOpenList__inherit__graph.png" border="0" usemap="#OpenList_3_01Entry_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="OpenList_3_01Entry_01_4_inherit__map" id="OpenList_3_01Entry_01_4_inherit__map">
+<area shape="rect" id="node2" href="classAbstractTieBreakingOpenList.html" title="AbstractTieBreakingOpenList\l\&lt; Entry \&gt;" alt="" coords="184,27,376,69"/><area shape="rect" id="node6" href="classAlternationOpenList.html" title="AlternationOpenList\l\&lt; Entry \&gt;" alt="" coords="212,93,348,134"/><area shape="rect" id="node7" href="classBucketOpenList.html" title="BucketOpenList\&lt; Entry \&gt;" alt="" coords="195,159,365,185"/><area shape="rect" id="node8" href="classStandardScalarOpenList.html" title="StandardScalarOpenList\l\&lt; Entry \&gt;" alt="" coords="199,210,361,251"/><area shape="rect" id="node3" href="classOpenTree.html" title="OpenTree\&lt; Entry \&gt;" alt="" coords="429,5,563,32"/><area shape="rect" id="node5" href="classTieBreakingOpenList.html" title="TieBreakingOpenList\l\&lt; Entry \&gt;" alt="" coords="425,57,567,98"/><area shape="rect" id="node4" href="classOpenDTree.html" title="OpenDTree\&lt; Entry \&gt;" alt="" coords="616,5,760,32"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aaae1cc9d2c4c3c69176fcf080bb93739"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenList.html#aaae1cc9d2c4c3c69176fcf080bb93739">OpenList</a> (bool preferred_only=false, bool <a class="el" href="classOpenList.html#a1ca76b9b69e9578f296a9aff282cf246">emit_frontier</a>=false)</td></tr>
+<tr class="separator:aaae1cc9d2c4c3c69176fcf080bb93739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fcc4247637345bcc32165331dc21db7"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenList.html#a2fcc4247637345bcc32165331dc21db7">~OpenList</a> ()=default</td></tr>
+<tr class="separator:a2fcc4247637345bcc32165331dc21db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a054ebb8337007378b53bc3712afd9916"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenList.html#a054ebb8337007378b53bc3712afd9916">insert</a> (<a class="el" href="classEvaluationContext.html">EvaluationContext</a> &amp;eval_context, const Entry &amp;entry)</td></tr>
+<tr class="separator:a054ebb8337007378b53bc3712afd9916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae225b03466861773c3cab933eb1fc977"><td class="memItemLeft" align="right" valign="top">virtual Entry&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenList.html#ae225b03466861773c3cab933eb1fc977">remove_min</a> (std::vector&lt; int &gt; *key=0)=0</td></tr>
+<tr class="separator:ae225b03466861773c3cab933eb1fc977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa17af208ac1962d3005cbe5d4a93e9dd"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenList.html#aa17af208ac1962d3005cbe5d4a93e9dd">empty</a> () const =0</td></tr>
+<tr class="separator:aa17af208ac1962d3005cbe5d4a93e9dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3850ef01c106e31866b25b7090a5a6ee"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenList.html#a3850ef01c106e31866b25b7090a5a6ee">clear</a> ()=0</td></tr>
+<tr class="separator:a3850ef01c106e31866b25b7090a5a6ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a294fefe0445d28d37e322ef6358155ff"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenList.html#a294fefe0445d28d37e322ef6358155ff">boost_preferred</a> ()</td></tr>
+<tr class="separator:a294fefe0445d28d37e322ef6358155ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30389d1027eb01f6d84b62d33bafbfd5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenList.html#a30389d1027eb01f6d84b62d33bafbfd5">get_involved_heuristics</a> (std::set&lt; <a class="el" href="classHeuristic.html">Heuristic</a> * &gt; &amp;hset)=0</td></tr>
+<tr class="separator:a30389d1027eb01f6d84b62d33bafbfd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae848a4e1a12aebb16404bc49c9058acd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenList.html#ae848a4e1a12aebb16404bc49c9058acd">only_contains_preferred_entries</a> () const </td></tr>
+<tr class="separator:ae848a4e1a12aebb16404bc49c9058acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1a799e111a9b8f1972c63853be14108"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenList.html#aa1a799e111a9b8f1972c63853be14108">is_dead_end</a> (<a class="el" href="classEvaluationContext.html">EvaluationContext</a> &amp;eval_context) const =0</td></tr>
+<tr class="separator:aa1a799e111a9b8f1972c63853be14108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad49141b0f89e5c999d0e951577368ae4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenList.html#ad49141b0f89e5c999d0e951577368ae4">is_reliable_dead_end</a> (<a class="el" href="classEvaluationContext.html">EvaluationContext</a> &amp;eval_context) const =0</td></tr>
+<tr class="separator:ad49141b0f89e5c999d0e951577368ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8099deae98430c5cba9460394fd11e43"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenList.html#a8099deae98430c5cba9460394fd11e43">frontier_size</a> ()</td></tr>
+<tr class="separator:a8099deae98430c5cba9460394fd11e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a1ca76b9b69e9578f296a9aff282cf246"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenList.html#a1ca76b9b69e9578f296a9aff282cf246">emit_frontier</a></td></tr>
+<tr class="separator:a1ca76b9b69e9578f296a9aff282cf246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a4fae2858b30002f29f77c6dffe465687"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenList.html#a4fae2858b30002f29f77c6dffe465687">do_insertion</a> (<a class="el" href="classEvaluationContext.html">EvaluationContext</a> &amp;eval_context, const Entry &amp;entry)=0</td></tr>
+<tr class="separator:a4fae2858b30002f29f77c6dffe465687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="aaae1cc9d2c4c3c69176fcf080bb93739"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Entry&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenList.html">OpenList</a>&lt; Entry &gt;::<a class="el" href="classOpenList.html">OpenList</a> </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>preferred_only</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>emit_frontier</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2fcc4247637345bcc32165331dc21db7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Entry&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classOpenList.html">OpenList</a>&lt; Entry &gt;::~<a class="el" href="classOpenList.html">OpenList</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a294fefe0445d28d37e322ef6358155ff"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Entry&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classOpenList.html">OpenList</a>&lt; Entry &gt;::boost_preferred </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classAlternationOpenList.html#af6ff1a140411504c5a78cca9f83c6664">AlternationOpenList&lt; Entry &gt;</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classOpenList_a294fefe0445d28d37e322ef6358155ff_icgraph.png" border="0" usemap="#classOpenList_a294fefe0445d28d37e322ef6358155ff_icgraph" alt=""/></div>
+<map name="classOpenList_a294fefe0445d28d37e322ef6358155ff_icgraph" id="classOpenList_a294fefe0445d28d37e322ef6358155ff_icgraph">
+<area shape="rect" id="node2" href="classEagerSearch.html#a55d06001e2a981acfc0a22cc4d510150" title="EagerSearch::reward\l_progress" alt="" coords="227,5,371,46"/><area shape="rect" id="node3" href="classEagerSearch.html#a8533416de3639b7445903a0734b54fd7" title="EagerSearch::per_node_new" alt="" coords="419,12,608,39"/><area shape="rect" id="node4" href="classEagerSearch.html#a486ff0b490b899fdfb359cf14a8d6459" title="EagerSearch::per_node" alt="" coords="657,12,815,39"/><area shape="rect" id="node5" href="classEagerSearch.html#a579812c68f5321a6eb9e6fe0da59e14c" title="EagerSearch::step" alt="" coords="864,12,995,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3850ef01c106e31866b25b7090a5a6ee"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Entry&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classOpenList.html">OpenList</a>&lt; Entry &gt;::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classOpenTree.html#ad59dea5605aa9adda96621cdd375d066">OpenTree&lt; Entry &gt;</a>, <a class="el" href="classStandardScalarOpenList.html#a62397b678eb6806b9df29272f8249322">StandardScalarOpenList&lt; Entry &gt;</a>, <a class="el" href="classBucketOpenList.html#a139d535f9e7bedf0e1568cf714cb550d">BucketOpenList&lt; Entry &gt;</a>, <a class="el" href="classTieBreakingOpenList.html#ab90edfc978d2ba45cee0550d738627f6">TieBreakingOpenList&lt; Entry &gt;</a>, and <a class="el" href="classAlternationOpenList.html#a2e5356680a5d2283d9e55b527a28a846">AlternationOpenList&lt; Entry &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4fae2858b30002f29f77c6dffe465687"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Entry&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classOpenList.html">OpenList</a>&lt; Entry &gt;::do_insertion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classEvaluationContext.html">EvaluationContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>eval_context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Entry &amp;&#160;</td>
+          <td class="paramname"><em>entry</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classOpenTree.html#a6a3fb9e76f65bc759c769713fb18c574">OpenTree&lt; Entry &gt;</a>, <a class="el" href="classStandardScalarOpenList.html#a2588d86688959a8212dc6c6412931324">StandardScalarOpenList&lt; Entry &gt;</a>, <a class="el" href="classBucketOpenList.html#a104f1d35d2db1df7d2ed77f1486e3766">BucketOpenList&lt; Entry &gt;</a>, <a class="el" href="classTieBreakingOpenList.html#a1385552276e1ddbcb5fa2eea2ff10d3a">TieBreakingOpenList&lt; Entry &gt;</a>, and <a class="el" href="classAlternationOpenList.html#afd530694cb1492810f2d89a0b82d4e58">AlternationOpenList&lt; Entry &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa17af208ac1962d3005cbe5d4a93e9dd"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Entry&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool <a class="el" href="classOpenList.html">OpenList</a>&lt; Entry &gt;::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classOpenTree.html#aeec292b61e4fca0932bf38e31bc3ffcd">OpenTree&lt; Entry &gt;</a>, <a class="el" href="classStandardScalarOpenList.html#aef81384ce0803138d8cbddb5b0e3e028">StandardScalarOpenList&lt; Entry &gt;</a>, <a class="el" href="classBucketOpenList.html#af446ac2bdff2d1a169626463766d67e6">BucketOpenList&lt; Entry &gt;</a>, <a class="el" href="classTieBreakingOpenList.html#af75ac743a0ec37a4228e3964b01caedb">TieBreakingOpenList&lt; Entry &gt;</a>, and <a class="el" href="classAlternationOpenList.html#ac50c16c74e739dc2e07da3c0e1efb11c">AlternationOpenList&lt; Entry &gt;</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classOpenList_aa17af208ac1962d3005cbe5d4a93e9dd_icgraph.png" border="0" usemap="#classOpenList_aa17af208ac1962d3005cbe5d4a93e9dd_icgraph" alt=""/></div>
+<map name="classOpenList_aa17af208ac1962d3005cbe5d4a93e9dd_icgraph" id="classOpenList_aa17af208ac1962d3005cbe5d4a93e9dd_icgraph">
+<area shape="rect" id="node2" href="classEagerSearch.html#a03a759ac6eb4941eada1a71bc8809882" title="EagerSearch::fetch\l_next_node" alt="" coords="174,5,309,46"/><area shape="rect" id="node3" href="classEagerSearch.html#a579812c68f5321a6eb9e6fe0da59e14c" title="EagerSearch::step" alt="" coords="357,12,488,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8099deae98430c5cba9460394fd11e43"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Entry&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int <a class="el" href="classOpenList.html">OpenList</a>&lt; Entry &gt;::frontier_size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classOpenTree.html#ac20c42abdefb11ffd85ad3fdd1c5f0c6">OpenTree&lt; Entry &gt;</a>, <a class="el" href="classStandardScalarOpenList.html#a117f9cc30e24690a26d53fb5c39f50c7">StandardScalarOpenList&lt; Entry &gt;</a>, <a class="el" href="classBucketOpenList.html#a963a01b6e8151c20d60a39face8c15d6">BucketOpenList&lt; Entry &gt;</a>, <a class="el" href="classTieBreakingOpenList.html#a401b245ff0df5abcea4406ce66f1aa4a">TieBreakingOpenList&lt; Entry &gt;</a>, and <a class="el" href="classAlternationOpenList.html#a78736917ac277260ace2cbe1891b6f35">AlternationOpenList&lt; Entry &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a30389d1027eb01f6d84b62d33bafbfd5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Entry&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classOpenList.html">OpenList</a>&lt; Entry &gt;::get_involved_heuristics </td>
+          <td>(</td>
+          <td class="paramtype">std::set&lt; <a class="el" href="classHeuristic.html">Heuristic</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>hset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classStandardScalarOpenList.html#acd9b282129a3a3f1371e22aa725b015c">StandardScalarOpenList&lt; Entry &gt;</a>, <a class="el" href="classBucketOpenList.html#aa8fc5ab0f4011b405c197a8203f7be34">BucketOpenList&lt; Entry &gt;</a>, <a class="el" href="classTieBreakingOpenList.html#a9ef8f090c4f9a4d28815522bc1da3f8a">TieBreakingOpenList&lt; Entry &gt;</a>, <a class="el" href="classAbstractTieBreakingOpenList.html#a6dd4d60842139c8f9dd652ccbe9af815">AbstractTieBreakingOpenList&lt; Entry &gt;</a>, and <a class="el" href="classAlternationOpenList.html#a044e87261600e153777bbdb191485fb6">AlternationOpenList&lt; Entry &gt;</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classOpenList_a30389d1027eb01f6d84b62d33bafbfd5_icgraph.png" border="0" usemap="#classOpenList_a30389d1027eb01f6d84b62d33bafbfd5_icgraph" alt=""/></div>
+<map name="classOpenList_a30389d1027eb01f6d84b62d33bafbfd5_icgraph" id="classOpenList_a30389d1027eb01f6d84b62d33bafbfd5_icgraph">
+<area shape="rect" id="node2" href="classEagerSearch.html#ad2a84b79cbb0db13f18d9e32996303e0" title="EagerSearch::initialize" alt="" coords="208,12,360,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a054ebb8337007378b53bc3712afd9916"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Entry&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classOpenList.html">OpenList</a>&lt; Entry &gt;::insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classEvaluationContext.html">EvaluationContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>eval_context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Entry &amp;&#160;</td>
+          <td class="paramname"><em>entry</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classOpenList_a054ebb8337007378b53bc3712afd9916_icgraph.png" border="0" usemap="#classOpenList_a054ebb8337007378b53bc3712afd9916_icgraph" alt=""/></div>
+<map name="classOpenList_a054ebb8337007378b53bc3712afd9916_icgraph" id="classOpenList_a054ebb8337007378b53bc3712afd9916_icgraph">
+<area shape="rect" id="node2" href="classEagerSearch.html#ad2a84b79cbb0db13f18d9e32996303e0" title="EagerSearch::initialize" alt="" coords="187,5,339,32"/><area shape="rect" id="node3" href="classEagerSearch.html#a8533416de3639b7445903a0734b54fd7" title="EagerSearch::per_node_new" alt="" coords="168,56,357,83"/><area shape="rect" id="node6" href="classEagerSearch.html#a20d1b0865654a2e43268bacbf7db9263" title="EagerSearch::per_node\l_reopen" alt="" coords="183,107,342,149"/><area shape="rect" id="node4" href="classEagerSearch.html#a486ff0b490b899fdfb359cf14a8d6459" title="EagerSearch::per_node" alt="" coords="406,85,565,112"/><area shape="rect" id="node5" href="classEagerSearch.html#a579812c68f5321a6eb9e6fe0da59e14c" title="EagerSearch::step" alt="" coords="613,85,744,112"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa1a799e111a9b8f1972c63853be14108"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Entry&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool <a class="el" href="classOpenList.html">OpenList</a>&lt; Entry &gt;::is_dead_end </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classEvaluationContext.html">EvaluationContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>eval_context</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classStandardScalarOpenList.html#af74c051326ad4f3badf65712f2126da7">StandardScalarOpenList&lt; Entry &gt;</a>, <a class="el" href="classBucketOpenList.html#a35fed159b4e11688ce13378b3d50fc1b">BucketOpenList&lt; Entry &gt;</a>, <a class="el" href="classTieBreakingOpenList.html#aa383075ac9f85d7b7c0078e1eeff6a5d">TieBreakingOpenList&lt; Entry &gt;</a>, <a class="el" href="classAbstractTieBreakingOpenList.html#af71d9cd4ae1b37c845b7c2c1e53bb39b">AbstractTieBreakingOpenList&lt; Entry &gt;</a>, and <a class="el" href="classAlternationOpenList.html#a6e35b23cbc2441f9b8b52fa0899da9e5">AlternationOpenList&lt; Entry &gt;</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classOpenList_aa1a799e111a9b8f1972c63853be14108_icgraph.png" border="0" usemap="#classOpenList_aa1a799e111a9b8f1972c63853be14108_icgraph" alt=""/></div>
+<map name="classOpenList_aa1a799e111a9b8f1972c63853be14108_icgraph" id="classOpenList_aa1a799e111a9b8f1972c63853be14108_icgraph">
+<area shape="rect" id="node2" href="classEagerSearch.html#ad2a84b79cbb0db13f18d9e32996303e0" title="EagerSearch::initialize" alt="" coords="227,5,379,32"/><area shape="rect" id="node3" href="classEagerSearch.html#a8533416de3639b7445903a0734b54fd7" title="EagerSearch::per_node_new" alt="" coords="208,56,397,83"/><area shape="rect" id="node4" href="classEagerSearch.html#a486ff0b490b899fdfb359cf14a8d6459" title="EagerSearch::per_node" alt="" coords="446,56,605,83"/><area shape="rect" id="node5" href="classEagerSearch.html#a579812c68f5321a6eb9e6fe0da59e14c" title="EagerSearch::step" alt="" coords="653,56,784,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad49141b0f89e5c999d0e951577368ae4"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Entry&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool <a class="el" href="classOpenList.html">OpenList</a>&lt; Entry &gt;::is_reliable_dead_end </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classEvaluationContext.html">EvaluationContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>eval_context</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classStandardScalarOpenList.html#a6d992ee056b5d31ee7933cc157535528">StandardScalarOpenList&lt; Entry &gt;</a>, <a class="el" href="classBucketOpenList.html#aab88a8c8edbc0af43861f79d3f3fecda">BucketOpenList&lt; Entry &gt;</a>, <a class="el" href="classTieBreakingOpenList.html#a307769c5749bb9a4649608736d3347f3">TieBreakingOpenList&lt; Entry &gt;</a>, <a class="el" href="classAbstractTieBreakingOpenList.html#afba5c217bd039c6f9918b895e0e8808a">AbstractTieBreakingOpenList&lt; Entry &gt;</a>, and <a class="el" href="classAlternationOpenList.html#ae7de6f045700496c895f6abcb1079b09">AlternationOpenList&lt; Entry &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae848a4e1a12aebb16404bc49c9058acd"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Entry&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classOpenList.html">OpenList</a>&lt; Entry &gt;::only_contains_preferred_entries </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae225b03466861773c3cab933eb1fc977"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Entry&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Entry <a class="el" href="classOpenList.html">OpenList</a>&lt; Entry &gt;::remove_min </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; int &gt; *&#160;</td>
+          <td class="paramname"><em>key</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classStandardScalarOpenList.html#ab05223f66c18a822a74afff7f9f5a21d">StandardScalarOpenList&lt; Entry &gt;</a>, <a class="el" href="classBucketOpenList.html#a5a7a00d4a4b034f9ce3c63190f5e0bc6">BucketOpenList&lt; Entry &gt;</a>, <a class="el" href="classTieBreakingOpenList.html#a471fb5d6b56360a2935404c448f2e8c3">TieBreakingOpenList&lt; Entry &gt;</a>, and <a class="el" href="classAlternationOpenList.html#a6bf6ffefa781f81efdc65d98119b44b5">AlternationOpenList&lt; Entry &gt;</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classOpenList_ae225b03466861773c3cab933eb1fc977_icgraph.png" border="0" usemap="#classOpenList_ae225b03466861773c3cab933eb1fc977_icgraph" alt=""/></div>
+<map name="classOpenList_ae225b03466861773c3cab933eb1fc977_icgraph" id="classOpenList_ae225b03466861773c3cab933eb1fc977_icgraph">
+<area shape="rect" id="node2" href="classEagerSearch.html#a03a759ac6eb4941eada1a71bc8809882" title="EagerSearch::fetch\l_next_node" alt="" coords="209,5,343,46"/><area shape="rect" id="node3" href="classEagerSearch.html#a579812c68f5321a6eb9e6fe0da59e14c" title="EagerSearch::step" alt="" coords="392,12,523,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a1ca76b9b69e9578f296a9aff282cf246"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Entry&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const bool <a class="el" href="classOpenList.html">OpenList</a>&lt; Entry &gt;::emit_frontier</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="option__parser_8h_source.html">option_parser.h</a></li>
+<li>open_lists/<a class="el" href="open__list_8h_source.html">open_list.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 22 2015 14:10:30 for Fast Downward by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 14 2015 08:44:07 for Fast Downward by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -1,0 +1,17 @@
+<map id="SearchStatistics::operator+" name="SearchStatistics::operator+">
+<area shape="rect" id="node2" href="$classSearchStatistics.html#a82476f9f96401b9e6723f4f0c483240d" title="SearchStatistics::Search\lStatistics" alt="" coords="235,5,402,46"/>
+<area shape="rect" id="node3" href="$classSearchStatistics.html#a375dc81d063973c7b2adeded062726f9" title="SearchStatistics::inc\l_expanded" alt="" coords="247,70,390,111"/>
+<area shape="rect" id="node4" href="$classSearchStatistics.html#ac81d36b18e9bb132842f5b58df0aa22e" title="SearchStatistics::get\l_expanded" alt="" coords="247,135,391,177"/>
+<area shape="rect" id="node5" href="$classSearchStatistics.html#aca5c210b6a0b0145899c61ef238b9ae1" title="SearchStatistics::inc\l_evaluated_states" alt="" coords="247,201,390,242"/>
+<area shape="rect" id="node6" href="$classSearchStatistics.html#a43697843768446512031d3a54a002d64" title="SearchStatistics::get\l_evaluated_states" alt="" coords="247,266,391,307"/>
+<area shape="rect" id="node7" href="$classSearchStatistics.html#a076f18cb5b7bce47b93b7bfe3ca81bfe" title="SearchStatistics::inc\l_generated" alt="" coords="247,331,390,373"/>
+<area shape="rect" id="node8" href="$classSearchStatistics.html#a6c5b726d1600b5bac48ce5102f192977" title="SearchStatistics::get\l_generated" alt="" coords="247,397,391,438"/>
+<area shape="rect" id="node9" href="$classSearchStatistics.html#a6aec8829af5092c6227c71277b1ea7e8" title="SearchStatistics::inc\l_reopened" alt="" coords="247,462,390,503"/>
+<area shape="rect" id="node10" href="$classSearchStatistics.html#a25cff2e5897c8bb9993ae8c07f609dff" title="SearchStatistics::get\l_reopened" alt="" coords="247,527,391,569"/>
+<area shape="rect" id="node11" href="$classSearchStatistics.html#af23d412b185b33b7f7f0486a7cca853c" title="SearchStatistics::inc\l_dead_ends" alt="" coords="247,593,390,634"/>
+<area shape="rect" id="node12" href="$classSearchStatistics.html#ae156b05dabc794f3f7d14213f92f15f4" title="SearchStatistics::get\l_dead_ends" alt="" coords="247,658,391,699"/>
+<area shape="rect" id="node13" href="$classSearchStatistics.html#a2b9ffac593c5e5b03e2c4e92f2e13b42" title="SearchStatistics::inc\l_generated_ops" alt="" coords="247,723,390,765"/>
+<area shape="rect" id="node14" href="$classSearchStatistics.html#a0f87862ea7cfcbfbc729acda879c6ad2" title="SearchStatistics::get\l_generated_ops" alt="" coords="247,789,391,830"/>
+<area shape="rect" id="node15" href="$classSearchStatistics.html#a57f71a965c7693054ec18ba1b25a557f" title="SearchStatistics::inc\l_evaluations" alt="" coords="247,854,390,895"/>
+<area shape="rect" id="node16" href="$classSearchStatistics.html#a6d71102c1575a30bdebb58f061f53278" title="SearchStatistics::get\l_evaluations" alt="" coords="247,919,391,961"/>
+</map>

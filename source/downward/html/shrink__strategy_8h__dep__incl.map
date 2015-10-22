@@ -1,0 +1,12 @@
+<map id="merge_and_shrink/shrink_strategy.h" name="merge_and_shrink/shrink_strategy.h">
+<area shape="rect" id="node2" href="$merge__and__shrink__heuristic_8cc.html" title="merge_and_shrink/merge\l_and_shrink_heuristic.cc" alt="" coords="5,97,173,138"/>
+<area shape="rect" id="node3" href="$shrink__bisimulation_8h.html" title="merge_and_shrink/shrink\l_bisimulation.h" alt="" coords="198,97,364,138"/>
+<area shape="rect" id="node5" href="$shrink__bucket__based_8h.html" title="merge_and_shrink/shrink\l_bucket_based.h" alt="" coords="389,97,555,138"/>
+<area shape="rect" id="node11" href="$shrink__strategy_8cc.html" title="merge_and_shrink/shrink\l_strategy.cc" alt="" coords="579,97,745,138"/>
+<area shape="rect" id="node4" href="$shrink__bisimulation_8cc.html" title="merge_and_shrink/shrink\l_bisimulation.cc" alt="" coords="95,187,261,229"/>
+<area shape="rect" id="node6" href="$shrink__bucket__based_8cc.html" title="merge_and_shrink/shrink\l_bucket_based.cc" alt="" coords="286,187,452,229"/>
+<area shape="rect" id="node7" href="$shrink__fh_8h.html" title="merge_and_shrink/shrink_fh.h" alt="" coords="477,195,672,221"/>
+<area shape="rect" id="node9" href="$shrink__random_8h.html" title="merge_and_shrink/shrink\l_random.h" alt="" coords="697,187,863,229"/>
+<area shape="rect" id="node8" href="$shrink__fh_8cc.html" title="merge_and_shrink/shrink\l_fh.cc" alt="" coords="491,278,657,319"/>
+<area shape="rect" id="node10" href="$shrink__random_8cc.html" title="merge_and_shrink/shrink\l_random.cc" alt="" coords="697,278,863,319"/>
+</map>

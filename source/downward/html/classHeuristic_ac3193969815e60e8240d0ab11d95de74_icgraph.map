@@ -1,0 +1,4 @@
+<map id="Heuristic::convert_global_state" name="Heuristic::convert_global_state">
+<area shape="rect" id="node2" href="$classBlindSearchHeuristic.html#a7a6527bad7788c79a80811f6dacefa64" title="BlindSearchHeuristic\l::compute_heuristic" alt="" coords="192,5,336,46"/>
+<area shape="rect" id="node3" href="$classMergeAndShrinkHeuristic.html#ac22dda3713996a6ae3cf6b61ba962904" title="MergeAndShrinkHeuristic\l::compute_heuristic" alt="" coords="179,70,349,111"/>
+</map>

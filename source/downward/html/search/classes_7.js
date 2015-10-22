@@ -5,7 +5,5 @@ var searchData=
   ['hash_3c_20std_3a_3avector_3c_20t_20_3e_20_3e',['hash&lt; std::vector&lt; T &gt; &gt;',['../structstd_1_1hash_3_01std_1_1vector_3_01T_01_4_01_4.html',1,'std']]],
   ['heapqueue',['HeapQueue',['../classHeapQueue.html',1,'']]],
   ['heuristic',['Heuristic',['../classHeuristic.html',1,'']]],
-  ['heuristiccache',['HeuristicCache',['../classHeuristicCache.html',1,'']]],
-  ['hmheuristic',['HMHeuristic',['../classHMHeuristic.html',1,'']]],
-  ['hspmaxheuristic',['HSPMaxHeuristic',['../classHSPMaxHeuristic.html',1,'']]]
+  ['heuristiccache',['HeuristicCache',['../classHeuristicCache.html',1,'']]]
 ];

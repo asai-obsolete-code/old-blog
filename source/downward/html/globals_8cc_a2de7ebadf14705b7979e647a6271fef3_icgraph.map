@@ -1,0 +1,4 @@
+<map id="test_goal" name="test_goal">
+<area shape="rect" id="node2" href="$classSearchEngine.html#a4df85a6125380a052341794a4540c902" title="SearchEngine::check\l_goal_and_set_plan" alt="" coords="128,5,275,46"/>
+<area shape="rect" id="node3" href="$classEagerSearch.html#a579812c68f5321a6eb9e6fe0da59e14c" title="EagerSearch::step" alt="" coords="323,12,453,39"/>
+</map>
