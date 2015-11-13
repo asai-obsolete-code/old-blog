@@ -9,15 +9,16 @@ footer: true
 
 # Peer-Reviewed Papers (In Chronological Order)
 
-1.  Asai, M.; Fukunaga, A: 2015. Solving Large Scale Planning Problems with
+1.  Asai, M.; Fukunaga, A: 2016. Tiebreaking Strategies for Classical Planning Using A∗ Search.
+    Accepted in *AAAI2016*.
+2.  Asai, M.; Fukunaga, A: 2015. Solving Large Scale Planning Problems with
     Component Macros. In *ICAPS2015*. [pdf](./icaps15.pdf) . CAP planner is
     available at <https://github.com/guicho271828/CAP> .
-2.  Asai, M.; Fukunaga, A: 2014. Applying Problem Decomposition to Extremely Large
+3.  Asai, M.; Fukunaga, A: 2014. Applying Problem Decomposition to Extremely Large
     Planning Domains. Knowledge Engineering for Planning and Scheduling (KEPS) Workshop
-    (ICAPS2014). [pdf](keps14.pdf) (~~submitted version~~ -> final version) [poster](./keps14-poster.pdf) [presentation](./keps14/)
-3.  Asai, M.; Fukunaga, A: 2014. Fully Automated Cyclic Planning for Large-Scale
+    (ICAPS2014). [pdf](keps14.pdf) (<del>submitted version</del> -> final version) [poster](./keps14-poster.pdf) [presentation](./keps14/)
+4.  Asai, M.; Fukunaga, A: 2014. Fully Automated Cyclic Planning for Large-Scale
     Manufacturing Domains. In *ICAPS2014*. [pdf](icaps14.pdf) [poster](./icaps14-poster.pdf) [presentation](./icaps14/)
-
 
 Presentation can be moved forward/backward with N/P key.
 [For the further help and usage, click here](http://guicho271828.github.io/another-org-info/).
@@ -25,6 +26,7 @@ Presentation can be moved forward/backward with N/P key.
 # Software
 
 See [my github repo](https://github.com/guicho271828) for the latest activity!
+
 
 -   [CAP](https://github.com/guicho271828/CAP) &#x2013; Component Abstraction Planner, which decompose the given problem,
     solve each subproblem, make the subplans into macros and then plans in an
