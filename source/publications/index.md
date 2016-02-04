@@ -9,10 +9,10 @@ footer: true
 
 # Peer-Reviewed Papers (In Chronological Order)
 
-1.  Asai, M.; Fukunaga, A: 2016. Tiebreaking Strategies for Classical Planning Using A\* Search.
+1.  Asai, M.; Fukunaga, A: 2016. Tiebreaking Strategies for A\* Search: How to Explore the Final Frontier.
     In *AAAI-2016*.  [pdf](./aaai16.pdf) .
-2.  Asai, M.; Fukunaga, A: 2015. Solving Large Scale Planning Problems with
-    Component Macros. In *ICAPS2015*. [pdf](./icaps15.pdf) . CAP planner is
+2.  Asai, M.; Fukunaga, A: 2015. Solving Large-Scale Planning Problems by
+    Decomposition and Macro Generation. In *ICAPS2015*. [pdf](./icaps15.pdf) . CAP planner is
     available at <https://github.com/guicho271828/CAP> .
 3.  Asai, M.; Fukunaga, A: 2014. Applying Problem Decomposition to Extremely Large
     Planning Domains. Knowledge Engineering for Planning and Scheduling (KEPS) Workshop
