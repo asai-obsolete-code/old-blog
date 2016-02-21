@@ -10,7 +10,7 @@ footer: true
 # Peer-Reviewed Papers (In Chronological Order)
 
 1.  Asai, M.; Fukunaga, A: 2016. Tiebreaking Strategies for A\* Search: How to Explore the Final Frontier.
-    In *AAAI-2016*.  [pdf](./aaai16.pdf) .
+    In *AAAI-2016*.  [pdf](./aaai16.pdf) [presentation](http://www.slideshare.net/asaimasataro/tiebreaking-strategies-for-a-search-how-to-explore-the-final-frontier).
 2.  Asai, M.; Fukunaga, A: 2015. Solving Large-Scale Planning Problems by
     Decomposition and Macro Generation. In *ICAPS2015*. [pdf](./icaps15.pdf) . CAP planner is
     available at <https://github.com/guicho271828/CAP> .
