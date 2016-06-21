@@ -15,20 +15,26 @@ footer: true
 * Peer-Reviewed Papers (In Chronological Order)
 
 1. Asai, M.; Fukunaga, A: 2016. Tiebreaking Strategies for A* Search: How to Explore the Final Frontier.
-   In /AAAI-2016/.  [[./aaai16.pdf][pdf]] [[http://www.slideshare.net/asaimasataro/tiebreaking-strategies-for-a-search-how-to-explore-the-final-frontier][presentation]].
+   In /AAAI-2016/.  [[./aaai16.pdf][pdf]] [[http://www.slideshare.net/asaimasataro/tiebreaking-strategies-for-a-search-how-to-explore-the-final-frontier][presentation]] [[./aaai16-poster.pdf][poster]].
 2. Asai, M.; Fukunaga, A: 2015. Solving Large-Scale Planning Problems by
    Decomposition and Macro Generation. In /ICAPS2015/. [[./icaps15.pdf][pdf]] . CAP planner is
    available at https://github.com/guicho271828/CAP .
-3. Asai, M.; Fukunaga, A: 2014. Applying Problem Decomposition to Extremely Large
-   Planning Domains. Knowledge Engineering for Planning and Scheduling (KEPS) Workshop
-   (ICAPS2014). [[file:keps14.pdf][pdf]] (+submitted version+ -> final version) [[./keps14-poster.pdf][poster]] [[./keps14/][presentation]]
-4. Asai, M.; Fukunaga, A: 2014. Fully Automated Cyclic Planning for Large-Scale
+3. Asai, M.; Fukunaga, A: 2014. Fully Automated Cyclic Planning for Large-Scale
    Manufacturing Domains. In /ICAPS2014/. [[file:icaps14.pdf][pdf]] [[./icaps14-poster.pdf][poster]] [[./icaps14/][presentation]]
 
 # [[./icaps14-poster.pdf][poster]] [[./icaps14/][presentation]]
 
 Presentation can be moved forward/backward with N/P key.
 [[http://guicho271828.github.io/another-org-info/][For the further help and usage, click here]].
+
+* Workshop papers
+
+1. Endo, S; Asai, M.; Fukunaga, A: 2014. Evaluation of a Simple, Window-based, Replanning Approach to Plan
+   Optimization. Heuristics and Search for Domain-independent Planning (HSDIP) Workshop
+   (ICAPS2016). [[file:hsdip16.pdf][pdf]] [[https://guicho271828.github.io/2016-06-13-hsdip/][presentation]]
+2. Asai, M.; Fukunaga, A: 2014. Applying Problem Decomposition to Extremely Large
+   Planning Domains. Knowledge Engineering for Planning and Scheduling (KEPS) Workshop
+   (ICAPS2014). [[file:keps14.pdf][pdf]] (+submitted version+ -> final version) [[./keps14-poster.pdf][poster]] [[./keps14/][presentation]]
 
 * Software
 
