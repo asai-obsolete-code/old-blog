@@ -24,7 +24,7 @@ Presentation can be moved forward/backward with N/P key.
 
 # Workshop papers
 
-1.  Asai, M.: 2016. Exploiting Search Space Structure in Classical Planning: Analyses and Algorithms (Dissertation Abstract). (ICAPS2016). [pdf](icaps16-dc.pdf)
+1.  Asai, M.: 2016. Exploiting Search Space Structure in Classical Planning: Analyses and Algorithms (Dissertation Abstract). (ICAPS2016 Doctorial Consortium). [pdf](icaps16-dc.pdf)
 1.  Endo, S; Asai, M.; Fukunaga, A: 2014. Evaluation of a Simple, Window-based, Replanning Approach to Plan
     Optimization. Heuristics and Search for Domain-independent Planning (HSDIP) Workshop
     (ICAPS2016). [pdf](hsdip16.pdf) [presentation](https://guicho271828.github.io/2016-06-13-hsdip/)
