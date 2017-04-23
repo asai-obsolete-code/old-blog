@@ -13,6 +13,7 @@ footer: true
 1.  Asai, M.; Fukunaga, A: 2017. "Tie-Breaking Strategies for Cost-Optimal Best First Search." Journal of Artificial Intelligence Research 58 (2017): 67-121. [pdf](http://www.jair.org/papers/paper5249.html)
 2.  Asai, M.; Fukunaga, A: 2016. Tiebreaking Strategies for A\* Search: How to Explore the Final Frontier.
     In *AAAI-2016*.  [pdf](./aaai16.pdf) [presentation](http://www.slideshare.net/asaimasataro/tiebreaking-strategies-for-a-search-how-to-explore-the-final-frontier) [poster](./aaai16-poster.pdf).
+    (Also submitted to Japanese Society for Artificial Intelligence, received JSAI Annual Conference Student Incentive Award)
 3.  Asai, M.; Fukunaga, A: 2015. Solving Large-Scale Planning Problems by
     Decomposition and Macro Generation. In *ICAPS2015*. [pdf](./icaps15.pdf) . CAP planner is
     available at <https://github.com/guicho271828/CAP> .
@@ -24,6 +25,14 @@ Presentation can be moved forward/backward with N/P key.
 
 # Workshop papers
 
+1.  Asai, M.; Fukunaga, A: 2017. Classical Planning in Deep Latent Space:
+    From Unlabeled Images to PDDL (and back).
+    Knowledge Engineering for Planning and Scheduling (KEPS) Workshop
+    (ICAPS2017). 
+1.  Asai, M.; Fukunaga, A: 2017. Tie-Breaking in A* as Satisficing Search.
+    Heuristics and Search for Domain-independent Planning (HSDIP) Workshop
+    (ICAPS2017). 
+1.  Asai, M.: 2017. Exploiting Search Space Structure in Classical Planning: Analyses and Algorithms (Dissertation Abstract, 2017 version). (ICAPS2017 Doctorial Consortium). [pdf](icaps16-dc.pdf)
 1.  Asai, M.: 2016. Exploiting Search Space Structure in Classical Planning: Analyses and Algorithms (Dissertation Abstract). (ICAPS2016 Doctorial Consortium). [pdf](icaps16-dc.pdf)
 1.  Endo, S; Asai, M.; Fukunaga, A: 2014. Evaluation of a Simple, Window-based, Replanning Approach to Plan
     Optimization. Heuristics and Search for Domain-independent Planning (HSDIP) Workshop
