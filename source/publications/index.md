@@ -9,6 +9,10 @@ footer: true
 
 # Peer-Reviewed Papers (In Chronological Order)
 
+2. Masataro Asai, Akihiro Kishimoto, Adi Botea, Radu Marinescu, Elizabeth Daly
+   M, and Spyros Kotoulas. 2017. Efficient Optimal Search under Expensive Edge Cost
+   Computation. In Proc. International Joint Conference on Artificial
+   Intellifence(IJCAI)
 2.  Asai, M.; Fukunaga, A: 2017. "Exploration Among and Within Plateaus in Greedy Best-First Search". In *ICAPS2017*. [pdf](./icaps17.pdf)
 1.  Asai, M.; Fukunaga, A: 2017. "Tie-Breaking Strategies for Cost-Optimal Best First Search." Journal of Artificial Intelligence Research 58 (2017): 67-121. [pdf](http://www.jair.org/papers/paper5249.html)
 2.  Asai, M.; Fukunaga, A: 2016. Tiebreaking Strategies for A\* Search: How to Explore the Final Frontier.
